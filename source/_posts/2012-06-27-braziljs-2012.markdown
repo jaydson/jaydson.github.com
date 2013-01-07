@@ -1,0 +1,57 @@
+---
+comments: true
+date: 2012-06-27 05:07:51
+layout: post
+slug: braziljs-2012
+title: BrazilJS 2012
+wordpress_id: 1320
+categories:
+- BrazilJS
+- Eventos
+- JavaScript
+tags:
+- BrazilJS
+- Eventos
+- JavaScript
+---
+
+[![](http://jaydson.org/wp-content/uploads/braziljs_thumb_200.jpg)](http://jaydson.org/wp-content/uploads/braziljs_thumb_200.jpg)  
+É chegada a hora.  
+O [BrazilJS](http://braziljs.com.br) 2012 esta ai em sua segunda edição.  
+Em 2011 alcançamos um enorme sucesso, e arriscamos dizer que fomos o maior evento JavaScript do mundo.  
+Tivemos mais de 600 pessoas, mais de 20 palestras e um enorme reconhecimento.  
+O [BrazilJS 2011](http://jaydson.org/brazil-js-2011-epicwin/) além de tudo ainda abriu muitas portas, e consolidou a comunidade JavaScript no Brasil. Neste ano estamos sendo mais ousados.  
+Queremos bater a marca de 2011, e novamente ser o maior evento JavaScript do universo.  
+
+Nesta semana liberamos o primeiro lote de ingressos, e divulgamos os primeiros 6 palestrantes do evento:  
+[![Richard Worth](http://jaydson.org/wp-content/uploads/richard.png)](http://jaydson.org/wp-content/uploads/richard.png)  
+_**
+Richard Worth - **_Diretor executivo da jQuery Foundation e líder do projeto jQuery UI. Ele mora em Washington, D.C. e trabalha na Bocoup, treinando desenvolvedores em JavaScript, jQuery, and jQuery UI.  
+
+[![](http://jaydson.org/wp-content/uploads/fat.png)](http://jaydson.org/wp-content/uploads/fat.png)  
+_**Jacob Thornton**_ - Jacob é engenheiro no Twitter e co-author de vários projetos interessantes e conhecidos na comunidade JavaScript, entre eles: Bootstrap, Ender, Hogan.js.  
+
+[![](http://jaydson.org/wp-content/uploads/micha.png)](http://jaydson.org/wp-content/uploads/micha.png)  
+_**Michal Budzynsk**_i - É um alquimista da Open Web de Varsóvia, Polônia, responsável por muitos experimentos ridículos como o CSS Nyan Cat e All your gradient are belong to us. Organizador da onGameStart e do AntarcticJS.  
+Ele afirma com segurança que fazer da web um lugar melhor não é só seu trabalho - é seu estilo de vida.  
+É por isso que criou a BLYSK, a primeira ferramenta séria de animação para a web (em breve).  
+
+[![](http://jaydson.org/wp-content/uploads/leo.png)](http://jaydson.org/wp-content/uploads/leo.png)  
+_**Leonardo Balter**_ -  Representante Mozilla e desenvolvedor FrontEnd na Estante Virtual além de membro do RioJS.Apaixonado pela Web e tecnologias abertas que a integram, atualmente está engajado em alguns projetos open source  como o B2G, MDN e outros relacionados a OpenData no Brasil.  
+
+[![](http://jaydson.org/wp-content/uploads/zeno.png)](http://jaydson.org/wp-content/uploads/zeno.png)  
+_**Zeno Rocha**_ - Um dos criadores do jQuery Boilerplate e do Wormz no Chrome Experiments.  
+Já foi desenvolvedor de software na Petrobras e hoje trabalha no Globoesporte.com.   
+Tem 21 anos e é estudante de Sistemas de Informação na Universidade Federal do Estado do Rio de Janeiro - UNIRIO.​  
+
+[![](http://jaydson.org/wp-content/uploads/edu.png)](http://jaydson.org/wp-content/uploads/edu.png)  
+_**Eduardo Lundgren**_ - Um dos criadores do AlloyUI, sempre se envolve em projetos open source, ex-contribuidor do jQuery e jQuery UI.  
+Graduado em Engenharia de Telecomunicações pela UPE e Mestrando em Ciência da Computação na UFPE.  
+Atualmente é líder de desenvolvimento na Liferay.  
+
+Estes são os primeiros grandes nomes do evento.  
+Teremos vários outros excelentes palestrantes e surpresas que farão o evento ser **inesquecível**.  
+
+Bom, é isso, fiquem ligados no [Twitter do BrazilJS](http://twitter.com/braziljs) que por lá vamos divulgando as novidades.  
+O evento acontece nos dias 30 e 31 de Agosto, em Porto Alegre.  
+Como falei, no site já é possível comprar ingressos: [http://braziljs.com.br/#register](http://braziljs.com.br/#register)  

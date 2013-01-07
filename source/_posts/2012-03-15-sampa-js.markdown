@@ -1,0 +1,25 @@
+---
+comments: true
+date: 2012-03-15 02:16:40
+layout: post
+slug: sampa-js
+title: Sampa JS
+wordpress_id: 1205
+categories:
+- Eventos
+- JavaScript
+tags:
+- Eventos
+- JavaScript
+---
+
+Falei ontem do [PernambucoJS](http://www.pernambucojs.com), e acabei esquecendo do [SampaJS](http://www.sampajs.com/) que acontece agora no dia 17 de Março em São Paulo.  
+Segue a descrição do evento:  
+"Esta será a segunda edição do Sampa.js que desta vez começará na parte da tarde para que o pessoal possa dormir um pouco mais.  
+Os temas abordados nas palestras serão: Design Patterns aplicados, Melhorando Acessibilidade de Aplicações JavaScript, Automatizando testes de Javascript no front-end, REST Client Side, ECMAScript5 e 6, jQuery Mobile e Node.js.  
+O evento será realizado no Auditório da PUC da Consolação na Rua Marquês de Paranaguá, 111".  
+
+Bom, entre a lista de palestrantes estão vários nomes conhecidos, como o Iraê Carvalho e Alexandre Gaigalas, ambos do Yahoo! Brasil, Thiago Avelino, que é um dos fundadores da Nodegrid, entre outros não menos importantes.  
+Olhem a grade no site para ver a lista completa: [http://www.sampajs.com/](http://www.sampajs.com/)  
+
+Quem estiver por São Paulo neste dia, vale a pena dar uma conferida no evento, que vai estar muito bom.
