@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Browsers | Jaydson Gomes]]></title>
+  <link href="http://jaydson.github.com/blog/categories/browsers/atom.xml" rel="self"/>
+  <link href="http://jaydson.github.com/"/>
+  <updated>2013-01-07T16:13:03-02:00</updated>
+  <id>http://jaydson.github.com/</id>
+  <author>
+    <name><![CDATA[Jaydson Gomes]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[BrowserID - Novidades]]></title>
+    <link href="http://jaydson.github.com/browserid-novidades/"/>
+    <updated>2011-09-22T01:02:41-03:00</updated>
+    <id>http://jaydson.github.com/browserid-novidades</id>
+    <content type="html"><![CDATA[<p>Já falei sobre o <a href="http://jaydson.org/mozilla-browserid-sistema-de-id-descentralizado">BrowserID</a> aqui anteriormente e hoje venho compartilhar uma novidade .<br/>
+Há algumas semanas, o Ben Adida (<a href="https://twitter.com/#!/benadida">https://twitter.com/#!/benadida</a> , <a href="http://benlog.com/">http://benlog.com/</a>) passou a ser o líder tecnológico na <a href="http://www.mozilla.org/">Mozilla</a> na parte de Indentidade e dados dos usuários.<br/>
+Mas quem é esse cara?<br/>
+Bom, eu ainda não o conhecia, mas lendo sobre seus projetos vi que com certeza o BrowserID vai longe.<br/>
+O Ben publicou varios projetos, todos baseados em autenticação, e 2 delas sobre autenticação via e-mail, assim como é a ideia principal do BrowserID.</p>
+
+<h2>Abaixo listo os 3 trabalhos do Ben:</h2>
+
+<p>EmID: Web Authentication by Email Address - <a href="http://assets.adida.net/research/w2sp2008-emid.pdf">http://assets.adida.net/research/w2sp2008-emid.pdf</a><br/>
+Lightweight Signatures for Email - <a href="http://assets.adida.net/research/lightweight-signatures-for-email.pdf">http://assets.adida.net/research/lightweight-signatures-for-email.pdf</a><br/>
+BeamAuth - <a href="http://assets.adida.net/research/beamauth-ccs2007.pdf">http://assets.adida.net/research/beamauth-ccs2007.pdf</a></p>
+
+<p>E agora um vídeo, onde o próprio Ben explica como o BrowserID funciona.<br/>
+Vale a pena dar uma olhada, e apostar nesta tecnologia!<br/>
+<div class="embed-video-container"><iframe src="http://www.youtube.com/embed/6x45Nt1fOMM "></iframe></div></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Mozilla BrowserID - Sistema  de ID descentralizado]]></title>
+    <link href="http://jaydson.github.com/mozilla-browserid-sistema-de-id-descentralizado/"/>
+    <updated>2011-07-22T03:13:18-03:00</updated>
+    <id>http://jaydson.github.com/mozilla-browserid-sistema-de-id-descentralizado</id>
+    <content type="html"><![CDATA[<p>A Mozilla está sempre desenvolvendo coisas muito legais, e hoje, navegando no <a href="http://hacks.mozilla.org">Mozilla Hacks</a> vi um post muito interessante sobre o <a href="https://browserid.org/"><strong>BrowserID</strong></a>.<br/>
+Segundo o site do projeto, o BrowserID fornece aos  usuários uma maneira mais segura e mais fácil de entrar nos sites que exigem algum tipo de autenticação.<br/>
+Já para desenvolvedores, o BrowserID oferece em poucas linhas de código uma maneira simples de autenticar um usuário.<br/>
+O objetivo é realmente esse, ser muito simples e seguro, e o mais legal, sem precisar utilizar senha.<br/>
+O modelo atual, e que estamos acostumados para se autenticar em um site, é normalmente atraves de um login(nome de usuário) e uma senha.<br/>
+Com o BrowserID o usuário só precisa confirmar o seu e-mail.<br/>
+Esse processo é feito utilizando o <a href="https://wiki.mozilla.org/Labs/Identity/VerifiedEmailProtocol">Verified E-mail Protocol</a>, que basicamente é um protocolo que define uma maneira de um usuário "provar" ao site que ele é dono de um determinado e-mail.<br/>
+A ideia é brilhante e simples.</p>
+
+<p>Abaixo, os pilares do BrowserID:   <br/>
+  * Fácil de usar<br/>
+  * Segurança<br/>
+  * Implementação Cross-browser<br/>
+  * Descentralizado<br/>
+  * Respeitar a privacidade do usuário</p>
+
+<p>Para finalizar, um vídeo explicativo:<br/>
+<div class="embed-video-container"><iframe src="http://www.youtube.com/embed/l0t9yDLAmFo "></iframe></div></p>
+
+<h2>Referências:</h2>
+
+<p><a href="http://hacks.mozilla.org/2011/07/introducing-browserid-easier-and-safer-authentication-on-the-web/">http://hacks.mozilla.org/2011/07/introducing-browserid-easier-and-safer-authentication-on-the-web/</a><br/>
+<a href="https://browserid.org/">https://browserid.org/</a><br/>
+<a href="http://www.pcmag.com/article2/0,2817,2388610,00.asp">http://www.pcmag.com/article2/0,2817,2388610,00.asp</a><br/>
+<a href="http://www.open-mike.org/entry/verified-email-protocol">http://www.open-mike.org/entry/verified-email-protocol</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Javascript - Problema com Evento Change]]></title>
+    <link href="http://jaydson.github.com/javascript-problema-com-evento-change/"/>
+    <updated>2009-10-13T22:58:42-03:00</updated>
+    <id>http://jaydson.github.com/javascript-problema-com-evento-change</id>
+    <content type="html"><![CDATA[<p>Last week I encountered a problem in Internet Explorer <strong><em>(Déjà vu)</em></strong>.
+The functionality we needed was very simple to implement:
+<strong>Check if the form was changed</strong>. That is, if the User is on the page and decides to just go out and form has changed, we needed to alert him.
+What I thought then was to use the event <a href="http://www.quirksmode.org/dom/events/change.html">change</a> of the <form>.
+Semana passada deparei-me com um problema no Internet Explorer <strong><em>(Déjà vu)</em></strong>.
+A funcionalidade que precisavamos implementar era bem simples:
+<strong>Verificar se o formulário foi alterado. </strong>Ou seja, se o usuário está na página e resolve simplesmente sair e o formulário foi alterado, precisavamos alerta-lo.
+O que me ocorreu na hora foi utilizar o Evento <a href="http://www.quirksmode.org/dom/events/change.html">change</a> do <form>.</p>
+
+<!-- more -->
+
+
+<p>I did the test in Firefox and everything went as planned. By changing the value of any element within the form the change event is fired.
+But... in our "friend" Internet Explorer?
+Surprise!
+It did not work. So I went searching to see why the problem.
+In this link  <a href="http://www.quirksmode.org/dom/events/change.html">http://www.quirksmode.org/dom/events/change.html</a> of QuirksMode is quite easy to understand.
+In Internet Explorer the change event is not fired when the form is changed.</p>
+
+<p><strong>Note:</strong> Realize that it is only in IE it happens. Below is a list of browsers that support the change event in the form:</p>
+
+<p>FF 2.0
+FF 3.0
+FF 3.1b2
+Saf 3.0 Win
+Saf 3.1 Win
+iPhone 3G
+Chrome 1.0
+Opera 9.62
+Opera 10a
+Konqueror 3.5.7</p>
+
+<p>Font: QuirksMode. <strong>Another Note:</strong> In IE the change event is not fired in the window and document objects. In all the above list does.
+For Internet Explorer the only element that triggers the change event properly is the <input>.</p>
+
+<p><strong>Solution</strong><strong>:</strong>
+As the project was using jQuery was simple to solve another problem in IE. Follow the code below:</p>
+
+<p>[javascript]</p>
+
+<p>$(&quot;form <em>&quot;).bind(&quot;change&quot;, function(){ /</em> Code here*/});</p>
+
+<p>[/javascript]</p>
+
+<p>The above code loops over all elements of form and atach the change event for each of them.</p>
+
+<p>Well, that's it.
+Working and learning.</p>
+
+<hr />
+
+<p>FF 2.0
+FF 3.0
+FF 3.1b2
+Saf 3.0 Win
+Saf 3.1 Win
+iPhone 3G
+Chrome 1.0
+Opera 9.62
+Opera 10a
+Konqueror 3.5.7</p>
+
+<p>Fiz o teste no Firefox e tudo ocorreu como o previsto. Ao alterar o valor de qualquer elemento dentro do formulário o evento change é disparado.
+Mas... e no nosso "amigo" Internet Explorer?
+Surpresa!
+Não funcionou. Então fui pesquisar para ver o porque do problema.
+Neste link  <a href="http://www.quirksmode.org/dom/events/change.html">http://www.quirksmode.org/dom/events/change.html</a> do QuirksMode fica bem fácil de entender.
+O que acontece é que no Internet Explorer o evento change não é disparado ao alterar um formulário.</p>
+
+<p><strong>Nota:</strong> Percebam que é somente no IE que isso acontece. Abaixo segue a lista de Browsers que suportam o evento change no Formulário:</p>
+
+<p>FF 2.0
+FF 3.0
+FF 3.1b2
+Saf 3.0 Win
+Saf 3.1 Win
+iPhone 3G
+Chrome 1.0
+Opera 9.62
+Opera 10a
+Konqueror 3.5.7</p>
+
+<p>Fonte: QuirksMode. <strong>Outra Nota:</strong> No IE o evento change também não é disparado nos objetos window e document. Em todos da lista acima sim.
+Para o Internet Explorer o único elemento que dispara o evento change corretamente  é o <input>.</p>
+
+<p><strong>Solução:</strong>
+Como o projeto estava utilizando jQuery foi simples resolver mais um problema no IE. Segue o código abaixo:</p>
+
+<p>[javascript]</p>
+
+<p>$("form <em>").bind("change", function(){ /</em> Código aqui*/});</p>
+
+<p>[/javascript]</p>
+
+<p>O código acima varre todos elementos do formulário e "atacha" o evento change para cada um deles.</p>
+
+<p>Bom, é isso.
+Trabalhando e aprendendo.</p>
+
+<hr />
+
+<p>FF 2.0
+FF 3.0
+FF 3.1b2
+Saf 3.0 Win
+Saf 3.1 Win
+iPhone 3G
+Chrome 1.0
+Opera 9.62
+Opera 10a
+Konqueror 3.5.7</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Avaliação Firefox 3.5]]></title>
+    <link href="http://jaydson.github.com/avaliacao-firefox-3-5/"/>
+    <updated>2009-07-14T19:52:45-03:00</updated>
+    <id>http://jaydson.github.com/avaliacao-firefox-3-5</id>
+    <content type="html"><![CDATA[<p>To complement the last post I talked about the <a href="http://jaydson.org/json-nativo-firefox-3-5/">native JSON support in Firefox 3.5</a> i decided to share a small and brief assessment of the agency where I work.
+Let's go:</p>
+
+<p><strong>Stability of the application</strong><strong>:</strong>
+As in their latest versions Firefox 3.5 remains stable.
+During my tests there was no crash or data loss to match any type, even being tested to its extreme *.
+* Extreme: A lot of open tabs (40 tabs active) between these flaps were heavy applications that consume the high way the resources of the browser (Gmail, Meebo, Application performance testing JavaScript)
+Para complementar o último post que falei sobre o <a href="http://jaydson.org/json-nativo-firefox-3-5/">suporte nativo ao JSON no Firefox 3.5</a> resolvi compartilhar uma pequena e resumida avaliação que fiz  na Agência onde trabalho.
+Vamos lá:</p>
+
+<p><strong> Estabilidade da aplicação:</strong>
+Como em suas últimas versões o Firefox 3.5 continua sendo estável.
+Durante meus testes não houve travamento, ou perda de dados de nehum tipo, mesmo sendo testado ao seu extremo<em>.
+</em>Extremo: Muitas abas abertas(40 abas ativas), entre estas abas estavam aplicações pesadas que consomem de maneira elevada os recursos do Browser(Gmail, Meebo, Aplicações de teste de performance Javascript)</p>
+
+<!-- more -->
+
+
+<p><strong>Performance in workstations</strong><strong>:</strong>
+The performance in Firefox 3.5 had a significant and noticeable.
+Much of this increase is due to the new Javascript engine (TraceMonkey).
+The HTML rendering is much faster than previous versions.</p>
+
+<p><strong>Improvements</strong><strong> and new features:</strong>
+In my view, the best improvements are support for HTML 5, Canvas new features and new Javascript engine.
+<em><strong> HTML 5</strong> - All modern browser already supports HTML 5 including IE-8.
+Although not yet been "liberated" by the W3C, is interesting for developers already familiar and to explore what can be done in a not too distant future.
+</em><strong> Canvas</strong> - Were implemented new features such as: support HTML 5 text API, Canvas Shadow effect and createImageData method.
+<strong>* New Javascript </strong><strong>Engine </strong>: In my tests was quite noticeable how quickly the new engine processes the Javascript code. Still not as fast as Chrome and Safari browsers, but this is the fastest version of Firefox.</p>
+
+<p><strong>- New Javascript </strong><strong>engine </strong>
+<strong> - native  JSON support
+- Web Work Threads
+- HTML 5</strong><strong> Support</strong>
+<strong> - New features CSS support
+- New DOM features</strong>
+<strong> - New </strong><strong><strong><strong>Javascript </strong></strong>features</strong>
+<strong> - New network </strong><strong>features</strong>
+<strong> - New canvas </strong><strong>features</strong>
+<strong> - New SVG </strong><strong>features</strong></p>
+
+<p>More details:
+<strong>Developers</strong> - <a href="https://developer.mozilla.org/En/Firefox_3.5_for_developers">https://developer.mozilla.org/En/Firefox_3.5_for_developers</a>
+<strong>U</strong><strong>sers</strong>: <a href="http://pt-br.www.mozilla.com/pt-BR/firefox/3.5/releasenotes/">http://pt-br.www.mozilla.com/pt-BR/firefox/3.5/releasenotes/</a></p>
+
+<ul>
+<li>On the page for users is a topic about problems that Firefox 3.5 has.
+Before installing the new version, it is advisable to read this topic.</li>
+</ul>
+
+
+<p><strong>Application Compatibility:</strong>
+The vast majority of the extensions work in Firefox 3.5, but some still do not support.
+For my tests, the key to the development already have support, such as Firebug, WebDeveloper, JSView.</p>
+
+<p>Thats it.</p>
+
+<p>I suspect to talk about Firefox ... because I am a passionate user, but I was pretty critical in the evaluation.</p>
+
+<p><strong>Performance em suas estações de trabalho:</strong>
+A performance no Firefox 3.5 teve um aumento significativo e perceptível.
+Muito desse aumento é devido ao novo motor Javascript(TraceMonkey).
+A renderização HTML está bem mais rápida que em versões anteriores.</p>
+
+<p><strong>Melhorias e novas features:</strong>
+No meu ponto de vista, as melhores melhorias são o suporte a HTML 5, novos recursos de Canvas e o novo motor Javascript.
+<em><strong> HTML 5</strong> - Todos os Browser modernos já estão suportando o HTML 5 inclusive o IE-8.
+Apesar de ainda não ter sido "liberado" pela W3C, é interessante para os desenvolvedores já se familiarizarem e estudarem o que poderá ser feito em um futuro não muito distante.
+</em><strong> Canvas</strong> - Foram implantadas novas funcionalidades, como:  suporte  HTML 5 text API, efeito Canvas Shadow e o método createImageData().
+<strong>* Novo Motor Javascript</strong>: Em meus testes foi bem perceptivel a velocidade em que a nova engine processa o código Javascript. Ainda não é tão rápido quanto os navegadores Chrome e Safari, mas esta é a   versão mais rápida do Firefox.</p>
+
+<p><strong>- Novo motor Javascript
+- Suporte nativo a JSON
+- Web Work Threads
+- Suporte HTML 5
+- Suporte a novas features CSS
+- Novos recursos DOM
+- Novos recursos Javascript
+- Novos recursos de rede
+- Novos recursos de canvas
+- Novos recursos SVG</strong></p>
+
+<p>Para maiores detalhes:
+<strong>Desenvolvedores</strong> - <a href="https://developer.mozilla.org/En/Firefox_3.5_for_developers">https://developer.mozilla.org/En/Firefox_3.5_for_developers</a>
+<strong>U</strong><strong>suários</strong>: <a href="http://pt-br.www.mozilla.com/pt-BR/firefox/3.5/releasenotes/">http://pt-br.www.mozilla.com/pt-BR/firefox/3.5/releasenotes/</a></p>
+
+<p>OBS: Na página para Usuários há um tópico sobre problemas que o Firefox 3.5 possui.
+Antes de instalar a nova versão, o aconselhavel é ler este tópico.</p>
+
+<p><strong>Compatibilidade com aplicativos:</strong>
+A grande maioria das extensões funcionam no Firefox 3.5, porém algumas ainda não possuem suporte.
+Pelos meus testes, as principais para o desenvolvimento já possuem suporte, tais como: Firebug, WebDeveloper, JSView.</p>
+
+<p>É isso.</p>
+
+<p>Sou suspeito para falar de Firefox...porque sou um usuário apaixonado pela ferramenta, mas fui bem crítico na avaliação.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Trocar User Agent do Firefox]]></title>
+    <link href="http://jaydson.github.com/trocar-user-agent-firefox/"/>
+    <updated>2009-05-13T22:31:31-03:00</updated>
+    <id>http://jaydson.github.com/trocar-user-agent-firefox</id>
+    <content type="html"><![CDATA[<p>Porque?
+Bom, hoje no trabalho eu precisei testar uma rotina que basicamente identificava se o usuário estava em um PC ou em um iPhone.
+No meu caso específico era com .NET que eu ia fazer essa verificação, mas com PHP ou Javascript também conseguimos identificar o User Agent.
+Blza. Verificação feita. Mas e iPhone pra testar? Pois é, não tinha nenhum.
+Pesquisando acabei achando esse site: <a href="http://www.yes-no-cancel.co.uk/2008/01/03/imitating-the-iphone-user-agent-in-firefox/"> http://www.yes-no-cancel.co.uk/2008/01/03/imitating-the-iphone-user-agent-in-firefox/</a>
+"Imitating the iPhone User Agent in Firefox".
+Isso mesmo!!!
+Um Add-on muito útil para o Firefox que troca o User Agent.
+Ai foi barbada.
+Para baixar o Add-on -> <a href="https://addons.mozilla.org/en-US/firefox/addon/59">User Agent Switcher add-on for Firefox</a></p>
+
+<p>A string do User Agent iPhone:</p>
+
+<p>Mozilla/5.0 (iPhone; U; CPU like Mac OS X; en) AppleWebKit/420.1 (KHTML, like Gecko) Version/3.0 Mobile/3B48b Safari/419.3</p>
+
+<p>É só adicionar e ta pronto.</p>
+
+<p>Só não esqueçam de voltar para User Agent default depois do teste.</p>
+]]></content>
+  </entry>
+  
+</feed>

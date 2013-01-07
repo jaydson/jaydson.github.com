@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Flip! Jquery Plugin - Jaydson Gomes</title>
+  <meta name="author" content="Jaydson Gomes">
+
+  
+  <meta name="description" content="Mais um da série de plugins testados e avaliados.
+Particularmente eu achei esse plugin muito legal!
+Ele aplica um efeito de Flip em um elemento HTML &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://jaydson.github.com/flip-jquery-plugin/">
+  <link href="/favicon.png" rel="icon">
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Jaydson Gomes" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Jaydson Gomes</a></h1>
+  
+    <h2>HTML5 | JavaScript</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:jaydson.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Flip! Jquery Plugin</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-05-09T22:34:03-03:00" pubdate data-updated="true">May 9<span>th</span>, 2009</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Mais um da série de plugins testados e avaliados.
+Particularmente eu achei esse plugin muito legal!
+Ele aplica um efeito de Flip em um elemento HTML. Ai vai da imaginação e criatividade do desenvolvedor para implementa-lo em seu sistema.
+A idéia é aquela básica do Jquery, pouquissímas linhas, e um efeito impressionante.
+Estou esperando o momento certo e a idéia surgir para usa-lo em algum sistema&#8230;</p>
+
+<p><strong>Vamos ver como fica o código:
+</strong></p>
+
+<p>[javascript]</p>
+
+<script type="text/javascript">
+     $(document).ready(function () {
+         $(".home").click(function () {
+              $("#flipBox").flip({
+                   direction: 'bt',
+                  color: 'blue',
+                  speed: 400,
+                  content: ""
+            });
+       });
+      $(".home").trigger("click");
+});
+</script>
+
+
+<p>[/javascript]</p>
+
+<p>Simples não?</p>
+
+<p>No click do elemento com a classe &#8220;home&#8221;  invocamos o método <strong>flip()</strong> que aplica esse efeito no elemento com Id &#8220;flipBox&#8221;.
+Obs:  $(&#8220;.home&#8221;).trigger(&#8220;click&#8221;) só faz com que a animação aconteça no load da página.
+Aqueles parâmetros são interessantes:</p>
+
+<ul>
+<li><p><strong>direction</strong>: Especifica em que direção vai ser o giro. Os valores suportados são &#8216;tb&#8217;, &#8216;bt&#8217;, &#8216;lr&#8217;, &#8216;rl&#8217;</p></li>
+<li><p><strong>color:</strong> Define que cor de fundo o elemento terá após o giro.</p></li>
+<li><p><strong>speed</strong>: A velocidade da animação</p></li>
+<li><p><strong>content</strong>: O conteúdo que esse elemento terá após o giro.</p></li>
+</ul>
+
+
+<p>Fora essas opções, ainda existem funções que podemos executar em algum evento do giro, como por exemplo:</p>
+
+<ul>
+<li><p><strong>onBefore</strong>:  Essa função é executada antes da animação começar.</p></li>
+<li><p><strong>onAnimation</strong>: Essa função é executada na metade da animação.</p></li>
+<li><p><strong>onEnd</strong>: Essa função é executada quando a animação termina.</p></li>
+</ul>
+
+
+<p>Com esses eventos e opções podemos fazer muita coisa. A opção <strong>content</strong> por exemplo permite que seja passado um conteúdo que será exibido no elemento após a animação, então nada nos impede de carregar um conteúdo com Ajax e jogar dentro desse elemento. O céu é o limite.</p>
+
+<p><strong>Vejam o resultado:</strong></p>
+
+<p><strong>
+</strong></p>
+
+<p><strong>Minha Avaliação: Nota 10.0</strong>
+<strong>Compatibilidade: Firefox 2.0+, IE 6+, Safari 3.0+, Chrome 2.0+,</strong><strong>Opera</strong>****</p>
+
+<p><strong>Site oficial do Plugin:</strong><a href="http://lab.smashup.it/flip/"> http://lab.smashup.it/flip/</a></p>
+
+<p>[caption id=&#8221;attachment_114&#8221; align=&#8221;alignnone&#8221; width=&#8221;60&#8221; caption=&#8221;Download&#8221;]<a href="http://jaydson.org/code/jquery/plugins/flip/flip.rar"><img src="http://jaydson-org.web102.redehost.com.br/assets/hd_download1.jpg" alt="Download" /></a>[/caption]</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Jaydson Gomes</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-05-09T22:34:03-03:00" pubdate data-updated="true">May 9<span>th</span>, 2009</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/jquery-plugins/'>Jquery-Plugins</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.github.com/flip-jquery-plugin/" data-via="" data-counturl="http://jaydson.github.com/flip-jquery-plugin/" >Tweet</a>
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/autocomplete-jquery-plugin/" title="Previous Post: Autocomplete - Jquery Plugin">&laquo; Autocomplete - Jquery Plugin</a>
+      
+      
+        <a class="basic-alignment right" href="/trocar-user-agent-firefox/" title="Next Post: Trocar User Agent do Firefox">Trocar User Agent do Firefox &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/analytics-do-blog-em-2012/">Analytics do Blog em 2012</a>
+      </li>
+    
+      <li class="post">
+        <a href="/retrospectiva-2012/">Retrospectiva 2012</a>
+      </li>
+    
+      <li class="post">
+        <a href="/eati-2012-em-frederico-westphalen/">EATI 2012 em Frederico Westphalen</a>
+      </li>
+    
+      <li class="post">
+        <a href="/w3c-webbr-2102/">W3C webbr 2102</a>
+      </li>
+    
+      <li class="post">
+        <a href="/javascript-o-guia-definitivo/">JavaScript: O Guia definitivo</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/jaydson">@jaydson</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'jaydson',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Jaydson Gomes -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+<script type="text/javascript" src="/javascripts/jaydson.js"></script>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'jaydson';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://jaydson.github.com/flip-jquery-plugin/';
+        var disqus_url = 'http://jaydson.github.com/flip-jquery-plugin/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

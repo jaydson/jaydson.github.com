@@ -1,0 +1,574 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Jaydson Gomes</title>
+  <meta name="author" content="Jaydson Gomes">
+
+  
+  <meta name="description" content="Bom, instalar PHP não é nem um mistério&#8230;
+Mas enfrentei um pequeno problema ao instalar a nova versão do PHP(5.2.8).
+O PHP funcionava &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://jaydson.github.com/blog/page/12/">
+  <link href="/favicon.png" rel="icon">
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Jaydson Gomes" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Jaydson Gomes</a></h1>
+  
+    <h2>HTML5 | JavaScript</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:jaydson.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/php-problema-ao-carregar-a-dll-php_pgsqldll/">PHP - Problema Ao Carregar a DLL php_pgsql.dll</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-05-04T11:04:04-03:00" pubdate data-updated="true">May 4<span>th</span>, 2009</time>
+        
+         | <a href="/php-problema-ao-carregar-a-dll-php_pgsqldll/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Bom, instalar PHP não é nem um mistério&#8230;
+Mas enfrentei um pequeno problema ao instalar a nova versão do PHP(5.2.8).
+O PHP funcionava normalmente, mas eu não conseguia conectar com o PostgreSq.
+O erro:
+<strong>Call to undefined function pg_connect() </strong>
+Este erro significa que, ou a dll do postgres não foi carregada, ou não foi habilitada no PHP.INI.
+Eu já havia habilitado isto no INI (descomentando a linha = extension=php_pgsql.dll), e mesmo assim o erro permanecia.
+Pesquisando, descobri que o problema é a DLL desta versão do PHP que está com problema.
+Para resolver baixei a versão do PHP 2.2.5, e substitui a DLL do Postgre&#8230;então tudo funcionou normalmente&#8230;.</p>
+
+<p>O/
+:)</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/richblocks-um-framework-para-implantar-interfaces-ria-em-sistemas-web/">RichBlocks - Um Framework Para Implantar Interfaces RIA Em Sistemas Web</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-05-04T10:51:47-03:00" pubdate data-updated="true">May 4<span>th</span>, 2009</time>
+        
+         | <a href="/richblocks-um-framework-para-implantar-interfaces-ria-em-sistemas-web/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>RichBlocks - Este foi o meu projeto de conclusão de curso na Faculdade.
+A idéia do Framework é facilitar a vida do desenvolvedor na hora de implantar interfaces <a href="http://jaydson.blogspot.com/2008/11/ria-aplicaes-ricas-para-internet.html">RIA</a> em sistemas Web.
+Meu primeiro contato com Aplicações RIA foi há alguns anos atrás, quando o meu primo e também desenvolvedor Web <a href="http://thewebmind.blogspot.com/">Felipe</a> me apresentou uma Aplicação que estava desenvolvendo que na época era totalmente inovadora, e eu não tinha visto nada igual.
+Era uma aplicação Web onde a interface era semelhante a qualquer programa Desktop, haviam janelas e menus, e toda esta interface era feita em Javascript.
+Após estudar bastante sobre o assunto e ser insentivado pelo meu professor <a href="http://prestesmachado.com.br/blog/">Rodrigo Prestes</a> resolvi abordar esse assunto no meu TCC.
+Achei então que desenvolver um Framework seria uma boa. Visto que a maioria das ferramentas existentes são muito complexas, criei uma estrutura simples de arquivos XML bastando edita-los para que a interface funcione.
+O Projeto é OpenSource, e esta lá no Google Code.
+Projeto no Google-> <a href="http://code.google.com/p/richblocks/">code.google.com/p/richblocks</a>
+Aplicação feita usando o Framework-><a href="http://jaydson.org/code/richblocks/">http://jaydson.org/code/richblocks/
+</a> Artigo-><a href="http://jaydson.org/docs/richblocks.pdf">http://jaydson.org/docs/richblocks.pdf</a>RichBlocks - Este foi o meu projeto de conclusão de curso na Faculdade.
+A idéia do Framework é facilitar a vida do desenvolvedor na hora de implantar interfaces <a href="http://jaydson.blogspot.com/2008/11/ria-aplicaes-ricas-para-internet.html">RIA</a> em sistemas Web.
+Meu primeiro contato com Aplicações RIA foi há alguns anos atrás, quando o meu primo e também desenvolvedor Web <a href="http://felipenascimento.org/">Felipe</a> me apresentou uma Aplicação que estava desenvolvendo que na época era totalmente inovadora, e eu não tinha visto nada igual.
+Era uma aplicação Web onde a interface era semelhante a qualquer programa Desktop, haviam janelas e menus, e toda esta interface era feita em Javascript.
+Após estudar bastante sobre o assunto e ser insentivado pelo meu professor <a href="http://prestesmachado.com.br/blog/">Rodrigo Prestes</a> resolvi abordar esse assunto no meu TCC.
+Achei então que desenvolver um Framework seria uma boa. Visto que a maioria das ferramentas existentes são muito complexas, criei uma estrutura simples de arquivos XML bastando edita-los para que a interface funcione.
+O Projeto é OpenSource, e esta lá no Google Code.
+Projeto no Google-> <a href="http://code.google.com/p/richblocks/">code.google.com/p/richblocks</a>
+Aplicação feita usando o Framework-><a href="http://jaydson.org/code/richblocks/">http://jaydson.org/code/richblocks/
+</a> Artigo-><a href="http://jaydson.org/docs/richblocks.pdf">http://jaydson.org/docs/richblocks.pdf</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/php-classes/">PHP Classes</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-05-04T10:45:34-03:00" pubdate data-updated="true">May 4<span>th</span>, 2009</time>
+        
+         | <a href="/php-classes/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Vai ai a dica para quem trabalha com PHP e ainda não conhece.
+O <a href="http://www.phpclasses.org/">PHP Classes</a> é um repositório de classes PHP, onde desenvolvedores do mundo inteiro publicam suas classes.
+Tem uma porrada de coisa lá, algumas bem peculiares, mas muita coisa útil e interessante.
+O legal é que podemos nos cadatrar lá para receber e-mails de novas classes publicadas.
+O portal também oferece outros serviços além de classes PHP, vale a pena dar uma olhada lá.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/ria-aplicacoes-ricas-para-internet/">RIA - Aplicações Ricas Para Internet</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-05-03T12:07:08-03:00" pubdate data-updated="true">May 3<span>rd</span>, 2009</time>
+        
+         | <a href="/ria-aplicacoes-ricas-para-internet/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Um assunto que está em alta ultimamente na área de desenvolvimento Web são as RIAS, ou aportuguesando, Aplicações Ricas para Internet. Essas aplicações se assemelham as aplicações Desktop, isto é, rodam na plataforma Web, mas possuem funcionalidades semelhantes aos programas compilados. Segundo o artigo publicado por Erko Bridee de Almeida, que é moderador do Portal Java(<a href="http://www.portaljava.com/">www.portaljava.com</a>) e atua como analista e desenvolvedor Java na Wise Systems que trata sobre RIA e Web 2.0, RIA é mais do que uma tecnologia é um conceito.
+RIA faz com que os usuários tenham uma experiência mais agradável e eficiente no uso das aplicações, e isso é possível através do uso da internet e das tecnologias disponíveis. &#8220;RIA é a combinação da interatividade e funcionalidades do Desktop com a abrangência e flexibilidade da Web&#8221;. Atualmente existem diversas tecnologias e ferramentas disponíveis que auxiliam no desenvolvimento de RIA&#8217;s, entre elas:
+Ferramentas da Adobe (inclusive foi a Macromedia/Adobe que inventou este termo &#8220;RIA&#8221; em 2002) como Flash, Flex e Air.
+Da Microsoft existe o Silverlight. Na área de Java tem o JavaFX. OpenLazlo da Lazlo Systems e Frameworks baseados em Ajax como o Google Web ToolKit.
+Meu trabalho de conclusão de curso abordou exatamente este assunto, e acabei desenvolvendo um Framework para implantar interfaces RIA em sistemas Web(em um outro Post eu dou mais detalhes sobre isto).
+O que acho é que temos tecnologia suficiente hoje para desenvolver aplicações Web bem diferentes e mais ricas do que as tradicionais, e consequentemente caimos em RIA.
+Como usuário do Meebo(<a href="http://www.meebo.com/">www.meebo.com</a>), posso dizer que essa é uma excelente aplicação web RIA, onde conseguimos conversar através de mensagens instantâneas com a mesma facilidade que o MSN ou algum outro software Desktop.
+Bom essa foi uma pequena introdução sobre o assunto, em breve pretendo colocar mais conteúdo.
+Para quem se interessou, fique à vontade para entrar em contato. &#8230; Saber compartilhar o conhecimento é evoluir.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/campanha-atualize-o-seu-navegador/">Campanha Atualize O Seu Navegador</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-05-03T12:02:18-03:00" pubdate data-updated="true">May 3<span>rd</span>, 2009</time>
+        
+         | <a href="/campanha-atualize-o-seu-navegador/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Achei essa campanha hoje e estou compartilhando a idéia.Tudo é válido para fazer com que o IE 6 saia de circulação.
+<strong>Campanha para acabar com o uso de browsers obsoletos</strong>
+Versões antigas e desatualizadas de navegadores têm problemas de segurança e não
+acompanham os novos padrões de desenvolvimento para a Internet. O Atualize seu navegador faz parte de um movimento internacional para eliminar os navegadores obsoletos do mercado.</p>
+
+<p>Por que devo atualizar?
+Navegadores antigos como o Internet Explorer 6 (lançado em 2001) não exibem sites dentro dos padrões web, são repletos de bugs, não oferecem as funcionalidades dos browsers atuais como navegação por abas ou gerenciador de downloads e estão submetidos a sérios problemas de segurança como vírus e malware.</p>
+
+<p>Ainda comprometem a qualidade da exibição de sites e limitam a criação de desenvolvedores, que precisam perder tempo adaptando o site para rodar nesses navegadores obsoletos.</p>
+
+<p>Link Original da campanha:
+<a href="http://updateyourbrowser.net/">http://updateyourbrowser.net/</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/internet-explorer-8/">Internet Explorer 8</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-05-03T12:00:09-03:00" pubdate data-updated="true">May 3<span>rd</span>, 2009</time>
+        
+         | <a href="/internet-explorer-8/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Bom, a Microsoft acabou de lançar o Internet Explorer 8, e eu como desenvolvedor Web não posso deixar de testa-lo.
+Realmente notei uma certa melhora em relação as outras versões. Mas isso não é uma vantagem, visto que as outras versões do navegador da MS não são nada boas e pouco confiáveis.
+Um dos princpais problemas que vejo é a popularidade do Internet Explorer 6, que ainda tem 20% do mercado.Mesmo ele sendo totalmente inseguro, cheio de falhas, fora dos padrões, etc&#8230;
+O que mais me estressa no IE 6 é a falta de um console de erros, e aquelas mensagens inuteis como: &#8220;Objeto esperado&#8221;, &#8220;Erro inesperado na linha 0&#8221;,&#8221;Falha em tempo de execução&#8221;.
+Mas ainda não podemos deixar de desenvolver alguma coisa que não funcione no IE 6. Muitas empresas ainda usam, e acredito que alguns usuários domésticos também.
+Mas tudo isso é uma coisa boa. O mercado de Browsers está aquecido, a MS está empenhada em retomar o seu posto, a Mozilla esta cada vez mais evoluindo o Firefox, o Google vem comendo pelas beiradas, e quem ganha com isso somos nós.
+Quanto mais concorrência existir, mais opções boas vamos ter.
+Voltando ao IE8, vi que ele possui uma ferramenta para desenvolvedores que a primeira vista se asseme-lha com o Frebug, parece ser bem boa, tem recursos de Console, exibe os Javascripts carregados, os estilos definidos, entre outras coisas.
+Bom, ta ai o recado.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/projeto-php-counter/">Projeto PHP Counter</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-05-03T11:36:50-03:00" pubdate data-updated="true">May 3<span>rd</span>, 2009</time>
+        
+         | <a href="/projeto-php-counter/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Segundo o site <a href="http://www.phpcounter.org/">http://www.phpcounter.org</a> o objetivo do projeto é ser uma referência para o mercado PHP mundial, fornecendo dados estatísticos que propiciarão a análise e evolução do mercado através da atuação em conjunto com grupos de usuários, empresas e profissionais.</p>
+
+<p>Periodicamente serão realizados censos buscando que os profissionais façam seus cadastros ou os atualizem para que os dados sempre mostrem a realidade atual. Disponibilizaremos ferramentas para que os grupos de usuários possam ter acesso aos dados.</p>
+
+<p>É importante frisar que em nenhum momento do projeto os dados preenchidos pelos usuários serão atrelados à qualquer forma de identificação. Informações como nome, número de registro, e-mail ou qualquer outra forma de identificação não serão disponibilizados para visualização nos resultados do censo.</p>
+
+<p>O lançamento oficial será no <a href="http://www.phpconf.com.br/">PHP Conference Brasil &#8216;09.</a></p>
+
+<p>Este projeto com certeza é uma grande iniciativa, todos que trabalham com PHP devem dar sua contribuição. Para participar é simples:
+Preencha o <a href="http://www.phpcounter.org/censo.html">formulário</a> e pronto.</p>
+
+<p>O número de registros hoje (03/05/2009) no projeto já chegou em 500.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/mind/">Mind</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-05-02T13:11:41-03:00" pubdate data-updated="true">May 2<span>nd</span>, 2009</time>
+        
+         | <a href="/mind/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Teste MInd.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/blog/page/11/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/analytics-do-blog-em-2012/">Analytics do Blog em 2012</a>
+      </li>
+    
+      <li class="post">
+        <a href="/retrospectiva-2012/">Retrospectiva 2012</a>
+      </li>
+    
+      <li class="post">
+        <a href="/eati-2012-em-frederico-westphalen/">EATI 2012 em Frederico Westphalen</a>
+      </li>
+    
+      <li class="post">
+        <a href="/w3c-webbr-2102/">W3C webbr 2102</a>
+      </li>
+    
+      <li class="post">
+        <a href="/javascript-o-guia-definitivo/">JavaScript: O Guia definitivo</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/jaydson">@jaydson</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'jaydson',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Jaydson Gomes -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+<script type="text/javascript" src="/javascripts/jaydson.js"></script>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'jaydson';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

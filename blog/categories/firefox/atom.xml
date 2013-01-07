@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Firefox | Jaydson Gomes]]></title>
+  <link href="http://jaydson.github.com/blog/categories/firefox/atom.xml" rel="self"/>
+  <link href="http://jaydson.github.com/"/>
+  <updated>2013-01-07T16:13:03-02:00</updated>
+  <id>http://jaydson.github.com/</id>
+  <author>
+    <name><![CDATA[Jaydson Gomes]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Avaliação Firefox 3.5]]></title>
+    <link href="http://jaydson.github.com/avaliacao-firefox-3-5/"/>
+    <updated>2009-07-14T19:52:45-03:00</updated>
+    <id>http://jaydson.github.com/avaliacao-firefox-3-5</id>
+    <content type="html"><![CDATA[<p>To complement the last post I talked about the <a href="http://jaydson.org/json-nativo-firefox-3-5/">native JSON support in Firefox 3.5</a> i decided to share a small and brief assessment of the agency where I work.
+Let's go:</p>
+
+<p><strong>Stability of the application</strong><strong>:</strong>
+As in their latest versions Firefox 3.5 remains stable.
+During my tests there was no crash or data loss to match any type, even being tested to its extreme *.
+* Extreme: A lot of open tabs (40 tabs active) between these flaps were heavy applications that consume the high way the resources of the browser (Gmail, Meebo, Application performance testing JavaScript)
+Para complementar o último post que falei sobre o <a href="http://jaydson.org/json-nativo-firefox-3-5/">suporte nativo ao JSON no Firefox 3.5</a> resolvi compartilhar uma pequena e resumida avaliação que fiz  na Agência onde trabalho.
+Vamos lá:</p>
+
+<p><strong> Estabilidade da aplicação:</strong>
+Como em suas últimas versões o Firefox 3.5 continua sendo estável.
+Durante meus testes não houve travamento, ou perda de dados de nehum tipo, mesmo sendo testado ao seu extremo<em>.
+</em>Extremo: Muitas abas abertas(40 abas ativas), entre estas abas estavam aplicações pesadas que consomem de maneira elevada os recursos do Browser(Gmail, Meebo, Aplicações de teste de performance Javascript)</p>
+
+<!-- more -->
+
+
+<p><strong>Performance in workstations</strong><strong>:</strong>
+The performance in Firefox 3.5 had a significant and noticeable.
+Much of this increase is due to the new Javascript engine (TraceMonkey).
+The HTML rendering is much faster than previous versions.</p>
+
+<p><strong>Improvements</strong><strong> and new features:</strong>
+In my view, the best improvements are support for HTML 5, Canvas new features and new Javascript engine.
+<em><strong> HTML 5</strong> - All modern browser already supports HTML 5 including IE-8.
+Although not yet been "liberated" by the W3C, is interesting for developers already familiar and to explore what can be done in a not too distant future.
+</em><strong> Canvas</strong> - Were implemented new features such as: support HTML 5 text API, Canvas Shadow effect and createImageData method.
+<strong>* New Javascript </strong><strong>Engine </strong>: In my tests was quite noticeable how quickly the new engine processes the Javascript code. Still not as fast as Chrome and Safari browsers, but this is the fastest version of Firefox.</p>
+
+<p><strong>- New Javascript </strong><strong>engine </strong>
+<strong> - native  JSON support
+- Web Work Threads
+- HTML 5</strong><strong> Support</strong>
+<strong> - New features CSS support
+- New DOM features</strong>
+<strong> - New </strong><strong><strong><strong>Javascript </strong></strong>features</strong>
+<strong> - New network </strong><strong>features</strong>
+<strong> - New canvas </strong><strong>features</strong>
+<strong> - New SVG </strong><strong>features</strong></p>
+
+<p>More details:
+<strong>Developers</strong> - <a href="https://developer.mozilla.org/En/Firefox_3.5_for_developers">https://developer.mozilla.org/En/Firefox_3.5_for_developers</a>
+<strong>U</strong><strong>sers</strong>: <a href="http://pt-br.www.mozilla.com/pt-BR/firefox/3.5/releasenotes/">http://pt-br.www.mozilla.com/pt-BR/firefox/3.5/releasenotes/</a></p>
+
+<ul>
+<li>On the page for users is a topic about problems that Firefox 3.5 has.
+Before installing the new version, it is advisable to read this topic.</li>
+</ul>
+
+
+<p><strong>Application Compatibility:</strong>
+The vast majority of the extensions work in Firefox 3.5, but some still do not support.
+For my tests, the key to the development already have support, such as Firebug, WebDeveloper, JSView.</p>
+
+<p>Thats it.</p>
+
+<p>I suspect to talk about Firefox ... because I am a passionate user, but I was pretty critical in the evaluation.</p>
+
+<p><strong>Performance em suas estações de trabalho:</strong>
+A performance no Firefox 3.5 teve um aumento significativo e perceptível.
+Muito desse aumento é devido ao novo motor Javascript(TraceMonkey).
+A renderização HTML está bem mais rápida que em versões anteriores.</p>
+
+<p><strong>Melhorias e novas features:</strong>
+No meu ponto de vista, as melhores melhorias são o suporte a HTML 5, novos recursos de Canvas e o novo motor Javascript.
+<em><strong> HTML 5</strong> - Todos os Browser modernos já estão suportando o HTML 5 inclusive o IE-8.
+Apesar de ainda não ter sido "liberado" pela W3C, é interessante para os desenvolvedores já se familiarizarem e estudarem o que poderá ser feito em um futuro não muito distante.
+</em><strong> Canvas</strong> - Foram implantadas novas funcionalidades, como:  suporte  HTML 5 text API, efeito Canvas Shadow e o método createImageData().
+<strong>* Novo Motor Javascript</strong>: Em meus testes foi bem perceptivel a velocidade em que a nova engine processa o código Javascript. Ainda não é tão rápido quanto os navegadores Chrome e Safari, mas esta é a   versão mais rápida do Firefox.</p>
+
+<p><strong>- Novo motor Javascript
+- Suporte nativo a JSON
+- Web Work Threads
+- Suporte HTML 5
+- Suporte a novas features CSS
+- Novos recursos DOM
+- Novos recursos Javascript
+- Novos recursos de rede
+- Novos recursos de canvas
+- Novos recursos SVG</strong></p>
+
+<p>Para maiores detalhes:
+<strong>Desenvolvedores</strong> - <a href="https://developer.mozilla.org/En/Firefox_3.5_for_developers">https://developer.mozilla.org/En/Firefox_3.5_for_developers</a>
+<strong>U</strong><strong>suários</strong>: <a href="http://pt-br.www.mozilla.com/pt-BR/firefox/3.5/releasenotes/">http://pt-br.www.mozilla.com/pt-BR/firefox/3.5/releasenotes/</a></p>
+
+<p>OBS: Na página para Usuários há um tópico sobre problemas que o Firefox 3.5 possui.
+Antes de instalar a nova versão, o aconselhavel é ler este tópico.</p>
+
+<p><strong>Compatibilidade com aplicativos:</strong>
+A grande maioria das extensões funcionam no Firefox 3.5, porém algumas ainda não possuem suporte.
+Pelos meus testes, as principais para o desenvolvimento já possuem suporte, tais como: Firebug, WebDeveloper, JSView.</p>
+
+<p>É isso.</p>
+
+<p>Sou suspeito para falar de Firefox...porque sou um usuário apaixonado pela ferramenta, mas fui bem crítico na avaliação.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[JSON nativo Firefox 3.5]]></title>
+    <link href="http://jaydson.github.com/json-nativo-firefox-3-5/"/>
+    <updated>2009-07-12T19:04:10-03:00</updated>
+    <id>http://jaydson.github.com/json-nativo-firefox-3-5</id>
+    <content type="html"><![CDATA[<p>Much news and useful things for us developers in Firefox 3.5.
+New Javascript engine, HTML 5 support among many others. <a href="https://developer.mozilla.org/En/Firefox_3.5_for_developers">Click here </a>in case you have not seen (you should if you are developer).</p>
+
+<p>Although the native JSON already be since version 3.1, now it become clear.</p>
+
+<p>Well, i will not comment on what is JSON, because I have done this in another post, so if you do not know what is JSON (should if you are a developer) see my <a href="http://jaydson.org/json/">old post</a>, or better yet, access the <a href="http://json.org/">official page</a>.</p>
+
+<p>Muita coisa nova e útil para nós desenvolvedores no Firefox 3.5.
+Novo motor Javascript, suporte HTML 5 entre várias outras. <a href="https://developer.mozilla.org/En/Firefox_3.5_for_developers">Acessem aqui </a>caso ainda não tenham visto(deveriam caso sejam desenvolvedores).</p>
+
+<p>Apesar de o JSON já ser nativo desde a versão 3.1, agora é que isso ficou bem evidenciado.</p>
+
+<p>Bom, não vou comentar o que é JSON, até porque já fiz isto em outro post, então caso não saiba o que é JSON(deveria se é desenvolvedor) veja o meu <a href="http://jaydson.org/json/">post antigo</a>, ou melhor ainda, acesse a <a href="http://json.org/">página oficial</a>.</p>
+
+<!-- more -->
+
+
+<p><strong>What is native JSON in the browser?</strong>
+Well, it means that the developer does not need to use any extra library to parse a JSON object, and also do not need to use the native Javascript  <a href="http://www.w3schools.com/jsref/jsref_eval.asp">eval()</a> function to do that, what is desirable for insecurity of this function.</p>
+
+<p><strong>Benefits</strong>:
+Several.
+Firstly the ability to parse a JSON without using eval (). That's extremely useful because the eval () performs all the received string without doing any analysis, ie, if the string contains functions, these will be implemented.
+Therefore use native JSON is much safer, because functions are not supported. Is made an analyze in the string received and then the conversion is made only of the properties of the object.
+Another feature is this analysis in the string, if JSON is malformatted generate a parse error.
+And the benefit I like the most: <strong>Speed!</strong>
+Yes, JSON parse natively is very fast, even!
+How to prove it?
+Simple... Code!</p>
+
+<p>First I created a JSON file that I got the sample from the Mozilla blog where they explain about the use of the native JSON.
+This file is pretty large, has an array of <strong>2918 objects.
+</strong>I will not put the code here for obvious reasons ... but follow the link for those who have curiosity to see him: <a href="http://graphs-stage.mozilla.org/api/test">http://graphs-stage.mozilla.org/api/test</a></p>
+
+<p>Now for the javascript code using jQuery to do an Ajax request and get the contents of this file.</p>
+
+<p>[javascript]</p>
+
+<p>var json = $.ajax({
+url: "test.json",
+async: false
+}).responseText;</p>
+
+<p>[/javascript]</p>
+
+<p>This snippet of code shows that the variable json now has the contents of the file (the one with 2918 and large objects).</p>
+
+<p>Now we have the big String let transforms it into a JSON object.
+First using <strong>eval()</strong>:</p>
+
+<p>[javascript]</p>
+
+<p>var obj = eval('(' + json + ')');</p>
+
+<p>[/javascript]</p>
+
+<p>And now using native parser!!! O/</p>
+
+<p>[javascript]</p>
+
+<p>var obj = JSON.parse(json);</p>
+
+<p>[/javascript]</p>
+
+<p>For those who have used the JS library available in <a href="http://json.org">json.org</a> can see that the syntax is the same, the difference associated here is that we are working natively.
+Well, we know that native parser is more safe than eval(), but how to know about the speed?
+The <a href="http://getfirebug.com/">Firebug</a> hepl us.
+Lets see the code, first we measure the time in miliseconds with eval():</p>
+
+<p>[javascript]</p>
+
+<p>console.time("Eval");
+var obj = eval('(' + json + ')');
+console.timeEnd("Eval");</p>
+
+<p>[/javascript]</p>
+
+<p>For those who do not know (if you are a developer should), Firebug has an API that helps developers in several ways, discussed here is the function console.time (), which can measure time in milliseconds for a given instruction.</p>
+
+<p><strong>Result with eval():</strong> 4004ms to execute the parse.</p>
+
+<p>Now with native parser:</p>
+
+<p>[javascript]</p>
+
+<p>console.time("JSON.parse");
+var obj = JSON.parse(json);
+console.timeEnd("JSON.parse");</p>
+
+<p>[/javascript]</p>
+
+<p><strong>Result with JSON.parse:</strong> 50ms to execute the parse.</p>
+
+<p>Well, do not need comment, the results speak for themselves.</p>
+
+<p>You may be thinking now that all that is beautiful, but that only works in Firefox...   :(
+But as JSON is increasingly used throughout the world in various types of applications, not just Mozilla that implements this solution natively.
+Believe, the IE 8 too has native JSON support. See with your eyes: <a href="http://blogs.msdn.com/ie/archive/2008/09/10/native-json-in-ie8.aspx">http://blogs.msdn.com/ie/archive/2008/09/10/native-json-in-ie8.aspx</a></p>
+
+<p>But of course we can not count on the support of all browsers, and we can use any library that plays this role. I nominate that in site json.org: <a href="http://www.json.org/json2.js">http://www.json.org/json2.js</a></p>
+
+<p>In the examples above showed how to parse a string into a JSON object, but we can also do the reverse:</p>
+
+<p>[javascript]</p>
+
+<p>var Person = {};
+Person.name = "Jaydson&amp;quot";
+Pessoa.idade = "25";</p>
+
+<p>var jsonString = JSON.stringify(Person);
+console.log(jsonString);</p>
+
+<p>[/javascript]</p>
+
+<p>In the example we create a JavaScript object, and then turn it into a JSON:</p>
+
+<p>[javascript]</p>
+
+<p>{"name":"Jaydson","idade":"25"}</p>
+
+<p>[/javascript]</p>
+
+<p>References:
+<a href="http://blog.mozilla.com/webdev/2009/02/12/native-json-in-firefox-31/">http://blog.mozilla.com/webdev/2009/02/12/native-json-in-firefox-31/</a>
+<a href="https://developer.mozilla.org/en/Using_JSON_in_Firefox">https://developer.mozilla.org/en/Using_JSON_in_Firefox</a>
+<a href="http://www.json.org/">http://www.json.org/</a>
+<a href="http://blogs.msdn.com/ie/archive/2008/09/10/native-json-in-ie8.aspx">http://blogs.msdn.com/ie/archive/2008/09/10/native-json-in-ie8.aspx</a>
+<a href="http://starkravingfinkle.org/blog/2008/02/extension-developers-native-json-parsing/">http://starkravingfinkle.org/blog/2008/02/extension-developers-native-json-parsing/</a></p>
+
+<p><strong>O que significa JSON nativo no browser?</strong>
+Bom, isso significa que o desenvolvedor não precisará usar nenhuma biblioteca extra para fazer o parse de um objeto JSON, e também não será necessário usar a função <a href="http://www.w3schools.com/jsref/jsref_eval.asp">eval()</a> nativa no Javascript para fazer isso, o que é bem aconselhável pela insegurança desta função.</p>
+
+<p><strong>Benefícios</strong>:
+Vários.
+Em primeiro lugar a possibilidade de parsear um objeto JSON sem o uso do eval(). Isso é extramamente útil pois o eval() executa toda a string recebida sem fazer nenhuma análise, ou seja, se a string contiver funções, estas serão executadas.
+Por esse motivo usar JSON nativo é muito mais seguro, pois não são suportadas funções. É feita uma análise na string recebida e então a conversão é feita apenas das propriedades do objeto.
+Outra funcionalidade é esta análise feita na string, se o JSON estiver mal formatado será gerado um parse error.
+E o benefício que mais me agrada: <strong>Rapidez</strong>!
+Sim, o parse de um objeto JSON nativamente é muito rápido, mesmo!
+Como provar isso?
+Simples... Código!</p>
+
+<p>Primeiro criei um arquivo JSON que peguei de exemplo no blog da <a href="http://blog.mozilla.com/webdev/2009/02/12/native-json-in-firefox-31/">Mozilla</a> onde eles explicam sobre o uso do JSON nativo.
+Este arquivo é consideravelmente grande, possui um array com <strong>2918 objetos.
+</strong>Não vou colocar o código aqui por razões óbvias...mas segue o link pra quem tiver curiosidade de ve-lo: <a href="http://graphs-stage.mozilla.org/api/test">http://graphs-stage.mozilla.org/api/test</a></p>
+
+<p>Agora vamos ao código javascript usando jQuery para fazer uma requisição Ajax e buscar o conteúdo desse arquivo.</p>
+
+<p>[javascript]</p>
+
+<p>var json = $.ajax({
+url: "test.json",
+async: false
+}).responseText;</p>
+
+<p>[/javascript]</p>
+
+<p>Este pequeno trecho do código mostra que a variável <strong>json </strong>agora possui o conteudo do arquivo(aquele bem grande com 2918 objetos).</p>
+
+<p>Agora que temos uma "Stringona" vamos tranforma-la em um objeto JSON.
+Primeiro usando o <strong>eval()</strong>:</p>
+
+<p>[javascript]</p>
+
+<p>var obj = eval('(' + json + ')');</p>
+
+<p>[/javascript]</p>
+
+<p>E agora usando o parser nativo !!! O/</p>
+
+<p>[javascript]</p>
+
+<p>var obj = JSON.parse(json);</p>
+
+<p>[/javascript]</p>
+
+<p>Para quem já usou  a biblioteca JS disponível no <a href="http://json.org">json.org</a> pode notar que a sintaxe é a mesma, a direrença aqui é que estamos trabalhando nativamente.
+Bom, sabemos que o parser nativo é mais seguro que o eval(), mas como saber se é mais rápido?
+O <a href="http://getfirebug.com/">Firebug</a> nos ajuda a medir isso.
+Vamos ver o código, primeiro medindo o tempo em milisegundos com o eval():</p>
+
+<p>[javascript]</p>
+
+<p>console.time("Eval");
+var obj = eval('(' + json + ')');
+console.timeEnd("Eval");</p>
+
+<p>[/javascript]</p>
+
+<p>Para quem não sabe (se é desenvolvedor deveria ), o Firebug possui uma API que ajuda os desenolvedores de várias maneiras, a abordada aqui  é a função console.time(), que consegue medir o tempo em milisegundos de uma determinada instrução.</p>
+
+<p><strong>Resultado com eval():</strong> 4004ms para executar o parse.</p>
+
+<p>Agora com parser nativo:</p>
+
+<p>[javascript]</p>
+
+<p>console.time("JSON.parse");
+var obj = JSON.parse(json);
+console.timeEnd("JSON.parse");</p>
+
+<p>[/javascript]</p>
+
+<p><strong>Resultado com JSON.parse:</strong> 50ms para executar o parse.</p>
+
+<p>Bom, nem preciso comentar, os resultados falam por si só.</p>
+
+<p>Voces devem estar pensando agora que tudo isso é lindo, mas que  só funciona no Firefox...   :(
+Mas como JSON é cada vez mais usado por todo o mundo em diversos tipos de aplicações, não é apenas a Mozilla que implementa esta solução nativa.
+Acreditem, o IE 8 também possui suporte nativo a JSON. Veja com seus próprios olhos: <a href="http://blogs.msdn.com/ie/archive/2008/09/10/native-json-in-ie8.aspx">http://blogs.msdn.com/ie/archive/2008/09/10/native-json-in-ie8.aspx</a></p>
+
+<p>Mas claro que ainda não podemos contar com o suporte de todos os Browsers, e para isso podemos usar alguma biblioteca que desempenhe este papel. Eu indico a própria do site json.org: <a href="http://www.json.org/json2.js">http://www.json.org/json2.js</a></p>
+
+<p>Nos exemplos acima mostrei como parsear uma string em um objeto JSON, mas podemos fazer o inverso também:</p>
+
+<p>[javascript]</p>
+
+<p>var Pessoa = {};
+Pessoa.nome = "Joaozinho";
+Pessoa.idade = "30";</p>
+
+<p>var jsonString = JSON.stringify(Pessoa);
+console.log(jsonString);</p>
+
+<p>[/javascript]</p>
+
+<p>No exemplo criamos um objeto Javascript, e em seguida o transformamos em um JSON:</p>
+
+<p>[javascript]</p>
+
+<p>{"nome":"Joaozinho","idade":"30"}</p>
+
+<p>[/javascript]</p>
+
+<p>Buenas pessoal, por hora é isso.</p>
+
+<p>Referências:
+<a href="http://blog.mozilla.com/webdev/2009/02/12/native-json-in-firefox-31/">http://blog.mozilla.com/webdev/2009/02/12/native-json-in-firefox-31/</a>
+<a href="https://developer.mozilla.org/en/Using_JSON_in_Firefox">https://developer.mozilla.org/en/Using_JSON_in_Firefox</a>
+<a href="http://www.json.org/">http://www.json.org/</a>
+<a href="http://blogs.msdn.com/ie/archive/2008/09/10/native-json-in-ie8.aspx">http://blogs.msdn.com/ie/archive/2008/09/10/native-json-in-ie8.aspx</a>
+<a href="http://starkravingfinkle.org/blog/2008/02/extension-developers-native-json-parsing/">http://starkravingfinkle.org/blog/2008/02/extension-developers-native-json-parsing/
+</a></p>
+
+<p>Sintam-se a vontade para comentar, criticar, perguntar, etc.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Trocar User Agent do Firefox]]></title>
+    <link href="http://jaydson.github.com/trocar-user-agent-firefox/"/>
+    <updated>2009-05-13T22:31:31-03:00</updated>
+    <id>http://jaydson.github.com/trocar-user-agent-firefox</id>
+    <content type="html"><![CDATA[<p>Porque?
+Bom, hoje no trabalho eu precisei testar uma rotina que basicamente identificava se o usuário estava em um PC ou em um iPhone.
+No meu caso específico era com .NET que eu ia fazer essa verificação, mas com PHP ou Javascript também conseguimos identificar o User Agent.
+Blza. Verificação feita. Mas e iPhone pra testar? Pois é, não tinha nenhum.
+Pesquisando acabei achando esse site: <a href="http://www.yes-no-cancel.co.uk/2008/01/03/imitating-the-iphone-user-agent-in-firefox/"> http://www.yes-no-cancel.co.uk/2008/01/03/imitating-the-iphone-user-agent-in-firefox/</a>
+"Imitating the iPhone User Agent in Firefox".
+Isso mesmo!!!
+Um Add-on muito útil para o Firefox que troca o User Agent.
+Ai foi barbada.
+Para baixar o Add-on -> <a href="https://addons.mozilla.org/en-US/firefox/addon/59">User Agent Switcher add-on for Firefox</a></p>
+
+<p>A string do User Agent iPhone:</p>
+
+<p>Mozilla/5.0 (iPhone; U; CPU like Mac OS X; en) AppleWebKit/420.1 (KHTML, like Gecko) Version/3.0 Mobile/3B48b Safari/419.3</p>
+
+<p>É só adicionar e ta pronto.</p>
+
+<p>Só não esqueçam de voltar para User Agent default depois do teste.</p>
+]]></content>
+  </entry>
+  
+</feed>

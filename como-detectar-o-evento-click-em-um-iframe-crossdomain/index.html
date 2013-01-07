@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Como detectar o evento Click em um iframe crossdomain - Jaydson Gomes</title>
+  <meta name="author" content="Jaydson Gomes">
+
+  
+  <meta name="description" content="Situação um pouco estranha não?
+Mas é isso mesmo.
+Nunca tinha me deparado com tal &#8220;problema&#8221;:
+Como saber que o evento Click foi disparado &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://jaydson.github.com/como-detectar-o-evento-click-em-um-iframe-crossdomain/">
+  <link href="/favicon.png" rel="icon">
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Jaydson Gomes" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Jaydson Gomes</a></h1>
+  
+    <h2>HTML5 | JavaScript</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:jaydson.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Como Detectar O Evento Click Em Um Iframe Crossdomain</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-02-09T13:12:17-02:00" pubdate data-updated="true">Feb 9<span>th</span>, 2012</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Situação um pouco estranha não?<br/>
+Mas é isso mesmo.<br/>
+Nunca tinha me deparado com tal &#8220;problema&#8221;:<br/>
+Como saber que o evento Click foi disparado dentro de um iframe <em>crossdomain</em>?<br/>
+Bom, não existe uma maneira natural de fazer isso.<br/>
+O que acontece é que o evento click até acontece no iframe, mas somente no elemento em si.<br/>
+Isso quer dizer que, quando o click acontece em um elemento que esta no documento do escopo do iframe, somente este iframe sabe disso.<br/>
+Como fazer então?<br/>
+Eu não tinha ideia, e aqui vale muito lembrar uma frase que ouvi em um evento certa vez:<br/>
+<strong>&#8220;Nunca acredite em especialistas!&#8221;</strong></p>
+
+<p><strong><strong>No caso, o especialista sou eu, que não tinha até então uma maneira simples de resolver o problema.<br/>
+Um amigo/colega aqui do Terra(André Marquardt), que possui </strong>TB&#8217;s</strong> de experiência, mas não em JavaScript, me sugeriu algo.<br/>
+Depois de matutar sobre a ideia, cheguei a conclusão de que <em>&#8220;PQP! Talvez funcione!&#8221;</em>.</p>
+
+<p>A solução é bem simples:<br/>
+1. Crie um placeholder em volta do iframe(iframe dentro de um DIV, por exemplo)<br/>
+2. Adicione ao evento de mouseover deste elemento uma função que altere o valor de uma variável, informando que o mouse está ali<br/>
+3. Adicione ao evento de mouseout deste elemento uma função que altere o valor da mesma variável, informando que o mouse saiu dali<br/>
+4. Adicione ao evento blur do &#8220;body&#8221; uma função que verifica o valor da variável, e assuma que isso foi o click no iframe ;)</p>
+
+<p>Porquê isso funciona?<br/>
+Quando clicamos em um iframe, estamos selecionando o elemento  &#8220;iframe&#8221; e neste caso, o evento &#8220;blur&#8221; do body vai ser disparado.<br/>
+<a href="http://jaydson.org/wp-content/uploads/6a0120a6abf659970b0162fde3889c970d-800wi.jpg"><img src="http://jaydson.org/wp-content/uploads/6a0120a6abf659970b0162fde3889c970d-800wi.jpg" alt="Mission" /></a><br/>
+Obviamente, esta solução possui algumas limitações:<br/>
+1. Somente 1 &#8220;click&#8221; será disparado no iframe. Isso porque quando estamos dentro do iframe, não temos mais o blur do body.<br/>
+PS: Tentei usar o focus() em algum elemento da página pai, mas sem sucesso.<br/>
+2. Qualquer pixel do iframe que for clicado, o blur do body será disparado, ou seja, talvez o click não seja exatamente onde queremos medir.</p>
+
+<p>Abaixo um código sample da solução:</p>
+
+<pre><code>var myConfObj = {
+    iframeMouseOver : false
+}
+window.addEventListener('blur',function(){
+    if(myConfObj.iframeMouseOver){
+        console.log('Wow! Iframe Click!');
+    }
+});
+
+document.getElementById('YOUR_CONTAINER_ID').addEventListener('mouseover',function(){
+    myConfObj.iframeMouseOver = true;
+});
+document.getElementById('YOUR_CONTAINER_ID').addEventListener('mouseout',function(){
+    myConfObj.iframeMouseOver = false;
+});
+</code></pre>
+
+<p>Gist: <a href="https://gist.github.com/1780598">https://gist.github.com/1780598</a></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Jaydson Gomes</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-02-09T13:12:17-02:00" pubdate data-updated="true">Feb 9<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/javascript/'>JavaScript</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.github.com/como-detectar-o-evento-click-em-um-iframe-crossdomain/" data-via="" data-counturl="http://jaydson.github.com/como-detectar-o-evento-click-em-um-iframe-crossdomain/" >Tweet</a>
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/analytics-do-blog-em-2011/" title="Previous Post: Analytics do Blog em 2011">&laquo; Analytics do Blog em 2011</a>
+      
+      
+        <a class="basic-alignment right" href="/novo-tema-do-blog/" title="Next Post: Novo tema do Blog">Novo tema do Blog &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/analytics-do-blog-em-2012/">Analytics do Blog em 2012</a>
+      </li>
+    
+      <li class="post">
+        <a href="/retrospectiva-2012/">Retrospectiva 2012</a>
+      </li>
+    
+      <li class="post">
+        <a href="/eati-2012-em-frederico-westphalen/">EATI 2012 em Frederico Westphalen</a>
+      </li>
+    
+      <li class="post">
+        <a href="/w3c-webbr-2102/">W3C webbr 2102</a>
+      </li>
+    
+      <li class="post">
+        <a href="/javascript-o-guia-definitivo/">JavaScript: O Guia definitivo</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/jaydson">@jaydson</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'jaydson',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Jaydson Gomes -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+<script type="text/javascript" src="/javascripts/jaydson.js"></script>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'jaydson';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://jaydson.github.com/como-detectar-o-evento-click-em-um-iframe-crossdomain/';
+        var disqus_url = 'http://jaydson.github.com/como-detectar-o-evento-click-em-um-iframe-crossdomain/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

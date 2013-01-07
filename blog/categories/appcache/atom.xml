@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: AppCache | Jaydson Gomes]]></title>
+  <link href="http://jaydson.github.com/blog/categories/appcache/atom.xml" rel="self"/>
+  <link href="http://jaydson.github.com/"/>
+  <updated>2013-01-07T16:13:03-02:00</updated>
+  <id>http://jaydson.github.com/</id>
+  <author>
+    <name><![CDATA[Jaydson Gomes]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[HTML5 AppCache - Cache-Control: no-store]]></title>
+    <link href="http://jaydson.github.com/html5-appcache-cache-control-no-store/"/>
+    <updated>2011-11-03T12:25:54-02:00</updated>
+    <id>http://jaydson.github.com/html5-appcache-cache-control-no-store</id>
+    <content type="html"><![CDATA[<p>No<a href="http://jaydson.org/html5-application-cache"> meu último post</a>, falei sobre como tudo no <a href="http://www.w3.org/TR/html5/">HTML5</a> é legal, e especificamente sobre o <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/offline.html">Application Cache</a>.<br/>
+O legal de trabalhar com HTML5 é que tudo é muito novo.<br/>
+O ruim de trabalhar com HTML5 é que tudo é muito novo.</p>
+
+<p>O que quero dizer, é que HTML5 é uma tecnologia nova, e que muitas funcionalidades ainda estão em desenvolvimento.<br/>
+Creio que isso seja uma questão complicada para os Browsers, pois eles devem implementar estas especificações incompletas.<br/>
+Mas tudo isso faz parte da transição em que estamos, e de certa forma, isso é muito bom.</p>
+
+<p>Voltando ao AppCache, vou citar um dos problemas que encontrei utilizando essa feature, que julgo ter um grande potencial, se sofrer algumas alterações.<br/>
+Como falado antes, o AppCache não é uma feature que apenas permite que sua Web App rode Offline.<br/>
+O AppCache pode reduzir e muito o "peso" da sua App, reduzindo o número de requisições.<br/>
+Imagine que sua Web App tenha 6 arquivos JavaScript, 3 arquivos CSS, e várias imagens.<br/>
+Se nenhum destes arquivos sofre atualizações constantes, todos podem ser "AppCacheados".<br/>
+Tecnicamente isto quer dizer que se o total em KBytes de sua página é de 200K, esses 200K podem ser carregados diretamene do Cache.<br/>
+Sim, o Browser possui um mecanismo de Cache padrão, mas este cache não é controlado pelo desenvolvedor.<br/>
+Outro fator relevante é que nenhum Header do arquivo é levado em conta se a sua App está utilizando AppCache.<br/>
+Com exceção do Cache-Control:no-store.<br/>
+Ou não.</p>
+
+<p>Bom, na especificação temos alguns detalhes que já mencionei, mas o que mais tive problemas foi este:<br/>
+"A página onde esta definido que a aplicação utilizará o manifest, mesmo não estando listada no manifest, será armazenada no cache".<br/>
+Lembre que o AppCache também foi pensado para fazer uma App rodar Offline, então isso até faz sentido, mas gera outros problemas.<br/>
+Se o meu objetivo é reduzir o número de requisições, e minha página muda constantemente o seu conteúdo, essa regra acaba com a possibilidade de utilizar o AppCache.<br/>
+Ai chegamos em outra regra da especificação:<br/>
+"Com exceção da diretiva "no-store", os headers HTTP de cache são substituídas pelo Appcache"<br/>
+Problema resolvido então?<br/>
+Não!!!<br/>
+Por algum motivo o Google Chrome não respeita esta regra.<br/>
+Faça o teste, altere as configurações do seu servidor(no meu caso o Apache):</p>
+
+<pre><code> &lt;FilesMatch "(.html)$"&gt;
+    Header set Cache-Control "no-store"
+ &lt;/FilesMatch&gt;
+</code></pre>
+
+<p>O que fiz foi dizer que todos arquivos HTML devem vir com o Cache-Control "no-store".<br/>
+No Firefox e no Opera isso funciona perfeitamente. Todos arquivos listados no manifest para serem Appcacheados estão lá, com exceção da página atual.<br/>
+No Chrome, isso simplesmente não acontece. A página atual sempre vem do cache.</p>
+
+<p>Notem que esse problema pode ser resolvido se utilizarmos a funcionalidade padrão do Appcache: Atualizar o manifest.<br/>
+Mas isso nem sempre é possível, ou nem sempre eu quero fazer isso.<br/>
+Ficar na dependência de alterar um arquivo manifest para atualizar o conteúdo principal é uma coisa delicada.</p>
+
+<p>Bom, ainda estou pesquisando para ver se isso é um Bug do Chrome, ou se realmente o Google ignorou a regra do "no-store".</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[HTML5 Application Cache]]></title>
+    <link href="http://jaydson.github.com/html5-application-cache/"/>
+    <updated>2011-10-27T16:05:50-02:00</updated>
+    <id>http://jaydson.github.com/html5-application-cache</id>
+    <content type="html"><![CDATA[<p>Tudo em torno do <a href="http://www.w3.org/TR/html5/">HTML5</a> é muito promissor e excitante.<br/>
+Umas das coisas que acho mais legal é a possibilidade "Offline".<br/>
+Estranho pensar nisso logo em 2011, com a evolução que temos, com cada vez mais serviços na Internet, Cloud, etc.,não é?<br/>
+A resposta é NÃO.<br/>
+<a href="http://www.w3.org/TR/offline-webapps/">HTML5 Offline</a> é muito mais do que apenas trabalhar Offline, são várias possibilidades que antes só eram possíveis com workarounds, ou impossíveis.<br/>
+Hoje vou falar sobre uma dessas possibilidades: o <a href="http://www.html5rocks.com/en/tutorials/appcache/beginner/">AppCache</a>.</p>
+
+<p>Ao meu ver o AppCache não tem tido tanta atenção quanto outras features do HTML5, mas com certeza tem um grande potencial.<br/>
+O primeiro ponto que deve ser esclarecido é que o AppCache não serve apenas para rodar uma aplicação Offline.<br/>
+AppCache pode ser utilizado para uma das questões mais importantes no desenvolvimento Web: Performance.<br/>
+Sim, utilizando o AppCache é possível reduzir drasticamente o número de requisições de uma aplicação.<br/>
+Querem saber o mais legal?<br/>
+A grande maioria dos Browsers já suporta o AppCache.<br/>
+<a href="http://caniuse.com/#search=appcache">Caniuse AppCache</a><br/>
+Ou seja, já é possível, desenvolver aplicações web utilizando esta feature.<br/>
+E notem que os principais browsers mobile também estão na lista.<br/>
+Sobre o IE, bom... somente na versão 10. Mas nem perderei tempo falando sobre isso.</p>
+
+<h2>Como fazer?</h2>
+
+<ul>
+<li><p>Um arquivo manifest<br/>
+Precisamos entregar um arquivo com o MIME type text/cache-manifest.<br/>
+Por convenção, a extenção do arquivo é .appcache.<br/>
+O manifest tem 3 seções opcionais:<br/>
+CACHE - Todos os arquivos que devem ser armazenados no cache<br/>
+NETWORK - Todas URLs que precisam ser acessadas pela Internet<br/>
+FALLBACK - Lista de URLs que devem ser usadas caso a Internet esteja indisponível</p></li>
+<li><p>Um atributo na tag HTML<br/>
+Na tag html basta indicar onde esta o seu manifest:
+  <html manifest="manifest.appcache"></p></li>
+<li><p>Um pouco de JavaScript<br/>
+Temos um objeto para tratar o cache, ele é o <em><strong>window.applicationCache</strong></em><br/>
+Com este objeto é possível monitorar o estado do cache.<br/>
+Eventos: cached,checking,downloading,error,noupdate,obsolete,progress,updateready</p></li>
+</ul>
+
+
+<h2><strong>Alguns detalhes interessante sobre o AppCache:</strong></h2>
+
+<p>Os arquivos listados no manifest não estão sobre a regra de same origin policy, ou  seja, podemos listar URLs Crossdomain.<br/>
+Mas... isso não vale para SSL, ou seja, se estiver utilizando HTTPS, os arquivos listados no manifest devem obedecer a regra <a href="https://developer.mozilla.org/en/Same_origin_policy_for_JavaScript">same origin policy</a>.<br/>
+Mas... O Google Chrome ignora esta especificação, ou seja, independente de estar utilizando SSL ou não, é possível adicionar URLs Cross-Domain.</p>
+
+<p>O Browser só irá atualizar o cache caso o manifest tenha sido modificado.<br/>
+Por convenção, utiliza-se um comentário com a versão no manifest.<br/>
+Detalhe importante:<br/>
+Após a detecção de que o cache deve ser atualizado, o browser precisa buscar os novos arquivos.<br/>
+Ou seja, o usuário precisa atualizar a página 2 vezes.<br/>
+Para isso, se utiliza uma técnica JavaScript que detecta se existe uma nova versão, e então decide se quer baixar esta nova versão.</p>
+
+<pre><code>// Check if a new cache is available on page load.
+window.addEventListener('load', function(e) {
+    window.applicationCache.addEventListener('updateready', function(e) {
+      if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
+        // Browser downloaded a new app cache.
+        // Swap it in and reload the page to get the new hotness.
+        window.applicationCache.swapCache();
+        if (confirm('A new version of this site is available. Load it?')) {
+          window.location.reload();
+        }
+      } else {
+        // Manifest didn't changed. Nothing new to server.
+      }
+    }, false);
+}, false);
+</code></pre>
+
+<p>A página onde esta definido que a aplicação utilizará o manifest, mesmo não estando listada no manifest, <strong>será</strong> armazenada no cache.<br/>
+Isso pode gerar alguns problemas, dependendo do tipo de cache sua aplicação precisa. Para isso, existe na especificação uma regra que diz que arquivos com a diretiva <a href="http://httpd.apache.org/docs/2.2/mod/mod_cache.html">"no-store"</a> definida no HEADER http sobrescreverá o cache local.<br/>
+(Obrigado ao <a href="http://twitter.com/#!/miketaylr">@miketaylr</a> que me passou essa especificação).</p>
+
+<p>Bom pessoal, por hoje é isso.<br/>
+Espero ter passado de forma clara o que é, e para que serve o AppCache.</p>
+
+<h2>Referências deste artigo:</h2>
+
+<p><a href="http://www.html5rocks.com/en/features/offline">http://www.html5rocks.com/en/features/offline</a><br/>
+<a href="http://www.html5rocks.com/en/tutorials/offline/whats-offline/">http://www.html5rocks.com/en/tutorials/offline/whats-offline/
+</a><a href="http://www.html5rocks.com/en/tutorials/appcache/beginner/">http://www.html5rocks.com/en/tutorials/appcache/beginner/</a><br/>
+<a href="http://appcachefacts.info/">http://appcachefacts.info/</a><br/>
+<a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/offline.html">http://www.whatwg.org/specs/web-apps/current-work/multipage/offline.html</a><br/>
+<a href="http://www.webdirections.org/blog/get-offline/">http://www.webdirections.org/blog/get-offline/</a><br/>
+<a href="https://developer.mozilla.org/en/Offline_resources_in_Firefox">https://developer.mozilla.org/en/Offline_resources_in_Firefox</a><br/>
+<a href="http://www.w3.org/TR/offline-webapps/">http://www.w3.org/TR/offline-webapps/</a></p>
+]]></content>
+  </entry>
+  
+</feed>

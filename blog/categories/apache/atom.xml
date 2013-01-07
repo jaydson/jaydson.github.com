@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Apache | Jaydson Gomes]]></title>
+  <link href="http://jaydson.github.com/blog/categories/apache/atom.xml" rel="self"/>
+  <link href="http://jaydson.github.com/"/>
+  <updated>2013-01-07T16:13:03-02:00</updated>
+  <id>http://jaydson.github.com/</id>
+  <author>
+    <name><![CDATA[Jaydson Gomes]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Apache - Criando Virtual Hosts]]></title>
+    <link href="http://jaydson.github.com/apache-criando-virtual-hosts/"/>
+    <updated>2010-09-07T22:35:55-03:00</updated>
+    <id>http://jaydson.github.com/apache-criando-virtual-hosts</id>
+    <content type="html"><![CDATA[<p>According  to the <a href="http://httpd.apache.org/docs/1.3/vhosts/">Apache documentation</a>, the term <strong>Virtual Host</strong> refers to the practice  of keeping more than one server on one machine, distinguished by their  names.</p>
+
+<p>I will not talk about settings on production servers, but on the development environment.</p>
+
+<p>We can create an environment where each application can have its own domain.</p>
+
+<p>Example:</p>
+
+<p>To access the application TheWebMind in my local environment I need to access the following address:</p>
+
+<p><strong>http://localhost/projetos/open-soruce/thewebmind/2.0/trunk</strong></p>
+
+<p>Segundo a <a href="http://httpd.apache.org/docs/1.3/vhosts/">documentação do Apache</a>, o conceito de <strong>Virtual Host</strong> refere-se à prática de manter mais de um  servidor em uma máquina, diferenciados pelos seus nomes.
+Não vou me deter a falar sobre configurações em servidores de produção, mas sim em ambiente de desenvolvimento mesmo.
+Podemos criar um ambiente onde cada aplicação local pode ter seu próprio domínio.</p>
+
+<p>Exemplo:</p>
+
+<p>Para acessar a aplicação <strong>TheWebMind</strong> em meu ambiente local eu preciso acessar o seguinte endereço:
+<strong>http://localhost/projetos/open-soruce/thewebmind/2.0/trunk</strong></p>
+
+<p>Não seria legal se eu pudesse acessar apenas com <strong>http://mind</strong> ?</p>
+
+<p>Bom, essa configuração é simples de fazer, bastando alguns segundos de seu tempo.</p>
+
+<p>Crie um arquivo com o nome do domínio desejado [ .conf] no diretório: <strong>/etc/apache2/sites-available</strong></p>
+
+<p>No meu caso, foi **mind.conf<!-- more -->
+Would not it be nice if I could access only http://mind?</p>
+
+<p>Well, this configuration is simple to make, just a few seconds of your time.</p>
+
+<p>Create a file with the name of the desired domain [. Conf] in the directory: <strong>/etc/apache2/sites-available</strong></p>
+
+<p>In my case it was mind.conf</p>
+
+<p>This file should contain the following contents:</p>
+
+<p>**<VirtualHost your_domain></p>
+
+<p>ServerAdmin webmaster@localhost</p>
+
+<p>ServerAlias www.<strong>your_domain</strong></p>
+
+<p>DocumentRoot directory_of_your_application</p>
+
+<p></ VirtualHost>**</p>
+
+<p><strong> </strong>That done, now just tell Linux that this domain is a local domain.</p>
+
+<p>Edit <strong>/etc/hosts</strong> and add the following line:</p>
+
+<p><strong>127.0.0.1 localhost localhost.localdomain </strong>your_domain<strong> www.</strong>your_domain****</p>
+
+<p>Save the file and restart Apache.</p>
+
+<p>Now just open your browser and enter your domain.</p>
+
+<p>See a photo of my application running.</p>
+
+<p>[caption id="attachment_666" align="alignnone" width="300" caption="Aplicação com Virtual Host"]<a href="http://jaydson-org.web102.redehost.com.br/assets/Screenshot-41.png"><img src="http://jaydson.org/wp-content/uploads/2010/09/Screenshot-4-300x238.png" alt="Aplicação com Virtual Host" /></a>[/caption]</p>
+
+<p><strong>**O arquivo </strong>deve conter o seguinte conteúdo:</p>
+
+<p><strong><VirtualHost seu_dominio></strong></p>
+
+<p><strong>ServerAdmin webmaster@localhost</strong></p>
+
+<p><strong>ServerAlias www.</strong><strong>seu_dominio</strong></p>
+
+<p><strong>DocumentRoot diretorio_da_sua_aplicação</strong></p>
+
+<p><strong></VirtualHost></strong></p>
+
+<p><strong>
+</strong></p>
+
+<p>Feito isso, agora basta informar ao Linux que esse domínio é um domínio local.
+Edite o arquivo /etc/hosts e adicione a seguinte linha:
+<strong>127.0.0.1 localhost.localdomain localhost seu_dominio www.</strong><strong>seu_dominio</strong></p>
+
+<p><strong>*UPDATE:
+Obviamente é necessário fazer um link simbólico ao arquivo em /etc/apache2/sites-enabled</strong><strong> </strong></p>
+
+<p><strong>
+</strong></p>
+
+<p>Salve o arquivo e reinicie o Apache.
+Agora basta abrir o seu navegador e digitar o seu domínio.</p>
+
+<p>Veja uma imagem de minha aplicação rodando.</p>
+
+<p>[caption id="attachment_666" align="alignnone" width="300" caption="Aplicação com Virtual Host"]<a href="http://jaydson-org.web102.redehost.com.br/assets/Screenshot-41.png"><img src="http://jaydson.org/wp-content/uploads/2010/09/Screenshot-4-300x238.png" alt="Aplicação com Virtual Host" /></a>[/caption]</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Habilitar mod_rewrite no Apache]]></title>
+    <link href="http://jaydson.github.com/habilitar-mod_rewrite-no-apache/"/>
+    <updated>2010-09-06T22:46:51-03:00</updated>
+    <id>http://jaydson.github.com/habilitar-mod_rewrite-no-apache</id>
+    <content type="html"><![CDATA[<p>One thing I always do, but I always forget how to do is enable the <a href="http://httpd.apache.org/docs/1.3/mod/mod_rewrite.html">mod_rewrite</a> in Apache.</p>
+
+<p>For  those not familiar, this is an Apache module that uses a mechanism  based on rewrite rules (based on a parser for regular expressions).</p>
+
+<p>Basically the module allows the rewriting of URLs on the fly.</p>
+
+<p>To enable the module into Apache just this line:</p>
+
+<p>**$ Sudo a2enmod rewriteUma coisa que sempre faço, mas sempre esqueço como fazer é habilitar o <a href="http://httpd.apache.org/docs/1.3/mod/mod_rewrite.html">mod_rewrite</a> do Apache.
+Para quem não conhece, esse é um módulo do Apache que utiliza um mecanismo baseado em regras de reescrita (baseadas em um parser de expressões regulares).
+Basicamente o módulo permite a reescrita de URL's <em>on the fly</em>.</p>
+
+<p>Para habilitar o módulo no Apache basta esta linha:
+<strong>$ sudo a2enmod rewrite<!-- more -->
+</strong></p>
+
+<p>Now open the configuration file</p>
+
+<p><strong>$ Sudo gedit / etc/apache2/sites-available/default</strong></p>
+
+<p>Look in your input file to "AllowOverride None" in my case was in line 11.</p>
+
+<p>Change this value to "<strong>AllowOverride Al</strong>l".</p>
+
+<p>Save the file and restart Apache.</p>
+
+<p><strong>$ Sudo / etc/init.d/apache2 restart</strong></p>
+
+<p>Basically that's it, now is possible to rewrite URL's.</p>
+
+<p>**</p>
+
+<p>Agora abra o arquivo de configuração
+<strong>$ sudo gedit  /etc/apache2/sites-available/default</strong></p>
+
+<p>Procure no seu arquivo a entrada "AllowOverride None", no meu caso estava na linha 11.
+Altere esse valor para "<strong>AllowOverride All</strong>" .
+Salve o arquivo e reinicie o Apache.
+<strong>$ sudo /etc/init.d/apache2 restart</strong></p>
+
+<p>Basicamente é isso, agora já é possível reescrever  URL's.</p>
+]]></content>
+  </entry>
+  
+</feed>

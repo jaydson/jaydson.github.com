@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: BrazilJS | Jaydson Gomes]]></title>
+  <link href="http://jaydson.github.com/blog/categories/braziljs/atom.xml" rel="self"/>
+  <link href="http://jaydson.github.com/"/>
+  <updated>2013-01-07T16:13:03-02:00</updated>
+  <id>http://jaydson.github.com/</id>
+  <author>
+    <name><![CDATA[Jaydson Gomes]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Retrospectiva 2012]]></title>
+    <link href="http://jaydson.github.com/retrospectiva-2012/"/>
+    <updated>2012-12-29T01:01:01-02:00</updated>
+    <id>http://jaydson.github.com/retrospectiva-2012</id>
+    <content type="html"><![CDATA[<p>Pessoalmente, 2012 foi um ano excelente.<br/>
+Trabalhar no <a href="http://terra.com.br">Terra</a> é uma experiência única. Nestes quase 2 anos que estou lá, aprendi muito com muita gente boa.<br/>
+Além de aprender, tenho a sensação de ter cumprido o meu papel em todos projetos que trabalhei, todos eles relacionados a soluções nada convencionais com JavaScript.<br/>
+Em 2013 terei um desafio ainda maior, pois troquei de equipe, e agora faço parte da equipe de Arquitetura do Terra.<br/>
+Nesta nova equipe, terei o papel de resolver problemas maiores, criar soluções escaláveis, e mudar muito do processo de desenvolvimento frontend dentro da empresa.<br/>
+Estou bem confiante, pois tenho pessoas extremamente competentes do meu lado, e uma gerência e direção que estão apostando forte no frontend.<br/>
+Com este cenário, para mim é fácil, pois sou movido pela motivação.</p>
+
+<p>Para o mercado FrontEnd no Brasil, 2012 foi um ano espetacular. Crescemos como comunidade, e finalmente as empresas estão dando o devido valor.<br/>
+A <a href="http://braziljs.com.br">BrazilJS Conference</a> foi novamente um dos principais eventos do mundo, mostrando que o Brasil tem um lugar destacado neste mercado que cresce cada vez mais.<br/>
+Foram dezenas de eventos frontend ao longo do ano em todos os cantos do Brasil, e isso me deixa muito feliz.</p>
+
+<p>Recapitulando o ano, posso começar por fevereiro de 2012.<br/>
+Meu primeiro post de 2012 no Blog foi <a href="http://jaydson.org/como-detectar-o-evento-click-em-um-iframe-crossdomain/">Como detectar o evento Click em um iframe crossdomain</a>.<br/>
+Este foi um exemplo de código bem maluco que tive que implementar no Terra.</p>
+
+<p>Ainda em fevereiro<a href="http://jaydson.org/novo-tema-do-blog/">, troquei o tema do Blog</a>.<br/>
+Ficou bem legal até, mas para 2013 quero mudar novamente, talvez sair do WordPress, pois quero ter mais controle sobre meus documentos.</p>
+
+<p>Em fevereiro, anunciamos o <a href="http://rsjs.org">RSJS</a>, a <a href="http://jaydson.org/rsjs-a-conferencia-gaucha-de-javascript/">conferência gaudéria de JavaScript</a>.<br/>
+O evento aconteceu no dia o3/03/2012 e foi muito bacana. Veja o <a href="http://jaydson.org/rsjs-review/">review</a>.</p>
+
+<p>Em março comecei a brincar com <a href="https://developer.mozilla.org/en-US/docs/CSS/CSS3">CSS3</a>, e fiz alguns experimentos bem legais como o <a href="http://jaydson.org/cubo-3d-com-css3/">Cubo 3D com CSS3</a>, <a href="http://jaydson.org/esfera-com-css3-3d/">Esfera com CSS3 3D</a>, <a href="http://jaydson.org/experimento-css3-3d-the-wall-explosion/">Wall Explosion</a>.<br/>
+O <a href="http://felipenmoura.org">Felipe</a> fez algo fantástico também, o <a href="http://jaydson.org/root3d-experimento-css3d/">Root3D</a>.</p>
+
+<p>Em Abril rolou o <a href="http://jaydson.org/pernambucojs-resumo/">PernambucoJS</a>, um evento chave para o ano de 2012.<br/>
+Lá conheci uma galera engajada em algo que eu e o Felipe vinhamos pensando ao longo dos anos.<br/>
+Não posso deixar de citar o <a href="http://blog.zenorocha.com/">Zeno</a>, um cara que explodiu em 2012, e que foi fundamental para a concretização de muita coisa que aconteceu.</p>
+
+<p>Em Maio, fiz um dos melhores investimentos do ano. Fui de ônibus para Argentina, para participar de um dos melhores eventos que já fui. A<a href="http://jaydson.org/jsconf-argentina-resumo/"> JSConf Argentina</a>.<br/>
+O evento foi épico demais. E lá, junto com Zeno e <a href="blog.bygiovanni.com.br/">Giovanni</a> começamos a traçar o que em breve seria a Fundação BrazilJS.<br/>
+Fora isso, a viagem para Argentina foi demais.</p>
+
+<p>Em Junho dei mais uma brincada com <a href="http://nodejs.org/">Node</a>, visando um projeto casca que tínhamos que viabilizar no Terra.<br/>
+Do estudo, acabou saindo o post <a href="http://jaydson.org/web-scraping-para-criancas-com-nodejs/">Web Scraping para crianças com nodeJS </a>e um <a href="http://jaydson.org/experimento-de-web-scraping-com-nodejs/">experimento</a>.
+Ainda em Junho, conseguimos liberar a <a href="http://jaydson.org/braziljs-2012/">lista inicial de palestrantes da BrazilJS Conference</a>.</p>
+
+<p>Em Julho,<a href="http://jaydson.org/fundacao-braziljs/"> anunciamos a Fundação BrazilJS</a>, algo que cresceu e tomou forma. Estou bastante empolgado para 2013.</p>
+
+<p>Em Agosto foi impossível parar para postar algo. Estávamos envolvidos até o último fio de cabelo na BrazilJS Conference.<br/>
+Até hoje não fiz nenhum resumo sobre o evento, mas digo que foi algo muito gratificante. Foi um marco na história FrontEnd no Brasil.<br/>
+Na verdade, em Setembro, consegui fazer um post. <a href="http://jaydson.org/braziljs-2012-foto-epica-com-o-brendan/">BrazilJS 2012 – Foto épica com o Brendan Eich</a>.<br/>
+<a href="http://jaydson.org/braziljs-entrevista-na-tv/">Até entrevista para a TV rolou</a>!</p>
+
+<p>Em outubro, outro marco. <a href="http://jaydson.org/w3c-webbr-2102/">O W3C webbr 2102</a>.<br/>
+A Fundação BrazilJS, teve a honra de ser convidada pela <a href="http://www.w3c.br/Home/WebHome">W3C Brasil</a>, para fazer parte deste grande evento.</p>
+
+<p>Em Novembro, para fechar o ano com chave de ouro, <a href="http://jaydson.org/eati-2012-em-frederico-westphalen/">EATI 2012 em Frederico Westphalen</a>.<br/>
+Este evento foi fora do comum. Algo realmente inexplicável.</p>
+
+<p>Bom, este é um resumo do que aconteceu em 2012, e que está registrado no Blog.<br/>
+Muitas outras coisas boas aconteceram, e muitas virão a acontecer.</p>
+
+<p>Leia o relato do Zeno aqui: <a href="http://blog.zenorocha.com/my-way.html">http://blog.zenorocha.com/my-way.html</a><br/>
+E veja quais são os 7 Desejos do Bernard para 2013 aqui: <a href="http://bernarddeluna.com/css/7-desejos-em-2013-para-a-comunidade-web/">http://bernarddeluna.com/css/7-desejos-em-2013-para-a-comunidade-web/</a><br/>
+O Keppelen também fez um breve relato: <a href="http://blog.bygiovanni.com.br/hello-world-my-new-blog/">http://blog.bygiovanni.com.br/hello-world-my-new-blog/</a></p>
+
+<p>O que esperar de 2013?<br/>
+* Muito mais eventos de FrontEnd
+* Muito mais empresas dando o devido valor ao FrontEnd
+* Muito mais vagas de FrontEnd
+* Comunidade mais forte
+* BrazilJS Conference se tornando novamente o maior evento de JavaScript do mundo</p>
+
+<p>Meus objetivos:<br/>
+* Postar mais<br/>
+* Contribuir mais para a comunidade FrontEnd<br/>
+* Ir a outro evento internacional (além da JSConf Argentina. Este eu vou com certeza! Certo Zeno e Giovanni?)<br/>
+* Fazer mais palestras<br/>
+* Divulgar mais as coisas legais que fazemos no Terra<br/>
+* Fazer com o a BrazilJS Conference seja novamente algo épico<br/>
+* Fazer com a Fundação BrazilJS cresca cada vez mais<br/>
+* Criar mais projetos úteis open-source</p>
+
+<p>Feliz 2013 galera!</p>
+
+<p><a href="http://jaydson.org/wp-content/uploads/feliz-20131.jpg"><img src="http://jaydson.org/wp-content/uploads/feliz-20131.jpg" alt="" /></a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[EATI 2012 em Frederico Westphalen]]></title>
+    <link href="http://jaydson.github.com/eati-2012-em-frederico-westphalen/"/>
+    <updated>2012-11-09T19:36:06-02:00</updated>
+    <id>http://jaydson.github.com/eati-2012-em-frederico-westphalen</id>
+    <content type="html"><![CDATA[<p>Estou aqui no Hotel na querida cidade <a href="http://pt.wikipedia.org/wiki/Frederico_Westphalen">Frederico Westphalen</a>.<br/>
+Vim para participar do <a href="http://www.cafw.ufsm.br/eati/2012/">EATI</a>, o Encontro Anual de Tecnologia da Informação.<br/>
+Assim como no <a href="http://jaydson.org/w3c-webbr-2102/">Webbr da W3C</a>,  o BrazilJS teve um espaço para palestras.</p>
+
+<p><a href="http://twitter.com/felipenmoura">Felipe Moura,</a> <a href="http://twitter.com/zenorocha">Zeno Rocha</a> e eu, comandamos as palestras, e tentamos passar o máximo de informção possível para o pessoal.<br/>
+Foram várias palestras, e muito networking com a galera.<br/>
+Acho que nunca fui tão bem tratado em um evento como aqui em <em><strong>Fred West</strong></em>. Desde o primeiro contato com o Joel, até o último minuto na festa de encerramento, foi esta a minha sensação.</p>
+
+<p>Cada uma das pessoas que vinha falar comigo, fazia com que eu me sentisse em casa, e sentisse que tudo que estamos fazendo realmente vale a pena.<br/>
+Ver o nosso trabalho ser conhecido e ser admirado pelo pessoal, é muito gratificante.<br/>
+O evento foi impecável e muito bem organizado. Eu realemente fiquei surpreso em ver um evento deste porte no interior do RS.<br/>
+A organização está de parabéns.</p>
+
+<p>Dei 2 palestras no evento, uma de performance que já tinha dado no RSJS e no PernambucoJS e uma nova, que fiz especialmente para o EATI, sobre uma implementação de controle remoto com nodeJS.<br/>
+Eu já tinha apresentado o projeto no Webbr, mas resolvi fazer uma palestra nova para o EATI.<br/>
+O pessoal curtiu bastante ambas palestras :)</p>
+
+<p>Link das 2 palestras:<br/>
+<a href="http://jaydson.org/talks/remote-control-eati-2012">http://jaydson.org/talks/remote-control-eati-2012</a><br/>
+<a href="http://jaydson.org/wp-content/uploads/Screenshot-from-2012-11-09-162847.png"><img src="http://jaydson.org/wp-content/uploads/Screenshot-from-2012-11-09-162847.png" alt="" /></a><br/>
+<a href="http://jaydson.org/talks/x-web-performance">http://jaydson.org/talks/x-web-performance</a><br/>
+<a href="http://jaydson.org/wp-content/uploads/Screenshot-from-2012-11-09-162856.png"><img src="http://jaydson.org/wp-content/uploads/Screenshot-from-2012-11-09-162856.png" alt="" /></a></p>
+
+<p>Mais uma vez, parabéns para todos envolvidos no EATI, e muito obrigado por todos os elogios e recepções calorosas.<br/>
+Sério pessoal, foi surreal o tratamento que tivemos.<br/>
+Volto para Porto Alegre já com saudades, e com muita vontade de voltar para bela cidade de <em><strong>Fred West</strong></em>.</p>
+
+<p><a href="http://jaydson.org/wp-content/uploads/eati20121.jpg"><img src="http://jaydson.org/wp-content/uploads/eati20121.jpg" alt="" /></a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[BrazilJS - Entrevista na TV]]></title>
+    <link href="http://jaydson.github.com/braziljs-entrevista-na-tv/"/>
+    <updated>2012-09-08T01:13:58-03:00</updated>
+    <id>http://jaydson.github.com/braziljs-entrevista-na-tv</id>
+    <content type="html"><![CDATA[<p>E não é que até entrevista na TV rolou por causa do BrazilJS?<br/>
+Sim, eu e o Felipe Moura fomos entrevistados em um canal local aqui do Rio Grande do Sul.<br/>
+O programa não era voltado para o público técnico, então tivemos que nos virar com as perguntas.<br/>
+Mas foi muito legal, porque reflete muito com o mundo real, onde as pessoas não sabem bem o que é o JavaScript.<br/>
+<em><strong>JavaScript é tudo!</strong></em></p>
+
+<p>Confiram ai:<br/>
+<div class="embed-video-container"><iframe src="http://www.youtube.com/embed/TuwH-oo_UpQ "></iframe></div></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[BrazilJS 2012 - Foto épica com o Brendan Eich]]></title>
+    <link href="http://jaydson.github.com/braziljs-2012-foto-epica-com-o-brendan/"/>
+    <updated>2012-09-08T01:00:48-03:00</updated>
+    <id>http://jaydson.github.com/braziljs-2012-foto-epica-com-o-brendan</id>
+    <content type="html"><![CDATA[<p><a href="http://jaydson.org/wp-content/uploads/300467_4292369783266_2038148613_n.jpg"><img src="http://jaydson.org/wp-content/uploads/300467_4292369783266_2038148613_n.jpg" alt="BrazilJS 2012 - Epic photo with Brendan Eich" /></a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Fundação BrazilJS]]></title>
+    <link href="http://jaydson.github.com/fundacao-braziljs/"/>
+    <updated>2012-07-26T17:50:37-03:00</updated>
+    <id>http://jaydson.github.com/fundacao-braziljs</id>
+    <content type="html"><![CDATA[<p>Em 2008, eu e o Felipe Moura começamos a notar o movimento que estava acontecendo lá fora em torno do JavaScript e pensamos: "Por que não podemos ter este movimento no Brasil também?"</p>
+
+<p>Inclusive, <a href="http://jaydson.org/js-conf-2009/">este post emblemático</a> ilustra nossa vontade em fazer acontecer aqui no Brasil algo semelhante.</p>
+
+<p><em>2012 tem sido um excelente ano para o JavaScript no Brasil. Na verdade, a linguagem está em extrema ascensão nos últimos anos, no mundo inteiro.</em></p>
+
+<p><em>No Brasil, o cenário começou a mudar após a conferência BrazilJS 2011.</em></p>
+
+<p><em>O evento foi o start para que grupos regionais emergissem. Primeiramente foram criados os grupos RioJS e o PernambucoJS, que logo após incentivou a criação do SampaJS, BeagaJS e RSJS e por aí vai.</em></p>
+
+<p><em>A tendência de surgirem novos grupos e comunidades era esperado, mas isso demanda uma atenção especial, um segundo nível de organização. Ter informações e pessoas engajadas foi um grande primeiro passo, porém precisamos agora organizar isto tudo, certificar que a informação é de qualidade e manter as pessoas motivadas. Para isto, estamos trabalhando duro para criar, motivar e incentivar a evolução do JavaScript no Brasil, e seus envolvidos/interessados.</em></p>
+
+<p><em>Começamos agora mais uma iniciativa pioneira e ela se chama BrazilJS Foundation, nosso novo esforço nesta direção que temos plena convicção que trará excelentes resultados para o JavaScript por si só, mas também para as comunidades, desenvolvedores, instituições e empresas.</em></p>
+
+<p><em>Nossa missão com esse projeto é apenas uma: transmitir conhecimento e ajudar pessoas.</em></p>
+
+<p><em>Este é só o anúncio de boas-vindas. Temos uma tonelada de ideias na cabeça e pessoas dispostas a torná-las realidade. E você, quer vir com a gente?</em></p>
+]]></content>
+  </entry>
+  
+</feed>

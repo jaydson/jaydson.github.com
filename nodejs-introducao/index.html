@@ -1,0 +1,397 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>nodeJS - Introdução - Jaydson Gomes</title>
+  <meta name="author" content="Jaydson Gomes">
+
+  
+  <meta name="description" content="There are times that I think about testing nodeJS, but just this week I could stop and spend some time for this goal. My intention with this post is &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://jaydson.github.com/nodejs-introducao/">
+  <link href="/favicon.png" rel="icon">
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Jaydson Gomes" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Jaydson Gomes</a></h1>
+  
+    <h2>HTML5 | JavaScript</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:jaydson.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">nodeJS - Introdução</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-03-30T00:23:51-03:00" pubdate data-updated="true">Mar 30<span>th</span>, 2010</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><a href="http://jaydson-org.web102.redehost.com.br/assets/nodejs1.png"><img src="http://jaydson-org.web102.redehost.com.br/assets/nodejs1.png" alt="" /></a></p>
+
+<p>There are times that I think about testing <a href="http://nodejs.org/">nodeJS</a>, but just this week I could stop and spend some time for this goal.</p>
+
+<p>My intention with this post is just compile some information about the node and pass on to those who have not had the opportunity to meet.</p>
+
+<p>What motivated me to investigate the node, was the name. node<strong>JS</strong>.</p>
+
+<p>Just as every JavaScript lover, i always want to know everything about the language, as well as what is being done with it.</p>
+
+<p>What really caught my attention was the word: &#8221;<a href="http://en.wikipedia.org/wiki/Server-side_JavaScript">Server-side Javascript</a>&#8221;. o/</p>
+
+<p>Yes, that&#8217;s it. Javascript running at server.</p>
+
+<p>What also impressed me was the fact that there are several implementations of this type. Are almost 50 [link above].</p>
+
+<p><a href="http://jaydson-org.web102.redehost.com.br/assets/nodejs1.png"><img src="http://jaydson-org.web102.redehost.com.br/assets/nodejs1.png" alt="" /></a></p>
+
+<p>Há tempos que penso em testar o <a href="http://nodejs.org/"><strong>nodeJS</strong></a>, mas só esta semana pude parar e dedicar um pouco de tempo a este obejtivo.
+Meu intuito com este post é apenas &#8220;compilar&#8221; algumas informações sobre o node e passar adiante para aqueles que ainda não tiveram a oportunidade de conhecer.
+O que mais me motivou a investigar o node, foi o próprio nome. node<strong>JS.
+</strong>Assim como todo aficcionado por Javascript, sempre quero saber tudo a respeito da linguagem, assim como o que está sendo feito com ela.
+O que mais me chamou a atenção foi o termo: &#8221;<strong><a href="http://en.wikipedia.org/wiki/Server-side_JavaScript">Server-side Javascript</a></strong>&#8221;. o/
+Sim, isso mesmo. Javascript rodando no servidor.
+O que me expantou também foi o fato de existirem várias implementações deste tipo, são quase 50 [Link acima].</p>
+
+<!-- more -->
+
+
+<p>nodeJS characteristics:</p>
+
+<ul>
+<li><p><a href="http://en.wikipedia.org/wiki/Server-side_JavaScript">Server-side Javascript</a> (Term used to refer to the JavaScript running on the Server)</p></li>
+<li><p>Built on <a href="http://code.google.com/p/v8/">Google’s V8</a> (Google&#8217;s Javascript Engine)</p></li>
+<li><p>Evented, non-blocking I/O. Similar to EventMachine or Twisted. (To learn more about it: <a href="http://en.wikipedia.org/wiki/Reactor_pattern">http://en.wikipedia.org/wiki/Reactor_pattern</a>)</p></li>
+<li><p>CommonJS module system.</p></li>
+<li><p>8000 lines of C/C++, 2000 lines of Javascript, 14 contributors.</p></li>
+</ul>
+
+
+<p>Interested in learning more as I do?</p>
+
+<p>So, some references:</p>
+
+<p>nodeJS Site</p>
+
+<p><a href="http://nodejs.org/#about">http://nodejs.org/#about</a></p>
+
+<p>YUI Module to run inside nodeJS</p>
+
+<p><a href="http://yuilibrary.com/gallery/show/nodejs">http://yuilibrary.com/gallery/show/nodejs</a></p>
+
+<p><a href="http://yuilibrary.com/gallery/show/nodejs"></a></p>
+
+<p>Simon Willison&#8217;s Blog talking about nodeJS</p>
+
+<p><a href="http://yuilibrary.com/gallery/show/nodejs">http://simonwillison.net/2009/Nov/23/node/</a></p>
+
+<p>JSConf Slides</p>
+
+<p><a href="http://s3.amazonaws.com/four.livejournal/20091117/jsconf.pdf">http://s3.amazonaws.com/four.livejournal/20091117/jsconf.pdf</a></p>
+
+<p><a href="http://yuilibrary.com/gallery/show/nodejs"></a></p>
+
+<p>Example Application with nodeJS</p>
+
+<p><a href="http://chat.nodejs.org/">http://chat.nodejs.org/</a></p>
+
+<p>Video with Ryan Dahl talking about the node in SanFrancisco in January</p>
+
+<p><a href="http://vimeo.com/9968301">NodeJS Synoposis</a> from <a href="http://vimeo.com/user2924382">Kris Kowal</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+
+<p>In the next post I&#8217;ll show you a step by step how to install nodeJS and how to make a &#8220;Hello World&#8221;. : P</p>
+
+<p>Vamos então as características do nodeJS:</p>
+
+<ul>
+<li><p><a href="http://en.wikipedia.org/wiki/Server-side_JavaScript">Server-side Javascript</a> (Termo usado para se referir ao Javascript rodando no Servidor)</p></li>
+<li><p>Built on <a href="http://code.google.com/p/v8/">Google’s V8</a> (Engine Javascript do Google)</p></li>
+<li><p>Evented, non-blocking I/O. Similar to EventMachine or Twisted. (Para saber mais sobre isso: <a href="http://en.wikipedia.org/wiki/Reactor_pattern">http://en.wikipedia.org/wiki/Reactor_pattern</a>)</p></li>
+<li><p>CommonJS module system.</p></li>
+<li><p>8000 lines of C/C++, 2000 lines of Javascript, 14 contributors.</p></li>
+</ul>
+
+
+<p>Interessado em aprender mais assim como eu?
+Então, algumas referências:</p>
+
+<p>Site do nodeJS
+<a href="http://nodejs.org/#about">http://nodejs.org/#about
+</a>
+Módulo para rodar YUI dentro do node
+<a href="http://yuilibrary.com/gallery/show/nodejs">http://yuilibrary.com/gallery/show/nodejs</a></p>
+
+<p><a href="http://yuilibrary.com/gallery/show/nodejs"> </a></p>
+
+<p>Blog do Simon Willison falando sobre nodeJS<a href="http://yuilibrary.com/gallery/show/nodejs">
+http://simonwillison.net/2009/Nov/23/node/
+</a></p>
+
+<p>Slides JSConf
+<a href="http://s3.amazonaws.com/four.livejournal/20091117/jsconf.pdf">http://s3.amazonaws.com/four.livejournal/20091117/jsconf.pdf</a></p>
+
+<p><a href="http://yuilibrary.com/gallery/show/nodejs"> </a></p>
+
+<p>Aplicação exemplo com o node
+<a href="http://chat.nodejs.org/">http://chat.nodejs.org/</a></p>
+
+<p>Vídeo com Ryan Dahl falando sobre o node em SãoFrancisco em janeiro deste ano</p>
+
+<p><a href="http://vimeo.com/9968301">NodeJS Synoposis</a> from <a href="http://vimeo.com/user2924382">Kris Kowal</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+
+<p>No próximo post mostrarei  um passo a passo de como instalar o nodeJS e como fazer um &#8220;Hello World&#8221;.  :P</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Jaydson Gomes</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-03-30T00:23:51-03:00" pubdate data-updated="true">Mar 30<span>th</span>, 2010</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/nodejs/'>nodeJS</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.github.com/nodejs-introducao/" data-via="" data-counturl="http://jaydson.github.com/nodejs-introducao/" >Tweet</a>
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/criando-um-sistema-de-tarefas-com-o-thewebmind/" title="Previous Post: Criando um sistema de tarefas com o TheWebMind">&laquo; Criando um sistema de tarefas com o TheWebMind</a>
+      
+      
+        <a class="basic-alignment right" href="/nodejs-instalacao/" title="Next Post: nodeJS - Instalação">nodeJS - Instalação &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/analytics-do-blog-em-2012/">Analytics do Blog em 2012</a>
+      </li>
+    
+      <li class="post">
+        <a href="/retrospectiva-2012/">Retrospectiva 2012</a>
+      </li>
+    
+      <li class="post">
+        <a href="/eati-2012-em-frederico-westphalen/">EATI 2012 em Frederico Westphalen</a>
+      </li>
+    
+      <li class="post">
+        <a href="/w3c-webbr-2102/">W3C webbr 2102</a>
+      </li>
+    
+      <li class="post">
+        <a href="/javascript-o-guia-definitivo/">JavaScript: O Guia definitivo</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/jaydson">@jaydson</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'jaydson',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Jaydson Gomes -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+<script type="text/javascript" src="/javascripts/jaydson.js"></script>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'jaydson';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://jaydson.github.com/nodejs-introducao/';
+        var disqus_url = 'http://jaydson.github.com/nodejs-introducao/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

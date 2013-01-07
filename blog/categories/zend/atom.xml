@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Zend | Jaydson Gomes]]></title>
+  <link href="http://jaydson.github.com/blog/categories/zend/atom.xml" rel="self"/>
+  <link href="http://jaydson.github.com/"/>
+  <updated>2013-01-07T16:13:03-02:00</updated>
+  <id>http://jaydson.github.com/</id>
+  <author>
+    <name><![CDATA[Jaydson Gomes]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Zend - registerAutoload is deprecated]]></title>
+    <link href="http://jaydson.github.com/zend-registerautoload-is-deprecated/"/>
+    <updated>2010-08-11T20:07:59-03:00</updated>
+    <id>http://jaydson.github.com/zend-registerautoload-is-deprecated</id>
+    <content type="html"><![CDATA[<p>After upgrading the version of Zend Framework had a problem with registerAutoload.
+That's because since version 1.8 the Zend_Loader: registerAutoload is obsolete.
+My code was something like this:</p>
+
+<p>[php]
+include('Zend/Loader.php');
+Zend_Loader::registerAutoload();
+[/php]</p>
+
+<p>To solve the problem just use the Zend_Loader_Autoloader.
+In my implementation only the excerpt below solved the problem:</p>
+
+<p>[php]
+include('Zend/Loader/Autoloader.php');
+$autoloader = Zend_Loader_Autoloader::getInstance();
+[/php]Após atualizar a versão do <a href="http://framework.zend.com/">Zend Framework</a> tive problema com o registerAutoload.
+Isso porque desde a versão 1.8 o Zend_Loader::registerAutoload está obsoleto.
+Meu  código  estava mais ou menos assim:</p>
+
+<p>[php]
+include('Zend/Loader.php');
+Zend_Loader::registerAutoload();
+[/php]</p>
+
+<p>Para solucionar o problema basta usar o <a href="http://framework.zend.com/manual/en/zend.loader.autoloader.html">Zend_Loader_Autoloader</a>.
+Em minha implementação apenas o trecho abaixo resolveu o problema:</p>
+
+<p>[php]
+include('Zend/Loader/Autoloader.php');
+$autoloader = Zend_Loader_Autoloader::getInstance();
+[/php]</p>
+]]></content>
+  </entry>
+  
+</feed>
