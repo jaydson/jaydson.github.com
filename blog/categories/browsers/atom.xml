@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Browsers | Jaydson Gomes]]></title>
   <link href="http://jaydson.github.com/blog/categories/browsers/atom.xml" rel="self"/>
   <link href="http://jaydson.github.com/"/>
-  <updated>2013-01-07T17:00:50-02:00</updated>
+  <updated>2013-01-08T17:59:43-02:00</updated>
   <id>http://jaydson.github.com/</id>
   <author>
     <name><![CDATA[Jaydson Gomes]]></name>
@@ -32,7 +32,7 @@ BeamAuth - <a href="http://assets.adida.net/research/beamauth-ccs2007.pdf">http
 
 <p>E agora um vídeo, onde o próprio Ben explica como o BrowserID funciona.<br/>
 Vale a pena dar uma olhada, e apostar nesta tecnologia!<br/>
-<div class="embed-video-container"><iframe src="http://www.youtube.com/embed/6x45Nt1fOMM "></iframe></div></p>
+{% youtube 6x45Nt1fOMM %}</p>
 ]]></content>
   </entry>
   
@@ -58,7 +58,7 @@ A ideia é brilhante e simples.</p>
   * Respeitar a privacidade do usuário</p>
 
 <p>Para finalizar, um vídeo explicativo:<br/>
-<div class="embed-video-container"><iframe src="http://www.youtube.com/embed/l0t9yDLAmFo "></iframe></div></p>
+{% youtube l0t9yDLAmFo %}</p>
 
 <h2>Referências:</h2>
 

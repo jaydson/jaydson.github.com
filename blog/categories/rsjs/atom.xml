@@ -4,7 +4,7 @@
   <title><![CDATA[Category: RSJS | Jaydson Gomes]]></title>
   <link href="http://jaydson.github.com/blog/categories/rsjs/atom.xml" rel="self"/>
   <link href="http://jaydson.github.com/"/>
-  <updated>2013-01-07T17:00:50-02:00</updated>
+  <updated>2013-01-08T17:59:43-02:00</updated>
   <id>http://jaydson.github.com/</id>
   <author>
     <name><![CDATA[Jaydson Gomes]]></name>
@@ -23,7 +23,7 @@ Esta, como todas as outras é uma excelente palestra, mas ressalto que, quem se 
 O Felipe dedicou bastante tempo de estudo em cima de animações com CSS3, e o conteúdo que ele apresenta é sensacional, com vários exemplos de animações, mostrando assim o que pode ser feito.<br/>
 Já assisti algumas vezes a palestra, mas sempre tem algo novo, assistam que vale a pena.</p>
 
-<p><div class="embed-video-container"><iframe src="http://www.youtube.com/embed/kxEYwkKLJxk "></iframe></div></p>
+<p>{% youtube kxEYwkKLJxk %}</p>
 
 <p><em>* Cobertura: <a href="http://www.gonow.com.br">GoNow Tecnologia</a> – gravação feita pela <a href="http://www.facebook.com/djlou09">Laura Lou</a></em></p>
 ]]></content>
@@ -40,7 +40,7 @@ Na palestra ele mostrou o porque apostar as fichas no CoffeeScript.<br/>
 Explicou o funcionamento, as vantagens e features do Coffee além de mostrar que coffee é a companhia perfeita para o node.js.<br/>
 Segue o vídeo:</p>
 
-<p><div class="embed-video-container"><iframe src="http://www.youtube.com/embed/j5Lfedfm1Wk "></iframe></div></p>
+<p>{% youtube j5Lfedfm1Wk %}</p>
 
 <p><em><strong>* Cobertura: <a href="http://www.gonow.com.br">GoNow Tecnologia</a> - gravação feita pela <a href="http://www.facebook.com/djlou09">Laura Lou</a></strong></em></p>
 ]]></content>
@@ -57,7 +57,7 @@ Apesar dos 70 slides, muita coisa que eu gostaria de falar ficou de fora, mas em
 Recomendo que todos que trabalham com Web assistam a palestra.<br/>
 Feedbacks são bem vindos ;)</p>
 
-<p><div class="embed-video-container"><iframe src="http://www.youtube.com/embed/o73xH52pFPY "></iframe></div></p>
+<p>{% youtube o73xH52pFPY %}</p>
 
 <p><em>* Cobertura: <a href="http://www.gonow.com.br">GoNow Tecnologia</a> - gravação feita pela <a href="http://www.facebook.com/djlou09">Laura Lou</a></em>*</p>
 ]]></content>
@@ -73,7 +73,7 @@ A palestra dele foi bem descontraída, com várias analogias interessantes.<br/>
 Ele falou sobre uma técnica/prática bem difundida no mundo client-side, mas que muitos ainda não dominam ou não aplicam em seu dia a dia.<br/>
 Vale conferir a pelestra sobre JavaScript não obstrutivo/obstrusivo/obtrusivo ;)</p>
 
-<p><div class="embed-video-container"><iframe src="http://www.youtube.com/embed/Jrx5gVfKZSA "></iframe></div></p>
+<p>{% youtube Jrx5gVfKZSA %}</p>
 
 <p><em>* Cobertura: <a href="http://www.gonow.com.br">GoNow Tecnologia</a> - gravação feita pela <a href="http://www.facebook.com/djlou09">Laura Lou</a></em>*</p>
 ]]></content>
@@ -90,7 +90,7 @@ Ele apresentou o histórico e mostrou a evolução dos eventos no JavaScript.<br
 Falou sobre como funcionam no jQuery e em outras libs, e exemplificou muito bem cada item.<br/>
 Assim como as outras palestras, recomendo que assistam esta, mesmo se já tiver conhecimento profundo, sempre é bom assistir ;)</p>
 
-<p><div class="embed-video-container"><iframe src="http://www.youtube.com/embed/rGlF5OgD_c0 "></iframe></div></p>
+<p>{% youtube rGlF5OgD_c0 %}</p>
 
 <p><em>* Cobertura: <a href="http://www.gonow.com.br">GoNow Tecnologia</a> - gravação feita pela <a href="http://www.facebook.com/djlou09">Laura Lou</a></em>*</p>
 ]]></content>

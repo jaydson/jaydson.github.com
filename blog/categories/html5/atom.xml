@@ -4,7 +4,7 @@
   <title><![CDATA[Category: HTML5 | Jaydson Gomes]]></title>
   <link href="http://jaydson.github.com/blog/categories/html5/atom.xml" rel="self"/>
   <link href="http://jaydson.github.com/"/>
-  <updated>2013-01-07T17:00:50-02:00</updated>
+  <updated>2013-01-08T17:59:43-02:00</updated>
   <id>http://jaydson.github.com/</id>
   <author>
     <name><![CDATA[Jaydson Gomes]]></name>
@@ -106,7 +106,7 @@ Minha ideia foi criar um muro 3D, com tijolos 3D.<br/>
 É simples, cada tijolo do muro é um elemento 3D, e o conjunto de tijolos que formam o muro, também é 3D.<br/>
 Fiz um vídeo, onde fica mais fácil visualizar a proposta do experimento.</p>
 
-<p><div class="embed-video-container"><iframe src="http://www.youtube.com/embed/vUcof193BWc "></iframe></div></p>
+<p>{% youtube vUcof193BWc %}</p>
 
 <p>No vídeo, usei o Chrome, pois a performance é um pouco melhor que no Firefox. Mas o experimento funciona em ambos, além do Safari.<br/>
 O código deste experimento, assim como os outros que fiz, está no GitHub:<br/>
@@ -129,7 +129,7 @@ Estou postando aqui porque esta palestra fechou o BrazilJS 2011 com chave de our
 Bom, o BrazilJS 2012 está quase chegando, e muito provável que o Michal volte para palestrar, mas vale a pena conferir a de 2011.<br/>
 Até eu estou vendo novamente aqui.</p>
 
-<p><div class="embed-video-container"><iframe src="http://player.vimeo.com/video/37859715 "></iframe></div></p>
+<p>{% vimeo 37859715 %}</p>
 ]]></content>
   </entry>
   

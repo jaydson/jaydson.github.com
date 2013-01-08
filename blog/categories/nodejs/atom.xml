@@ -4,7 +4,7 @@
   <title><![CDATA[Category: nodeJS | Jaydson Gomes]]></title>
   <link href="http://jaydson.github.com/blog/categories/nodejs/atom.xml" rel="self"/>
   <link href="http://jaydson.github.com/"/>
-  <updated>2013-01-07T17:00:50-02:00</updated>
+  <updated>2013-01-08T17:59:43-02:00</updated>
   <id>http://jaydson.github.com/</id>
   <author>
     <name><![CDATA[Jaydson Gomes]]></name>
@@ -71,7 +71,7 @@ O código está disponível no Github >>> <a href="https://github.com/jaydson/my
 Para quem quiser testar online, a URL do MyScraper é esta: <a href="http://myscraper.jit.su/">http://myscraper.jit.su/</a></p>
 
 <p>Fiz um vídeo rápido com uma demo de uso:<br/>
-<div class="embed-video-container"><iframe src="http://www.youtube.com/embed/p00SQU3FWic "></iframe></div></p>
+{% youtube p00SQU3FWic %}</p>
 
 <p>Testem lá ;)</p>
 
@@ -141,7 +141,7 @@ Na palestra ele mostrou o porque apostar as fichas no CoffeeScript.<br/>
 Explicou o funcionamento, as vantagens e features do Coffee além de mostrar que coffee é a companhia perfeita para o node.js.<br/>
 Segue o vídeo:</p>
 
-<p><div class="embed-video-container"><iframe src="http://www.youtube.com/embed/j5Lfedfm1Wk "></iframe></div></p>
+<p>{% youtube j5Lfedfm1Wk %}</p>
 
 <p><em><strong>* Cobertura: <a href="http://www.gonow.com.br">GoNow Tecnologia</a> - gravação feita pela <a href="http://www.facebook.com/djlou09">Laura Lou</a></strong></em></p>
 ]]></content>
