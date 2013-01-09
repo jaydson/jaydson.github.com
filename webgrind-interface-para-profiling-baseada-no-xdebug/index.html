@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://jaydson.github.com/webgrind-interface-para-profiling-baseada-no-xdebug/">
+  <link rel="canonical" href="http://jaydson.org/webgrind-interface-para-profiling-baseada-no-xdebug/">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -31,6 +31,18 @@
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 
   
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1264252-8']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
 
 </head>
 
@@ -50,7 +62,7 @@
   
 <form action="http://google.com/search" method="get">
   <fieldset role="search">
-    <input type="hidden" name="q" value="site:jaydson.github.com" />
+    <input type="hidden" name="q" value="site:jaydson.org" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
@@ -93,27 +105,19 @@
   </header>
 
 
-<div class="entry-content"><p>O <a href="http://www.xdebug.org"><strong>Xdebug Profiler</strong></a> é uma ferramenta poderosa que nos permite analisar o código PHP a procura de gargalos(!), ou até mesmo determinados trechos onde possa existir lentidão na aplicação.
-Normalmente usamos algum cliente para ler as informações geradas pelo Xdebug, como por exemplo o <a href="http://kcachegrind.sf.net/">KCacheGrind</a>.</p>
+<div class="entry-content"><p>O <a href='http://www.xdebug.org'><strong>Xdebug Profiler</strong></a> é uma ferramenta poderosa que nos permite analisar o código PHP a procura de gargalos(!), ou até mesmo determinados trechos onde possa existir lentidão na aplicação. Normalmente usamos algum cliente para ler as informações geradas pelo Xdebug, como por exemplo o <a href='http://kcachegrind.sf.net/'>KCacheGrind</a>.</p>
 
-<p>O que venho compartilhar hoje é uma excelente ferramenta, o <a href="https://github.com/jokkedk/webgrind">WebGrind</a>, desenvolvida pelo <a href="https://github.com/jokkedk">Joakim Nygard</a>.
-O que gostei foi a simplicidade. <a href="https://github.com/jokkedk/webgrind">Baixe</a> > Descompacte > Coloque no servidor.
-Pronto, feito isso basta acessar, iniciar o debugger e acessar a aplicação.<!-- more --></p>
+<p>O que venho compartilhar hoje é uma excelente ferramenta, o <a href='https://github.com/jokkedk/webgrind'>WebGrind</a>, desenvolvida pelo <a href='https://github.com/jokkedk'>Joakim Nygard</a>. O que gostei foi a simplicidade. <a href='https://github.com/jokkedk/webgrind'>Baixe</a> &gt; Descompacte &gt; Coloque no servidor. Pronto, feito isso basta acessar, iniciar o debugger e acessar a aplicação.<!-- more --></p>
 
-<p>Obviamente é necessário ter o <a href="http://www.xdebug.org/docs/install">Xdebug instalado</a> e configurado, mas isso nao é  um bicho de 7 cabeças.
-Abaixo vai um screenshot de um teste que fiz com uma aplicação básica utilizando Zend Framework:</p>
+<p>Obviamente é necessário ter o <a href='http://www.xdebug.org/docs/install'>Xdebug instalado</a> e configurado, mas isso nao é um bicho de 7 cabeças. Abaixo vai um screenshot de um teste que fiz com uma aplicação básica utilizando Zend Framework:</p>
 
-<p>[caption id=&#8221;attachment_843&#8221; align=&#8221;aligncenter&#8221; width=&#8221;491&#8221; caption=&#8221;Webgrind&#8221;]<a href="http://jaydson-org.web102.redehost.com.br/assets/webgrind1.png"><img src="http://jaydson-org.web102.redehost.com.br/assets/webgrind1-1024x505.png" alt="Webgrind" /></a>[/caption]</p>
+<p><span>caption id=&#8221;attachment_843&#8221; align=&#8221;aligncenter&#8221; width=&#8221;491&#8221; caption=&#8221;Webgrind&#8221;</span>(http://jaydson-org.web102.redehost.com.br/assets/webgrind1-1024x505.png)](http://jaydson-org.web102.redehost.com.br/assets/webgrind1.png)<span>/caption</span></p>
 
-<p>Notem em cima a direita:
-654 different functions called in 109 milliseconds
-O WebGrind mostra o total de chamadas de funções, e o tempo total em milisegundos.
-Além disso, cada função exibe quais arquivos foram usados.</p>
+<p>Notem em cima a direita: 654 different functions called in 109 milliseconds O WebGrind mostra o total de chamadas de funções, e o tempo total em milisegundos. Além disso, cada função exibe quais arquivos foram usados.</p>
 
 <p>Bom, testem ai e vejam o que mais é possivel.</p>
 
-<p>Profiler</p>
-</div>
+<p>Profiler</p></div>
 
 
   <footer>
@@ -149,7 +153,7 @@ Além disso, cada função exibe quais arquivos foram usados.</p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.github.com/webgrind-interface-para-profiling-baseada-no-xdebug/" data-via="" data-counturl="http://jaydson.github.com/webgrind-interface-para-profiling-baseada-no-xdebug/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.org/webgrind-interface-para-profiling-baseada-no-xdebug/" data-via="" data-counturl="http://jaydson.org/webgrind-interface-para-profiling-baseada-no-xdebug/" >Tweet</a>
   
   
   
@@ -184,6 +188,10 @@ Além disso, cada função exibe quais arquivos foram usados.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/migrando-para-octopress/">Migrando para o Octopress</a>
+      </li>
+    
+      <li class="post">
         <a href="/analytics-do-blog-em-2012/">Analytics do Blog em 2012</a>
       </li>
     
@@ -197,10 +205,6 @@ Além disso, cada função exibe quais arquivos foram usados.</p>
     
       <li class="post">
         <a href="/w3c-webbr-2102/">W3C webbr 2102</a>
-      </li>
-    
-      <li class="post">
-        <a href="/javascript-o-guia-definitivo/">JavaScript: O Guia definitivo</a>
       </li>
     
   </ul>
@@ -260,8 +264,8 @@ Além disso, cada função exibe quais arquivos foram usados.</p>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://jaydson.github.com/webgrind-interface-para-profiling-baseada-no-xdebug/';
-        var disqus_url = 'http://jaydson.github.com/webgrind-interface-para-profiling-baseada-no-xdebug/';
+        var disqus_identifier = 'http://jaydson.org/webgrind-interface-para-profiling-baseada-no-xdebug/';
+        var disqus_url = 'http://jaydson.org/webgrind-interface-para-profiling-baseada-no-xdebug/';
         var disqus_script = 'embed.js';
       
     (function () {

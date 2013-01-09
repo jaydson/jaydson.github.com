@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://jaydson.github.com/php-teste-unitario-com-phpunit/">
+  <link rel="canonical" href="http://jaydson.org/php-teste-unitario-com-phpunit/">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -31,6 +31,18 @@
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 
   
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1264252-8']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
 
 </head>
 
@@ -50,7 +62,7 @@
   
 <form action="http://google.com/search" method="get">
   <fieldset role="search">
-    <input type="hidden" name="q" value="site:jaydson.github.com" />
+    <input type="hidden" name="q" value="site:jaydson.org" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
@@ -93,24 +105,19 @@
   </header>
 
 
-<div class="entry-content"><p>Following  the idea of the last post, where I spoke about the misconception of  some people think that PHP is not a language for robust systems, i will talk  briefly about PHPUnit.</p>
+<div class="entry-content"><p>Following the idea of the last post, where I spoke about the misconception of some people think that PHP is not a language for robust systems, i will talk briefly about PHPUnit.</p>
 
 <p>Unit testing is neither a matter of tool, but the developer, or company policy which works.</p>
 
-<p>I  say that because it is still common today models of enterprises that  use the famous XGH, where nothing matters, just to make money and deliver  the system.</p>
+<p>I say that because it is still common today models of enterprises that use the famous XGH, where nothing matters, just to make money and deliver the system.</p>
 
 <p>In PHP world, PHPUnit is the primary tool for unit testing.</p>
 
 <p>The installation is very simple, and using the NetBeans IDE it becomes easier still.</p>
 
-<p>Below is a step by step:Seguindo a ideia do <a href="http://jaydson.org/php-debugando-aplicacoes-com-xdebug-netbeans/">último post</a>, onde falei sobre o equívoco de alguns em achar que PHP não é uma linguagem para sistemas robustos, vou falar brevemente sobre o PHPUnit.
-Teste unitário não é nem questão de ferramenta e sim do próprio programador, ou da política da empresa onde se trabalha.
-Digo isso, porque ainda é comum hoje em dia modelos de empresas que utilizam o famoso <a href="http://gohorseprocess.wordpress.com/extreme-go-horse-xgh/">XGH</a>, onde nada importa, a não ser ganhar dinheiro e entregar o sistema.</p>
+<p>Below is a step by step:Seguindo a ideia do <a href='http://jaydson.org/php-debugando-aplicacoes-com-xdebug-netbeans/'>último post</a>, onde falei sobre o equívoco de alguns em achar que PHP não é uma linguagem para sistemas robustos, vou falar brevemente sobre o PHPUnit. Teste unitário não é nem questão de ferramenta e sim do próprio programador, ou da política da empresa onde se trabalha. Digo isso, porque ainda é comum hoje em dia modelos de empresas que utilizam o famoso <a href='http://gohorseprocess.wordpress.com/extreme-go-horse-xgh/'>XGH</a>, onde nada importa, a não ser ganhar dinheiro e entregar o sistema.</p>
 
-<p>No mundo PHP, o <a href="http://www.phpunit.de/">PHPUnit</a> é a principal ferramenta para testes unitários.
-A instalação é bem simples, e utilizando o NetBeans como IDE fica mais fácil ainda.
-Abaixo segue um passo a passo:<!-- more -->
-To install PHPUnit you must have the Pear if you have not</p>
+<p>No mundo PHP, o <a href='http://www.phpunit.de/'>PHPUnit</a> é a principal ferramenta para testes unitários. A instalação é bem simples, e utilizando o NetBeans como IDE fica mais fácil ainda. Abaixo segue um passo a passo:<!-- more --> To install PHPUnit you must have the Pear if you have not</p>
 
 <p><strong>$ sudo apt-get install php-pear</strong></p>
 
@@ -128,9 +135,9 @@ To install PHPUnit you must have the Pear if you have not</p>
 
 <p>PS: I&#8217;m using the latest version of NetBeans, which is now 6.9.1</p>
 
-<p>1 - Tools> Options and select the tab PHP</p>
+<p>1 - Tools&gt; Options and select the tab PHP</p>
 
-<p>[caption id=&#8221;attachment_634&#8221; align=&#8221;alignnone&#8221; width=&#8221;300&#8221; caption=&#8221;Tools > Options&#8221;]<a href="http://jaydson-org.web102.redehost.com.br/assets/passo11.png"><img src="http://jaydson.org/wp-content/uploads/2010/09/passo1-300x261.png" alt="" /></a>[/caption]</p>
+<p><span>caption id=&#8221;attachment_634&#8221; align=&#8221;alignnone&#8221; width=&#8221;300&#8221; caption=&#8221;Tools &gt; Options&#8221;</span>(http://jaydson.org/wp-content/uploads/2010/09/passo1-300x261.png)](http://jaydson-org.web102.redehost.com.br/assets/passo11.png)<span>/caption</span></p>
 
 <p>2 - In the PHPUnit source enter the path to PHPUnit, in my case <strong>/usr /bin/phpunit</strong></p>
 
@@ -140,7 +147,7 @@ To install PHPUnit you must have the Pear if you have not</p>
 
 <p>Create a class, and then right on top.</p>
 
-<p>Tools> Create PHPUnit tests</p>
+<p>Tools&gt; Create PHPUnit tests</p>
 
 <p>Select the directory taht you created as a repository of tests.</p>
 
@@ -150,41 +157,29 @@ To install PHPUnit you must have the Pear if you have not</p>
 
 <p>Of course, not everything is so simple, you need to understand how a unit test work, and to understand the tool.</p>
 
-<p>For that > <a href="http://www.phpunit.de/manual/3.4/en/index.html">http://www.phpunit.de/manual/3.4/en/index.html</a></p>
+<p>For that &gt; <a href='http://www.phpunit.de/manual/3.4/en/index.html'>http://www.phpunit.de/manual/3.4/en/index.html</a></p>
 
-<p>Para instalar o PHPUnit é preciso ter o <a href="http://pear.php.net/">Pear</a>, caso não tenha
-<strong>$ sudo apt-get install php-pear</strong></p>
+<p>Para instalar o PHPUnit é preciso ter o <a href='http://pear.php.net/'>Pear</a>, caso não tenha <strong>$ sudo apt-get install php-pear</strong></p>
 
-<p>Após instalar o Pear, é necessário registrar o canal no ambiente
-<strong>$ sudo pear channel-discover pear.phpunit.de</strong></p>
+<p>Após instalar o Pear, é necessário registrar o canal no ambiente <strong>$ sudo pear channel-discover pear.phpunit.de</strong></p>
 
-<p>E enfim, instalar o PHPUnit
-<strong>$ sudo pear install phpunit/PHPUnit</strong></p>
+<p>E enfim, instalar o PHPUnit <strong>$ sudo pear install phpunit/PHPUnit</strong></p>
 
-<p><strong> </strong>Pronto, se tudo deu certo até aqui, o PHPUnit foi instalado com sucesso!
-Agora vamos configurar para usar no NetBeans.</p>
+<p>** <strong>Pronto, se tudo deu certo até aqui, o PHPUnit foi instalado com sucesso! Agora vamos configurar para usar no NetBeans.</strong></p>
 
 <p>OBS: Estou usando a última versão do NetBeans, que hoje é 6.9.1</p>
 
-<p>1 - Tools > Options e selecione a aba PHP</p>
+<p>1 - Tools &gt; Options e selecione a aba PHP</p>
 
-<p>[caption id=&#8221;attachment_634&#8221; align=&#8221;alignnone&#8221; width=&#8221;300&#8221; caption=&#8221;Tools > Options&#8221;]<a href="http://jaydson-org.web102.redehost.com.br/assets/passo11.png"><img src="http://jaydson.org/wp-content/uploads/2010/09/passo1-300x261.png" alt="" /></a>[/caption]</p>
+<p><span>caption id=&#8221;attachment_634&#8221; align=&#8221;alignnone&#8221; width=&#8221;300&#8221; caption=&#8221;Tools &gt; Options&#8221;</span>(http://jaydson.org/wp-content/uploads/2010/09/passo1-300x261.png)](http://jaydson-org.web102.redehost.com.br/assets/passo11.png)<span>/caption</span></p>
 
 <p>2 - No campo PHPUnit source informe o caminho do PHPUnit, no meu caso <strong>/usr/bin/phpunit</strong></p>
 
-<p>Pronto.
-Agora para testar crie um diretório em sua aplicação com o nome que desejar. Esse diretório será o repositório de seus testes.
-Crie uma classe, e clique com o botão direito em cima.
-Tools > Create PHPUnit tests
-Selecione o diretório criado como repositório dos testes.
-A partir de agora todos seus testes serão armazenados neste diretório.
-Para criar novos testes, basta repetir o procedimento.</p>
+<p>Pronto. Agora para testar crie um diretório em sua aplicação com o nome que desejar. Esse diretório será o repositório de seus testes. Crie uma classe, e clique com o botão direito em cima. Tools &gt; Create PHPUnit tests Selecione o diretório criado como repositório dos testes. A partir de agora todos seus testes serão armazenados neste diretório. Para criar novos testes, basta repetir o procedimento.</p>
 
-<p>Claro que nem tudo é tão simples, é preciso entender como funciona um teste unitário, e entender a ferramenta.
-Para isso > <a href="http://www.phpunit.de/manual/3.4/en/index.html">http://www.phpunit.de/manual/3.4/en/index.html</a></p>
+<p>Claro que nem tudo é tão simples, é preciso entender como funciona um teste unitário, e entender a ferramenta. Para isso &gt; <a href='http://www.phpunit.de/manual/3.4/en/index.html'>http://www.phpunit.de/manual/3.4/en/index.html</a></p>
 
-<p><a href="http://www.phpunit.de/manual/3.4/en/index.html"></a>Boa sorte, e espero ter ajudado.</p>
-</div>
+<p><a href='http://www.phpunit.de/manual/3.4/en/index.html' />Boa sorte, e espero ter ajudado.</p></div>
 
 
   <footer>
@@ -220,7 +215,7 @@ Para isso > <a href="http://www.phpunit.de/manual/3.4/en/index.html">http://www.
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.github.com/php-teste-unitario-com-phpunit/" data-via="" data-counturl="http://jaydson.github.com/php-teste-unitario-com-phpunit/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.org/php-teste-unitario-com-phpunit/" data-via="" data-counturl="http://jaydson.org/php-teste-unitario-com-phpunit/" >Tweet</a>
   
   
   
@@ -255,6 +250,10 @@ Para isso > <a href="http://www.phpunit.de/manual/3.4/en/index.html">http://www.
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/migrando-para-octopress/">Migrando para o Octopress</a>
+      </li>
+    
+      <li class="post">
         <a href="/analytics-do-blog-em-2012/">Analytics do Blog em 2012</a>
       </li>
     
@@ -268,10 +267,6 @@ Para isso > <a href="http://www.phpunit.de/manual/3.4/en/index.html">http://www.
     
       <li class="post">
         <a href="/w3c-webbr-2102/">W3C webbr 2102</a>
-      </li>
-    
-      <li class="post">
-        <a href="/javascript-o-guia-definitivo/">JavaScript: O Guia definitivo</a>
       </li>
     
   </ul>
@@ -331,8 +326,8 @@ Para isso > <a href="http://www.phpunit.de/manual/3.4/en/index.html">http://www.
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://jaydson.github.com/php-teste-unitario-com-phpunit/';
-        var disqus_url = 'http://jaydson.github.com/php-teste-unitario-com-phpunit/';
+        var disqus_identifier = 'http://jaydson.org/php-teste-unitario-com-phpunit/';
+        var disqus_url = 'http://jaydson.org/php-teste-unitario-com-phpunit/';
         var disqus_script = 'embed.js';
       
     (function () {

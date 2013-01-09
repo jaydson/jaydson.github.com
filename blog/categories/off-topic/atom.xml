@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Off-Topic | Jaydson Gomes]]></title>
-  <link href="http://jaydson.github.com/blog/categories/off-topic/atom.xml" rel="self"/>
-  <link href="http://jaydson.github.com/"/>
-  <updated>2013-01-08T19:02:23-02:00</updated>
-  <id>http://jaydson.github.com/</id>
+  <link href="http://jaydson.org/blog/categories/off-topic/atom.xml" rel="self"/>
+  <link href="http://jaydson.org/"/>
+  <updated>2013-01-09T19:46:03-02:00</updated>
+  <id>http://jaydson.org/</id>
   <author>
     <name><![CDATA[Jaydson Gomes]]></name>
     
@@ -14,273 +14,277 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Migrando para o Octopress]]></title>
+    <link href="http://jaydson.org/migrando-para-octopress/"/>
+    <updated>2013-01-09T04:44:30-02:00</updated>
+    <id>http://jaydson.org/migrando-para-octopress</id>
+    <content type="html"><![CDATA[<p>Hoje publiquei a primeira versão do novo Blog.<br />Entre as principais mudanças, está a plataforma.<br />Migrei do nosso velho amigo <a href='http://wordpress.org'>Wordpress</a> para o novo amigo <a href='http://octopress.org'>Octopress</a>.<br />Outra mudança é o tema, apesar de parecido com o antigo, este tema novo é responsivo, algo que eu já planejava fazer faz um tempo.<br />O tema é praticamente o default do Octopress, com algumas mudanças de cores, fontes e estrutura que apliquei.<br />Para esta primeira versão ele ficará assim, mas meu objetivo é personaliza-lo mais em breve.</p>
+
+<h2 id='porque_fazer_esta_mudana'>Porque fazer esta mudança?</h2>
+
+<p>Usei o Wordpress por muito tempo aqui no Blog, e em alguns outros projetos também.<br />Creio que para determinados sites/blogs, o ideal ainda continue sendo o Wordpress, mas para a minha necessidade, um gerador estático funciona melhor.<br />Basicamente, o blog agora é baseado só em HTML, CSS e <a href='https://developer.mozilla.org/en-US/docs/JavaScript'>JavaScript</a>. Não existe nenhuma dependência server-side, a não ser o próprio servidor servindo arquivos estáticos. Outras dependências são baseadas em serviços externos, como <a href='http://disqus.com'>Disqus</a>, Google Analytics, GitHub, entre outros.</p>
+
+<p>Outro fator importante é a possibilidade de usar outra tecnologia.<br />Nunca fui muito adepto, e nunca fiz nenhuma linha de código Ruby, mas o <a href='https://github.com/mojombo/jekyll'>Jekyll</a> me pareceu ser a melhor solução para sites estáticos.<br />O Octopress facilita ainda um pouco mais, fornecendo uma série de funcionalidades úteis.<br />Existem vários projetos com o mesmo propósito, um dos mais usados é o <a href='https://github.com/bevry/docpad'>DocPad</a>, feito em <a href='http://nodejs.org/'>Node</a>, o que me agrada muito, mas ainda assim optei pelo Octopress.</p>
+
+<h2 id='fatores_importantes_para_a_migrao'>Fatores importantes para a migração</h2>
+
+<p>Eu mantenho este Blog desde 2009, já vou para o quinto ano. Durante este tempo criei muito conteúdo.<br />Não posso simplesmente ignorar o histórico.<br />Abaixo cito os principais pontos que me preocupei antes de migrar:</p>
+
+<ul>
+<li>Manter as mesmas URL&#8217;s</li>
+
+<li>Manter caminho das Imagens</li>
+
+<li>Comentários</li>
+
+<li>Rollback</li>
+
+<li>Deploy</li>
+</ul>
+
+<h3 id='manter_as_mesmas_url'>Manter as mesmas URL</h3>
+
+<p>Para a nova estrutura eu mantive as mesmas URL&#8217;s. Desde o início, sempre usei o padrão <em>http://jaydson.org/:post</em>name/, isso facilitou, pois não tenho nenhuma variável como data, identificador, etc.<br />Tecnicamente, cada post/página é um diretório no servidor, com um arquivo index.html.</p>
+
+<h3 id='manter_caminho_das_imagens'>Manter caminho das Imagens</h3>
+
+<p>No Wordpress, todas imagens ficavam no diretório <em>wp</em>content/uploads.<br />Tenho muita imagem neste diretório público. A única solução viável foi manter este diretório na raiz do servidor.<br />Desta maneira todas as imagens continuam com a mesma URL.<br />Por exemplo:<br /><a href='http://jaydson.org/wp-content/uploads/js.png'><img alt='' src='http://jaydson.org/wp-content/uploads/js.png' /></a><br />Esta imagem eu usei em um post de fevereiro de 2012, utilizando a estrutura Wordpress.</p>
+
+<h3 id='comentrios'>Comentários</h3>
+
+<p>Eu usava a solução de comentários nativa do Wordpress.<br />No momento que comecei a pensar em migrar o Blog, fiz a migração para dos comentários para o Disqus.<br />Esta tarefa é bem fácil, existem um plugin Wordpress para isso.<br /><a href='http://disqus.com/admin/wordpress/'>http://disqus.com/admin/wordpress/</a><br />Testei por algum tempo a solução do Disqus no próprio Wordpress, e gostei bastante.<br />Agora no novo Blog, os comentários são baseados apenas em JavaScript.<br />Um único porém nesta solução é o SEO, pois comentários gerados por JavaScritp não são indexados, e em alguns casos isso pode ser impeditivo.</p>
+
+<h3 id='rollback'>Rollback</h3>
+
+<p>Apesar de ser apenas um Blog pessoal, eu tenho o mesmo cuidado com que teria com qualquer outra aplicação.<br />Por isso, estou mantendo backups para fazer um possível rollback.<br />O Wordpress possui uma ferramenta de exportação, que gera um XML bem completo com dados e metadados sobre o seu Blog. <br />Eu sempre mantive um cópia deste XML de tempos em tempos.<br />O tema que fiz esta no Github, e é facilmente plugável a uma nova instalação do Wordpress.<br />Com isto, qualquer problema que eu tenha, eu posso instalar um novo Wordpress, plugar o tema, importar os dados, e pronto, tenho o Blog funcionando como antes.</p>
+
+<h3 id='deploy'>Deploy</h3>
+
+<p>Nesta primeira fase, apenas publiquei a estrutura no meu servidor, via FTP.<br />Mas FTP é algo que detesto, e existem várias maneiras de se fazer um deploy atualmente, e este será o próximo passo.<br />Estou pensando em usar o GitHub Pages, que permite que eu faça um deploy diretamente no Github, após o meu Push no repositório.<br />O Octopress fornece ferramentas que facilitam esta tarefa, mas ainda não parei para fazer.</p>
+
+<h2 id='octopress'>Octopress</h2>
+
+<p>O <a href='http://octopress.org/'>Octopress</a> é um framework para blogs, baseado no <a href='https://github.com/mojombo/jekyll'>Jekyll</a>.<br />Na atual versão(2.0), ele possui killer features:</p>
+
+<ul>
+<li>Um template HTML5 semântico</li>
+
+<li>Layout responsivo</li>
+
+<li>Suporte nativo para Twitter, Google Plus One, Disqus Comments, Pinboard, Delicious e Google Analytics</li>
+
+<li>Uma maneira fácil de deployment (Github pages, Rsync)</li>
+
+<li>Compass e Sass (Não sou muito fã destes caras, mas vou testar também)</li>
+
+<li>Syntax highlighting</li>
+</ul>
+
+<p>Bom, ainda estou em fase de avaliação da plataforma, testes, etc, mas estou gostando bastante.<br />O <a href='http://eltonminetto.net'>Elton Minetto</a> fez a migração Wordpress&gt;Octopress e relatou neste <a href='http://eltonminetto.net/blog/2013/01/04/migrando-wordpress-para-octopress/'>post</a>.<br />Para quem quiser mais detalhes de como migrar, vale a pena dar uma lida.<br />Em breve farei um post sobre minhas dificuldades na migração e soluções adotadas.</p>]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Analytics do Blog em 2012]]></title>
-    <link href="http://jaydson.github.com/analytics-do-blog-em-2012/"/>
+    <link href="http://jaydson.org/analytics-do-blog-em-2012/"/>
     <updated>2013-01-02T03:57:30-02:00</updated>
-    <id>http://jaydson.github.com/analytics-do-blog-em-2012</id>
-    <content type="html"><![CDATA[<p>Como de costume, gosto de compartilhar os dados do Analytics do meu Blog ano após ano.<br/>
-Veja em 2010: <a href="http://jaydson.org/analytics-do-blog-2010/">http://www.jaydson.org/analytics-do-blog-2010/</a><br/>
-Veja em 2011: <a href="http://jaydson.org/analytics-do-blog-em-2011/">http://www.jaydson.org/analytics-do-blog-em-2011/</a></p>
+    <id>http://jaydson.org/analytics-do-blog-em-2012</id>
+    <content type="html"><![CDATA[<p>Como de costume, gosto de compartilhar os dados do Analytics do meu Blog ano após ano.<br />Veja em 2010: <a href='http://jaydson.org/analytics-do-blog-2010/'>http://www.jaydson.org/analytics-do-blog-2010/</a><br />Veja em 2011: <a href='http://jaydson.org/analytics-do-blog-em-2011/'>http://www.jaydson.org/analytics-do-blog-em-2011/</a></p>
 
-<p>Em 2012 escrevi pouco mais de <strong>30</strong> <strong>posts</strong>.<br/>
-Baixei a média, pois em 2011 foram em torno de 40. A média ficou em<strong> 2 posts por mês</strong>.<br/>
-Meu objetivo para 2013 é beirar os <strong>100</strong> <strong>posts</strong>.</p>
+<p>Em 2012 escrevi pouco mais de <strong>30</strong> <strong>posts</strong>.<br />Baixei a média, pois em 2011 foram em torno de 40. A média ficou em** 2 posts por mês<strong>.<br />Meu objetivo para 2013 é beirar os</strong>100** <strong>posts</strong>.</p>
 
-<p>O total de pageviews ultrapassou os <strong>50K</strong>, e isso quer dizer que de 2011 para 2012 os acessos cresceram uns <strong>40%</strong>. Legal!<br/>
-O total de unique visitors passou de <strong>32K</strong>.<br/>
-Média de acessos diários:  <strong>140 acessos</strong>  <br/>
-Média mensal: <strong>4.200 acessos</strong></p>
+<p>O total de pageviews ultrapassou os <strong>50K</strong>, e isso quer dizer que de 2011 para 2012 os acessos cresceram uns <strong>40%</strong>. Legal!<br />O total de unique visitors passou de <strong>32K</strong>.<br />Média de acessos diários:  <strong>140 acessos</strong> <br />Média mensal: <strong>4.200 acessos</strong></p>
 
-<p><strong>Browsers:</strong><br/>
-- Chrome – 56.90%
-- Firefox – 33.78%<br/>
-- IE – 5.67%<br/>
-- Safari – 1.88%<br/>
-- Opera – 0.86%<br/>
-- Android Browser – 0.29%</p>
+<p><strong>Browsers:</strong></p>
 
-<p>Em 2012 o Chrome ultrapassou o Firefox, e isso representa o mundo real onde o Chrome é o browser mais utilizado.<br/>
-Mas esta fatia que o Chrome roubou é grande parte de usuários do Internet Explorer.<br/>
-O Firefox continua sendo o meu Browser preferido, e o mais querido em todo o mundo :)<br/>
-O importante é que finalmente existem opções, e todos são excelentes.<br/>
-<a href="http://jaydson.org/wp-content/uploads/browsers4.png"><img src="http://jaydson.org/wp-content/uploads/browsers4.png" alt="" /></a></p>
+<ul>
+<li>Chrome – 56.90%</li>
+
+<li>Firefox – 33.78%</li>
+
+<li>IE – 5.67%</li>
+
+<li>Safari – 1.88%</li>
+
+<li>Opera – 0.86%</li>
+
+<li>Android Browser – 0.29%</li>
+</ul>
+
+<p>Em 2012 o Chrome ultrapassou o Firefox, e isso representa o mundo real onde o Chrome é o browser mais utilizado.<br />Mas esta fatia que o Chrome roubou é grande parte de usuários do Internet Explorer.<br />O Firefox continua sendo o meu Browser preferido, e o mais querido em todo o mundo :)<br />O importante é que finalmente existem opções, e todos são excelentes.<br /><a href='http://jaydson.org/wp-content/uploads/browsers4.png'><img alt='' src='http://jaydson.org/wp-content/uploads/browsers4.png' /></a></p>
 
 <p>*O acesso mobile ainda não representa uma fatia considerável. Em 2013 isso deve mudar.</p>
 
-<p><strong>Sistema Operacional:</strong><br/>
-* Windows – 77.08%<br/>
-* Linux – 13.92%<br/>
-* Mac – 7.80%<br/>
-* iOS – 0.40%<br/>
-* Android – 0.39%</p>
+<p><strong>Sistema Operacional:</strong></p>
 
-<p>A soberania do Windows continua, com uma pequena queda de 2%. Creio que nos próximos anos isso deva mudar bastante, sistemas operacionais mobile devem ter uma fatia maior.<br/>
-<a href="http://jaydson.org/wp-content/uploads/os.png"><img src="http://jaydson.org/wp-content/uploads/os.png" alt="" /></a></p>
+<ul>
+<li>Windows – 77.08%</li>
 
-<p><strong>Source:</strong><br/>
-* Google – 87.67%<br/>
-* Acesso direto – 7.14%<br/>
-* Twitter/Facebook – 2%<br/>
-<a href="http://jaydson.org/wp-content/uploads/source2.png"><img src="http://jaydson.org/wp-content/uploads/source2.png" alt="" /></a></p>
+<li>Linux – 13.92%</li>
 
-<p><strong>Location:</strong><br/>
-* Sao Paulo – 31.50%<br/>
-* Rio Grande do Sul – 12.06%<br/>
-* Minas Gerais – 9.25%<br/>
-* Rio de Janeiro – 8.82%<br/>
-* Parana – 7.76%<br/>
-* Santa Catarina – 5.14%</p>
+<li>Mac – 7.80%</li>
 
-<p>93% dos acessos sao do Brasil, e medindo por estados temos este cenário.<br/>
-<a href="http://jaydson.org/wp-content/uploads/location.png"><img src="http://jaydson.org/wp-content/uploads/location.png" alt="" /></a></p>
+<li>iOS – 0.40%</li>
 
-<p>Notem que de 2011 para 2012 os acessos do Rio de Janeiro diminuiram. Isto se deve ao fato de que o pessoal praferiu ler  o conteúdo do blog do <a href="http://blog.zenorocha.com/">Zeno Rocha</a> :P</p>
+<li>Android – 0.39%</li>
+</ul>
 
-<p>Bom, é isso pessoal.<br/>
-Em 2013 continuarei tentando transmitir o máximo de conhecimento possível por aqui.</p>
-]]></content>
+<p>A soberania do Windows continua, com uma pequena queda de 2%. Creio que nos próximos anos isso deva mudar bastante, sistemas operacionais mobile devem ter uma fatia maior.<br /><a href='http://jaydson.org/wp-content/uploads/os.png'><img alt='' src='http://jaydson.org/wp-content/uploads/os.png' /></a></p>
+
+<p><strong>Source:</strong></p>
+
+<ul>
+<li>Google – 87.67%</li>
+
+<li>Acesso direto – 7.14%</li>
+
+<li>Twitter/Facebook – 2%<br /><a href='http://jaydson.org/wp-content/uploads/source2.png'><img alt='' src='http://jaydson.org/wp-content/uploads/source2.png' /></a></li>
+</ul>
+
+<p><strong>Location:</strong></p>
+
+<ul>
+<li>Sao Paulo – 31.50%</li>
+
+<li>Rio Grande do Sul – 12.06%</li>
+
+<li>Minas Gerais – 9.25%</li>
+
+<li>Rio de Janeiro – 8.82%</li>
+
+<li>Parana – 7.76%</li>
+
+<li>Santa Catarina – 5.14%</li>
+</ul>
+
+<p>93% dos acessos sao do Brasil, e medindo por estados temos este cenário.<br /><a href='http://jaydson.org/wp-content/uploads/location.png'><img alt='' src='http://jaydson.org/wp-content/uploads/location.png' /></a></p>
+
+<p>Notem que de 2011 para 2012 os acessos do Rio de Janeiro diminuiram. Isto se deve ao fato de que o pessoal praferiu ler  o conteúdo do blog do <a href='http://blog.zenorocha.com/'>Zeno Rocha</a> :P</p>
+
+<p>Bom, é isso pessoal.<br />Em 2013 continuarei tentando transmitir o máximo de conhecimento possível por aqui.</p>]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Retrospectiva 2012]]></title>
-    <link href="http://jaydson.github.com/retrospectiva-2012/"/>
+    <link href="http://jaydson.org/retrospectiva-2012/"/>
     <updated>2012-12-29T01:01:01-02:00</updated>
-    <id>http://jaydson.github.com/retrospectiva-2012</id>
-    <content type="html"><![CDATA[<p>Pessoalmente, 2012 foi um ano excelente.<br/>
-Trabalhar no <a href="http://terra.com.br">Terra</a> é uma experiência única. Nestes quase 2 anos que estou lá, aprendi muito com muita gente boa.<br/>
-Além de aprender, tenho a sensação de ter cumprido o meu papel em todos projetos que trabalhei, todos eles relacionados a soluções nada convencionais com JavaScript.<br/>
-Em 2013 terei um desafio ainda maior, pois troquei de equipe, e agora faço parte da equipe de Arquitetura do Terra.<br/>
-Nesta nova equipe, terei o papel de resolver problemas maiores, criar soluções escaláveis, e mudar muito do processo de desenvolvimento frontend dentro da empresa.<br/>
-Estou bem confiante, pois tenho pessoas extremamente competentes do meu lado, e uma gerência e direção que estão apostando forte no frontend.<br/>
-Com este cenário, para mim é fácil, pois sou movido pela motivação.</p>
+    <id>http://jaydson.org/retrospectiva-2012</id>
+    <content type="html"><![CDATA[<p>Pessoalmente, 2012 foi um ano excelente.<br />Trabalhar no <a href='http://terra.com.br'>Terra</a> é uma experiência única. Nestes quase 2 anos que estou lá, aprendi muito com muita gente boa.<br />Além de aprender, tenho a sensação de ter cumprido o meu papel em todos projetos que trabalhei, todos eles relacionados a soluções nada convencionais com JavaScript.<br />Em 2013 terei um desafio ainda maior, pois troquei de equipe, e agora faço parte da equipe de Arquitetura do Terra.<br />Nesta nova equipe, terei o papel de resolver problemas maiores, criar soluções escaláveis, e mudar muito do processo de desenvolvimento frontend dentro da empresa.<br />Estou bem confiante, pois tenho pessoas extremamente competentes do meu lado, e uma gerência e direção que estão apostando forte no frontend.<br />Com este cenário, para mim é fácil, pois sou movido pela motivação.</p>
 
-<p>Para o mercado FrontEnd no Brasil, 2012 foi um ano espetacular. Crescemos como comunidade, e finalmente as empresas estão dando o devido valor.<br/>
-A <a href="http://braziljs.com.br">BrazilJS Conference</a> foi novamente um dos principais eventos do mundo, mostrando que o Brasil tem um lugar destacado neste mercado que cresce cada vez mais.<br/>
-Foram dezenas de eventos frontend ao longo do ano em todos os cantos do Brasil, e isso me deixa muito feliz.</p>
+<p>Para o mercado FrontEnd no Brasil, 2012 foi um ano espetacular. Crescemos como comunidade, e finalmente as empresas estão dando o devido valor.<br />A <a href='http://braziljs.com.br'>BrazilJS Conference</a> foi novamente um dos principais eventos do mundo, mostrando que o Brasil tem um lugar destacado neste mercado que cresce cada vez mais.<br />Foram dezenas de eventos frontend ao longo do ano em todos os cantos do Brasil, e isso me deixa muito feliz.</p>
 
-<p>Recapitulando o ano, posso começar por fevereiro de 2012.<br/>
-Meu primeiro post de 2012 no Blog foi <a href="http://jaydson.org/como-detectar-o-evento-click-em-um-iframe-crossdomain/">Como detectar o evento Click em um iframe crossdomain</a>.<br/>
-Este foi um exemplo de código bem maluco que tive que implementar no Terra.</p>
+<p>Recapitulando o ano, posso começar por fevereiro de 2012.<br />Meu primeiro post de 2012 no Blog foi <a href='http://jaydson.org/como-detectar-o-evento-click-em-um-iframe-crossdomain/'>Como detectar o evento Click em um iframe crossdomain</a>.<br />Este foi um exemplo de código bem maluco que tive que implementar no Terra.</p>
 
-<p>Ainda em fevereiro<a href="http://jaydson.org/novo-tema-do-blog/">, troquei o tema do Blog</a>.<br/>
-Ficou bem legal até, mas para 2013 quero mudar novamente, talvez sair do WordPress, pois quero ter mais controle sobre meus documentos.</p>
+<p>Ainda em fevereiro<a href='http://jaydson.org/novo-tema-do-blog/'>, troquei o tema do Blog</a>.<br />Ficou bem legal até, mas para 2013 quero mudar novamente, talvez sair do WordPress, pois quero ter mais controle sobre meus documentos.</p>
 
-<p>Em fevereiro, anunciamos o <a href="http://rsjs.org">RSJS</a>, a <a href="http://jaydson.org/rsjs-a-conferencia-gaucha-de-javascript/">conferência gaudéria de JavaScript</a>.<br/>
-O evento aconteceu no dia o3/03/2012 e foi muito bacana. Veja o <a href="http://jaydson.org/rsjs-review/">review</a>.</p>
+<p>Em fevereiro, anunciamos o <a href='http://rsjs.org'>RSJS</a>, a <a href='http://jaydson.org/rsjs-a-conferencia-gaucha-de-javascript/'>conferência gaudéria de JavaScript</a>.<br />O evento aconteceu no dia o3/03/2012 e foi muito bacana. Veja o <a href='http://jaydson.org/rsjs-review/'>review</a>.</p>
 
-<p>Em março comecei a brincar com <a href="https://developer.mozilla.org/en-US/docs/CSS/CSS3">CSS3</a>, e fiz alguns experimentos bem legais como o <a href="http://jaydson.org/cubo-3d-com-css3/">Cubo 3D com CSS3</a>, <a href="http://jaydson.org/esfera-com-css3-3d/">Esfera com CSS3 3D</a>, <a href="http://jaydson.org/experimento-css3-3d-the-wall-explosion/">Wall Explosion</a>.<br/>
-O <a href="http://felipenmoura.org">Felipe</a> fez algo fantástico também, o <a href="http://jaydson.org/root3d-experimento-css3d/">Root3D</a>.</p>
+<p>Em março comecei a brincar com <a href='https://developer.mozilla.org/en-US/docs/CSS/CSS3'>CSS3</a>, e fiz alguns experimentos bem legais como o <a href='http://jaydson.org/cubo-3d-com-css3/'>Cubo 3D com CSS3</a>, <a href='http://jaydson.org/esfera-com-css3-3d/'>Esfera com CSS3 3D</a>, <a href='http://jaydson.org/experimento-css3-3d-the-wall-explosion/'>Wall Explosion</a>.<br />O <a href='http://felipenmoura.org'>Felipe</a> fez algo fantástico também, o <a href='http://jaydson.org/root3d-experimento-css3d/'>Root3D</a>.</p>
 
-<p>Em Abril rolou o <a href="http://jaydson.org/pernambucojs-resumo/">PernambucoJS</a>, um evento chave para o ano de 2012.<br/>
-Lá conheci uma galera engajada em algo que eu e o Felipe vinhamos pensando ao longo dos anos.<br/>
-Não posso deixar de citar o <a href="http://blog.zenorocha.com/">Zeno</a>, um cara que explodiu em 2012, e que foi fundamental para a concretização de muita coisa que aconteceu.</p>
+<p>Em Abril rolou o <a href='http://jaydson.org/pernambucojs-resumo/'>PernambucoJS</a>, um evento chave para o ano de 2012.<br />Lá conheci uma galera engajada em algo que eu e o Felipe vinhamos pensando ao longo dos anos.<br />Não posso deixar de citar o <a href='http://blog.zenorocha.com/'>Zeno</a>, um cara que explodiu em 2012, e que foi fundamental para a concretização de muita coisa que aconteceu.</p>
 
-<p>Em Maio, fiz um dos melhores investimentos do ano. Fui de ônibus para Argentina, para participar de um dos melhores eventos que já fui. A<a href="http://jaydson.org/jsconf-argentina-resumo/"> JSConf Argentina</a>.<br/>
-O evento foi épico demais. E lá, junto com Zeno e <a href="blog.bygiovanni.com.br/">Giovanni</a> começamos a traçar o que em breve seria a Fundação BrazilJS.<br/>
-Fora isso, a viagem para Argentina foi demais.</p>
+<p>Em Maio, fiz um dos melhores investimentos do ano. Fui de ônibus para Argentina, para participar de um dos melhores eventos que já fui. A<a href='http://jaydson.org/jsconf-argentina-resumo/'>JSConf Argentina</a>.<br />O evento foi épico demais. E lá, junto com Zeno e <a href='blog.bygiovanni.com.br/'>Giovanni</a> começamos a traçar o que em breve seria a Fundação BrazilJS.<br />Fora isso, a viagem para Argentina foi demais.</p>
 
-<p>Em Junho dei mais uma brincada com <a href="http://nodejs.org/">Node</a>, visando um projeto casca que tínhamos que viabilizar no Terra.<br/>
-Do estudo, acabou saindo o post <a href="http://jaydson.org/web-scraping-para-criancas-com-nodejs/">Web Scraping para crianças com nodeJS </a>e um <a href="http://jaydson.org/experimento-de-web-scraping-com-nodejs/">experimento</a>.
-Ainda em Junho, conseguimos liberar a <a href="http://jaydson.org/braziljs-2012/">lista inicial de palestrantes da BrazilJS Conference</a>.</p>
+<p>Em Junho dei mais uma brincada com <a href='http://nodejs.org/'>Node</a>, visando um projeto casca que tínhamos que viabilizar no Terra.<br />Do estudo, acabou saindo o post <a href='http://jaydson.org/web-scraping-para-criancas-com-nodejs/'>Web Scraping para crianças com nodeJS</a>e um <a href='http://jaydson.org/experimento-de-web-scraping-com-nodejs/'>experimento</a>. Ainda em Junho, conseguimos liberar a <a href='http://jaydson.org/braziljs-2012/'>lista inicial de palestrantes da BrazilJS Conference</a>.</p>
 
-<p>Em Julho,<a href="http://jaydson.org/fundacao-braziljs/"> anunciamos a Fundação BrazilJS</a>, algo que cresceu e tomou forma. Estou bastante empolgado para 2013.</p>
+<p>Em Julho,<a href='http://jaydson.org/fundacao-braziljs/'>anunciamos a Fundação BrazilJS</a>, algo que cresceu e tomou forma. Estou bastante empolgado para 2013.</p>
 
-<p>Em Agosto foi impossível parar para postar algo. Estávamos envolvidos até o último fio de cabelo na BrazilJS Conference.<br/>
-Até hoje não fiz nenhum resumo sobre o evento, mas digo que foi algo muito gratificante. Foi um marco na história FrontEnd no Brasil.<br/>
-Na verdade, em Setembro, consegui fazer um post. <a href="http://jaydson.org/braziljs-2012-foto-epica-com-o-brendan/">BrazilJS 2012 – Foto épica com o Brendan Eich</a>.<br/>
-<a href="http://jaydson.org/braziljs-entrevista-na-tv/">Até entrevista para a TV rolou</a>!</p>
+<p>Em Agosto foi impossível parar para postar algo. Estávamos envolvidos até o último fio de cabelo na BrazilJS Conference.<br />Até hoje não fiz nenhum resumo sobre o evento, mas digo que foi algo muito gratificante. Foi um marco na história FrontEnd no Brasil.<br />Na verdade, em Setembro, consegui fazer um post. <a href='http://jaydson.org/braziljs-2012-foto-epica-com-o-brendan/'>BrazilJS 2012 – Foto épica com o Brendan Eich</a>.<br /><a href='http://jaydson.org/braziljs-entrevista-na-tv/'>Até entrevista para a TV rolou</a>!</p>
 
-<p>Em outubro, outro marco. <a href="http://jaydson.org/w3c-webbr-2102/">O W3C webbr 2102</a>.<br/>
-A Fundação BrazilJS, teve a honra de ser convidada pela <a href="http://www.w3c.br/Home/WebHome">W3C Brasil</a>, para fazer parte deste grande evento.</p>
+<p>Em outubro, outro marco. <a href='http://jaydson.org/w3c-webbr-2102/'>O W3C webbr 2102</a>.<br />A Fundação BrazilJS, teve a honra de ser convidada pela <a href='http://www.w3c.br/Home/WebHome'>W3C Brasil</a>, para fazer parte deste grande evento.</p>
 
-<p>Em Novembro, para fechar o ano com chave de ouro, <a href="http://jaydson.org/eati-2012-em-frederico-westphalen/">EATI 2012 em Frederico Westphalen</a>.<br/>
-Este evento foi fora do comum. Algo realmente inexplicável.</p>
+<p>Em Novembro, para fechar o ano com chave de ouro, <a href='http://jaydson.org/eati-2012-em-frederico-westphalen/'>EATI 2012 em Frederico Westphalen</a>.<br />Este evento foi fora do comum. Algo realmente inexplicável.</p>
 
-<p>Bom, este é um resumo do que aconteceu em 2012, e que está registrado no Blog.<br/>
-Muitas outras coisas boas aconteceram, e muitas virão a acontecer.</p>
+<p>Bom, este é um resumo do que aconteceu em 2012, e que está registrado no Blog.<br />Muitas outras coisas boas aconteceram, e muitas virão a acontecer.</p>
 
-<p>Leia o relato do Zeno aqui: <a href="http://blog.zenorocha.com/my-way.html">http://blog.zenorocha.com/my-way.html</a><br/>
-E veja quais são os 7 Desejos do Bernard para 2013 aqui: <a href="http://bernarddeluna.com/css/7-desejos-em-2013-para-a-comunidade-web/">http://bernarddeluna.com/css/7-desejos-em-2013-para-a-comunidade-web/</a><br/>
-O Keppelen também fez um breve relato: <a href="http://blog.bygiovanni.com.br/hello-world-my-new-blog/">http://blog.bygiovanni.com.br/hello-world-my-new-blog/</a></p>
+<p>Leia o relato do Zeno aqui: <a href='http://blog.zenorocha.com/my-way.html'>http://blog.zenorocha.com/my-way.html</a><br />E veja quais são os 7 Desejos do Bernard para 2013 aqui: <a href='http://bernarddeluna.com/css/7-desejos-em-2013-para-a-comunidade-web/'>http://bernarddeluna.com/css/7-desejos-em-2013-para-a-comunidade-web/</a><br />O Keppelen também fez um breve relato: <a href='http://blog.bygiovanni.com.br/hello-world-my-new-blog/'>http://blog.bygiovanni.com.br/hello-world-my-new-blog/</a></p>
 
-<p>O que esperar de 2013?<br/>
-* Muito mais eventos de FrontEnd
-* Muito mais empresas dando o devido valor ao FrontEnd
-* Muito mais vagas de FrontEnd
-* Comunidade mais forte
-* BrazilJS Conference se tornando novamente o maior evento de JavaScript do mundo</p>
+<p>O que esperar de 2013?</p>
 
-<p>Meus objetivos:<br/>
-* Postar mais<br/>
-* Contribuir mais para a comunidade FrontEnd<br/>
-* Ir a outro evento internacional (além da JSConf Argentina. Este eu vou com certeza! Certo Zeno e Giovanni?)<br/>
-* Fazer mais palestras<br/>
-* Divulgar mais as coisas legais que fazemos no Terra<br/>
-* Fazer com o a BrazilJS Conference seja novamente algo épico<br/>
-* Fazer com a Fundação BrazilJS cresca cada vez mais<br/>
-* Criar mais projetos úteis open-source</p>
+<ul>
+<li>Muito mais eventos de FrontEnd</li>
+
+<li>Muito mais empresas dando o devido valor ao FrontEnd</li>
+
+<li>Muito mais vagas de FrontEnd</li>
+
+<li>Comunidade mais forte</li>
+
+<li>BrazilJS Conference se tornando novamente o maior evento de JavaScript do mundo</li>
+</ul>
+
+<p>Meus objetivos:</p>
+
+<ul>
+<li>Postar mais</li>
+
+<li>Contribuir mais para a comunidade FrontEnd</li>
+
+<li>Ir a outro evento internacional (além da JSConf Argentina. Este eu vou com certeza! Certo Zeno e Giovanni?)</li>
+
+<li>Fazer mais palestras</li>
+
+<li>Divulgar mais as coisas legais que fazemos no Terra</li>
+
+<li>Fazer com o a BrazilJS Conference seja novamente algo épico</li>
+
+<li>Fazer com a Fundação BrazilJS cresca cada vez mais</li>
+
+<li>Criar mais projetos úteis open-source</li>
+</ul>
 
 <p>Feliz 2013 galera!</p>
 
-<p><a href="http://jaydson.org/wp-content/uploads/feliz-20131.jpg"><img src="http://jaydson.org/wp-content/uploads/feliz-20131.jpg" alt="" /></a></p>
-]]></content>
+<p><a href='http://jaydson.org/wp-content/uploads/feliz-20131.jpg'><img alt='' src='http://jaydson.org/wp-content/uploads/feliz-20131.jpg' /></a></p>]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Novo tema do Blog]]></title>
-    <link href="http://jaydson.github.com/novo-tema-do-blog/"/>
+    <link href="http://jaydson.org/novo-tema-do-blog/"/>
     <updated>2012-02-13T00:09:43-02:00</updated>
-    <id>http://jaydson.github.com/novo-tema-do-blog</id>
-    <content type="html"><![CDATA[<p>Desde que comecei a usar o Wordpres para o Blog, tenho usado o mesmo tema.<br/>
-Tinha focado no conteúdo mais do que em qualquer outra coisa, mas sempre quis parar para fazer um tema do zero.<br/>
-No fim de 2011 comcei a pensar em algo, queria ter um tema único, e feito por mim, para dar uma cara mais personalizada.</p>
+    <id>http://jaydson.org/novo-tema-do-blog</id>
+    <content type="html"><![CDATA[<p>Desde que comecei a usar o Wordpres para o Blog, tenho usado o mesmo tema.<br />Tinha focado no conteúdo mais do que em qualquer outra coisa, mas sempre quis parar para fazer um tema do zero.<br />No fim de 2011 comcei a pensar em algo, queria ter um tema único, e feito por mim, para dar uma cara mais personalizada.</p>
 
-<p>Descobri por acaso que meu nome, possui as letras <strong><em>J</em></strong> e <em><strong>S</strong></em>, e após ver o <a href="https://github.com/voodootikigod/logo.js">logo do JavaScript</a> desenvolvido pelos caras da JSConf, vi que poderia fazer alguma coisa legal.<br/>
-Bom, este é o logo do JavaScript que vem sendo adotado pelo mundo:<br/>
-<a href="http://jaydson.org/wp-content/uploads/js.png"><img src="http://jaydson.org/wp-content/uploads/js.png" alt="js logo" /></a></p>
+<p>Descobri por acaso que meu nome, possui as letras <strong><em>J</em></strong> e <em><strong>S</strong></em>, e após ver o <a href='https://github.com/voodootikigod/logo.js'>logo do JavaScript</a> desenvolvido pelos caras da JSConf, vi que poderia fazer alguma coisa legal.<br />Bom, este é o logo do JavaScript que vem sendo adotado pelo mundo:<br /><a href='http://jaydson.org/wp-content/uploads/js.png'><img alt='js logo' src='http://jaydson.org/wp-content/uploads/js.png' /></a></p>
 
-<p>Fiz uma animaçao (meia tosca), brincando com as letras do meu nome e com "JS" no header, e fiz um rodapé temático, emulando um grande logo de JavaScript :P<br/>
-Bom,  basicamente é isso.<br/>
-Nao fiz o tema bem do zero, utilizei o <a href="http://www.rootstheme.com/">RootsTheme</a> como <em>framework.<br/>
-</em>Para quem nao conhece, o RootsTheme é como se fosse um framework para tema do Wordpress.<br/>
-O legal do Roots é que ele fornece uma camada bem completa com todas funcionalidades do Wordpress.<br/>
-Além disso, ele é construído com base no <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a> e no <a href="http://twitter.github.com/bootstrap/">Bootstrap do Twitter</a>.<br/>
-Recomendo o Roots para quem está querendo desenvolver um novo tema para o WP ;)</p>
+<p>Fiz uma animaçao (meia tosca), brincando com as letras do meu nome e com &#8220;JS&#8221; no header, e fiz um rodapé temático, emulando um grande logo de JavaScript :P<br />Bom,  basicamente é isso.<br />Nao fiz o tema bem do zero, utilizei o <a href='http://www.rootstheme.com/'>RootsTheme</a> como <em>framework.<br /></em>Para quem nao conhece, o RootsTheme é como se fosse um framework para tema do Wordpress.<br />O legal do Roots é que ele fornece uma camada bem completa com todas funcionalidades do Wordpress.<br />Além disso, ele é construído com base no <a href='http://html5boilerplate.com/'>HTML5 Boilerplate</a> e no <a href='http://twitter.github.com/bootstrap/'>Bootstrap do Twitter</a>.<br />Recomendo o Roots para quem está querendo desenvolver um novo tema para o WP ;)</p>
 
-<p>Estou mantendo o tema no atualizado no Github:<br/>
-<a href="https://github.com/jaydson/jaydson.org-wordpress-theme-2.0">https://github.com/jaydson/jaydson.org-wordpress-theme-2.0</a></p>
+<p>Estou mantendo o tema no atualizado no Github:<br /><a href='https://github.com/jaydson/jaydson.org-wordpress-theme-2.0'>https://github.com/jaydson/jaydson.org-wordpress-theme-2.0</a></p>
 
-<p>Bom, é isso pessoal. Espero que tenham gostado, e por favor, qualquer <em>feedback</em>, comentem ai.<br/>
-Já recebi algumas críticas sobre fontes com tamanhos diferentes, cores, layout, essas coisas. É válido, porém, eu sou programador e nao entendo nada de Design, fiz o tema no instinto mesmo. Entao se for este tipo de crítica, já me mandem a solucao de como deve ser, que dai avalio, e coloco em prática ;)</p>
+<p>Bom, é isso pessoal. Espero que tenham gostado, e por favor, qualquer <em>feedback</em>, comentem ai.<br />Já recebi algumas críticas sobre fontes com tamanhos diferentes, cores, layout, essas coisas. É válido, porém, eu sou programador e nao entendo nada de Design, fiz o tema no instinto mesmo. Entao se for este tipo de crítica, já me mandem a solucao de como deve ser, que dai avalio, e coloco em prática ;)</p>
 
 <p>PS: Tem um Easter Egg no Blog. Quem achar vai dar uma risada, só isso.</p>
 
 <p>PS2: Consegui depois de muita briga, ficar com <em>score</em> entre <strong>92</strong> e <strong>94</strong> no Google PageSpeed.</p>
 
-<p>PS3: Depois de muita briga, também consegui fazer com que o Blog carregue bem rápido, em torno de <strong>2 a 4 segundos</strong>para carregar a página pela primeira vez. Depois da primeira vez, chega a ficar em <strong>1 segundo</strong> o tempo de carregamento (WoW!).<br/>
-<a href="http://www.webpagetest.org/result/120213_MB_378NB/">http://www.webpagetest.org/result/120213_MB_378NB/</a></p>
-]]></content>
+<p>PS3: Depois de muita briga, também consegui fazer com que o Blog carregue bem rápido, em torno de <strong>2 a 4 segundos</strong>para carregar a página pela primeira vez. Depois da primeira vez, chega a ficar em <strong>1 segundo</strong> o tempo de carregamento (WoW!).<br /><a href='http://www.webpagetest.org/result/120213_MB_378NB/'>http://www.webpagetest.org/result/120213_MB_378NB/</a></p>]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Analytics do Blog em 2011]]></title>
-    <link href="http://jaydson.github.com/analytics-do-blog-em-2011/"/>
+    <link href="http://jaydson.org/analytics-do-blog-em-2011/"/>
     <updated>2012-02-04T21:40:23-02:00</updated>
-    <id>http://jaydson.github.com/analytics-do-blog-em-2011</id>
-    <content type="html"><![CDATA[<p>No começo de 2011 fiz um <a href="http://jaydson.org/analytics-do-blog-2010/">post</a> com os dados de acesso do Blog do ano anterior (2010).
-Como primeiro post deste ano de 2012, vou seguir com a mesma ideia: Divulgar os dados de acesso de 2011.
-Vamos lá:</p>
+    <id>http://jaydson.org/analytics-do-blog-em-2011</id>
+    <content type="html"><![CDATA[<p>No começo de 2011 fiz um <a href='http://jaydson.org/analytics-do-blog-2010/'>post</a> com os dados de acesso do Blog do ano anterior (2010). Como primeiro post deste ano de 2012, vou seguir com a mesma ideia: Divulgar os dados de acesso de 2011. Vamos lá:</p>
 
-<p>Em 2011 fiz em torno de 40 posts, o que da uma média de 3.3 posts por mês.
-Consegui cumprir com um objetivo que era aumentar o número de posts.</p>
+<p>Em 2011 fiz em torno de 40 posts, o que da uma média de 3.3 posts por mês. Consegui cumprir com um objetivo que era aumentar o número de posts.</p>
 
-<p>O total de <em>pageviews </em>passou de <strong>30.000</strong>, e o número de  Unique Visitors passou dos <strong>20.000</strong>.
-Comparado ao ano anterior, este é um bom resultado, levando em conta que o total de <em>pageviews </em>em 2010 foi 20.000.
-Média de acessos diários: <strong> 80 </strong>acessos
-Média mensal: <strong>2500 </strong>acessos<!-- more --></p>
+<p>O total de <em>pageviews</em>passou de <strong>30.000</strong>, e o número de  Unique Visitors passou dos <strong>20.000</strong>. Comparado ao ano anterior, este é um bom resultado, levando em conta que o total de _pageviews <em>em 2010 foi 20.000. Média de acessos diários: <strong> 80</strong>acessos Média mensal: <strong>2500</strong>acessos<!-- more --></em></p>
 
-<p><strong>Browsers:
-</strong>Firefox - 47.52%
-Chrome - 39.60%
-IE - 9.64%
-Safari - 1.68%
-Opera - 1.00%</p>
+<p><strong>Browsers:</strong>Firefox - 47.52% Chrome - 39.60% IE - 9.64% Safari - 1.68% Opera - 1.00%</p>
 
-<p>O Firefox continuou sendo o Browser mais utlizado, mas comparando com os dados de 2010, caiu quase 20%.
-O Chrome continuou em segundo lugar, mas subiu quase 20% em relaçao ao ano anterior.
-O IE, caiu 6%, e o Safari e o Opera continuaram com menos de 2%.</p>
+<p>O Firefox continuou sendo o Browser mais utlizado, mas comparando com os dados de 2010, caiu quase 20%. O Chrome continuou em segundo lugar, mas subiu quase 20% em relaçao ao ano anterior. O IE, caiu 6%, e o Safari e o Opera continuaram com menos de 2%.</p>
 
-<p><strong><a href="http://jaydson.org/wp-content/uploads/browsers2.png"><img src="http://jaydson.org/wp-content/uploads/browsers2.png" alt="browsers 2011" /></a></strong></p>
+<p><strong><a href='http://jaydson.org/wp-content/uploads/browsers2.png'><img alt='browsers 2011' src='http://jaydson.org/wp-content/uploads/browsers2.png' /></a></strong></p>
 
-<p><strong>
-Sistema Operacional:
-</strong>Windows - 79.39%
-Linux - 13.42%
-Mac - 6.89%</p>
+<p>** Sistema Operacional: <strong>Windows - 79.39% Linux - 13.42% Mac - 6.89%</strong></p>
 
-<p>Obviamente, o Windows continua com o maior número de acessos. Comparado ao ano anterior, caiu em torno de 5%.
-Linux aumentou 3% e Mac aumentou 2%.
-<a href="http://jaydson.org/wp-content/uploads/so1.png"><img src="http://jaydson.org/wp-content/uploads/so1.png" alt="so 2011" /></a><strong>
-</strong>
-<strong>Source:
-</strong>Google - 78.19%
-Acesso direto - 10.73
-Desconferencia - 1%
-<strong>
-</strong>O conteúdo continua tendo maior parte da origem vinda do Google.
-Comparado a 2010, este número aumentou um pouco, em torno de 5%.
-<a href="http://jaydson.org/wp-content/uploads/source1.png"><img src="http://jaydson.org/wp-content/uploads/source1.png" alt="source 2011" /></a></p>
+<p>Obviamente, o Windows continua com o maior número de acessos. Comparado ao ano anterior, caiu em torno de 5%. Linux aumentou 3% e Mac aumentou 2%. <a href='http://jaydson.org/wp-content/uploads/so1.png'><img alt='so 2011' src='http://jaydson.org/wp-content/uploads/so1.png' /></a>** ** <strong>Source:</strong>Google - 78.19% Acesso direto - 10.73 Desconferencia - 1% ** <strong>O conteúdo continua tendo maior parte da origem vinda do Google. Comparado a 2010, este número aumentou um pouco, em torno de 5%. <a href='http://jaydson.org/wp-content/uploads/source1.png'><img alt='source 2011' src='http://jaydson.org/wp-content/uploads/source1.png' /></a></strong></p>
 
-<p><strong>Location:</strong>
-Sao Paulo - 30.78%
-Rio Grande do Sul - 12.35%
-Rio de Janeiro - 9.34%
-Minas Gerais - 9.12%</p>
+<p><strong>Location:</strong> Sao Paulo - 30.78% Rio Grande do Sul - 12.35% Rio de Janeiro - 9.34% Minas Gerais - 9.12% ****</p>
 
-<hr />
+<p>94% dos acessos sao do Brasil, e medindo por estados temos este cenário. <a href='http://jaydson.org/wp-content/uploads/estados1.png'><img alt='estados 2011' src='http://jaydson.org/wp-content/uploads/estados1.png' /></a></p>
 
-<p>94% dos acessos sao do Brasil, e medindo por estados temos este cenário.
-<a href="http://jaydson.org/wp-content/uploads/estados1.png"><img src="http://jaydson.org/wp-content/uploads/estados1.png" alt="estados 2011" /></a></p>
-
-<p>**Este é um bom primeiro post. Finalmente começando 2012.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Novos rumos 2011]]></title>
-    <link href="http://jaydson.github.com/novos-rumos-2011/"/>
-    <updated>2011-08-05T02:50:50-03:00</updated>
-    <id>http://jaydson.github.com/novos-rumos-2011</id>
-    <content type="html"><![CDATA[<p>Buenas galera, quem me acompanha no <a href="http://twitter.com/jaydson">Twitter</a> já deve saber que <a href="http://twitter.com/#!/jaydson/status/98070762879062016">mudei</a> um pouco o rumo nesta semana.<br/>
-Recebi uma proposta bem bacana para fazer parte da equipe de desenvolvimento do <a href="http://www.terra.com.br/portal/">Terra</a>, e aceitei o desafio por alguns motivos.<br/>
-A motivação principal é com certeza poder trabalhar em um grande Portal como o Terra. <br/>
-Além disso, sempre tive isso como um objetivo pessoal.<br/>
-Outro fator muito legal é que pela primeira vez vou trabalhar na mesma empresa (e equipe) que o <a href="http://twitter.com/#!/felipenmoura">Felipe Moura</a>, que para quem não sabe, é meu primo.<br/>
-Trabalhamos juntos em vários outros projetos (<a href="https://github.com/felipenmoura/theWebMind">TheWebMind</a>, <a href="https://addons.mozilla.org/en-US/firefox/addon/php-developer-toolbar/">PHPDevBar</a>, <a href="http://www.botaoteca.xpg.com.br/">Botaoteca</a>, entre outros), mas na mesma empresa, é a primeira vez ;)</p>
-
-<p>Tenho certeza que vai ser uma grande experiência, e espero poder contribuir bastante.<br/>
-Acompanhem o Blog para ver o que ando fazendo por lá ;)</p>
-]]></content>
+<p><strong>Este é um bom primeiro post. Finalmente começando 2012.</strong></p>]]></content>
   </entry>
   
 </feed>

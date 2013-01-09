@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://jaydson.github.com/apache-criando-virtual-hosts/">
+  <link rel="canonical" href="http://jaydson.org/apache-criando-virtual-hosts/">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -31,6 +31,18 @@
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 
   
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1264252-8']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
 
 </head>
 
@@ -50,7 +62,7 @@
   
 <form action="http://google.com/search" method="get">
   <fieldset role="search">
-    <input type="hidden" name="q" value="site:jaydson.github.com" />
+    <input type="hidden" name="q" value="site:jaydson.org" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
@@ -93,7 +105,7 @@
   </header>
 
 
-<div class="entry-content"><p>According  to the <a href="http://httpd.apache.org/docs/1.3/vhosts/">Apache documentation</a>, the term <strong>Virtual Host</strong> refers to the practice  of keeping more than one server on one machine, distinguished by their  names.</p>
+<div class="entry-content"><p>According to the <a href='http://httpd.apache.org/docs/1.3/vhosts/'>Apache documentation</a>, the term <strong>Virtual Host</strong> refers to the practice of keeping more than one server on one machine, distinguished by their names.</p>
 
 <p>I will not talk about settings on production servers, but on the development environment.</p>
 
@@ -105,88 +117,36 @@
 
 <p><strong>http://localhost/projetos/open-soruce/thewebmind/2.0/trunk</strong></p>
 
-<p>Segundo a <a href="http://httpd.apache.org/docs/1.3/vhosts/">documentação do Apache</a>, o conceito de <strong>Virtual Host</strong> refere-se à prática de manter mais de um  servidor em uma máquina, diferenciados pelos seus nomes.
-Não vou me deter a falar sobre configurações em servidores de produção, mas sim em ambiente de desenvolvimento mesmo.
-Podemos criar um ambiente onde cada aplicação local pode ter seu próprio domínio.</p>
+<p>Segundo a <a href='http://httpd.apache.org/docs/1.3/vhosts/'>documentação do Apache</a>, o conceito de <strong>Virtual Host</strong> refere-se à prática de manter mais de um servidor em uma máquina, diferenciados pelos seus nomes. Não vou me deter a falar sobre configurações em servidores de produção, mas sim em ambiente de desenvolvimento mesmo. Podemos criar um ambiente onde cada aplicação local pode ter seu próprio domínio.</p>
 
 <p>Exemplo:</p>
 
-<p>Para acessar a aplicação <strong>TheWebMind</strong> em meu ambiente local eu preciso acessar o seguinte endereço:
-<strong>http://localhost/projetos/open-soruce/thewebmind/2.0/trunk</strong></p>
+<p>Para acessar a aplicação <strong>TheWebMind</strong> em meu ambiente local eu preciso acessar o seguinte endereço: <strong>http://localhost/projetos/open-soruce/thewebmind/2.0/trunk</strong></p>
 
 <p>Não seria legal se eu pudesse acessar apenas com <strong>http://mind</strong> ?</p>
 
 <p>Bom, essa configuração é simples de fazer, bastando alguns segundos de seu tempo.</p>
 
-<p>Crie um arquivo com o nome do domínio desejado [ .conf] no diretório: <strong>/etc/apache2/sites-available</strong></p>
+<p>Crie um arquivo com o nome do domínio desejado <span>.conf</span> no diretório: <strong>/etc/apache2/sites-available</strong></p>
 
-<p>No meu caso, foi **mind.conf<!-- more -->
-Would not it be nice if I could access only http://mind?</p>
+<p>No meu caso, foi <strong>mind.conf<!-- more --> Would not it be nice if I could access only http://mind?</strong></p>
 
 <p>Well, this configuration is simple to make, just a few seconds of your time.</p>
 
-<p>Create a file with the name of the desired domain [. Conf] in the directory: <strong>/etc/apache2/sites-available</strong></p>
+<p>Create a file with the name of the desired domain <span>. Conf</span> in the directory: <strong>/etc/apache2/sites-available</strong></p>
 
 <p>In my case it was mind.conf</p>
 
 <p>This file should contain the following contents:</p>
 
-<p>**<VirtualHost your_domain></p>
+<p><strong><pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
+&lt;VirtualHost your_domain&gt;</pre></strong></p>
 
 <p>ServerAdmin webmaster@localhost</p>
 
 <p>ServerAlias www.<strong>your_domain</strong></p>
 
-<p>DocumentRoot directory_of_your_application</p>
-
-<p></ VirtualHost>**</p>
-
-<p><strong> </strong>That done, now just tell Linux that this domain is a local domain.</p>
-
-<p>Edit <strong>/etc/hosts</strong> and add the following line:</p>
-
-<p><strong>127.0.0.1 localhost localhost.localdomain </strong>your_domain<strong> www.</strong>your_domain****</p>
-
-<p>Save the file and restart Apache.</p>
-
-<p>Now just open your browser and enter your domain.</p>
-
-<p>See a photo of my application running.</p>
-
-<p>[caption id=&#8221;attachment_666&#8221; align=&#8221;alignnone&#8221; width=&#8221;300&#8221; caption=&#8221;Aplicação com Virtual Host&#8221;]<a href="http://jaydson-org.web102.redehost.com.br/assets/Screenshot-41.png"><img src="http://jaydson.org/wp-content/uploads/2010/09/Screenshot-4-300x238.png" alt="Aplicação com Virtual Host" /></a>[/caption]</p>
-
-<p><strong>**O arquivo </strong>deve conter o seguinte conteúdo:</p>
-
-<p><strong><VirtualHost seu_dominio></strong></p>
-
-<p><strong>ServerAdmin webmaster@localhost</strong></p>
-
-<p><strong>ServerAlias www.</strong><strong>seu_dominio</strong></p>
-
-<p><strong>DocumentRoot diretorio_da_sua_aplicação</strong></p>
-
-<p><strong></VirtualHost></strong></p>
-
-<p><strong>
-</strong></p>
-
-<p>Feito isso, agora basta informar ao Linux que esse domínio é um domínio local.
-Edite o arquivo /etc/hosts e adicione a seguinte linha:
-<strong>127.0.0.1 localhost.localdomain localhost seu_dominio www.</strong><strong>seu_dominio</strong></p>
-
-<p><strong>*UPDATE:
-Obviamente é necessário fazer um link simbólico ao arquivo em /etc/apache2/sites-enabled</strong><strong> </strong></p>
-
-<p><strong>
-</strong></p>
-
-<p>Salve o arquivo e reinicie o Apache.
-Agora basta abrir o seu navegador e digitar o seu domínio.</p>
-
-<p>Veja uma imagem de minha aplicação rodando.</p>
-
-<p>[caption id=&#8221;attachment_666&#8221; align=&#8221;alignnone&#8221; width=&#8221;300&#8221; caption=&#8221;Aplicação com Virtual Host&#8221;]<a href="http://jaydson-org.web102.redehost.com.br/assets/Screenshot-41.png"><img src="http://jaydson.org/wp-content/uploads/2010/09/Screenshot-4-300x238.png" alt="Aplicação com Virtual Host" /></a>[/caption]</p>
-</div>
+<p>DocumentRoot directory_of_your_application</p></div>
 
 
   <footer>
@@ -222,7 +182,7 @@ Agora basta abrir o seu navegador e digitar o seu domínio.</p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.github.com/apache-criando-virtual-hosts/" data-via="" data-counturl="http://jaydson.github.com/apache-criando-virtual-hosts/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.org/apache-criando-virtual-hosts/" data-via="" data-counturl="http://jaydson.org/apache-criando-virtual-hosts/" >Tweet</a>
   
   
   
@@ -257,6 +217,10 @@ Agora basta abrir o seu navegador e digitar o seu domínio.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/migrando-para-octopress/">Migrando para o Octopress</a>
+      </li>
+    
+      <li class="post">
         <a href="/analytics-do-blog-em-2012/">Analytics do Blog em 2012</a>
       </li>
     
@@ -270,10 +234,6 @@ Agora basta abrir o seu navegador e digitar o seu domínio.</p>
     
       <li class="post">
         <a href="/w3c-webbr-2102/">W3C webbr 2102</a>
-      </li>
-    
-      <li class="post">
-        <a href="/javascript-o-guia-definitivo/">JavaScript: O Guia definitivo</a>
       </li>
     
   </ul>
@@ -333,8 +293,8 @@ Agora basta abrir o seu navegador e digitar o seu domínio.</p>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://jaydson.github.com/apache-criando-virtual-hosts/';
-        var disqus_url = 'http://jaydson.github.com/apache-criando-virtual-hosts/';
+        var disqus_identifier = 'http://jaydson.org/apache-criando-virtual-hosts/';
+        var disqus_url = 'http://jaydson.org/apache-criando-virtual-hosts/';
         var disqus_script = 'embed.js';
       
     (function () {

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: NetBeans | Jaydson Gomes]]></title>
-  <link href="http://jaydson.github.com/blog/categories/netbeans/atom.xml" rel="self"/>
-  <link href="http://jaydson.github.com/"/>
-  <updated>2013-01-08T19:02:23-02:00</updated>
-  <id>http://jaydson.github.com/</id>
+  <link href="http://jaydson.org/blog/categories/netbeans/atom.xml" rel="self"/>
+  <link href="http://jaydson.org/"/>
+  <updated>2013-01-09T19:46:03-02:00</updated>
+  <id>http://jaydson.org/</id>
   <author>
     <name><![CDATA[Jaydson Gomes]]></name>
     
@@ -15,52 +15,40 @@
   
   <entry>
     <title type="html"><![CDATA[Webgrind - Interface para Profiling baseada no Xdebug]]></title>
-    <link href="http://jaydson.github.com/webgrind-interface-para-profiling-baseada-no-xdebug/"/>
+    <link href="http://jaydson.org/webgrind-interface-para-profiling-baseada-no-xdebug/"/>
     <updated>2011-04-15T09:42:47-03:00</updated>
-    <id>http://jaydson.github.com/webgrind-interface-para-profiling-baseada-no-xdebug</id>
-    <content type="html"><![CDATA[<p>O <a href="http://www.xdebug.org"><strong>Xdebug Profiler</strong></a> é uma ferramenta poderosa que nos permite analisar o código PHP a procura de gargalos(!), ou até mesmo determinados trechos onde possa existir lentidão na aplicação.
-Normalmente usamos algum cliente para ler as informações geradas pelo Xdebug, como por exemplo o <a href="http://kcachegrind.sf.net/">KCacheGrind</a>.</p>
+    <id>http://jaydson.org/webgrind-interface-para-profiling-baseada-no-xdebug</id>
+    <content type="html"><![CDATA[<p>O <a href='http://www.xdebug.org'><strong>Xdebug Profiler</strong></a> é uma ferramenta poderosa que nos permite analisar o código PHP a procura de gargalos(!), ou até mesmo determinados trechos onde possa existir lentidão na aplicação. Normalmente usamos algum cliente para ler as informações geradas pelo Xdebug, como por exemplo o <a href='http://kcachegrind.sf.net/'>KCacheGrind</a>.</p>
 
-<p>O que venho compartilhar hoje é uma excelente ferramenta, o <a href="https://github.com/jokkedk/webgrind">WebGrind</a>, desenvolvida pelo <a href="https://github.com/jokkedk">Joakim Nygard</a>.
-O que gostei foi a simplicidade. <a href="https://github.com/jokkedk/webgrind">Baixe</a> > Descompacte > Coloque no servidor.
-Pronto, feito isso basta acessar, iniciar o debugger e acessar a aplicação.<!-- more --></p>
+<p>O que venho compartilhar hoje é uma excelente ferramenta, o <a href='https://github.com/jokkedk/webgrind'>WebGrind</a>, desenvolvida pelo <a href='https://github.com/jokkedk'>Joakim Nygard</a>. O que gostei foi a simplicidade. <a href='https://github.com/jokkedk/webgrind'>Baixe</a> &gt; Descompacte &gt; Coloque no servidor. Pronto, feito isso basta acessar, iniciar o debugger e acessar a aplicação.<!-- more --></p>
 
-<p>Obviamente é necessário ter o <a href="http://www.xdebug.org/docs/install">Xdebug instalado</a> e configurado, mas isso nao é  um bicho de 7 cabeças.
-Abaixo vai um screenshot de um teste que fiz com uma aplicação básica utilizando Zend Framework:</p>
+<p>Obviamente é necessário ter o <a href='http://www.xdebug.org/docs/install'>Xdebug instalado</a> e configurado, mas isso nao é um bicho de 7 cabeças. Abaixo vai um screenshot de um teste que fiz com uma aplicação básica utilizando Zend Framework:</p>
 
-<p>[caption id="attachment_843" align="aligncenter" width="491" caption="Webgrind"]<a href="http://jaydson-org.web102.redehost.com.br/assets/webgrind1.png"><img src="http://jaydson-org.web102.redehost.com.br/assets/webgrind1-1024x505.png" alt="Webgrind" /></a>[/caption]</p>
+<p><span>caption id=&#8221;attachment_843&#8221; align=&#8221;aligncenter&#8221; width=&#8221;491&#8221; caption=&#8221;Webgrind&#8221;</span>(http://jaydson-org.web102.redehost.com.br/assets/webgrind1-1024x505.png)](http://jaydson-org.web102.redehost.com.br/assets/webgrind1.png)<span>/caption</span></p>
 
-<p>Notem em cima a direita:
-654 different functions called in 109 milliseconds
-O WebGrind mostra o total de chamadas de funções, e o tempo total em milisegundos.
-Além disso, cada função exibe quais arquivos foram usados.</p>
+<p>Notem em cima a direita: 654 different functions called in 109 milliseconds O WebGrind mostra o total de chamadas de funções, e o tempo total em milisegundos. Além disso, cada função exibe quais arquivos foram usados.</p>
 
 <p>Bom, testem ai e vejam o que mais é possivel.</p>
 
-<p>Profiler</p>
-]]></content>
+<p>Profiler</p>]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[PHP - Debugando Aplicações com Xdebug e NetBeans]]></title>
-    <link href="http://jaydson.github.com/php-debugando-aplicacoes-com-xdebug-netbeans/"/>
+    <link href="http://jaydson.org/php-debugando-aplicacoes-com-xdebug-netbeans/"/>
     <updated>2010-09-05T01:13:16-03:00</updated>
-    <id>http://jaydson.github.com/php-debugando-aplicacoes-com-xdebug-netbeans</id>
-    <content type="html"><![CDATA[<p>A  big mistake of many programmers who use other languages (C #, Java,  etc.) , is to think that anyone who develops in PHP does  not have the necessary tools to develop robust systems, fast and with quality. I have had the opportunity to work with. NET, and PHP, and I see that developers are very dependent on their tools. I am not against, quite the contrary, they really help a lot.</p>
+    <id>http://jaydson.org/php-debugando-aplicacoes-com-xdebug-netbeans</id>
+    <content type="html"><![CDATA[<p>A big mistake of many programmers who use other languages (C #, Java, etc.) , is to think that anyone who develops in PHP does not have the necessary tools to develop robust systems, fast and with quality. I have had the opportunity to work with. NET, and PHP, and I see that developers are very dependent on their tools. I am not against, quite the contrary, they really help a lot.</p>
 
-<p>The Microsoft platform has all his tools very well integrated, and that's good.</p>
+<p>The Microsoft platform has all his tools very well integrated, and that&#8217;s good.</p>
 
 <p>With Visual Studio for example, you can debug the application in development time and run-time.</p>
 
-<p>That along with Intellisense * makes a good IDE.Um grande equívoco de vários programadores que utilizam outras linguagens(C#, Java, etc.) que não PHP, é achar que quem desenvolve em PHP não possui as ferramentas necessárias para desenvolver sistemas robustos, com rapidez e qualidade. Tenho tido a oportunidade de trabalhar com .NET, além de PHP, e vejo que os programadores são muito dependentes de suas ferramentas. Não sou contra, bem pelo contrário, elas realmente ajudam muito.
-A plataforma Microsoft possui todas suas ferramentas muito bem integradas, e isso é um ponto positivo.
-Com o  Visual Studio por exemplo, é possível debugar a aplicação em tempo de desenvolvimento e em <em>run-time.
-</em>E isso juntamente com o Intellisense* o torna uma boa IDE.<!-- more --></p>
+<p>That along with Intellisense * makes a good IDE.Um grande equívoco de vários programadores que utilizam outras linguagens(C#, Java, etc.) que não PHP, é achar que quem desenvolve em PHP não possui as ferramentas necessárias para desenvolver sistemas robustos, com rapidez e qualidade. Tenho tido a oportunidade de trabalhar com .NET, além de PHP, e vejo que os programadores são muito dependentes de suas ferramentas. Não sou contra, bem pelo contrário, elas realmente ajudam muito. A plataforma Microsoft possui todas suas ferramentas muito bem integradas, e isso é um ponto positivo. Com o  Visual Studio por exemplo, é possível debugar a aplicação em tempo de desenvolvimento e em <em>run-time.</em>E isso juntamente com o Intellisense* o torna uma boa IDE.<!-- more --></p>
 
 <ul>
-<li>Intellisense: Basically it is the language reference. The famous auto-complete, which many can not live without, or rather do not work without. [# Flamewar]</li>
+<li>Intellisense: Basically it is the language reference. The famous auto-complete, which many can not live without, or rather do not work without. <span># Flamewar</span></li>
 </ul>
-
 
 <p>But back to PHP which is what interests us.</p>
 
@@ -76,7 +64,6 @@ Com o  Visual Studio por exemplo, é possível debugar a aplicação em tempo d
 <li>Obviously Apache with PHP. If not:</li>
 </ul>
 
-
 <p><strong>$ sudo apt-get install apache2</strong> (Apache)</p>
 
 <p><strong>$ sudo apt-get install php5</strong> (PHP 5)</p>
@@ -89,83 +76,59 @@ Com o  Visual Studio por exemplo, é possível debugar a aplicação em tempo d
 <li>Xdebug:</li>
 </ul>
 
-
 <p><strong>$ sudo apt-get install php5-dev</strong> (Pack libs to compile the extensions)</p>
 
 <p><strong>$ sudo apt-get install php-pear</strong> (PEAR http://pear.php.net)</p>
 
-<p><strong>$ sudo pecl install xdebug </strong>(Xdebug http://www.xdebug.org)</p>
+<p><strong>$ sudo pecl install xdebug</strong>(Xdebug http://www.xdebug.org)</p>
 
 <p>Add to php.ini settings for Xdebug:</p>
 
-<p><strong>Zend_extension = "/usr/lib/php5/20090626 lfs/xdebug.so"</strong></p>
+<p><strong>Zend_extension = &#8220;/usr/lib/php5/20090626 lfs/xdebug.so&#8221;</strong></p>
 
 <p><strong>Xdebug.remote_port = 9100</strong> (port that will respond xdebug)</p>
 
-<p><strong>Xdebug.remote_handler = "dbgp"</strong> (default)</p>
+<p><strong>Xdebug.remote_handler = &#8220;dbgp&#8221;</strong> (default)</p>
 
-<p><strong>Xdebug.remote_host = "localhost"</strong> (the host that xdebug is running)</p>
+<p><strong>Xdebug.remote_host = &#8220;localhost&#8221;</strong> (the host that xdebug is running)</p>
 
 <p><strong>Xdebug.remote_enable = On</strong> (Remote Debug)</p>
 
-<p>After that, restart Apache and you're done.</p>
+<p>After that, restart Apache and you&#8217;re done.</p>
 
 <p>Now open your NetBeans project, create break points and make the Debug in your application.</p>
 
-<p>[<img src="http://jaydson.org/wp-content/uploads/2010/09/Screenshot1-300x181.png" alt="" /></p>
+<p><span><img alt='' src='http://jaydson.org/wp-content/uploads/2010/09/Screenshot1-300x181.png' /></span></p>
 
 <p>](http://jaydson-org.web102.redehost.com.br/assets/Screenshot11.png)</p>
 
 <p>I hope this post has helped demystify another untruth about PHP.</p>
 
-<p>Remembering  always that a good programmer work with any language, using all the  tools needed to solve your problem and do not have a single technology.</p>
+<p>Remembering always that a good programmer work with any language, using all the tools needed to solve your problem and do not have a single technology.</p>
 
 <p>Open your mind.</p>
 
 <ul>
-<li>Intellisense: Basicamente é a referência da linguagem. O famoso auto-completar, que muitos não vivem sem, ou melhor, não trabalham sem. [#FlameWar]</li>
+<li>Intellisense: Basicamente é a referência da linguagem. O famoso auto-completar, que muitos não vivem sem, ou melhor, não trabalham sem. <span>#FlameWar</span></li>
 </ul>
 
+<p>Mas voltando ao PHP que é o que nos interessa. Com PHP é possível fazer a mesma coisa que fazemos com outras linguagens. O NetBeans é uma excelente IDE, e possui uma série de recursos que ajudam no desenvolvimento. O auto-completar funciona muito bem, e podemos facilmente configura-lo para debugar nossas aplicações, e é isso que vamos ver agora.</p>
 
-<p>Mas voltando ao PHP que é o que nos interessa.
-Com PHP é possível fazer a mesma coisa que fazemos com outras linguagens.
-O NetBeans é uma excelente IDE, e possui uma série de recursos que ajudam no desenvolvimento.
-O auto-completar funciona muito bem, e podemos facilmente configura-lo para debugar nossas aplicações, e é isso que vamos ver agora.</p>
-
-<p>Requisitos:
-- Obviamente o Apache com PHP. Caso não tenha:
-<strong># sudo apt-get install apache2</strong> (Apache)
-<strong># sudo apt-get install php5</strong> (PHP 5)
-<strong># sudo apt-get install libapache2-mod-php5</strong> (Lib Apache PHP)
-<strong># sudo /etc/init.d/apache2 restart</strong> (Reinicia Apache)</p>
+<p>Requisitos: - Obviamente o Apache com PHP. Caso não tenha: <strong># sudo apt-get install apache2</strong> (Apache) <strong># sudo apt-get install php5</strong> (PHP 5) <strong># sudo apt-get install libapache2-mod-php5</strong> (Lib Apache PHP) <strong># sudo /etc/init.d/apache2 restart</strong> (Reinicia Apache)</p>
 
 <ul>
-<li>Xdebug:
-<strong># sudo apt-get install php5-dev </strong>(Pacote de libs para compilar as extensões)
-<strong># sudo apt-get install php-pear (PEAR<a href="http://pear.php.net"> http://pear.php.net</a>)
-</strong># sudo pecl install xdebug <strong>(Xdebug <a href="http://www.xdebug.org">http://www.xdebug.org</a>)</strong><strong>
-</strong></li>
+<li>Xdebug: <strong># sudo apt-get install php5-dev</strong>(Pacote de libs para compilar as extensões) <strong># sudo apt-get install php-pear (PEAR<a href='http://pear.php.net'>http://pear.php.net</a>)</strong># sudo pecl install xdebug <strong>(Xdebug <a href='http://www.xdebug.org'>http://www.xdebug.org</a>)</strong>** **</li>
 </ul>
 
+<p>Adicione ao php.ini as configurações para o Xdebug: <strong># zend_extension=&#8221;/usr/lib/php5/20090626+lfs/xdebug.so&#8221;</strong> <strong># xdebug.remote_port = 9100</strong> (porta que o xdebug irá responder) <strong># xdebug.remote_handler=&#8221;dbgp&#8221;</strong> (default) <strong># xdebug.remote_host=&#8221;localhost&#8221;</strong> (host que o xdebug está rodando) <strong># xdebug.remote_enable = On</strong> (Debug remoto)</p>
 
-<p>Adicione ao php.ini as configurações para o Xdebug:
-<strong># zend_extension="/usr/lib/php5/20090626+lfs/xdebug.so"</strong>
-<strong># xdebug.remote_port = 9100</strong> (porta que o xdebug irá responder)
-<strong># xdebug.remote_handler="dbgp"</strong> (default)
-<strong># xdebug.remote_host="localhost"</strong> (host que o xdebug está rodando)
-<strong># xdebug.remote_enable = On</strong> (Debug remoto)</p>
+<p>Feito isso, reinicie o Apache e está tudo pronto. Agora com NetBeans abra o seu projeto, crie <em>break-points</em> e faça o Debug de sua aplicação.</p>
 
-<p>Feito isso, reinicie o Apache e está tudo pronto.
-Agora com NetBeans abra o seu projeto, crie <em>break-points</em> e faça o Debug de sua aplicação.</p>
+<p><span>caption id=&#8221;attachment_625&#8221; align=&#8221;alignnone&#8221; width=&#8221;437&#8221; caption=&#8221;PHP Debug NetBeans Xdebug&#8221;</span>(http://jaydson-org.web102.redehost.com.br/assets/Screenshot2.png)](http://jaydson-org.web102.redehost.com.br/assets/Screenshot2.png)<span>/caption</span></p>
 
-<p>[caption id="attachment_625" align="alignnone" width="437" caption="PHP Debug NetBeans Xdebug"]<a href="http://jaydson-org.web102.redehost.com.br/assets/Screenshot2.png"><img src="http://jaydson-org.web102.redehost.com.br/assets/Screenshot2.png" alt="PHP Debug NetBeans Xdebug" /></a>[/caption]</p>
+<p>Espero que o post tenha ajudado a desmistificar mais uma inverdade sobre o PHP. Lembrando sempre que o bom programador programa em qualquer linguagem, utiliza todas as ferramentas necessárias para resolver o seu problema e não se detêm a uma simples tecnologia. Abram a mente.</p>
 
-<p>Espero que o post tenha ajudado a desmistificar mais uma inverdade sobre o PHP.
-Lembrando sempre que o bom programador programa em qualquer linguagem, utiliza todas as ferramentas necessárias para resolver o seu problema e não se detêm a uma simples tecnologia.
-Abram a mente.</p>
-
-<p>Abraço.</p>
-]]></content>
+<p>Abraço.</p>]]></content>
   </entry>
   
 </feed>

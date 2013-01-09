@@ -9,8 +9,7 @@
   <meta name="author" content="Jaydson Gomes">
 
   
-  <meta name="description" content="A Mozilla está sempre desenvolvendo coisas muito legais, e hoje, navegando no Mozilla Hacks vi um post muito interessante sobre o BrowserID.
-Segundo &hellip;">
+  <meta name="description" content="A Mozilla está sempre desenvolvendo coisas muito legais, e hoje, navegando no Mozilla Hacks vi um post muito interessante sobre o BrowserID.Segundo o &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@ Segundo &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://jaydson.github.com/mozilla-browserid-sistema-de-id-descentralizado/">
+  <link rel="canonical" href="http://jaydson.org/mozilla-browserid-sistema-de-id-descentralizado/">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -32,6 +31,18 @@ Segundo &hellip;">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 
   
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1264252-8']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
 
 </head>
 
@@ -51,7 +62,7 @@ Segundo &hellip;">
   
 <form action="http://google.com/search" method="get">
   <fieldset role="search">
-    <input type="hidden" name="q" value="site:jaydson.github.com" />
+    <input type="hidden" name="q" value="site:jaydson.org" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
@@ -94,34 +105,15 @@ Segundo &hellip;">
   </header>
 
 
-<div class="entry-content"><p>A Mozilla está sempre desenvolvendo coisas muito legais, e hoje, navegando no <a href="http://hacks.mozilla.org">Mozilla Hacks</a> vi um post muito interessante sobre o <a href="https://browserid.org/"><strong>BrowserID</strong></a>.<br/>
-Segundo o site do projeto, o BrowserID fornece aos  usuários uma maneira mais segura e mais fácil de entrar nos sites que exigem algum tipo de autenticação.<br/>
-Já para desenvolvedores, o BrowserID oferece em poucas linhas de código uma maneira simples de autenticar um usuário.<br/>
-O objetivo é realmente esse, ser muito simples e seguro, e o mais legal, sem precisar utilizar senha.<br/>
-O modelo atual, e que estamos acostumados para se autenticar em um site, é normalmente atraves de um login(nome de usuário) e uma senha.<br/>
-Com o BrowserID o usuário só precisa confirmar o seu e-mail.<br/>
-Esse processo é feito utilizando o <a href="https://wiki.mozilla.org/Labs/Identity/VerifiedEmailProtocol">Verified E-mail Protocol</a>, que basicamente é um protocolo que define uma maneira de um usuário &#8220;provar&#8221; ao site que ele é dono de um determinado e-mail.<br/>
-A ideia é brilhante e simples.</p>
+<div class="entry-content"><p>A Mozilla está sempre desenvolvendo coisas muito legais, e hoje, navegando no <a href='http://hacks.mozilla.org'>Mozilla Hacks</a> vi um post muito interessante sobre o <a href='https://browserid.org/'><strong>BrowserID</strong></a>.<br />Segundo o site do projeto, o BrowserID fornece aos  usuários uma maneira mais segura e mais fácil de entrar nos sites que exigem algum tipo de autenticação.<br />Já para desenvolvedores, o BrowserID oferece em poucas linhas de código uma maneira simples de autenticar um usuário.<br />O objetivo é realmente esse, ser muito simples e seguro, e o mais legal, sem precisar utilizar senha.<br />O modelo atual, e que estamos acostumados para se autenticar em um site, é normalmente atraves de um login(nome de usuário) e uma senha.<br />Com o BrowserID o usuário só precisa confirmar o seu e-mail.<br />Esse processo é feito utilizando o <a href='https://wiki.mozilla.org/Labs/Identity/VerifiedEmailProtocol'>Verified E-mail Protocol</a>, que basicamente é um protocolo que define uma maneira de um usuário &#8220;provar&#8221; ao site que ele é dono de um determinado e-mail.<br />A ideia é brilhante e simples.</p>
 
-<p>Abaixo, os pilares do BrowserID:   <br/>
-  * Fácil de usar<br/>
-  * Segurança<br/>
-  * Implementação Cross-browser<br/>
-  * Descentralizado<br/>
-  * Respeitar a privacidade do usuário</p>
+<p>Abaixo, os pilares do BrowserID: * Fácil de usar<br /> * Segurança<br /> * Implementação Cross-browser<br /> * Descentralizado<br /> * Respeitar a privacidade do usuário</p>
 
-<p>Para finalizar, um vídeo explicativo:</p>
+<p>Para finalizar, um vídeo explicativo:<br /><div class='embed-video-container'><iframe src='http://www.youtube.com/embed/l0t9yDLAmFo ' /></div></p>
 
-<div class="embed-video-container"><iframe src="http://www.youtube.com/embed/l0t9yDLAmFo "></iframe></div>
+<h2 id='referncias'>Referências:</h2>
 
-
-<h2>Referências:</h2>
-
-<p><a href="http://hacks.mozilla.org/2011/07/introducing-browserid-easier-and-safer-authentication-on-the-web/">http://hacks.mozilla.org/2011/07/introducing-browserid-easier-and-safer-authentication-on-the-web/</a><br/>
-<a href="https://browserid.org/">https://browserid.org/</a><br/>
-<a href="http://www.pcmag.com/article2/0,2817,2388610,00.asp">http://www.pcmag.com/article2/0,2817,2388610,00.asp</a><br/>
-<a href="http://www.open-mike.org/entry/verified-email-protocol">http://www.open-mike.org/entry/verified-email-protocol</a></p>
-</div>
+<p><a href='http://hacks.mozilla.org/2011/07/introducing-browserid-easier-and-safer-authentication-on-the-web/'>http://hacks.mozilla.org/2011/07/introducing-browserid-easier-and-safer-authentication-on-the-web/</a><br /><a href='https://browserid.org/'>https://browserid.org/</a><br /><a href='http://www.pcmag.com/article2/0,2817,2388610,00.asp'>http://www.pcmag.com/article2/0,2817,2388610,00.asp</a><br /><a href='http://www.open-mike.org/entry/verified-email-protocol'>http://www.open-mike.org/entry/verified-email-protocol</a></p></div>
 
 
   <footer>
@@ -157,7 +149,7 @@ A ideia é brilhante e simples.</p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.github.com/mozilla-browserid-sistema-de-id-descentralizado/" data-via="" data-counturl="http://jaydson.github.com/mozilla-browserid-sistema-de-id-descentralizado/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.org/mozilla-browserid-sistema-de-id-descentralizado/" data-via="" data-counturl="http://jaydson.org/mozilla-browserid-sistema-de-id-descentralizado/" >Tweet</a>
   
   
   
@@ -192,6 +184,10 @@ A ideia é brilhante e simples.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/migrando-para-octopress/">Migrando para o Octopress</a>
+      </li>
+    
+      <li class="post">
         <a href="/analytics-do-blog-em-2012/">Analytics do Blog em 2012</a>
       </li>
     
@@ -205,10 +201,6 @@ A ideia é brilhante e simples.</p>
     
       <li class="post">
         <a href="/w3c-webbr-2102/">W3C webbr 2102</a>
-      </li>
-    
-      <li class="post">
-        <a href="/javascript-o-guia-definitivo/">JavaScript: O Guia definitivo</a>
       </li>
     
   </ul>
@@ -268,8 +260,8 @@ A ideia é brilhante e simples.</p>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://jaydson.github.com/mozilla-browserid-sistema-de-id-descentralizado/';
-        var disqus_url = 'http://jaydson.github.com/mozilla-browserid-sistema-de-id-descentralizado/';
+        var disqus_identifier = 'http://jaydson.org/mozilla-browserid-sistema-de-id-descentralizado/';
+        var disqus_url = 'http://jaydson.org/mozilla-browserid-sistema-de-id-descentralizado/';
         var disqus_script = 'embed.js';
       
     (function () {

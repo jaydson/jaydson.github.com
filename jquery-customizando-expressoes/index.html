@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://jaydson.github.com/jquery-customizando-expressoes/">
+  <link rel="canonical" href="http://jaydson.org/jquery-customizando-expressoes/">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -31,6 +31,18 @@
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 
   
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1264252-8']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
 
 </head>
 
@@ -50,7 +62,7 @@
   
 <form action="http://google.com/search" method="get">
   <fieldset role="search">
-    <input type="hidden" name="q" value="site:jaydson.github.com" />
+    <input type="hidden" name="q" value="site:jaydson.org" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
@@ -93,33 +105,19 @@
   </header>
 
 
-<div class="entry-content"><p>O jQuery é uma excelente biblioteca, e suas constantes atualizações e profissionalismo fazem com que nós programadores tenhamos uma potente arma na mão para solucionar qualquer problema.<br/>
-Mas mesmo o jQuery sendo tão completo, sempre haverá alguma situação ímpar em que ele não suprirá sua necessidade.<br/>
-Um dos motivos que levou o jQuery a chegar ao nível de biblioteca Javascript mais utilizada do mundo, além de sua excelente performance e extremo profissionalismo foi a facilidade e possibilidade de extender suas funcionalidades.<br/>
-Hoje já são incontáveis os plugins que  existem para o jQuery.</p>
+<div class="entry-content"><p>O jQuery é uma excelente biblioteca, e suas constantes atualizações e profissionalismo fazem com que nós programadores tenhamos uma potente arma na mão para solucionar qualquer problema.<br />Mas mesmo o jQuery sendo tão completo, sempre haverá alguma situação ímpar em que ele não suprirá sua necessidade.<br />Um dos motivos que levou o jQuery a chegar ao nível de biblioteca Javascript mais utilizada do mundo, além de sua excelente performance e extremo profissionalismo foi a facilidade e possibilidade de extender suas funcionalidades.<br />Hoje já são incontáveis os plugins que  existem para o jQuery.</p>
 
-<p>O jQuery é uma excelente biblioteca, e suas constantes atualizações e profissionalismo fazem com que nós programadores tenhamos uma potente arma na mão para solucionar qualquer problema.
-Mas mesmo o jQuery sendo tão completo, sempre haverá alguma situação ímpar em que ele não suprirá sua necessidade.
-Um dos motivos que levou o jQuery a chegar ao nível de biblioteca Javascript mais utilizada do mundo, além de sua excelente performance e extremo profissionalismo foi a facilidade e possibilidade de extender suas funcionalidades.
-Hoje já são incontáveis os plugins que  existem para o jQuery.</p>
-
+<p>O jQuery é uma excelente biblioteca, e suas constantes atualizações e profissionalismo fazem com que nós programadores tenhamos uma potente arma na mão para solucionar qualquer problema. Mas mesmo o jQuery sendo tão completo, sempre haverá alguma situação ímpar em que ele não suprirá sua necessidade. Um dos motivos que levou o jQuery a chegar ao nível de biblioteca Javascript mais utilizada do mundo, além de sua excelente performance e extremo profissionalismo foi a facilidade e possibilidade de extender suas funcionalidades. Hoje já são incontáveis os plugins que  existem para o jQuery.</p>
 <!-- more -->
+<p>Uma rápida pesquisa no Google e voces encontraram varios posts espalhados pelo mundo falando a respeito.<br />Customizar uma expressão consiste em incorporar ao jQuery um método que ele não possui nativamente.</p>
 
+<p>Mas porque diabos fazer isso?<br />Acreditem, pode ser bem útil.</p>
 
-<p>Mas hoje venho falar de uma possibilidade muito interessante que mais uma vez devo a  dica ao <a href="http://twitter.com/ricardobeat">Ricardo Tomasi</a>, que é a customização de expressões.<br/>
-Uma rápida pesquisa no Google e voces encontraram varios posts espalhados pelo mundo falando a respeito.<br/>
-Customizar uma expressão consiste em incorporar ao jQuery um método que ele não possui nativamente.</p>
+<p>No curso de jQuery que estou ministrando na <a href='http://www.targettrust.com.br/web/'>Target Trust</a>, ontem bolei um exercício simples para os alunos:</p>
 
-<p>Mas porque diabos fazer isso?<br/>
-Acreditem, pode ser bem útil.</p>
+<p><em><strong>&#8220;Mude a cor de fundo de todas as TD&#8217;s com indice ímpar da tabela com id tabela2&#8221;<br /></strong></em></p>
 
-<p>No curso de jQuery que estou ministrando na <a href="http://www.targettrust.com.br/web/">Target Trust</a>, ontem bolei um exercício simples para os alunos:</p>
-
-<p><em><strong>&#8220;Mude a cor de fundo de todas as TD&#8217;s com indice ímpar da tabela com id tabela2&#8221;<br/>
-</strong></em></p>
-
-<p><em>Sacaram a ideia?<br/>
-Simples. O que eu queria, é que eles fizessem da maneira deles, usando um loop, verificando o <a href="http://pt.wikipedia.org/wiki/Opera%C3%A7%C3%A3o_m%C3%B3dulo">mod</a> do indice e assim aplicar o css no elemento, para então depois apresentar o <a href="http://api.jquery.com/odd-selector/">seletor odd</a> que faz exatamente isso, só que em uma linha.</em></p>
+<p><em>Sacaram a ideia?<br />Simples. O que eu queria, é que eles fizessem da maneira deles, usando um loop, verificando o <a href='http://pt.wikipedia.org/wiki/Opera%C3%A7%C3%A3o_m%C3%B3dulo'>mod</a> do indice e assim aplicar o css no elemento, para então depois apresentar o <a href='http://api.jquery.com/odd-selector/'>seletor odd</a> que faz exatamente isso, só que em uma linha.</em></p>
 
 <p>_ _</p>
 
@@ -131,112 +129,65 @@ Simples. O que eu queria, é que eles fizessem da maneira deles, usando um loop,
 
 <p>_ _</p>
 
-<p><em>Tudo tranquilo, mas um dos alunos muito antenado achou o seletor e resolveu o problema facilmente!<br/>
-Então mudei a estratégia, e pedi para ele implementar um algoritmo que apenas aplicasse o estilo nas TD&#8217;s com indice que fosse <a href="http://pt.wikipedia.org/wiki/N%C3%BAmero_primo">número primo</a>.<br/>
-Novamente o aluno conseguiu.<br/>
-Foi ai que lembrei da possibilidade de customização das expressões!<br/>
-Fiz a proposta para o aluno: Se tu conseguir criar uma expressão customizada que retorne elementos baseando-se nos numeros primos terá um post no meu blog!<br/>
-Então ai esta. Abaixo segue o código implementado pelo aluno <a href="http://www.twitter.com/AndreLMPinto">Andre Pinto </a>da turma de jQuery Maio/2010:</em></p>
+<p><em>Tudo tranquilo, mas um dos alunos muito antenado achou o seletor e resolveu o problema facilmente!<br />Então mudei a estratégia, e pedi para ele implementar um algoritmo que apenas aplicasse o estilo nas TD&#8217;s com indice que fosse <a href='http://pt.wikipedia.org/wiki/N%C3%BAmero_primo'>número primo</a>.<br />Novamente o aluno conseguiu.<br />Foi ai que lembrei da possibilidade de customização das expressões!<br />Fiz a proposta para o aluno: Se tu conseguir criar uma expressão customizada que retorne elementos baseando-se nos numeros primos terá um post no meu blog!<br />Então ai esta. Abaixo segue o código implementado pelo aluno <a href='http://www.twitter.com/AndreLMPinto'>Andre Pinto</a>da turma de jQuery Maio/2010:</em></p>
 
 <p> </p>
 
 <pre><code>[javascript]
-jQuery.extend( jQuery.expr[':'], {
-    prime: function(a, index){
-        function isPrime(num){
-            var numHalf = num / 2, counter, divCheck;
-                if (num === 2){
-                    return true;
-                }
-                if (num &amp;amp;amp;lt; 2 || numHalf === Math.floor(numHalf) ||
+jQuery.extend( jQuery.expr[&#39;:&#39;], {
+	prime: function(a, index){
+		function isPrime(num){
+			var numHalf = num / 2, counter, divCheck;
+				if (num === 2){
+					return true;
+				}
+				if (num &amp;amp;amp;lt; 2 || numHalf === Math.floor(numHalf) ||
                                    num !== Math.floor(num)){
-                    return false;
-                }else{
-                    for (counter = 3; counter &amp;amp;amp;lt;= Math.sqrt(num);
+					return false;
+				}else{
+					for (counter = 3; counter &amp;amp;amp;lt;= Math.sqrt(num);
                                               counter += 2){
-                        divCheck = num / counter;
-                        if (divCheck === Math.floor(divCheck)) {
-                            return false;
-                        }
-                    }
-                return true;
-                   }
-        }
+						divCheck = num / counter;
+						if (divCheck === Math.floor(divCheck)) {
+							return false;
+						}
+					}
+				return true;
+			       }
+		}
            return isPrime(index);
      }
-});[/javascript]
-</code></pre>
+});[/javascript]</code></pre>
 
 <p>Para usar a expressão:</p>
 
 <pre><code>[javascript]
-$('#tabela2 td:prime').css( { 'background-color' : 'red' } );
-[/javascript]
-</code></pre>
+$(&#39;#tabela2 td:prime&#39;).css( { &#39;background-color&#39; : &#39;red&#39; } );
+[/javascript]</code></pre>
 
 <p>Parabéns ao André pela implementação.</p>
 
-<p>Mas hoje venho falar de uma possibilidade muito interessante que mais uma vez devo a  dica ao <a href="http://twitter.com/ricardobeat">Ricardo Tomasi</a>, que é a customização de expressões.
-Uma rápida pesquisa no Google e voces encontraram varios posts espalhados pelo mundo falando a respeito.
-Customizar uma expressão consiste em incorporar ao jQuery um método que ele não possui nativamente.</p>
+<p>Mas hoje venho falar de uma possibilidade muito interessante que mais uma vez devo a  dica ao <a href='http://twitter.com/ricardobeat'>Ricardo Tomasi</a>, que é a customização de expressões. Uma rápida pesquisa no Google e voces encontraram varios posts espalhados pelo mundo falando a respeito. Customizar uma expressão consiste em incorporar ao jQuery um método que ele não possui nativamente.</p>
 
-<p>Mas porque diabos fazer isso?
-Acreditem, pode ser bem útil.</p>
+<p>Mas porque diabos fazer isso? Acreditem, pode ser bem útil.</p>
 
-<p>No curso de jQuery que estou ministrando na <a href="http://www.targettrust.com.br/web/">Target Trust</a>, ontem bolei um exercício simples para os alunos:</p>
+<p>No curso de jQuery que estou ministrando na <a href='http://www.targettrust.com.br/web/'>Target Trust</a>, ontem bolei um exercício simples para os alunos:</p>
 
-<p><em><strong>&#8220;Mude a cor de fundo de todas as TD&#8217;s com indice ímpar da tabela com id tabela2&#8221;
-</strong></em></p>
+<p><em><strong>&#8220;Mude a cor de fundo de todas as TD&#8217;s com indice ímpar da tabela com id tabela2&#8221;</strong></em></p>
 
-<p><em>Sacaram a ideia?
-Simples. O que eu queria, é que eles fizessem da maneira deles, usando um loop, verificando o <a href="http://pt.wikipedia.org/wiki/Opera%C3%A7%C3%A3o_m%C3%B3dulo">mod</a> do indice e assim aplicar o css no elemento, para então depois apresentar o <a href="http://api.jquery.com/odd-selector/">seletor odd</a> que faz exatamente isso, só que em uma linha.</em></p>
+<p><em>Sacaram a ideia? Simples. O que eu queria, é que eles fizessem da maneira deles, usando um loop, verificando o <a href='http://pt.wikipedia.org/wiki/Opera%C3%A7%C3%A3o_m%C3%B3dulo'>mod</a> do indice e assim aplicar o css no elemento, para então depois apresentar o <a href='http://api.jquery.com/odd-selector/'>seletor odd</a> que faz exatamente isso, só que em uma linha.</em></p>
 
 <p>$(&#8220;table td:odd&#8221;).css(&#8220;background-color&#8221;, &#8220;#bbbbff&#8221;);</p>
 
-<p><em>Tudo tranquilo, mas um dos alunos muito antenado achou o seletor e resolveu o problema facilmente!
-Então mudei a estratégia, e pedi para ele implementar um algoritmo que apenas aplicasse o estilo nas TD&#8217;s com indice que fosse <a href="http://pt.wikipedia.org/wiki/N%C3%BAmero_primo">número primo</a>.
-Novamente o aluno conseguiu.
-Foi ai que lembrei da possibilidade de customização das expressões!
-Fiz a proposta para o aluno: Se tu conseguir criar uma expressão customizada que retorne elementos baseando-se nos numeros primos terá um post no meu blog!
-Então ai esta. Abaixo segue o código implementado pelo aluno <a href="http://www.twitter.com/AndreLMPinto">Andre Pinto</a> da turma de jQuery Maio/2010:</em></p>
+<p><em>Tudo tranquilo, mas um dos alunos muito antenado achou o seletor e resolveu o problema facilmente! Então mudei a estratégia, e pedi para ele implementar um algoritmo que apenas aplicasse o estilo nas TD&#8217;s com indice que fosse <a href='http://pt.wikipedia.org/wiki/N%C3%BAmero_primo'>número primo</a>. Novamente o aluno conseguiu. Foi ai que lembrei da possibilidade de customização das expressões! Fiz a proposta para o aluno: Se tu conseguir criar uma expressão customizada que retorne elementos baseando-se nos numeros primos terá um post no meu blog! Então ai esta. Abaixo segue o código implementado pelo aluno <a href='http://www.twitter.com/AndreLMPinto'>Andre Pinto</a> da turma de jQuery Maio/2010:</em></p>
 
-<p>[javascript]
-jQuery.extend( jQuery.expr[&#8216;:&#8217;], {</p>
-
-<pre><code>prime: function(a, index){
-    function isPrime(num){
-        var numHalf = num / 2, counter, divCheck;
-            if (num === 2){
-                return true;
-            }
-            if (num &amp;amp;lt; 2 || numHalf === Math.floor(numHalf) ||
-                               num !== Math.floor(num)){
-                return false;
-            }else{
-                for (counter = 3; counter &amp;amp;lt;= Math.sqrt(num);
-                                          counter += 2){
-                    divCheck = num / counter;
-                    if (divCheck === Math.floor(divCheck)) {
-                        return false;
-                    }
-                }
-            return true;
-               }
-    }
-       return isPrime(index);
- }
-</code></pre>
-
-<p>});[/javascript]</p>
+<p><span>javascript</span> jQuery.extend( jQuery.expr<span>&#8217;:&#8217;</span>, { prime: function(a, index){ function isPrime(num){ var numHalf = num / 2, counter, divCheck; if (num === 2){ return true; } if (num &#38;lt; 2 || numHalf === Math.floor(numHalf) || num !== Math.floor(num)){ return false; }else{ for (counter = 3; counter &#38;lt;= Math.sqrt(num); counter += 2){ divCheck = num / counter; if (divCheck === Math.floor(divCheck)) { return false; } } return true; } } return isPrime(index); } });<span>/javascript</span></p>
 
 <p>Para usar a expressão:</p>
 
-<p>[javascript]
-$(&#8216;#tabela2 td:prime&#8217;).css( { &#8216;background-color&#8217; : &#8216;red&#8217; } );
-[/javascript]</p>
+<p><span>javascript</span> $(&#8216;#tabela2 td:prime&#8217;).css( { &#8216;background-color&#8217; : &#8216;red&#8217; } ); <span>/javascript</span></p>
 
-<p>Parabéns ao André pela implementação.</p>
-</div>
+<p>Parabéns ao André pela implementação.</p></div>
 
 
   <footer>
@@ -272,7 +223,7 @@ $(&#8216;#tabela2 td:prime&#8217;).css( { &#8216;background-color&#8217; : &#821
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.github.com/jquery-customizando-expressoes/" data-via="" data-counturl="http://jaydson.github.com/jquery-customizando-expressoes/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.org/jquery-customizando-expressoes/" data-via="" data-counturl="http://jaydson.org/jquery-customizando-expressoes/" >Tweet</a>
   
   
   
@@ -307,6 +258,10 @@ $(&#8216;#tabela2 td:prime&#8217;).css( { &#8216;background-color&#8217; : &#821
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/migrando-para-octopress/">Migrando para o Octopress</a>
+      </li>
+    
+      <li class="post">
         <a href="/analytics-do-blog-em-2012/">Analytics do Blog em 2012</a>
       </li>
     
@@ -320,10 +275,6 @@ $(&#8216;#tabela2 td:prime&#8217;).css( { &#8216;background-color&#8217; : &#821
     
       <li class="post">
         <a href="/w3c-webbr-2102/">W3C webbr 2102</a>
-      </li>
-    
-      <li class="post">
-        <a href="/javascript-o-guia-definitivo/">JavaScript: O Guia definitivo</a>
       </li>
     
   </ul>
@@ -383,8 +334,8 @@ $(&#8216;#tabela2 td:prime&#8217;).css( { &#8216;background-color&#8217; : &#821
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://jaydson.github.com/jquery-customizando-expressoes/';
-        var disqus_url = 'http://jaydson.github.com/jquery-customizando-expressoes/';
+        var disqus_identifier = 'http://jaydson.org/jquery-customizando-expressoes/';
+        var disqus_url = 'http://jaydson.org/jquery-customizando-expressoes/';
         var disqus_script = 'embed.js';
       
     (function () {

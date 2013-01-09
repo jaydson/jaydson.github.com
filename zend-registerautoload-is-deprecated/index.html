@@ -9,8 +9,7 @@
   <meta name="author" content="Jaydson Gomes">
 
   
-  <meta name="description" content="After upgrading the version of Zend Framework had a problem with registerAutoload.
-That&#8217;s because since version 1.8 the Zend_Loader: &hellip;">
+  <meta name="description" content="After upgrading the version of Zend Framework had a problem with registerAutoload. That&#8217;s because since version 1.8 the Zend_Loader: &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@ That&#8217;s because since version 1.8 the Zend_Loader: &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://jaydson.github.com/zend-registerautoload-is-deprecated/">
+  <link rel="canonical" href="http://jaydson.org/zend-registerautoload-is-deprecated/">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -32,6 +31,18 @@ That&#8217;s because since version 1.8 the Zend_Loader: &hellip;">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 
   
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1264252-8']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
 
 </head>
 
@@ -51,7 +62,7 @@ That&#8217;s because since version 1.8 the Zend_Loader: &hellip;">
   
 <form action="http://google.com/search" method="get">
   <fieldset role="search">
-    <input type="hidden" name="q" value="site:jaydson.github.com" />
+    <input type="hidden" name="q" value="site:jaydson.org" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
@@ -94,38 +105,19 @@ That&#8217;s because since version 1.8 the Zend_Loader: &hellip;">
   </header>
 
 
-<div class="entry-content"><p>After upgrading the version of Zend Framework had a problem with registerAutoload.
-That&#8217;s because since version 1.8 the Zend_Loader: registerAutoload is obsolete.
-My code was something like this:</p>
+<div class="entry-content"><p>After upgrading the version of Zend Framework had a problem with registerAutoload. That&#8217;s because since version 1.8 the Zend_Loader: registerAutoload is obsolete. My code was something like this:</p>
 
-<p>[php]
-include(&#8216;Zend/Loader.php&#8217;);
-Zend_Loader::registerAutoload();
-[/php]</p>
+<p><span>php</span> include(&#8216;Zend/Loader.php&#8217;); Zend_Loader::registerAutoload(); <span>/php</span></p>
 
-<p>To solve the problem just use the Zend_Loader_Autoloader.
-In my implementation only the excerpt below solved the problem:</p>
+<p>To solve the problem just use the Zend_Loader_Autoloader. In my implementation only the excerpt below solved the problem:</p>
 
-<p>[php]
-include(&#8216;Zend/Loader/Autoloader.php&#8217;);
-$autoloader = Zend_Loader_Autoloader::getInstance();
-[/php]Após atualizar a versão do <a href="http://framework.zend.com/">Zend Framework</a> tive problema com o registerAutoload.
-Isso porque desde a versão 1.8 o Zend_Loader::registerAutoload está obsoleto.
-Meu  código  estava mais ou menos assim:</p>
+<p><span>php</span> include(&#8216;Zend/Loader/Autoloader.php&#8217;); $autoloader = Zend_Loader_Autoloader::getInstance(); <span>/php</span>Após atualizar a versão do <a href='http://framework.zend.com/'>Zend Framework</a> tive problema com o registerAutoload. Isso porque desde a versão 1.8 o Zend_Loader::registerAutoload está obsoleto. Meu  código  estava mais ou menos assim:</p>
 
-<p>[php]
-include(&#8216;Zend/Loader.php&#8217;);
-Zend_Loader::registerAutoload();
-[/php]</p>
+<p><span>php</span> include(&#8216;Zend/Loader.php&#8217;); Zend_Loader::registerAutoload(); <span>/php</span></p>
 
-<p>Para solucionar o problema basta usar o <a href="http://framework.zend.com/manual/en/zend.loader.autoloader.html">Zend_Loader_Autoloader</a>.
-Em minha implementação apenas o trecho abaixo resolveu o problema:</p>
+<p>Para solucionar o problema basta usar o <a href='http://framework.zend.com/manual/en/zend.loader.autoloader.html'>Zend_Loader_Autoloader</a>. Em minha implementação apenas o trecho abaixo resolveu o problema:</p>
 
-<p>[php]
-include(&#8216;Zend/Loader/Autoloader.php&#8217;);
-$autoloader = Zend_Loader_Autoloader::getInstance();
-[/php]</p>
-</div>
+<p><span>php</span> include(&#8216;Zend/Loader/Autoloader.php&#8217;); $autoloader = Zend_Loader_Autoloader::getInstance(); <span>/php</span></p></div>
 
 
   <footer>
@@ -161,7 +153,7 @@ $autoloader = Zend_Loader_Autoloader::getInstance();
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.github.com/zend-registerautoload-is-deprecated/" data-via="" data-counturl="http://jaydson.github.com/zend-registerautoload-is-deprecated/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.org/zend-registerautoload-is-deprecated/" data-via="" data-counturl="http://jaydson.org/zend-registerautoload-is-deprecated/" >Tweet</a>
   
   
   
@@ -196,6 +188,10 @@ $autoloader = Zend_Loader_Autoloader::getInstance();
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/migrando-para-octopress/">Migrando para o Octopress</a>
+      </li>
+    
+      <li class="post">
         <a href="/analytics-do-blog-em-2012/">Analytics do Blog em 2012</a>
       </li>
     
@@ -209,10 +205,6 @@ $autoloader = Zend_Loader_Autoloader::getInstance();
     
       <li class="post">
         <a href="/w3c-webbr-2102/">W3C webbr 2102</a>
-      </li>
-    
-      <li class="post">
-        <a href="/javascript-o-guia-definitivo/">JavaScript: O Guia definitivo</a>
       </li>
     
   </ul>
@@ -272,8 +264,8 @@ $autoloader = Zend_Loader_Autoloader::getInstance();
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://jaydson.github.com/zend-registerautoload-is-deprecated/';
-        var disqus_url = 'http://jaydson.github.com/zend-registerautoload-is-deprecated/';
+        var disqus_identifier = 'http://jaydson.org/zend-registerautoload-is-deprecated/';
+        var disqus_url = 'http://jaydson.org/zend-registerautoload-is-deprecated/';
         var disqus_script = 'embed.js';
       
     (function () {

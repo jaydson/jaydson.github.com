@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: CSS | Jaydson Gomes]]></title>
-  <link href="http://jaydson.github.com/blog/categories/css/atom.xml" rel="self"/>
-  <link href="http://jaydson.github.com/"/>
-  <updated>2013-01-08T19:02:23-02:00</updated>
-  <id>http://jaydson.github.com/</id>
+  <link href="http://jaydson.org/blog/categories/css/atom.xml" rel="self"/>
+  <link href="http://jaydson.org/"/>
+  <updated>2013-01-09T19:46:03-02:00</updated>
+  <id>http://jaydson.org/</id>
   <author>
     <name><![CDATA[Jaydson Gomes]]></name>
     
@@ -15,31 +15,18 @@
   
   <entry>
     <title type="html"><![CDATA[Hacks CSS]]></title>
-    <link href="http://jaydson.github.com/hacks-css/"/>
+    <link href="http://jaydson.org/hacks-css/"/>
     <updated>2009-05-04T11:32:16-03:00</updated>
-    <id>http://jaydson.github.com/hacks-css</id>
-    <content type="html"><![CDATA[<p>E ai pessoal, seguinte...ontem me deparei com algo realmente interessante, e fiquei até meio assustado pelo fato de eu não saber da existência.
-O negócio é que todos desenvolvedores web sofrem com as peculiaridades de cada Browser, e se tratando do IE, nem se fala.
-Eu já tinha ouvido falar dos Hacks, e pesquisando sobre o assunto encontrei no <a href="http://blog.gustavopaes.net/2007/hacks-css-para-ie6-e-ie7/">Blog do Gustavo Paes</a> várias dicas legais.
-O que achei mais interessante foi o Hack em que duplicamos um atributo da classe CSS, colocando um "coringa" na frente do nome.
-Isso serve para que a propriedade seja alterada apenas no IE.
-Exemplo:</p>
+    <id>http://jaydson.org/hacks-css</id>
+    <content type="html"><![CDATA[<p>E ai pessoal, seguinte&#8230;ontem me deparei com algo realmente interessante, e fiquei até meio assustado pelo fato de eu não saber da existência. O negócio é que todos desenvolvedores web sofrem com as peculiaridades de cada Browser, e se tratando do IE, nem se fala. Eu já tinha ouvido falar dos Hacks, e pesquisando sobre o assunto encontrei no <a href='http://blog.gustavopaes.net/2007/hacks-css-para-ie6-e-ie7/'>Blog do Gustavo Paes</a> várias dicas legais. O que achei mais interessante foi o Hack em que duplicamos um atributo da classe CSS, colocando um &#8220;coringa&#8221; na frente do nome. Isso serve para que a propriedade seja alterada apenas no IE. Exemplo:</p>
 
-<p>[css]</p>
+<p><span>css</span></p>
 
-<h1>elemento {</h1>
+<h1 id='elemento_'>elemento {</h1>
 
-<p>height: 50px;
-<em>height: 30px; /</em> altera propriedade do IE6 e IE7 <em>/
-_height: 20px; /</em> apenas IE6 */
-}
-[/css]</p>
+<p>height: 50px; <em>height: 30px; /</em> altera propriedade do IE6 e IE7 <em>/ <em>height: 20px; /* apenas IE6 <em>/ } <span>/css</span></em></em></em></p>
 
-<p>Mas nem tudo é maravilha....
-Temos apenas um pequeno detalhe:
-Esta Gambiarra solução não passa na validação W3, então se isso é necessário, busquem outra solução.
-Por hora é isso.</p>
-]]></content>
+<p>Mas nem tudo é maravilha&#8230;. Temos apenas um pequeno detalhe: Esta Gambiarra solução não passa na validação W3, então se isso é necessário, busquem outra solução. Por hora é isso.</p>]]></content>
   </entry>
   
 </feed>

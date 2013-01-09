@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://jaydson.github.com/nodejs-instalacao/">
+  <link rel="canonical" href="http://jaydson.org/nodejs-instalacao/">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -31,6 +31,18 @@
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 
   
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1264252-8']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
 
 </head>
 
@@ -50,7 +62,7 @@
   
 <form action="http://google.com/search" method="get">
   <fieldset role="search">
-    <input type="hidden" name="q" value="site:jaydson.github.com" />
+    <input type="hidden" name="q" value="site:jaydson.org" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
@@ -95,38 +107,29 @@
 
 <div class="entry-content"><p>Como comentado no post anterior, agora o objetivo é fazer um passo a passo para instalação do nodeJS em seu ambiente.</p>
 
-<p>Em teoria o node suporta todos os sistemas operacionais <a href="http://pt.wikipedia.org/wiki/POSIX">POSIX</a> inclusive o Windows, mas segundo o site oficial, no momento o node está sendo testado no Linux, Mac e Solaris.</p>
+<p>Em teoria o node suporta todos os sistemas operacionais <a href='http://pt.wikipedia.org/wiki/POSIX'>POSIX</a> inclusive o Windows, mas segundo o site oficial, no momento o node está sendo testado no Linux, Mac e Solaris.</p>
 
-<p>Para rodar o node é necessário ter o <a href="http://www.python.org/">Python</a> 2.4 ou superior instalado.</p>
+<p>Para rodar o node é necessário ter o <a href='http://www.python.org/'>Python</a> 2.4 ou superior instalado.</p>
 
-<p>Levando em consideração que o <a href="http://code.google.com/p/v8/">V8</a> vem incluído no pacote do node, não existe nenhuma outra dependência.</p>
+<p>Levando em consideração que o <a href='http://code.google.com/p/v8/'>V8</a> vem incluído no pacote do node, não existe nenhuma outra dependência.</p>
 
 <p>A instalação do node não é nada complexa, porém exige alguns cuidados.</p>
 
 <p>Estou no Ubuntu, e seguindo as instruções do site, de primeira não funcionou.</p>
 
-<p>Agradeço aqui ao <a href="http://twitter.com/ricardobeat">Ricardo Tomasi</a> pelas dicas sobre a instalação do node.  ;)</p>
+<p>Agradeço aqui ao <a href='http://twitter.com/ricardobeat'>Ricardo Tomasi</a> pelas dicas sobre a instalação do node.  ;)</p>
 
-<p>Como comentado no post anterior, agora o objetivo é fazer um passo a passo para instalação do nodeJS em seu ambiente.
-Em teoria o node suporta todos os sistemas operacionais <a href="http://pt.wikipedia.org/wiki/POSIX">POSIX</a> inclusive o Windows, mas segundo o site oficial, no momento o node está sendo testado no Linux, Mac e Solaris.
-Para rodar o node é necessário ter o <a href="http://www.python.org/">Python</a> 2.4 ou superior instalado.
-Levando em consideração que o <a href="http://code.google.com/p/v8/">V8</a> vem incluído no pacote do node, não existe nenhuma outra dependência.</p>
+<p>Como comentado no post anterior, agora o objetivo é fazer um passo a passo para instalação do nodeJS em seu ambiente. Em teoria o node suporta todos os sistemas operacionais <a href='http://pt.wikipedia.org/wiki/POSIX'>POSIX</a> inclusive o Windows, mas segundo o site oficial, no momento o node está sendo testado no Linux, Mac e Solaris. Para rodar o node é necessário ter o <a href='http://www.python.org/'>Python</a> 2.4 ou superior instalado. Levando em consideração que o <a href='http://code.google.com/p/v8/'>V8</a> vem incluído no pacote do node, não existe nenhuma outra dependência.</p>
 
-<p>A instalação do node não é nada complexa, porém exige alguns cuidados.
-Estou no Ubuntu, e seguindo as instruções do site, de primeira não funcionou.
-Agradeço aqui ao <a href="http://twitter.com/ricardobeat">Ricardo Tomasi</a> pelas dicas sobre a instalação do node.  ;)</p>
-
+<p>A instalação do node não é nada complexa, porém exige alguns cuidados. Estou no Ubuntu, e seguindo as instruções do site, de primeira não funcionou. Agradeço aqui ao <a href='http://twitter.com/ricardobeat'>Ricardo Tomasi</a> pelas dicas sobre a instalação do node.  ;)</p>
 <!-- more -->
-
-
 <p>São poucos passos, abra o terminal e  execute estes simples comandos:</p>
 
 <pre><code>./configure
 make
-make install
-</code></pre>
+make install</code></pre>
 
-<p>Se tudo funcionou, ou seja, não acusou nenhuma falha [FAIL] é porque o nodeJS foi instalado corretamente.</p>
+<p>Se tudo funcionou, ou seja, não acusou nenhuma falha <span>FAIL</span> é porque o nodeJS foi instalado corretamente.</p>
 
 <p>No meu caso a falha ocorreu porque eu não tinha nenhum compilador GCC e G++.</p>
 
@@ -134,8 +137,7 @@ make install
 
 <p>G++ instalado agora o próximo passo é executar:</p>
 
-<pre><code>sudo make test
-</code></pre>
+<pre><code>sudo make test</code></pre>
 
 <p>Feito. Agora vamos criar um clássico Hello World com o node.</p>
 
@@ -143,30 +145,28 @@ make install
 
 <p>Crie um arquivo Javascript com o seguinte conteúdo:</p>
 
-<pre><code>var sys = require('sys'),
-http = require('http');
+<pre><code>var sys = require(&#39;sys&#39;),
+http = require(&#39;http&#39;);
 http.createServer(function (req, res) {
         setTimeout(function () {
-               res.writeHead(200, {'Content-Type': 'text/plain'});
-               res.write('Hello World');
+               res.writeHead(200, {&#39;Content-Type&#39;: &#39;text/plain&#39;});
+               res.write(&#39;Hello World&#39;);
                res.close();
         }, 2000);
 }).listen(8000);
-sys.puts('Server running at http://127.0.0.1:8000/');
-</code></pre>
+sys.puts(&#39;Server running at http://127.0.0.1:8000/&#39;);</code></pre>
 
 <p>Salve o arquivo com o nome que desejar dentro da pasta test que foi criada na raiz do node.</p>
 
 <p>Para testar:</p>
 
-<pre><code>node nome_do_seu_arquivo.js
-</code></pre>
+<pre><code>node nome_do_seu_arquivo.js</code></pre>
 
 <p>A mensagem no terminal deve ser essa: &#8220;Server running at http://127.0.0.1:8000/&#8221;</p>
 
 <p>Acesse com o Browser o endereço para visualizar a aplicação Hello World em funcionamento.</p>
 
-<p>Bom, com a breve introdução e com esse exemplo é possível ter uma ideia do que é nodeJS. O próximo passo é estudar a <a href="http://nodejs.org/api.html">Documentação</a> que é bem rica.</p>
+<p>Bom, com a breve introdução e com esse exemplo é possível ter uma ideia do que é nodeJS. O próximo passo é estudar a <a href='http://nodejs.org/api.html'>Documentação</a> que é bem rica.</p>
 
 <p>Fico por aqui, qualquer dúvida entrem em contato que tentarei ajudar. ;)</p>
 
@@ -174,46 +174,34 @@ sys.puts('Server running at http://127.0.0.1:8000/');
 
 <pre><code>./configure
 make
-make install
-</code></pre>
+make install</code></pre>
 
-<p>Se tudo funcionou, ou seja, não acusou nenhuma falha [FAIL] é porque o nodeJS foi instalado corretamente.
-No meu caso a falha ocorreu porque eu não tinha nenhum compilador GCC e G++.
-Bastou abrir o Synaptic, selecionar a categoria Development, procurar por G++ e pronto.
-G++ instalado agora o próximo passo é executar:</p>
+<p>Se tudo funcionou, ou seja, não acusou nenhuma falha <span>FAIL</span> é porque o nodeJS foi instalado corretamente. No meu caso a falha ocorreu porque eu não tinha nenhum compilador GCC e G++. Bastou abrir o Synaptic, selecionar a categoria Development, procurar por G++ e pronto. G++ instalado agora o próximo passo é executar:</p>
 
-<pre><code>sudo make test
-</code></pre>
+<pre><code>sudo make test</code></pre>
 
-<p>Feito. Agora vamos criar um clássico Hello World com o node.
-Parto do princípio que tudo deu certo até aqui, e que o node está instaldo e pronto pra usar.
-Crie um arquivo Javascript com o seguinte conteúdo:</p>
+<p>Feito. Agora vamos criar um clássico Hello World com o node. Parto do princípio que tudo deu certo até aqui, e que o node está instaldo e pronto pra usar. Crie um arquivo Javascript com o seguinte conteúdo:</p>
 
-<pre><code>var sys = require('sys'),
-http = require('http');
+<pre><code>var sys = require(&#39;sys&#39;),
+http = require(&#39;http&#39;);
 http.createServer(function (req, res) {
         setTimeout(function () {
-               res.writeHead(200, {'Content-Type': 'text/plain'});
-               res.write('Hello World');
+               res.writeHead(200, {&#39;Content-Type&#39;: &#39;text/plain&#39;});
+               res.write(&#39;Hello World&#39;);
                res.close();
         }, 2000);
 }).listen(8000);
-sys.puts('Server running at http://127.0.0.1:8000/');
-</code></pre>
+sys.puts(&#39;Server running at http://127.0.0.1:8000/&#39;);</code></pre>
 
-<p>Salve o arquivo com o nome que desejar dentro da pasta <em>test </em>que foi criada na raiz do node.
-Para testar:</p>
+<p>Salve o arquivo com o nome que desejar dentro da pasta <em>test</em>que foi criada na raiz do node. Para testar:</p>
 
-<pre><code>node nome_do_seu_arquivo.js
-</code></pre>
+<pre><code>node nome_do_seu_arquivo.js</code></pre>
 
 <p>A mensagem no terminal deve ser essa: &#8220;Server running at http://127.0.0.1:8000/&#8221;</p>
 
 <p>Acesse com o Browser o endereço para visualizar a aplicação Hello World em funcionamento.</p>
 
-<p>Bom, com a breve introdução e com esse exemplo é possível ter uma ideia do que é nodeJS. O próximo passo é estudar a <a href="http://nodejs.org/api.html">Documentação</a> que é bem rica.
-Fico por aqui, qualquer dúvida entrem em contato que tentarei ajudar. ;)</p>
-</div>
+<p>Bom, com a breve introdução e com esse exemplo é possível ter uma ideia do que é nodeJS. O próximo passo é estudar a <a href='http://nodejs.org/api.html'>Documentação</a> que é bem rica. Fico por aqui, qualquer dúvida entrem em contato que tentarei ajudar. ;)</p></div>
 
 
   <footer>
@@ -249,7 +237,7 @@ Fico por aqui, qualquer dúvida entrem em contato que tentarei ajudar. ;)</p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.github.com/nodejs-instalacao/" data-via="" data-counturl="http://jaydson.github.com/nodejs-instalacao/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.org/nodejs-instalacao/" data-via="" data-counturl="http://jaydson.org/nodejs-instalacao/" >Tweet</a>
   
   
   
@@ -284,6 +272,10 @@ Fico por aqui, qualquer dúvida entrem em contato que tentarei ajudar. ;)</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/migrando-para-octopress/">Migrando para o Octopress</a>
+      </li>
+    
+      <li class="post">
         <a href="/analytics-do-blog-em-2012/">Analytics do Blog em 2012</a>
       </li>
     
@@ -297,10 +289,6 @@ Fico por aqui, qualquer dúvida entrem em contato que tentarei ajudar. ;)</p>
     
       <li class="post">
         <a href="/w3c-webbr-2102/">W3C webbr 2102</a>
-      </li>
-    
-      <li class="post">
-        <a href="/javascript-o-guia-definitivo/">JavaScript: O Guia definitivo</a>
       </li>
     
   </ul>
@@ -360,8 +348,8 @@ Fico por aqui, qualquer dúvida entrem em contato que tentarei ajudar. ;)</p>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://jaydson.github.com/nodejs-instalacao/';
-        var disqus_url = 'http://jaydson.github.com/nodejs-instalacao/';
+        var disqus_identifier = 'http://jaydson.org/nodejs-instalacao/';
+        var disqus_url = 'http://jaydson.org/nodejs-instalacao/';
         var disqus_script = 'embed.js';
       
     (function () {

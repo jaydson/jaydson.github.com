@@ -9,8 +9,7 @@
   <meta name="author" content="Jaydson Gomes">
 
   
-  <meta name="description" content="O primeiro Plugin Jquery da série que selecionei foi o Text Limiter - Jquery Plugin.
-Como o próprio nome já diz, o que o Plugin faz é limitar um &hellip;">
+  <meta name="description" content="O primeiro Plugin Jqueryda série que selecionei foi o** Text Limiter - Jquery Plugin. Como o próprio nome já diz, o que o Plugin faz é limitar um &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@ Como o próprio nome já diz, o que o Plugin faz é limitar um &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://jaydson.github.com/text-limiter-jquery-plugin/">
+  <link rel="canonical" href="http://jaydson.org/text-limiter-jquery-plugin/">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -32,6 +31,18 @@ Como o próprio nome já diz, o que o Plugin faz é limitar um &hellip;">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 
   
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1264252-8']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
 
 </head>
 
@@ -51,7 +62,7 @@ Como o próprio nome já diz, o que o Plugin faz é limitar um &hellip;">
   
 <form action="http://google.com/search" method="get">
   <fieldset role="search">
-    <input type="hidden" name="q" value="site:jaydson.github.com" />
+    <input type="hidden" name="q" value="site:jaydson.org" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
@@ -94,55 +105,53 @@ Como o próprio nome já diz, o que o Plugin faz é limitar um &hellip;">
   </header>
 
 
-<div class="entry-content"><p>O primeiro <strong>Plugin Jquery </strong>da série que selecionei foi o<strong> <a href="http://www.burobjorn.nl/code/textlimiter/">Text Limiter - Jquery Plugin</a></strong>.
-Como o próprio nome já diz, o que o Plugin faz é limitar um campo de texto a &#8220;N&#8221; caracteres.
-Isso é muito útil, pois em qualquer formulário que fazemos sempre tem algum campo que precisa ser validado desta forma.</p>
+<div class="entry-content"><p>O primeiro <strong>Plugin Jquery</strong>da série que selecionei foi o** <a href='http://www.burobjorn.nl/code/textlimiter/'>Text Limiter - Jquery Plugin</a><strong>. Como o próprio nome já diz, o que o Plugin faz é limitar um campo de texto a &#8220;N&#8221; caracteres. Isso é muito útil, pois em qualquer formulário que fazemos sempre tem algum campo que precisa ser validado desta forma.</strong></p>
 
 <p>Para sua implementação nada mais do que uma linha de código é necessária, veja no exemplo abaixo:</p>
 
-<p>[javascript]</p>
+<p><span>javascript</span></p>
 
-<p>$(&#8220;textarea[maxlength]&#8221;).textLimiter();</p>
+<p>$(&#8220;textarea<span>maxlength</span>&#8221;).textLimiter();</p>
 
-<p>[/javascript]</p>
+<p><span>/javascript</span></p>
 
-<p>Neste exemplo, o que o Plugin faz é varrer todos inputs <textarea> e aplicar a restrição se baseando no atributo &#8220;maxlength&#8221;.</p>
+<p>Neste exemplo, o que o Plugin faz é varrer todos inputs <pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
+&lt;textarea&gt; e aplicar a restrição se baseando no atributo &quot;maxlength&quot;.</pre></p>
 
-<p><strong>Nota:</strong> O atributo maxlength não é padrão em um elemento <textarea> assim como em um elemento <input>.
-Para mais detalhes sobre o elemento <textarea> acesse <a href="http://www.w3schools.com/TAGS/tag_textarea.asp">http://www.w3schools.com/TAGS/tag_textarea.asp</a></p>
+<p><strong>Nota:</strong> O atributo maxlength não é padrão em um elemento <pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
+&lt;textarea&gt; assim como em um elemento &lt;input&gt;.
+Para mais detalhes sobre o elemento &lt;textarea&gt; acesse [http://www.w3schools.com/TAGS/tag_textarea.asp](http://www.w3schools.com/TAGS/tag_textarea.asp)</pre></p>
 
-<p>Se no seu formulário existem vários elementos <textarea>, mas para cada um deles existe uma validação de tamanho diferente, o que pode ser feito é especificar o ID do elemento, ficando então:</p>
+<p>Se no seu formulário existem vários elementos <pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
+&lt;textarea&gt;, mas para cada um deles existe uma validação de tamanho diferente, o que pode ser feito é especificar o ID do elemento, ficando então:</pre></p>
 
-<p>[javascript]</p>
+<p><span>javascript</span></p>
 
-<p>$(&#8220;#meu_textarea1[maxlength]&#8221;).textLimiter();
-$(&#8220;#meu_textarea2[maxlength]&#8221;).textLimiter();
-$(&#8220;#meu_textarea3[maxlength]&#8221;).textLimiter();</p>
+<p>$(&#8220;#meu_textarea1<span>maxlength</span>&#8221;).textLimiter(); $(&#8220;#meu_textarea2<span>maxlength</span>&#8221;).textLimiter(); $(&#8220;#meu_textarea3<span>maxlength</span>&#8221;).textLimiter();</p>
 
-<p>[/javascript]</p>
+<p><span>/javascript</span></p>
 
-<p>Neste exemplo o Plugin aplicará a restrição de acordo com o atributo &#8220;maxlength&#8221; de cada <textarea> identificado pela ID.</p>
+<p>Neste exemplo o Plugin aplicará a restrição de acordo com o atributo &#8220;maxlength&#8221; de cada <pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
+&lt;textarea&gt; identificado pela ID.</pre></p>
 
-<p>Para um elemento do tipo <input>, não há nada de diferente dos exemplos anteriores, basta especificar a ID, ou varrer todos elementos:</p>
+<p>Para um elemento do tipo <pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
+&lt;input&gt;, não há nada de diferente dos exemplos anteriores, basta especificar a ID, ou varrer todos elementos:</pre></p>
 
-<p>[javascript]
-$(&#8220;#meu_input1[maxlength]&#8221;).textLimiter();
-$(&#8220;#meu_input2[maxlength]&#8221;).textLimiter();</p>
+<p><span>javascript</span> $(&#8220;#meu_input1<span>maxlength</span>&#8221;).textLimiter(); $(&#8220;#meu_input2<span>maxlength</span>&#8221;).textLimiter();</p>
 
-<p>[/javascript]</p>
+<p><span>/javascript</span></p>
 
-<p>O elemento <input> por padrão tem o atributo maxlength. Então se for especificado algum tamanho (Ex: maxlength=10) , mesmo sem utilizar o Plugin, este campo será limitado a este valor.
-A vantagem de usar o Plugin é que ele incrementa essa restrição visualmente, mostrando a quantidade de caracteres restantes para tal elemento.</p>
+<p>O elemento <pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
+&lt;input&gt; por padrão tem o atributo maxlength. Então se for especificado algum tamanho (Ex: maxlength=10) , mesmo sem utilizar o Plugin, este campo será limitado a este valor.
+A vantagem de usar o Plugin é que ele incrementa essa restrição visualmente, mostrando a quantidade de caracteres restantes para tal elemento.</pre></p>
 
 <p><strong>Exemplo:</strong></p>
 
-<p><strong>Minha Avaliação: Nota 8.0</strong>
-<strong>Compatibilidade: Firefox 2.0+, IE 6+, Safari 3.0+, Chrome 2.0+</strong></p>
+<p><strong>Minha Avaliação: Nota 8.0</strong> <strong>Compatibilidade: Firefox 2.0+, IE 6+, Safari 3.0+, Chrome 2.0+</strong></p>
 
-<p>[caption id=&#8221;attachment_114&#8221; align=&#8221;alignnone&#8221; width=&#8221;65&#8221; caption=&#8221;Download&#8221;]<a href="http://www.burobjorn.nl/code/textlimiter/textcounter_limiter_code_v0.1.zip"><img src="http://jaydson-org.web102.redehost.com.br/assets/hd_download1.jpg" alt="Download Text Limiter" /></a>[/caption]</p>
+<p><span>caption id=&#8221;attachment_114&#8221; align=&#8221;alignnone&#8221; width=&#8221;65&#8221; caption=&#8221;Download&#8221;</span>(http://jaydson-org.web102.redehost.com.br/assets/hd_download1.jpg)](http://www.burobjorn.nl/code/textlimiter/textcounter_limiter_code_v0.1.zip)<span>/caption</span></p>
 
-<p><strong>Site oficial do Plugin:</strong><a href="http://www.burobjorn.nl/code/textlimiter/"> http://www.burobjorn.nl/code/textlimiter/</a></p>
-</div>
+<p><strong>Site oficial do Plugin:</strong><a href='http://www.burobjorn.nl/code/textlimiter/'>http://www.burobjorn.nl/code/textlimiter/</a></p></div>
 
 
   <footer>
@@ -178,7 +187,7 @@ A vantagem de usar o Plugin é que ele incrementa essa restrição visualmente, 
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.github.com/text-limiter-jquery-plugin/" data-via="" data-counturl="http://jaydson.github.com/text-limiter-jquery-plugin/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.org/text-limiter-jquery-plugin/" data-via="" data-counturl="http://jaydson.org/text-limiter-jquery-plugin/" >Tweet</a>
   
   
   
@@ -213,6 +222,10 @@ A vantagem de usar o Plugin é que ele incrementa essa restrição visualmente, 
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/migrando-para-octopress/">Migrando para o Octopress</a>
+      </li>
+    
+      <li class="post">
         <a href="/analytics-do-blog-em-2012/">Analytics do Blog em 2012</a>
       </li>
     
@@ -226,10 +239,6 @@ A vantagem de usar o Plugin é que ele incrementa essa restrição visualmente, 
     
       <li class="post">
         <a href="/w3c-webbr-2102/">W3C webbr 2102</a>
-      </li>
-    
-      <li class="post">
-        <a href="/javascript-o-guia-definitivo/">JavaScript: O Guia definitivo</a>
       </li>
     
   </ul>
@@ -289,8 +298,8 @@ A vantagem de usar o Plugin é que ele incrementa essa restrição visualmente, 
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://jaydson.github.com/text-limiter-jquery-plugin/';
-        var disqus_url = 'http://jaydson.github.com/text-limiter-jquery-plugin/';
+        var disqus_identifier = 'http://jaydson.org/text-limiter-jquery-plugin/';
+        var disqus_url = 'http://jaydson.org/text-limiter-jquery-plugin/';
         var disqus_script = 'embed.js';
       
     (function () {

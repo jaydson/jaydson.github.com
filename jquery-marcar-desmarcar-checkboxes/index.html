@@ -9,7 +9,7 @@
   <meta name="author" content="Jaydson Gomes">
 
   
-  <meta name="description" content="You know when we have a very large list of type checkbox, where the user has to select what options does he want? Example: Check1 Check2 Check3 &hellip;">
+  <meta name="description" content="You know when we have a very large list of REXML could not parse this XML/HTML: &lt;inputs&gt; type checkbox, where the user has to select what &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://jaydson.github.com/jquery-marcar-desmarcar-checkboxes/">
+  <link rel="canonical" href="http://jaydson.org/jquery-marcar-desmarcar-checkboxes/">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -31,6 +31,18 @@
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 
   
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1264252-8']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
 
 </head>
 
@@ -50,7 +62,7 @@
   
 <form action="http://google.com/search" method="get">
   <fieldset role="search">
-    <input type="hidden" name="q" value="site:jaydson.github.com" />
+    <input type="hidden" name="q" value="site:jaydson.org" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
@@ -93,7 +105,8 @@
   </header>
 
 
-<div class="entry-content"><p>You know when we have a very large list of <inputs> type checkbox, where the user has to select what options does he want?</p>
+<div class="entry-content"><p>You know when we have a very large list of <pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
+&lt;inputs&gt; type checkbox, where the user has to select what options does he want?</pre></p>
 
 <p>Example:</p>
 
@@ -109,7 +122,8 @@
 
 <p>Check6</p>
 
-<p>Sabem quando temos uma lista bem grande de <inputs> do tipo checkbox, onde o usuário terá de selecionar quais são as opções desejadas?</p>
+<p>Sabem quando temos uma lista bem grande de <pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
+&lt;inputs&gt; do tipo checkbox, onde o usuário terá de selecionar quais são as opções desejadas?</pre></p>
 
 <p>Exemplo:</p>
 
@@ -124,78 +138,42 @@
 <p>Check5</p>
 
 <p>Check6</p>
-
 <!-- more -->
-
-
-<p>Well, now imagine that this list is a little bigger. It is extremely unpleasant to have to check or uncheck one by one.
-A good practice is to put an option for the User select or clear all.</p>
+<p>Well, now imagine that this list is a little bigger. It is extremely unpleasant to have to check or uncheck one by one. A good practice is to put an option for the User select or clear all.</p>
 
 <p>This is a very easy task to implement in &#8220;pure&#8221; Javascript , but the jQuery as that&#8217;s always help.</p>
 
 <p><strong>Solution:</strong></p>
 
-<p>[javascript]</p>
+<p><span>javascript</span></p>
 
-<p>// We attribute to the variable ipts all &lt;inputs&gt; found within the element &quot;#checkboxes&quot;
-var ipts = $(&quot;#checkboxes&quot;).find(&quot;input&quot;);</p>
+<p>// We attribute to the variable ipts all &#60;inputs&#62; found within the element &#34;#checkboxes&#34; var ipts = $(&#34;#checkboxes&#34;).find(&#34;input&#34;);</p>
 
-<p>function checkAll()
-{
-// CheckBox that when clicked select or clear all elements
-var check = document.getElementById(&quot;checkboxCheckAll&quot;);</p>
+<p>function checkAll() { // CheckBox that when clicked select or clear all elements var check = document.getElementById(&#34;checkboxCheckAll&#34;);</p>
 
-<p>// Test the CheckBox to see if must check or uncheck
-check.checked ?
-jQuery.each(ipts, function(){
-// If checked so check all elements
-this.checked = true;
-}) :
-jQuery.each(ipts, function(){
-// If not uncheck all elements
-this.checked = false;
-});
-}
-[/javascript]</p>
+<p>// Test the CheckBox to see if must check or uncheck check.checked ? jQuery.each(ipts, function(){ // If checked so check all elements this.checked = true; }) : jQuery.each(ipts, function(){ // If not uncheck all elements this.checked = false; }); } <span>/javascript</span></p>
 
 <p>Simple and fast.</p>
 
 <p>Tested with more than 50 elements and the routine did not exceed 2 milliseconds.</p>
 
-<p>Bom, agora imaginem que esta lista é um pouco maior. Fica extremamente desagradável ter que marcar ou desmarcar um a um.
-Uma boa prática é colocar uma opção para o usuário marcar ou desmarcar todos.</p>
+<p>Bom, agora imaginem que esta lista é um pouco maior. Fica extremamente desagradável ter que marcar ou desmarcar um a um. Uma boa prática é colocar uma opção para o usuário marcar ou desmarcar todos.</p>
 
 <p>Isso é uma tarefa bem fácil de se implementar em Javascript &#8220;puro&#8221;, mas o jQuery como sempre nos da aquela ajuda.</p>
 
 <p><strong>Solução:</strong></p>
 
-<p>[javascript]</p>
+<p><span>javascript</span></p>
 
-<p>// Atribuímos a variavel ipts todos os inputs encontrados dentro do elemento &#8220;#checkboxes&#8221;
-var ipts = $(&#8220;#checkboxes&#8221;).find(&#8220;input&#8221;);</p>
+<p>// Atribuímos a variavel ipts todos os inputs encontrados dentro do elemento &#8220;#checkboxes&#8221; var ipts = $(&#8220;#checkboxes&#8221;).find(&#8220;input&#8221;);</p>
 
-<p>function checkAll()
-{
-// CheckBox que ao ser clicado marca ou desmarca todos elementos
-var check = document.getElementById(&#8220;checkboxCheckAll&#8221;);</p>
+<p>function checkAll() { // CheckBox que ao ser clicado marca ou desmarca todos elementos var check = document.getElementById(&#8220;checkboxCheckAll&#8221;);</p>
 
-<p>// Testamos o CheckBox para ver se devemos marcar ou desmarcar
-check.checked ?
-jQuery.each(ipts, function(){
-// Se esta &#8220;checado&#8221; então marcamos todos elementos como checked=true
-this.checked = true;
-}) :
-jQuery.each(ipts, function(){
-// Se não esta &#8220;checado&#8221; então marcamos todos elementos como checked=false
-this.checked = false;
-});
-}
-[/javascript]</p>
+<p>// Testamos o CheckBox para ver se devemos marcar ou desmarcar check.checked ? jQuery.each(ipts, function(){ // Se esta &#8220;checado&#8221; então marcamos todos elementos como checked=true this.checked = true; }) : jQuery.each(ipts, function(){ // Se não esta &#8220;checado&#8221; então marcamos todos elementos como checked=false this.checked = false; }); } <span>/javascript</span></p>
 
 <p>Simples e rápido.</p>
 
-<p>Testei com mais de 50 elementos e a rotina não ultrapassou 2 milisegundos.</p>
-</div>
+<p>Testei com mais de 50 elementos e a rotina não ultrapassou 2 milisegundos.</p></div>
 
 
   <footer>
@@ -231,7 +209,7 @@ this.checked = false;
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.github.com/jquery-marcar-desmarcar-checkboxes/" data-via="" data-counturl="http://jaydson.github.com/jquery-marcar-desmarcar-checkboxes/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.org/jquery-marcar-desmarcar-checkboxes/" data-via="" data-counturl="http://jaydson.org/jquery-marcar-desmarcar-checkboxes/" >Tweet</a>
   
   
   
@@ -266,6 +244,10 @@ this.checked = false;
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/migrando-para-octopress/">Migrando para o Octopress</a>
+      </li>
+    
+      <li class="post">
         <a href="/analytics-do-blog-em-2012/">Analytics do Blog em 2012</a>
       </li>
     
@@ -279,10 +261,6 @@ this.checked = false;
     
       <li class="post">
         <a href="/w3c-webbr-2102/">W3C webbr 2102</a>
-      </li>
-    
-      <li class="post">
-        <a href="/javascript-o-guia-definitivo/">JavaScript: O Guia definitivo</a>
       </li>
     
   </ul>
@@ -342,8 +320,8 @@ this.checked = false;
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://jaydson.github.com/jquery-marcar-desmarcar-checkboxes/';
-        var disqus_url = 'http://jaydson.github.com/jquery-marcar-desmarcar-checkboxes/';
+        var disqus_identifier = 'http://jaydson.org/jquery-marcar-desmarcar-checkboxes/';
+        var disqus_url = 'http://jaydson.org/jquery-marcar-desmarcar-checkboxes/';
         var disqus_script = 'embed.js';
       
     (function () {

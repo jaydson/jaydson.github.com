@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Experiments | Jaydson Gomes]]></title>
-  <link href="http://jaydson.github.com/blog/categories/experiments/atom.xml" rel="self"/>
-  <link href="http://jaydson.github.com/"/>
-  <updated>2013-01-08T19:02:23-02:00</updated>
-  <id>http://jaydson.github.com/</id>
+  <link href="http://jaydson.org/blog/categories/experiments/atom.xml" rel="self"/>
+  <link href="http://jaydson.org/"/>
+  <updated>2013-01-09T19:46:03-02:00</updated>
+  <id>http://jaydson.org/</id>
   <author>
     <name><![CDATA[Jaydson Gomes]]></name>
     
@@ -15,32 +15,20 @@
   
   <entry>
     <title type="html"><![CDATA[Experimento de Web Scraping com nodeJS]]></title>
-    <link href="http://jaydson.github.com/experimento-de-web-scraping-com-nodejs/"/>
+    <link href="http://jaydson.org/experimento-de-web-scraping-com-nodejs/"/>
     <updated>2012-06-30T02:54:28-03:00</updated>
-    <id>http://jaydson.github.com/experimento-de-web-scraping-com-nodejs</id>
-    <content type="html"><![CDATA[<p>Depois que fiz o post <a href="http://jaydson.org/web-scraping-para-criancas-com-nodejs/">Web Scraping para crianças com nodeJS</a>, cheguei a conclusão de que deveria fazer um experimento com o que mostrei.<br/>
-Sentei algumas horas no final de semana, e pronto.<br/>
-Basicamente fiz o que mostrei no outro post, porém fiz uma interface e fiz deploy da aplicação no <a href="http://nodejitsu.com/">NodeJitsu</a>.<br/>
-Utilizei outras coisas como o <a href="http://expressjs.com">ExpressJS</a> para criar a casca da aplicação e o <a href="http://jade-lang.com/">Jade</a> para template.<br/>
-O código está disponível no Github >>> <a href="https://github.com/jaydson/myscraper">https://github.com/jaydson/myscraper</a><br/>
-Para quem quiser testar online, a URL do MyScraper é esta: <a href="http://myscraper.jit.su/">http://myscraper.jit.su/</a></p>
+    <id>http://jaydson.org/experimento-de-web-scraping-com-nodejs</id>
+    <content type="html"><![CDATA[<p>Depois que fiz o post <a href='http://jaydson.org/web-scraping-para-criancas-com-nodejs/'>Web Scraping para crianças com nodeJS</a>, cheguei a conclusão de que deveria fazer um experimento com o que mostrei.<br />Sentei algumas horas no final de semana, e pronto.<br />Basicamente fiz o que mostrei no outro post, porém fiz uma interface e fiz deploy da aplicação no <a href='http://nodejitsu.com/'>NodeJitsu</a>.<br />Utilizei outras coisas como o <a href='http://expressjs.com'>ExpressJS</a> para criar a casca da aplicação e o <a href='http://jade-lang.com/'>Jade</a> para template.<br />O código está disponível no Github&#160;&#187;&gt; <a href='https://github.com/jaydson/myscraper'>https://github.com/jaydson/myscraper</a><br />Para quem quiser testar online, a URL do MyScraper é esta: <a href='http://myscraper.jit.su/'>http://myscraper.jit.su/</a></p>
 
-<p>Fiz um vídeo rápido com uma demo de uso:<br/>
-{% youtube p00SQU3FWic %}</p>
+<p>Fiz um vídeo rápido com uma demo de uso:<br /><div class="embed-video-container"><iframe src="http://www.youtube.com/embed/p00SQU3FWic "></iframe></div></p>
 
 <p>Testem lá ;)</p>
 
-<p>Depois que fiz o post <a href="http://jaydson.org/web-scraping-para-criancas-com-nodejs/">Web Scraping para crianças com nodeJS</a>, cheguei a conclusão de que deveria fazer um experimento com o que mostrei.
-Sentei algumas horas no final de semana, e pronto.
-Basicamente fiz o que mostrei no outro post, porém fiz uma interface e fiz deploy da aplicação no <a href="http://nodejitsu.com/">NodeJitsu</a>.
-Utilizei outras coisas como o <a href="http://expressjs.com">ExpressJS</a> para criar a casca da aplicação e o <a href="http://jade-lang.com/">Jade</a> para template.
-O código está disponível no Github >>> <a href="https://github.com/jaydson/myscraper">https://github.com/jaydson/myscraper</a>
-Para quem quiser testar online, a URL do MyScraper é esta: <a href="http://myscraper.jit.su/">http://myscraper.jit.su/</a></p>
+<p>Depois que fiz o post <a href='http://jaydson.org/web-scraping-para-criancas-com-nodejs/'>Web Scraping para crianças com nodeJS</a>, cheguei a conclusão de que deveria fazer um experimento com o que mostrei. Sentei algumas horas no final de semana, e pronto. Basicamente fiz o que mostrei no outro post, porém fiz uma interface e fiz deploy da aplicação no <a href='http://nodejitsu.com/'>NodeJitsu</a>. Utilizei outras coisas como o <a href='http://expressjs.com'>ExpressJS</a> para criar a casca da aplicação e o <a href='http://jade-lang.com/'>Jade</a> para template. O código está disponível no Github&#160;&#187;&gt; <a href='https://github.com/jaydson/myscraper'>https://github.com/jaydson/myscraper</a> Para quem quiser testar online, a URL do MyScraper é esta: <a href='http://myscraper.jit.su/'>http://myscraper.jit.su/</a></p>
 
 <p>Fiz um vídeo rápido com uma demo de uso:</p>
 
-<p>Testem lá ;)</p>
-]]></content>
+<p>Testem lá ;)</p>]]></content>
   </entry>
   
 </feed>

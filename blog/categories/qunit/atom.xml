@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: QUnit | Jaydson Gomes]]></title>
-  <link href="http://jaydson.github.com/blog/categories/qunit/atom.xml" rel="self"/>
-  <link href="http://jaydson.github.com/"/>
-  <updated>2013-01-08T19:02:23-02:00</updated>
-  <id>http://jaydson.github.com/</id>
+  <link href="http://jaydson.org/blog/categories/qunit/atom.xml" rel="self"/>
+  <link href="http://jaydson.org/"/>
+  <updated>2013-01-09T19:46:03-02:00</updated>
+  <id>http://jaydson.org/</id>
   <author>
     <name><![CDATA[Jaydson Gomes]]></name>
     
@@ -15,41 +15,46 @@
   
   <entry>
     <title type="html"><![CDATA[QunitTestMachine - Testes unitários simplificados]]></title>
-    <link href="http://jaydson.github.com/qunittestmachine-testes-unitarios-simplificados/"/>
+    <link href="http://jaydson.org/qunittestmachine-testes-unitarios-simplificados/"/>
     <updated>2010-11-07T23:03:41-02:00</updated>
-    <id>http://jaydson.github.com/qunittestmachine-testes-unitarios-simplificados</id>
-    <content type="html"><![CDATA[<p>There are several libraries to do unit testing in JavaScript code, I chose the <a href="http://docs.jquery.com/Qunit">QUnit</a> as default in my tests.</p>
+    <id>http://jaydson.org/qunittestmachine-testes-unitarios-simplificados</id>
+    <content type="html"><![CDATA[<p>There are several libraries to do unit testing in JavaScript code, I chose the <a href='http://docs.jquery.com/Qunit'>QUnit</a> as default in my tests.</p>
 
 <p>QUnit is a powerful test suite and simple-to-use. Himself is used to test the official jQuery code and its plugins, but of course it is possible to test any code Javasript generic, ie their libraries.</p>
 
-<p>QUnit is a project of <a href="http://ejohn.org/">John Resig</a> and is maintained by him and <a href="http://bassistance.de/">Jörn Zaefferer</a>.</p>
+<p>QUnit is a project of <a href='http://ejohn.org/'>John Resig</a> and is maintained by him and <a href='http://bassistance.de/'>Jörn Zaefferer</a>.</p>
 
-<p>The code is available at GitHub: <a href="http://github.com/jquery/qunit">http://github.com/jquery/qunit</a></p>
+<p>The code is available at GitHub: <a href='http://github.com/jquery/qunit'>http://github.com/jquery/qunit</a></p>
 
 <p>Although QUnit be very simple to use, I decided to simplify a bit more and created QUnitTestMachine.</p>
 
 <p>But what makes QUnitTestMachine?</p>
 
 <ul>
-<li><p>Simplify your Javascript-based tests QUnit</p></li>
-<li><p>Focus on a single JavaScript file all the necessary settings to run your tests</p></li>
-<li><p>Run your tests independently</p></li>
+<li>
+<p>Simplify your Javascript-based tests QUnit</p>
+</li>
+
+<li>
+<p>Focus on a single JavaScript file all the necessary settings to run your tests</p>
+</li>
+
+<li>
+<p>Run your tests independently</p>
+</li>
 </ul>
 
+<p>Existem <a href='http://en.wikipedia.org/wiki/List_of_unit_testing_frameworks#JavaScript'>várias bibliotecas para fazer teste unitário</a> em código Javascript, eu acabei escolhendo o <a href='http://docs.jquery.com/Qunit'>QUnit</a> como padrão em meus testes. O  QUnit é um test suite poderoso e simples de usar. O próprio é usado para testar o código do jQuery e seus plugins oficiais, mas claro, com ele é possível testar qualquer código Javasript genérico, ou seja,  suas bibliotecas.</p>
 
-<p>Existem <a href="http://en.wikipedia.org/wiki/List_of_unit_testing_frameworks#JavaScript">várias bibliotecas para fazer teste unitário</a> em código Javascript, eu acabei escolhendo o <a href="http://docs.jquery.com/Qunit">QUnit</a> como padrão em meus testes.
-O  QUnit é um test suite poderoso e simples de usar. O próprio é usado para testar o código do jQuery e seus plugins oficiais, mas claro, com ele é possível testar qualquer código Javasript genérico, ou seja,  suas bibliotecas.</p>
-
-<p>O QUnit é mais um projeto do <a href="http://ejohn.org/">John Resig</a>, e é mantido por ele e pelo <a href="http://bassistance.de/">Jörn Zaefferer</a>.
-O código do QUnit esta no GitHub: <a href="http://github.com/jquery/qunit">http://github.com/jquery/qunit</a><!-- more --></p>
+<p>O QUnit é mais um projeto do <a href='http://ejohn.org/'>John Resig</a>, e é mantido por ele e pelo <a href='http://bassistance.de/'>Jörn Zaefferer</a>. O código do QUnit esta no GitHub: <a href='http://github.com/jquery/qunit'>http://github.com/jquery/qunit</a><!-- more --></p>
 
 <p>The QUnitTestMachine follows the convention of having a test file for each file in your Javascript application.</p>
 
-<p>To be clear, if exists in your application a file "myscript.js" which is needed to test, then in the same directory where that file must exist a test file called "test_myscript.js.</p>
+<p>To be clear, if exists in your application a file &#8220;myscript.js&#8221; which is needed to test, then in the same directory where that file must exist a test file called &#8220;test_myscript.js.</p>
 
-<p>The prefix "test_" can be changed via the API, but QUnitTestMachine uses this as standard.</p>
+<p>The prefix &#8220;test_&#8221; can be changed via the API, but QUnitTestMachine uses this as standard.</p>
 
-<p>Well, let's see some code for clarity:</p>
+<p>Well, let&#8217;s see some code for clarity:</p>
 
 <p>To start, open the file config.js, which is the configuration file of your tests.</p>
 
@@ -57,10 +62,7 @@ O código do QUnit esta no GitHub: <a href="http://github.com/jquery/qunit">http
 <li>Set the root path of your application</li>
 </ul>
 
-
-<p>[javascript]&lt;br /&gt;<br />
-QUnitTestMachine.defaults.path = 'http://localhost/';&lt;br /&gt;<br />
-[/javascript]</p>
+<p><span>javascript</span>&#60;br /&#62;<br /> QUnitTestMachine.defaults.path = &#8216;http://localhost/&#8217;;&#60;br /&#62;<br /> <span>/javascript</span></p>
 
 <p>Note that the path defined using the absolute address, it is necessary for the proper loading of the scripts.</p>
 
@@ -68,31 +70,17 @@ QUnitTestMachine.defaults.path = 'http://localhost/';&lt;br /&gt;<br />
 <li>After this, set the prefix</li>
 </ul>
 
+<p><span>javascript</span>&#60;br /&#62;<br /> QUnitTestMachine.defaults.prefix = &#8216;test_&#8217;;&#60;br /&#62;<br /> <span>/javascript</span></p>
 
-<p>[javascript]&lt;br /&gt;<br />
-QUnitTestMachine.defaults.prefix = 'test_';&lt;br /&gt;<br />
-[/javascript]</p>
-
-<p>Note that if not set, the default is 'test_'</p>
+<p>Note that if not set, the default is &#8216;test_&#8217;</p>
 
 <ul>
 <li>Add the scripts to the test</li>
 </ul>
 
+<p><span>javascript</span>&#60;/p&#62;<br /> &#60;p&#62;QUnitTestMachine.scripts.add({&#60;br /&#62;<br /> &#38;quot;scripts&#38;quot;: <span>&#60;br /&#62; {name: &#38;quot;app/js/myscript.js&#38;quot;},&#60;br /&#62; {name: &#38;quot;app2/myscript2.js&#38;quot;}&#60;br /&#62;</span>&#60;br /&#62;<br /> });&#60;br /&#62;<br /> <span>/javascript</span></p>
 
-<p>[javascript]&lt;/p&gt;<br />
-&lt;p&gt;QUnitTestMachine.scripts.add({&lt;br /&gt;<br />
-   &amp;quot;scripts&amp;quot;: [&lt;br /&gt;<br /></p>
-
-<pre><code>     {name: &amp;amp;quot;app/js/myscript.js&amp;amp;quot;},&amp;lt;br /&amp;gt;&lt;br /&gt;
-     {name: &amp;amp;quot;app2/myscript2.js&amp;amp;quot;}&amp;lt;br /&amp;gt;&lt;br /&gt;
-</code></pre>
-
-<p>   ]&lt;br /&gt;<br />
-});&lt;br /&gt;<br />
-[/javascript]</p>
-
-<p><a href="http://github.com/jquery/qunit"></a></p>
+<p><a href='http://github.com/jquery/qunit' /></p>
 
 <p>Ready. Done that the application is ready to be tested, go to the test.html file and see the result.</p>
 
@@ -102,25 +90,23 @@ QUnitTestMachine.defaults.prefix = 'test_';&lt;br /&gt;<br />
 
 <p>Below is the link:</p>
 
-<p><a href="https://github.com/jaydson/QUnitTestMachine">https://github.com/jaydson/QUnitTestMachine</a></p>
+<p><a href='https://github.com/jaydson/QUnitTestMachine'>https://github.com/jaydson/QUnitTestMachine</a></p>
 
-<p><a href="http://github.com/jquery/qunit"></a>Apesar de o QUnit ser bem simples de ser usado, resolvi simplificar um pouco mais e criei o QUnitTestMachine.
-Mas o que QUnitTestMachine faz?
-- Simplifica seus testes Javascript baseados no QUnit
-- Concentra em um único arquivo Javascript todas as configurações necessárias para rodar seus testes
-- Roda seus testes de forma independente<!-- more --></p>
+<p><a href='http://github.com/jquery/qunit' />Apesar de o QUnit ser bem simples de ser usado, resolvi simplificar um pouco mais e criei o QUnitTestMachine. Mas o que QUnitTestMachine faz?</p>
 
-<p>O QUnitTestMachine segue a convenção de possuir um arquivo de teste para cada arquivo Javascript em sua aplicação.
-Sendo mais claro, se em sua aplicação existe um arquivo "myscript.js" o qual se faz necessário o teste, então no mesmo diretório onde se encontra esse arquivo deve existir um arquivo de teste chamado "test_myscript.js".
-O prefixo "test_" pode ser alterado via API, mas o QUnitTestMachine usa este como padrão.</p>
+<ul>
+<li>Simplifica seus testes Javascript baseados no QUnit</li>
 
-<p>Bom, vamos ver um pouco de código para ficar mais claro:
-Para iniciar, abra o arquivo config.js, que é o arquivo de configuração dos seus testes.
-- Defina o path root de sua aplicação</p>
+<li>Concentra em um único arquivo Javascript todas as configurações necessárias para rodar seus testes</li>
 
-<p>[javascript]
-QUnitTestMachine.defaults.path = 'http://localhost/';
-[/javascript]</p>
+<li>Roda seus testes de forma independente<!-- more --></li>
+</ul>
+
+<p>O QUnitTestMachine segue a convenção de possuir um arquivo de teste para cada arquivo Javascript em sua aplicação. Sendo mais claro, se em sua aplicação existe um arquivo &#8220;myscript.js&#8221; o qual se faz necessário o teste, então no mesmo diretório onde se encontra esse arquivo deve existir um arquivo de teste chamado &#8220;test_myscript.js&#8221;. O prefixo &#8220;test_&#8221; pode ser alterado via API, mas o QUnitTestMachine usa este como padrão.</p>
+
+<p>Bom, vamos ver um pouco de código para ficar mais claro: Para iniciar, abra o arquivo config.js, que é o arquivo de configuração dos seus testes. - Defina o path root de sua aplicação</p>
+
+<p><span>javascript</span> QUnitTestMachine.defaults.path = &#8216;http://localhost/&#8217;; <span>/javascript</span></p>
 
 <p>Note que o path definido utiliza o endereço absoluto, isso é necessário para o carregamento correto dos scripts.</p>
 
@@ -128,38 +114,21 @@ QUnitTestMachine.defaults.path = 'http://localhost/';
 <li>Após isso, defina o prefixo</li>
 </ul>
 
+<p><span>javascript</span> QUnitTestMachine.defaults.prefix = &#8216;test_&#8217;; <span>/javascript</span></p>
 
-<p>[javascript]
-QUnitTestMachine.defaults.prefix = 'test_';
-[/javascript]</p>
-
-<p>Note que se não for definido, o padrão é 'test_'</p>
+<p>Note que se não for definido, o padrão é &#8216;test_&#8217;</p>
 
 <ul>
 <li>Adicione os scripts para o teste</li>
 </ul>
 
+<p><span>javascript</span></p>
 
-<p>[javascript]</p>
-
-<p>QUnitTestMachine.scripts.add({
-   "scripts": [</p>
-
-<pre><code>     {name: "app/js/myscript.js"},
-     {name: "app2/myscript2.js"}
-</code></pre>
-
-<p>   ]
-});
-[/javascript]</p>
+<p>QUnitTestMachine.scripts.add({ &#8220;scripts&#8221;: <span>{name: &#8220;app/js/myscript.js&#8221;}, {name: &#8220;app2/myscript2.js&#8221;}</span> }); <span>/javascript</span></p>
 
 <p>Pronto. Feito isso a aplicação já está pronta para ser testada, acesse o arquivo test.html e veja o resultado.</p>
 
-<p>Espero que o QunitTestMachine ajude voces com testes unitários, pra mim tem facilitado bastante.
-O projeto esta no GitHub, então entrem lá, baixem, copiem, comentem, criem tickets, reportem bugs, etc.
-Abaixo segue o link:
-<a href="https://github.com/jaydson/QUnitTestMachine">https://github.com/jaydson/QUnitTestMachine</a></p>
-]]></content>
+<p>Espero que o QunitTestMachine ajude voces com testes unitários, pra mim tem facilitado bastante. O projeto esta no GitHub, então entrem lá, baixem, copiem, comentem, criem tickets, reportem bugs, etc. Abaixo segue o link: <a href='https://github.com/jaydson/QUnitTestMachine'>https://github.com/jaydson/QUnitTestMachine</a></p>]]></content>
   </entry>
   
 </feed>

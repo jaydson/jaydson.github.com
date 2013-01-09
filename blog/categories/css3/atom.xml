@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: CSS3 | Jaydson Gomes]]></title>
-  <link href="http://jaydson.github.com/blog/categories/css3/atom.xml" rel="self"/>
-  <link href="http://jaydson.github.com/"/>
-  <updated>2013-01-08T19:02:23-02:00</updated>
-  <id>http://jaydson.github.com/</id>
+  <link href="http://jaydson.org/blog/categories/css3/atom.xml" rel="self"/>
+  <link href="http://jaydson.org/"/>
+  <updated>2013-01-09T19:46:03-02:00</updated>
+  <id>http://jaydson.org/</id>
   <author>
     <name><![CDATA[Jaydson Gomes]]></name>
     
@@ -15,108 +15,74 @@
   
   <entry>
     <title type="html"><![CDATA[Experimento CSS3 3D - The Wall Explosion]]></title>
-    <link href="http://jaydson.github.com/experimento-css3-3d-the-wall-explosion/"/>
+    <link href="http://jaydson.org/experimento-css3-3d-the-wall-explosion/"/>
     <updated>2012-03-17T03:06:47-03:00</updated>
-    <id>http://jaydson.github.com/experimento-css3-3d-the-wall-explosion</id>
-    <content type="html"><![CDATA[<p>Depois de assistir pela terceira vez a <a href="http://jaydson.org/rsjs-animacoes-com-css3/">palestra sobre CSS3</a> do <a href="http://twitter.com/felipenmoura">Felipe N. Moura</a>, e ter agumas aulas do próprio, me empolguei com <a href="https://developer.mozilla.org/en/CSS/CSS3">CSS3</a>, principalmente com a possibilidade 3D.<br/>
-Coincidentemente, neste mês de Março, o <a href="https://developer.mozilla.org/pt-BR/demos/devderby">Mozilla Dev Derby</a> é sobre CSS3 3D.<br/>
-Já submeti 2 demos simples para a Mozilla, e agora fiz uma coisa um pouco mais complexa.<br/>
-Minha ideia foi criar um muro 3D, com tijolos 3D.<br/>
-É simples, cada tijolo do muro é um elemento 3D, e o conjunto de tijolos que formam o muro, também é 3D.<br/>
-Fiz um vídeo, onde fica mais fácil visualizar a proposta do experimento.</p>
+    <id>http://jaydson.org/experimento-css3-3d-the-wall-explosion</id>
+    <content type="html"><![CDATA[<p>Depois de assistir pela terceira vez a <a href='http://jaydson.org/rsjs-animacoes-com-css3/'>palestra sobre CSS3</a> do <a href='http://twitter.com/felipenmoura'>Felipe N. Moura</a>, e ter agumas aulas do próprio, me empolguei com <a href='https://developer.mozilla.org/en/CSS/CSS3'>CSS3</a>, principalmente com a possibilidade 3D.<br />Coincidentemente, neste mês de Março, o <a href='https://developer.mozilla.org/pt-BR/demos/devderby'>Mozilla Dev Derby</a> é sobre CSS3 3D.<br />Já submeti 2 demos simples para a Mozilla, e agora fiz uma coisa um pouco mais complexa.<br />Minha ideia foi criar um muro 3D, com tijolos 3D.<br />É simples, cada tijolo do muro é um elemento 3D, e o conjunto de tijolos que formam o muro, também é 3D.<br />Fiz um vídeo, onde fica mais fácil visualizar a proposta do experimento.</p>
 
-<p>{% youtube vUcof193BWc %}</p>
+<p><div class="embed-video-container"><iframe src="http://www.youtube.com/embed/vUcof193BWc "></iframe></div></p>
 
-<p>No vídeo, usei o Chrome, pois a performance é um pouco melhor que no Firefox. Mas o experimento funciona em ambos, além do Safari.<br/>
-O código deste experimento, assim como os outros que fiz, está no GitHub:<br/>
-<a href="https://github.com/jaydson/wall-explosion-css3d">https://github.com/jaydson/wall-explosion-css3d</a></p>
+<p>No vídeo, usei o Chrome, pois a performance é um pouco melhor que no Firefox. Mas o experimento funciona em ambos, além do Safari.<br />O código deste experimento, assim como os outros que fiz, está no GitHub:<br /><a href='https://github.com/jaydson/wall-explosion-css3d'>https://github.com/jaydson/wall-explosion-css3d</a></p>
 
-<p>Além disso, está publicado nos demos da Mozilla para o DevDerby:<br/>
-<a href="https://developer.mozilla.org/pt-BR/demos/detail/the-wall-explosion">https://developer.mozilla.org/pt-BR/demos/detail/the-wall-explosion</a></p>
+<p>Além disso, está publicado nos demos da Mozilla para o DevDerby:<br /><a href='https://developer.mozilla.org/pt-BR/demos/detail/the-wall-explosion'>https://developer.mozilla.org/pt-BR/demos/detail/the-wall-explosion</a></p>
 
-<p>Curtam lá!</p>
-]]></content>
+<p>Curtam lá!</p>]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[RSJS - Animações com CSS3]]></title>
-    <link href="http://jaydson.github.com/rsjs-animacoes-com-css3/"/>
+    <link href="http://jaydson.org/rsjs-animacoes-com-css3/"/>
     <updated>2012-03-17T02:37:47-03:00</updated>
-    <id>http://jaydson.github.com/rsjs-animacoes-com-css3</id>
-    <content type="html"><![CDATA[<p>Finalizando a série de posts sobre o <a href="http://rsjs.org">#RSJS,</a> compartilho agora o vídeo da palestra de animações com <a href="https://developer.mozilla.org/en/CSS/CSS3">CSS3</a> do <a href="http://twitter.com/felipenmoura">Felipe N. Moura</a>.<br/>
-Esta, como todas as outras é uma excelente palestra, mas ressalto que, quem se interessa por animações, deve parar agora o que estiver fazendo, e assisti-la.<br/>
-O Felipe dedicou bastante tempo de estudo em cima de animações com CSS3, e o conteúdo que ele apresenta é sensacional, com vários exemplos de animações, mostrando assim o que pode ser feito.<br/>
-Já assisti algumas vezes a palestra, mas sempre tem algo novo, assistam que vale a pena.</p>
+    <id>http://jaydson.org/rsjs-animacoes-com-css3</id>
+    <content type="html"><![CDATA[<p>Finalizando a série de posts sobre o <a href='http://rsjs.org'>#RSJS,</a> compartilho agora o vídeo da palestra de animações com <a href='https://developer.mozilla.org/en/CSS/CSS3'>CSS3</a> do <a href='http://twitter.com/felipenmoura'>Felipe N. Moura</a>.<br />Esta, como todas as outras é uma excelente palestra, mas ressalto que, quem se interessa por animações, deve parar agora o que estiver fazendo, e assisti-la.<br />O Felipe dedicou bastante tempo de estudo em cima de animações com CSS3, e o conteúdo que ele apresenta é sensacional, com vários exemplos de animações, mostrando assim o que pode ser feito.<br />Já assisti algumas vezes a palestra, mas sempre tem algo novo, assistam que vale a pena.</p>
 
-<p>{% youtube kxEYwkKLJxk %}</p>
+<p><div class="embed-video-container"><iframe src="http://www.youtube.com/embed/kxEYwkKLJxk "></iframe></div></p>
 
-<p><em>* Cobertura: <a href="http://www.gonow.com.br">GoNow Tecnologia</a> – gravação feita pela <a href="http://www.facebook.com/djlou09">Laura Lou</a></em></p>
-]]></content>
+<p><em>* Cobertura: <a href='http://www.gonow.com.br'>GoNow Tecnologia</a> – gravação feita pela <a href='http://www.facebook.com/djlou09'>Laura Lou</a></em></p>]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Esfera com CSS3 3D]]></title>
-    <link href="http://jaydson.github.com/esfera-com-css3-3d/"/>
+    <link href="http://jaydson.org/esfera-com-css3-3d/"/>
     <updated>2012-03-09T14:47:48-03:00</updated>
-    <id>http://jaydson.github.com/esfera-com-css3-3d</id>
-    <content type="html"><![CDATA[<p>Fiz mais um demo com CSS3 para o <a href="https://developer.mozilla.org/en-US/demos/devderby">Mozilla Dev Derby</a>.<br/>
-Depois de ter feito um<a href="http://jaydson.org/cubo-3d-com-css3/"> cubo 3d</a>, minha ideia agora foi complicar um pouco e fazer uma esfera.<br/>
-Depois de pensar um pouco, saiu uma esfera legal.<br/>
-Não desenvolvi a esfera com base nas fórmulas da geometria, o que seria o correto e faria ficar bem mais bacana, mas para um primeiro experimento, está Ok.<br/>
-Deêm uma olhada, e se acharem legal podem curtir lá ;)</p>
+    <id>http://jaydson.org/esfera-com-css3-3d</id>
+    <content type="html"><![CDATA[<p>Fiz mais um demo com CSS3 para o <a href='https://developer.mozilla.org/en-US/demos/devderby'>Mozilla Dev Derby</a>.<br />Depois de ter feito um<a href='http://jaydson.org/cubo-3d-com-css3/'>cubo 3d</a>, minha ideia agora foi complicar um pouco e fazer uma esfera.<br />Depois de pensar um pouco, saiu uma esfera legal.<br />Não desenvolvi a esfera com base nas fórmulas da geometria, o que seria o correto e faria ficar bem mais bacana, mas para um primeiro experimento, está Ok.<br />Deêm uma olhada, e se acharem legal podem curtir lá ;)</p>
 
-<p><a href="https://developer.mozilla.org/en-US/demos/detail/simple-css3-3d-sphere">https://developer.mozilla.org/en-US/demos/detail/simple-css3-3d-sphere</a><br/>
-<a href="http://jaydson.org/wp-content/uploads/sphere.jpg"><img src="http://jaydson.org/wp-content/uploads/sphere.jpg" alt="" /></a></p>
+<p><a href='https://developer.mozilla.org/en-US/demos/detail/simple-css3-3d-sphere'>https://developer.mozilla.org/en-US/demos/detail/simple-css3-3d-sphere</a><br /><a href='http://jaydson.org/wp-content/uploads/sphere.jpg'><img alt='' src='http://jaydson.org/wp-content/uploads/sphere.jpg' /></a></p>
 
-<p>Assim como o Cubo 3D, a esfera está no GitHub:
-<a href="https://github.com/jaydson/simple-css3-sphere-3d">https://github.com/jaydson/simple-css3-sphere-3d</a></p>
-]]></content>
+<p>Assim como o Cubo 3D, a esfera está no GitHub: <a href='https://github.com/jaydson/simple-css3-sphere-3d'>https://github.com/jaydson/simple-css3-sphere-3d</a></p>]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Root3D - experimento CSS3D]]></title>
-    <link href="http://jaydson.github.com/root3d-experimento-css3d/"/>
+    <link href="http://jaydson.org/root3d-experimento-css3d/"/>
     <updated>2012-03-08T02:14:04-03:00</updated>
-    <id>http://jaydson.github.com/root3d-experimento-css3d</id>
-    <content type="html"><![CDATA[<p>Para quem viu e gostou do meu humilde <a href="http://jaydson.org/cubo-3d-com-css3/">cubo 3D feito com CSS3</a>, vai simplesmente achar íncrivel o mais novo projeto que o <a href="http://felipenmoura.org">Felipe N. Moura</a> está desenvolvendo.<br/>
-Trata-se de um experimento, e digo experimento porque isso ainda é muito novo, onde é possível criar elementos 3D em um ambiente todo desenvolvido com CSS3.<br/>
-Não, eu não falei besteira, é em CSS3 mesmo.<br/>
-Só vendo para ter a real noção do que realmente é.<br/>
-Assistam o vídeo aqui:</p>
+    <id>http://jaydson.org/root3d-experimento-css3d</id>
+    <content type="html"><![CDATA[<p>Para quem viu e gostou do meu humilde <a href='http://jaydson.org/cubo-3d-com-css3/'>cubo 3D feito com CSS3</a>, vai simplesmente achar íncrivel o mais novo projeto que o <a href='http://felipenmoura.org'>Felipe N. Moura</a> está desenvolvendo.<br />Trata-se de um experimento, e digo experimento porque isso ainda é muito novo, onde é possível criar elementos 3D em um ambiente todo desenvolvido com CSS3.<br />Não, eu não falei besteira, é em CSS3 mesmo.<br />Só vendo para ter a real noção do que realmente é.<br />Assistam o vídeo aqui:</p>
 
-<p>{% youtube 0ZxFwNgc0e0 %}</p>
+<p><div class="embed-video-container"><iframe src="http://www.youtube.com/embed/0ZxFwNgc0e0 "></iframe></div></p>
 
-<p>O Root3D está participando do Mozilla Dev Derby também, então acessem lá e cliquem no "Like" para dar uma força para este projeto ultra-promissor.<br/>
-<a href="https://developer.mozilla.org/pt-BR/demos/detail/root3d">https://developer.mozilla.org/pt-BR/demos/detail/root3d</a></p>
+<p>O Root3D está participando do Mozilla Dev Derby também, então acessem lá e cliquem no &#8220;Like&#8221; para dar uma força para este projeto ultra-promissor.<br /><a href='https://developer.mozilla.org/pt-BR/demos/detail/root3d'>https://developer.mozilla.org/pt-BR/demos/detail/root3d</a></p>
 
-<p>No endereço acima é possível ver o experimento funcionando, mas para um preview da versão completa acessem o site do projeto aqui:<br/>
-<a href="http://felipenmoura.org/projects/root3d/">http://felipenmoura.org/projects/root3d/</a></p>
+<p>No endereço acima é possível ver o experimento funcionando, mas para um preview da versão completa acessem o site do projeto aqui:<br /><a href='http://felipenmoura.org/projects/root3d/'>http://felipenmoura.org/projects/root3d/</a></p>
 
-<p>Projetos assim impulsionam a Web para um futuro íncrivel e excitante!<br/>
-Bom, acho que é isso, o projeto fala por si só.</p>
+<p>Projetos assim impulsionam a Web para um futuro íncrivel e excitante!<br />Bom, acho que é isso, o projeto fala por si só.</p>
 
-<p>Para mais detalhes, o Felipe também fez um post sobre o projeto no Blog dele: <a href="http://felipenmoura.org/pt/articles/javascript/root3d-the-css3d-environment/">http://felipenmoura.org/pt/articles/javascript/root3d-the-css3d-environment/</a></p>
-]]></content>
+<p>Para mais detalhes, o Felipe também fez um post sobre o projeto no Blog dele: <a href='http://felipenmoura.org/pt/articles/javascript/root3d-the-css3d-environment/'>http://felipenmoura.org/pt/articles/javascript/root3d-the-css3d-environment/</a></p>]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Cubo 3D com CSS3]]></title>
-    <link href="http://jaydson.github.com/cubo-3d-com-css3/"/>
+    <link href="http://jaydson.org/cubo-3d-com-css3/"/>
     <updated>2012-03-07T13:38:58-03:00</updated>
-    <id>http://jaydson.github.com/cubo-3d-com-css3</id>
-    <content type="html"><![CDATA[<p>Neste mês de Março, o <a href="https://developer.mozilla.org/en-US/demos/devderby">Mozilla Dev Derby</a> tem como desafio desenvolver demos de CSS3 3D.<br/>
-Pra quem não conhece o Dev Derby, é uma competição promovida pela Mozilla para que desenvolvedores do mundo inteiro façam aplicações com novas tecnologias.<br/>
-Já participei, fazendo um experimento com o History API do HTML5:<br/>
-<a href="https://developer.mozilla.org/demos/detail/history-image-gallery">https://developer.mozilla.org/en-US/demos/detail/history-image-gallery</a></p>
+    <id>http://jaydson.org/cubo-3d-com-css3</id>
+    <content type="html"><![CDATA[<p>Neste mês de Março, o <a href='https://developer.mozilla.org/en-US/demos/devderby'>Mozilla Dev Derby</a> tem como desafio desenvolver demos de CSS3 3D.<br />Pra quem não conhece o Dev Derby, é uma competição promovida pela Mozilla para que desenvolvedores do mundo inteiro façam aplicações com novas tecnologias.<br />Já participei, fazendo um experimento com o History API do HTML5:<br /><a href='https://developer.mozilla.org/demos/detail/history-image-gallery'>https://developer.mozilla.org/en-US/demos/detail/history-image-gallery</a></p>
 
-<p>Depois de assistir a <a href="http://felipenmoura.org/projects/lectures/css3-animation/#capa">palestra</a> do <a href="http://twitter.com/felipenmoura">@felipenmoura</a> e de ter umas aulas com ele sobre CSS3, resolvi fazer um pequeno experimento para submeter para o DevDerby.<br/>
-O experimento é um cubo 3D, totalmente feito com CSS3:<br/>
-<a href="https://developer.mozilla.org/en-US/demos/detail/simple-css3-3d-cube">https://developer.mozilla.org/en-US/demos/detail/simple-css3-3d-cube</a></p>
+<p>Depois de assistir a <a href='http://felipenmoura.org/projects/lectures/css3-animation/#capa'>palestra</a> do <a href='http://twitter.com/felipenmoura'>@felipenmoura</a> e de ter umas aulas com ele sobre CSS3, resolvi fazer um pequeno experimento para submeter para o DevDerby.<br />O experimento é um cubo 3D, totalmente feito com CSS3:<br /><a href='https://developer.mozilla.org/en-US/demos/detail/simple-css3-3d-cube'>https://developer.mozilla.org/en-US/demos/detail/simple-css3-3d-cube</a></p>
 
-<p><a href="http://jaydson.org/wp-content/uploads/cube.jpg"><img src="http://jaydson.org/wp-content/uploads/cube.jpg" alt="" /></a></p>
+<p><a href='http://jaydson.org/wp-content/uploads/cube.jpg'><img alt='' src='http://jaydson.org/wp-content/uploads/cube.jpg' /></a></p>
 
-<p>Confiram lá, e se curtirem, cliquem no "Like" ;)</p>
-]]></content>
+<p>Confiram lá, e se curtirem, cliquem no &#8220;Like&#8221; ;)</p>]]></content>
   </entry>
   
 </feed>

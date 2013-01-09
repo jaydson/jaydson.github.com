@@ -9,8 +9,7 @@
   <meta name="author" content="Jaydson Gomes">
 
   
-  <meta name="description" content="No meu último post, falei sobre como tudo no HTML5 é legal, e especificamente sobre o Application Cache.
-O legal de trabalhar com HTML5 é que tudo é &hellip;">
+  <meta name="description" content="Nomeu último post, falei sobre como tudo no HTML5 é legal, e especificamente sobre o Application Cache.O legal de trabalhar com HTML5 é que tudo é &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@ O legal de trabalhar com HTML5 é que tudo é &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://jaydson.github.com/html5-appcache-cache-control-no-store/">
+  <link rel="canonical" href="http://jaydson.org/html5-appcache-cache-control-no-store/">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -32,6 +31,18 @@ O legal de trabalhar com HTML5 é que tudo é &hellip;">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 
   
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1264252-8']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
 
 </head>
 
@@ -51,7 +62,7 @@ O legal de trabalhar com HTML5 é que tudo é &hellip;">
   
 <form action="http://google.com/search" method="get">
   <fieldset role="search">
-    <input type="hidden" name="q" value="site:jaydson.github.com" />
+    <input type="hidden" name="q" value="site:jaydson.org" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
@@ -94,51 +105,23 @@ O legal de trabalhar com HTML5 é que tudo é &hellip;">
   </header>
 
 
-<div class="entry-content"><p>No<a href="http://jaydson.org/html5-application-cache"> meu último post</a>, falei sobre como tudo no <a href="http://www.w3.org/TR/html5/">HTML5</a> é legal, e especificamente sobre o <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/offline.html">Application Cache</a>.<br/>
-O legal de trabalhar com HTML5 é que tudo é muito novo.<br/>
-O ruim de trabalhar com HTML5 é que tudo é muito novo.</p>
+<div class="entry-content"><p>No<a href='http://jaydson.org/html5-application-cache'>meu último post</a>, falei sobre como tudo no <a href='http://www.w3.org/TR/html5/'>HTML5</a> é legal, e especificamente sobre o <a href='http://www.whatwg.org/specs/web-apps/current-work/multipage/offline.html'>Application Cache</a>.<br />O legal de trabalhar com HTML5 é que tudo é muito novo.<br />O ruim de trabalhar com HTML5 é que tudo é muito novo.</p>
 
-<p>O que quero dizer, é que HTML5 é uma tecnologia nova, e que muitas funcionalidades ainda estão em desenvolvimento.<br/>
-Creio que isso seja uma questão complicada para os Browsers, pois eles devem implementar estas especificações incompletas.<br/>
-Mas tudo isso faz parte da transição em que estamos, e de certa forma, isso é muito bom.</p>
+<p>O que quero dizer, é que HTML5 é uma tecnologia nova, e que muitas funcionalidades ainda estão em desenvolvimento.<br />Creio que isso seja uma questão complicada para os Browsers, pois eles devem implementar estas especificações incompletas.<br />Mas tudo isso faz parte da transição em que estamos, e de certa forma, isso é muito bom.</p>
 
-<p>Voltando ao AppCache, vou citar um dos problemas que encontrei utilizando essa feature, que julgo ter um grande potencial, se sofrer algumas alterações.<br/>
-Como falado antes, o AppCache não é uma feature que apenas permite que sua Web App rode Offline.<br/>
-O AppCache pode reduzir e muito o &#8220;peso&#8221; da sua App, reduzindo o número de requisições.<br/>
-Imagine que sua Web App tenha 6 arquivos JavaScript, 3 arquivos CSS, e várias imagens.<br/>
-Se nenhum destes arquivos sofre atualizações constantes, todos podem ser &#8220;AppCacheados&#8221;.<br/>
-Tecnicamente isto quer dizer que se o total em KBytes de sua página é de 200K, esses 200K podem ser carregados diretamene do Cache.<br/>
-Sim, o Browser possui um mecanismo de Cache padrão, mas este cache não é controlado pelo desenvolvedor.<br/>
-Outro fator relevante é que nenhum Header do arquivo é levado em conta se a sua App está utilizando AppCache.<br/>
-Com exceção do Cache-Control:no-store.<br/>
-Ou não.</p>
+<p>Voltando ao AppCache, vou citar um dos problemas que encontrei utilizando essa feature, que julgo ter um grande potencial, se sofrer algumas alterações.<br />Como falado antes, o AppCache não é uma feature que apenas permite que sua Web App rode Offline.<br />O AppCache pode reduzir e muito o &#8220;peso&#8221; da sua App, reduzindo o número de requisições.<br />Imagine que sua Web App tenha 6 arquivos JavaScript, 3 arquivos CSS, e várias imagens.<br />Se nenhum destes arquivos sofre atualizações constantes, todos podem ser &#8220;AppCacheados&#8221;.<br />Tecnicamente isto quer dizer que se o total em KBytes de sua página é de 200K, esses 200K podem ser carregados diretamene do Cache.<br />Sim, o Browser possui um mecanismo de Cache padrão, mas este cache não é controlado pelo desenvolvedor.<br />Outro fator relevante é que nenhum Header do arquivo é levado em conta se a sua App está utilizando AppCache.<br />Com exceção do Cache-Control:no-store.<br />Ou não.</p>
 
-<p>Bom, na especificação temos alguns detalhes que já mencionei, mas o que mais tive problemas foi este:<br/>
-&#8220;A página onde esta definido que a aplicação utilizará o manifest, mesmo não estando listada no manifest, será armazenada no cache&#8221;.<br/>
-Lembre que o AppCache também foi pensado para fazer uma App rodar Offline, então isso até faz sentido, mas gera outros problemas.<br/>
-Se o meu objetivo é reduzir o número de requisições, e minha página muda constantemente o seu conteúdo, essa regra acaba com a possibilidade de utilizar o AppCache.<br/>
-Ai chegamos em outra regra da especificação:<br/>
-&#8220;Com exceção da diretiva &#8220;no-store&#8221;, os headers HTTP de cache são substituídas pelo Appcache&#8221;<br/>
-Problema resolvido então?<br/>
-Não!!!<br/>
-Por algum motivo o Google Chrome não respeita esta regra.<br/>
-Faça o teste, altere as configurações do seu servidor(no meu caso o Apache):</p>
+<p>Bom, na especificação temos alguns detalhes que já mencionei, mas o que mais tive problemas foi este:<br />&#8220;A página onde esta definido que a aplicação utilizará o manifest, mesmo não estando listada no manifest, será armazenada no cache&#8221;.<br />Lembre que o AppCache também foi pensado para fazer uma App rodar Offline, então isso até faz sentido, mas gera outros problemas.<br />Se o meu objetivo é reduzir o número de requisições, e minha página muda constantemente o seu conteúdo, essa regra acaba com a possibilidade de utilizar o AppCache.<br />Ai chegamos em outra regra da especificação:<br />&#8220;Com exceção da diretiva &#8220;no-store&#8221;, os headers HTTP de cache são substituídas pelo Appcache&#8221;<br />Problema resolvido então?<br />Não!!!<br />Por algum motivo o Google Chrome não respeita esta regra.<br />Faça o teste, altere as configurações do seu servidor(no meu caso o Apache):</p>
 
-<pre><code> &lt;FilesMatch "(.html)$"&gt;
-    Header set Cache-Control "no-store"
- &lt;/FilesMatch&gt;
-</code></pre>
+<pre><code> &lt;FilesMatch &quot;(.html)$&quot;&gt;
+ 	Header set Cache-Control &quot;no-store&quot;
+ &lt;/FilesMatch&gt;</code></pre>
 
-<p>O que fiz foi dizer que todos arquivos HTML devem vir com o Cache-Control &#8220;no-store&#8221;.<br/>
-No Firefox e no Opera isso funciona perfeitamente. Todos arquivos listados no manifest para serem Appcacheados estão lá, com exceção da página atual.<br/>
-No Chrome, isso simplesmente não acontece. A página atual sempre vem do cache.</p>
+<p>O que fiz foi dizer que todos arquivos HTML devem vir com o Cache-Control &#8220;no-store&#8221;.<br />No Firefox e no Opera isso funciona perfeitamente. Todos arquivos listados no manifest para serem Appcacheados estão lá, com exceção da página atual.<br />No Chrome, isso simplesmente não acontece. A página atual sempre vem do cache.</p>
 
-<p>Notem que esse problema pode ser resolvido se utilizarmos a funcionalidade padrão do Appcache: Atualizar o manifest.<br/>
-Mas isso nem sempre é possível, ou nem sempre eu quero fazer isso.<br/>
-Ficar na dependência de alterar um arquivo manifest para atualizar o conteúdo principal é uma coisa delicada.</p>
+<p>Notem que esse problema pode ser resolvido se utilizarmos a funcionalidade padrão do Appcache: Atualizar o manifest.<br />Mas isso nem sempre é possível, ou nem sempre eu quero fazer isso.<br />Ficar na dependência de alterar um arquivo manifest para atualizar o conteúdo principal é uma coisa delicada.</p>
 
-<p>Bom, ainda estou pesquisando para ver se isso é um Bug do Chrome, ou se realmente o Google ignorou a regra do &#8220;no-store&#8221;.</p>
-</div>
+<p>Bom, ainda estou pesquisando para ver se isso é um Bug do Chrome, ou se realmente o Google ignorou a regra do &#8220;no-store&#8221;.</p></div>
 
 
   <footer>
@@ -174,7 +157,7 @@ Ficar na dependência de alterar um arquivo manifest para atualizar o conteúdo 
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.github.com/html5-appcache-cache-control-no-store/" data-via="" data-counturl="http://jaydson.github.com/html5-appcache-cache-control-no-store/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.org/html5-appcache-cache-control-no-store/" data-via="" data-counturl="http://jaydson.org/html5-appcache-cache-control-no-store/" >Tweet</a>
   
   
   
@@ -209,6 +192,10 @@ Ficar na dependência de alterar um arquivo manifest para atualizar o conteúdo 
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/migrando-para-octopress/">Migrando para o Octopress</a>
+      </li>
+    
+      <li class="post">
         <a href="/analytics-do-blog-em-2012/">Analytics do Blog em 2012</a>
       </li>
     
@@ -222,10 +209,6 @@ Ficar na dependência de alterar um arquivo manifest para atualizar o conteúdo 
     
       <li class="post">
         <a href="/w3c-webbr-2102/">W3C webbr 2102</a>
-      </li>
-    
-      <li class="post">
-        <a href="/javascript-o-guia-definitivo/">JavaScript: O Guia definitivo</a>
       </li>
     
   </ul>
@@ -285,8 +268,8 @@ Ficar na dependência de alterar um arquivo manifest para atualizar o conteúdo 
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://jaydson.github.com/html5-appcache-cache-control-no-store/';
-        var disqus_url = 'http://jaydson.github.com/html5-appcache-cache-control-no-store/';
+        var disqus_identifier = 'http://jaydson.org/html5-appcache-cache-control-no-store/';
+        var disqus_url = 'http://jaydson.org/html5-appcache-cache-control-no-store/';
         var disqus_script = 'embed.js';
       
     (function () {

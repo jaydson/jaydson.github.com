@@ -9,8 +9,7 @@
   <meta name="author" content="Jaydson Gomes">
 
   
-  <meta name="description" content="E ai pessoal, seguinte&#8230;ontem me deparei com algo realmente interessante, e fiquei até meio assustado pelo fato de eu não saber da existência.
-O &hellip;">
+  <meta name="description" content="E ai pessoal, seguinte&#8230;ontem me deparei com algo realmente interessante, e fiquei até meio assustado pelo fato de eu não saber da existência. O &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@ O &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://jaydson.github.com/hacks-css/">
+  <link rel="canonical" href="http://jaydson.org/hacks-css/">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -32,6 +31,18 @@ O &hellip;">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 
   
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1264252-8']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
 
 </head>
 
@@ -51,7 +62,7 @@ O &hellip;">
   
 <form action="http://google.com/search" method="get">
   <fieldset role="search">
-    <input type="hidden" name="q" value="site:jaydson.github.com" />
+    <input type="hidden" name="q" value="site:jaydson.org" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
@@ -94,28 +105,15 @@ O &hellip;">
   </header>
 
 
-<div class="entry-content"><p>E ai pessoal, seguinte&#8230;ontem me deparei com algo realmente interessante, e fiquei até meio assustado pelo fato de eu não saber da existência.
-O negócio é que todos desenvolvedores web sofrem com as peculiaridades de cada Browser, e se tratando do IE, nem se fala.
-Eu já tinha ouvido falar dos Hacks, e pesquisando sobre o assunto encontrei no <a href="http://blog.gustavopaes.net/2007/hacks-css-para-ie6-e-ie7/">Blog do Gustavo Paes</a> várias dicas legais.
-O que achei mais interessante foi o Hack em que duplicamos um atributo da classe CSS, colocando um &#8220;coringa&#8221; na frente do nome.
-Isso serve para que a propriedade seja alterada apenas no IE.
-Exemplo:</p>
+<div class="entry-content"><p>E ai pessoal, seguinte&#8230;ontem me deparei com algo realmente interessante, e fiquei até meio assustado pelo fato de eu não saber da existência. O negócio é que todos desenvolvedores web sofrem com as peculiaridades de cada Browser, e se tratando do IE, nem se fala. Eu já tinha ouvido falar dos Hacks, e pesquisando sobre o assunto encontrei no <a href='http://blog.gustavopaes.net/2007/hacks-css-para-ie6-e-ie7/'>Blog do Gustavo Paes</a> várias dicas legais. O que achei mais interessante foi o Hack em que duplicamos um atributo da classe CSS, colocando um &#8220;coringa&#8221; na frente do nome. Isso serve para que a propriedade seja alterada apenas no IE. Exemplo:</p>
 
-<p>[css]</p>
+<p><span>css</span></p>
 
-<h1>elemento {</h1>
+<h1 id='elemento_'>elemento {</h1>
 
-<p>height: 50px;
-<em>height: 30px; /</em> altera propriedade do IE6 e IE7 <em>/
-_height: 20px; /</em> apenas IE6 */
-}
-[/css]</p>
+<p>height: 50px; <em>height: 30px; /</em> altera propriedade do IE6 e IE7 <em>/ <em>height: 20px; /* apenas IE6 <em>/ } <span>/css</span></em></em></em></p>
 
-<p>Mas nem tudo é maravilha&#8230;.
-Temos apenas um pequeno detalhe:
-Esta Gambiarra solução não passa na validação W3, então se isso é necessário, busquem outra solução.
-Por hora é isso.</p>
-</div>
+<p>Mas nem tudo é maravilha&#8230;. Temos apenas um pequeno detalhe: Esta Gambiarra solução não passa na validação W3, então se isso é necessário, busquem outra solução. Por hora é isso.</p></div>
 
 
   <footer>
@@ -151,7 +149,7 @@ Por hora é isso.</p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.github.com/hacks-css/" data-via="" data-counturl="http://jaydson.github.com/hacks-css/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.org/hacks-css/" data-via="" data-counturl="http://jaydson.org/hacks-css/" >Tweet</a>
   
   
   
@@ -186,6 +184,10 @@ Por hora é isso.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/migrando-para-octopress/">Migrando para o Octopress</a>
+      </li>
+    
+      <li class="post">
         <a href="/analytics-do-blog-em-2012/">Analytics do Blog em 2012</a>
       </li>
     
@@ -199,10 +201,6 @@ Por hora é isso.</p>
     
       <li class="post">
         <a href="/w3c-webbr-2102/">W3C webbr 2102</a>
-      </li>
-    
-      <li class="post">
-        <a href="/javascript-o-guia-definitivo/">JavaScript: O Guia definitivo</a>
       </li>
     
   </ul>
@@ -262,8 +260,8 @@ Por hora é isso.</p>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://jaydson.github.com/hacks-css/';
-        var disqus_url = 'http://jaydson.github.com/hacks-css/';
+        var disqus_identifier = 'http://jaydson.org/hacks-css/';
+        var disqus_url = 'http://jaydson.org/hacks-css/';
         var disqus_script = 'embed.js';
       
     (function () {

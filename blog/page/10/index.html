@@ -9,9 +9,7 @@
   <meta name="author" content="Jaydson Gomes">
 
   
-  <meta name="description" content="Last week I encountered a problem in Internet Explorer (Déjà vu).
-The functionality we needed was very simple to implement:
-Check if the form was &hellip;">
+  <meta name="description" content="Javascript is the most popular scripting language on the Internet. However, even with all this fame, JavaScript is still misunderstood. Douglas &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +18,7 @@ Check if the form was &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://jaydson.github.com/blog/page/10/">
+  <link rel="canonical" href="http://jaydson.org/blog/page/10/">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -33,6 +31,18 @@ Check if the form was &hellip;">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 
   
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1264252-8']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
 
 </head>
 
@@ -52,7 +62,7 @@ Check if the form was &hellip;">
   
 <form action="http://google.com/search" method="get">
   <fieldset role="search">
-    <input type="hidden" name="q" value="site:jaydson.github.com" />
+    <input type="hidden" name="q" value="site:jaydson.org" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
@@ -67,6 +77,52 @@ Check if the form was &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/javascript-levado-a-serio/">Javascript Levado a Sério</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-10-22T20:35:57-02:00" pubdate data-updated="true">Oct 22<span>nd</span>, 2009</time>
+        
+         | <a href="/javascript-levado-a-serio/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Javascript is the most popular scripting language on the Internet. However, even with all this fame, JavaScript is still misunderstood.</p>
+
+<p><a href='http://en.wikipedia.org/wiki/Douglas_Crockford'>Douglas Crockford</a>, one of the master of a language, says that this misunderstanding comes from various sources. This was one of the topics in the in the lecture that I gave in III Mostra de iniciação científica at Senac-RS College.</p>
+
+<p>Javascript é a linguagem de script mais popular da internet. Porém, mesmo com toda essa fama, o Javascript ainda é incompreendido. Segundo <a href='http://en.wikipedia.org/wiki/Douglas_Crockford'>Douglas Crockford</a>, um dos mestres da linguagem, essa incompreensão tem varias origens. Este foi um dos tópicos na palestra que fiz na III Mostra de iniciação científica do Senac-RS.</p>
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/javascript-levado-a-serio/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -98,21 +154,64 @@ Check if the form was &hellip;">
   </header>
 
 
-  <div class="entry-content"><p>Last week I encountered a problem in Internet Explorer <strong><em>(Déjà vu)</em></strong>.
-The functionality we needed was very simple to implement:
-<strong>Check if the form was changed</strong>. That is, if the User is on the page and decides to just go out and form has changed, we needed to alert him.
-What I thought then was to use the event <a href="http://www.quirksmode.org/dom/events/change.html">change</a> of the <form>.
-Semana passada deparei-me com um problema no Internet Explorer <strong><em>(Déjà vu)</em></strong>.
+  <div class="entry-content"><p>Last week I encountered a problem in Internet Explorer <strong><em>(Déjà vu)</em></strong>. The functionality we needed was very simple to implement: <strong>Check if the form was changed</strong>. That is, if the User is on the page and decides to just go out and form has changed, we needed to alert him. What I thought then was to use the event <a href='http://www.quirksmode.org/dom/events/change.html'>change</a> of the <pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
+&lt;form&gt;.
+Semana passada deparei-me com um problema no Internet Explorer **_(Déjà vu)_**.
 A funcionalidade que precisavamos implementar era bem simples:
-<strong>Verificar se o formulário foi alterado. </strong>Ou seja, se o usuário está na página e resolve simplesmente sair e o formulário foi alterado, precisavamos alerta-lo.
-O que me ocorreu na hora foi utilizar o Evento <a href="http://www.quirksmode.org/dom/events/change.html">change</a> do <form>.</p>
+**Verificar se o formulário foi alterado. **Ou seja, se o usuário está na página e resolve simplesmente sair e o formulário foi alterado, precisavamos alerta-lo.
+O que me ocorreu na hora foi utilizar o Evento [change](http://www.quirksmode.org/dom/events/change.html) do &lt;form&gt;.
+&lt;!-- more --&gt;
+I did the test in Firefox and everything went as planned. By changing the value of any element within the form the change event is fired.
+But... in our &quot;friend&quot; Internet Explorer?
+Surprise!
+It did not work. So I went searching to see why the problem.
+In this link  [http://www.quirksmode.org/dom/events/change.html](http://www.quirksmode.org/dom/events/change.html) of QuirksMode is quite easy to understand.
+In Internet Explorer the change event is not fired when the form is changed.</pre></p>
 
-</div>
+<p><strong>Note:</strong> Realize that it is only in IE it happens. Below is a list of browsers that support the change event in the form:</p>
+
+<p>FF 2.0 FF 3.0 FF 3.1b2 Saf 3.0 Win Saf 3.1 Win iPhone 3G Chrome 1.0 Opera 9.62 Opera 10a Konqueror 3.5.7</p>
+
+<p>Font: QuirksMode. <strong>Another Note:</strong> In IE the change event is not fired in the window and document objects. In all the above list does. For Internet Explorer the only element that triggers the change event properly is the <pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
+&lt;input&gt;.</pre></p>
+
+<p><strong>Solution</strong><strong>:</strong> As the project was using jQuery was simple to solve another problem in IE. Follow the code below:</p>
+
+<p><span>javascript</span></p>
+
+<p>$(&#34;form <em>&#34;).bind(&#34;change&#34;, function(){ /</em> Code here<em>/});</em></p>
+
+<p><span>/javascript</span></p>
+
+<p>The above code loops over all elements of form and atach the change event for each of them.</p>
+
+<p>Well, that&#8217;s it. Working and learning.</p>
+<hr />
+<p>FF 2.0 FF 3.0 FF 3.1b2 Saf 3.0 Win Saf 3.1 Win iPhone 3G Chrome 1.0 Opera 9.62 Opera 10a Konqueror 3.5.7</p>
+
+<p>Fiz o teste no Firefox e tudo ocorreu como o previsto. Ao alterar o valor de qualquer elemento dentro do formulário o evento change é disparado. Mas&#8230; e no nosso &#8220;amigo&#8221; Internet Explorer? Surpresa! Não funcionou. Então fui pesquisar para ver o porque do problema. Neste link  <a href='http://www.quirksmode.org/dom/events/change.html'>http://www.quirksmode.org/dom/events/change.html</a> do QuirksMode fica bem fácil de entender. O que acontece é que no Internet Explorer o evento change não é disparado ao alterar um formulário.</p>
+
+<p><strong>Nota:</strong> Percebam que é somente no IE que isso acontece. Abaixo segue a lista de Browsers que suportam o evento change no Formulário:</p>
+
+<p>FF 2.0 FF 3.0 FF 3.1b2 Saf 3.0 Win Saf 3.1 Win iPhone 3G Chrome 1.0 Opera 9.62 Opera 10a Konqueror 3.5.7</p>
+
+<p>Fonte: QuirksMode. <strong>Outra Nota:</strong> No IE o evento change também não é disparado nos objetos window e document. Em todos da lista acima sim. Para o Internet Explorer o único elemento que dispara o evento change corretamente  é o <pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
+&lt;input&gt;.</pre></p>
+
+<p><strong>Solução:</strong> Como o projeto estava utilizando jQuery foi simples resolver mais um problema no IE. Segue o código abaixo:</p>
+
+<p><span>javascript</span></p>
+
+<p>$(&#8220;form <em>&#8221;).bind(&#8220;change&#8221;, function(){ /</em> Código aqui<em>/});</em></p>
+
+<p><span>/javascript</span></p>
+
+<p>O código acima varre todos elementos do formulário e &#8220;atacha&#8221; o evento change para cada um deles.</p>
+
+<p>Bom, é isso. Trabalhando e aprendendo.</p>
+<hr />
+<p>FF 2.0 FF 3.0 FF 3.1b2 Saf 3.0 Win Saf 3.1 Win iPhone 3G Chrome 1.0 Opera 9.62 Opera 10a Konqueror 3.5.7</p></div>
   
-  
-    <footer>
-      <a rel="full-article" href="/javascript-problema-com-evento-change/">Read on &rarr;</a>
-    </footer>
   
 
 
@@ -148,20 +247,9 @@ O que me ocorreu na hora foi utilizar o Evento <a href="http://www.quirksmode.or
   </header>
 
 
-  <div class="entry-content"><p>Catch Ajax errors is a task that jQuery gives us a good help.
-What I mean by that is that the library provides us with a lot of useful information that often go unnoticed by developers.
-The first thing to note is the <strong>error </strong>event.
-In this event we can pass a function (callback) that will be executed when the request fails.
-3 parameters are passed to this function: The XMLHttpRequest object, a String that describes the type of error that occurred and an exception object (optional).
-A good point is that we will never have the <strong>Success </strong>and <strong>Error </strong>event together in the same request (that means obvious).</p>
+  <div class="entry-content"><p>Catch Ajax errors is a task that jQuery gives us a good help. What I mean by that is that the library provides us with a lot of useful information that often go unnoticed by developers. The first thing to note is the <strong>error</strong>event. In this event we can pass a function (callback) that will be executed when the request fails. 3 parameters are passed to this function: The XMLHttpRequest object, a String that describes the type of error that occurred and an exception object (optional). A good point is that we will never have the <strong>Success</strong>and <strong>Error</strong>event together in the same request (that means obvious).</p>
 
-<p>Capturar erros Ajax é mais uma tarefa que o jQuery nos da uma boa ajuda.
-O que quero dizer com isso é que a biblioteca nos fornece uma série de informações úteis que as vezes passam desapercebidas pelos desenvolvedores.
-A primeira coisa a se notar é o evento <strong>error</strong>.
-Neste evento podemos passar uma função(<em>callback</em>) que será executada quando a requisição falhar. São passados 3 parâmetros para esta função:
-O objeto XMLHttpRequest, uma String que descreve o tipo do erro que aconteceu e um objeto exceção(opcional).
-Uma boa observação é que nunca teremos o evento <strong>Success </strong>e o evento <strong>Error </strong>juntos na mesma requisição(meio óbvio isso).</p>
-
+<p>Capturar erros Ajax é mais uma tarefa que o jQuery nos da uma boa ajuda. O que quero dizer com isso é que a biblioteca nos fornece uma série de informações úteis que as vezes passam desapercebidas pelos desenvolvedores. A primeira coisa a se notar é o evento <strong>error</strong>. Neste evento podemos passar uma função(_callback_) que será executada quando a requisição falhar. São passados 3 parâmetros para esta função: O objeto XMLHttpRequest, uma String que descreve o tipo do erro que aconteceu e um objeto exceção(opcional). Uma boa observação é que nunca teremos o evento <strong>Success</strong>e o evento <strong>Error</strong>juntos na mesma requisição(meio óbvio isso).</p>
 </div>
   
   
@@ -205,25 +293,17 @@ Uma boa observação é que nunca teremos o evento <strong>Success </strong>e o 
 
   <div class="entry-content"><p><strong>Chapter 1 - The discussion</strong></p>
 
-<p>I put the title &#8221;<strong>JavaScript and Accessibility</strong>&#8221;, since this was the cause of one of the major threads in the group Javascript Brazil.
-The debate began when one of the users asked the opnion to participants of the group on some sites that he had developed.</p>
+<p>I put the title &#8221;<strong>JavaScript and Accessibility</strong>&#8221;, since this was the cause of one of the major threads in the group Javascript Brazil. The debate began when one of the users asked the opnion to participants of the group on some sites that he had developed.</p>
 
-<p><a href="http://www.congressoatitude.com.br/">http://www.congressoatitude.com.br</a>
-<a href="http://www.aredesforgirls.com.br/">http://www.aredesforgirls.com.br</a></p>
+<p><a href='http://www.congressoatitude.com.br/'>http://www.congressoatitude.com.br</a> <a href='http://www.aredesforgirls.com.br/'>http://www.aredesforgirls.com.br</a></p>
 
-<p>I personally really liked the 2 sites. But his question was in the item accessibility, and it was there that things heated up.
-To my surprise many answers guided for non-use of Javascript, or at least to measure their use.</p>
+<p>I personally really liked the 2 sites. But his question was in the item accessibility, and it was there that things heated up. To my surprise many answers guided for non-use of Javascript, or at least to measure their use.</p>
 
 <p><strong>Capitulo 1 - Uma discussão e tanto.</strong></p>
 
-<p>Coloquei o título &#8221;<strong>Javascript e Acessibilidade</strong>&#8221;, pois foi esse o causador de uma das maiores threads no grupo <a href="http://groups.google.com/group/javascript-bra?hl=pt-BR&amp;pli=1">Javascript Brasil</a>.
-O debate iniciou quando um dos usuários perguntou a opnião dos participantes do grupo sobre alguns sites que ele havia desenvolvido:
-<a href="http://www.congressoatitude.com.br/">http://www.congressoatitude.com.br</a>
-<a href="http://www.aredesforgirls.com.br/">http://www.aredesforgirls.com.br</a></p>
+<p>Coloquei o título &#8221;<strong>Javascript e Acessibilidade</strong>&#8221;, pois foi esse o causador de uma das maiores threads no grupo <a href='http://groups.google.com/group/javascript-bra?hl=pt-BR&amp;pli=1'>Javascript Brasil</a>. O debate iniciou quando um dos usuários perguntou a opnião dos participantes do grupo sobre alguns sites que ele havia desenvolvido: <a href='http://www.congressoatitude.com.br/'>http://www.congressoatitude.com.br</a> <a href='http://www.aredesforgirls.com.br/'>http://www.aredesforgirls.com.br</a></p>
 
-<p>Pessoalmente gostei bastante dos 2 sites. Mas a pergunta dele era no quesito acessibilidade, e foi ai que as coisas esquentaram.
-Para minha surpresa muitas respostas guiavam para a não utilização de Javascript, ou pelo menos para dosagem de seu uso.</p>
-
+<p>Pessoalmente gostei bastante dos 2 sites. Mas a pergunta dele era no quesito acessibilidade, e foi ai que as coisas esquentaram. Para minha surpresa muitas respostas guiavam para a não utilização de Javascript, ou pelo menos para dosagem de seu uso.</p>
 </div>
   
   
@@ -265,7 +345,8 @@ Para minha surpresa muitas respostas guiavam para a não utilização de Javascr
   </header>
 
 
-  <div class="entry-content"><p>You know when we have a very large list of <inputs> type checkbox, where the user has to select what options does he want?</p>
+  <div class="entry-content"><p>You know when we have a very large list of <pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
+&lt;inputs&gt; type checkbox, where the user has to select what options does he want?</pre></p>
 
 <p>Example:</p>
 
@@ -281,7 +362,8 @@ Para minha surpresa muitas respostas guiavam para a não utilização de Javascr
 
 <p>Check6</p>
 
-<p>Sabem quando temos uma lista bem grande de <inputs> do tipo checkbox, onde o usuário terá de selecionar quais são as opções desejadas?</p>
+<p>Sabem quando temos uma lista bem grande de <pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
+&lt;inputs&gt; do tipo checkbox, onde o usuário terá de selecionar quais são as opções desejadas?</pre></p>
 
 <p>Exemplo:</p>
 
@@ -296,7 +378,6 @@ Para minha surpresa muitas respostas guiavam para a não utilização de Javascr
 <p>Check5</p>
 
 <p>Check6</p>
-
 </div>
   
   
@@ -338,22 +419,11 @@ Para minha surpresa muitas respostas guiavam para a não utilização de Javascr
   </header>
 
 
-  <div class="entry-content"><p>To complement the last post I talked about the <a href="http://jaydson.org/json-nativo-firefox-3-5/">native JSON support in Firefox 3.5</a> i decided to share a small and brief assessment of the agency where I work.
-Let&#8217;s go:</p>
+  <div class="entry-content"><p>To complement the last post I talked about the <a href='http://jaydson.org/json-nativo-firefox-3-5/'>native JSON support in Firefox 3.5</a> i decided to share a small and brief assessment of the agency where I work. Let&#8217;s go:</p>
 
-<p><strong>Stability of the application</strong><strong>:</strong>
-As in their latest versions Firefox 3.5 remains stable.
-During my tests there was no crash or data loss to match any type, even being tested to its extreme *.
-* Extreme: A lot of open tabs (40 tabs active) between these flaps were heavy applications that consume the high way the resources of the browser (Gmail, Meebo, Application performance testing JavaScript)
-Para complementar o último post que falei sobre o <a href="http://jaydson.org/json-nativo-firefox-3-5/">suporte nativo ao JSON no Firefox 3.5</a> resolvi compartilhar uma pequena e resumida avaliação que fiz  na Agência onde trabalho.
-Vamos lá:</p>
+<p><strong>Stability of the application</strong><strong>:</strong> As in their latest versions Firefox 3.5 remains stable. During my tests there was no crash or data loss to match any type, even being tested to its extreme <em>.</em> Extreme: A lot of open tabs (40 tabs active) between these flaps were heavy applications that consume the high way the resources of the browser (Gmail, Meebo, Application performance testing JavaScript) Para complementar o último post que falei sobre o <a href='http://jaydson.org/json-nativo-firefox-3-5/'>suporte nativo ao JSON no Firefox 3.5</a> resolvi compartilhar uma pequena e resumida avaliação que fiz  na Agência onde trabalho. Vamos lá:</p>
 
-<p><strong> Estabilidade da aplicação:</strong>
-Como em suas últimas versões o Firefox 3.5 continua sendo estável.
-Durante meus testes não houve travamento, ou perda de dados de nehum tipo, mesmo sendo testado ao seu extremo<em>.
-</em>Extremo: Muitas abas abertas(40 abas ativas), entre estas abas estavam aplicações pesadas que consomem de maneira elevada os recursos do Browser(Gmail, Meebo, Aplicações de teste de performance Javascript)</p>
-
-</div>
+<p>** Estabilidade da aplicação:** Como em suas últimas versões o Firefox 3.5 continua sendo estável. Durante meus testes não houve travamento, ou perda de dados de nehum tipo, mesmo sendo testado ao seu extremo<em>.</em>Extremo: Muitas abas abertas(40 abas ativas), entre estas abas estavam aplicações pesadas que consomem de maneira elevada os recursos do Browser(Gmail, Meebo, Aplicações de teste de performance Javascript) </div>
   
   
     <footer>
@@ -394,20 +464,17 @@ Durante meus testes não houve travamento, ou perda de dados de nehum tipo, mesm
   </header>
 
 
-  <div class="entry-content"><p>Much news and useful things for us developers in Firefox 3.5.
-New Javascript engine, HTML 5 support among many others. <a href="https://developer.mozilla.org/En/Firefox_3.5_for_developers">Click here </a>in case you have not seen (you should if you are developer).</p>
+  <div class="entry-content"><p>Much news and useful things for us developers in Firefox 3.5. New Javascript engine, HTML 5 support among many others. <a href='https://developer.mozilla.org/En/Firefox_3.5_for_developers'>Click here</a>in case you have not seen (you should if you are developer).</p>
 
 <p>Although the native JSON already be since version 3.1, now it become clear.</p>
 
-<p>Well, i will not comment on what is JSON, because I have done this in another post, so if you do not know what is JSON (should if you are a developer) see my <a href="http://jaydson.org/json/">old post</a>, or better yet, access the <a href="http://json.org/">official page</a>.</p>
+<p>Well, i will not comment on what is JSON, because I have done this in another post, so if you do not know what is JSON (should if you are a developer) see my <a href='http://jaydson.org/json/'>old post</a>, or better yet, access the <a href='http://json.org/'>official page</a>.</p>
 
-<p>Muita coisa nova e útil para nós desenvolvedores no Firefox 3.5.
-Novo motor Javascript, suporte HTML 5 entre várias outras. <a href="https://developer.mozilla.org/En/Firefox_3.5_for_developers">Acessem aqui </a>caso ainda não tenham visto(deveriam caso sejam desenvolvedores).</p>
+<p>Muita coisa nova e útil para nós desenvolvedores no Firefox 3.5. Novo motor Javascript, suporte HTML 5 entre várias outras. <a href='https://developer.mozilla.org/En/Firefox_3.5_for_developers'>Acessem aqui</a>caso ainda não tenham visto(deveriam caso sejam desenvolvedores).</p>
 
 <p>Apesar de o JSON já ser nativo desde a versão 3.1, agora é que isso ficou bem evidenciado.</p>
 
-<p>Bom, não vou comentar o que é JSON, até porque já fiz isto em outro post, então caso não saiba o que é JSON(deveria se é desenvolvedor) veja o meu <a href="http://jaydson.org/json/">post antigo</a>, ou melhor ainda, acesse a <a href="http://json.org/">página oficial</a>.</p>
-
+<p>Bom, não vou comentar o que é JSON, até porque já fiz isto em outro post, então caso não saiba o que é JSON(deveria se é desenvolvedor) veja o meu <a href='http://jaydson.org/json/'>post antigo</a>, ou melhor ainda, acesse a <a href='http://json.org/'>página oficial</a>.</p>
 </div>
   
   
@@ -449,21 +516,17 @@ Novo motor Javascript, suporte HTML 5 entre várias outras. <a href="https://dev
   </header>
 
 
-  <div class="entry-content"><p>For those who do not know, this year saw the first Javascript Conference 2009.
-I decided to post here what happened there.</p>
+  <div class="entry-content"><p>For those who do not know, this year saw the first Javascript Conference 2009. I decided to post here what happened there.</p>
 
-<p>Firstly, this is an initiative of the team <a href="http://www.iterativedesigns.com/">Iterative Designs</a>(American company that works with Web development),to contribute to the Javascript community.</p>
+<p>Firstly, this is an initiative of the team <a href='http://www.iterativedesigns.com/'>Iterative Designs</a>(American company that works with Web development),to contribute to the Javascript community.</p>
 
 <p>In the official site has the following: &#8220;JSConf 2009 is a conference devoted to the programming language we all love to hate and hate to love, JavaScript&#8221;.</p>
 
-<p>Para quem não sabe, este ano aconteceu a primeira Javascript Conference 2009.
-Eu, por ser amante desta linguagem resolvi postar aqui o que aconteceu por lá.</p>
+<p>Para quem não sabe, este ano aconteceu a primeira Javascript Conference 2009. Eu, por ser amante desta linguagem resolvi postar aqui o que aconteceu por lá.</p>
 
-<p>Em primeiro lugar, essa é uma iniciativa do time <a href="http://www.iterativedesigns.com/">Iterative Designs</a>(empresa americana que trabalha com desenvolvimento Web), para contribuir com a comunidade Javascript.</p>
+<p>Em primeiro lugar, essa é uma iniciativa do time <a href='http://www.iterativedesigns.com/'>Iterative Designs</a>(empresa americana que trabalha com desenvolvimento Web), para contribuir com a comunidade Javascript.</p>
 
-<p>No site oficial tem o seguinte dizer: &#8220;JSConf 2009 is a conference devoted to the programming language we all love to hate and hate to love, JavaScript&#8221;.
-Isso seria algo como, a conferência para linguagem de programação que todos amam odiar e odeiam amar.</p>
-
+<p>No site oficial tem o seguinte dizer: &#8220;JSConf 2009 is a conference devoted to the programming language we all love to hate and hate to love, JavaScript&#8221;. Isso seria algo como, a conferência para linguagem de programação que todos amam odiar e odeiam amar.</p>
 </div>
   
   
@@ -505,10 +568,7 @@ Isso seria algo como, a conferência para linguagem de programação que todos a
   </header>
 
 
-  <div class="entry-content"><p>Today I came to talk about one of the methods that I find very interesting in Jquery, the <a href="http://docs.jquery.com/Ajax/serialize">serialize()</a>.
-As its name implies, this method serializes a set of inputs of a form on a string.
-This string is standardized and compatible with most server-side language.
-This is very useful for example when we want to send a series of data to the server with Ajax.</p>
+  <div class="entry-content"><p>Today I came to talk about one of the methods that I find very interesting in Jquery, the <a href='http://docs.jquery.com/Ajax/serialize'>serialize()</a>. As its name implies, this method serializes a set of inputs of a form on a string. This string is standardized and compatible with most server-side language. This is very useful for example when we want to send a series of data to the server with Ajax.</p>
 
 <p><strong>How?</strong></p>
 
@@ -516,15 +576,11 @@ This is very useful for example when we want to send a series of data to the ser
 
 <p>Buenas pessoal!</p>
 
-<p>Hoje vim falar sobre um dos métodos que acho bem interessante no Jquery, o <a href="http://docs.jquery.com/Ajax/serialize">serialize()</a>.
-Como o próprio nome já diz, esse método serializa um conjunto de inputs de um formulário em uma string.
-Essa string é padronizada e compatível com  a maioria das linguagens server-side.
-Isso é muito útil por exemplo quando queremos enviar uma série de dados para o servidor com Ajax.</p>
+<p>Hoje vim falar sobre um dos métodos que acho bem interessante no Jquery, o <a href='http://docs.jquery.com/Ajax/serialize'>serialize()</a>. Como o próprio nome já diz, esse método serializa um conjunto de inputs de um formulário em uma string. Essa string é padronizada e compatível com  a maioria das linguagens server-side. Isso é muito útil por exemplo quando queremos enviar uma série de dados para o servidor com Ajax.</p>
 
 <p><strong>Como fazer?</strong></p>
 
 <p>Bom, começamos criando o formulário:</p>
-
 </div>
   
   
@@ -566,58 +622,13 @@ Isso é muito útil por exemplo quando queremos enviar uma série de dados para 
   </header>
 
 
-  <div class="entry-content"><p>Várias palestras interessantes no <a href="http://www.phpsc.com.br/pt/">#PHP SC Conf </a>deste ano.
-A palestra que abriu o evento foi do projeto <a href="http://thewebmind.org">theWebMind</a>, cujo qual sou mebro e que vocês já devem conhecer.
-Fora alguns problemas técnicos conseguimos apresentar o projeto em primeira mão para o pessoal que estava presente. Obtivemos vários feed-backs positivos a respeito do projeto.</p>
-
+  <div class="entry-content"><p>Várias palestras interessantes no <a href='http://www.phpsc.com.br/pt/'>#PHP SC Conf</a>deste ano. A palestra que abriu o evento foi do projeto <a href='http://thewebmind.org'>theWebMind</a>, cujo qual sou mebro e que vocês já devem conhecer. Fora alguns problemas técnicos conseguimos apresentar o projeto em primeira mão para o pessoal que estava presente. Obtivemos vários feed-backs positivos a respeito do projeto.</p>
 </div>
   
   
     <footer>
       <a rel="full-article" href="/php-sc-conf-resumo/">Read on &rarr;</a>
     </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/palestra-thewebmind-no-php-sc-conf/">Palestra theWebMind No PHP SC Conf</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-05-30T12:09:58-03:00" pubdate data-updated="true">May 30<span>th</span>, 2009</time>
-        
-         | <a href="/palestra-thewebmind-no-php-sc-conf/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Ontem, dia 29 foi a primeira apresentação do projeto theWebMind em um evento público.
-A palestra foi muito produtiva, conseguimos atingir um público bem legal, agora esperamos que a comunidade contribua com o Mind.
-Disponibilizamos a apresentação neste endereço:<a href="http://www.thewebmind.org/presentation"> www.thewebmind.org/presentation.</a></p>
-
-<p>Para quem ainda não conhece o projeto Mind acesse: <a href="http://www.thewebmind.org">www.thewebmind.org</a>.</p>
-</div>
-  
   
 
 
@@ -640,6 +651,10 @@ Disponibilizamos a apresentação neste endereço:<a href="http://www.thewebmind
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/migrando-para-octopress/">Migrando para o Octopress</a>
+      </li>
+    
+      <li class="post">
         <a href="/analytics-do-blog-em-2012/">Analytics do Blog em 2012</a>
       </li>
     
@@ -653,10 +668,6 @@ Disponibilizamos a apresentação neste endereço:<a href="http://www.thewebmind
     
       <li class="post">
         <a href="/w3c-webbr-2102/">W3C webbr 2102</a>
-      </li>
-    
-      <li class="post">
-        <a href="/javascript-o-guia-definitivo/">JavaScript: O Guia definitivo</a>
       </li>
     
   </ul>

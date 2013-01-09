@@ -9,9 +9,7 @@
   <meta name="author" content="Jaydson Gomes">
 
   
-  <meta name="description" content="Mais um da série de plugins testados e avaliados.
-Particularmente eu achei esse plugin muito legal!
-Ele aplica um efeito de Flip em um elemento HTML &hellip;">
+  <meta name="description" content="Mais um da série de plugins testados e avaliados. Particularmente eu achei esse plugin muito legal! Ele aplica um efeito de Flip em um elemento HTML &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +18,7 @@ Ele aplica um efeito de Flip em um elemento HTML &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://jaydson.github.com/flip-jquery-plugin/">
+  <link rel="canonical" href="http://jaydson.org/flip-jquery-plugin/">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -33,6 +31,18 @@ Ele aplica um efeito de Flip em um elemento HTML &hellip;">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 
   
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1264252-8']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
 
 </head>
 
@@ -52,7 +62,7 @@ Ele aplica um efeito de Flip em um elemento HTML &hellip;">
   
 <form action="http://google.com/search" method="get">
   <fieldset role="search">
-    <input type="hidden" name="q" value="site:jaydson.github.com" />
+    <input type="hidden" name="q" value="site:jaydson.org" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
@@ -95,18 +105,12 @@ Ele aplica um efeito de Flip em um elemento HTML &hellip;">
   </header>
 
 
-<div class="entry-content"><p>Mais um da série de plugins testados e avaliados.
-Particularmente eu achei esse plugin muito legal!
-Ele aplica um efeito de Flip em um elemento HTML. Ai vai da imaginação e criatividade do desenvolvedor para implementa-lo em seu sistema.
-A idéia é aquela básica do Jquery, pouquissímas linhas, e um efeito impressionante.
-Estou esperando o momento certo e a idéia surgir para usa-lo em algum sistema&#8230;</p>
+<div class="entry-content"><p>Mais um da série de plugins testados e avaliados. Particularmente eu achei esse plugin muito legal! Ele aplica um efeito de Flip em um elemento HTML. Ai vai da imaginação e criatividade do desenvolvedor para implementa-lo em seu sistema. A idéia é aquela básica do Jquery, pouquissímas linhas, e um efeito impressionante. Estou esperando o momento certo e a idéia surgir para usa-lo em algum sistema&#8230;</p>
 
-<p><strong>Vamos ver como fica o código:
-</strong></p>
+<p><strong>Vamos ver como fica o código:</strong></p>
 
-<p>[javascript]</p>
-
-<script type="text/javascript">
+<p><span>javascript</span></p>
+<script type='text/javascript'>
      $(document).ready(function () {
          $(".home").click(function () {
               $("#flipBox").flip({
@@ -119,47 +123,39 @@ Estou esperando o momento certo e a idéia surgir para usa-lo em algum sistema&#
       $(".home").trigger("click");
 });
 </script>
-
-
-<p>[/javascript]</p>
+<p><span>/javascript</span></p>
 
 <p>Simples não?</p>
 
-<p>No click do elemento com a classe &#8220;home&#8221;  invocamos o método <strong>flip()</strong> que aplica esse efeito no elemento com Id &#8220;flipBox&#8221;.
-Obs:  $(&#8220;.home&#8221;).trigger(&#8220;click&#8221;) só faz com que a animação aconteça no load da página.
-Aqueles parâmetros são interessantes:</p>
+<p>No click do elemento com a classe &#8220;home&#8221;  invocamos o método <strong>flip()</strong> que aplica esse efeito no elemento com Id &#8220;flipBox&#8221;. Obs: $(&#8220;.home&#8221;).trigger(&#8220;click&#8221;) só faz com que a animação aconteça no load da página. Aqueles parâmetros são interessantes:</p>
 
-<ul>
-<li><p><strong>direction</strong>: Especifica em que direção vai ser o giro. Os valores suportados são &#8216;tb&#8217;, &#8216;bt&#8217;, &#8216;lr&#8217;, &#8216;rl&#8217;</p></li>
-<li><p><strong>color:</strong> Define que cor de fundo o elemento terá após o giro.</p></li>
-<li><p><strong>speed</strong>: A velocidade da animação</p></li>
-<li><p><strong>content</strong>: O conteúdo que esse elemento terá após o giro.</p></li>
-</ul>
+<p>* <strong>direction</strong>: Especifica em que direção vai ser o giro. Os valores suportados são &#8216;tb&#8217;, &#8216;bt&#8217;, &#8216;lr&#8217;, &#8216;rl&#8217;</p>
 
+<p>* <strong>color:</strong> Define que cor de fundo o elemento terá após o giro.</p>
+
+<p>* <strong>speed</strong>: A velocidade da animação</p>
+
+<p>* <strong>content</strong>: O conteúdo que esse elemento terá após o giro.</p>
 
 <p>Fora essas opções, ainda existem funções que podemos executar em algum evento do giro, como por exemplo:</p>
 
-<ul>
-<li><p><strong>onBefore</strong>:  Essa função é executada antes da animação começar.</p></li>
-<li><p><strong>onAnimation</strong>: Essa função é executada na metade da animação.</p></li>
-<li><p><strong>onEnd</strong>: Essa função é executada quando a animação termina.</p></li>
-</ul>
+<p>* <strong>onBefore</strong>:  Essa função é executada antes da animação começar.</p>
 
+<p>* <strong>onAnimation</strong>: Essa função é executada na metade da animação.</p>
+
+<p>* <strong>onEnd</strong>: Essa função é executada quando a animação termina.</p>
 
 <p>Com esses eventos e opções podemos fazer muita coisa. A opção <strong>content</strong> por exemplo permite que seja passado um conteúdo que será exibido no elemento após a animação, então nada nos impede de carregar um conteúdo com Ajax e jogar dentro desse elemento. O céu é o limite.</p>
 
 <p><strong>Vejam o resultado:</strong></p>
 
-<p><strong>
-</strong></p>
+<p>** **</p>
 
-<p><strong>Minha Avaliação: Nota 10.0</strong>
-<strong>Compatibilidade: Firefox 2.0+, IE 6+, Safari 3.0+, Chrome 2.0+,</strong><strong>Opera</strong>****</p>
+<p><strong>Minha Avaliação: Nota 10.0</strong> <strong>Compatibilidade: Firefox 2.0+, IE 6+, Safari 3.0+, Chrome 2.0+,</strong><strong>Opera</strong>****</p>
 
-<p><strong>Site oficial do Plugin:</strong><a href="http://lab.smashup.it/flip/"> http://lab.smashup.it/flip/</a></p>
+<p><strong>Site oficial do Plugin:</strong><a href='http://lab.smashup.it/flip/'>http://lab.smashup.it/flip/</a></p>
 
-<p>[caption id=&#8221;attachment_114&#8221; align=&#8221;alignnone&#8221; width=&#8221;60&#8221; caption=&#8221;Download&#8221;]<a href="http://jaydson.org/code/jquery/plugins/flip/flip.rar"><img src="http://jaydson-org.web102.redehost.com.br/assets/hd_download1.jpg" alt="Download" /></a>[/caption]</p>
-</div>
+<p><span>caption id=&#8221;attachment_114&#8221; align=&#8221;alignnone&#8221; width=&#8221;60&#8221; caption=&#8221;Download&#8221;</span>(http://jaydson-org.web102.redehost.com.br/assets/hd_download1.jpg)](http://jaydson.org/code/jquery/plugins/flip/flip.rar)<span>/caption</span></p></div>
 
 
   <footer>
@@ -195,7 +191,7 @@ Aqueles parâmetros são interessantes:</p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.github.com/flip-jquery-plugin/" data-via="" data-counturl="http://jaydson.github.com/flip-jquery-plugin/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.org/flip-jquery-plugin/" data-via="" data-counturl="http://jaydson.org/flip-jquery-plugin/" >Tweet</a>
   
   
   
@@ -230,6 +226,10 @@ Aqueles parâmetros são interessantes:</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/migrando-para-octopress/">Migrando para o Octopress</a>
+      </li>
+    
+      <li class="post">
         <a href="/analytics-do-blog-em-2012/">Analytics do Blog em 2012</a>
       </li>
     
@@ -243,10 +243,6 @@ Aqueles parâmetros são interessantes:</p>
     
       <li class="post">
         <a href="/w3c-webbr-2102/">W3C webbr 2102</a>
-      </li>
-    
-      <li class="post">
-        <a href="/javascript-o-guia-definitivo/">JavaScript: O Guia definitivo</a>
       </li>
     
   </ul>
@@ -306,8 +302,8 @@ Aqueles parâmetros são interessantes:</p>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://jaydson.github.com/flip-jquery-plugin/';
-        var disqus_url = 'http://jaydson.github.com/flip-jquery-plugin/';
+        var disqus_identifier = 'http://jaydson.org/flip-jquery-plugin/';
+        var disqus_url = 'http://jaydson.org/flip-jquery-plugin/';
         var disqus_script = 'embed.js';
       
     (function () {

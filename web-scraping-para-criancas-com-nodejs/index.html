@@ -9,8 +9,7 @@
   <meta name="author" content="Jaydson Gomes">
 
   
-  <meta name="description" content="Bom, resolvi fazer este post para deixar registrado o quanto é fácil fazer Web Scraping com nodeJS.
-Para quem não sabe, Web Scraping é uma técnica &hellip;">
+  <meta name="description" content="Bom, resolvi fazer este post para deixar registrado o quanto é fácil fazer Web Scraping com nodeJS.Para quem não sabe, Web Scraping é uma técnica &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@ Para quem não sabe, Web Scraping é uma técnica &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://jaydson.github.com/web-scraping-para-criancas-com-nodejs/">
+  <link rel="canonical" href="http://jaydson.org/web-scraping-para-criancas-com-nodejs/">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -32,6 +31,18 @@ Para quem não sabe, Web Scraping é uma técnica &hellip;">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 
   
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1264252-8']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
 
 </head>
 
@@ -51,7 +62,7 @@ Para quem não sabe, Web Scraping é uma técnica &hellip;">
   
 <form action="http://google.com/search" method="get">
   <fieldset role="search">
-    <input type="hidden" name="q" value="site:jaydson.github.com" />
+    <input type="hidden" name="q" value="site:jaydson.org" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
@@ -94,41 +105,26 @@ Para quem não sabe, Web Scraping é uma técnica &hellip;">
   </header>
 
 
-<div class="entry-content"><p><a href="http://jaydson.org/wp-content/uploads/scraper.jpg"><img src="http://jaydson.org/wp-content/uploads/scraper.jpg" alt="" /></a><br/>
-Bom, resolvi fazer este post para deixar registrado o quanto é fácil fazer <a href="http://en.wikipedia.org/wiki/Web_scraping">Web Scraping</a> com <a href="http://nodejs.org/">nodeJS</a>.<br/>
-Para quem não sabe, Web Scraping é uma técnica para extrair dados de páginas web.<br/>
-Surgiu a necessidade de fazer algo do tipo no trabalho, e resolvi fazer uns testes.<br/>
-É possível fazer isso com qualquer linguagem, mas pensei, porque não fazer com JavaScript? Ai pensei no node.<br/>
-Me preparei para um desafio legal, mas me frustrei muito :(<br/>
-Isso porque Web Scraping com node é ridiculamente simples de fazer, e é isso que vou mostrar :)</p>
+<div class="entry-content"><p><a href='http://jaydson.org/wp-content/uploads/scraper.jpg'><img alt='' src='http://jaydson.org/wp-content/uploads/scraper.jpg' /></a><br />Bom, resolvi fazer este post para deixar registrado o quanto é fácil fazer <a href='http://en.wikipedia.org/wiki/Web_scraping'>Web Scraping</a> com <a href='http://nodejs.org/'>nodeJS</a>.<br />Para quem não sabe, Web Scraping é uma técnica para extrair dados de páginas web.<br />Surgiu a necessidade de fazer algo do tipo no trabalho, e resolvi fazer uns testes.<br />É possível fazer isso com qualquer linguagem, mas pensei, porque não fazer com JavaScript? Ai pensei no node.<br />Me preparei para um desafio legal, mas me frustrei muito :(<br />Isso porque Web Scraping com node é ridiculamente simples de fazer, e é isso que vou mostrar :)</p>
 
-<p><strong>Node Scraper</strong><br/>
-Uma googleada rápida, e achei este projeto: <a href="https://github.com/mape/node-scraper">https://github.com/mape/node-scraper</a><br/>
-O node-scraper é um modulo que facilita o scraping.<br/>
-Obviamente, é preciso ter o node rodando e o <a href="http://npmjs.org/">npm</a>.<br/>
-Via npm instale o node-scraper:</p>
+<p><strong>Node Scraper</strong><br />Uma googleada rápida, e achei este projeto: <a href='https://github.com/mape/node-scraper'>https://github.com/mape/node-scraper</a><br />O node-scraper é um modulo que facilita o scraping.<br />Obviamente, é preciso ter o node rodando e o <a href='http://npmjs.org/'>npm</a>.<br />Via npm instale o node-scraper:</p>
 
-<pre><code>npm install scraper  
-</code></pre>
+<pre><code>npm install scraper  </code></pre>
 
-<p>O node-scraper expõe um objeto jQuery do lado do servidor com a página <em>scrapeada</em> como se fosse o <em>body</em>.
-Bizarro, mas é bem simples de entender, olhem o código:</p>
+<p>O node-scraper expõe um objeto jQuery do lado do servidor com a página <em>scrapeada</em> como se fosse o <em>body</em>. Bizarro, mas é bem simples de entender, olhem o código:</p>
 
-<pre><code>var scraper = require('scraper');
-scraper('http://www.jaydson.org', function(err, jQuery) {
-    if (err) {throw err}
+<pre><code>var scraper = require(&#39;scraper&#39;);
+scraper(&#39;http://www.jaydson.org&#39;, function(err, jQuery) {
+	if (err) {throw err}
+	
+	jQuery(&#39;a&#39;).each(function() {
+		console.log(jQuery(this).text()+&#39;\n&#39;);
+	});
+});  </code></pre>
 
-    jQuery('a').each(function() {
-        console.log(jQuery(this).text()+'\n');
-    });
-});  
-</code></pre>
+<p>Neste exemplo, o que fiz foi buscar todos os links dentro da página jaydson.org, e logo após isso joguei no console o conteúdo de cada link.<br />Fácil né?</p>
 
-<p>Neste exemplo, o que fiz foi buscar todos os links dentro da página jaydson.org, e logo após isso joguei no console o conteúdo de cada link.<br/>
-Fácil né?</p>
-
-<p>Bom, agora é só usar a criatividade ;)</p>
-</div>
+<p>Bom, agora é só usar a criatividade ;)</p></div>
 
 
   <footer>
@@ -164,7 +160,7 @@ Fácil né?</p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.github.com/web-scraping-para-criancas-com-nodejs/" data-via="" data-counturl="http://jaydson.github.com/web-scraping-para-criancas-com-nodejs/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.org/web-scraping-para-criancas-com-nodejs/" data-via="" data-counturl="http://jaydson.org/web-scraping-para-criancas-com-nodejs/" >Tweet</a>
   
   
   
@@ -199,6 +195,10 @@ Fácil né?</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/migrando-para-octopress/">Migrando para o Octopress</a>
+      </li>
+    
+      <li class="post">
         <a href="/analytics-do-blog-em-2012/">Analytics do Blog em 2012</a>
       </li>
     
@@ -212,10 +212,6 @@ Fácil né?</p>
     
       <li class="post">
         <a href="/w3c-webbr-2102/">W3C webbr 2102</a>
-      </li>
-    
-      <li class="post">
-        <a href="/javascript-o-guia-definitivo/">JavaScript: O Guia definitivo</a>
       </li>
     
   </ul>
@@ -275,8 +271,8 @@ Fácil né?</p>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://jaydson.github.com/web-scraping-para-criancas-com-nodejs/';
-        var disqus_url = 'http://jaydson.github.com/web-scraping-para-criancas-com-nodejs/';
+        var disqus_identifier = 'http://jaydson.org/web-scraping-para-criancas-com-nodejs/';
+        var disqus_url = 'http://jaydson.org/web-scraping-para-criancas-com-nodejs/';
         var disqus_script = 'embed.js';
       
     (function () {

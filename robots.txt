@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://jaydson.github.com/sitemap.xml 
+Sitemap: http://jaydson.org/sitemap.xml 

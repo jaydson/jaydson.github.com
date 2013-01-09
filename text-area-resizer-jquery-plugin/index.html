@@ -9,8 +9,7 @@
   <meta name="author" content="Jaydson Gomes">
 
   
-  <meta name="description" content="Seguindo o Post anterior, vamos continuar com campos de texto.
-Quando desenvolvemos um formulário onde existem vários campos a preencher, muitas &hellip;">
+  <meta name="description" content="Seguindo o Post anterior, vamos continuar com campos de texto. Quando desenvolvemos um formulário onde existem vários campos a preencher, muitas &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@ Quando desenvolvemos um formulário onde existem vários campos a preencher, mui
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://jaydson.github.com/text-area-resizer-jquery-plugin/">
+  <link rel="canonical" href="http://jaydson.org/text-area-resizer-jquery-plugin/">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -32,6 +31,18 @@ Quando desenvolvemos um formulário onde existem vários campos a preencher, mui
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 
   
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1264252-8']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
 
 </head>
 
@@ -51,7 +62,7 @@ Quando desenvolvemos um formulário onde existem vários campos a preencher, mui
   
 <form action="http://google.com/search" method="get">
   <fieldset role="search">
-    <input type="hidden" name="q" value="site:jaydson.github.com" />
+    <input type="hidden" name="q" value="site:jaydson.org" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
@@ -94,38 +105,36 @@ Quando desenvolvemos um formulário onde existem vários campos a preencher, mui
   </header>
 
 
-<div class="entry-content"><p>Seguindo o <a href="http://jaydson.org/text-limiter-jquery-plugin/">Post anterior</a>, vamos continuar com campos de texto.
-Quando desenvolvemos um formulário onde existem vários campos a preencher, muitas vezes ocorre de um <textarea> que poderá conter &#8221;<strong>N</strong>&#8221; caracteres ficar expremido, com um tamanho inferior ao texto que receberá. Por padrão quando isso acontece, o <textarea> cria uma barra de rolagem.
+<div class="entry-content"><p>Seguindo o <a href='http://jaydson.org/text-limiter-jquery-plugin/'>Post anterior</a>, vamos continuar com campos de texto. Quando desenvolvemos um formulário onde existem vários campos a preencher, muitas vezes ocorre de um <pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
+&lt;textarea&gt; que poderá conter &quot;**N**&quot; caracteres ficar expremido, com um tamanho inferior ao texto que receberá. Por padrão quando isso acontece, o &lt;textarea&gt; cria uma barra de rolagem.
 Mas para quem está digitando isso não é muito agradável, pois a medida que se escreve, o texto acima desaparece.
-O Google Chrome já implementou uma solução para isso, assim como o Safari.  Por padrão os campos do tipo <textarea> nesses Browsers possuem uma opção de Resize. Desta maneira,  o usuário tem autonomia sobre o <textarea>, podendo redimensiona-lo de forma a ficar do seu gosto.</p>
+O Google Chrome já implementou uma solução para isso, assim como o Safari.  Por padrão os campos do tipo &lt;textarea&gt; nesses Browsers possuem uma opção de Resize. Desta maneira,  o usuário tem autonomia sobre o &lt;textarea&gt;, podendo redimensiona-lo de forma a ficar do seu gosto.</pre></p>
 
 <p>Mas e quanto ao Firefox e IE?</p>
 
-<p>Bom, esses Browsers ainda não possuem essa funcionalidade, então o que vamos fazer é implementar um Plugin que faz algo semelhante.
-Novamente seguindo a filosofia &#8220;Write Less, Do More&#8221; do Jquery, o necessário para adicionar esta funcionalidade em nossos <textareas> é apenas uma linha:</p>
+<p>Bom, esses Browsers ainda não possuem essa funcionalidade, então o que vamos fazer é implementar um Plugin que faz algo semelhante. Novamente seguindo a filosofia &#8220;Write Less, Do More&#8221; do Jquery, o necessário para adicionar esta funcionalidade em nossos <pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
+&lt;textareas&gt; é apenas uma linha:</pre></p>
 
-<p>[javascript]</p>
+<p><span>javascript</span></p>
 
 <p>$(&#8216;textarea.resizable(.processed)&#8217;).TextAreaResizer();</p>
 
-<p>[/javascript]</p>
+<p><span>/javascript</span></p>
 
-<p>O que esta linha faz?
-Bom, bem simples de entender. Todos os <textareas> com a classe &#8220;resizable&#8221; terão a funcionalidade de redimensão.</p>
+<p>O que esta linha faz? Bom, bem simples de entender. Todos os <pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
+&lt;textareas&gt; com a classe &quot;resizable&quot; terão a funcionalidade de redimensão.</pre></p>
 
 <p><strong>Nota:</strong> O Plugin aplica a funcionalidadede redimensão apenas na altura.</p>
 
 <p><strong>Vamos ver o Plugin em ação:</strong></p>
 
-<p><strong>Minha Avaliação: Nota 8.0</strong>
-<strong>Compatibilidade: Firefox 2.0+, IE 6+, Safari 3.0+, Chrome 2.0+</strong></p>
+<p><strong>Minha Avaliação: Nota 8.0</strong> <strong>Compatibilidade: Firefox 2.0+, IE 6+, Safari 3.0+, Chrome 2.0+</strong></p>
 
-<p><strong>Obs: </strong>Apesar de funcionar no Safari e no Chrome, não faz sentido algum aplicar isso para estes Browsers, pois como expliquei acima, estes já possuem tal funcionalidade.</p>
+<p><strong>Obs:</strong>Apesar de funcionar no Safari e no Chrome, não faz sentido algum aplicar isso para estes Browsers, pois como expliquei acima, estes já possuem tal funcionalidade.</p>
 
-<p>[caption id=&#8221;&#8221; align=&#8221;alignnone&#8221; width=&#8221;60&#8221; caption=&#8221;Download &#8220;]<a href="http://jaydson.org/code/jquery/plugins/textarea-resizer-1.0.4/TextAreaResizer-1.0.4.rar"><img src="http://jaydson-org.web102.redehost.com.br/assets/hd_download1.jpg" alt="Download " /></a>[/caption]</p>
+<p><span>caption id=&#8221;&#8221; align=&#8221;alignnone&#8221; width=&#8221;60&#8221; caption=&#8221;Download &#8221;</span>(http://jaydson-org.web102.redehost.com.br/assets/hd_download1.jpg)](http://jaydson.org/code/jquery/plugins/textarea-resizer-1.0.4/TextAreaResizer-1.0.4.rar)<span>/caption</span></p>
 
-<p><strong>Site oficial do Plugin:</strong><a href="http://plugins.jquery.com/project/TextAreaResizer"> http://plugins.jquery.com/project/TextAreaResizer</a></p>
-</div>
+<p><strong>Site oficial do Plugin:</strong><a href='http://plugins.jquery.com/project/TextAreaResizer'>http://plugins.jquery.com/project/TextAreaResizer</a></p></div>
 
 
   <footer>
@@ -161,7 +170,7 @@ Bom, bem simples de entender. Todos os <textareas> com a classe &#8220;resizable
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.github.com/text-area-resizer-jquery-plugin/" data-via="" data-counturl="http://jaydson.github.com/text-area-resizer-jquery-plugin/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.org/text-area-resizer-jquery-plugin/" data-via="" data-counturl="http://jaydson.org/text-area-resizer-jquery-plugin/" >Tweet</a>
   
   
   
@@ -196,6 +205,10 @@ Bom, bem simples de entender. Todos os <textareas> com a classe &#8220;resizable
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/migrando-para-octopress/">Migrando para o Octopress</a>
+      </li>
+    
+      <li class="post">
         <a href="/analytics-do-blog-em-2012/">Analytics do Blog em 2012</a>
       </li>
     
@@ -209,10 +222,6 @@ Bom, bem simples de entender. Todos os <textareas> com a classe &#8220;resizable
     
       <li class="post">
         <a href="/w3c-webbr-2102/">W3C webbr 2102</a>
-      </li>
-    
-      <li class="post">
-        <a href="/javascript-o-guia-definitivo/">JavaScript: O Guia definitivo</a>
       </li>
     
   </ul>
@@ -272,8 +281,8 @@ Bom, bem simples de entender. Todos os <textareas> com a classe &#8220;resizable
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://jaydson.github.com/text-area-resizer-jquery-plugin/';
-        var disqus_url = 'http://jaydson.github.com/text-area-resizer-jquery-plugin/';
+        var disqus_identifier = 'http://jaydson.org/text-area-resizer-jquery-plugin/';
+        var disqus_url = 'http://jaydson.org/text-area-resizer-jquery-plugin/';
         var disqus_script = 'embed.js';
       
     (function () {

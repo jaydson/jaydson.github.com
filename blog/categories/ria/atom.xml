@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: RIA | Jaydson Gomes]]></title>
-  <link href="http://jaydson.github.com/blog/categories/ria/atom.xml" rel="self"/>
-  <link href="http://jaydson.github.com/"/>
-  <updated>2013-01-08T19:02:23-02:00</updated>
-  <id>http://jaydson.github.com/</id>
+  <link href="http://jaydson.org/blog/categories/ria/atom.xml" rel="self"/>
+  <link href="http://jaydson.org/"/>
+  <updated>2013-01-09T19:46:03-02:00</updated>
+  <id>http://jaydson.org/</id>
   <author>
     <name><![CDATA[Jaydson Gomes]]></name>
     
@@ -15,102 +15,72 @@
   
   <entry>
     <title type="html"><![CDATA[Text Limiter - Jquery Plugin]]></title>
-    <link href="http://jaydson.github.com/text-limiter-jquery-plugin/"/>
+    <link href="http://jaydson.org/text-limiter-jquery-plugin/"/>
     <updated>2009-05-04T22:18:59-03:00</updated>
-    <id>http://jaydson.github.com/text-limiter-jquery-plugin</id>
-    <content type="html"><![CDATA[<p>O primeiro <strong>Plugin Jquery </strong>da série que selecionei foi o<strong> <a href="http://www.burobjorn.nl/code/textlimiter/">Text Limiter - Jquery Plugin</a></strong>.
-Como o próprio nome já diz, o que o Plugin faz é limitar um campo de texto a "N" caracteres.
-Isso é muito útil, pois em qualquer formulário que fazemos sempre tem algum campo que precisa ser validado desta forma.</p>
+    <id>http://jaydson.org/text-limiter-jquery-plugin</id>
+    <content type="html"><![CDATA[<p>O primeiro <strong>Plugin Jquery</strong>da série que selecionei foi o** <a href='http://www.burobjorn.nl/code/textlimiter/'>Text Limiter - Jquery Plugin</a><strong>. Como o próprio nome já diz, o que o Plugin faz é limitar um campo de texto a &#8220;N&#8221; caracteres. Isso é muito útil, pois em qualquer formulário que fazemos sempre tem algum campo que precisa ser validado desta forma.</strong></p>
 
 <p>Para sua implementação nada mais do que uma linha de código é necessária, veja no exemplo abaixo:</p>
 
-<p>[javascript]</p>
+<p><span>javascript</span></p>
 
-<p>$("textarea[maxlength]").textLimiter();</p>
+<p>$(&#8220;textarea<span>maxlength</span>&#8221;).textLimiter();</p>
 
-<p>[/javascript]</p>
+<p><span>/javascript</span></p>
 
-<p>Neste exemplo, o que o Plugin faz é varrer todos inputs <textarea> e aplicar a restrição se baseando no atributo "maxlength".</p>
+<p>Neste exemplo, o que o Plugin faz é varrer todos inputs <pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
+&lt;textarea&gt; e aplicar a restrição se baseando no atributo &quot;maxlength&quot;.</pre></p>
 
-<p><strong>Nota:</strong> O atributo maxlength não é padrão em um elemento <textarea> assim como em um elemento <input>.
-Para mais detalhes sobre o elemento <textarea> acesse <a href="http://www.w3schools.com/TAGS/tag_textarea.asp">http://www.w3schools.com/TAGS/tag_textarea.asp</a></p>
+<p><strong>Nota:</strong> O atributo maxlength não é padrão em um elemento <pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
+&lt;textarea&gt; assim como em um elemento &lt;input&gt;.
+Para mais detalhes sobre o elemento &lt;textarea&gt; acesse [http://www.w3schools.com/TAGS/tag_textarea.asp](http://www.w3schools.com/TAGS/tag_textarea.asp)</pre></p>
 
-<p>Se no seu formulário existem vários elementos <textarea>, mas para cada um deles existe uma validação de tamanho diferente, o que pode ser feito é especificar o ID do elemento, ficando então:</p>
+<p>Se no seu formulário existem vários elementos <pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
+&lt;textarea&gt;, mas para cada um deles existe uma validação de tamanho diferente, o que pode ser feito é especificar o ID do elemento, ficando então:</pre></p>
 
-<p>[javascript]</p>
+<p><span>javascript</span></p>
 
-<p>$("#meu_textarea1[maxlength]").textLimiter();
-$("#meu_textarea2[maxlength]").textLimiter();
-$("#meu_textarea3[maxlength]").textLimiter();</p>
+<p>$(&#8220;#meu_textarea1<span>maxlength</span>&#8221;).textLimiter(); $(&#8220;#meu_textarea2<span>maxlength</span>&#8221;).textLimiter(); $(&#8220;#meu_textarea3<span>maxlength</span>&#8221;).textLimiter();</p>
 
-<p>[/javascript]</p>
+<p><span>/javascript</span></p>
 
-<p>Neste exemplo o Plugin aplicará a restrição de acordo com o atributo "maxlength" de cada <textarea> identificado pela ID.</p>
+<p>Neste exemplo o Plugin aplicará a restrição de acordo com o atributo &#8220;maxlength&#8221; de cada <pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
+&lt;textarea&gt; identificado pela ID.</pre></p>
 
-<p>Para um elemento do tipo <input>, não há nada de diferente dos exemplos anteriores, basta especificar a ID, ou varrer todos elementos:</p>
+<p>Para um elemento do tipo <pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
+&lt;input&gt;, não há nada de diferente dos exemplos anteriores, basta especificar a ID, ou varrer todos elementos:</pre></p>
 
-<p>[javascript]
-$("#meu_input1[maxlength]").textLimiter();
-$("#meu_input2[maxlength]").textLimiter();</p>
+<p><span>javascript</span> $(&#8220;#meu_input1<span>maxlength</span>&#8221;).textLimiter(); $(&#8220;#meu_input2<span>maxlength</span>&#8221;).textLimiter();</p>
 
-<p>[/javascript]</p>
+<p><span>/javascript</span></p>
 
-<p>O elemento <input> por padrão tem o atributo maxlength. Então se for especificado algum tamanho (Ex: maxlength=10) , mesmo sem utilizar o Plugin, este campo será limitado a este valor.
-A vantagem de usar o Plugin é que ele incrementa essa restrição visualmente, mostrando a quantidade de caracteres restantes para tal elemento.</p>
+<p>O elemento <pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
+&lt;input&gt; por padrão tem o atributo maxlength. Então se for especificado algum tamanho (Ex: maxlength=10) , mesmo sem utilizar o Plugin, este campo será limitado a este valor.
+A vantagem de usar o Plugin é que ele incrementa essa restrição visualmente, mostrando a quantidade de caracteres restantes para tal elemento.</pre></p>
 
 <p><strong>Exemplo:</strong></p>
 
-<p><strong>Minha Avaliação: Nota 8.0</strong>
-<strong>Compatibilidade: Firefox 2.0+, IE 6+, Safari 3.0+, Chrome 2.0+</strong></p>
+<p><strong>Minha Avaliação: Nota 8.0</strong> <strong>Compatibilidade: Firefox 2.0+, IE 6+, Safari 3.0+, Chrome 2.0+</strong></p>
 
-<p>[caption id="attachment_114" align="alignnone" width="65" caption="Download"]<a href="http://www.burobjorn.nl/code/textlimiter/textcounter_limiter_code_v0.1.zip"><img src="http://jaydson-org.web102.redehost.com.br/assets/hd_download1.jpg" alt="Download Text Limiter" /></a>[/caption]</p>
+<p><span>caption id=&#8221;attachment_114&#8221; align=&#8221;alignnone&#8221; width=&#8221;65&#8221; caption=&#8221;Download&#8221;</span>(http://jaydson-org.web102.redehost.com.br/assets/hd_download1.jpg)](http://www.burobjorn.nl/code/textlimiter/textcounter_limiter_code_v0.1.zip)<span>/caption</span></p>
 
-<p><strong>Site oficial do Plugin:</strong><a href="http://www.burobjorn.nl/code/textlimiter/"> http://www.burobjorn.nl/code/textlimiter/</a></p>
-]]></content>
+<p><strong>Site oficial do Plugin:</strong><a href='http://www.burobjorn.nl/code/textlimiter/'>http://www.burobjorn.nl/code/textlimiter/</a></p>]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[RichBlocks - Um Framework Para Implantar Interfaces RIA em Sistemas Web]]></title>
-    <link href="http://jaydson.github.com/richblocks-um-framework-para-implantar-interfaces-ria-em-sistemas-web/"/>
+    <link href="http://jaydson.org/richblocks-um-framework-para-implantar-interfaces-ria-em-sistemas-web/"/>
     <updated>2009-05-04T10:51:47-03:00</updated>
-    <id>http://jaydson.github.com/richblocks-um-framework-para-implantar-interfaces-ria-em-sistemas-web</id>
-    <content type="html"><![CDATA[<p>RichBlocks - Este foi o meu projeto de conclusão de curso na Faculdade.
-A idéia do Framework é facilitar a vida do desenvolvedor na hora de implantar interfaces <a href="http://jaydson.blogspot.com/2008/11/ria-aplicaes-ricas-para-internet.html">RIA</a> em sistemas Web.
-Meu primeiro contato com Aplicações RIA foi há alguns anos atrás, quando o meu primo e também desenvolvedor Web <a href="http://thewebmind.blogspot.com/">Felipe</a> me apresentou uma Aplicação que estava desenvolvendo que na época era totalmente inovadora, e eu não tinha visto nada igual.
-Era uma aplicação Web onde a interface era semelhante a qualquer programa Desktop, haviam janelas e menus, e toda esta interface era feita em Javascript.
-Após estudar bastante sobre o assunto e ser insentivado pelo meu professor <a href="http://prestesmachado.com.br/blog/">Rodrigo Prestes</a> resolvi abordar esse assunto no meu TCC.
-Achei então que desenvolver um Framework seria uma boa. Visto que a maioria das ferramentas existentes são muito complexas, criei uma estrutura simples de arquivos XML bastando edita-los para que a interface funcione.
-O Projeto é OpenSource, e esta lá no Google Code.
-Projeto no Google-> <a href="http://code.google.com/p/richblocks/">code.google.com/p/richblocks</a>
-Aplicação feita usando o Framework-><a href="http://jaydson.org/code/richblocks/">http://jaydson.org/code/richblocks/
-</a> Artigo-><a href="http://jaydson.org/docs/richblocks.pdf">http://jaydson.org/docs/richblocks.pdf</a>RichBlocks - Este foi o meu projeto de conclusão de curso na Faculdade.
-A idéia do Framework é facilitar a vida do desenvolvedor na hora de implantar interfaces <a href="http://jaydson.blogspot.com/2008/11/ria-aplicaes-ricas-para-internet.html">RIA</a> em sistemas Web.
-Meu primeiro contato com Aplicações RIA foi há alguns anos atrás, quando o meu primo e também desenvolvedor Web <a href="http://felipenascimento.org/">Felipe</a> me apresentou uma Aplicação que estava desenvolvendo que na época era totalmente inovadora, e eu não tinha visto nada igual.
-Era uma aplicação Web onde a interface era semelhante a qualquer programa Desktop, haviam janelas e menus, e toda esta interface era feita em Javascript.
-Após estudar bastante sobre o assunto e ser insentivado pelo meu professor <a href="http://prestesmachado.com.br/blog/">Rodrigo Prestes</a> resolvi abordar esse assunto no meu TCC.
-Achei então que desenvolver um Framework seria uma boa. Visto que a maioria das ferramentas existentes são muito complexas, criei uma estrutura simples de arquivos XML bastando edita-los para que a interface funcione.
-O Projeto é OpenSource, e esta lá no Google Code.
-Projeto no Google-> <a href="http://code.google.com/p/richblocks/">code.google.com/p/richblocks</a>
-Aplicação feita usando o Framework-><a href="http://jaydson.org/code/richblocks/">http://jaydson.org/code/richblocks/
-</a> Artigo-><a href="http://jaydson.org/docs/richblocks.pdf">http://jaydson.org/docs/richblocks.pdf</a></p>
-]]></content>
+    <id>http://jaydson.org/richblocks-um-framework-para-implantar-interfaces-ria-em-sistemas-web</id>
+    <content type="html"><![CDATA[<p>RichBlocks - Este foi o meu projeto de conclusão de curso na Faculdade. A idéia do Framework é facilitar a vida do desenvolvedor na hora de implantar interfaces <a href='http://jaydson.blogspot.com/2008/11/ria-aplicaes-ricas-para-internet.html'>RIA</a> em sistemas Web. Meu primeiro contato com Aplicações RIA foi há alguns anos atrás, quando o meu primo e também desenvolvedor Web <a href='http://thewebmind.blogspot.com/'>Felipe</a> me apresentou uma Aplicação que estava desenvolvendo que na época era totalmente inovadora, e eu não tinha visto nada igual. Era uma aplicação Web onde a interface era semelhante a qualquer programa Desktop, haviam janelas e menus, e toda esta interface era feita em Javascript. Após estudar bastante sobre o assunto e ser insentivado pelo meu professor <a href='http://prestesmachado.com.br/blog/'>Rodrigo Prestes</a> resolvi abordar esse assunto no meu TCC. Achei então que desenvolver um Framework seria uma boa. Visto que a maioria das ferramentas existentes são muito complexas, criei uma estrutura simples de arquivos XML bastando edita-los para que a interface funcione. O Projeto é OpenSource, e esta lá no Google Code. Projeto no Google-&gt; <a href='http://code.google.com/p/richblocks/'>code.google.com/p/richblocks</a> Aplicação feita usando o Framework-&gt;<a href='http://jaydson.org/code/richblocks/'>http://jaydson.org/code/richblocks/</a> Artigo-&gt;<a href='http://jaydson.org/docs/richblocks.pdf'>http://jaydson.org/docs/richblocks.pdf</a>RichBlocks - Este foi o meu projeto de conclusão de curso na Faculdade. A idéia do Framework é facilitar a vida do desenvolvedor na hora de implantar interfaces <a href='http://jaydson.blogspot.com/2008/11/ria-aplicaes-ricas-para-internet.html'>RIA</a> em sistemas Web. Meu primeiro contato com Aplicações RIA foi há alguns anos atrás, quando o meu primo e também desenvolvedor Web <a href='http://felipenascimento.org/'>Felipe</a> me apresentou uma Aplicação que estava desenvolvendo que na época era totalmente inovadora, e eu não tinha visto nada igual. Era uma aplicação Web onde a interface era semelhante a qualquer programa Desktop, haviam janelas e menus, e toda esta interface era feita em Javascript. Após estudar bastante sobre o assunto e ser insentivado pelo meu professor <a href='http://prestesmachado.com.br/blog/'>Rodrigo Prestes</a> resolvi abordar esse assunto no meu TCC. Achei então que desenvolver um Framework seria uma boa. Visto que a maioria das ferramentas existentes são muito complexas, criei uma estrutura simples de arquivos XML bastando edita-los para que a interface funcione. O Projeto é OpenSource, e esta lá no Google Code. Projeto no Google-&gt; <a href='http://code.google.com/p/richblocks/'>code.google.com/p/richblocks</a> Aplicação feita usando o Framework-&gt;<a href='http://jaydson.org/code/richblocks/'>http://jaydson.org/code/richblocks/</a> Artigo-&gt;<a href='http://jaydson.org/docs/richblocks.pdf'>http://jaydson.org/docs/richblocks.pdf</a></p>]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[RIA - Aplicações Ricas para Internet]]></title>
-    <link href="http://jaydson.github.com/ria-aplicacoes-ricas-para-internet/"/>
+    <link href="http://jaydson.org/ria-aplicacoes-ricas-para-internet/"/>
     <updated>2009-05-03T12:07:08-03:00</updated>
-    <id>http://jaydson.github.com/ria-aplicacoes-ricas-para-internet</id>
-    <content type="html"><![CDATA[<p>Um assunto que está em alta ultimamente na área de desenvolvimento Web são as RIAS, ou aportuguesando, Aplicações Ricas para Internet. Essas aplicações se assemelham as aplicações Desktop, isto é, rodam na plataforma Web, mas possuem funcionalidades semelhantes aos programas compilados. Segundo o artigo publicado por Erko Bridee de Almeida, que é moderador do Portal Java(<a href="http://www.portaljava.com/">www.portaljava.com</a>) e atua como analista e desenvolvedor Java na Wise Systems que trata sobre RIA e Web 2.0, RIA é mais do que uma tecnologia é um conceito.
-RIA faz com que os usuários tenham uma experiência mais agradável e eficiente no uso das aplicações, e isso é possível através do uso da internet e das tecnologias disponíveis. "RIA é a combinação da interatividade e funcionalidades do Desktop com a abrangência e flexibilidade da Web". Atualmente existem diversas tecnologias e ferramentas disponíveis que auxiliam no desenvolvimento de RIA's, entre elas:
-Ferramentas da Adobe (inclusive foi a Macromedia/Adobe que inventou este termo "RIA" em 2002) como Flash, Flex e Air.
-Da Microsoft existe o Silverlight. Na área de Java tem o JavaFX. OpenLazlo da Lazlo Systems e Frameworks baseados em Ajax como o Google Web ToolKit.
-Meu trabalho de conclusão de curso abordou exatamente este assunto, e acabei desenvolvendo um Framework para implantar interfaces RIA em sistemas Web(em um outro Post eu dou mais detalhes sobre isto).
-O que acho é que temos tecnologia suficiente hoje para desenvolver aplicações Web bem diferentes e mais ricas do que as tradicionais, e consequentemente caimos em RIA.
-Como usuário do Meebo(<a href="http://www.meebo.com/">www.meebo.com</a>), posso dizer que essa é uma excelente aplicação web RIA, onde conseguimos conversar através de mensagens instantâneas com a mesma facilidade que o MSN ou algum outro software Desktop.
-Bom essa foi uma pequena introdução sobre o assunto, em breve pretendo colocar mais conteúdo.
-Para quem se interessou, fique à vontade para entrar em contato. ... Saber compartilhar o conhecimento é evoluir.</p>
-]]></content>
+    <id>http://jaydson.org/ria-aplicacoes-ricas-para-internet</id>
+    <content type="html"><![CDATA[<p>Um assunto que está em alta ultimamente na área de desenvolvimento Web são as RIAS, ou aportuguesando, Aplicações Ricas para Internet. Essas aplicações se assemelham as aplicações Desktop, isto é, rodam na plataforma Web, mas possuem funcionalidades semelhantes aos programas compilados. Segundo o artigo publicado por Erko Bridee de Almeida, que é moderador do Portal Java(<a href='http://www.portaljava.com/'>www.portaljava.com</a>) e atua como analista e desenvolvedor Java na Wise Systems que trata sobre RIA e Web 2.0, RIA é mais do que uma tecnologia é um conceito. RIA faz com que os usuários tenham uma experiência mais agradável e eficiente no uso das aplicações, e isso é possível através do uso da internet e das tecnologias disponíveis. &#8220;RIA é a combinação da interatividade e funcionalidades do Desktop com a abrangência e flexibilidade da Web&#8221;. Atualmente existem diversas tecnologias e ferramentas disponíveis que auxiliam no desenvolvimento de RIA&#8217;s, entre elas: Ferramentas da Adobe (inclusive foi a Macromedia/Adobe que inventou este termo &#8220;RIA&#8221; em 2002) como Flash, Flex e Air. Da Microsoft existe o Silverlight. Na área de Java tem o JavaFX. OpenLazlo da Lazlo Systems e Frameworks baseados em Ajax como o Google Web ToolKit. Meu trabalho de conclusão de curso abordou exatamente este assunto, e acabei desenvolvendo um Framework para implantar interfaces RIA em sistemas Web(em um outro Post eu dou mais detalhes sobre isto). O que acho é que temos tecnologia suficiente hoje para desenvolver aplicações Web bem diferentes e mais ricas do que as tradicionais, e consequentemente caimos em RIA. Como usuário do Meebo(<a href='http://www.meebo.com/'>www.meebo.com</a>), posso dizer que essa é uma excelente aplicação web RIA, onde conseguimos conversar através de mensagens instantâneas com a mesma facilidade que o MSN ou algum outro software Desktop. Bom essa foi uma pequena introdução sobre o assunto, em breve pretendo colocar mais conteúdo. Para quem se interessou, fique à vontade para entrar em contato. &#8230; Saber compartilhar o conhecimento é evoluir.</p>]]></content>
   </entry>
   
 </feed>

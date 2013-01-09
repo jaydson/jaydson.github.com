@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Jquery | Jaydson Gomes]]></title>
-  <link href="http://jaydson.github.com/blog/categories/jquery/atom.xml" rel="self"/>
-  <link href="http://jaydson.github.com/"/>
-  <updated>2013-01-08T19:02:23-02:00</updated>
-  <id>http://jaydson.github.com/</id>
+  <link href="http://jaydson.org/blog/categories/jquery/atom.xml" rel="self"/>
+  <link href="http://jaydson.org/"/>
+  <updated>2013-01-09T19:46:03-02:00</updated>
+  <id>http://jaydson.org/</id>
   <author>
     <name><![CDATA[Jaydson Gomes]]></name>
     
@@ -15,161 +15,101 @@
   
   <entry>
     <title type="html"><![CDATA[jQuery - Customizando expressões]]></title>
-    <link href="http://jaydson.github.com/jquery-customizando-expressoes/"/>
+    <link href="http://jaydson.org/jquery-customizando-expressoes/"/>
     <updated>2010-05-25T22:40:17-03:00</updated>
-    <id>http://jaydson.github.com/jquery-customizando-expressoes</id>
-    <content type="html"><![CDATA[<p>O jQuery é uma excelente biblioteca, e suas constantes atualizações e profissionalismo fazem com que nós programadores tenhamos uma potente arma na mão para solucionar qualquer problema.<br/>
-Mas mesmo o jQuery sendo tão completo, sempre haverá alguma situação ímpar em que ele não suprirá sua necessidade.<br/>
-Um dos motivos que levou o jQuery a chegar ao nível de biblioteca Javascript mais utilizada do mundo, além de sua excelente performance e extremo profissionalismo foi a facilidade e possibilidade de extender suas funcionalidades.<br/>
-Hoje já são incontáveis os plugins que  existem para o jQuery.</p>
+    <id>http://jaydson.org/jquery-customizando-expressoes</id>
+    <content type="html"><![CDATA[<p>O jQuery é uma excelente biblioteca, e suas constantes atualizações e profissionalismo fazem com que nós programadores tenhamos uma potente arma na mão para solucionar qualquer problema.<br />Mas mesmo o jQuery sendo tão completo, sempre haverá alguma situação ímpar em que ele não suprirá sua necessidade.<br />Um dos motivos que levou o jQuery a chegar ao nível de biblioteca Javascript mais utilizada do mundo, além de sua excelente performance e extremo profissionalismo foi a facilidade e possibilidade de extender suas funcionalidades.<br />Hoje já são incontáveis os plugins que  existem para o jQuery.</p>
 
-<p>O jQuery é uma excelente biblioteca, e suas constantes atualizações e profissionalismo fazem com que nós programadores tenhamos uma potente arma na mão para solucionar qualquer problema.
-Mas mesmo o jQuery sendo tão completo, sempre haverá alguma situação ímpar em que ele não suprirá sua necessidade.
-Um dos motivos que levou o jQuery a chegar ao nível de biblioteca Javascript mais utilizada do mundo, além de sua excelente performance e extremo profissionalismo foi a facilidade e possibilidade de extender suas funcionalidades.
-Hoje já são incontáveis os plugins que  existem para o jQuery.</p>
-
+<p>O jQuery é uma excelente biblioteca, e suas constantes atualizações e profissionalismo fazem com que nós programadores tenhamos uma potente arma na mão para solucionar qualquer problema. Mas mesmo o jQuery sendo tão completo, sempre haverá alguma situação ímpar em que ele não suprirá sua necessidade. Um dos motivos que levou o jQuery a chegar ao nível de biblioteca Javascript mais utilizada do mundo, além de sua excelente performance e extremo profissionalismo foi a facilidade e possibilidade de extender suas funcionalidades. Hoje já são incontáveis os plugins que  existem para o jQuery.</p>
 <!-- more -->
+<p>Uma rápida pesquisa no Google e voces encontraram varios posts espalhados pelo mundo falando a respeito.<br />Customizar uma expressão consiste em incorporar ao jQuery um método que ele não possui nativamente.</p>
 
+<p>Mas porque diabos fazer isso?<br />Acreditem, pode ser bem útil.</p>
 
-<p>Mas hoje venho falar de uma possibilidade muito interessante que mais uma vez devo a  dica ao <a href="http://twitter.com/ricardobeat">Ricardo Tomasi</a>, que é a customização de expressões.<br/>
-Uma rápida pesquisa no Google e voces encontraram varios posts espalhados pelo mundo falando a respeito.<br/>
-Customizar uma expressão consiste em incorporar ao jQuery um método que ele não possui nativamente.</p>
+<p>No curso de jQuery que estou ministrando na <a href='http://www.targettrust.com.br/web/'>Target Trust</a>, ontem bolei um exercício simples para os alunos:</p>
 
-<p>Mas porque diabos fazer isso?<br/>
-Acreditem, pode ser bem útil.</p>
+<p><em><strong>&#8220;Mude a cor de fundo de todas as TD&#8217;s com indice ímpar da tabela com id tabela2&#8221;<br /></strong></em></p>
 
-<p>No curso de jQuery que estou ministrando na <a href="http://www.targettrust.com.br/web/">Target Trust</a>, ontem bolei um exercício simples para os alunos:</p>
-
-<p><em><strong>"Mude a cor de fundo de todas as TD's com indice ímpar da tabela com id tabela2"<br/>
-</strong></em></p>
-
-<p><em>Sacaram a ideia?<br/>
-Simples. O que eu queria, é que eles fizessem da maneira deles, usando um loop, verificando o <a href="http://pt.wikipedia.org/wiki/Opera%C3%A7%C3%A3o_m%C3%B3dulo">mod</a> do indice e assim aplicar o css no elemento, para então depois apresentar o <a href="http://api.jquery.com/odd-selector/">seletor odd</a> que faz exatamente isso, só que em uma linha.</em></p>
+<p><em>Sacaram a ideia?<br />Simples. O que eu queria, é que eles fizessem da maneira deles, usando um loop, verificando o <a href='http://pt.wikipedia.org/wiki/Opera%C3%A7%C3%A3o_m%C3%B3dulo'>mod</a> do indice e assim aplicar o css no elemento, para então depois apresentar o <a href='http://api.jquery.com/odd-selector/'>seletor odd</a> que faz exatamente isso, só que em uma linha.</em></p>
 
 <p>_ _</p>
 
 <p>_ _</p>
 
-<p>$("table td:odd").css("background-color", "#bbbbff");</p>
+<p>$(&#8220;table td:odd&#8221;).css(&#8220;background-color&#8221;, &#8220;#bbbbff&#8221;);</p>
 
 <p> </p>
 
 <p>_ _</p>
 
-<p><em>Tudo tranquilo, mas um dos alunos muito antenado achou o seletor e resolveu o problema facilmente!<br/>
-Então mudei a estratégia, e pedi para ele implementar um algoritmo que apenas aplicasse o estilo nas TD's com indice que fosse <a href="http://pt.wikipedia.org/wiki/N%C3%BAmero_primo">número primo</a>.<br/>
-Novamente o aluno conseguiu.<br/>
-Foi ai que lembrei da possibilidade de customização das expressões!<br/>
-Fiz a proposta para o aluno: Se tu conseguir criar uma expressão customizada que retorne elementos baseando-se nos numeros primos terá um post no meu blog!<br/>
-Então ai esta. Abaixo segue o código implementado pelo aluno <a href="http://www.twitter.com/AndreLMPinto">Andre Pinto </a>da turma de jQuery Maio/2010:</em></p>
+<p><em>Tudo tranquilo, mas um dos alunos muito antenado achou o seletor e resolveu o problema facilmente!<br />Então mudei a estratégia, e pedi para ele implementar um algoritmo que apenas aplicasse o estilo nas TD&#8217;s com indice que fosse <a href='http://pt.wikipedia.org/wiki/N%C3%BAmero_primo'>número primo</a>.<br />Novamente o aluno conseguiu.<br />Foi ai que lembrei da possibilidade de customização das expressões!<br />Fiz a proposta para o aluno: Se tu conseguir criar uma expressão customizada que retorne elementos baseando-se nos numeros primos terá um post no meu blog!<br />Então ai esta. Abaixo segue o código implementado pelo aluno <a href='http://www.twitter.com/AndreLMPinto'>Andre Pinto</a>da turma de jQuery Maio/2010:</em></p>
 
 <p> </p>
 
 <pre><code>[javascript]
-jQuery.extend( jQuery.expr[':'], {
-    prime: function(a, index){
-        function isPrime(num){
-            var numHalf = num / 2, counter, divCheck;
-                if (num === 2){
-                    return true;
-                }
-                if (num &amp;amp;amp;lt; 2 || numHalf === Math.floor(numHalf) ||
+jQuery.extend( jQuery.expr[&#39;:&#39;], {
+	prime: function(a, index){
+		function isPrime(num){
+			var numHalf = num / 2, counter, divCheck;
+				if (num === 2){
+					return true;
+				}
+				if (num &amp;amp;amp;lt; 2 || numHalf === Math.floor(numHalf) ||
                                    num !== Math.floor(num)){
-                    return false;
-                }else{
-                    for (counter = 3; counter &amp;amp;amp;lt;= Math.sqrt(num);
+					return false;
+				}else{
+					for (counter = 3; counter &amp;amp;amp;lt;= Math.sqrt(num);
                                               counter += 2){
-                        divCheck = num / counter;
-                        if (divCheck === Math.floor(divCheck)) {
-                            return false;
-                        }
-                    }
-                return true;
-                   }
-        }
+						divCheck = num / counter;
+						if (divCheck === Math.floor(divCheck)) {
+							return false;
+						}
+					}
+				return true;
+			       }
+		}
            return isPrime(index);
      }
-});[/javascript]
-</code></pre>
+});[/javascript]</code></pre>
 
 <p>Para usar a expressão:</p>
 
 <pre><code>[javascript]
-$('#tabela2 td:prime').css( { 'background-color' : 'red' } );
-[/javascript]
-</code></pre>
+$(&#39;#tabela2 td:prime&#39;).css( { &#39;background-color&#39; : &#39;red&#39; } );
+[/javascript]</code></pre>
 
 <p>Parabéns ao André pela implementação.</p>
 
-<p>Mas hoje venho falar de uma possibilidade muito interessante que mais uma vez devo a  dica ao <a href="http://twitter.com/ricardobeat">Ricardo Tomasi</a>, que é a customização de expressões.
-Uma rápida pesquisa no Google e voces encontraram varios posts espalhados pelo mundo falando a respeito.
-Customizar uma expressão consiste em incorporar ao jQuery um método que ele não possui nativamente.</p>
+<p>Mas hoje venho falar de uma possibilidade muito interessante que mais uma vez devo a  dica ao <a href='http://twitter.com/ricardobeat'>Ricardo Tomasi</a>, que é a customização de expressões. Uma rápida pesquisa no Google e voces encontraram varios posts espalhados pelo mundo falando a respeito. Customizar uma expressão consiste em incorporar ao jQuery um método que ele não possui nativamente.</p>
 
-<p>Mas porque diabos fazer isso?
-Acreditem, pode ser bem útil.</p>
+<p>Mas porque diabos fazer isso? Acreditem, pode ser bem útil.</p>
 
-<p>No curso de jQuery que estou ministrando na <a href="http://www.targettrust.com.br/web/">Target Trust</a>, ontem bolei um exercício simples para os alunos:</p>
+<p>No curso de jQuery que estou ministrando na <a href='http://www.targettrust.com.br/web/'>Target Trust</a>, ontem bolei um exercício simples para os alunos:</p>
 
-<p><em><strong>"Mude a cor de fundo de todas as TD's com indice ímpar da tabela com id tabela2"
-</strong></em></p>
+<p><em><strong>&#8220;Mude a cor de fundo de todas as TD&#8217;s com indice ímpar da tabela com id tabela2&#8221;</strong></em></p>
 
-<p><em>Sacaram a ideia?
-Simples. O que eu queria, é que eles fizessem da maneira deles, usando um loop, verificando o <a href="http://pt.wikipedia.org/wiki/Opera%C3%A7%C3%A3o_m%C3%B3dulo">mod</a> do indice e assim aplicar o css no elemento, para então depois apresentar o <a href="http://api.jquery.com/odd-selector/">seletor odd</a> que faz exatamente isso, só que em uma linha.</em></p>
+<p><em>Sacaram a ideia? Simples. O que eu queria, é que eles fizessem da maneira deles, usando um loop, verificando o <a href='http://pt.wikipedia.org/wiki/Opera%C3%A7%C3%A3o_m%C3%B3dulo'>mod</a> do indice e assim aplicar o css no elemento, para então depois apresentar o <a href='http://api.jquery.com/odd-selector/'>seletor odd</a> que faz exatamente isso, só que em uma linha.</em></p>
 
-<p>$("table td:odd").css("background-color", "#bbbbff");</p>
+<p>$(&#8220;table td:odd&#8221;).css(&#8220;background-color&#8221;, &#8220;#bbbbff&#8221;);</p>
 
-<p><em>Tudo tranquilo, mas um dos alunos muito antenado achou o seletor e resolveu o problema facilmente!
-Então mudei a estratégia, e pedi para ele implementar um algoritmo que apenas aplicasse o estilo nas TD's com indice que fosse <a href="http://pt.wikipedia.org/wiki/N%C3%BAmero_primo">número primo</a>.
-Novamente o aluno conseguiu.
-Foi ai que lembrei da possibilidade de customização das expressões!
-Fiz a proposta para o aluno: Se tu conseguir criar uma expressão customizada que retorne elementos baseando-se nos numeros primos terá um post no meu blog!
-Então ai esta. Abaixo segue o código implementado pelo aluno <a href="http://www.twitter.com/AndreLMPinto">Andre Pinto</a> da turma de jQuery Maio/2010:</em></p>
+<p><em>Tudo tranquilo, mas um dos alunos muito antenado achou o seletor e resolveu o problema facilmente! Então mudei a estratégia, e pedi para ele implementar um algoritmo que apenas aplicasse o estilo nas TD&#8217;s com indice que fosse <a href='http://pt.wikipedia.org/wiki/N%C3%BAmero_primo'>número primo</a>. Novamente o aluno conseguiu. Foi ai que lembrei da possibilidade de customização das expressões! Fiz a proposta para o aluno: Se tu conseguir criar uma expressão customizada que retorne elementos baseando-se nos numeros primos terá um post no meu blog! Então ai esta. Abaixo segue o código implementado pelo aluno <a href='http://www.twitter.com/AndreLMPinto'>Andre Pinto</a> da turma de jQuery Maio/2010:</em></p>
 
-<p>[javascript]
-jQuery.extend( jQuery.expr[':'], {</p>
-
-<pre><code>prime: function(a, index){
-    function isPrime(num){
-        var numHalf = num / 2, counter, divCheck;
-            if (num === 2){
-                return true;
-            }
-            if (num &amp;amp;lt; 2 || numHalf === Math.floor(numHalf) ||
-                               num !== Math.floor(num)){
-                return false;
-            }else{
-                for (counter = 3; counter &amp;amp;lt;= Math.sqrt(num);
-                                          counter += 2){
-                    divCheck = num / counter;
-                    if (divCheck === Math.floor(divCheck)) {
-                        return false;
-                    }
-                }
-            return true;
-               }
-    }
-       return isPrime(index);
- }
-</code></pre>
-
-<p>});[/javascript]</p>
+<p><span>javascript</span> jQuery.extend( jQuery.expr<span>&#8217;:&#8217;</span>, { prime: function(a, index){ function isPrime(num){ var numHalf = num / 2, counter, divCheck; if (num === 2){ return true; } if (num &#38;lt; 2 || numHalf === Math.floor(numHalf) || num !== Math.floor(num)){ return false; }else{ for (counter = 3; counter &#38;lt;= Math.sqrt(num); counter += 2){ divCheck = num / counter; if (divCheck === Math.floor(divCheck)) { return false; } } return true; } } return isPrime(index); } });<span>/javascript</span></p>
 
 <p>Para usar a expressão:</p>
 
-<p>[javascript]
-$('#tabela2 td:prime').css( { 'background-color' : 'red' } );
-[/javascript]</p>
+<p><span>javascript</span> $(&#8216;#tabela2 td:prime&#8217;).css( { &#8216;background-color&#8217; : &#8216;red&#8217; } ); <span>/javascript</span></p>
 
-<p>Parabéns ao André pela implementação.</p>
-]]></content>
+<p>Parabéns ao André pela implementação.</p>]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[jQuery Marcar / Desmarcar CheckBoxes]]></title>
-    <link href="http://jaydson.github.com/jquery-marcar-desmarcar-checkboxes/"/>
+    <link href="http://jaydson.org/jquery-marcar-desmarcar-checkboxes/"/>
     <updated>2009-07-22T20:23:31-03:00</updated>
-    <id>http://jaydson.github.com/jquery-marcar-desmarcar-checkboxes</id>
-    <content type="html"><![CDATA[<p>You know when we have a very large list of <inputs> type checkbox, where the user has to select what options does he want?</p>
+    <id>http://jaydson.org/jquery-marcar-desmarcar-checkboxes</id>
+    <content type="html"><![CDATA[<p>You know when we have a very large list of <pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
+&lt;inputs&gt; type checkbox, where the user has to select what options does he want?</pre></p>
 
 <p>Example:</p>
 
@@ -185,7 +125,8 @@ $('#tabela2 td:prime').css( { 'background-color' : 'red' } );
 
 <p>Check6</p>
 
-<p>Sabem quando temos uma lista bem grande de <inputs> do tipo checkbox, onde o usuário terá de selecionar quais são as opções desejadas?</p>
+<p>Sabem quando temos uma lista bem grande de <pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
+&lt;inputs&gt; do tipo checkbox, onde o usuário terá de selecionar quais são as opções desejadas?</pre></p>
 
 <p>Exemplo:</p>
 
@@ -200,78 +141,42 @@ $('#tabela2 td:prime').css( { 'background-color' : 'red' } );
 <p>Check5</p>
 
 <p>Check6</p>
-
 <!-- more -->
+<p>Well, now imagine that this list is a little bigger. It is extremely unpleasant to have to check or uncheck one by one. A good practice is to put an option for the User select or clear all.</p>
 
-
-<p>Well, now imagine that this list is a little bigger. It is extremely unpleasant to have to check or uncheck one by one.
-A good practice is to put an option for the User select or clear all.</p>
-
-<p>This is a very easy task to implement in "pure" Javascript , but the jQuery as that's always help.</p>
+<p>This is a very easy task to implement in &#8220;pure&#8221; Javascript , but the jQuery as that&#8217;s always help.</p>
 
 <p><strong>Solution:</strong></p>
 
-<p>[javascript]</p>
+<p><span>javascript</span></p>
 
-<p>// We attribute to the variable ipts all &lt;inputs&gt; found within the element &quot;#checkboxes&quot;
-var ipts = $(&quot;#checkboxes&quot;).find(&quot;input&quot;);</p>
+<p>// We attribute to the variable ipts all &#60;inputs&#62; found within the element &#34;#checkboxes&#34; var ipts = $(&#34;#checkboxes&#34;).find(&#34;input&#34;);</p>
 
-<p>function checkAll()
-{
-// CheckBox that when clicked select or clear all elements
-var check = document.getElementById(&quot;checkboxCheckAll&quot;);</p>
+<p>function checkAll() { // CheckBox that when clicked select or clear all elements var check = document.getElementById(&#34;checkboxCheckAll&#34;);</p>
 
-<p>// Test the CheckBox to see if must check or uncheck
-check.checked ?
-jQuery.each(ipts, function(){
-// If checked so check all elements
-this.checked = true;
-}) :
-jQuery.each(ipts, function(){
-// If not uncheck all elements
-this.checked = false;
-});
-}
-[/javascript]</p>
+<p>// Test the CheckBox to see if must check or uncheck check.checked ? jQuery.each(ipts, function(){ // If checked so check all elements this.checked = true; }) : jQuery.each(ipts, function(){ // If not uncheck all elements this.checked = false; }); } <span>/javascript</span></p>
 
 <p>Simple and fast.</p>
 
 <p>Tested with more than 50 elements and the routine did not exceed 2 milliseconds.</p>
 
-<p>Bom, agora imaginem que esta lista é um pouco maior. Fica extremamente desagradável ter que marcar ou desmarcar um a um.
-Uma boa prática é colocar uma opção para o usuário marcar ou desmarcar todos.</p>
+<p>Bom, agora imaginem que esta lista é um pouco maior. Fica extremamente desagradável ter que marcar ou desmarcar um a um. Uma boa prática é colocar uma opção para o usuário marcar ou desmarcar todos.</p>
 
-<p>Isso é uma tarefa bem fácil de se implementar em Javascript "puro", mas o jQuery como sempre nos da aquela ajuda.</p>
+<p>Isso é uma tarefa bem fácil de se implementar em Javascript &#8220;puro&#8221;, mas o jQuery como sempre nos da aquela ajuda.</p>
 
 <p><strong>Solução:</strong></p>
 
-<p>[javascript]</p>
+<p><span>javascript</span></p>
 
-<p>// Atribuímos a variavel ipts todos os inputs encontrados dentro do elemento "#checkboxes"
-var ipts = $("#checkboxes").find("input");</p>
+<p>// Atribuímos a variavel ipts todos os inputs encontrados dentro do elemento &#8220;#checkboxes&#8221; var ipts = $(&#8220;#checkboxes&#8221;).find(&#8220;input&#8221;);</p>
 
-<p>function checkAll()
-{
-// CheckBox que ao ser clicado marca ou desmarca todos elementos
-var check = document.getElementById("checkboxCheckAll");</p>
+<p>function checkAll() { // CheckBox que ao ser clicado marca ou desmarca todos elementos var check = document.getElementById(&#8220;checkboxCheckAll&#8221;);</p>
 
-<p>// Testamos o CheckBox para ver se devemos marcar ou desmarcar
-check.checked ?
-jQuery.each(ipts, function(){
-// Se esta "checado" então marcamos todos elementos como checked=true
-this.checked = true;
-}) :
-jQuery.each(ipts, function(){
-// Se não esta "checado" então marcamos todos elementos como checked=false
-this.checked = false;
-});
-}
-[/javascript]</p>
+<p>// Testamos o CheckBox para ver se devemos marcar ou desmarcar check.checked ? jQuery.each(ipts, function(){ // Se esta &#8220;checado&#8221; então marcamos todos elementos como checked=true this.checked = true; }) : jQuery.each(ipts, function(){ // Se não esta &#8220;checado&#8221; então marcamos todos elementos como checked=false this.checked = false; }); } <span>/javascript</span></p>
 
 <p>Simples e rápido.</p>
 
-<p>Testei com mais de 50 elementos e a rotina não ultrapassou 2 milisegundos.</p>
-]]></content>
+<p>Testei com mais de 50 elementos e a rotina não ultrapassou 2 milisegundos.</p>]]></content>
   </entry>
   
 </feed>

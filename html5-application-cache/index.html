@@ -9,9 +9,7 @@
   <meta name="author" content="Jaydson Gomes">
 
   
-  <meta name="description" content="Tudo em torno do HTML5 é muito promissor e excitante.
-Umas das coisas que acho mais legal é a possibilidade &#8220;Offline&#8221;.
-Estranho pensar &hellip;">
+  <meta name="description" content="Tudo em torno do HTML5 é muito promissor e excitante.Umas das coisas que acho mais legal é a possibilidade &#8220;Offline&#8221;.Estranho pensar &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +18,7 @@ Estranho pensar &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://jaydson.github.com/html5-application-cache/">
+  <link rel="canonical" href="http://jaydson.org/html5-application-cache/">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -33,6 +31,18 @@ Estranho pensar &hellip;">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 
   
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1264252-8']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
 
 </head>
 
@@ -52,7 +62,7 @@ Estranho pensar &hellip;">
   
 <form action="http://google.com/search" method="get">
   <fieldset role="search">
-    <input type="hidden" name="q" value="site:jaydson.github.com" />
+    <input type="hidden" name="q" value="site:jaydson.org" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
@@ -95,92 +105,56 @@ Estranho pensar &hellip;">
   </header>
 
 
-<div class="entry-content"><p>Tudo em torno do <a href="http://www.w3.org/TR/html5/">HTML5</a> é muito promissor e excitante.<br/>
-Umas das coisas que acho mais legal é a possibilidade &#8220;Offline&#8221;.<br/>
-Estranho pensar nisso logo em 2011, com a evolução que temos, com cada vez mais serviços na Internet, Cloud, etc.,não é?<br/>
-A resposta é NÃO.<br/>
-<a href="http://www.w3.org/TR/offline-webapps/">HTML5 Offline</a> é muito mais do que apenas trabalhar Offline, são várias possibilidades que antes só eram possíveis com workarounds, ou impossíveis.<br/>
-Hoje vou falar sobre uma dessas possibilidades: o <a href="http://www.html5rocks.com/en/tutorials/appcache/beginner/">AppCache</a>.</p>
+<div class="entry-content"><p>Tudo em torno do <a href='http://www.w3.org/TR/html5/'>HTML5</a> é muito promissor e excitante.<br />Umas das coisas que acho mais legal é a possibilidade &#8220;Offline&#8221;.<br />Estranho pensar nisso logo em 2011, com a evolução que temos, com cada vez mais serviços na Internet, Cloud, etc.,não é?<br />A resposta é NÃO.<br /><a href='http://www.w3.org/TR/offline-webapps/'>HTML5 Offline</a> é muito mais do que apenas trabalhar Offline, são várias possibilidades que antes só eram possíveis com workarounds, ou impossíveis.<br />Hoje vou falar sobre uma dessas possibilidades: o <a href='http://www.html5rocks.com/en/tutorials/appcache/beginner/'>AppCache</a>.</p>
 
-<p>Ao meu ver o AppCache não tem tido tanta atenção quanto outras features do HTML5, mas com certeza tem um grande potencial.<br/>
-O primeiro ponto que deve ser esclarecido é que o AppCache não serve apenas para rodar uma aplicação Offline.<br/>
-AppCache pode ser utilizado para uma das questões mais importantes no desenvolvimento Web: Performance.<br/>
-Sim, utilizando o AppCache é possível reduzir drasticamente o número de requisições de uma aplicação.<br/>
-Querem saber o mais legal?<br/>
-A grande maioria dos Browsers já suporta o AppCache.<br/>
-<a href="http://caniuse.com/#search=appcache">Caniuse AppCache</a><br/>
-Ou seja, já é possível, desenvolver aplicações web utilizando esta feature.<br/>
-E notem que os principais browsers mobile também estão na lista.<br/>
-Sobre o IE, bom&#8230; somente na versão 10. Mas nem perderei tempo falando sobre isso.</p>
+<p>Ao meu ver o AppCache não tem tido tanta atenção quanto outras features do HTML5, mas com certeza tem um grande potencial.<br />O primeiro ponto que deve ser esclarecido é que o AppCache não serve apenas para rodar uma aplicação Offline.<br />AppCache pode ser utilizado para uma das questões mais importantes no desenvolvimento Web: Performance.<br />Sim, utilizando o AppCache é possível reduzir drasticamente o número de requisições de uma aplicação.<br />Querem saber o mais legal?<br />A grande maioria dos Browsers já suporta o AppCache.<br /><a href='http://caniuse.com/#search=appcache'>Caniuse AppCache</a><br />Ou seja, já é possível, desenvolver aplicações web utilizando esta feature.<br />E notem que os principais browsers mobile também estão na lista.<br />Sobre o IE, bom&#8230; somente na versão 10. Mas nem perderei tempo falando sobre isso.</p>
 
-<h2>Como fazer?</h2>
+<h2 id='como_fazer'>Como fazer?</h2>
 
 <ul>
-<li><p>Um arquivo manifest<br/>
-Precisamos entregar um arquivo com o MIME type text/cache-manifest.<br/>
-Por convenção, a extenção do arquivo é .appcache.<br/>
-O manifest tem 3 seções opcionais:<br/>
-CACHE - Todos os arquivos que devem ser armazenados no cache<br/>
-NETWORK - Todas URLs que precisam ser acessadas pela Internet<br/>
-FALLBACK - Lista de URLs que devem ser usadas caso a Internet esteja indisponível</p></li>
-<li><p>Um atributo na tag HTML<br/>
-Na tag html basta indicar onde esta o seu manifest:
-  <html manifest="manifest.appcache"></p></li>
-<li><p>Um pouco de JavaScript<br/>
-Temos um objeto para tratar o cache, ele é o <em><strong>window.applicationCache</strong></em><br/>
-Com este objeto é possível monitorar o estado do cache.<br/>
-Eventos: cached,checking,downloading,error,noupdate,obsolete,progress,updateready</p></li>
+<li>
+<p>Um arquivo manifest<br />Precisamos entregar um arquivo com o MIME type text/cache-manifest.<br />Por convenção, a extenção do arquivo é .appcache.<br />O manifest tem 3 seções opcionais:<br />CACHE - Todos os arquivos que devem ser armazenados no cache<br />NETWORK - Todas URLs que precisam ser acessadas pela Internet<br />FALLBACK - Lista de URLs que devem ser usadas caso a Internet esteja indisponível</p>
+</li>
+
+<li>
+<p>Um atributo na tag HTML<br />Na tag html basta indicar onde esta o seu manifest: <pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
+&lt;html manifest=&quot;manifest.appcache&quot;&gt;  </pre></p>
+</li>
+
+<li>
+<p>Um pouco de JavaScript<br />Temos um objeto para tratar o cache, ele é o <em><strong>window.applicationCache</strong></em><br />Com este objeto é possível monitorar o estado do cache.<br />Eventos: cached,checking,downloading,error,noupdate,obsolete,progress,updateready</p>
+</li>
 </ul>
 
+<h2 id='alguns_detalhes_interessante_sobre_o_appcache'><strong>Alguns detalhes interessante sobre o AppCache:</strong></h2>
 
-<h2><strong>Alguns detalhes interessante sobre o AppCache:</strong></h2>
+<p>Os arquivos listados no manifest não estão sobre a regra de same origin policy, ou  seja, podemos listar URLs Crossdomain.<br />Mas&#8230; isso não vale para SSL, ou seja, se estiver utilizando HTTPS, os arquivos listados no manifest devem obedecer a regra <a href='https://developer.mozilla.org/en/Same_origin_policy_for_JavaScript'>same origin policy</a>.<br />Mas&#8230; O Google Chrome ignora esta especificação, ou seja, independente de estar utilizando SSL ou não, é possível adicionar URLs Cross-Domain.</p>
 
-<p>Os arquivos listados no manifest não estão sobre a regra de same origin policy, ou  seja, podemos listar URLs Crossdomain.<br/>
-Mas&#8230; isso não vale para SSL, ou seja, se estiver utilizando HTTPS, os arquivos listados no manifest devem obedecer a regra <a href="https://developer.mozilla.org/en/Same_origin_policy_for_JavaScript">same origin policy</a>.<br/>
-Mas&#8230; O Google Chrome ignora esta especificação, ou seja, independente de estar utilizando SSL ou não, é possível adicionar URLs Cross-Domain.</p>
-
-<p>O Browser só irá atualizar o cache caso o manifest tenha sido modificado.<br/>
-Por convenção, utiliza-se um comentário com a versão no manifest.<br/>
-Detalhe importante:<br/>
-Após a detecção de que o cache deve ser atualizado, o browser precisa buscar os novos arquivos.<br/>
-Ou seja, o usuário precisa atualizar a página 2 vezes.<br/>
-Para isso, se utiliza uma técnica JavaScript que detecta se existe uma nova versão, e então decide se quer baixar esta nova versão.</p>
+<p>O Browser só irá atualizar o cache caso o manifest tenha sido modificado.<br />Por convenção, utiliza-se um comentário com a versão no manifest.<br />Detalhe importante:<br />Após a detecção de que o cache deve ser atualizado, o browser precisa buscar os novos arquivos.<br />Ou seja, o usuário precisa atualizar a página 2 vezes.<br />Para isso, se utiliza uma técnica JavaScript que detecta se existe uma nova versão, e então decide se quer baixar esta nova versão.</p>
 
 <pre><code>// Check if a new cache is available on page load.
-window.addEventListener('load', function(e) {
-    window.applicationCache.addEventListener('updateready', function(e) {
+window.addEventListener(&#39;load&#39;, function(e) {
+    window.applicationCache.addEventListener(&#39;updateready&#39;, function(e) {
       if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
         // Browser downloaded a new app cache.
         // Swap it in and reload the page to get the new hotness.
         window.applicationCache.swapCache();
-        if (confirm('A new version of this site is available. Load it?')) {
+        if (confirm(&#39;A new version of this site is available. Load it?&#39;)) {
           window.location.reload();
         }
       } else {
-        // Manifest didn't changed. Nothing new to server.
+        // Manifest didn&#39;t changed. Nothing new to server.
       }
     }, false);
-}, false);
-</code></pre>
+}, false);</code></pre>
 
-<p>A página onde esta definido que a aplicação utilizará o manifest, mesmo não estando listada no manifest, <strong>será</strong> armazenada no cache.<br/>
-Isso pode gerar alguns problemas, dependendo do tipo de cache sua aplicação precisa. Para isso, existe na especificação uma regra que diz que arquivos com a diretiva <a href="http://httpd.apache.org/docs/2.2/mod/mod_cache.html">&#8220;no-store&#8221;</a> definida no HEADER http sobrescreverá o cache local.<br/>
-(Obrigado ao <a href="http://twitter.com/#!/miketaylr">@miketaylr</a> que me passou essa especificação).</p>
+<p>A página onde esta definido que a aplicação utilizará o manifest, mesmo não estando listada no manifest, <strong>será</strong> armazenada no cache.<br />Isso pode gerar alguns problemas, dependendo do tipo de cache sua aplicação precisa. Para isso, existe na especificação uma regra que diz que arquivos com a diretiva <a href='http://httpd.apache.org/docs/2.2/mod/mod_cache.html'>&#8220;no-store&#8221;</a> definida no HEADER http sobrescreverá o cache local.<br />(Obrigado ao <a href='http://twitter.com/#!/miketaylr'>@miketaylr</a> que me passou essa especificação).</p>
 
-<p>Bom pessoal, por hoje é isso.<br/>
-Espero ter passado de forma clara o que é, e para que serve o AppCache.</p>
+<p>Bom pessoal, por hoje é isso.<br />Espero ter passado de forma clara o que é, e para que serve o AppCache.</p>
 
-<h2>Referências deste artigo:</h2>
+<h2 id='referncias_deste_artigo'>Referências deste artigo:</h2>
 
-<p><a href="http://www.html5rocks.com/en/features/offline">http://www.html5rocks.com/en/features/offline</a><br/>
-<a href="http://www.html5rocks.com/en/tutorials/offline/whats-offline/">http://www.html5rocks.com/en/tutorials/offline/whats-offline/
-</a><a href="http://www.html5rocks.com/en/tutorials/appcache/beginner/">http://www.html5rocks.com/en/tutorials/appcache/beginner/</a><br/>
-<a href="http://appcachefacts.info/">http://appcachefacts.info/</a><br/>
-<a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/offline.html">http://www.whatwg.org/specs/web-apps/current-work/multipage/offline.html</a><br/>
-<a href="http://www.webdirections.org/blog/get-offline/">http://www.webdirections.org/blog/get-offline/</a><br/>
-<a href="https://developer.mozilla.org/en/Offline_resources_in_Firefox">https://developer.mozilla.org/en/Offline_resources_in_Firefox</a><br/>
-<a href="http://www.w3.org/TR/offline-webapps/">http://www.w3.org/TR/offline-webapps/</a></p>
-</div>
+<p><a href='http://www.html5rocks.com/en/features/offline'>http://www.html5rocks.com/en/features/offline</a><br /><a href='http://www.html5rocks.com/en/tutorials/offline/whats-offline/'>http://www.html5rocks.com/en/tutorials/offline/whats-offline/</a><a href='http://www.html5rocks.com/en/tutorials/appcache/beginner/'>http://www.html5rocks.com/en/tutorials/appcache/beginner/</a><br /><a href='http://appcachefacts.info/'>http://appcachefacts.info/</a><br /><a href='http://www.whatwg.org/specs/web-apps/current-work/multipage/offline.html'>http://www.whatwg.org/specs/web-apps/current-work/multipage/offline.html</a><br /><a href='http://www.webdirections.org/blog/get-offline/'>http://www.webdirections.org/blog/get-offline/</a><br /><a href='https://developer.mozilla.org/en/Offline_resources_in_Firefox'>https://developer.mozilla.org/en/Offline_resources_in_Firefox</a><br /><a href='http://www.w3.org/TR/offline-webapps/'>http://www.w3.org/TR/offline-webapps/</a></p></div>
 
 
   <footer>
@@ -216,7 +190,7 @@ Espero ter passado de forma clara o que é, e para que serve o AppCache.</p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.github.com/html5-application-cache/" data-via="" data-counturl="http://jaydson.github.com/html5-application-cache/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.org/html5-application-cache/" data-via="" data-counturl="http://jaydson.org/html5-application-cache/" >Tweet</a>
   
   
   
@@ -251,6 +225,10 @@ Espero ter passado de forma clara o que é, e para que serve o AppCache.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/migrando-para-octopress/">Migrando para o Octopress</a>
+      </li>
+    
+      <li class="post">
         <a href="/analytics-do-blog-em-2012/">Analytics do Blog em 2012</a>
       </li>
     
@@ -264,10 +242,6 @@ Espero ter passado de forma clara o que é, e para que serve o AppCache.</p>
     
       <li class="post">
         <a href="/w3c-webbr-2102/">W3C webbr 2102</a>
-      </li>
-    
-      <li class="post">
-        <a href="/javascript-o-guia-definitivo/">JavaScript: O Guia definitivo</a>
       </li>
     
   </ul>
@@ -327,8 +301,8 @@ Espero ter passado de forma clara o que é, e para que serve o AppCache.</p>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://jaydson.github.com/html5-application-cache/';
-        var disqus_url = 'http://jaydson.github.com/html5-application-cache/';
+        var disqus_identifier = 'http://jaydson.org/html5-application-cache/';
+        var disqus_url = 'http://jaydson.org/html5-application-cache/';
         var disqus_script = 'embed.js';
       
     (function () {

@@ -9,10 +9,7 @@
   <meta name="author" content="Jaydson Gomes">
 
   
-  <meta name="description" content="Situação um pouco estranha não?
-Mas é isso mesmo.
-Nunca tinha me deparado com tal &#8220;problema&#8221;:
-Como saber que o evento Click foi disparado &hellip;">
+  <meta name="description" content="Situação um pouco estranha não?Mas é isso mesmo.Nunca tinha me deparado com tal &#8220;problema&#8221;:Como saber que o evento Click foi disparado &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,7 +18,7 @@ Como saber que o evento Click foi disparado &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://jaydson.github.com/como-detectar-o-evento-click-em-um-iframe-crossdomain/">
+  <link rel="canonical" href="http://jaydson.org/como-detectar-o-evento-click-em-um-iframe-crossdomain/">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -34,6 +31,18 @@ Como saber que o evento Click foi disparado &hellip;">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 
   
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1264252-8']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
 
 </head>
 
@@ -53,7 +62,7 @@ Como saber que o evento Click foi disparado &hellip;">
   
 <form action="http://google.com/search" method="get">
   <fieldset role="search">
-    <input type="hidden" name="q" value="site:jaydson.github.com" />
+    <input type="hidden" name="q" value="site:jaydson.org" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
@@ -96,56 +105,43 @@ Como saber que o evento Click foi disparado &hellip;">
   </header>
 
 
-<div class="entry-content"><p>Situação um pouco estranha não?<br/>
-Mas é isso mesmo.<br/>
-Nunca tinha me deparado com tal &#8220;problema&#8221;:<br/>
-Como saber que o evento Click foi disparado dentro de um iframe <em>crossdomain</em>?<br/>
-Bom, não existe uma maneira natural de fazer isso.<br/>
-O que acontece é que o evento click até acontece no iframe, mas somente no elemento em si.<br/>
-Isso quer dizer que, quando o click acontece em um elemento que esta no documento do escopo do iframe, somente este iframe sabe disso.<br/>
-Como fazer então?<br/>
-Eu não tinha ideia, e aqui vale muito lembrar uma frase que ouvi em um evento certa vez:<br/>
-<strong>&#8220;Nunca acredite em especialistas!&#8221;</strong></p>
+<div class="entry-content"><p>Situação um pouco estranha não?<br />Mas é isso mesmo.<br />Nunca tinha me deparado com tal &#8220;problema&#8221;:<br />Como saber que o evento Click foi disparado dentro de um iframe <em>crossdomain</em>?<br />Bom, não existe uma maneira natural de fazer isso.<br />O que acontece é que o evento click até acontece no iframe, mas somente no elemento em si.<br />Isso quer dizer que, quando o click acontece em um elemento que esta no documento do escopo do iframe, somente este iframe sabe disso.<br />Como fazer então?<br />Eu não tinha ideia, e aqui vale muito lembrar uma frase que ouvi em um evento certa vez:<br /><strong>&#8220;Nunca acredite em especialistas!&#8221;</strong></p>
 
-<p><strong><strong>No caso, o especialista sou eu, que não tinha até então uma maneira simples de resolver o problema.<br/>
-Um amigo/colega aqui do Terra(André Marquardt), que possui </strong>TB&#8217;s</strong> de experiência, mas não em JavaScript, me sugeriu algo.<br/>
-Depois de matutar sobre a ideia, cheguei a conclusão de que <em>&#8220;PQP! Talvez funcione!&#8221;</em>.</p>
+<p>*<strong><em>No caso, o especialista sou eu, que não tinha até então uma maneira simples de resolver o problema.<br />Um amigo/colega aqui do Terra(André Marquardt), que possui <strong>TB&#8217;s</strong> de experiência, mas não em JavaScript, me sugeriu algo.<br />Depois de matutar sobre a ideia, cheguei a conclusão de que <em>&#8220;PQP! Talvez funcione!&#8221;</em>.</em></strong></p>
 
-<p>A solução é bem simples:<br/>
-1. Crie um placeholder em volta do iframe(iframe dentro de um DIV, por exemplo)<br/>
-2. Adicione ao evento de mouseover deste elemento uma função que altere o valor de uma variável, informando que o mouse está ali<br/>
-3. Adicione ao evento de mouseout deste elemento uma função que altere o valor da mesma variável, informando que o mouse saiu dali<br/>
-4. Adicione ao evento blur do &#8220;body&#8221; uma função que verifica o valor da variável, e assuma que isso foi o click no iframe ;)</p>
+<p>A solução é bem simples:</p>
 
-<p>Porquê isso funciona?<br/>
-Quando clicamos em um iframe, estamos selecionando o elemento  &#8220;iframe&#8221; e neste caso, o evento &#8220;blur&#8221; do body vai ser disparado.<br/>
-<a href="http://jaydson.org/wp-content/uploads/6a0120a6abf659970b0162fde3889c970d-800wi.jpg"><img src="http://jaydson.org/wp-content/uploads/6a0120a6abf659970b0162fde3889c970d-800wi.jpg" alt="Mission" /></a><br/>
-Obviamente, esta solução possui algumas limitações:<br/>
-1. Somente 1 &#8220;click&#8221; será disparado no iframe. Isso porque quando estamos dentro do iframe, não temos mais o blur do body.<br/>
-PS: Tentei usar o focus() em algum elemento da página pai, mas sem sucesso.<br/>
-2. Qualquer pixel do iframe que for clicado, o blur do body será disparado, ou seja, talvez o click não seja exatamente onde queremos medir.</p>
+<ol>
+<li>Crie um placeholder em volta do iframe(iframe dentro de um DIV, por exemplo)</li>
+
+<li>Adicione ao evento de mouseover deste elemento uma função que altere o valor de uma variável, informando que o mouse está ali</li>
+
+<li>Adicione ao evento de mouseout deste elemento uma função que altere o valor da mesma variável, informando que o mouse saiu dali</li>
+
+<li>Adicione ao evento blur do &#8220;body&#8221; uma função que verifica o valor da variável, e assuma que isso foi o click no iframe ;)</li>
+</ol>
+
+<p>Porquê isso funciona?<br />Quando clicamos em um iframe, estamos selecionando o elemento &#8220;iframe&#8221; e neste caso, o evento &#8220;blur&#8221; do body vai ser disparado.<br /><a href='http://jaydson.org/wp-content/uploads/6a0120a6abf659970b0162fde3889c970d-800wi.jpg'><img alt='Mission' src='http://jaydson.org/wp-content/uploads/6a0120a6abf659970b0162fde3889c970d-800wi.jpg' /></a><br />Obviamente, esta solução possui algumas limitações:<br />1. Somente 1 &#8220;click&#8221; será disparado no iframe. Isso porque quando estamos dentro do iframe, não temos mais o blur do body.<br />PS: Tentei usar o focus() em algum elemento da página pai, mas sem sucesso.<br />2. Qualquer pixel do iframe que for clicado, o blur do body será disparado, ou seja, talvez o click não seja exatamente onde queremos medir.</p>
 
 <p>Abaixo um código sample da solução:</p>
 
 <pre><code>var myConfObj = {
-    iframeMouseOver : false
+	iframeMouseOver : false
 }
-window.addEventListener('blur',function(){
-    if(myConfObj.iframeMouseOver){
-        console.log('Wow! Iframe Click!');
-    }
+window.addEventListener(&#39;blur&#39;,function(){
+	if(myConfObj.iframeMouseOver){
+		console.log(&#39;Wow! Iframe Click!&#39;);
+	}
 });
 
-document.getElementById('YOUR_CONTAINER_ID').addEventListener('mouseover',function(){
-    myConfObj.iframeMouseOver = true;
+document.getElementById(&#39;YOUR_CONTAINER_ID&#39;).addEventListener(&#39;mouseover&#39;,function(){
+	myConfObj.iframeMouseOver = true;
 });
-document.getElementById('YOUR_CONTAINER_ID').addEventListener('mouseout',function(){
-    myConfObj.iframeMouseOver = false;
-});
-</code></pre>
+document.getElementById(&#39;YOUR_CONTAINER_ID&#39;).addEventListener(&#39;mouseout&#39;,function(){
+	myConfObj.iframeMouseOver = false;
+});</code></pre>
 
-<p>Gist: <a href="https://gist.github.com/1780598">https://gist.github.com/1780598</a></p>
-</div>
+<p>Gist: <a href='https://gist.github.com/1780598'>https://gist.github.com/1780598</a></p></div>
 
 
   <footer>
@@ -181,7 +177,7 @@ document.getElementById('YOUR_CONTAINER_ID').addEventListener('mouseout',functio
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.github.com/como-detectar-o-evento-click-em-um-iframe-crossdomain/" data-via="" data-counturl="http://jaydson.github.com/como-detectar-o-evento-click-em-um-iframe-crossdomain/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.org/como-detectar-o-evento-click-em-um-iframe-crossdomain/" data-via="" data-counturl="http://jaydson.org/como-detectar-o-evento-click-em-um-iframe-crossdomain/" >Tweet</a>
   
   
   
@@ -216,6 +212,10 @@ document.getElementById('YOUR_CONTAINER_ID').addEventListener('mouseout',functio
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/migrando-para-octopress/">Migrando para o Octopress</a>
+      </li>
+    
+      <li class="post">
         <a href="/analytics-do-blog-em-2012/">Analytics do Blog em 2012</a>
       </li>
     
@@ -229,10 +229,6 @@ document.getElementById('YOUR_CONTAINER_ID').addEventListener('mouseout',functio
     
       <li class="post">
         <a href="/w3c-webbr-2102/">W3C webbr 2102</a>
-      </li>
-    
-      <li class="post">
-        <a href="/javascript-o-guia-definitivo/">JavaScript: O Guia definitivo</a>
       </li>
     
   </ul>
@@ -292,8 +288,8 @@ document.getElementById('YOUR_CONTAINER_ID').addEventListener('mouseout',functio
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://jaydson.github.com/como-detectar-o-evento-click-em-um-iframe-crossdomain/';
-        var disqus_url = 'http://jaydson.github.com/como-detectar-o-evento-click-em-um-iframe-crossdomain/';
+        var disqus_identifier = 'http://jaydson.org/como-detectar-o-evento-click-em-um-iframe-crossdomain/';
+        var disqus_url = 'http://jaydson.org/como-detectar-o-evento-click-em-um-iframe-crossdomain/';
         var disqus_script = 'embed.js';
       
     (function () {
