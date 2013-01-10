@@ -21,14 +21,14 @@
   <link rel="canonical" href="http://jaydson.org/wml-language/">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+  <link href="/stylesheets/blog-header-experiments.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <link href="/atom.xml" rel="alternate" title="Jaydson Gomes" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="" rel="stylesheet" type="text/css">
 
   
   <script type="text/javascript">
@@ -47,7 +47,7 @@
 </head>
 
 <body   >
-  <header role="banner"><hgroup>
+  <header role="banner"><hgroup id="header-stage">
   <h1><a href="/">Jaydson Gomes</a></h1>
   
     <h2>HTML5 | JavaScript</h2>
@@ -105,13 +105,13 @@
   </header>
 
 
-<div class="entry-content"><p>Today I will talk a little about WML, the language that <a href='http://thewebmind.org'>TheWebMind</a> interprets.</p>
+<div class="entry-content"><p>Today I will talk a little about WML, the language that <a href="http://thewebmind.org">TheWebMind</a> interprets.</p>
 
-<p>A Web-Mind-Language (WML) is a language based on the concept NLP (<a href='http://en.wikipedia.org/wiki/Natural_language_processing'>Natural Language Processing</a>), which is a field of computer science that is concerned with the interaction between computer languages and human (natural).</p>
+<p>A Web-Mind-Language (WML) is a language based on the concept NLP (<a href="http://en.wikipedia.org/wiki/Natural_language_processing">Natural Language Processing</a>), which is a field of computer science that is concerned with the interaction between computer languages and human (natural).</p>
 
 <p>The language is very similar to the natural (Portuguese, English, Spanish, etc..), Just by following some rules of syntax.</p>
 
-<p>This pattern, called <a href='http://docs.thewebmind.org/index.php?title=Web-Mind-Language'>Discrete Programming Language.</a></p>
+<p>This pattern, called <a href="http://docs.thewebmind.org/index.php?title=Web-Mind-Language">Discrete Programming Language.</a></p>
 
 <p>In a discrete programming language, the instructions are quite variable and may even change during its use, or on behalf of User&#8217;s own customs and language, dialect, beliefs, etc..</p>
 
@@ -123,17 +123,27 @@
 
 <p>Programming in WML is extremely simple, observe the following example:</p>
 
-<pre><code>Soon...</code></pre>
+<pre><code>Soon...
+</code></pre>
 
-<p>Hoje vou falar um pouco sobre a <a href='http://docs.thewebmind.org/index.php?title=Web-Mind-Language'>WML</a>, a linguagem que o <a href='http://thewebmind.org'>TheWebMind</a> interpreta. A Web-Mind-Language(WML) é uma linguagem baseada no conceito NLP(<a href='http://en.wikipedia.org/wiki/Natural_language_processing'>Natural Language Processing</a>), que é um campo da ciência da computação que se preocupa com a interação entre linguagens de computadores e humanas(naturais).</p>
+<p>Hoje vou falar um pouco sobre a <a href="http://docs.thewebmind.org/index.php?title=Web-Mind-Language">WML</a>, a linguagem que o <a href="http://thewebmind.org">TheWebMind</a> interpreta.
+A Web-Mind-Language(WML) é uma linguagem baseada no conceito NLP(<a href="http://en.wikipedia.org/wiki/Natural_language_processing">Natural Language Processing</a>), que é um campo da ciência da computação que se preocupa com a interação entre linguagens de computadores e humanas(naturais).</p>
 
-<p>A linguagem se assemelha muito com a natural (português, inglês, espanhol, etc.), apenas seguindo algumas regras de sintaxe. Este padrão, chamamos de <a href='http://docs.thewebmind.org/index.php?title=Linguagem_de_Programa%C3%A7%C3%A3o_Discreta'>Linguagem de Programação Discreta</a>. Em uma linguagem de programação discreta, as instruções são totalmente variáveis podendo inclusive sofrer alterações durante seu uso, ou por conta de costumes do próprio usuário, bem como idioma, dialeto, crenças, etc.</p>
+<p>A linguagem se assemelha muito com a natural (português, inglês, espanhol, etc.), apenas seguindo algumas regras de sintaxe.
+Este padrão, chamamos de <a href="http://docs.thewebmind.org/index.php?title=Linguagem_de_Programa%C3%A7%C3%A3o_Discreta">Linguagem de Programação Discreta</a>.
+Em uma linguagem de programação discreta, as instruções são totalmente variáveis podendo inclusive sofrer alterações durante seu uso, ou por conta de costumes do próprio usuário, bem como idioma, dialeto, crenças, etc.</p>
+
 <!-- more -->
-<p>Um dos princípios mais básicos das linguagens de programação é que &#8220;tudo aquilo que não está certo, está errado&#8221;. Já no conceito de programação discreta, nem tudo que não é reconhecido pela linguagem, está necessariamente incorreto. Esta margem de erro possibilita tanto ao desenvolvedor, adaptar-se melhor à linguagem, quanto à própria linguagem de se adaptar e evoluir.</p>
+
+
+<p>Um dos princípios mais básicos das linguagens de programação é que &#8220;tudo aquilo que não está certo, está errado&#8221;.
+Já no conceito de programação discreta, nem tudo que não é reconhecido pela linguagem, está necessariamente incorreto.
+Esta margem de erro possibilita tanto ao desenvolvedor, adaptar-se melhor à linguagem, quanto à própria linguagem de se adaptar e evoluir.</p>
 
 <p>Programar em WML é extremamente simples, observem o exemplo abaixo:</p>
 
-<p><span>html</span> Bom, nós sabemos que cada professor pode ter um ou mais aluno</p>
+<p>[html]
+Bom, nós sabemos que cada professor pode ter um ou mais aluno</p>
 
 <p>também sabemos que todo aluno possui muitos professor</p>
 
@@ -141,35 +151,71 @@
 
 <p>e que o professor possui um nome:string(100)</p>
 
-<p><span>/html</span></p>
+<p>[/html]</p>
 
-<p>De primeira olhando o código temos a impressão de que algo esta estranho, não? Pois é asim mesmo que tudo funciona. O príncipio é escrever o código de maneira natural, como se estivéssemos documentando o projeto, ou apenas escrevendo sobre ele. Feito isso, a engine do Mind irá aplicar uma série de regras em cima do código, e interpretará o conhecimento que lhe foi passado.</p>
+<p>De primeira olhando o código temos a impressão de que algo esta estranho, não?
+Pois é asim mesmo que tudo funciona.
+O príncipio é escrever o código de maneira natural, como se estivéssemos documentando o projeto, ou apenas escrevendo sobre ele.
+Feito isso, a engine do Mind irá aplicar uma série de regras em cima do código, e interpretará o conhecimento que lhe foi passado.</p>
 
-<p>Com o código acima, o Mind consegue gerar diversas saídas como Diagrama de Entidade e Relacionamento, Dicionário de Dados, Código SQL, e até mesmo gerar código usando um módulo específico. Abaixo algumas das saídas:</p>
+<p>Com o código acima, o Mind consegue gerar diversas saídas como Diagrama de Entidade e Relacionamento, Dicionário de Dados, Código SQL, e até mesmo gerar código usando um módulo específico.
+Abaixo algumas das saídas:</p>
 
 <p><strong>Código SQL gerado pelo código feito acima:</strong></p>
 
-<p><span>sql</span> /<em>###################################################### #   Generated by Mind 02:58 11/19/2009               # #   Generate PostgreSQL DataBase Commands         # ######################################################</em>/</p>
+<p>[sql]
+/<em>######################################################
+ #   Generated by Mind 02:58 11/19/2009               #
+ #   Generate PostgreSQL DataBase Commands         #
+ ######################################################</em>/</p>
 
-<p>/* DDL: table professor <em>/ CREATE SEQUENCE professor_seq; CREATE TABLE professor ( pk_professor integer default nextval(&#8216;professor_seq&#8217;) unique not null, nome varchar(100), PRIMARY KEY(pk_professor) );</em></p>
+<p> /<em> DDL: table professor </em>/
+CREATE SEQUENCE professor_seq;
+CREATE TABLE professor
+(
+ pk_professor integer default nextval(&#8216;professor_seq&#8217;) unique not null,
+ nome varchar(100),
+ PRIMARY KEY(pk_professor)
+);</p>
 
-<p>/* DDL: table aluno <em>/ CREATE SEQUENCE aluno_seq; CREATE TABLE aluno ( pk_aluno integer default nextval(&#8216;aluno_seq&#8217;) unique not null, nome varchar(100), PRIMARY KEY(pk_aluno) );</em></p>
+<p> /<em> DDL: table aluno </em>/
+CREATE SEQUENCE aluno_seq;
+CREATE TABLE aluno
+(
+ pk_aluno integer default nextval(&#8216;aluno_seq&#8217;) unique not null,
+ nome varchar(100),
+ PRIMARY KEY(pk_aluno)
+);</p>
 
-<p>/* DDL: table professor_aluno <em>/ CREATE SEQUENCE professor_aluno_seq; CREATE TABLE professor_aluno ( pk_professor_aluno integer default nextval(&#8216;professor_aluno_seq&#8217;) unique not null, fk_professor integer  , fk_aluno integer  , PRIMARY KEY(pk_professor_aluno) );</em></p>
+<p> /<em> DDL: table professor_aluno </em>/
+CREATE SEQUENCE professor_aluno_seq;
+CREATE TABLE professor_aluno
+(
+ pk_professor_aluno integer default nextval(&#8216;professor_aluno_seq&#8217;) unique not null,
+ fk_professor integer  ,
+ fk_aluno integer  ,
+ PRIMARY KEY(pk_professor_aluno)
+);</p>
 
-<p>/* Adding Foreign Keys <em>/ ALTER TABLE professor_aluno ADD CONSTRAINT professor_aluno_professor FOREIGN KEY (fk_professor) REFERENCES professor(pk_professor) MATCH FULL; ALTER TABLE professor_aluno ADD CONSTRAINT professor_aluno_aluno FOREIGN KEY (fk_aluno) REFERENCES aluno(pk_aluno) MATCH FULL; <span>/sql</span></em></p>
+<p> /<em> Adding Foreign Keys </em>/
+ALTER TABLE professor_aluno ADD CONSTRAINT professor_aluno_professor FOREIGN KEY (fk_professor) REFERENCES professor(pk_professor) MATCH FULL;
+ALTER TABLE professor_aluno ADD CONSTRAINT professor_aluno_aluno FOREIGN KEY (fk_aluno) REFERENCES aluno(pk_aluno) MATCH FULL;
+[/sql]</p>
 
 <p><strong>Diagrama ER:</strong></p>
 
-<p><span>caption id=&#8221;attachment_501&#8221; align=&#8221;alignnone&#8221; width=&#8221;616&#8221; caption=&#8221;Digrama ER&#8221;</span><img alt='Digrama ER' src='http://jaydson-org.web102.redehost.com.br/assets/e11.png' /><span>/caption</span></p>
+<p>[caption id=&#8221;attachment_501&#8221; align=&#8221;alignnone&#8221; width=&#8221;616&#8221; caption=&#8221;Digrama ER&#8221;]<img src="http://jaydson-org.web102.redehost.com.br/assets/e11.png" alt="Digrama ER" />[/caption]</p>
 
 <p>Abaixo segue um vídeo curto que mostra como porgramar WML utilizando a IDE do Mind:</p>
 
 <p>Por hoje é isso.</p>
 
-<p>Em breve mais posts sobre esta incrível ferramenta. Por enquanto acessem o site e a documentação:</p>
+<p>Em breve mais posts sobre esta incrível ferramenta.
+Por enquanto acessem o site e a documentação:</p>
 
-<p><a href='http://docs.thewebmind.org/index.php?title=Main_Page'>Docs.TheWebMind.org</a> <a href='http://thewebmind.org'>TheWebMind.org</a></p></div>
+<p><a href="http://docs.thewebmind.org/index.php?title=Main_Page">Docs.TheWebMind.org</a>
+<a href="http://thewebmind.org">TheWebMind.org</a></p>
+</div>
 
 
   <footer>
@@ -307,6 +353,7 @@
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 <script type="text/javascript" src="/javascripts/jaydson.js"></script>
+<script type="text/javascript" src="/javascripts/blog-header-experiments.js"></script>
 
 </footer>
   

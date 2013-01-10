@@ -9,7 +9,8 @@
   <meta name="author" content="Jaydson Gomes">
 
   
-  <meta name="description" content="Today I came to talk about one of the methods that I find very interesting in Jquery, the serialize(). As its name implies, this method serializes a &hellip;">
+  <meta name="description" content="Today I came to talk about one of the methods that I find very interesting in Jquery, the serialize().
+As its name implies, this method serializes a &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,14 +22,14 @@
   <link rel="canonical" href="http://jaydson.org/serializando-um-formulario-com-jquery/">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+  <link href="/stylesheets/blog-header-experiments.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <link href="/atom.xml" rel="alternate" title="Jaydson Gomes" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="" rel="stylesheet" type="text/css">
 
   
   <script type="text/javascript">
@@ -47,7 +48,7 @@
 </head>
 
 <body   >
-  <header role="banner"><hgroup>
+  <header role="banner"><hgroup id="header-stage">
   <h1><a href="/">Jaydson Gomes</a></h1>
   
     <h2>HTML5 | JavaScript</h2>
@@ -105,7 +106,10 @@
   </header>
 
 
-<div class="entry-content"><p>Today I came to talk about one of the methods that I find very interesting in Jquery, the <a href='http://docs.jquery.com/Ajax/serialize'>serialize()</a>. As its name implies, this method serializes a set of inputs of a form on a string. This string is standardized and compatible with most server-side language. This is very useful for example when we want to send a series of data to the server with Ajax.</p>
+<div class="entry-content"><p>Today I came to talk about one of the methods that I find very interesting in Jquery, the <a href="http://docs.jquery.com/Ajax/serialize">serialize()</a>.
+As its name implies, this method serializes a set of inputs of a form on a string.
+This string is standardized and compatible with most server-side language.
+This is very useful for example when we want to send a series of data to the server with Ajax.</p>
 
 <p><strong>How?</strong></p>
 
@@ -113,99 +117,136 @@
 
 <p>Buenas pessoal!</p>
 
-<p>Hoje vim falar sobre um dos métodos que acho bem interessante no Jquery, o <a href='http://docs.jquery.com/Ajax/serialize'>serialize()</a>. Como o próprio nome já diz, esse método serializa um conjunto de inputs de um formulário em uma string. Essa string é padronizada e compatível com  a maioria das linguagens server-side. Isso é muito útil por exemplo quando queremos enviar uma série de dados para o servidor com Ajax.</p>
+<p>Hoje vim falar sobre um dos métodos que acho bem interessante no Jquery, o <a href="http://docs.jquery.com/Ajax/serialize">serialize()</a>.
+Como o próprio nome já diz, esse método serializa um conjunto de inputs de um formulário em uma string.
+Essa string é padronizada e compatível com  a maioria das linguagens server-side.
+Isso é muito útil por exemplo quando queremos enviar uma série de dados para o servidor com Ajax.</p>
 
 <p><strong>Como fazer?</strong></p>
 
 <p>Bom, começamos criando o formulário:</p>
-<!-- more -->
-<p><span>html</span> &lt;form action=&#8217;page.php&#8217; id=&#8217;my_form&#8217;&gt; &lt;input type=&#8217;text&#8217; name=&#8217;input_1&#8217;&gt; &lt;input type=&#8217;text&#8217; name=&#8217;input_2&#8217;&gt; &lt;input type=&#8217;text&#8217; name=&#8217;input_3&#8217;&gt; &lt;/form&gt; <span>/html</span></p>
 
-<p>Note that we have created a form of traditional way, but omit the method attribute in the tag <pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
-&lt;form&gt;, because this will be addressed later.</pre></p>
+<!-- more -->
+
+
+<p>[html]
+<form action='page.php' id='my_form'>
+<input type='text' name='input_1'>
+<input type='text' name='input_2'>
+<input type='text' name='input_3'>
+</form>
+[/html]</p>
+
+<p>Note that we have created a form of traditional way, but omit the method attribute in the tag <form>, because this will be addressed later.</p>
 
 <p><strong>How to Serialize?</strong></p>
 
 <p>With a line the Jquery lets you do this, let the example:</p>
 
-<p><span>javascript</span></p>
+<p>[javascript]</p>
 
 <p>var formdata = $(&#8216;#my_form&#8217;).serialize();</p>
 
-<p><span>/javascript</span></p>
+<p>[/javascript]</p>
 
 <p>Now the formdata variable is a string serialized like:</p>
 
 <p>input_1=valor1&amp;input_2=valor2&amp;input_3=valor3</p>
 
-<p>The string is in this format key/value concatenated with &#8221;&amp;&#8221;. Now that we have the string, just pass it to the server. How? Quite simply with the jQuery <a href='http://docs.jquery.com/Ajax/jQuery.ajax#options'>Ajax()</a> method:</p>
+<p>The string is in this format key/value concatenated with &#8220;&amp;&#8221;.
+Now that we have the string, just pass it to the server. How? Quite simply with the jQuery <a href="http://docs.jquery.com/Ajax/jQuery.ajax#options">Ajax()</a> method:</p>
 
-<p><span>javascript</span></p>
+<p>[javascript]</p>
 
-<p>$.ajax({ type: &#8216;POST&#8217;;, url: form.attr(&#8216;action&#8217;), data: formdata, success: function(msg){ alert(&#8216;Sucesso!&#8217;); } });</p>
+<p>$.ajax({
+type: &#8216;POST&#8217;;,
+url: form.attr(&#8216;action&#8217;),
+data: formdata,
+success: function(msg){
+alert(&#8216;Sucesso!&#8217;);
+}
+});</p>
 
-<p><span>/javascript</span></p>
+<p>[/javascript]</p>
 
-<p>Remember that we omit the method attribute of the form? We did this because we are making an Ajax request using the POST method, anyway it would be ignored in our example.</p>
+<p>Remember that we omit the method attribute of the form?
+We did this because we are making an Ajax request using the POST method, anyway it would be ignored in our example.</p>
 
-<p>Ajax: <strong>type -</strong>Specify the method how data will be sent to the server. In our example we&#8217;re using POST. <strong>url</strong>-  Specifies the page to which the data will be submitted. In our example I&#8217;m taking the action attribute of the form, which will cause the data to be submitted to the file page.php. <strong>data</strong> - The data to be submitted. The serialized string is passed here. <strong>success</strong> - Function to perform when we are successful. In the example, an alert.</p>
+<p>Ajax:
+<strong>type - </strong>Specify the method how data will be sent to the server. In our example we&#8217;re using POST.
+<strong>url </strong>-  Specifies the page to which the data will be submitted. In our example I&#8217;m taking the action attribute of the form, which will cause the data to be submitted to the file page.php.
+<strong>data</strong> - The data to be submitted. The serialized string is passed here.
+<strong>success</strong> - Function to perform when we are successful. In the example, an alert.</p>
 
 <p>Done!</p>
 
-<p>We have created a form, all inputs serialized in a string, send all data to a PHP page via Ajax. Simple.</p>
+<p>We have created a form, all inputs serialized in a string, send all data to a PHP page via Ajax.
+Simple.</p>
 
 <p>Any doubt please comment.</p>
-<pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
-&lt;input type=&quot;text&quot; name=&quot;input_1&quot;&gt;
 
+<p><input type="text" name="input_1"></p>
 
+<p>[html]
+<form action="minha_pagina.php" id="meu_formulario">
+<input type="text" name="input_1">
+<input type="text" name="input_2">
+<input type="text" name="input_3">
+</form>
+[/html]</p>
 
-[html]
-&lt;form action=&quot;minha_pagina.php&quot; id=&quot;meu_formulario&quot;&gt;
-&lt;input type=&quot;text&quot; name=&quot;input_1&quot;&gt;
-&lt;input type=&quot;text&quot; name=&quot;input_2&quot;&gt;
-&lt;input type=&quot;text&quot; name=&quot;input_3&quot;&gt;
-&lt;/form&gt;</pre>
-<p><span>/html</span></p>
-
-<p>Note que criamos um formulário de maneira tradicional, porém omitimos o atributo method na tag <pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
-&lt;form&gt;, pois esse será tratado mais adiante.</pre></p>
+<p>Note que criamos um formulário de maneira tradicional, porém omitimos o atributo method na tag <form>, pois esse será tratado mais adiante.</p>
 
 <p><strong>Bom, e agora como Serializar?</strong></p>
 
 <p>Com uma linha o Jquery permite que façamos isso, vamos ao exemplo:</p>
 
-<p><span>javascript</span></p>
+<p>[javascript]</p>
 
 <p>var formdata = $(&#8220;#meu_formulario&#8221;).serialize();</p>
 
-<p><span>/javascript</span></p>
+<p>[/javascript]</p>
 
 <p>Agora a variável formdata é uma string serializada mais ou menos como essa:</p>
 
 <p>input_1=valor1&amp;input_2=valor2&amp;input_3=valor3</p>
 
-<p>A string fica com esse formato de chave/valor concatenadas com &#8221;&amp;&#8221;. Agora que temos a string, basta passa-la para o servidor. Como fazer isso? De maneira bem simples com o método <a href='http://docs.jquery.com/Ajax/jQuery.ajax#options'>Ajax()</a> do Jquery:</p>
+<p>A string fica com esse formato de chave/valor concatenadas com &#8220;&amp;&#8221;.
+Agora que temos a string, basta passa-la para o servidor. Como fazer isso? De maneira bem simples com o método <a href="http://docs.jquery.com/Ajax/jQuery.ajax#options">Ajax()</a> do Jquery:</p>
 
-<p><span>javascript</span></p>
+<p>[javascript]</p>
 
-<p>$.ajax({ type: &#8220;POST&#8221;, url: form.attr(&#8216;action&#8217;), data: formdata, success: function(msg){ alert(&#8216;Sucesso!&#8217;); } });</p>
+<p>$.ajax({
+type: &#8220;POST&#8221;,
+url: form.attr(&#8216;action&#8217;),
+data: formdata,
+success: function(msg){
+alert(&#8216;Sucesso!&#8217;);
+}
+});</p>
 
-<p><span>/javascript</span></p>
+<p>[/javascript]</p>
 
-<p>Lembram que omitimos o atributo method do form? Fizemos isso porque estamos fazendo um requisição Ajax usando o método Post, de qualquer maneira ele seria ignorado em nosso exemplo.</p>
+<p>Lembram que omitimos o atributo method do form?
+Fizemos isso porque estamos fazendo um requisição Ajax usando o método Post, de qualquer maneira ele seria ignorado em nosso exemplo.</p>
 
-<p>Vamos ao Ajax: <strong>type -</strong>Especifica o método de como os dados serão enviados ao servidor. Em nosso exemplo estamos usando POST. <strong>url</strong>-  Especifica para qual a página os dados serão submetidos. No nosso exemplo estou pegando o atributo action do formulario, o que fará com que os dados sejam submetidos para o arquivo minha_pagina.php. <strong>data</strong> - Os dados que serão submetidos. A string serializada é passada aqui. <strong>success</strong> - Função que será executada quando obtivermos sucesso. No exemplo, um alerta.</p>
+<p>Vamos ao Ajax:
+<strong>type - </strong>Especifica o método de como os dados serão enviados ao servidor. Em nosso exemplo estamos usando POST.
+<strong>url </strong>-  Especifica para qual a página os dados serão submetidos. No nosso exemplo estou pegando o atributo action do formulario, o que fará com que os dados sejam submetidos para o arquivo minha_pagina.php.
+<strong>data</strong> - Os dados que serão submetidos. A string serializada é passada aqui.
+<strong>success</strong> - Função que será executada quando obtivermos sucesso. No exemplo, um alerta.</p>
 
 <p>Pronto!</p>
 
-<p>Criamos um formulário, serializamos todos os inputs em uma string, enviamos todos os dados para um página PHP via Ajax. Simples não?</p>
+<p>Criamos um formulário, serializamos todos os inputs em uma string, enviamos todos os dados para um página PHP via Ajax.
+Simples não?</p>
 
 <p>Por hoje é isso.</p>
 
 <p>Qualquer dúvida postem ai.</p>
-<pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
-&lt;input type=&quot;text&quot; name=&quot;input_1&quot;&gt;</pre></div>
+
+<p><input type="text" name="input_1"></p>
+</div>
 
 
   <footer>
@@ -337,6 +378,7 @@
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 <script type="text/javascript" src="/javascripts/jaydson.js"></script>
+<script type="text/javascript" src="/javascripts/blog-header-experiments.js"></script>
 
 </footer>
   

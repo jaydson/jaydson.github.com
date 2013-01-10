@@ -4,7 +4,7 @@
   <title><![CDATA[Category: JSON | Jaydson Gomes]]></title>
   <link href="http://jaydson.org/blog/categories/json/atom.xml" rel="self"/>
   <link href="http://jaydson.org/"/>
-  <updated>2013-01-09T19:46:03-02:00</updated>
+  <updated>2013-01-10T19:55:19-02:00</updated>
   <id>http://jaydson.org/</id>
   <author>
     <name><![CDATA[Jaydson Gomes]]></name>
@@ -18,37 +18,50 @@
     <link href="http://jaydson.org/javascript-levado-a-serio/"/>
     <updated>2009-10-22T20:35:57-02:00</updated>
     <id>http://jaydson.org/javascript-levado-a-serio</id>
-    <content type="html"><![CDATA[<p>Javascript is the most popular scripting language on the Internet. However, even with all this fame, JavaScript is still misunderstood.</p>
+    <content type="html"><![CDATA[<p>Javascript is the most popular scripting language on the Internet.
+However, even with all this fame, JavaScript is still misunderstood.</p>
 
-<p><a href='http://en.wikipedia.org/wiki/Douglas_Crockford'>Douglas Crockford</a>, one of the master of a language, says that this misunderstanding comes from various sources. This was one of the topics in the in the lecture that I gave in III Mostra de iniciação científica at Senac-RS College.</p>
+<p><a href="http://en.wikipedia.org/wiki/Douglas_Crockford">Douglas Crockford</a>, one of the master of a language, says that this misunderstanding comes from various sources.
+This was one of the topics in the in the lecture that I gave in III Mostra de iniciação científica at Senac-RS College.</p>
 
-<p>Javascript é a linguagem de script mais popular da internet. Porém, mesmo com toda essa fama, o Javascript ainda é incompreendido. Segundo <a href='http://en.wikipedia.org/wiki/Douglas_Crockford'>Douglas Crockford</a>, um dos mestres da linguagem, essa incompreensão tem varias origens. Este foi um dos tópicos na palestra que fiz na III Mostra de iniciação científica do Senac-RS.</p>
+<p>Javascript é a linguagem de script mais popular da internet.
+Porém, mesmo com toda essa fama, o Javascript ainda é incompreendido.
+Segundo <a href="http://en.wikipedia.org/wiki/Douglas_Crockford">Douglas Crockford</a>, um dos mestres da linguagem, essa incompreensão tem varias origens.
+Este foi um dos tópicos na palestra que fiz na III Mostra de iniciação científica do Senac-RS.</p>
+
 <!-- more -->
-<p>The lecture discusses some of the history of Javascript, explaining why the prefix &#8220;JAVA&#8221; at name of the language among other details. The lecture focuses much on professional Javascript development, like the name suggests.</p>
+
+
+<p>The lecture discusses some of the history of Javascript, explaining why the prefix "JAVA" at name of the language among other details.
+The lecture focuses much on professional Javascript development, like the name suggests.</p>
 
 <p>I hope you all enjoy. And any doubt, please comment.</p>
 
-<p><a href='http://www.slideshare.net/jaydson/javascript-levado-a-serio'>Javascript levado a serio</a></p>
+<p><a href="http://www.slideshare.net/jaydson/javascript-levado-a-serio">Javascript levado a serio</a></p>
 
-<p>View more <a href='http://www.slideshare.net/'>presentations</a> from <a href='http://www.slideshare.net/jaydson'>jaydson</a>.</p>
+<p>View more <a href="http://www.slideshare.net/">presentations</a> from <a href="http://www.slideshare.net/jaydson">jaydson</a>.</p>
 
 <p>For those who watched the lecture and for those who did not, below the link with codes used:</p>
 
-<p><a href='http://jaydson.org/code/palestras/js-levado-a-serio/source.rar'>http://jaydson.org/code/palestras/js-levado-a-serio/source.rar</a></p>
+<p><a href="http://jaydson.org/code/palestras/js-levado-a-serio/source.rar">http://jaydson.org/code/palestras/js-levado-a-serio/source.rar</a></p>
 
 <ul>
-<li>The presentation is only in portuguese yet, but i&#8217;m working in this. A palestra conta um pouco da história do Javascript, explicando o porque do prefixo JAVA no nome da linguagem entre outros detalhes. A palestra foca muito no desenvolvimento de Javascript profissional, como sugere o nome.</li>
+<li>The presentation is only in portuguese yet, but i'm working in this.
+A palestra conta um pouco da história do Javascript, explicando o porque do prefixo JAVA no nome da linguagem entre outros detalhes.
+A palestra foca muito no desenvolvimento de Javascript profissional, como sugere o nome.</li>
 </ul>
+
 
 <p>Espero que todos aproveitem. E qualquer dúvida, comentem ai.</p>
 
-<p><a href='http://www.slideshare.net/jaydson/javascript-levado-a-serio'>Javascript levado a serio</a></p>
+<p><a href="http://www.slideshare.net/jaydson/javascript-levado-a-serio">Javascript levado a serio</a></p>
 
-<p>View more <a href='http://www.slideshare.net/'>presentations</a> from <a href='http://www.slideshare.net/jaydson'>jaydson</a>.</p>
+<p>View more <a href="http://www.slideshare.net/">presentations</a> from <a href="http://www.slideshare.net/jaydson">jaydson</a>.</p>
 
 <p>Para quem assistiu a palestra e para quem não assistiu também, segue abaixo o link dos códigos utilizados:</p>
 
-<p><a href='http://jaydson.org/code/palestras/js-levado-a-serio/source.rar'>http://jaydson.org/code/palestras/js-levado-a-serio/source.rar</a></p>]]></content>
+<p><a href="http://jaydson.org/code/palestras/js-levado-a-serio/source.rar">http://jaydson.org/code/palestras/js-levado-a-serio/source.rar</a></p>
+]]></content>
   </entry>
   
   <entry>
@@ -56,57 +69,82 @@
     <link href="http://jaydson.org/json-nativo-firefox-3-5/"/>
     <updated>2009-07-12T19:04:10-03:00</updated>
     <id>http://jaydson.org/json-nativo-firefox-3-5</id>
-    <content type="html"><![CDATA[<p>Much news and useful things for us developers in Firefox 3.5. New Javascript engine, HTML 5 support among many others. <a href='https://developer.mozilla.org/En/Firefox_3.5_for_developers'>Click here</a>in case you have not seen (you should if you are developer).</p>
+    <content type="html"><![CDATA[<p>Much news and useful things for us developers in Firefox 3.5.
+New Javascript engine, HTML 5 support among many others. <a href="https://developer.mozilla.org/En/Firefox_3.5_for_developers">Click here </a>in case you have not seen (you should if you are developer).</p>
 
 <p>Although the native JSON already be since version 3.1, now it become clear.</p>
 
-<p>Well, i will not comment on what is JSON, because I have done this in another post, so if you do not know what is JSON (should if you are a developer) see my <a href='http://jaydson.org/json/'>old post</a>, or better yet, access the <a href='http://json.org/'>official page</a>.</p>
+<p>Well, i will not comment on what is JSON, because I have done this in another post, so if you do not know what is JSON (should if you are a developer) see my <a href="http://jaydson.org/json/">old post</a>, or better yet, access the <a href="http://json.org/">official page</a>.</p>
 
-<p>Muita coisa nova e útil para nós desenvolvedores no Firefox 3.5. Novo motor Javascript, suporte HTML 5 entre várias outras. <a href='https://developer.mozilla.org/En/Firefox_3.5_for_developers'>Acessem aqui</a>caso ainda não tenham visto(deveriam caso sejam desenvolvedores).</p>
+<p>Muita coisa nova e útil para nós desenvolvedores no Firefox 3.5.
+Novo motor Javascript, suporte HTML 5 entre várias outras. <a href="https://developer.mozilla.org/En/Firefox_3.5_for_developers">Acessem aqui </a>caso ainda não tenham visto(deveriam caso sejam desenvolvedores).</p>
 
 <p>Apesar de o JSON já ser nativo desde a versão 3.1, agora é que isso ficou bem evidenciado.</p>
 
-<p>Bom, não vou comentar o que é JSON, até porque já fiz isto em outro post, então caso não saiba o que é JSON(deveria se é desenvolvedor) veja o meu <a href='http://jaydson.org/json/'>post antigo</a>, ou melhor ainda, acesse a <a href='http://json.org/'>página oficial</a>.</p>
+<p>Bom, não vou comentar o que é JSON, até porque já fiz isto em outro post, então caso não saiba o que é JSON(deveria se é desenvolvedor) veja o meu <a href="http://jaydson.org/json/">post antigo</a>, ou melhor ainda, acesse a <a href="http://json.org/">página oficial</a>.</p>
+
 <!-- more -->
-<p><strong>What is native JSON in the browser?</strong> Well, it means that the developer does not need to use any extra library to parse a JSON object, and also do not need to use the native Javascript  <a href='http://www.w3schools.com/jsref/jsref_eval.asp'>eval()</a> function to do that, what is desirable for insecurity of this function.</p>
 
-<p><strong>Benefits</strong>: Several. Firstly the ability to parse a JSON without using eval (). That&#8217;s extremely useful because the eval () performs all the received string without doing any analysis, ie, if the string contains functions, these will be implemented. Therefore use native JSON is much safer, because functions are not supported. Is made an analyze in the string received and then the conversion is made only of the properties of the object. Another feature is this analysis in the string, if JSON is malformatted generate a parse error. And the benefit I like the most: <strong>Speed!</strong> Yes, JSON parse natively is very fast, even! How to prove it? Simple&#8230; Code!</p>
 
-<p>First I created a JSON file that I got the sample from the Mozilla blog where they explain about the use of the native JSON. This file is pretty large, has an array of <strong>2918 objects.</strong>I will not put the code here for obvious reasons &#8230; but follow the link for those who have curiosity to see him: <a href='http://graphs-stage.mozilla.org/api/test'>http://graphs-stage.mozilla.org/api/test</a></p>
+<p><strong>What is native JSON in the browser?</strong>
+Well, it means that the developer does not need to use any extra library to parse a JSON object, and also do not need to use the native Javascript  <a href="http://www.w3schools.com/jsref/jsref_eval.asp">eval()</a> function to do that, what is desirable for insecurity of this function.</p>
+
+<p><strong>Benefits</strong>:
+Several.
+Firstly the ability to parse a JSON without using eval (). That's extremely useful because the eval () performs all the received string without doing any analysis, ie, if the string contains functions, these will be implemented.
+Therefore use native JSON is much safer, because functions are not supported. Is made an analyze in the string received and then the conversion is made only of the properties of the object.
+Another feature is this analysis in the string, if JSON is malformatted generate a parse error.
+And the benefit I like the most: <strong>Speed!</strong>
+Yes, JSON parse natively is very fast, even!
+How to prove it?
+Simple... Code!</p>
+
+<p>First I created a JSON file that I got the sample from the Mozilla blog where they explain about the use of the native JSON.
+This file is pretty large, has an array of <strong>2918 objects.
+</strong>I will not put the code here for obvious reasons ... but follow the link for those who have curiosity to see him: <a href="http://graphs-stage.mozilla.org/api/test">http://graphs-stage.mozilla.org/api/test</a></p>
 
 <p>Now for the javascript code using jQuery to do an Ajax request and get the contents of this file.</p>
 
-<p><span>javascript</span></p>
+<p>[javascript]</p>
 
-<p>var json = $.ajax({ url: &#8220;test.json&#8221;, async: false }).responseText;</p>
+<p>var json = $.ajax({
+url: "test.json",
+async: false
+}).responseText;</p>
 
-<p><span>/javascript</span></p>
+<p>[/javascript]</p>
 
 <p>This snippet of code shows that the variable json now has the contents of the file (the one with 2918 and large objects).</p>
 
-<p>Now we have the big String let transforms it into a JSON object. First using <strong>eval()</strong>:</p>
+<p>Now we have the big String let transforms it into a JSON object.
+First using <strong>eval()</strong>:</p>
 
-<p><span>javascript</span></p>
+<p>[javascript]</p>
 
-<p>var obj = eval(&#8216;(&#8217; + json + &#8217;)&#8217;);</p>
+<p>var obj = eval('(' + json + ')');</p>
 
-<p><span>/javascript</span></p>
+<p>[/javascript]</p>
 
 <p>And now using native parser!!! O/</p>
 
-<p><span>javascript</span></p>
+<p>[javascript]</p>
 
 <p>var obj = JSON.parse(json);</p>
 
-<p><span>/javascript</span></p>
+<p>[/javascript]</p>
 
-<p>For those who have used the JS library available in <a href='http://json.org'>json.org</a> can see that the syntax is the same, the difference associated here is that we are working natively. Well, we know that native parser is more safe than eval(), but how to know about the speed? The <a href='http://getfirebug.com/'>Firebug</a> hepl us. Lets see the code, first we measure the time in miliseconds with eval():</p>
+<p>For those who have used the JS library available in <a href="http://json.org">json.org</a> can see that the syntax is the same, the difference associated here is that we are working natively.
+Well, we know that native parser is more safe than eval(), but how to know about the speed?
+The <a href="http://getfirebug.com/">Firebug</a> hepl us.
+Lets see the code, first we measure the time in miliseconds with eval():</p>
 
-<p><span>javascript</span></p>
+<p>[javascript]</p>
 
-<p>console.time(&#8220;Eval&#8221;); var obj = eval(&#8216;(&#8217; + json + &#8217;)&#8217;); console.timeEnd(&#8220;Eval&#8221;);</p>
+<p>console.time("Eval");
+var obj = eval('(' + json + ')');
+console.timeEnd("Eval");</p>
 
-<p><span>/javascript</span></p>
+<p>[/javascript]</p>
 
 <p>For those who do not know (if you are a developer should), Firebug has an API that helps developers in several ways, discussed here is the function console.time (), which can measure time in milliseconds for a given instruction.</p>
 
@@ -114,79 +152,111 @@
 
 <p>Now with native parser:</p>
 
-<p><span>javascript</span></p>
+<p>[javascript]</p>
 
-<p>console.time(&#8220;JSON.parse&#8221;); var obj = JSON.parse(json); console.timeEnd(&#8220;JSON.parse&#8221;);</p>
+<p>console.time("JSON.parse");
+var obj = JSON.parse(json);
+console.timeEnd("JSON.parse");</p>
 
-<p><span>/javascript</span></p>
+<p>[/javascript]</p>
 
 <p><strong>Result with JSON.parse:</strong> 50ms to execute the parse.</p>
 
 <p>Well, do not need comment, the results speak for themselves.</p>
 
-<p>You may be thinking now that all that is beautiful, but that only works in Firefox&#8230;   :( But as JSON is increasingly used throughout the world in various types of applications, not just Mozilla that implements this solution natively. Believe, the IE 8 too has native JSON support. See with your eyes: <a href='http://blogs.msdn.com/ie/archive/2008/09/10/native-json-in-ie8.aspx'>http://blogs.msdn.com/ie/archive/2008/09/10/native-json-in-ie8.aspx</a></p>
+<p>You may be thinking now that all that is beautiful, but that only works in Firefox...   :(
+But as JSON is increasingly used throughout the world in various types of applications, not just Mozilla that implements this solution natively.
+Believe, the IE 8 too has native JSON support. See with your eyes: <a href="http://blogs.msdn.com/ie/archive/2008/09/10/native-json-in-ie8.aspx">http://blogs.msdn.com/ie/archive/2008/09/10/native-json-in-ie8.aspx</a></p>
 
-<p>But of course we can not count on the support of all browsers, and we can use any library that plays this role. I nominate that in site json.org: <a href='http://www.json.org/json2.js'>http://www.json.org/json2.js</a></p>
+<p>But of course we can not count on the support of all browsers, and we can use any library that plays this role. I nominate that in site json.org: <a href="http://www.json.org/json2.js">http://www.json.org/json2.js</a></p>
 
 <p>In the examples above showed how to parse a string into a JSON object, but we can also do the reverse:</p>
 
-<p><span>javascript</span></p>
+<p>[javascript]</p>
 
-<p>var Person = {}; Person.name = &#8220;Jaydson&amp;quot&#8221;; Pessoa.idade = &#8220;25&#8221;;</p>
+<p>var Person = {};
+Person.name = "Jaydson&amp;quot";
+Pessoa.idade = "25";</p>
 
-<p>var jsonString = JSON.stringify(Person); console.log(jsonString);</p>
+<p>var jsonString = JSON.stringify(Person);
+console.log(jsonString);</p>
 
-<p><span>/javascript</span></p>
+<p>[/javascript]</p>
 
 <p>In the example we create a JavaScript object, and then turn it into a JSON:</p>
 
-<p><span>javascript</span></p>
+<p>[javascript]</p>
 
-<p>{&#8220;name&#8221;:&#8221;Jaydson&#8221;,&#8221;idade&#8221;:&#8221;25&#8221;}</p>
+<p>{"name":"Jaydson","idade":"25"}</p>
 
-<p><span>/javascript</span></p>
+<p>[/javascript]</p>
 
-<p>References: <a href='http://blog.mozilla.com/webdev/2009/02/12/native-json-in-firefox-31/'>http://blog.mozilla.com/webdev/2009/02/12/native-json-in-firefox-31/</a> <a href='https://developer.mozilla.org/en/Using_JSON_in_Firefox'>https://developer.mozilla.org/en/Using_JSON_in_Firefox</a> <a href='http://www.json.org/'>http://www.json.org/</a> <a href='http://blogs.msdn.com/ie/archive/2008/09/10/native-json-in-ie8.aspx'>http://blogs.msdn.com/ie/archive/2008/09/10/native-json-in-ie8.aspx</a> <a href='http://starkravingfinkle.org/blog/2008/02/extension-developers-native-json-parsing/'>http://starkravingfinkle.org/blog/2008/02/extension-developers-native-json-parsing/</a></p>
+<p>References:
+<a href="http://blog.mozilla.com/webdev/2009/02/12/native-json-in-firefox-31/">http://blog.mozilla.com/webdev/2009/02/12/native-json-in-firefox-31/</a>
+<a href="https://developer.mozilla.org/en/Using_JSON_in_Firefox">https://developer.mozilla.org/en/Using_JSON_in_Firefox</a>
+<a href="http://www.json.org/">http://www.json.org/</a>
+<a href="http://blogs.msdn.com/ie/archive/2008/09/10/native-json-in-ie8.aspx">http://blogs.msdn.com/ie/archive/2008/09/10/native-json-in-ie8.aspx</a>
+<a href="http://starkravingfinkle.org/blog/2008/02/extension-developers-native-json-parsing/">http://starkravingfinkle.org/blog/2008/02/extension-developers-native-json-parsing/</a></p>
 
-<p><strong>O que significa JSON nativo no browser?</strong> Bom, isso significa que o desenvolvedor não precisará usar nenhuma biblioteca extra para fazer o parse de um objeto JSON, e também não será necessário usar a função <a href='http://www.w3schools.com/jsref/jsref_eval.asp'>eval()</a> nativa no Javascript para fazer isso, o que é bem aconselhável pela insegurança desta função.</p>
+<p><strong>O que significa JSON nativo no browser?</strong>
+Bom, isso significa que o desenvolvedor não precisará usar nenhuma biblioteca extra para fazer o parse de um objeto JSON, e também não será necessário usar a função <a href="http://www.w3schools.com/jsref/jsref_eval.asp">eval()</a> nativa no Javascript para fazer isso, o que é bem aconselhável pela insegurança desta função.</p>
 
-<p><strong>Benefícios</strong>: Vários. Em primeiro lugar a possibilidade de parsear um objeto JSON sem o uso do eval(). Isso é extramamente útil pois o eval() executa toda a string recebida sem fazer nenhuma análise, ou seja, se a string contiver funções, estas serão executadas. Por esse motivo usar JSON nativo é muito mais seguro, pois não são suportadas funções. É feita uma análise na string recebida e então a conversão é feita apenas das propriedades do objeto. Outra funcionalidade é esta análise feita na string, se o JSON estiver mal formatado será gerado um parse error. E o benefício que mais me agrada: <strong>Rapidez</strong>! Sim, o parse de um objeto JSON nativamente é muito rápido, mesmo! Como provar isso? Simples&#8230; Código!</p>
+<p><strong>Benefícios</strong>:
+Vários.
+Em primeiro lugar a possibilidade de parsear um objeto JSON sem o uso do eval(). Isso é extramamente útil pois o eval() executa toda a string recebida sem fazer nenhuma análise, ou seja, se a string contiver funções, estas serão executadas.
+Por esse motivo usar JSON nativo é muito mais seguro, pois não são suportadas funções. É feita uma análise na string recebida e então a conversão é feita apenas das propriedades do objeto.
+Outra funcionalidade é esta análise feita na string, se o JSON estiver mal formatado será gerado um parse error.
+E o benefício que mais me agrada: <strong>Rapidez</strong>!
+Sim, o parse de um objeto JSON nativamente é muito rápido, mesmo!
+Como provar isso?
+Simples... Código!</p>
 
-<p>Primeiro criei um arquivo JSON que peguei de exemplo no blog da <a href='http://blog.mozilla.com/webdev/2009/02/12/native-json-in-firefox-31/'>Mozilla</a> onde eles explicam sobre o uso do JSON nativo. Este arquivo é consideravelmente grande, possui um array com <strong>2918 objetos.</strong>Não vou colocar o código aqui por razões óbvias&#8230;mas segue o link pra quem tiver curiosidade de ve-lo: <a href='http://graphs-stage.mozilla.org/api/test'>http://graphs-stage.mozilla.org/api/test</a></p>
+<p>Primeiro criei um arquivo JSON que peguei de exemplo no blog da <a href="http://blog.mozilla.com/webdev/2009/02/12/native-json-in-firefox-31/">Mozilla</a> onde eles explicam sobre o uso do JSON nativo.
+Este arquivo é consideravelmente grande, possui um array com <strong>2918 objetos.
+</strong>Não vou colocar o código aqui por razões óbvias...mas segue o link pra quem tiver curiosidade de ve-lo: <a href="http://graphs-stage.mozilla.org/api/test">http://graphs-stage.mozilla.org/api/test</a></p>
 
 <p>Agora vamos ao código javascript usando jQuery para fazer uma requisição Ajax e buscar o conteúdo desse arquivo.</p>
 
-<p><span>javascript</span></p>
+<p>[javascript]</p>
 
-<p>var json = $.ajax({ url: &#8220;test.json&#8221;, async: false }).responseText;</p>
+<p>var json = $.ajax({
+url: "test.json",
+async: false
+}).responseText;</p>
 
-<p><span>/javascript</span></p>
+<p>[/javascript]</p>
 
-<p>Este pequeno trecho do código mostra que a variável <strong>json</strong>agora possui o conteudo do arquivo(aquele bem grande com 2918 objetos).</p>
+<p>Este pequeno trecho do código mostra que a variável <strong>json </strong>agora possui o conteudo do arquivo(aquele bem grande com 2918 objetos).</p>
 
-<p>Agora que temos uma &#8220;Stringona&#8221; vamos tranforma-la em um objeto JSON. Primeiro usando o <strong>eval()</strong>:</p>
+<p>Agora que temos uma "Stringona" vamos tranforma-la em um objeto JSON.
+Primeiro usando o <strong>eval()</strong>:</p>
 
-<p><span>javascript</span></p>
+<p>[javascript]</p>
 
-<p>var obj = eval(&#8216;(&#8217; + json + &#8217;)&#8217;);</p>
+<p>var obj = eval('(' + json + ')');</p>
 
-<p><span>/javascript</span></p>
+<p>[/javascript]</p>
 
 <p>E agora usando o parser nativo !!! O/</p>
 
-<p><span>javascript</span></p>
+<p>[javascript]</p>
 
 <p>var obj = JSON.parse(json);</p>
 
-<p><span>/javascript</span></p>
+<p>[/javascript]</p>
 
-<p>Para quem já usou  a biblioteca JS disponível no <a href='http://json.org'>json.org</a> pode notar que a sintaxe é a mesma, a direrença aqui é que estamos trabalhando nativamente. Bom, sabemos que o parser nativo é mais seguro que o eval(), mas como saber se é mais rápido? O <a href='http://getfirebug.com/'>Firebug</a> nos ajuda a medir isso. Vamos ver o código, primeiro medindo o tempo em milisegundos com o eval():</p>
+<p>Para quem já usou  a biblioteca JS disponível no <a href="http://json.org">json.org</a> pode notar que a sintaxe é a mesma, a direrença aqui é que estamos trabalhando nativamente.
+Bom, sabemos que o parser nativo é mais seguro que o eval(), mas como saber se é mais rápido?
+O <a href="http://getfirebug.com/">Firebug</a> nos ajuda a medir isso.
+Vamos ver o código, primeiro medindo o tempo em milisegundos com o eval():</p>
 
-<p><span>javascript</span></p>
+<p>[javascript]</p>
 
-<p>console.time(&#8220;Eval&#8221;); var obj = eval(&#8216;(&#8217; + json + &#8217;)&#8217;); console.timeEnd(&#8220;Eval&#8221;);</p>
+<p>console.time("Eval");
+var obj = eval('(' + json + ')');
+console.timeEnd("Eval");</p>
 
-<p><span>/javascript</span></p>
+<p>[/javascript]</p>
 
 <p>Para quem não sabe (se é desenvolvedor deveria ), o Firebug possui uma API que ajuda os desenolvedores de várias maneiras, a abordada aqui  é a função console.time(), que consegue medir o tempo em milisegundos de uma determinada instrução.</p>
 
@@ -194,43 +264,57 @@
 
 <p>Agora com parser nativo:</p>
 
-<p><span>javascript</span></p>
+<p>[javascript]</p>
 
-<p>console.time(&#8220;JSON.parse&#8221;); var obj = JSON.parse(json); console.timeEnd(&#8220;JSON.parse&#8221;);</p>
+<p>console.time("JSON.parse");
+var obj = JSON.parse(json);
+console.timeEnd("JSON.parse");</p>
 
-<p><span>/javascript</span></p>
+<p>[/javascript]</p>
 
 <p><strong>Resultado com JSON.parse:</strong> 50ms para executar o parse.</p>
 
 <p>Bom, nem preciso comentar, os resultados falam por si só.</p>
 
-<p>Voces devem estar pensando agora que tudo isso é lindo, mas que  só funciona no Firefox&#8230;   :( Mas como JSON é cada vez mais usado por todo o mundo em diversos tipos de aplicações, não é apenas a Mozilla que implementa esta solução nativa. Acreditem, o IE 8 também possui suporte nativo a JSON. Veja com seus próprios olhos: <a href='http://blogs.msdn.com/ie/archive/2008/09/10/native-json-in-ie8.aspx'>http://blogs.msdn.com/ie/archive/2008/09/10/native-json-in-ie8.aspx</a></p>
+<p>Voces devem estar pensando agora que tudo isso é lindo, mas que  só funciona no Firefox...   :(
+Mas como JSON é cada vez mais usado por todo o mundo em diversos tipos de aplicações, não é apenas a Mozilla que implementa esta solução nativa.
+Acreditem, o IE 8 também possui suporte nativo a JSON. Veja com seus próprios olhos: <a href="http://blogs.msdn.com/ie/archive/2008/09/10/native-json-in-ie8.aspx">http://blogs.msdn.com/ie/archive/2008/09/10/native-json-in-ie8.aspx</a></p>
 
-<p>Mas claro que ainda não podemos contar com o suporte de todos os Browsers, e para isso podemos usar alguma biblioteca que desempenhe este papel. Eu indico a própria do site json.org: <a href='http://www.json.org/json2.js'>http://www.json.org/json2.js</a></p>
+<p>Mas claro que ainda não podemos contar com o suporte de todos os Browsers, e para isso podemos usar alguma biblioteca que desempenhe este papel. Eu indico a própria do site json.org: <a href="http://www.json.org/json2.js">http://www.json.org/json2.js</a></p>
 
 <p>Nos exemplos acima mostrei como parsear uma string em um objeto JSON, mas podemos fazer o inverso também:</p>
 
-<p><span>javascript</span></p>
+<p>[javascript]</p>
 
-<p>var Pessoa = {}; Pessoa.nome = &#8220;Joaozinho&#8221;; Pessoa.idade = &#8220;30&#8221;;</p>
+<p>var Pessoa = {};
+Pessoa.nome = "Joaozinho";
+Pessoa.idade = "30";</p>
 
-<p>var jsonString = JSON.stringify(Pessoa); console.log(jsonString);</p>
+<p>var jsonString = JSON.stringify(Pessoa);
+console.log(jsonString);</p>
 
-<p><span>/javascript</span></p>
+<p>[/javascript]</p>
 
 <p>No exemplo criamos um objeto Javascript, e em seguida o transformamos em um JSON:</p>
 
-<p><span>javascript</span></p>
+<p>[javascript]</p>
 
-<p>{&#8220;nome&#8221;:&#8221;Joaozinho&#8221;,&#8221;idade&#8221;:&#8221;30&#8221;}</p>
+<p>{"nome":"Joaozinho","idade":"30"}</p>
 
-<p><span>/javascript</span></p>
+<p>[/javascript]</p>
 
 <p>Buenas pessoal, por hora é isso.</p>
 
-<p>Referências: <a href='http://blog.mozilla.com/webdev/2009/02/12/native-json-in-firefox-31/'>http://blog.mozilla.com/webdev/2009/02/12/native-json-in-firefox-31/</a> <a href='https://developer.mozilla.org/en/Using_JSON_in_Firefox'>https://developer.mozilla.org/en/Using_JSON_in_Firefox</a> <a href='http://www.json.org/'>http://www.json.org/</a> <a href='http://blogs.msdn.com/ie/archive/2008/09/10/native-json-in-ie8.aspx'>http://blogs.msdn.com/ie/archive/2008/09/10/native-json-in-ie8.aspx</a> <a href='http://starkravingfinkle.org/blog/2008/02/extension-developers-native-json-parsing/'>http://starkravingfinkle.org/blog/2008/02/extension-developers-native-json-parsing/</a></p>
+<p>Referências:
+<a href="http://blog.mozilla.com/webdev/2009/02/12/native-json-in-firefox-31/">http://blog.mozilla.com/webdev/2009/02/12/native-json-in-firefox-31/</a>
+<a href="https://developer.mozilla.org/en/Using_JSON_in_Firefox">https://developer.mozilla.org/en/Using_JSON_in_Firefox</a>
+<a href="http://www.json.org/">http://www.json.org/</a>
+<a href="http://blogs.msdn.com/ie/archive/2008/09/10/native-json-in-ie8.aspx">http://blogs.msdn.com/ie/archive/2008/09/10/native-json-in-ie8.aspx</a>
+<a href="http://starkravingfinkle.org/blog/2008/02/extension-developers-native-json-parsing/">http://starkravingfinkle.org/blog/2008/02/extension-developers-native-json-parsing/
+</a></p>
 
-<p>Sintam-se a vontade para comentar, criticar, perguntar, etc.</p>]]></content>
+<p>Sintam-se a vontade para comentar, criticar, perguntar, etc.</p>
+]]></content>
   </entry>
   
   <entry>
@@ -238,35 +322,63 @@
     <link href="http://jaydson.org/json/"/>
     <updated>2009-05-04T11:13:43-03:00</updated>
     <id>http://jaydson.org/json</id>
-    <content type="html"><![CDATA[<p>Bom, eu até já tinha ouvido falar do tal do JSON(Djeison), mas nunca havia parado pra estuda-lo e ver o seu funcionamento. Após ir em uma entrevista de emprego, onde os entrevistadores comentaram a respeito do JSON, eu fiquei mais curioso sobre o assunto. O que acontece é que JSON esta na crista da onda&#8230;quero dizer que é uma tecnologia que tem o seu uso difundido, e isto se deve pelo fato de JSON ser simples e poderoso. JSON é uma alternativa para XML, ele também exerce o mesmo papel que o XML como formato para transporte de dados. Uma coisa importante para a aceitação do JSON foi por ser mais fácil escrever um analisador JSON, por exemplo em Javascript através da função eval(). Vários nomes de peso adotaram JSON, posso citar alguns que sei: <strong>Google</strong>, <strong>Yahoo</strong>, <strong>Meebo</strong>&#8230; Perguntas que eu me fazia antes de estudar JSON:</p>
+    <content type="html"><![CDATA[<p>Bom, eu até já tinha ouvido falar do tal do JSON(Djeison), mas nunca havia parado pra estuda-lo e ver o seu funcionamento.
+Após ir em uma entrevista de emprego, onde os entrevistadores comentaram a respeito do JSON, eu fiquei mais curioso sobre o assunto.
+O que acontece é que JSON esta na crista da onda...quero dizer que é uma tecnologia que tem o seu uso difundido, e isto se deve pelo fato de JSON ser simples e poderoso.
+JSON é uma alternativa para XML, ele também exerce o mesmo papel que o XML como formato para transporte de dados.
+Uma coisa importante para a aceitação do JSON foi por ser mais fácil escrever um analisador JSON, por exemplo em Javascript através da função eval().
+Vários nomes de peso adotaram JSON, posso citar alguns que sei: <strong>Google</strong>, <strong>Yahoo</strong>, <strong>Meebo</strong>...
+Perguntas que eu me fazia antes de estudar JSON:</p>
 
-<p><strong>Ta, mas qual biblioteca devo baixar?</strong> <strong>Como assim notação de objetos?</strong> <strong>JSON é Javascript?</strong></p>
+<p><strong>Ta, mas qual biblioteca devo baixar?</strong>
+<strong>Como assim notação de objetos?</strong>
+<strong>JSON é Javascript?</strong></p>
 
-<p>Bom, em primeiro lugar, eu consegui fazer bastante coisa sem baixar um KB sequer, ou seja, não precisei baixar nenhuma biblioteca. JSON é um acrônimo para JavaScript Object Notation - Segundo o próprio <a href='http://www.json.org/json-pt.html'>site do JSON</a> ele é: uma formatação leve de troca de dados. Para seres humanos, é fácil de ler e escrever. Para máquinas, é fácil de interpretar e gerar. Está baseado em um subconjunto da linguagem de programação JavaScript, Standard ECMA-262 3a Edição -Dezembro - 1999. JSON é em formato texto e completamente independente de linguagem, pois usa convenções que são familiares às linguagens C e familiares, incluindo C++, C#, Java, JavaScript, Perl, Python e muitas outras. Estas propriedades fazem com que JSON seja um formato ideal de troca de dados. E por último, a resposta anterior já respondeu&#8230;JSON é um subconjunto da notação de objeto de JavaScript, mas seu uso não requer Javascript exclusivamente. Agora, vamos a parte boa: o código !!! Como funciona isso ???? Primeiro vamos ver como criar um JSON: JSON está constituído em duas estruturas:</p>
-
-<ul>
-<li>Uma coleção de pares nome/valor. Em várias linguagens, isto é caracterizado como um object, record, struct, dicionário, hash table, keyed list, ou arrays associativas.</li>
-
-<li>Uma lista ordenada de valores. Na maioria das linguagens, isto é caracterizado como uma array, vetor, lista ou sequência. Estas são estruturas de dados universais. Virtualmente todas as linguagens de programação modernas as suportam, de uma forma ou de outra. É aceitavel que um formato de troca de dados que seja independente de linguagem de programação se baseie nestas estruturas.</li>
-</ul>
+<p>Bom, em primeiro lugar, eu consegui fazer bastante coisa sem baixar um KB sequer, ou seja, não precisei baixar nenhuma biblioteca.
+JSON é um acrônimo para JavaScript Object Notation - Segundo o próprio <a href="http://www.json.org/json-pt.html">site do JSON</a> ele é: uma formatação leve de troca de dados. Para seres humanos, é fácil de ler e escrever. Para máquinas, é fácil de interpretar e gerar.
+Está baseado em um subconjunto da linguagem de programação JavaScript, Standard ECMA-262 3a Edição -Dezembro - 1999.
+JSON é em formato texto e completamente independente de linguagem, pois usa convenções que são familiares às linguagens C e familiares, incluindo C++, C#, Java, JavaScript, Perl, Python e muitas outras. Estas propriedades fazem com que JSON seja um formato ideal de troca de dados.
+E por último, a resposta anterior já respondeu...JSON é um subconjunto da notação de objeto de JavaScript, mas seu uso não requer Javascript exclusivamente.
+Agora, vamos a parte boa: o código !!! Como funciona isso ????
+Primeiro vamos ver como criar um JSON:
+JSON está constituído em duas estruturas:
+* Uma coleção de pares nome/valor. Em várias linguagens, isto é caracterizado como um object, record, struct, dicionário, hash table, keyed list, ou arrays associativas.
+* Uma lista ordenada de valores. Na maioria das linguagens, isto é caracterizado como uma array, vetor, lista ou sequência.
+Estas são estruturas de dados universais. Virtualmente todas as linguagens de programação modernas as suportam, de uma forma ou de outra. É aceitavel que um formato de troca de dados que seja independente de linguagem de programação se baseie nestas estruturas.</p>
 
 <p>Agora que já vimos como é, vamos a um exemplo:</p>
 
-<p><span>javascript</span> var myJSONObject = {&#8220;cliente&#8221;: <span>{&#8220;nome&#8221;: &#8220;Joao da Silva&#8221;, &#8220;idade&#8221;: &#8220;25&#8221;, &#8220;sexo&#8221;: &#8220;masculino&#8221;}, {&#8220;nome&#8221;: &#8220;Juca da Silva&#8221;, &#8220;idade&#8221;: &#8220;36&#8221;, &#8220;sexo&#8221;: &#8220;masculino&#8221;}, {&#8220;nome&#8221;: &#8220;Maria Madalena&#8221;, &#8220;idade&#8221;: &#8220;18&#8221;, &#8220;sexo&#8221;: &#8220;feminino&#8221;}</span> };</p>
+<p>[javascript]
+var myJSONObject = {"cliente": [
+{"nome": "Joao da Silva", "idade": "25", "sexo": "masculino"},
+{"nome": "Juca da Silva", "idade": "36", "sexo": "masculino"},
+{"nome": "Maria Madalena", "idade": "18", "sexo": "feminino"}
+]
+};</p>
 
-<p><span>/javascript</span></p>
+<p>[/javascript]</p>
 
-<p>No código acima, criamos uma estrutura de cliente, contendo valores para 3 clientes. Agora vamos transformar isso em um objeto Javascript.</p>
+<p>No código acima, criamos uma estrutura de cliente, contendo valores para 3 clientes.
+Agora vamos transformar isso em um objeto Javascript.</p>
 
-<p><span>javascript</span></p>
+<p>[javascript]</p>
 
-<p>var myObject = eval(myJSONObject); document.write(&#8216;Nome: &#8217; + myObject.cliente<span>i</span>.nome + &#8221;<br />&#8221;); document.write(&#8216;Idade: &#8217; + myObject.cliente<span>i</span>.idade + &#8221;<br />&#8221;); document.write(&#8216;Sexo: &#8217; + myObject.cliente<span>i</span>.sexo + &#8221;<br />&#8221;); document.write(&#8216;___________________<br />&#8217;); } <span>/javascript</span></p>
+<p>var myObject = eval(myJSONObject);
+document.write('Nome: ' + myObject.cliente[i].nome + "<br>");
+document.write('Idade: ' + myObject.cliente[i].idade + "<br>");
+document.write('Sexo: ' + myObject.cliente[i].sexo + "<br>");
+document.write('___________________<br>');
+}
+[/javascript]</p>
 
-<p>Como podemos notar no código acima, depois de converter o texto JSON em Objeto, podemos acessar os seus dados facilmente. <a href='http://jaydson.org/code/json/teste_json.html'>Veja aqui o resultado deste código.</a></p>
+<p>Como podemos notar no código acima, depois de converter o texto JSON em Objeto, podemos acessar os seus dados facilmente.
+<a href="http://jaydson.org/code/json/teste_json.html">Veja aqui o resultado deste código.</a></p>
 
-<p>Isso foi o básico. Já fiz algumas coisas mais complexas, e estou preparando um novo Post sobre JSON + AJAX + PHP + Banco de Dados&#8230; Aguardem, e qualquer dúvida postem ai, ou me mandei e-mail.</p>
+<p>Isso foi o básico. Já fiz algumas coisas mais complexas, e estou preparando um novo Post sobre JSON + AJAX + PHP + Banco de Dados...
+Aguardem, e qualquer dúvida postem ai, ou me mandei e-mail.</p>
 
-<p>O/O/O/O/O/O/</p>]]></content>
+<p>O/O/O/O/O/O/</p>
+]]></content>
   </entry>
   
 </feed>

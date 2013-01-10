@@ -21,14 +21,14 @@
   <link rel="canonical" href="http://jaydson.org/javascript-e-acessibilidade/">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+  <link href="/stylesheets/blog-header-experiments.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <link href="/atom.xml" rel="alternate" title="Jaydson Gomes" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="" rel="stylesheet" type="text/css">
 
   
   <script type="text/javascript">
@@ -47,7 +47,7 @@
 </head>
 
 <body   >
-  <header role="banner"><hgroup>
+  <header role="banner"><hgroup id="header-stage">
   <h1><a href="/">Jaydson Gomes</a></h1>
   
     <h2>HTML5 | JavaScript</h2>
@@ -107,99 +107,148 @@
 
 <div class="entry-content"><p><strong>Chapter 1 - The discussion</strong></p>
 
-<p>I put the title &#8221;<strong>JavaScript and Accessibility</strong>&#8221;, since this was the cause of one of the major threads in the group Javascript Brazil. The debate began when one of the users asked the opnion to participants of the group on some sites that he had developed.</p>
+<p>I put the title &#8221;<strong>JavaScript and Accessibility</strong>&#8221;, since this was the cause of one of the major threads in the group Javascript Brazil.
+The debate began when one of the users asked the opnion to participants of the group on some sites that he had developed.</p>
 
-<p><a href='http://www.congressoatitude.com.br/'>http://www.congressoatitude.com.br</a> <a href='http://www.aredesforgirls.com.br/'>http://www.aredesforgirls.com.br</a></p>
+<p><a href="http://www.congressoatitude.com.br/">http://www.congressoatitude.com.br</a>
+<a href="http://www.aredesforgirls.com.br/">http://www.aredesforgirls.com.br</a></p>
 
-<p>I personally really liked the 2 sites. But his question was in the item accessibility, and it was there that things heated up. To my surprise many answers guided for non-use of Javascript, or at least to measure their use.</p>
+<p>I personally really liked the 2 sites. But his question was in the item accessibility, and it was there that things heated up.
+To my surprise many answers guided for non-use of Javascript, or at least to measure their use.</p>
 
 <p><strong>Capitulo 1 - Uma discussão e tanto.</strong></p>
 
-<p>Coloquei o título &#8221;<strong>Javascript e Acessibilidade</strong>&#8221;, pois foi esse o causador de uma das maiores threads no grupo <a href='http://groups.google.com/group/javascript-bra?hl=pt-BR&amp;pli=1'>Javascript Brasil</a>. O debate iniciou quando um dos usuários perguntou a opnião dos participantes do grupo sobre alguns sites que ele havia desenvolvido: <a href='http://www.congressoatitude.com.br/'>http://www.congressoatitude.com.br</a> <a href='http://www.aredesforgirls.com.br/'>http://www.aredesforgirls.com.br</a></p>
+<p>Coloquei o título &#8221;<strong>Javascript e Acessibilidade</strong>&#8221;, pois foi esse o causador de uma das maiores threads no grupo <a href="http://groups.google.com/group/javascript-bra?hl=pt-BR&amp;pli=1">Javascript Brasil</a>.
+O debate iniciou quando um dos usuários perguntou a opnião dos participantes do grupo sobre alguns sites que ele havia desenvolvido:
+<a href="http://www.congressoatitude.com.br/">http://www.congressoatitude.com.br</a>
+<a href="http://www.aredesforgirls.com.br/">http://www.aredesforgirls.com.br</a></p>
 
-<p>Pessoalmente gostei bastante dos 2 sites. Mas a pergunta dele era no quesito acessibilidade, e foi ai que as coisas esquentaram. Para minha surpresa muitas respostas guiavam para a não utilização de Javascript, ou pelo menos para dosagem de seu uso.</p>
+<p>Pessoalmente gostei bastante dos 2 sites. Mas a pergunta dele era no quesito acessibilidade, e foi ai que as coisas esquentaram.
+Para minha surpresa muitas respostas guiavam para a não utilização de Javascript, ou pelo menos para dosagem de seu uso.</p>
+
 <!-- more -->
-<p>Many defended the idea of developing 100% with pure HTML, so as to ensure the &#8220;universal&#8221; functionality either in a conventional PC with JavaScript disabled, or Mobile, or anything else that understands HTML. Again surprising me, some said that JavaScript was an exaggeration on some pages.</p>
 
-<p>** *<strong><em>Chapter</em></strong><em>2 - What is acessibility?</em>*</p>
+
+<p>Many defended the idea of developing 100% with pure HTML, so as to ensure the &#8220;universal&#8221; functionality either in a conventional PC with JavaScript disabled, or Mobile, or anything else that understands HTML.
+Again surprising me, some said that JavaScript was an exaggeration on some pages.</p>
+
+<p><strong>
+</strong><strong>Chapter </strong><strong>2 - What is acessibility?</strong></p>
 
 <p>According to the text taken from Wikipedia and accessibility is &#8220;not only allow people with disabilities participate in activities that include the use of products, services and information, but the inclusion and extent of their use for any plot in a certain population.&#8221;</p>
 
-<p>Also in the Wikipedia definition more focused on our topic: &#8220;On the Internet the term accessibility also refers to the <a href='http://pt.wikipedia.org/wiki/W3C'>W3C</a> recommendations, which aim to allow everyone to have access to websites, regardless of having a disability or not. The deal since RECOMMENDATIONS the font to be used, as well as their size and color, according to the necessities of the User, to the recommendations on the code (HTML and CSS, for example)&#8221;. I totally agree with everything, and I&#8217;m all for following the standards of accessibility, but we have common sense.</p>
+<p>Also in the Wikipedia definition more focused on our topic: &#8220;On the Internet the term accessibility also refers to the <a href="http://pt.wikipedia.org/wiki/W3C">W3C</a> recommendations, which aim to allow everyone to have access to websites, regardless of having a disability or not. The deal since RECOMMENDATIONS the font to be used, as well as their size and color, according to the necessities of the User, to the recommendations on the code (HTML and CSS, for example)&#8221;.
+I totally agree with everything, and I&#8217;m all for following the standards of accessibility, but we have common sense.</p>
 
-<p>** *<strong><em>Chapter</em></strong><em>3 - An  analogy</em>* In a bus for example. The company would follow accessibility standards, ie, allow all people to use public transportation. We know that in practice it not works very well (at least here in Brazil). The company will not only develop a bus with seats for people with disabilities. What is more sensible (and is usually the case), is to create alternative seating where a person with disabilities is well accommodated. This may not be the best example, but it expresses what I think about the Web.</p>
+<p><strong>
+</strong><strong>Chapter </strong><strong>3 - An  analogy
+</strong>
+In a bus for example. The company would follow accessibility standards, ie, allow all people to use public transportation. We know that in practice it not works very well (at least here in Brazil).
+The company will not only develop a bus with seats for people with disabilities. What is more sensible (and is usually the case), is to create alternative seating where a person with disabilities is well accommodated.
+This may not be the best example, but it expresses what I think about the Web.</p>
 
-<p>** *<strong><em>Chapter</em></strong><em>4 - Conclusion</em>*</p>
+<p><strong>
+</strong><strong>Chapter </strong><strong>4 - Conclusion</strong></p>
 
-<p>We must port our sites and applications for any type of audience, but that does not mean we should stop using the available technology. The Internet would not be what it is today if we had not Javascript. Thanks to this language and various other technologies have the possibility to develop rich applications that were previously not possible. Be cautious, use standards, comply with standards for accessibility, but without giving up the power they have.</p>
+<p>We must port our sites and applications for any type of audience, but that does not mean we should stop using the available technology.
+The Internet would not be what it is today if we had not Javascript.
+Thanks to this language and various other technologies have the possibility to develop rich applications that were previously not possible.
+Be cautious, use standards, comply with standards for accessibility, but without giving up the power they have.</p>
 
 <p>Some useful links:</p>
 
-<p><strong>W3C - Web Content Accessibility Guidelines</strong> <a href='http://www.w3.org/TR/WAI-WEBCONTENT/'>http://www.w3.org/TR/WAI-WEBCONTENT/</a></p>
+<p><strong>W3C - Web Content Accessibility Guidelines</strong>
+<a href="http://www.w3.org/TR/WAI-WEBCONTENT/">http://www.w3.org/TR/WAI-WEBCONTENT/</a></p>
 
-<p><strong>Browsers Stats</strong> <a href='http://www.w3schools.com/browsers/browsers_stats.asp'>http://www.w3schools.com/browsers/browsers_stats.asp</a></p>
+<p><strong>Browsers Stats</strong>
+<a href="http://www.w3schools.com/browsers/browsers_stats.asp">http://www.w3schools.com/browsers/browsers_stats.asp</a></p>
 
-<p><strong>Accessibility Evaluator Site (In portuguese)</strong> <a href='http://www.dasilva.org.br/'>http://www.dasilva.org.br/</a></p>
+<p><strong>Accessibility Evaluator Site (In portuguese)</strong>
+<a href="http://www.dasilva.org.br/">http://www.dasilva.org.br/</a></p>
 
 <p><strong>Excerpts from the discussion list and my commentary</strong><strong>:</strong></p>
 
-<p>1. <strong>&#8220;Your aplication <em>must</em> work only with HTML&#8221;</strong> Me: I agree that the application should have a working version in HTML. But if the user has all the technology needed to run an rich application, so that he can use this application. Who has not, is only with the &#8220;pure&#8221;.</p>
+<ol>
+<li><p><strong>&#8220;Your aplication <em>must</em> work only with HTML&#8221;</strong>
+Me: I agree that the application should have a working version in HTML. But if the user has all the technology needed to run an rich application, so that he can use this application. Who has not, is only with the &#8220;pure&#8221;.</p></li>
+<li><p><strong>&#8220;Several phones have browsers without JavaScript support</strong><strong>&#8221;
+</strong>Me: True. The same idea, if had enable Javascript so the best for this user.</p></li>
+<li><p><strong>&#8220;JavaScript is disabled is nothing from another planet, as most people think.&#8221;</strong>
+Me: Actually I&#8217;ve never met anyone who disable, but I know it exists. But if I disable Javascript &#8230; could not even be posting here now. I could not send an e-mail tomorrow with Gmail. It could use Meebo to IM. So much that I lose with JavaScript disabled. The Web would not be the same.</p></li>
+<li><p><strong>&#8220;Web is not a Desktop&#8221;</strong>
+Me: Nobody said that. What we try to do with RIA is to bring the best of the desktop to the Web</p></li>
+<li><p><strong>&#8220;</strong><strong>The purpose of the web is to keep things SIMPLE</strong><strong>&#8221;</strong>
+Me: For me Web is complexe.</p></li>
+</ol>
 
-<p>2. <strong>&#8220;Several phones have browsers without JavaScript support</strong><strong>&#8221;</strong>Me: True. The same idea, if had enable Javascript so the best for this user.</p>
-
-<p>3. <strong>&#8220;JavaScript is disabled is nothing from another planet, as most people think.&#8221;</strong> Me: Actually I&#8217;ve never met anyone who disable, but I know it exists. But if I disable Javascript &#8230; could not even be posting here now. I could not send an e-mail tomorrow with Gmail. It could use Meebo to IM. So much that I lose with JavaScript disabled. The Web would not be the same.</p>
-
-<p>4. <strong>&#8220;Web is not a Desktop&#8221;</strong> Me: Nobody said that. What we try to do with RIA is to bring the best of the desktop to the Web</p>
-
-<p>5. <strong>&#8221;</strong><strong>The purpose of the web is to keep things SIMPLE</strong><strong>&#8221;</strong> Me: For me Web is complexe.</p>
 
 <p>Anyway people, my intention here is to share my opinion and listen to the opinions of others, all comments are welcome.</p>
 
-<p>For those who want to see the thread: <a href='http://groups.google.com/group/javascript-bra/browse_thread/thread/7a673530169beb31?hl=pt-BR'>http://groups.google.com/group/javascript-bra/browse_thread/thread/7a673530169beb31?hl=pt-BR</a> <em>(Only in In portuguese)</em></p>
+<p>For those who want to see the thread: <a href="http://groups.google.com/group/javascript-bra/browse_thread/thread/7a673530169beb31?hl=pt-BR">http://groups.google.com/group/javascript-bra/browse_thread/thread/7a673530169beb31?hl=pt-BR</a>
+*(Only in In portuguese)</p>
 
-<p><a href='http://www.congressoatitude.com.br/'>http://www.congressoatitude.com.br</a></p>
+<p><a href="http://www.congressoatitude.com.br/">http://www.congressoatitude.com.br</a></p>
 
-<p>Muitos defendiam a idéia de se desenvolver 100% com HTML puro,  para assim garantir a funcionalidade &#8220;universal&#8221;, seja em um PC convencional com Javascript desabilitado, ou em Mobile, ou qualquer outra coisa que interprete HTML. Novamente me surpreendendo, alguns afirmaram que o Javascript era um exagero em algumas páginas.</p>
+<p>Muitos defendiam a idéia de se desenvolver 100% com HTML puro,  para assim garantir a funcionalidade &#8220;universal&#8221;, seja em um PC convencional com Javascript desabilitado, ou em Mobile, ou qualquer outra coisa que interprete HTML.
+Novamente me surpreendendo, alguns afirmaram que o Javascript era um exagero em algumas páginas.</p>
 
-<p>** Capitulo 2 - O que é acessibilidade?**</p>
+<p><strong>
+Capitulo 2 - O que é acessibilidade?</strong></p>
 
-<p>Segundo o texto tirado da Wikipedia Acessibilidade é:  &#8221; Não apenas permitir que pessoas com deficiências participem de atividades que incluem o uso de produtos, serviços e informação, mas a inclusão e extensão do uso destes por todas as parcelas presentes em uma determinada população.&#8221; Ainda na Wikipedia uma definição mais voltada para o nosso tópico:  &#8220;Na Internet o termo acessibilidade refere-se também a recomendações do <a href='http://pt.wikipedia.org/wiki/W3C'>W3C</a>, que visam permitir que todos possam ter acesso aos websites, independente de terem alguma deficiência ou não. As recomedações abordam desde o tipo de fonte a ser usado, bem como seu tamanho e cor, de acordo com as necesidades do usuário, até a recomendações relativas ao código (HTML e CSS, por exemplo)&#8221;. Concordo plenamente com tudo, e sou totalmente a favor de seguir os padrões de acessibilidade,  mas temos que ter bom senso.</p>
+<p>Segundo o texto tirado da Wikipedia Acessibilidade é:  &#8221; Não apenas permitir que pessoas com deficiências participem de atividades que incluem o uso de produtos, serviços e informação, mas a inclusão e extensão do uso destes por todas as parcelas presentes em uma determinada população.&#8221;
+Ainda na Wikipedia uma definição mais voltada para o nosso tópico:  &#8220;Na Internet o termo acessibilidade refere-se também a recomendações do <a href="http://pt.wikipedia.org/wiki/W3C">W3C</a>, que visam permitir que todos possam ter acesso aos websites, independente de terem alguma deficiência ou não. As recomedações abordam desde o tipo de fonte a ser usado, bem como seu tamanho e cor, de acordo com as necesidades do usuário, até a recomendações relativas ao código (HTML e CSS, por exemplo)&#8221;.
+Concordo plenamente com tudo, e sou totalmente a favor de seguir os padrões de acessibilidade,  mas temos que ter bom senso.</p>
 
-<p>** Capitulo 3 - Uma analogia**</p>
+<p><strong>
+Capitulo 3 - Uma analogia</strong></p>
 
-<p>Em um ônibus por exemplo. A empresa responsável deve seguir padrões de acessibilidade, ou seja, permitir que toda a população possa usar o transporte coletivo. Sabemos que na prática não funciona muito bem, mas vamos seguir o raciocínio. A empresa não vai desenvolver um ônibus somente com bancos para deficientes. O que é mais sensato fazer( e é o que acontece normalmente), é criar bancos alternativos onde uma pessoa que possua deficiência seja bem acomodada. Este pode não ser o melhor exemplo, mas expressa o que penso em relação a Web.</p>
+<p>Em um ônibus por exemplo. A empresa responsável deve seguir padrões de acessibilidade, ou seja, permitir que toda a população possa usar o transporte coletivo. Sabemos que na prática não funciona muito bem, mas vamos seguir o raciocínio.
+A empresa não vai desenvolver um ônibus somente com bancos para deficientes. O que é mais sensato fazer( e é o que acontece normalmente), é criar bancos alternativos onde uma pessoa que possua deficiência seja bem acomodada.
+Este pode não ser o melhor exemplo, mas expressa o que penso em relação a Web.</p>
 
-<p>** Capitulo 4 - Conclusão**</p>
+<p><strong>
+Capitulo 4 - Conclusão</strong></p>
 
-<p>Devemos sim portar nossos sites e aplicações para todo o tipo de público, porém isso não quer dizer que devemos deixar de usar as tecnologias disponíveis. A Internet não seria o que é hoje se não tivéssemos o Javascript. Graças a essa linguagem e a diversas outras tecnologias temos a possibilidade de desenvolver Aplicações Ricas que antes não eram possíveis. Sejam cautelosos, usem padrões, respeitem as normas para acessibilidade, mas sem abdicar do poder que temos.</p>
+<p>Devemos sim portar nossos sites e aplicações para todo o tipo de público, porém isso não quer dizer que devemos deixar de usar as tecnologias  disponíveis.
+A Internet não seria o que é hoje se não tivéssemos o Javascript.
+Graças a essa linguagem e a diversas outras tecnologias temos a possibilidade de desenvolver Aplicações Ricas que antes não eram possíveis.
+Sejam cautelosos, usem padrões, respeitem as normas para acessibilidade, mas sem abdicar do poder que temos.</p>
 
 <p>Alguns links úteis:</p>
 
-<p><strong>W3C - Web Content Accessibility Guidelines</strong> <a href='http://www.w3.org/TR/WAI-WEBCONTENT/'>http://www.w3.org/TR/WAI-WEBCONTENT/</a></p>
+<p><strong>W3C - Web Content Accessibility Guidelines</strong>
+<a href="http://www.w3.org/TR/WAI-WEBCONTENT/">http://www.w3.org/TR/WAI-WEBCONTENT/</a></p>
 
-<p><strong>Estatística de Browsers</strong> <a href='http://www.w3schools.com/browsers/browsers_stats.asp'>http://www.w3schools.com/browsers/browsers_stats.asp</a></p>
+<p><strong>Estatística de Browsers</strong>
+<a href="http://www.w3schools.com/browsers/browsers_stats.asp">http://www.w3schools.com/browsers/browsers_stats.asp</a></p>
 
-<p><strong>Site avaliador de acessibilidade(Em português)</strong> <a href='http://www.dasilva.org.br/'>http://www.dasilva.org.br/</a></p>
+<p><strong>Site avaliador de acessibilidade(Em português)</strong>
+<a href="http://www.dasilva.org.br/">http://www.dasilva.org.br/</a></p>
 
 <p><strong>Trechos da discussão na lista e meu comentário:</strong></p>
 
-<p>1. <strong>&#8220;Sua aplicação <em>deve</em> funcionar só com HTML&#8221;</strong> R: Concordo que a aplicação deve ter uma versão funcional em HTML. Mas se o usuário possui toda a tecnologia necessária par rodar uma Aplicação Rica, então que ele possa usar essa Aplicação. Quem não possui, fica apenas com a versão &#8220;pura&#8221;.</p>
+<ol>
+<li><p><strong>&#8220;Sua aplicação <em>deve</em> funcionar só com HTML&#8221;</strong>
+R: Concordo que a aplicação deve ter uma versão funcional em HTML. Mas se o usuário possui toda a tecnologia necessária par rodar uma Aplicação Rica, então que ele possa usar essa Aplicação. Quem não possui, fica apenas com a versão &#8220;pura&#8221;.</p></li>
+<li><p><strong>&#8220;Vários celulares têm navegadores sem suporte a JavaScript&#8221;
+</strong>R: Verdade. Mesma idéia, se possui Javascript então de o melhor para este usuário.</p></li>
+<li><p><strong>&#8220;JavaScript desabilitado não é nada de outro planeta, como muita gente pensa.&#8221;</strong>
+R: Na verdade eu nunca conheci alguém que desabilite, mas sei que existe. Mas se eu desabilitasse o Javascript&#8230; não poderia nem estar postando aqui agora. Não poderia mandar um e-mail amanhã com o Gmail. Não poderia usar o Meebo como IM. Tanta coisa que eu perco com o Javascript desabilitado. A Web não seria a mesma.</p></li>
+<li><p><strong>&#8220;merdas que tentam simular a interface desktop na web&#8221;</strong>
+R: Realmente esse comentário foi infeliz. Essa pessoa não conhece o conceito <a href="http://jaydson.org/ria-aplicacoes-ricas-para-internet/">RIA</a>.</p></li>
+<li><p><strong>&#8220;Web não é Desktop&#8221;</strong>
+R: Ninguém nunca afirmou isso. O que tenta se fazer com RIA é trazer o melhor do Desktop para a Web.</p></li>
+<li><p><strong>&#8220;O objetivo da web é manter as coisas SIMPLES&#8221;</strong>
+R: Pra mim a Web é uma coisa complexa.</p></li>
+</ol>
 
-<p>2. <strong>&#8220;Vários celulares têm navegadores sem suporte a JavaScript&#8221;</strong>R: Verdade. Mesma idéia, se possui Javascript então de o melhor para este usuário.</p>
-
-<p>3. <strong>&#8220;JavaScript desabilitado não é nada de outro planeta, como muita gente pensa.&#8221;</strong> R: Na verdade eu nunca conheci alguém que desabilite, mas sei que existe. Mas se eu desabilitasse o Javascript&#8230; não poderia nem estar postando aqui agora. Não poderia mandar um e-mail amanhã com o Gmail. Não poderia usar o Meebo como IM. Tanta coisa que eu perco com o Javascript desabilitado. A Web não seria a mesma.</p>
-
-<p>4. <strong>&#8220;merdas que tentam simular a interface desktop na web&#8221;</strong> R: Realmente esse comentário foi infeliz. Essa pessoa não conhece o conceito <a href='http://jaydson.org/ria-aplicacoes-ricas-para-internet/'>RIA</a>.</p>
-
-<p>5. <strong>&#8220;Web não é Desktop&#8221;</strong> R: Ninguém nunca afirmou isso. O que tenta se fazer com RIA é trazer o melhor do Desktop para a Web.</p>
-
-<p>6. <strong>&#8220;O objetivo da web é manter as coisas SIMPLES&#8221;</strong> R: Pra mim a Web é uma coisa complexa.</p>
 
 <p>Enfim pessoal, meu intuito aqui é compartilhar minha opinião e ouvir a opinião dos outros, todos comentários são bem vindos.</p>
 
-<p>Pra quem quiser ver a thread: <a href='http://groups.google.com/group/javascript-bra/browse_thread/thread/7a673530169beb31?hl=pt-BR'>http://groups.google.com/group/javascript-bra/browse_thread/thread/7a673530169beb31?hl=pt-BR</a></p>
+<p>Pra quem quiser ver a thread: <a href="http://groups.google.com/group/javascript-bra/browse_thread/thread/7a673530169beb31?hl=pt-BR">http://groups.google.com/group/javascript-bra/browse_thread/thread/7a673530169beb31?hl=pt-BR</a></p>
 
-<p><a href='http://www.congressoatitude.com.br/'>http://www.congressoatitude.com.br</a></p></div>
+<p><a href="http://www.congressoatitude.com.br/">http://www.congressoatitude.com.br</a></p>
+</div>
 
 
   <footer>
@@ -337,6 +386,7 @@
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 <script type="text/javascript" src="/javascripts/jaydson.js"></script>
+<script type="text/javascript" src="/javascripts/blog-header-experiments.js"></script>
 
 </footer>
   

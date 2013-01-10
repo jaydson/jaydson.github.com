@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Software Livre | Jaydson Gomes]]></title>
   <link href="http://jaydson.org/blog/categories/software-livre/atom.xml" rel="self"/>
   <link href="http://jaydson.org/"/>
-  <updated>2013-01-09T19:46:03-02:00</updated>
+  <updated>2013-01-10T19:55:19-02:00</updated>
   <id>http://jaydson.org/</id>
   <author>
     <name><![CDATA[Jaydson Gomes]]></name>
@@ -18,43 +18,33 @@
     <link href="http://jaydson.org/dissemine-o-conhecimento/"/>
     <updated>2010-05-05T22:00:58-03:00</updated>
     <id>http://jaydson.org/dissemine-o-conhecimento</id>
-    <content type="html"><![CDATA[<p>Hoje resolvi mudar um pouco o foco nesse post. Nada de código&#8230; e sim um pouco de filosofia<span>barata</span>.</p>
+    <content type="html"><![CDATA[<p>Hoje resolvi mudar um pouco o foco nesse post.
+Nada de código... e sim um pouco de filosofia[barata].</p>
 
-<p>Quando convivemos diariamente com pessoas não adeptas ao software livre , percebemos claramente que as divergências de pensamento são enormes. Desde a escolha por uma ferramenta, ou metodologia e até mesmo sobre a vida.</p>
+<p>Quando convivemos diariamente com pessoas não adeptas ao software livre , percebemos claramente que as divergências de pensamento são enormes.
+Desde a escolha por uma ferramenta, ou metodologia e até mesmo sobre a vida.</p>
 
-<p>Hoje, vasculhando meus documentos, encontrei um arquivo txt com o nome &#8220;Leia-me novamente&#8221;. Curioso, fui abrir logo para ver o que o meu cérebro tinha me preparado.<!-- more --> Ao abrir, encontro um pequeno texto que me faz refletir sobre muitas coisas e também me fez chegar a este post.</p>
+<p>Hoje, vasculhando meus documentos, encontrei um arquivo txt com o nome "Leia-me novamente". Curioso, fui abrir logo para ver o que o meu cérebro tinha me preparado.<!-- more -->
+Ao abrir, encontro um pequeno texto que me faz refletir sobre muitas coisas e também me fez chegar a este post.</p>
 
-<p>O texto é do filósofo francês, <a href='http://pt.wikipedia.org/wiki/Michel_Serres'>Michel Serres</a> e pra mim, tem tudo a ver com software livre.</p>
+<p>O texto é do filósofo francês, <a href="http://pt.wikipedia.org/wiki/Michel_Serres">Michel Serres</a> e pra mim, tem tudo a ver com software livre.</p>
 
-<blockquote />
+<blockquote><p>Se você tem R$20,00 e me dá R$20,00, no final, eu tenho R$20,00 e você não tem mais nada.</p>
 
-<blockquote>
-<p>Se você tem R$20,00 e me dá R$20,00, no final, eu tenho R$20,00 e você não tem mais nada.</p>
-</blockquote>
-
-<blockquote>
 <p>Se você sabe um teorema e me ensina, ao final eu tenho o teorema, mas você o conserva também.</p>
-</blockquote>
 
-<blockquote>
 <p>Então, o conhecimento não obedece às leis da troca mercantil, ele tem mesmo a virtude</p>
-</blockquote>
 
-<blockquote>
-<p>de fazer exatamente o oposto&#8230;Em vez de um jogo de resultado nulo, ele suscita a multiplicação</p>
-</blockquote>
+<p>de fazer exatamente o oposto...Em vez de um jogo de resultado nulo, ele suscita a multiplicação</p>
 
-<blockquote>
 <p>do seu valor.</p>
-</blockquote>
 
-<blockquote>
-<p><em><strong>Michel Serres</strong></em></p>
-</blockquote>
+<p><em><strong>Michel Serres</strong></em></p></blockquote>
 
 <p>Leiam e tirem suas próprias conclusões.</p>
 
-<p>Para esse que vos escreve, disseminar o conhecimento é mais do que prazer.</p>]]></content>
+<p>Para esse que vos escreve, disseminar o conhecimento é mais do que prazer.</p>
+]]></content>
   </entry>
   
 </feed>

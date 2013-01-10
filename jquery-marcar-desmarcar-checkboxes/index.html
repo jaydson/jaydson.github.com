@@ -9,7 +9,7 @@
   <meta name="author" content="Jaydson Gomes">
 
   
-  <meta name="description" content="You know when we have a very large list of REXML could not parse this XML/HTML: &lt;inputs&gt; type checkbox, where the user has to select what &hellip;">
+  <meta name="description" content="You know when we have a very large list of type checkbox, where the user has to select what options does he want? Example: Check1 Check2 Check3 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,14 +21,14 @@
   <link rel="canonical" href="http://jaydson.org/jquery-marcar-desmarcar-checkboxes/">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+  <link href="/stylesheets/blog-header-experiments.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <link href="/atom.xml" rel="alternate" title="Jaydson Gomes" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="" rel="stylesheet" type="text/css">
 
   
   <script type="text/javascript">
@@ -47,7 +47,7 @@
 </head>
 
 <body   >
-  <header role="banner"><hgroup>
+  <header role="banner"><hgroup id="header-stage">
   <h1><a href="/">Jaydson Gomes</a></h1>
   
     <h2>HTML5 | JavaScript</h2>
@@ -105,8 +105,7 @@
   </header>
 
 
-<div class="entry-content"><p>You know when we have a very large list of <pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
-&lt;inputs&gt; type checkbox, where the user has to select what options does he want?</pre></p>
+<div class="entry-content"><p>You know when we have a very large list of <inputs> type checkbox, where the user has to select what options does he want?</p>
 
 <p>Example:</p>
 
@@ -122,8 +121,7 @@
 
 <p>Check6</p>
 
-<p>Sabem quando temos uma lista bem grande de <pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
-&lt;inputs&gt; do tipo checkbox, onde o usuário terá de selecionar quais são as opções desejadas?</pre></p>
+<p>Sabem quando temos uma lista bem grande de <inputs> do tipo checkbox, onde o usuário terá de selecionar quais são as opções desejadas?</p>
 
 <p>Exemplo:</p>
 
@@ -138,42 +136,78 @@
 <p>Check5</p>
 
 <p>Check6</p>
+
 <!-- more -->
-<p>Well, now imagine that this list is a little bigger. It is extremely unpleasant to have to check or uncheck one by one. A good practice is to put an option for the User select or clear all.</p>
+
+
+<p>Well, now imagine that this list is a little bigger. It is extremely unpleasant to have to check or uncheck one by one.
+A good practice is to put an option for the User select or clear all.</p>
 
 <p>This is a very easy task to implement in &#8220;pure&#8221; Javascript , but the jQuery as that&#8217;s always help.</p>
 
 <p><strong>Solution:</strong></p>
 
-<p><span>javascript</span></p>
+<p>[javascript]</p>
 
-<p>// We attribute to the variable ipts all &#60;inputs&#62; found within the element &#34;#checkboxes&#34; var ipts = $(&#34;#checkboxes&#34;).find(&#34;input&#34;);</p>
+<p>// We attribute to the variable ipts all &lt;inputs&gt; found within the element &quot;#checkboxes&quot;
+var ipts = $(&quot;#checkboxes&quot;).find(&quot;input&quot;);</p>
 
-<p>function checkAll() { // CheckBox that when clicked select or clear all elements var check = document.getElementById(&#34;checkboxCheckAll&#34;);</p>
+<p>function checkAll()
+{
+// CheckBox that when clicked select or clear all elements
+var check = document.getElementById(&quot;checkboxCheckAll&quot;);</p>
 
-<p>// Test the CheckBox to see if must check or uncheck check.checked ? jQuery.each(ipts, function(){ // If checked so check all elements this.checked = true; }) : jQuery.each(ipts, function(){ // If not uncheck all elements this.checked = false; }); } <span>/javascript</span></p>
+<p>// Test the CheckBox to see if must check or uncheck
+check.checked ?
+jQuery.each(ipts, function(){
+// If checked so check all elements
+this.checked = true;
+}) :
+jQuery.each(ipts, function(){
+// If not uncheck all elements
+this.checked = false;
+});
+}
+[/javascript]</p>
 
 <p>Simple and fast.</p>
 
 <p>Tested with more than 50 elements and the routine did not exceed 2 milliseconds.</p>
 
-<p>Bom, agora imaginem que esta lista é um pouco maior. Fica extremamente desagradável ter que marcar ou desmarcar um a um. Uma boa prática é colocar uma opção para o usuário marcar ou desmarcar todos.</p>
+<p>Bom, agora imaginem que esta lista é um pouco maior. Fica extremamente desagradável ter que marcar ou desmarcar um a um.
+Uma boa prática é colocar uma opção para o usuário marcar ou desmarcar todos.</p>
 
 <p>Isso é uma tarefa bem fácil de se implementar em Javascript &#8220;puro&#8221;, mas o jQuery como sempre nos da aquela ajuda.</p>
 
 <p><strong>Solução:</strong></p>
 
-<p><span>javascript</span></p>
+<p>[javascript]</p>
 
-<p>// Atribuímos a variavel ipts todos os inputs encontrados dentro do elemento &#8220;#checkboxes&#8221; var ipts = $(&#8220;#checkboxes&#8221;).find(&#8220;input&#8221;);</p>
+<p>// Atribuímos a variavel ipts todos os inputs encontrados dentro do elemento &#8220;#checkboxes&#8221;
+var ipts = $(&#8220;#checkboxes&#8221;).find(&#8220;input&#8221;);</p>
 
-<p>function checkAll() { // CheckBox que ao ser clicado marca ou desmarca todos elementos var check = document.getElementById(&#8220;checkboxCheckAll&#8221;);</p>
+<p>function checkAll()
+{
+// CheckBox que ao ser clicado marca ou desmarca todos elementos
+var check = document.getElementById(&#8220;checkboxCheckAll&#8221;);</p>
 
-<p>// Testamos o CheckBox para ver se devemos marcar ou desmarcar check.checked ? jQuery.each(ipts, function(){ // Se esta &#8220;checado&#8221; então marcamos todos elementos como checked=true this.checked = true; }) : jQuery.each(ipts, function(){ // Se não esta &#8220;checado&#8221; então marcamos todos elementos como checked=false this.checked = false; }); } <span>/javascript</span></p>
+<p>// Testamos o CheckBox para ver se devemos marcar ou desmarcar
+check.checked ?
+jQuery.each(ipts, function(){
+// Se esta &#8220;checado&#8221; então marcamos todos elementos como checked=true
+this.checked = true;
+}) :
+jQuery.each(ipts, function(){
+// Se não esta &#8220;checado&#8221; então marcamos todos elementos como checked=false
+this.checked = false;
+});
+}
+[/javascript]</p>
 
 <p>Simples e rápido.</p>
 
-<p>Testei com mais de 50 elementos e a rotina não ultrapassou 2 milisegundos.</p></div>
+<p>Testei com mais de 50 elementos e a rotina não ultrapassou 2 milisegundos.</p>
+</div>
 
 
   <footer>
@@ -311,6 +345,7 @@
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 <script type="text/javascript" src="/javascripts/jaydson.js"></script>
+<script type="text/javascript" src="/javascripts/blog-header-experiments.js"></script>
 
 </footer>
   

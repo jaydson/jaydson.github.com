@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Mozilla | Jaydson Gomes]]></title>
   <link href="http://jaydson.org/blog/categories/mozilla/atom.xml" rel="self"/>
   <link href="http://jaydson.org/"/>
-  <updated>2013-01-09T19:46:03-02:00</updated>
+  <updated>2013-01-10T19:55:19-02:00</updated>
   <id>http://jaydson.org/</id>
   <author>
     <name><![CDATA[Jaydson Gomes]]></name>
@@ -18,15 +18,24 @@
     <link href="http://jaydson.org/experimento-css3-3d-the-wall-explosion/"/>
     <updated>2012-03-17T03:06:47-03:00</updated>
     <id>http://jaydson.org/experimento-css3-3d-the-wall-explosion</id>
-    <content type="html"><![CDATA[<p>Depois de assistir pela terceira vez a <a href='http://jaydson.org/rsjs-animacoes-com-css3/'>palestra sobre CSS3</a> do <a href='http://twitter.com/felipenmoura'>Felipe N. Moura</a>, e ter agumas aulas do próprio, me empolguei com <a href='https://developer.mozilla.org/en/CSS/CSS3'>CSS3</a>, principalmente com a possibilidade 3D.<br />Coincidentemente, neste mês de Março, o <a href='https://developer.mozilla.org/pt-BR/demos/devderby'>Mozilla Dev Derby</a> é sobre CSS3 3D.<br />Já submeti 2 demos simples para a Mozilla, e agora fiz uma coisa um pouco mais complexa.<br />Minha ideia foi criar um muro 3D, com tijolos 3D.<br />É simples, cada tijolo do muro é um elemento 3D, e o conjunto de tijolos que formam o muro, também é 3D.<br />Fiz um vídeo, onde fica mais fácil visualizar a proposta do experimento.</p>
+    <content type="html"><![CDATA[<p>Depois de assistir pela terceira vez a <a href="http://jaydson.org/rsjs-animacoes-com-css3/">palestra sobre CSS3</a> do <a href="http://twitter.com/felipenmoura">Felipe N. Moura</a>, e ter agumas aulas do próprio, me empolguei com <a href="https://developer.mozilla.org/en/CSS/CSS3">CSS3</a>, principalmente com a possibilidade 3D.<br/>
+Coincidentemente, neste mês de Março, o <a href="https://developer.mozilla.org/pt-BR/demos/devderby">Mozilla Dev Derby</a> é sobre CSS3 3D.<br/>
+Já submeti 2 demos simples para a Mozilla, e agora fiz uma coisa um pouco mais complexa.<br/>
+Minha ideia foi criar um muro 3D, com tijolos 3D.<br/>
+É simples, cada tijolo do muro é um elemento 3D, e o conjunto de tijolos que formam o muro, também é 3D.<br/>
+Fiz um vídeo, onde fica mais fácil visualizar a proposta do experimento.</p>
 
 <p><div class="embed-video-container"><iframe src="http://www.youtube.com/embed/vUcof193BWc "></iframe></div></p>
 
-<p>No vídeo, usei o Chrome, pois a performance é um pouco melhor que no Firefox. Mas o experimento funciona em ambos, além do Safari.<br />O código deste experimento, assim como os outros que fiz, está no GitHub:<br /><a href='https://github.com/jaydson/wall-explosion-css3d'>https://github.com/jaydson/wall-explosion-css3d</a></p>
+<p>No vídeo, usei o Chrome, pois a performance é um pouco melhor que no Firefox. Mas o experimento funciona em ambos, além do Safari.<br/>
+O código deste experimento, assim como os outros que fiz, está no GitHub:<br/>
+<a href="https://github.com/jaydson/wall-explosion-css3d">https://github.com/jaydson/wall-explosion-css3d</a></p>
 
-<p>Além disso, está publicado nos demos da Mozilla para o DevDerby:<br /><a href='https://developer.mozilla.org/pt-BR/demos/detail/the-wall-explosion'>https://developer.mozilla.org/pt-BR/demos/detail/the-wall-explosion</a></p>
+<p>Além disso, está publicado nos demos da Mozilla para o DevDerby:<br/>
+<a href="https://developer.mozilla.org/pt-BR/demos/detail/the-wall-explosion">https://developer.mozilla.org/pt-BR/demos/detail/the-wall-explosion</a></p>
 
-<p>Curtam lá!</p>]]></content>
+<p>Curtam lá!</p>
+]]></content>
   </entry>
   
   <entry>
@@ -34,11 +43,18 @@
     <link href="http://jaydson.org/esfera-com-css3-3d/"/>
     <updated>2012-03-09T14:47:48-03:00</updated>
     <id>http://jaydson.org/esfera-com-css3-3d</id>
-    <content type="html"><![CDATA[<p>Fiz mais um demo com CSS3 para o <a href='https://developer.mozilla.org/en-US/demos/devderby'>Mozilla Dev Derby</a>.<br />Depois de ter feito um<a href='http://jaydson.org/cubo-3d-com-css3/'>cubo 3d</a>, minha ideia agora foi complicar um pouco e fazer uma esfera.<br />Depois de pensar um pouco, saiu uma esfera legal.<br />Não desenvolvi a esfera com base nas fórmulas da geometria, o que seria o correto e faria ficar bem mais bacana, mas para um primeiro experimento, está Ok.<br />Deêm uma olhada, e se acharem legal podem curtir lá ;)</p>
+    <content type="html"><![CDATA[<p>Fiz mais um demo com CSS3 para o <a href="https://developer.mozilla.org/en-US/demos/devderby">Mozilla Dev Derby</a>.<br/>
+Depois de ter feito um<a href="http://jaydson.org/cubo-3d-com-css3/"> cubo 3d</a>, minha ideia agora foi complicar um pouco e fazer uma esfera.<br/>
+Depois de pensar um pouco, saiu uma esfera legal.<br/>
+Não desenvolvi a esfera com base nas fórmulas da geometria, o que seria o correto e faria ficar bem mais bacana, mas para um primeiro experimento, está Ok.<br/>
+Deêm uma olhada, e se acharem legal podem curtir lá ;)</p>
 
-<p><a href='https://developer.mozilla.org/en-US/demos/detail/simple-css3-3d-sphere'>https://developer.mozilla.org/en-US/demos/detail/simple-css3-3d-sphere</a><br /><a href='http://jaydson.org/wp-content/uploads/sphere.jpg'><img alt='' src='http://jaydson.org/wp-content/uploads/sphere.jpg' /></a></p>
+<p><a href="https://developer.mozilla.org/en-US/demos/detail/simple-css3-3d-sphere">https://developer.mozilla.org/en-US/demos/detail/simple-css3-3d-sphere</a><br/>
+<a href="http://jaydson.org/wp-content/uploads/sphere.jpg"><img src="http://jaydson.org/wp-content/uploads/sphere.jpg" alt="" /></a></p>
 
-<p>Assim como o Cubo 3D, a esfera está no GitHub: <a href='https://github.com/jaydson/simple-css3-sphere-3d'>https://github.com/jaydson/simple-css3-sphere-3d</a></p>]]></content>
+<p>Assim como o Cubo 3D, a esfera está no GitHub:
+<a href="https://github.com/jaydson/simple-css3-sphere-3d">https://github.com/jaydson/simple-css3-sphere-3d</a></p>
+]]></content>
   </entry>
   
   <entry>
@@ -46,13 +62,19 @@
     <link href="http://jaydson.org/cubo-3d-com-css3/"/>
     <updated>2012-03-07T13:38:58-03:00</updated>
     <id>http://jaydson.org/cubo-3d-com-css3</id>
-    <content type="html"><![CDATA[<p>Neste mês de Março, o <a href='https://developer.mozilla.org/en-US/demos/devderby'>Mozilla Dev Derby</a> tem como desafio desenvolver demos de CSS3 3D.<br />Pra quem não conhece o Dev Derby, é uma competição promovida pela Mozilla para que desenvolvedores do mundo inteiro façam aplicações com novas tecnologias.<br />Já participei, fazendo um experimento com o History API do HTML5:<br /><a href='https://developer.mozilla.org/demos/detail/history-image-gallery'>https://developer.mozilla.org/en-US/demos/detail/history-image-gallery</a></p>
+    <content type="html"><![CDATA[<p>Neste mês de Março, o <a href="https://developer.mozilla.org/en-US/demos/devderby">Mozilla Dev Derby</a> tem como desafio desenvolver demos de CSS3 3D.<br/>
+Pra quem não conhece o Dev Derby, é uma competição promovida pela Mozilla para que desenvolvedores do mundo inteiro façam aplicações com novas tecnologias.<br/>
+Já participei, fazendo um experimento com o History API do HTML5:<br/>
+<a href="https://developer.mozilla.org/demos/detail/history-image-gallery">https://developer.mozilla.org/en-US/demos/detail/history-image-gallery</a></p>
 
-<p>Depois de assistir a <a href='http://felipenmoura.org/projects/lectures/css3-animation/#capa'>palestra</a> do <a href='http://twitter.com/felipenmoura'>@felipenmoura</a> e de ter umas aulas com ele sobre CSS3, resolvi fazer um pequeno experimento para submeter para o DevDerby.<br />O experimento é um cubo 3D, totalmente feito com CSS3:<br /><a href='https://developer.mozilla.org/en-US/demos/detail/simple-css3-3d-cube'>https://developer.mozilla.org/en-US/demos/detail/simple-css3-3d-cube</a></p>
+<p>Depois de assistir a <a href="http://felipenmoura.org/projects/lectures/css3-animation/#capa">palestra</a> do <a href="http://twitter.com/felipenmoura">@felipenmoura</a> e de ter umas aulas com ele sobre CSS3, resolvi fazer um pequeno experimento para submeter para o DevDerby.<br/>
+O experimento é um cubo 3D, totalmente feito com CSS3:<br/>
+<a href="https://developer.mozilla.org/en-US/demos/detail/simple-css3-3d-cube">https://developer.mozilla.org/en-US/demos/detail/simple-css3-3d-cube</a></p>
 
-<p><a href='http://jaydson.org/wp-content/uploads/cube.jpg'><img alt='' src='http://jaydson.org/wp-content/uploads/cube.jpg' /></a></p>
+<p><a href="http://jaydson.org/wp-content/uploads/cube.jpg"><img src="http://jaydson.org/wp-content/uploads/cube.jpg" alt="" /></a></p>
 
-<p>Confiram lá, e se curtirem, cliquem no &#8220;Like&#8221; ;)</p>]]></content>
+<p>Confiram lá, e se curtirem, cliquem no "Like" ;)</p>
+]]></content>
   </entry>
   
   <entry>
@@ -60,13 +82,22 @@
     <link href="http://jaydson.org/browserid-novidades/"/>
     <updated>2011-09-22T01:02:41-03:00</updated>
     <id>http://jaydson.org/browserid-novidades</id>
-    <content type="html"><![CDATA[<p>Já falei sobre o <a href='http://jaydson.org/mozilla-browserid-sistema-de-id-descentralizado'>BrowserID</a> aqui anteriormente e hoje venho compartilhar uma novidade .<br />Há algumas semanas, o Ben Adida (<a href='https://twitter.com/#!/benadida'>https://twitter.com/#!/benadida</a> , <a href='http://benlog.com/'>http://benlog.com/</a>) passou a ser o líder tecnológico na <a href='http://www.mozilla.org/'>Mozilla</a> na parte de Indentidade e dados dos usuários.<br />Mas quem é esse cara?<br />Bom, eu ainda não o conhecia, mas lendo sobre seus projetos vi que com certeza o BrowserID vai longe.<br />O Ben publicou varios projetos, todos baseados em autenticação, e 2 delas sobre autenticação via e-mail, assim como é a ideia principal do BrowserID.</p>
+    <content type="html"><![CDATA[<p>Já falei sobre o <a href="http://jaydson.org/mozilla-browserid-sistema-de-id-descentralizado">BrowserID</a> aqui anteriormente e hoje venho compartilhar uma novidade .<br/>
+Há algumas semanas, o Ben Adida (<a href="https://twitter.com/#!/benadida">https://twitter.com/#!/benadida</a> , <a href="http://benlog.com/">http://benlog.com/</a>) passou a ser o líder tecnológico na <a href="http://www.mozilla.org/">Mozilla</a> na parte de Indentidade e dados dos usuários.<br/>
+Mas quem é esse cara?<br/>
+Bom, eu ainda não o conhecia, mas lendo sobre seus projetos vi que com certeza o BrowserID vai longe.<br/>
+O Ben publicou varios projetos, todos baseados em autenticação, e 2 delas sobre autenticação via e-mail, assim como é a ideia principal do BrowserID.</p>
 
-<h2 id='abaixo_listo_os_3_trabalhos_do_ben'>Abaixo listo os 3 trabalhos do Ben:</h2>
+<h2>Abaixo listo os 3 trabalhos do Ben:</h2>
 
-<p>EmID: Web Authentication by Email Address - <a href='http://assets.adida.net/research/w2sp2008-emid.pdf'>http://assets.adida.net/research/w2sp2008-emid.pdf</a><br />Lightweight Signatures for Email - <a href='http://assets.adida.net/research/lightweight-signatures-for-email.pdf'>http://assets.adida.net/research/lightweight-signatures-for-email.pdf</a><br />BeamAuth - <a href='http://assets.adida.net/research/beamauth-ccs2007.pdf'>http://assets.adida.net/research/beamauth-ccs2007.pdf</a></p>
+<p>EmID: Web Authentication by Email Address - <a href="http://assets.adida.net/research/w2sp2008-emid.pdf">http://assets.adida.net/research/w2sp2008-emid.pdf</a><br/>
+Lightweight Signatures for Email - <a href="http://assets.adida.net/research/lightweight-signatures-for-email.pdf">http://assets.adida.net/research/lightweight-signatures-for-email.pdf</a><br/>
+BeamAuth - <a href="http://assets.adida.net/research/beamauth-ccs2007.pdf">http://assets.adida.net/research/beamauth-ccs2007.pdf</a></p>
 
-<p>E agora um vídeo, onde o próprio Ben explica como o BrowserID funciona.<br />Vale a pena dar uma olhada, e apostar nesta tecnologia!<br /><div class="embed-video-container"><iframe src="http://www.youtube.com/embed/6x45Nt1fOMM "></iframe></div></p>]]></content>
+<p>E agora um vídeo, onde o próprio Ben explica como o BrowserID funciona.<br/>
+Vale a pena dar uma olhada, e apostar nesta tecnologia!<br/>
+<div class="embed-video-container"><iframe src="http://www.youtube.com/embed/6x45Nt1fOMM "></iframe></div></p>
+]]></content>
   </entry>
   
   <entry>
@@ -74,15 +105,32 @@
     <link href="http://jaydson.org/mozilla-browserid-sistema-de-id-descentralizado/"/>
     <updated>2011-07-22T03:13:18-03:00</updated>
     <id>http://jaydson.org/mozilla-browserid-sistema-de-id-descentralizado</id>
-    <content type="html"><![CDATA[<p>A Mozilla está sempre desenvolvendo coisas muito legais, e hoje, navegando no <a href='http://hacks.mozilla.org'>Mozilla Hacks</a> vi um post muito interessante sobre o <a href='https://browserid.org/'><strong>BrowserID</strong></a>.<br />Segundo o site do projeto, o BrowserID fornece aos  usuários uma maneira mais segura e mais fácil de entrar nos sites que exigem algum tipo de autenticação.<br />Já para desenvolvedores, o BrowserID oferece em poucas linhas de código uma maneira simples de autenticar um usuário.<br />O objetivo é realmente esse, ser muito simples e seguro, e o mais legal, sem precisar utilizar senha.<br />O modelo atual, e que estamos acostumados para se autenticar em um site, é normalmente atraves de um login(nome de usuário) e uma senha.<br />Com o BrowserID o usuário só precisa confirmar o seu e-mail.<br />Esse processo é feito utilizando o <a href='https://wiki.mozilla.org/Labs/Identity/VerifiedEmailProtocol'>Verified E-mail Protocol</a>, que basicamente é um protocolo que define uma maneira de um usuário &#8220;provar&#8221; ao site que ele é dono de um determinado e-mail.<br />A ideia é brilhante e simples.</p>
+    <content type="html"><![CDATA[<p>A Mozilla está sempre desenvolvendo coisas muito legais, e hoje, navegando no <a href="http://hacks.mozilla.org">Mozilla Hacks</a> vi um post muito interessante sobre o <a href="https://browserid.org/"><strong>BrowserID</strong></a>.<br/>
+Segundo o site do projeto, o BrowserID fornece aos  usuários uma maneira mais segura e mais fácil de entrar nos sites que exigem algum tipo de autenticação.<br/>
+Já para desenvolvedores, o BrowserID oferece em poucas linhas de código uma maneira simples de autenticar um usuário.<br/>
+O objetivo é realmente esse, ser muito simples e seguro, e o mais legal, sem precisar utilizar senha.<br/>
+O modelo atual, e que estamos acostumados para se autenticar em um site, é normalmente atraves de um login(nome de usuário) e uma senha.<br/>
+Com o BrowserID o usuário só precisa confirmar o seu e-mail.<br/>
+Esse processo é feito utilizando o <a href="https://wiki.mozilla.org/Labs/Identity/VerifiedEmailProtocol">Verified E-mail Protocol</a>, que basicamente é um protocolo que define uma maneira de um usuário "provar" ao site que ele é dono de um determinado e-mail.<br/>
+A ideia é brilhante e simples.</p>
 
-<p>Abaixo, os pilares do BrowserID: * Fácil de usar<br /> * Segurança<br /> * Implementação Cross-browser<br /> * Descentralizado<br /> * Respeitar a privacidade do usuário</p>
+<p>Abaixo, os pilares do BrowserID:   <br/>
+  * Fácil de usar<br/>
+  * Segurança<br/>
+  * Implementação Cross-browser<br/>
+  * Descentralizado<br/>
+  * Respeitar a privacidade do usuário</p>
 
-<p>Para finalizar, um vídeo explicativo:<br /><div class="embed-video-container"><iframe src="http://www.youtube.com/embed/l0t9yDLAmFo "></iframe></div></p>
+<p>Para finalizar, um vídeo explicativo:<br/>
+<div class="embed-video-container"><iframe src="http://www.youtube.com/embed/l0t9yDLAmFo "></iframe></div></p>
 
-<h2 id='referncias'>Referências:</h2>
+<h2>Referências:</h2>
 
-<p><a href='http://hacks.mozilla.org/2011/07/introducing-browserid-easier-and-safer-authentication-on-the-web/'>http://hacks.mozilla.org/2011/07/introducing-browserid-easier-and-safer-authentication-on-the-web/</a><br /><a href='https://browserid.org/'>https://browserid.org/</a><br /><a href='http://www.pcmag.com/article2/0,2817,2388610,00.asp'>http://www.pcmag.com/article2/0,2817,2388610,00.asp</a><br /><a href='http://www.open-mike.org/entry/verified-email-protocol'>http://www.open-mike.org/entry/verified-email-protocol</a></p>]]></content>
+<p><a href="http://hacks.mozilla.org/2011/07/introducing-browserid-easier-and-safer-authentication-on-the-web/">http://hacks.mozilla.org/2011/07/introducing-browserid-easier-and-safer-authentication-on-the-web/</a><br/>
+<a href="https://browserid.org/">https://browserid.org/</a><br/>
+<a href="http://www.pcmag.com/article2/0,2817,2388610,00.asp">http://www.pcmag.com/article2/0,2817,2388610,00.asp</a><br/>
+<a href="http://www.open-mike.org/entry/verified-email-protocol">http://www.open-mike.org/entry/verified-email-protocol</a></p>
+]]></content>
   </entry>
   
 </feed>

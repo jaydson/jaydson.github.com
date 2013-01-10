@@ -9,7 +9,8 @@
   <meta name="author" content="Jaydson Gomes">
 
   
-  <meta name="description" content="Para quem gosta de desafios de programação em Javascript, encare esse post como um, senão encare apenas como uma dica mesmo. Se encarou como desafio &hellip;">
+  <meta name="description" content="Para quem gosta de desafios de programação em Javascript, encare esse post como um, senão encare apenas como uma dica mesmo.
+Se encarou como desafio &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,14 +22,14 @@
   <link rel="canonical" href="http://jaydson.org/javascript-recursao-para-executar-n-vezes-uma-funcao/">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+  <link href="/stylesheets/blog-header-experiments.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <link href="/atom.xml" rel="alternate" title="Jaydson Gomes" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="" rel="stylesheet" type="text/css">
 
   
   <script type="text/javascript">
@@ -47,7 +48,7 @@
 </head>
 
 <body   >
-  <header role="banner"><hgroup>
+  <header role="banner"><hgroup id="header-stage">
   <h1><a href="/">Jaydson Gomes</a></h1>
   
     <h2>HTML5 | JavaScript</h2>
@@ -105,41 +106,144 @@
   </header>
 
 
-<div class="entry-content"><p>Para quem gosta de desafios de programação em Javascript, encare esse post como um, senão encare apenas como uma dica mesmo. Se encarou como desafio, tente implementar uma solução diferente(melhor?) para o problema: - Criar uma função genérica (leia-se reuzável) que execute uma determinada função X vezes em Y milisegundos. Sacaram a ideia? Imaginem uma aplicação onde precisamos chamar diversas vezes uma função em um determinado intervalo. Este é o desafio, porém o legal é fazer isso em uma única função e sem usar variáveis auxiliares. Para quem gosta de desafios de programação em Javascript, encare esse post como um, senão encare apenas como uma dica mesmo. Se encarou como desafio, tente implementar uma solução diferente(melhor?) para o problema: - Criar uma função genérica (leia-se reuzável) que execute uma determinada função X vezes em Y milisegundos. Sacaram a ideia? Imaginem uma aplicação onde precisamos chamar diversas vezes uma função em um determinado intervalo. Este é o desafio, porém o legal é fazer isso em uma única função e sem usar variáveis auxiliares. <!-- more --> Minha implementação segue abaixo: <span>javascript</span> function <em>(i,m,callback){ setTimeout(function(){ return i&#62;1?</em>(&#8211;i,m,callback):false; },m); callback(i); } <span>/javascript</span></p>
+<div class="entry-content"><p>Para quem gosta de desafios de programação em Javascript, encare esse post como um, senão encare apenas como uma dica mesmo.
+Se encarou como desafio, tente implementar uma solução diferente(melhor?) para o problema:
+- Criar uma função genérica (leia-se reuzável) que execute uma determinada função X vezes em Y milisegundos.
+Sacaram a ideia?
+Imaginem uma aplicação onde precisamos chamar diversas vezes uma função em um determinado intervalo.
+Este é o desafio, porém o legal é fazer isso em uma única função e sem usar variáveis auxiliares.
+Para quem gosta de desafios de programação em Javascript, encare esse post como um, senão encare apenas como uma dica mesmo.
+Se encarou como desafio, tente implementar uma solução diferente(melhor?) para o problema:
+- Criar uma função genérica (leia-se reuzável) que execute uma determinada função X vezes em Y milisegundos.
+Sacaram a ideia?
+Imaginem uma aplicação onde precisamos chamar diversas vezes uma função em um determinado intervalo.
+Este é o desafio, porém o legal é fazer isso em uma única função e sem usar variáveis auxiliares.</p>
 
-<p>Simples, não? Mais abaixo vou explicar o que acontece. Com essa função é possível fazer implementações deste tipo: <span>javascript</span> /* Irá executar 5 vezes no intervalo de 500 milisegundos a função anônima abaixo. <em>/ <em>(5,500,function(){ // XHR buscando um JSON $.getJSON(&#8216;sample.json&#8217;,function(jsonObject){ console.log(jsonObject); }); });</em></em></p>
+<!-- more -->
 
-<p>/* Irá executar 44 vezes no intervalo de 1 segundo a função anônima abaixo. <em>/ <em>(44,1000,function(){ console.log(&#8217;X&#8217;); });</em></em></p>
 
-<p><span>/javascript</span></p>
+<p>Minha implementação segue abaixo:
+[javascript]
+function _(i,m,callback){</p>
 
-<p>Bom, esta função resolveu um problema específico que enfrentei, e resolvi posta-la para quem possa precisar um dia. Mas o interessante é sua implementação em poucas linhas e sua recursividade.</p>
+<pre><code> setTimeout(function(){
+   return i&amp;gt;1?_(--i,m,callback):false;
+},m);
+callback(i);
+</code></pre>
 
-<p>Explicação: Notem que a função recebe 3 parâmetros (i,m,callback) onde: i = Quantidade de vezes que a função deve ser executada m = Intervalo em milisegundos callback = Função a ser executada</p>
+<p>}
+[/javascript]</p>
 
-<p>A primeira ação da função é executar o setTimeout() passando a função e os milisegundos. Logo uma operação ternária para verificar se a quantidade é maior que 1. Porque isso? Porque para economizar variáveis auxiliares e outras possíveis complicações, o que fiz foi decrementar a quantidade de vezes, ou seja, se a função deve ser executada 5 vezes, começo em 5 até chegar a 1. Se ainda é maior então chamamos a mesma função recursivamente, e claro, decrementando a quantidade de vezes. <em><strong>OBS:</strong> O decremento à esquerda (&#8211;i) faz com que a variável i seja decrementada antes de ser passada para a função.</em> A cada chamada, a função passada é executada e ainda devolve o índice atual para possível manipulação.</p>
+<p>Simples, não?
+Mais abaixo vou explicar o que acontece.
+Com essa função é possível fazer implementações deste tipo:
+[javascript]
+/<em>
+   Irá executar 5 vezes no intervalo de 500 milisegundos a função anônima abaixo.
+</em>/
+_(5,500,function(){</p>
+
+<pre><code>    // XHR buscando um JSON
+$.getJSON('sample.json',function(jsonObject){
+    console.log(jsonObject);
+});
+</code></pre>
+
+<p>});</p>
+
+<p>/<em>
+   Irá executar 44 vezes no intervalo de 1 segundo a função anônima abaixo.
+</em>/
+_(44,1000,function(){</p>
+
+<pre><code>   console.log('X');
+</code></pre>
+
+<p>});</p>
+
+<p>[/javascript]</p>
+
+<p>Bom, esta função resolveu um problema específico que enfrentei, e resolvi posta-la para quem possa precisar um dia.
+Mas o interessante é sua implementação em poucas linhas e sua recursividade.</p>
+
+<p>Explicação:
+Notem que a função recebe 3 parâmetros (i,m,callback) onde:
+i = Quantidade de vezes que a função deve ser executada
+m = Intervalo em milisegundos
+callback = Função a ser executada</p>
+
+<p>A primeira ação da função é executar o setTimeout() passando a função e os milisegundos.
+Logo uma operação ternária para verificar se a quantidade é maior que 1. Porque isso?
+Porque para economizar variáveis auxiliares e outras possíveis complicações, o que fiz foi decrementar a quantidade de vezes, ou seja, se a função deve ser executada 5 vezes, começo em 5 até chegar a 1.
+Se ainda é maior então chamamos a mesma função recursivamente, e claro, decrementando a quantidade de vezes.
+<em><strong>OBS:</strong> O decremento à esquerda (&#8211;i) faz com que a variável i seja decrementada antes de ser passada para a função.</em>
+A cada chamada, a função passada é executada e ainda devolve o índice atual para possível manipulação.</p>
 
 <p>Enfim, esta foi minha solução, caso consigam desenvolver outra, ou já tenham feito algo parecido, postem ai! ;)</p>
 
 <p>Minha implementação segue abaixo:</p>
 
-<p><span>javascript</span> function <em>(i,m,callback){ setTimeout(function(){ return i&gt;1?</em>(&#8211;i,m,callback):false; },m); callback(i); } <span>/javascript</span></p>
+<p>[javascript]
+function _(i,m,callback){</p>
 
-<p>Simples, não? Mais abaixo vou explicar o que acontece. Com essa função é possível fazer implementações deste tipo:</p>
+<pre><code> setTimeout(function(){
+   return i&gt;1?_(--i,m,callback):false;
+},m);
+callback(i);
+</code></pre>
 
-<p><span>javascript</span> /* Irá executar 5 vezes no intervalo de 500 milisegundos a função anônima abaixo. <em>/ <em>(5,500,function(){ // XHR buscando um JSON $.getJSON(&#8216;sample.json&#8217;,function(jsonObject){ console.log(jsonObject); }); });</em></em></p>
+<p>}
+[/javascript]</p>
 
-<p>/* Irá executar 44 vezes no intervalo de 1 segundo a função anônima abaixo. <em>/ <em>(44,1000,function(){ console.log(&#8217;X&#8217;); });</em></em></p>
+<p>Simples, não?
+Mais abaixo vou explicar o que acontece.
+Com essa função é possível fazer implementações deste tipo:</p>
 
-<p><span>/javascript</span></p>
+<p>[javascript]
+/<em>
+   Irá executar 5 vezes no intervalo de 500 milisegundos a função anônima abaixo.
+</em>/
+_(5,500,function(){</p>
 
-<p>Bom, esta função resolveu um problema específico que enfrentei, e resolvi posta-la para quem possa precisar um dia. Mas o interessante é sua implementação em poucas linhas e sua recursividade.</p>
+<pre><code>    // XHR buscando um JSON
+$.getJSON('sample.json',function(jsonObject){
+    console.log(jsonObject);
+});
+</code></pre>
 
-<p>Explicação: Notem que a função recebe 3 parâmetros (i,m,callback) onde: i = Quantidade de vezes que a função deve ser executada m = Intervalo em milisegundos callback = Função a ser executada</p>
+<p>});</p>
 
-<p>A primeira ação da função é executar o setTimeout() passando a função e os milisegundos. Logo uma operação ternária para verificar se a quantidade é maior que 1. Porque isso? Porque para economizar variáveis auxiliares e outras possíveis complicações, o que fiz foi decrementar a quantidade de vezes, ou seja, se a função deve ser executada 5 vezes, começo em 5 até chegar a 1. Se ainda é maior então chamamos a mesma função recursivamente, e claro, decrementando a quantidade de vezes. <em><strong>OBS:</strong> O decremento à esquerda (&#8211;i) faz com que a variável i seja decrementada antes de ser passada para a função.</em> A cada chamada, a função passada é executada e ainda devolve o índice atual para possível manipulação.</p>
+<p>/<em>
+   Irá executar 44 vezes no intervalo de 1 segundo a função anônima abaixo.
+</em>/
+_(44,1000,function(){</p>
 
-<p>Enfim, esta foi minha solução, caso consigam desenvolver outra, ou já tenham feito algo parecido, postem ai! ;)</p></div>
+<pre><code>   console.log('X');
+</code></pre>
+
+<p>});</p>
+
+<p>[/javascript]</p>
+
+<p>Bom, esta função resolveu um problema específico que enfrentei, e resolvi posta-la para quem possa precisar um dia.
+Mas o interessante é sua implementação em poucas linhas e sua recursividade.</p>
+
+<p>Explicação:
+Notem que a função recebe 3 parâmetros (i,m,callback) onde:
+i = Quantidade de vezes que a função deve ser executada
+m = Intervalo em milisegundos
+callback = Função a ser executada</p>
+
+<p>A primeira ação da função é executar o setTimeout() passando a função e os milisegundos.
+Logo uma operação ternária para verificar se a quantidade é maior que 1. Porque isso?
+Porque para economizar variáveis auxiliares e outras possíveis complicações, o que fiz foi decrementar a quantidade de vezes, ou seja, se a função deve ser executada 5 vezes, começo em 5 até chegar a 1.
+Se ainda é maior então chamamos a mesma função recursivamente, e claro, decrementando a quantidade de vezes.
+<em><strong>OBS:</strong> O decremento à esquerda (&#8211;i) faz com que a variável i seja decrementada antes de ser passada para a função.</em>
+A cada chamada, a função passada é executada e ainda devolve o índice atual para possível manipulação.</p>
+
+<p>Enfim, esta foi minha solução, caso consigam desenvolver outra, ou já tenham feito algo parecido, postem ai! ;)</p>
+</div>
 
 
   <footer>
@@ -277,6 +381,7 @@
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 <script type="text/javascript" src="/javascripts/jaydson.js"></script>
+<script type="text/javascript" src="/javascripts/blog-header-experiments.js"></script>
 
 </footer>
   

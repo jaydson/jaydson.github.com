@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Xdebug | Jaydson Gomes]]></title>
   <link href="http://jaydson.org/blog/categories/xdebug/atom.xml" rel="self"/>
   <link href="http://jaydson.org/"/>
-  <updated>2013-01-09T19:46:03-02:00</updated>
+  <updated>2013-01-10T19:55:19-02:00</updated>
   <id>http://jaydson.org/</id>
   <author>
     <name><![CDATA[Jaydson Gomes]]></name>
@@ -18,19 +18,27 @@
     <link href="http://jaydson.org/webgrind-interface-para-profiling-baseada-no-xdebug/"/>
     <updated>2011-04-15T09:42:47-03:00</updated>
     <id>http://jaydson.org/webgrind-interface-para-profiling-baseada-no-xdebug</id>
-    <content type="html"><![CDATA[<p>O <a href='http://www.xdebug.org'><strong>Xdebug Profiler</strong></a> é uma ferramenta poderosa que nos permite analisar o código PHP a procura de gargalos(!), ou até mesmo determinados trechos onde possa existir lentidão na aplicação. Normalmente usamos algum cliente para ler as informações geradas pelo Xdebug, como por exemplo o <a href='http://kcachegrind.sf.net/'>KCacheGrind</a>.</p>
+    <content type="html"><![CDATA[<p>O <a href="http://www.xdebug.org"><strong>Xdebug Profiler</strong></a> é uma ferramenta poderosa que nos permite analisar o código PHP a procura de gargalos(!), ou até mesmo determinados trechos onde possa existir lentidão na aplicação.
+Normalmente usamos algum cliente para ler as informações geradas pelo Xdebug, como por exemplo o <a href="http://kcachegrind.sf.net/">KCacheGrind</a>.</p>
 
-<p>O que venho compartilhar hoje é uma excelente ferramenta, o <a href='https://github.com/jokkedk/webgrind'>WebGrind</a>, desenvolvida pelo <a href='https://github.com/jokkedk'>Joakim Nygard</a>. O que gostei foi a simplicidade. <a href='https://github.com/jokkedk/webgrind'>Baixe</a> &gt; Descompacte &gt; Coloque no servidor. Pronto, feito isso basta acessar, iniciar o debugger e acessar a aplicação.<!-- more --></p>
+<p>O que venho compartilhar hoje é uma excelente ferramenta, o <a href="https://github.com/jokkedk/webgrind">WebGrind</a>, desenvolvida pelo <a href="https://github.com/jokkedk">Joakim Nygard</a>.
+O que gostei foi a simplicidade. <a href="https://github.com/jokkedk/webgrind">Baixe</a> > Descompacte > Coloque no servidor.
+Pronto, feito isso basta acessar, iniciar o debugger e acessar a aplicação.<!-- more --></p>
 
-<p>Obviamente é necessário ter o <a href='http://www.xdebug.org/docs/install'>Xdebug instalado</a> e configurado, mas isso nao é um bicho de 7 cabeças. Abaixo vai um screenshot de um teste que fiz com uma aplicação básica utilizando Zend Framework:</p>
+<p>Obviamente é necessário ter o <a href="http://www.xdebug.org/docs/install">Xdebug instalado</a> e configurado, mas isso nao é  um bicho de 7 cabeças.
+Abaixo vai um screenshot de um teste que fiz com uma aplicação básica utilizando Zend Framework:</p>
 
-<p><span>caption id=&#8221;attachment_843&#8221; align=&#8221;aligncenter&#8221; width=&#8221;491&#8221; caption=&#8221;Webgrind&#8221;</span>(http://jaydson-org.web102.redehost.com.br/assets/webgrind1-1024x505.png)](http://jaydson-org.web102.redehost.com.br/assets/webgrind1.png)<span>/caption</span></p>
+<p>[caption id="attachment_843" align="aligncenter" width="491" caption="Webgrind"]<a href="http://jaydson-org.web102.redehost.com.br/assets/webgrind1.png"><img src="http://jaydson-org.web102.redehost.com.br/assets/webgrind1-1024x505.png" alt="Webgrind" /></a>[/caption]</p>
 
-<p>Notem em cima a direita: 654 different functions called in 109 milliseconds O WebGrind mostra o total de chamadas de funções, e o tempo total em milisegundos. Além disso, cada função exibe quais arquivos foram usados.</p>
+<p>Notem em cima a direita:
+654 different functions called in 109 milliseconds
+O WebGrind mostra o total de chamadas de funções, e o tempo total em milisegundos.
+Além disso, cada função exibe quais arquivos foram usados.</p>
 
 <p>Bom, testem ai e vejam o que mais é possivel.</p>
 
-<p>Profiler</p>]]></content>
+<p>Profiler</p>
+]]></content>
   </entry>
   
 </feed>

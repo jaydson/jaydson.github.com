@@ -21,14 +21,14 @@
   <link rel="canonical" href="http://jaydson.org/nodejs-introducao/">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+  <link href="/stylesheets/blog-header-experiments.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <link href="/atom.xml" rel="alternate" title="Jaydson Gomes" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="" rel="stylesheet" type="text/css">
 
   
   <script type="text/javascript">
@@ -47,7 +47,7 @@
 </head>
 
 <body   >
-  <header role="banner"><hgroup>
+  <header role="banner"><hgroup id="header-stage">
   <h1><a href="/">Jaydson Gomes</a></h1>
   
     <h2>HTML5 | JavaScript</h2>
@@ -105,9 +105,9 @@
   </header>
 
 
-<div class="entry-content"><p><a href='http://jaydson-org.web102.redehost.com.br/assets/nodejs1.png'><img alt='' src='http://jaydson-org.web102.redehost.com.br/assets/nodejs1.png' /></a></p>
+<div class="entry-content"><p><a href="http://jaydson-org.web102.redehost.com.br/assets/nodejs1.png"><img src="http://jaydson-org.web102.redehost.com.br/assets/nodejs1.png" alt="" /></a></p>
 
-<p>There are times that I think about testing <a href='http://nodejs.org/'>nodeJS</a>, but just this week I could stop and spend some time for this goal.</p>
+<p>There are times that I think about testing <a href="http://nodejs.org/">nodeJS</a>, but just this week I could stop and spend some time for this goal.</p>
 
 <p>My intention with this post is just compile some information about the node and pass on to those who have not had the opportunity to meet.</p>
 
@@ -115,27 +115,35 @@
 
 <p>Just as every JavaScript lover, i always want to know everything about the language, as well as what is being done with it.</p>
 
-<p>What really caught my attention was the word: &#8221;<a href='http://en.wikipedia.org/wiki/Server-side_JavaScript'>Server-side Javascript</a>&#8221;. o/</p>
+<p>What really caught my attention was the word: &#8221;<a href="http://en.wikipedia.org/wiki/Server-side_JavaScript">Server-side Javascript</a>&#8221;. o/</p>
 
 <p>Yes, that&#8217;s it. Javascript running at server.</p>
 
-<p>What also impressed me was the fact that there are several implementations of this type. Are almost 50 <span>link above</span>.</p>
+<p>What also impressed me was the fact that there are several implementations of this type. Are almost 50 [link above].</p>
 
-<p><a href='http://jaydson-org.web102.redehost.com.br/assets/nodejs1.png'><img alt='' src='http://jaydson-org.web102.redehost.com.br/assets/nodejs1.png' /></a></p>
+<p><a href="http://jaydson-org.web102.redehost.com.br/assets/nodejs1.png"><img src="http://jaydson-org.web102.redehost.com.br/assets/nodejs1.png" alt="" /></a></p>
 
-<p>Há tempos que penso em testar o <a href='http://nodejs.org/'><strong>nodeJS</strong></a>, mas só esta semana pude parar e dedicar um pouco de tempo a este obejtivo. Meu intuito com este post é apenas &#8220;compilar&#8221; algumas informações sobre o node e passar adiante para aqueles que ainda não tiveram a oportunidade de conhecer. O que mais me motivou a investigar o node, foi o próprio nome. node<strong>JS.</strong>Assim como todo aficcionado por Javascript, sempre quero saber tudo a respeito da linguagem, assim como o que está sendo feito com ela. O que mais me chamou a atenção foi o termo: &#8221;<strong><a href='http://en.wikipedia.org/wiki/Server-side_JavaScript'>Server-side Javascript</a></strong>&#8221;. o/ Sim, isso mesmo. Javascript rodando no servidor. O que me expantou também foi o fato de existirem várias implementações deste tipo, são quase 50 <span>Link acima</span>.</p>
+<p>Há tempos que penso em testar o <a href="http://nodejs.org/"><strong>nodeJS</strong></a>, mas só esta semana pude parar e dedicar um pouco de tempo a este obejtivo.
+Meu intuito com este post é apenas &#8220;compilar&#8221; algumas informações sobre o node e passar adiante para aqueles que ainda não tiveram a oportunidade de conhecer.
+O que mais me motivou a investigar o node, foi o próprio nome. node<strong>JS.
+</strong>Assim como todo aficcionado por Javascript, sempre quero saber tudo a respeito da linguagem, assim como o que está sendo feito com ela.
+O que mais me chamou a atenção foi o termo: &#8221;<strong><a href="http://en.wikipedia.org/wiki/Server-side_JavaScript">Server-side Javascript</a></strong>&#8221;. o/
+Sim, isso mesmo. Javascript rodando no servidor.
+O que me expantou também foi o fato de existirem várias implementações deste tipo, são quase 50 [Link acima].</p>
+
 <!-- more -->
+
+
 <p>nodeJS characteristics:</p>
 
-<p>* <a href='http://en.wikipedia.org/wiki/Server-side_JavaScript'>Server-side Javascript</a> (Term used to refer to the JavaScript running on the Server)</p>
+<ul>
+<li><p><a href="http://en.wikipedia.org/wiki/Server-side_JavaScript">Server-side Javascript</a> (Term used to refer to the JavaScript running on the Server)</p></li>
+<li><p>Built on <a href="http://code.google.com/p/v8/">Google’s V8</a> (Google&#8217;s Javascript Engine)</p></li>
+<li><p>Evented, non-blocking I/O. Similar to EventMachine or Twisted. (To learn more about it: <a href="http://en.wikipedia.org/wiki/Reactor_pattern">http://en.wikipedia.org/wiki/Reactor_pattern</a>)</p></li>
+<li><p>CommonJS module system.</p></li>
+<li><p>8000 lines of C/C++, 2000 lines of Javascript, 14 contributors.</p></li>
+</ul>
 
-<p>* Built on <a href='http://code.google.com/p/v8/'>Google’s V8</a> (Google&#8217;s Javascript Engine)</p>
-
-<p>* Evented, non-blocking I/O. Similar to EventMachine or Twisted. (To learn more about it: <a href='http://en.wikipedia.org/wiki/Reactor_pattern'>http://en.wikipedia.org/wiki/Reactor_pattern</a>)</p>
-
-<p>* CommonJS module system.</p>
-
-<p>* 8000 lines of C/C++, 2000 lines of Javascript, 14 contributors.</p>
 
 <p>Interested in learning more as I do?</p>
 
@@ -143,65 +151,74 @@
 
 <p>nodeJS Site</p>
 
-<p><a href='http://nodejs.org/#about'>http://nodejs.org/#about</a></p>
+<p><a href="http://nodejs.org/#about">http://nodejs.org/#about</a></p>
 
 <p>YUI Module to run inside nodeJS</p>
 
-<p><a href='http://yuilibrary.com/gallery/show/nodejs'>http://yuilibrary.com/gallery/show/nodejs</a></p>
+<p><a href="http://yuilibrary.com/gallery/show/nodejs">http://yuilibrary.com/gallery/show/nodejs</a></p>
 
-<p><a href='http://yuilibrary.com/gallery/show/nodejs' /></p>
+<p><a href="http://yuilibrary.com/gallery/show/nodejs"></a></p>
 
 <p>Simon Willison&#8217;s Blog talking about nodeJS</p>
 
-<p><a href='http://yuilibrary.com/gallery/show/nodejs'>http://simonwillison.net/2009/Nov/23/node/</a></p>
+<p><a href="http://yuilibrary.com/gallery/show/nodejs">http://simonwillison.net/2009/Nov/23/node/</a></p>
 
 <p>JSConf Slides</p>
 
-<p><a href='http://s3.amazonaws.com/four.livejournal/20091117/jsconf.pdf'>http://s3.amazonaws.com/four.livejournal/20091117/jsconf.pdf</a></p>
+<p><a href="http://s3.amazonaws.com/four.livejournal/20091117/jsconf.pdf">http://s3.amazonaws.com/four.livejournal/20091117/jsconf.pdf</a></p>
 
-<p><a href='http://yuilibrary.com/gallery/show/nodejs' /></p>
+<p><a href="http://yuilibrary.com/gallery/show/nodejs"></a></p>
 
 <p>Example Application with nodeJS</p>
 
-<p><a href='http://chat.nodejs.org/'>http://chat.nodejs.org/</a></p>
+<p><a href="http://chat.nodejs.org/">http://chat.nodejs.org/</a></p>
 
 <p>Video with Ryan Dahl talking about the node in SanFrancisco in January</p>
 
-<p><a href='http://vimeo.com/9968301'>NodeJS Synoposis</a> from <a href='http://vimeo.com/user2924382'>Kris Kowal</a> on <a href='http://vimeo.com'>Vimeo</a>.</p>
+<p><a href="http://vimeo.com/9968301">NodeJS Synoposis</a> from <a href="http://vimeo.com/user2924382">Kris Kowal</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
 
 <p>In the next post I&#8217;ll show you a step by step how to install nodeJS and how to make a &#8220;Hello World&#8221;. : P</p>
 
 <p>Vamos então as características do nodeJS:</p>
 
-<p>* <a href='http://en.wikipedia.org/wiki/Server-side_JavaScript'>Server-side Javascript</a> (Termo usado para se referir ao Javascript rodando no Servidor)</p>
+<ul>
+<li><p><a href="http://en.wikipedia.org/wiki/Server-side_JavaScript">Server-side Javascript</a> (Termo usado para se referir ao Javascript rodando no Servidor)</p></li>
+<li><p>Built on <a href="http://code.google.com/p/v8/">Google’s V8</a> (Engine Javascript do Google)</p></li>
+<li><p>Evented, non-blocking I/O. Similar to EventMachine or Twisted. (Para saber mais sobre isso: <a href="http://en.wikipedia.org/wiki/Reactor_pattern">http://en.wikipedia.org/wiki/Reactor_pattern</a>)</p></li>
+<li><p>CommonJS module system.</p></li>
+<li><p>8000 lines of C/C++, 2000 lines of Javascript, 14 contributors.</p></li>
+</ul>
 
-<p>* Built on <a href='http://code.google.com/p/v8/'>Google’s V8</a> (Engine Javascript do Google)</p>
 
-<p>* Evented, non-blocking I/O. Similar to EventMachine or Twisted. (Para saber mais sobre isso: <a href='http://en.wikipedia.org/wiki/Reactor_pattern'>http://en.wikipedia.org/wiki/Reactor_pattern</a>)</p>
+<p>Interessado em aprender mais assim como eu?
+Então, algumas referências:</p>
 
-<p>* CommonJS module system.</p>
+<p>Site do nodeJS
+<a href="http://nodejs.org/#about">http://nodejs.org/#about
+</a>
+Módulo para rodar YUI dentro do node
+<a href="http://yuilibrary.com/gallery/show/nodejs">http://yuilibrary.com/gallery/show/nodejs</a></p>
 
-<p>* 8000 lines of C/C++, 2000 lines of Javascript, 14 contributors.</p>
+<p><a href="http://yuilibrary.com/gallery/show/nodejs"> </a></p>
 
-<p>Interessado em aprender mais assim como eu? Então, algumas referências:</p>
+<p>Blog do Simon Willison falando sobre nodeJS<a href="http://yuilibrary.com/gallery/show/nodejs">
+http://simonwillison.net/2009/Nov/23/node/
+</a></p>
 
-<p>Site do nodeJS <a href='http://nodejs.org/#about'>http://nodejs.org/#about</a> Módulo para rodar YUI dentro do node <a href='http://yuilibrary.com/gallery/show/nodejs'>http://yuilibrary.com/gallery/show/nodejs</a></p>
+<p>Slides JSConf
+<a href="http://s3.amazonaws.com/four.livejournal/20091117/jsconf.pdf">http://s3.amazonaws.com/four.livejournal/20091117/jsconf.pdf</a></p>
 
-<p><a href='http://yuilibrary.com/gallery/show/nodejs' /></p>
+<p><a href="http://yuilibrary.com/gallery/show/nodejs"> </a></p>
 
-<p>Blog do Simon Willison falando sobre nodeJS<a href='http://yuilibrary.com/gallery/show/nodejs'>http://simonwillison.net/2009/Nov/23/node/</a></p>
-
-<p>Slides JSConf <a href='http://s3.amazonaws.com/four.livejournal/20091117/jsconf.pdf'>http://s3.amazonaws.com/four.livejournal/20091117/jsconf.pdf</a></p>
-
-<p><a href='http://yuilibrary.com/gallery/show/nodejs' /></p>
-
-<p>Aplicação exemplo com o node <a href='http://chat.nodejs.org/'>http://chat.nodejs.org/</a></p>
+<p>Aplicação exemplo com o node
+<a href="http://chat.nodejs.org/">http://chat.nodejs.org/</a></p>
 
 <p>Vídeo com Ryan Dahl falando sobre o node em SãoFrancisco em janeiro deste ano</p>
 
-<p><a href='http://vimeo.com/9968301'>NodeJS Synoposis</a> from <a href='http://vimeo.com/user2924382'>Kris Kowal</a> on <a href='http://vimeo.com'>Vimeo</a>.</p>
+<p><a href="http://vimeo.com/9968301">NodeJS Synoposis</a> from <a href="http://vimeo.com/user2924382">Kris Kowal</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
 
-<p>No próximo post mostrarei  um passo a passo de como instalar o nodeJS e como fazer um &#8220;Hello World&#8221;.  :P</p></div>
+<p>No próximo post mostrarei  um passo a passo de como instalar o nodeJS e como fazer um &#8220;Hello World&#8221;.  :P</p>
+</div>
 
 
   <footer>
@@ -339,6 +356,7 @@
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 <script type="text/javascript" src="/javascripts/jaydson.js"></script>
+<script type="text/javascript" src="/javascripts/blog-header-experiments.js"></script>
 
 </footer>
   

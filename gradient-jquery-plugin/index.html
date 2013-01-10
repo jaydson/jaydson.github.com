@@ -9,7 +9,7 @@
   <meta name="author" content="Jaydson Gomes">
 
   
-  <meta name="description" content="Javascript is a very powerful programming language . Do not say this only because i love the language, but for daily work with Javascript and see its &hellip;">
+  <meta name="description" content="Veja aqui o exemplo: http://jaydson.org/code/jquery/plugins/gradient/index.html Javascript is a very powerful programming language . Do not say this &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,14 +21,14 @@
   <link rel="canonical" href="http://jaydson.org/gradient-jquery-plugin/">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+  <link href="/stylesheets/blog-header-experiments.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <link href="/atom.xml" rel="alternate" title="Jaydson Gomes" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="" rel="stylesheet" type="text/css">
 
   
   <script type="text/javascript">
@@ -47,7 +47,7 @@
 </head>
 
 <body   >
-  <header role="banner"><hgroup>
+  <header role="banner"><hgroup id="header-stage">
   <h1><a href="/">Jaydson Gomes</a></h1>
   
     <h2>HTML5 | JavaScript</h2>
@@ -105,53 +105,92 @@
   </header>
 
 
-<div class="entry-content"><p>Javascript is a very powerful programming language . Do not say this only because i love the language, but for daily work with Javascript and see its power. Frameworks help of course, but do not forget that everythingh is all the more pure and beautiful Javascript. In the list that I participate, I see some people mistakenly confuse it a little, but it&#8217;s coming the next Post.</p>
+<div class="entry-content"><p>Veja aqui o exemplo: <a href="../code/jquery/plugins/gradient/index.html">http://jaydson.org/code/jquery/plugins/gradient/index.html</a></p>
 
-<p>Javascript é realmente uma linguagem de programação muito poderosa. Não falo isso só por ser apaixonado pela linguagem, mas sim por diariamente programar Javascript e ver o seu poder. Frameworks ajudam claro, mas não se esqueçam que no fundo é tudo o mais puro e belo Javascript. Na lista do Jquery que participo, seguido vejo algumas pessoas equivocadamente confundindo um pouco isso, mas isso fica pra um próximo Post.</p>
+<p>Javascript is a very powerful programming language . Do not say this only because i love the language, but for daily work with Javascript and see its power.
+Frameworks help of course, but do not forget that everythingh is all the more pure and beautiful Javascript.
+In the list that I participate, I see some people mistakenly confuse it a little, but it&#8217;s coming the next Post.</p>
+
+<p>Javascript é realmente uma linguagem de programação muito poderosa. Não falo isso só por ser apaixonado pela linguagem, mas sim por diariamente programar Javascript e ver o seu poder.
+Frameworks ajudam claro, mas não se esqueçam que no fundo é tudo o mais puro e belo Javascript.
+Na lista do Jquery que participo, seguido vejo algumas pessoas equivocadamente confundindo um pouco isso, mas isso fica pra um próximo Post.</p>
+
 <!-- more -->
-<p>What I will address in this Post is a very good plugin developed by <a href='http://brandonaaron.net/'>Brandon Aaron</a>. For those who do not know, this guy lives down in Texas and is a leading member of  <a href='http://docs.jquery.com/Contributors'>jQuery developers team</a>.</p>
 
-<p>The basic idea of the plugin is creating the effect of Gradient (going from one color to another) in an HTML element. That&#8217;s right! No more Photoshop. O / What we need: obviously the <a href='http://docs.jquery.com/Downloading_jQuery'>Jquery</a>, and the <a href='http://github.com/brandonaaron/jquery-gradient/tree/master'>Gradient plugin</a>.</p>
 
-<p>But this time go a little further&#8230; The plugin allows us to specify the initial RGB code, RGB code final and even the direction of the gradient (vertical or horizontal). Let&#8217;s see the code could understand better:</p>
+<p>What I will address in this Post is a very good plugin developed by <a href="http://brandonaaron.net/">Brandon Aaron</a>.
+For those who do not know, this guy lives down in Texas and is a leading member of  <a href="http://docs.jquery.com/Contributors">jQuery developers team</a>.</p>
 
-<p><span>javascript</span> $(&#8216;#my_element&#8217;).gradient({ from: &#8216;ffffff&#8217;, to: &#8216;000000&#8217;, direction: &#8216;vertical&#8217;; }); <span>/javascript</span></p>
+<p>The basic idea of the plugin is creating the effect of Gradient (going from one color to another) in an HTML element. That&#8217;s right! No more Photoshop.  O /
+What we need: obviously the <a href="http://docs.jquery.com/Downloading_jQuery">Jquery</a>, and the <a href="http://github.com/brandonaaron/jquery-gradient/tree/master">Gradient plugin</a>.</p>
 
-<p>In this example the gradient effect will be applied to the element with ID my_element, starting with white and black going to the vertical direction. Simple!</p>
+<p>But this time go a little further&#8230;
+The plugin allows us to specify the initial RGB code, RGB code final and even the direction of the gradient (vertical or horizontal).
+Let&#8217;s see the code could understand better:</p>
 
-<p>Good, but as I said above, go a little further. If we pass RGB values for the plugin, so maybe we can use another plugin well known and very good too, the <a href='http://www.eyecon.ro/colorpicker'>Color Picker</a>. I prepared a script where I use the features of the 2 plugins. See below as it was. And again see the power of JavaScript:</p>
+<p>[javascript]
+$(&#8216;#my_element&#8217;).gradient({
+from:      &#8216;ffffff&#8217;,
+to:        &#8216;000000&#8217;,
+direction: &#8216;vertical&#8217;;
+});
+[/javascript]</p>
 
-<p>See the  example: <a href='../code/jquery/plugins/gradient/index.html'>http://jaydson.org/code/jquery/plugins/gradient/index.html</a></p>
+<p>In this example the gradient effect will be applied to the element with ID my_element, starting with white and black going to the vertical direction.
+Simple!</p>
 
-<p>I hope you enjoyed and that is useful for any application from you. Any questions Comentt.</p>
+<p>Good, but as I said above, go a little further. If we pass RGB values for the plugin, so maybe we can use another plugin well known and very good too, the <a href="http://www.eyecon.ro/colorpicker">Color Picker</a>.
+I prepared a script where I use the features of the 2 plugins. See below as it was. And again see the power of JavaScript:</p>
 
-<p><strong>Minha Avaliation: 8.0</strong> <strong>Compatibilily: Firefox 2.0+, IE 6+, Safari 3.0+, Chrome 2.0+</strong></p>
+<p>See the  example: <a href="../code/jquery/plugins/gradient/index.html">http://jaydson.org/code/jquery/plugins/gradient/index.html</a></p>
 
-<p><strong>Official website</strong><a href='http://brandonaaron.net/code'>: http://brandonaaron.net/code</a></p>
+<p>I hope you enjoyed and that is useful for any application from you.
+Any questions Comentt.</p>
 
-<p><span>caption id=&#8221;attachment_114&#8221; align=&#8221;alignnone&#8221; width=&#8221;60&#8221; caption=&#8221;Download&#8221;</span>(http://jaydson-org.web102.redehost.com.br/assets/hd_download1.jpg)](http://jaydson.org/code/jquery/plugins/gradient/gradient.rar)<span>/caption</span></p>
+<p><strong>Minha Avaliation: 8.0</strong>
+<strong>Compatibilily: Firefox 2.0+, IE 6+, Safari 3.0+, Chrome 2.0+</strong></p>
 
-<p>O que vou abordar neste Post é um plugin muito bom desenvolvido pelo <a href='http://brandonaaron.net/'>Brandon Aaron</a>. Pra quem não conhece, esse cara mora lá pelas bandas do Texas e é um dos principais membros do<a href='http://docs.jquery.com/Contributors'>time de desenvolvedores do Jquery</a>.</p>
+<p><strong>Official website</strong><a href="http://brandonaaron.net/code">: http://brandonaaron.net/code</a></p>
 
-<p>A idéia básica do plugin é criar um efeito de Gradient(vai de uma cor para outra) em um elemento HTML. Isso mesmo! Nada de Photoshop. O/ O que precisamos:  obviamente o <a href='http://docs.jquery.com/Downloading_jQuery'>Jquery</a>, e o <a href='http://github.com/brandonaaron/jquery-gradient/tree/master'>plugin Gradient</a>.</p>
+<p>[caption id=&#8221;attachment_114&#8221; align=&#8221;alignnone&#8221; width=&#8221;60&#8221; caption=&#8221;Download&#8221;]<a href="http://jaydson.org/code/jquery/plugins/gradient/gradient.rar"><img src="http://jaydson-org.web102.redehost.com.br/assets/hd_download1.jpg" alt="Download" /></a>[/caption]</p>
 
-<p>Mas dessa vez vou um pouco mais além&#8230; O plugin nos permite especificar o código RGB inicial, o o código RGB final e ainda a direção do Gradient(vertical ou horizontal). Vamos ver o código pra entender melhor:</p>
+<p>O que vou abordar neste Post é um plugin muito bom desenvolvido pelo <a href="http://brandonaaron.net/">Brandon Aaron</a>.
+Pra quem não conhece, esse cara mora lá pelas bandas do Texas e é um dos principais membros do<a href="http://docs.jquery.com/Contributors"> time de desenvolvedores do Jquery</a>.</p>
 
-<p><span>javascript</span> $(&#8216;#meu_elemento&#8217;).gradient({ from: &#8216;ffffff&#8217;, to: &#8216;000000&#8217;, direction: &#8216;vertical&#8217;; }); <span>/javascript</span></p>
+<p>A idéia básica do plugin é criar um efeito de Gradient(vai de uma cor para outra) em um elemento HTML. Isso mesmo! Nada de Photoshop. O/
+O que precisamos:  obviamente o <a href="http://docs.jquery.com/Downloading_jQuery">Jquery</a>, e o <a href="http://github.com/brandonaaron/jquery-gradient/tree/master">plugin Gradient</a>.</p>
 
-<p>Neste exemplo o efeito Gradient será aplicado no elemento com o ID meu_elemento, começando de branco e indo até preto com direção vertical. Simples !</p>
+<p>Mas dessa vez vou um pouco mais além&#8230;
+O plugin nos permite especificar o código RGB inicial, o o código RGB final e ainda a direção do Gradient(vertical ou horizontal).
+Vamos ver o código pra entender melhor:</p>
 
-<p>Bom, mas como eu disse acima, vamos um pouco mais além.  Se precisamos passar valores RGB para o plugin, então quem sabe podemos usar um outro plugin bem conhecido e muito bom também, o <a href='http://www.eyecon.ro/colorpicker'>Color Picker</a>. Preparei um script onde uso as funcionalidades dos  2 plugins. Vejam abaixo como ficou. E novamente vejam o poder do Javascript:</p>
+<p>[javascript]
+$(&#8216;#meu_elemento&#8217;).gradient({
+from:      &#8216;ffffff&#8217;,
+to:        &#8216;000000&#8217;,
+direction: &#8216;vertical&#8217;;
+});
+[/javascript]</p>
 
-<p>Veja aqui o exemplo: <a href='http://jaydson.org/code/jquery/plugins/gradient/index.html'>http://jaydson.org/code/jquery/plugins/gradient/index.html</a></p>
+<p>Neste exemplo o efeito Gradient será aplicado no elemento com o ID meu_elemento, começando de branco e indo até preto com direção vertical.
+Simples !</p>
 
-<p>Espero que tenham gostado e que seja útil para alguma Aplicação de vocês. Qualquer dúvida comentem ai. Abraço, e até a próxima.</p>
+<p>Bom, mas como eu disse acima, vamos um pouco mais além.  Se precisamos passar valores RGB para o plugin, então quem sabe podemos usar um outro plugin bem conhecido e muito bom também, o <a href="http://www.eyecon.ro/colorpicker">Color Picker</a>.
+Preparei um script onde uso as funcionalidades dos  2 plugins. Vejam abaixo como ficou. E novamente vejam o poder do Javascript:</p>
 
-<p><strong>Minha Avaliação: Nota 8.0</strong> <strong>Compatibilidade: Firefox 2.0+, IE 6+, Safari 3.0+, Chrome 2.0+</strong></p>
+<p>Veja aqui o exemplo: <a href="http://jaydson.org/code/jquery/plugins/gradient/index.html">http://jaydson.org/code/jquery/plugins/gradient/index.html</a></p>
 
-<p><strong>Site oficial do Plugin:</strong><a href='http://docs.jquery.com/Plugins/Autocomplete' /><a href='http://brandonaaron.net/code'>http://brandonaaron.net/code</a></p>
+<p>Espero que tenham gostado e que seja útil para alguma Aplicação de vocês.
+Qualquer dúvida comentem ai.
+Abraço, e até a próxima.</p>
 
-<p><span>caption id=&#8221;attachment_114&#8221; align=&#8221;alignnone&#8221; width=&#8221;60&#8221; caption=&#8221;Download&#8221;</span>(http://jaydson-org.web102.redehost.com.br/assets/hd_download1.jpg)](http://jaydson.org/code/jquery/plugins/gradient/gradient.rar)<span>/caption</span></p></div>
+<p><strong>Minha Avaliação: Nota 8.0</strong>
+<strong>Compatibilidade: Firefox 2.0+, IE 6+, Safari 3.0+, Chrome 2.0+</strong></p>
+
+<p><strong>Site oficial do Plugin:</strong><a href="http://docs.jquery.com/Plugins/Autocomplete"></a><a href="http://brandonaaron.net/code"> http://brandonaaron.net/code</a></p>
+
+<p>[caption id=&#8221;attachment_114&#8221; align=&#8221;alignnone&#8221; width=&#8221;60&#8221; caption=&#8221;Download&#8221;]<a href="http://jaydson.org/code/jquery/plugins/gradient/gradient.rar"><img src="http://jaydson-org.web102.redehost.com.br/assets/hd_download1.jpg" alt="Download" /></a>[/caption]</p>
+</div>
 
 
   <footer>
@@ -289,6 +328,7 @@
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 <script type="text/javascript" src="/javascripts/jaydson.js"></script>
+<script type="text/javascript" src="/javascripts/blog-header-experiments.js"></script>
 
 </footer>
   

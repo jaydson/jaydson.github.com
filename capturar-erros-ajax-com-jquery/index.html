@@ -9,7 +9,8 @@
   <meta name="author" content="Jaydson Gomes">
 
   
-  <meta name="description" content="Catch Ajax errors is a task that jQuery gives us a good help. What I mean by that is that the library provides us with a lot of useful information &hellip;">
+  <meta name="description" content="Catch Ajax errors is a task that jQuery gives us a good help.
+What I mean by that is that the library provides us with a lot of useful information &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,14 +22,14 @@
   <link rel="canonical" href="http://jaydson.org/capturar-erros-ajax-com-jquery/">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+  <link href="/stylesheets/blog-header-experiments.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <link href="/atom.xml" rel="alternate" title="Jaydson Gomes" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="" rel="stylesheet" type="text/css">
 
   
   <script type="text/javascript">
@@ -47,7 +48,7 @@
 </head>
 
 <body   >
-  <header role="banner"><hgroup>
+  <header role="banner"><hgroup id="header-stage">
   <h1><a href="/">Jaydson Gomes</a></h1>
   
     <h2>HTML5 | JavaScript</h2>
@@ -105,71 +106,194 @@
   </header>
 
 
-<div class="entry-content"><p>Catch Ajax errors is a task that jQuery gives us a good help. What I mean by that is that the library provides us with a lot of useful information that often go unnoticed by developers. The first thing to note is the <strong>error</strong>event. In this event we can pass a function (callback) that will be executed when the request fails. 3 parameters are passed to this function: The XMLHttpRequest object, a String that describes the type of error that occurred and an exception object (optional). A good point is that we will never have the <strong>Success</strong>and <strong>Error</strong>event together in the same request (that means obvious).</p>
+<div class="entry-content"><p>Catch Ajax errors is a task that jQuery gives us a good help.
+What I mean by that is that the library provides us with a lot of useful information that often go unnoticed by developers.
+The first thing to note is the <strong>error </strong>event.
+In this event we can pass a function (callback) that will be executed when the request fails.
+3 parameters are passed to this function: The XMLHttpRequest object, a String that describes the type of error that occurred and an exception object (optional).
+A good point is that we will never have the <strong>Success </strong>and <strong>Error </strong>event together in the same request (that means obvious).</p>
 
-<p>Capturar erros Ajax é mais uma tarefa que o jQuery nos da uma boa ajuda. O que quero dizer com isso é que a biblioteca nos fornece uma série de informações úteis que as vezes passam desapercebidas pelos desenvolvedores. A primeira coisa a se notar é o evento <strong>error</strong>. Neste evento podemos passar uma função(_callback_) que será executada quando a requisição falhar. São passados 3 parâmetros para esta função: O objeto XMLHttpRequest, uma String que descreve o tipo do erro que aconteceu e um objeto exceção(opcional). Uma boa observação é que nunca teremos o evento <strong>Success</strong>e o evento <strong>Error</strong>juntos na mesma requisição(meio óbvio isso).</p>
+<p>Capturar erros Ajax é mais uma tarefa que o jQuery nos da uma boa ajuda.
+O que quero dizer com isso é que a biblioteca nos fornece uma série de informações úteis que as vezes passam desapercebidas pelos desenvolvedores.
+A primeira coisa a se notar é o evento <strong>error</strong>.
+Neste evento podemos passar uma função(<em>callback</em>) que será executada quando a requisição falhar. São passados 3 parâmetros para esta função:
+O objeto XMLHttpRequest, uma String que descreve o tipo do erro que aconteceu e um objeto exceção(opcional).
+Uma boa observação é que nunca teremos o evento <strong>Success </strong>e o evento <strong>Error </strong>juntos na mesma requisição(meio óbvio isso).</p>
+
 <!-- more -->
+
+
 <p>Let&#8217;s take a simple example of an Ajax request:</p>
 
-<p><span>javascript</span></p>
+<p>[javascript]</p>
 
-<p>$.ajax({ type: &#8220;POST&#8221;, url: &#8220;teste.php&#8221;, success: function(retorno){ alert(retorno); } });</p>
+<p>$.ajax({
+type: &#8220;POST&#8221;,
+url: &#8220;teste.php&#8221;,
+success: function(retorno){
+alert(retorno);
+}
+});</p>
 
-<p><span>/javascript</span></p>
+<p>[/javascript]</p>
 
-<p>In this example we make an Ajax request and success give a alert of the content returned. But what if we give some kind of mistake? If we want to catch the error and get some treatment, or simply display the error. We will now see an example of capturing the error:</p>
+<p>In this example we make an Ajax request and success give a alert of the content returned.
+But what if we give some kind of mistake?
+If we want to catch the error and get some treatment, or simply display the error.
+We will now see an example of capturing the error:</p>
 
-<p><span>javascript</span></p>
+<p>[javascript]</p>
 
-<p>$.ajax({ type: &#8220;POST&#8221;, url: &#8220;teste.php&#8221;, success: function(retorno){ alert(retorno); }, error: function(XMLHttpRequest, textStatus, errorThrown){ alert(&#8220;Error!&#8221;); } });</p>
+<p>$.ajax({
+type: &#8220;POST&#8221;,
+url: &#8220;teste.php&#8221;,
+success: function(retorno){
+alert(retorno);
+},
+error: function(XMLHttpRequest, textStatus, errorThrown){
+alert(&#8220;Error!&#8221;);
+}
+});</p>
 
-<p><span>/javascript</span></p>
+<p>[/javascript]</p>
 
-<p>Now grab the error and give an error alert in the event of failed requests. Now to be more useful, we see the properties and methods of the XMLHttpRequest object. Just make a &#8220;for in&#8221; in the object that we get all their properties. Below I list some: ** dispatchEvent() removeEventListener() open() setRequestHeader() send() readyState status channel responseXML responseText statusText abort() getAllResponseHeaders() getResponseHeader()**</p>
+<p>Now grab the error and give an error alert in the event of failed requests.
+Now to be more useful, we see the properties and methods of the XMLHttpRequest object.
+Just make a &#8220;for in&#8221; in the object that we get all their properties. Below I list some:
+<strong>
+dispatchEvent()
+removeEventListener()
+open()
+setRequestHeader()
+send()
+readyState
+status
+channel
+responseXML
+responseText
+statusText
+abort()
+getAllResponseHeaders()
+getResponseHeader()</strong></p>
+
 <hr />
+
 <p>If you want to do the test and scan the object and see its properties:</p>
 
-<p><span>javascript</span> for(i in XMLHttpRequest){ if(i!=&#8221;channel&#8221;) document.write(i +&#8221; : &#8221; + XMLHttpRequest<span>i</span> +&#8221;<br />&#8221;) } <span>/javascript</span></p>
+<p>[javascript]
+for(i in XMLHttpRequest){
+if(i!=&#8221;channel&#8221;)
+document.write(i +&#8221; : &#8221; + XMLHttpRequest[i] +&#8221;<br>&#8221;)
+}
+[/javascript]</p>
 
 <ul>
 <li>This filter testing whether the property is &#8220;channel&#8221; is necessary because the browser generates an exception permission denied to view this property.</li>
 </ul>
 
-<p>Well, with this you can have a good grasp on how to catch Ajax errors, now what to do with them is with you. I used this very technique in Ajax handling on project <a href='http://thewebmind.org/'>TheWebMind.org</a>, and some other systems. I am preparing a plugin for jQuery which will help a lot. Here is a preview of what already implemented below:</p>
 
-<p><span>javascript</span> error: function(XMLHttpRequest, textStatus, errorThrown){ $(XMLHttpRequest).AjaxDebug({ containerId : &#8220;load&#8221;, nativeConsole : false }); } <span>/javascript</span></p>
+<p>Well, with this you can have a good grasp on how to catch Ajax errors, now what to do with them is with you.
+I used this very technique in Ajax handling on project <a href="http://thewebmind.org/">TheWebMind.org</a>, and some other systems.
+I am preparing a plugin for jQuery which will help a lot.
+Here is a preview of what already implemented below:</p>
 
-<p>The idea is to provide a console that displays this information, or pass the information to a particular element. Soon post here when you&#8217;re done!</p>
+<p>[javascript]
+error: function(XMLHttpRequest, textStatus, errorThrown){
+$(XMLHttpRequest).AjaxDebug({
+containerId : &#8220;load&#8221;,
+nativeConsole : false
+});
+}
+[/javascript]</p>
 
-<p>Of course, let&#8217;s not forget the <a href='http://getfirebug.com/'>Firebug</a> is an excellent debugger for Ajax too. Vamos a um exemplo simples de uma requisição Ajax:</p>
+<p>The idea is to provide a console that displays this information, or pass the information to a particular element.
+Soon post here when you&#8217;re done!</p>
 
-<p><span>javascript</span></p>
+<p>Of course, let&#8217;s not forget the <a href="http://getfirebug.com/">Firebug</a> is an excellent debugger for Ajax too.
+Vamos a um exemplo simples de uma requisição Ajax:</p>
 
-<p>$.ajax({ type: &#8220;POST&#8221;, url: &#8220;teste.php&#8221;, success: function(retorno){ alert(retorno); } });</p>
+<p>[javascript]</p>
 
-<p><span>/javascript</span></p>
+<p>$.ajax({
+type: &#8220;POST&#8221;,
+url: &#8220;teste.php&#8221;,
+success: function(retorno){
+alert(retorno);
+}
+});</p>
 
-<p>Neste exemplo fazemos uma requisição Ajax e no sucesso damos um alerta do conteúdo retornado. Mas e se der algum tipo de erro? Vai de aplicação para aplicação, mas dependendo do caso podemos querer capturar o erro e fazer algum tratamento, ou simplesmente mostrar o erro. Vamos agora ver um exemplo capturando o erro:</p>
+<p>[/javascript]</p>
 
-<p><span>javascript</span></p>
+<p>Neste exemplo fazemos uma requisição Ajax e no sucesso damos um alerta do conteúdo retornado.
+Mas e se der algum tipo de erro?
+Vai de aplicação para aplicação, mas dependendo do caso podemos querer capturar o erro e fazer algum tratamento, ou simplesmente mostrar o erro.
+Vamos agora ver um exemplo capturando o erro:</p>
 
-<p>$.ajax({ type: &#8220;POST&#8221;, url: &#8220;teste.php&#8221;, success: function(retorno){ alert(retorno); }, error: function(XMLHttpRequest, textStatus, errorThrown){ alert(&#8220;Erro!&#8221;); } });</p>
+<p>[javascript]</p>
 
-<p><span>/javascript</span></p>
+<p>$.ajax({
+type: &#8220;POST&#8221;,
+url: &#8220;teste.php&#8221;,
+success: function(retorno){
+alert(retorno);
+},
+error: function(XMLHttpRequest, textStatus, errorThrown){
+alert(&#8220;Erro!&#8221;);
+}
+});</p>
 
-<p>Agora capturamos o erro e damos um alerta de erro caso ocorra falha na requisição. Agora para ficar pouco mais útil, vamos ver as propriedades e métodos do objeto XMLHttpRequest. Basta fazer um &#8220;for in&#8221; no objeto que conseguimos pegar todas suas propriedades. Abaixo listo algumas: ** dispatchEvent() removeEventListener() open() setRequestHeader() send() readyState status channel responseXML responseText statusText abort() getAllResponseHeaders() getResponseHeader() ** Caso queiram fazer o teste e varrer o objeto e ver suas propriedades:</p>
+<p>[/javascript]</p>
 
-<p><span>javascript</span> for(i in XMLHttpRequest){ if(i!=&#8221;channel&#8221;) document.write(i +&#8221; : &#8221; + XMLHttpRequest<span>i</span> +&#8221;<br />&#8221;) } <span>/javascript</span></p>
+<p>Agora capturamos o erro e damos um alerta de erro caso ocorra falha na requisição.
+Agora para ficar pouco mais útil, vamos ver as propriedades e métodos do objeto XMLHttpRequest.
+Basta fazer um &#8220;for in&#8221; no objeto que conseguimos pegar todas suas propriedades. Abaixo listo algumas:
+<strong>
+dispatchEvent()
+removeEventListener()
+open()
+setRequestHeader()
+send()
+readyState
+status
+channel
+responseXML
+responseText
+statusText
+abort()
+getAllResponseHeaders()
+getResponseHeader()
+</strong>
+Caso queiram fazer o teste e varrer o objeto e ver suas propriedades:</p>
 
-<p>OBS: Este filtro testando se a propriedade é &#8220;channel&#8221; é necessário, pois o browser gera uma exceção de permissão negada para ler essa propriedade.</p>
+<p>[javascript]
+for(i in XMLHttpRequest){
+if(i!=&#8221;channel&#8221;)
+document.write(i +&#8221; : &#8221; + XMLHttpRequest[i] +&#8221;<br>&#8221;)
+}
+[/javascript]</p>
 
-<p>Bom, com isso já da pra ter uma boa noção sobre como capturar erros Ajax, agora o que fazer com eles é com vocês. Usei bastante esta técnica na manipulação de Ajax no projeto <a href='http://thewebmind.org'>TheWebMind.org</a>, e em alguns outros sistemas. Estou preparando um plugin para o jQuery que auxiliará bastante. Segue uma prévia do que já implementei abaixo:</p>
+<p>OBS:
+Este filtro testando se a propriedade é &#8220;channel&#8221; é necessário, pois o browser gera uma exceção de permissão negada para ler essa propriedade.</p>
 
-<p><span>javascript</span> error: function(XMLHttpRequest, textStatus, errorThrown){ $(XMLHttpRequest).AjaxDebug({ containerId : &#8216;load&#8217;, nativeConsole : false }); } <span>/javascript</span></p>
+<p>Bom, com isso já da pra ter uma boa noção sobre como capturar erros Ajax, agora o que fazer com eles é com vocês.
+Usei bastante esta técnica na manipulação de Ajax no projeto <a href="http://thewebmind.org">TheWebMind.org</a>, e em alguns outros sistemas.
+Estou preparando um plugin para o jQuery que auxiliará bastante.
+Segue uma prévia do que já implementei abaixo:</p>
 
-<p>A idéia é fornecer um console que mostre estas informações, ou passar as informações para um determinado elemento. Em breve posto aqui quando estiver pronto!</p>
+<p>[javascript]
+error: function(XMLHttpRequest, textStatus, errorThrown){
+$(XMLHttpRequest).AjaxDebug({
+containerId : &#8216;load&#8217;,
+nativeConsole : false
+});
+}
+[/javascript]</p>
 
-<p>E claro, não vamos esquecer do <a href='http://getfirebug.com'>Firebug</a> que é um excelente debugador para Ajax também.</p></div>
+<p>A idéia é fornecer um console que mostre estas informações, ou passar as informações para um determinado elemento.
+Em breve posto aqui quando estiver pronto!</p>
+
+<p>E claro, não vamos esquecer do <a href="http://getfirebug.com">Firebug</a> que é um excelente debugador para Ajax também.</p>
+</div>
 
 
   <footer>
@@ -307,6 +431,7 @@
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 <script type="text/javascript" src="/javascripts/jaydson.js"></script>
+<script type="text/javascript" src="/javascripts/blog-header-experiments.js"></script>
 
 </footer>
   

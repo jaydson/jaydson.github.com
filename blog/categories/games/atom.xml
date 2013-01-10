@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Games | Jaydson Gomes]]></title>
   <link href="http://jaydson.org/blog/categories/games/atom.xml" rel="self"/>
   <link href="http://jaydson.org/"/>
-  <updated>2013-01-09T19:46:03-02:00</updated>
+  <updated>2013-01-10T19:55:19-02:00</updated>
   <id>http://jaydson.org/</id>
   <author>
     <name><![CDATA[Jaydson Gomes]]></name>
@@ -18,9 +18,13 @@
     <link href="http://jaydson.org/game-development-in-javascript-palestra-michal-budzynski-no-braziljs-2011/"/>
     <updated>2012-03-08T23:15:32-03:00</updated>
     <id>http://jaydson.org/game-development-in-javascript-palestra-michal-budzynski-no-braziljs-2011</id>
-    <content type="html"><![CDATA[<p>Demorou mais saiu mais um vídeo do <a href='http://braziljs.com.br'>BrazilJS</a> 2011.<br />Estou postando aqui porque esta palestra fechou o BrazilJS 2011 com chave de ouro, e muitos me perguntaram quando o vídeo estaria disponível.<br />Bom, o BrazilJS 2012 está quase chegando, e muito provável que o Michal volte para palestrar, mas vale a pena conferir a de 2011.<br />Até eu estou vendo novamente aqui.</p>
+    <content type="html"><![CDATA[<p>Demorou mais saiu mais um vídeo do <a href="http://braziljs.com.br">BrazilJS</a> 2011.<br/>
+Estou postando aqui porque esta palestra fechou o BrazilJS 2011 com chave de ouro, e muitos me perguntaram quando o vídeo estaria disponível.<br/>
+Bom, o BrazilJS 2012 está quase chegando, e muito provável que o Michal volte para palestrar, mas vale a pena conferir a de 2011.<br/>
+Até eu estou vendo novamente aqui.</p>
 
-<p><div class="embed-video-container"><iframe src="http://player.vimeo.com/video/37859715 "></iframe></div></p>]]></content>
+<p><div class="embed-video-container"><iframe src="http://player.vimeo.com/video/37859715 "></iframe></div></p>
+]]></content>
   </entry>
   
   <entry>
@@ -28,45 +32,80 @@
     <link href="http://jaydson.org/mibbu-framework-javascript-para-games/"/>
     <updated>2011-05-23T02:00:30-03:00</updated>
     <id>http://jaydson.org/mibbu-framework-javascript-para-games</id>
-    <content type="html"><![CDATA[<p>I had the pleasure of personally meeting <a href='http://michalbe.blogspot.com/'>Michal Budzynski</a> at <a href='http://jaydson.org/brazil-js-2011-epicwin'>BrazilJS</a>.<br />Among many excellent lectures, Michal&#8217;s really opened the minds of many people.<br />Games developed in Javascript have been around for a long time, as its showed Michal, but now increasingly it becomes a reality.</p>
+    <content type="html"><![CDATA[<p>I had the pleasure of personally meeting <a href="http://michalbe.blogspot.com/">Michal Budzynski </a> at <a href="http://jaydson.org/brazil-js-2011-epicwin">BrazilJS</a>.<br/>
+Among many excellent lectures, Michal's really opened the minds of many people.<br/>
+Games developed in Javascript have been around for a long time, as its showed Michal, but now increasingly it becomes a reality.</p>
 
-<p>Today I speak of a framework created by Michal, the <a href='http://mibbu.eu/'><strong>Mibbu</strong></a>.<br />Mibbu provides everything you need to create a game in Javascript quickly less than 2.5KB of code.<br />One of the features that caught my attention in Mibbu was the option to create Games both using Canvas or DOM.<br />You can choose which type of rendering with just one function call, so your game can run in browsers that support Canvas, or those that do not support.<br />Since version 0.2(that came out today 23/05/2011 <a href='http://twitter.com/#!/michalbe/status/72435732635070464'>http://twitter.com/#!/michalbe/status/72435732635070464</a>)  Mibbu supports CSS3 animations O/</p>
+<p>Today I speak of a framework created by Michal, the <a href="http://mibbu.eu/"><strong>Mibbu</strong></a>.<br/>
+Mibbu provides everything you need to create a game in Javascript quickly less than 2.5KB of code.<br/>
+One of the features that caught my attention in Mibbu was the option to create Games both using Canvas or DOM.<br/>
+You can choose which type of rendering with just one function call, so your game can run in browsers that support Canvas, or those that do not support.<br/>
+Since version 0.2(that came out today 23/05/2011 <a href="http://twitter.com/#!/michalbe/status/72435732635070464">http://twitter.com/#!/michalbe/status/72435732635070464</a>)  Mibbu supports CSS3 animations O/</p>
 
-<p><strong>Mibbu</strong><strong>Features</strong><strong>:</strong></p>
+<p><strong>Mibbu </strong><strong>Features</strong><strong>:</strong></p>
 
-<p>* Rendering game using both - Canvas or DOM * Animation of the sprites (using Canvas, DOM or CSS Animation in Webkit) * Collisions detection with collision zones * Simple background manager * Callbacks after given number of frames</p>
+<ul>
+<li>Rendering game using both - Canvas or DOM</li>
+<li>Animation of the sprites (using Canvas, DOM or CSS Animation in Webkit)</li>
+<li>Collisions detection with collision zones</li>
+<li>Simple background manager</li>
+<li>Callbacks after given number of frames</li>
+</ul>
 
-<p><strong>Exemple:<br /></strong>Open Odyssey - Open-source Javascript game created with Mibbu Framework</p>
+
+<p><strong>Exemple:<br/>
+</strong>Open Odyssey - Open-source Javascript game created with Mibbu Framework</p>
 
 <p><strong>Z</strong> Shoot and move with arrows</p>
 
-<p>Curiosity:<br />Both Mibbu and Open Odyssey was created by Michal in 5 daysa to <a href='https://gaming.mozillalabs.com/'>Mozilla GameOn Competition</a>.</p>
+<p>Curiosity:<br/>
+Both Mibbu and Open Odyssey was created by Michal in 5 daysa to <a href="https://gaming.mozillalabs.com/">Mozilla GameOn Competition</a>.</p>
 
-<p>Both projects are obviously on GitHub:<br />Mibbu: <a href='https://github.com/michalbe/mibbu/'>https://github.com/michalbe/mibbu/</a><br />Open Odyssey: <a href='https://github.com/michalbe/open-odyssey'>https://github.com/michalbe/open-odyssey</a></p>
+<p>Both projects are obviously on GitHub:<br/>
+Mibbu: <a href="https://github.com/michalbe/mibbu/">https://github.com/michalbe/mibbu/</a><br/>
+Open Odyssey: <a href="https://github.com/michalbe/open-odyssey">https://github.com/michalbe/open-odyssey</a></p>
 
 <p>Fork and start now to develop your Javascript games!</p>
 
-<h1 id='michal_budzynski'>Michal Budzynski</h1>
+<h1>Michal Budzynski</h1>
 
-<p>Tive o prazer de conhecer pessoalmente o <a href='http://michalbe.blogspot.com/'>Michal Budzynski</a>no <a href='http://jaydson.org/brazil-js-2011-epicwin'>BrazilJS</a>.<br />Dentre tantas excelentes palestras, a do Michal realmente abriu a mente de muitas pessoas.<br />Jogos desenvolvidos em Javascript já existem há um bom tempo, como o próprio Michal mostrou, mas agora cada vez mais isso se torna uma realidade.</p>
+<p>Tive o prazer de conhecer pessoalmente o <a href="http://michalbe.blogspot.com/">Michal Budzynski </a>no <a href="http://jaydson.org/brazil-js-2011-epicwin">BrazilJS</a>.<br/>
+Dentre tantas excelentes palestras, a do Michal realmente abriu a mente de muitas pessoas.<br/>
+Jogos desenvolvidos em Javascript já existem há um bom tempo, como o próprio Michal mostrou, mas agora cada vez mais isso se torna uma realidade.</p>
 
-<p>Hoje venho falar de um Framework criado pelo Michal, o <a href='http://mibbu.eu/'><strong>Mibbu</strong></a>.<br />O Mibbu fornece tudo que precisamos para criar um jogo em Javascript de maneira rápida, e isso com menos de 2.5KB de código .<br />Uma das <em>features</em> que me chamou a atençao no Mibbu, foi a possibildade de criar Games tanto utilizando Canvas ou DOM .<br />É possível escolher qual o tipo de reenderização com apenas uma chamada de função, desta maneira o seu jogo pode rodar tanto em navegadores que suportam Canvas, ou naqueles que não suportam .<br />Desde a versão 0.2(que saiu hoje, 23/05/2011 http://twitter.com/#!/michalbe/status/72435732635070464) o Mibbu também suporta animações em CSS3 O/</p>
+<p>Hoje venho falar de um Framework criado pelo Michal, o <a href="http://mibbu.eu/"><strong>Mibbu</strong></a>.<br/>
+O Mibbu fornece tudo que precisamos para criar um jogo em Javascript de maneira rápida, e isso com menos de 2.5KB de código .<br/>
+Uma das <em>features</em> que me chamou a atençao no Mibbu, foi a possibildade de criar Games tanto utilizando Canvas ou DOM .<br/>
+É possível escolher qual o tipo de reenderização com apenas uma chamada de função, desta maneira o seu jogo pode rodar tanto em navegadores que suportam Canvas, ou naqueles que não suportam .<br/>
+Desde a versão 0.2(que saiu hoje, 23/05/2011 http://twitter.com/#!/michalbe/status/72435732635070464) o Mibbu também suporta animações em CSS3 O/</p>
 
 <p><strong>Features do Mibbu:</strong></p>
 
-<p>* Reenderização usando Canvas ou DOM * Animação de Sprites (usando Canvas, DOM ou CSS3) * Detecção de Colisão, com definição de zonas de colisão * Gerenciamento de plano de fundo * Funções callback depois de um certo número de frames</p>
+<ul>
+<li>Reenderização usando Canvas ou DOM</li>
+<li>Animação de Sprites (usando Canvas, DOM ou CSS3)</li>
+<li>Detecção de Colisão, com definição de zonas de colisão</li>
+<li>Gerenciamento de plano de fundo</li>
+<li>Funções callback depois de um certo número de frames</li>
+</ul>
 
-<p><strong>Exemplo:<br /></strong>Open Odyssey - Jogo open-source Javascript criado utilizando o Mibbu Framework</p>
+
+<p><strong>Exemplo:<br/>
+</strong>Open Odyssey - Jogo open-source Javascript criado utilizando o Mibbu Framework</p>
 
 <p><strong>Z</strong> Atira e as setas movem o boneco</p>
 
-<p>Curiosidade:<br />Tanto o Mibbu quanto o Open Odyssey foram criados pelo Michal em 5 dias para a <a href='https://gaming.mozillalabs.com/'>Mozilla GameOn Competition</a>.</p>
+<p>Curiosidade:<br/>
+Tanto o Mibbu quanto o Open Odyssey foram criados pelo Michal em 5 dias para a <a href="https://gaming.mozillalabs.com/">Mozilla GameOn Competition</a>.</p>
 
-<p>Ambos projetos obviamente estão no GitHub:<br />Mibbu: <a href='https://github.com/michalbe/mibbu/'>https://github.com/michalbe/mibbu/</a><br />Open Odyssey: <a href='https://github.com/michalbe/open-odyssey'>https://github.com/michalbe/open-odyssey</a></p>
+<p>Ambos projetos obviamente estão no GitHub:<br/>
+Mibbu: <a href="https://github.com/michalbe/mibbu/">https://github.com/michalbe/mibbu/</a><br/>
+Open Odyssey: <a href="https://github.com/michalbe/open-odyssey">https://github.com/michalbe/open-odyssey</a></p>
 
 <p>Faça um fork, e comece agora a desenvolver seus jogos em Javascript!</p>
 
-<h1 id='michal_budzynski'>Michal Budzynski</h1>]]></content>
+<h1>Michal Budzynski</h1>
+]]></content>
   </entry>
   
 </feed>

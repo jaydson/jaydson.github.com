@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Zend | Jaydson Gomes]]></title>
   <link href="http://jaydson.org/blog/categories/zend/atom.xml" rel="self"/>
   <link href="http://jaydson.org/"/>
-  <updated>2013-01-09T19:46:03-02:00</updated>
+  <updated>2013-01-10T19:55:19-02:00</updated>
   <id>http://jaydson.org/</id>
   <author>
     <name><![CDATA[Jaydson Gomes]]></name>
@@ -18,19 +18,38 @@
     <link href="http://jaydson.org/zend-registerautoload-is-deprecated/"/>
     <updated>2010-08-11T20:07:59-03:00</updated>
     <id>http://jaydson.org/zend-registerautoload-is-deprecated</id>
-    <content type="html"><![CDATA[<p>After upgrading the version of Zend Framework had a problem with registerAutoload. That&#8217;s because since version 1.8 the Zend_Loader: registerAutoload is obsolete. My code was something like this:</p>
+    <content type="html"><![CDATA[<p>After upgrading the version of Zend Framework had a problem with registerAutoload.
+That's because since version 1.8 the Zend_Loader: registerAutoload is obsolete.
+My code was something like this:</p>
 
-<p><span>php</span> include(&#8216;Zend/Loader.php&#8217;); Zend_Loader::registerAutoload(); <span>/php</span></p>
+<p>[php]
+include('Zend/Loader.php');
+Zend_Loader::registerAutoload();
+[/php]</p>
 
-<p>To solve the problem just use the Zend_Loader_Autoloader. In my implementation only the excerpt below solved the problem:</p>
+<p>To solve the problem just use the Zend_Loader_Autoloader.
+In my implementation only the excerpt below solved the problem:</p>
 
-<p><span>php</span> include(&#8216;Zend/Loader/Autoloader.php&#8217;); $autoloader = Zend_Loader_Autoloader::getInstance(); <span>/php</span>Após atualizar a versão do <a href='http://framework.zend.com/'>Zend Framework</a> tive problema com o registerAutoload. Isso porque desde a versão 1.8 o Zend_Loader::registerAutoload está obsoleto. Meu  código  estava mais ou menos assim:</p>
+<p>[php]
+include('Zend/Loader/Autoloader.php');
+$autoloader = Zend_Loader_Autoloader::getInstance();
+[/php]Após atualizar a versão do <a href="http://framework.zend.com/">Zend Framework</a> tive problema com o registerAutoload.
+Isso porque desde a versão 1.8 o Zend_Loader::registerAutoload está obsoleto.
+Meu  código  estava mais ou menos assim:</p>
 
-<p><span>php</span> include(&#8216;Zend/Loader.php&#8217;); Zend_Loader::registerAutoload(); <span>/php</span></p>
+<p>[php]
+include('Zend/Loader.php');
+Zend_Loader::registerAutoload();
+[/php]</p>
 
-<p>Para solucionar o problema basta usar o <a href='http://framework.zend.com/manual/en/zend.loader.autoloader.html'>Zend_Loader_Autoloader</a>. Em minha implementação apenas o trecho abaixo resolveu o problema:</p>
+<p>Para solucionar o problema basta usar o <a href="http://framework.zend.com/manual/en/zend.loader.autoloader.html">Zend_Loader_Autoloader</a>.
+Em minha implementação apenas o trecho abaixo resolveu o problema:</p>
 
-<p><span>php</span> include(&#8216;Zend/Loader/Autoloader.php&#8217;); $autoloader = Zend_Loader_Autoloader::getInstance(); <span>/php</span></p>]]></content>
+<p>[php]
+include('Zend/Loader/Autoloader.php');
+$autoloader = Zend_Loader_Autoloader::getInstance();
+[/php]</p>
+]]></content>
   </entry>
   
 </feed>

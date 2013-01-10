@@ -4,7 +4,7 @@
   <title><![CDATA[Category: RSJS | Jaydson Gomes]]></title>
   <link href="http://jaydson.org/blog/categories/rsjs/atom.xml" rel="self"/>
   <link href="http://jaydson.org/"/>
-  <updated>2013-01-09T19:46:03-02:00</updated>
+  <updated>2013-01-10T19:55:19-02:00</updated>
   <id>http://jaydson.org/</id>
   <author>
     <name><![CDATA[Jaydson Gomes]]></name>
@@ -18,11 +18,15 @@
     <link href="http://jaydson.org/rsjs-animacoes-com-css3/"/>
     <updated>2012-03-17T02:37:47-03:00</updated>
     <id>http://jaydson.org/rsjs-animacoes-com-css3</id>
-    <content type="html"><![CDATA[<p>Finalizando a série de posts sobre o <a href='http://rsjs.org'>#RSJS,</a> compartilho agora o vídeo da palestra de animações com <a href='https://developer.mozilla.org/en/CSS/CSS3'>CSS3</a> do <a href='http://twitter.com/felipenmoura'>Felipe N. Moura</a>.<br />Esta, como todas as outras é uma excelente palestra, mas ressalto que, quem se interessa por animações, deve parar agora o que estiver fazendo, e assisti-la.<br />O Felipe dedicou bastante tempo de estudo em cima de animações com CSS3, e o conteúdo que ele apresenta é sensacional, com vários exemplos de animações, mostrando assim o que pode ser feito.<br />Já assisti algumas vezes a palestra, mas sempre tem algo novo, assistam que vale a pena.</p>
+    <content type="html"><![CDATA[<p>Finalizando a série de posts sobre o <a href="http://rsjs.org">#RSJS,</a> compartilho agora o vídeo da palestra de animações com <a href="https://developer.mozilla.org/en/CSS/CSS3">CSS3</a> do <a href="http://twitter.com/felipenmoura">Felipe N. Moura</a>.<br/>
+Esta, como todas as outras é uma excelente palestra, mas ressalto que, quem se interessa por animações, deve parar agora o que estiver fazendo, e assisti-la.<br/>
+O Felipe dedicou bastante tempo de estudo em cima de animações com CSS3, e o conteúdo que ele apresenta é sensacional, com vários exemplos de animações, mostrando assim o que pode ser feito.<br/>
+Já assisti algumas vezes a palestra, mas sempre tem algo novo, assistam que vale a pena.</p>
 
 <p><div class="embed-video-container"><iframe src="http://www.youtube.com/embed/kxEYwkKLJxk "></iframe></div></p>
 
-<p><em>* Cobertura: <a href='http://www.gonow.com.br'>GoNow Tecnologia</a> – gravação feita pela <a href='http://www.facebook.com/djlou09'>Laura Lou</a></em></p>]]></content>
+<p><em>* Cobertura: <a href="http://www.gonow.com.br">GoNow Tecnologia</a> – gravação feita pela <a href="http://www.facebook.com/djlou09">Laura Lou</a></em></p>
+]]></content>
   </entry>
   
   <entry>
@@ -30,11 +34,16 @@
     <link href="http://jaydson.org/rsjs-coffeescript-node-js/"/>
     <updated>2012-03-15T20:25:47-03:00</updated>
     <id>http://jaydson.org/rsjs-coffeescript-node-js</id>
-    <content type="html"><![CDATA[<p>Mais um vídeo das palestras do #RSJS foi liberado.<br />Desta vez, quem fala é o Ricardo Tomasi, sem dúvida um dos melhores desenvolvedores Front-End do Brasil.<br />Na palestra ele mostrou o porque apostar as fichas no CoffeeScript.<br />Explicou o funcionamento, as vantagens e features do Coffee além de mostrar que coffee é a companhia perfeita para o node.js.<br />Segue o vídeo:</p>
+    <content type="html"><![CDATA[<p>Mais um vídeo das palestras do #RSJS foi liberado.<br/>
+Desta vez, quem fala é o Ricardo Tomasi, sem dúvida um dos melhores desenvolvedores Front-End do Brasil.<br/>
+Na palestra ele mostrou o porque apostar as fichas no CoffeeScript.<br/>
+Explicou o funcionamento, as vantagens e features do Coffee além de mostrar que coffee é a companhia perfeita para o node.js.<br/>
+Segue o vídeo:</p>
 
 <p><div class="embed-video-container"><iframe src="http://www.youtube.com/embed/j5Lfedfm1Wk "></iframe></div></p>
 
-<p><em>*** Cobertura: <a href='http://www.gonow.com.br'>GoNow Tecnologia</a> - gravação feita pela <a href='http://www.facebook.com/djlou09'>Laura Lou</a><strong>_</strong></em></p>]]></content>
+<p><em><strong>* Cobertura: <a href="http://www.gonow.com.br">GoNow Tecnologia</a> - gravação feita pela <a href="http://www.facebook.com/djlou09">Laura Lou</a></strong></em></p>
+]]></content>
   </entry>
   
   <entry>
@@ -42,11 +51,16 @@
     <link href="http://jaydson.org/rsjs-extreme-web-performance/"/>
     <updated>2012-03-14T20:05:50-03:00</updated>
     <id>http://jaydson.org/rsjs-extreme-web-performance</id>
-    <content type="html"><![CDATA[<p>Buenas, saiu o vídeo da minha palestra no <a href='http://rsjs.org'>#RSJS</a> \o/<br />Como o nome diz, falei sobre performance Web. Basicamente transmiti tudo que aprendi durante 6 meses de trabalho em um projeto de performance no <a href='http://www.terra.com.br'>Terra</a>, onde conseguimos reduzir em 60% o carregamento da home.<br />Apesar dos 70 slides, muita coisa que eu gostaria de falar ficou de fora, mas em outra oportunidade falarei mais a respeito.<br />Recomendo que todos que trabalham com Web assistam a palestra.<br />Feedbacks são bem vindos ;)</p>
+    <content type="html"><![CDATA[<p>Buenas, saiu o vídeo da minha palestra no <a href="http://rsjs.org">#RSJS</a> \o/<br/>
+Como o nome diz, falei sobre performance Web. Basicamente transmiti tudo que aprendi durante 6 meses de trabalho em um projeto de performance no <a href="http://www.terra.com.br">Terra</a>, onde conseguimos reduzir em 60% o carregamento da home.<br/>
+Apesar dos 70 slides, muita coisa que eu gostaria de falar ficou de fora, mas em outra oportunidade falarei mais a respeito.<br/>
+Recomendo que todos que trabalham com Web assistam a palestra.<br/>
+Feedbacks são bem vindos ;)</p>
 
 <p><div class="embed-video-container"><iframe src="http://www.youtube.com/embed/o73xH52pFPY "></iframe></div></p>
 
-<p><em>* Cobertura: <a href='http://www.gonow.com.br'>GoNow Tecnologia</a> - gravação feita pela <a href='http://www.facebook.com/djlou09'>Laura Lou</a></em>*</p>]]></content>
+<p><em>* Cobertura: <a href="http://www.gonow.com.br">GoNow Tecnologia</a> - gravação feita pela <a href="http://www.facebook.com/djlou09">Laura Lou</a></em>*</p>
+]]></content>
   </entry>
   
   <entry>
@@ -54,11 +68,15 @@
     <link href="http://jaydson.org/rsjs-javascript-nao-obstrutivo/"/>
     <updated>2012-03-14T02:00:37-03:00</updated>
     <id>http://jaydson.org/rsjs-javascript-nao-obstrutivo</id>
-    <content type="html"><![CDATA[<p>O paraquedista, amigo e diretor da Gri.fo, também palestrou no RSJS. A palestra dele foi bem descontraída, com várias analogias interessantes.<br />Ele falou sobre uma técnica/prática bem difundida no mundo client-side, mas que muitos ainda não dominam ou não aplicam em seu dia a dia.<br />Vale conferir a pelestra sobre JavaScript não obstrutivo/obstrusivo/obtrusivo ;)</p>
+    <content type="html"><![CDATA[<p>O paraquedista, amigo e diretor da Gri.fo, também palestrou no RSJS.
+A palestra dele foi bem descontraída, com várias analogias interessantes.<br/>
+Ele falou sobre uma técnica/prática bem difundida no mundo client-side, mas que muitos ainda não dominam ou não aplicam em seu dia a dia.<br/>
+Vale conferir a pelestra sobre JavaScript não obstrutivo/obstrusivo/obtrusivo ;)</p>
 
 <p><div class="embed-video-container"><iframe src="http://www.youtube.com/embed/Jrx5gVfKZSA "></iframe></div></p>
 
-<p><em>* Cobertura: <a href='http://www.gonow.com.br'>GoNow Tecnologia</a> - gravação feita pela <a href='http://www.facebook.com/djlou09'>Laura Lou</a></em>*</p>]]></content>
+<p><em>* Cobertura: <a href="http://www.gonow.com.br">GoNow Tecnologia</a> - gravação feita pela <a href="http://www.facebook.com/djlou09">Laura Lou</a></em>*</p>
+]]></content>
   </entry>
   
   <entry>
@@ -66,11 +84,16 @@
     <link href="http://jaydson.org/rsjs-eventos-do-simples-ao-objeto/"/>
     <updated>2012-03-14T01:48:58-03:00</updated>
     <id>http://jaydson.org/rsjs-eventos-do-simples-ao-objeto</id>
-    <content type="html"><![CDATA[<p>Seguindo com os vídeos do <a href='http://rsjs.org'>RSJS</a>, agora é a vez da palestra do <a href='http://twitter.com/#!/jcemer'>Jean Emer</a>.<br />O Jean falou 50 minutos sobre eventos, e prendeu a atenção de todos.<br />Ele apresentou o histórico e mostrou a evolução dos eventos no JavaScript.<br />Falou sobre como funcionam no jQuery e em outras libs, e exemplificou muito bem cada item.<br />Assim como as outras palestras, recomendo que assistam esta, mesmo se já tiver conhecimento profundo, sempre é bom assistir ;)</p>
+    <content type="html"><![CDATA[<p>Seguindo com os vídeos do <a href="http://rsjs.org">RSJS</a>, agora é a vez da palestra do <a href="http://twitter.com/#!/jcemer">Jean Emer</a>.<br/>
+O Jean falou 50 minutos sobre eventos, e prendeu a atenção de todos.<br/>
+Ele apresentou o histórico e mostrou a evolução dos eventos no JavaScript.<br/>
+Falou sobre como funcionam no jQuery e em outras libs, e exemplificou muito bem cada item.<br/>
+Assim como as outras palestras, recomendo que assistam esta, mesmo se já tiver conhecimento profundo, sempre é bom assistir ;)</p>
 
 <p><div class="embed-video-container"><iframe src="http://www.youtube.com/embed/rGlF5OgD_c0 "></iframe></div></p>
 
-<p><em>* Cobertura: <a href='http://www.gonow.com.br'>GoNow Tecnologia</a> - gravação feita pela <a href='http://www.facebook.com/djlou09'>Laura Lou</a></em>*</p>]]></content>
+<p><em>* Cobertura: <a href="http://www.gonow.com.br">GoNow Tecnologia</a> - gravação feita pela <a href="http://www.facebook.com/djlou09">Laura Lou</a></em>*</p>
+]]></content>
   </entry>
   
 </feed>

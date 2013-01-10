@@ -9,7 +9,8 @@
   <meta name="author" content="Jaydson Gomes">
 
   
-  <meta name="description" content="Ajax Developer Debug Oct 2nd, 2009 Description: Ajax Developer Debug is a plugin for debugging XMLHttpRequest requests. The plugin allows you to &hellip;">
+  <meta name="description" content="Ajax Developer Debug Oct 2nd, 2009 Description: Ajax Developer Debug is a plugin for debugging XMLHttpRequest requests.
+The plugin allows you to &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,14 +22,14 @@
   <link rel="canonical" href="http://jaydson.org/plugins-jquery/ajax-developer-debug/">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+  <link href="/stylesheets/blog-header-experiments.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <link href="/atom.xml" rel="alternate" title="Jaydson Gomes" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="" rel="stylesheet" type="text/css">
 
   
   <script type="text/javascript">
@@ -47,7 +48,7 @@
 </head>
 
 <body   >
-  <header role="banner"><hgroup>
+  <header role="banner"><hgroup id="header-stage">
   <h1><a href="/">Jaydson Gomes</a></h1>
   
     <h2>HTML5 | JavaScript</h2>
@@ -95,85 +96,182 @@
 <time datetime="2009-10-02T21:53:06-03:00" pubdate data-updated="true">Oct 2<span>nd</span>, 2009</time></p>
   </header>
   
-  <h2 id='description'><strong>Description:</strong></h2>
+  <h2><strong>Description:</strong></h2>
 
-<p>Ajax Developer Debug is a plugin for debugging XMLHttpRequest requests. The plugin allows you to capture all the errors returned by Ajax on jQuery. This plugin can be used in a development environment to show errors at runtime, or even enter these errors in an HTML element in your Web Application.</p>
+<p>Ajax Developer Debug is a plugin for debugging XMLHttpRequest requests.
+The plugin allows you to capture all the errors returned by Ajax on jQuery.
+This plugin can be used in a development environment to show errors at runtime, or even enter these errors in an HTML element in your Web Application.</p>
 
-<h2 id='historic'><strong>Historic:</strong></h2>
+<h2><strong>Historic:</strong></h2>
 
-<p>I decided to create this plugin, for which the project which I am developer / co-founder (<a href='http://thewebmind.org'>thewebmind.org</a>) we had the need to be able to view all the possible errors returned in Ajax requests. As TheWebMind is all &#8220;Ajax oriented&#8221;, we create a server-side engine (PHP) that handles the HTTP error codes forcing for each thrown exception on the server (To learn more about this access: <a href='http://felipenascimento.org/triggering-http-errors/'>http://felipenascimento.org/triggering-http-errors/</a>). With Javascript, using jQuery we&#8217;ve created an engine that captures these errors, and returns in a friendly way.</p>
+<p>I decided to create this plugin, for which the project which I am developer / co-founder (<a href="http://thewebmind.org">thewebmind.org</a>) we had the need to be able to view all the possible errors returned in Ajax requests.
+As TheWebMind is all &#8220;Ajax oriented&#8221;, we create a server-side engine (PHP) that handles the HTTP error codes forcing for each thrown exception on the server (To learn more about this access: <a href="http://felipenascimento.org/triggering-http-errors/">http://felipenascimento.org/triggering-http-errors/</a>).
+With Javascript, using jQuery we&#8217;ve created an engine that captures these errors, and returns in a friendly way.</p>
 
-<h2 id='how_to_use_the_plugin'>*<strong><em>How to use the Plugin:</em></strong>*</h2>
+<h2><strong><strong>How to use the Plugin:</strong></strong></h2>
 
-<p>To use the plugin just call AjaxDebug() in the <strong><a href='http://docs.jquery.com/Ajax/jQuery.ajax#options'>error</a></strong> event in your jQuery Ajax request.</p>
+<p>To use the plugin just call AjaxDebug() in the <strong><a href="http://docs.jquery.com/Ajax/jQuery.ajax#options">error</a></strong> event in your jQuery Ajax request.</p>
 
-<p><span>javascript</span></p>
+<p>[javascript]</p>
 
-<p>$.ajax({ type:&#8217;POST&#8217;, url: &#8216;taeste.php&#8217;, success: function(msg){ alert(msg) }, error: function(XMLHttpRequest, textStatus, errorThrown){ $(XMLHttpRequest).AjaxDebug({ containerId : &#8216;load&#8217; nativeConsole : false }); } });</p>
+<p>$.ajax({
+type:&#8217;POST&#8217;,
+url: &#8216;taeste.php&#8217;,
+success: function(msg){
+alert(msg)
+},
+error: function(XMLHttpRequest, textStatus, errorThrown){
+$(XMLHttpRequest).AjaxDebug({
+containerId : &#8216;load&#8217;
+nativeConsole : false
+});
+}
+});</p>
 
-<p><span>/javascript</span></p>
+<p>[/javascript]</p>
 
-<h2 id='docs'>*****<strong><em>Docs:</em></strong>*****</h2>
+<h2><strong><strong><strong><strong>Docs:</strong></strong></strong></strong></h2>
 
-<p>For each request call AjaxDebug() on error event passing the XMLHttpRequest object. ******** ******** ******** Properties: *******<strong><em>containerId** - (String) Specifies the id of the element where the error should be returned. <strong>nativeConsole</strong> - (True|False)  Specifies whether the native console should be displayed.</em></strong></p>
+<p>For each request call AjaxDebug() on error event passing the XMLHttpRequest object.</p>
 
-<h2 id='examples'>*************<strong><em>Examples:</em></strong>*************</h2>
+<hr />
 
-<p><strong>1.</strong>The Request will generate error, because the php page does not exist. containerId specifies that the return goes to element with id=&#8221;load&#8221; and nativeConsole=false specifies that will not be a console:</p>
+<p>Properties:
+<strong><strong><strong>****containerId</strong> - (String) Specifies the id of the element where the error should be returned.
+</strong>nativeConsole</strong> - (True|False)  Specifies whether the native console should be displayed.</p>
 
-<p><span>javascript</span> $.ajax({ type: &#8216;POST&#8217;, url: &#8216;taeste.php&#8217;, success: function(msg){ alert(msg); }, error: function(XMLHttpRequest, textStatus, errorThrown){ $(XMLHttpRequest).AjaxDebug({ containerId : &#8216;load&#8217;, nativeConsole : false }); } });</p>
+<h2><strong><strong><strong><strong><strong><strong><strong><strong>Examples:</strong></strong></strong></strong></strong></strong></strong></strong></h2>
 
-<p><span>/javascript</span></p>
+<p><strong>1. </strong>The Request will generate error, because the php page does not exist.
+containerId specifies that the return goes to element with id=&#8221;load&#8221; and nativeConsole=false specifies that will not be a console:</p>
 
-<p><strong>2.</strong>The Request will generate error, because the php page does not exist. nativeConsole=true specifies that the native console must be enabled.</p>
+<p>[javascript]
+$.ajax({
+type: &#8216;POST&#8217;,
+url: &#8216;taeste.php&#8217;,
+success: function(msg){
+alert(msg);
+},
+error: function(XMLHttpRequest, textStatus, errorThrown){
+$(XMLHttpRequest).AjaxDebug({
+containerId : &#8216;load&#8217;,
+nativeConsole : false
+});
+}
+});</p>
 
-<p><span>javascript</span></p>
+<p>[/javascript]</p>
 
-<p>$.ajax({ type: &#8216;POST&#8217;, url: &#8216;testea.php&#8217;, success: function(msg){ alert(msg); }, error: function(XMLHttpRequest, textStatus, errorThrown){ $(XMLHttpRequest).AjaxDebug({ nativeConsole : true }); } });</p>
+<p><strong>2.</strong>The Request will generate error, because the php page does not exist.
+nativeConsole=true specifies that the native console must be enabled.</p>
 
-<p><span>/javascript</span></p>
+<p>[javascript]</p>
 
-<p><a href='http://jaydson.org/code/jquery/plugins/ajax-developer-debug/'><img alt='example' src='http://jaydson-org.web102.redehost.com.br/assets/example3.jpg' /></a> <a href='http://jaydson.org/code/jquery/plugins/ajax-developer-debug/ajax-developer-debug.rar'><img alt='download' src='http://jaydson-org.web102.redehost.com.br/assets/download1.png' /></a></p>
+<p>$.ajax({
+type: &#8216;POST&#8217;,
+url: &#8216;testea.php&#8217;,
+success: function(msg){
+alert(msg);
+},
+error: function(XMLHttpRequest, textStatus, errorThrown){
+$(XMLHttpRequest).AjaxDebug({
+nativeConsole : true
+});
+}
+});</p>
 
-<h2 id='descrio'><strong>Descrição:</strong></h2>
+<p>[/javascript]</p>
 
-<p>Ajax Developer Debug é um plugin para debugar requisições XMLHttpRequest. O plugin permite que você capture todos os erros retornados pelo Ajax no jQuery. Este plugin pode ser utilizado em um ambiente de desenvolvimento para mostar erros em tempo de execução, ou ainda inserir esses erros em um elemento HTML na sua Aplicação Web.</p>
+<p><a href="http://jaydson.org/code/jquery/plugins/ajax-developer-debug/"><img src="http://jaydson-org.web102.redehost.com.br/assets/example3.jpg" alt="example" /></a> <a href="http://jaydson.org/code/jquery/plugins/ajax-developer-debug/ajax-developer-debug.rar"><img src="http://jaydson-org.web102.redehost.com.br/assets/download1.png" alt="download" /></a></p>
 
-<h2 id='histrico'><strong>Histórico:</strong></h2>
+<h2><strong>Descrição:</strong></h2>
 
-<p>Decidi criar este plugin, pois no projeto cujo qual sou desenvolvedor/co-fundador (<a href='http://thewebmind.org'>thewebmind.org</a>) tinhamos a necessidade de conseguir visualizar todos os possíveis erros retornados em requisições Ajax. Como o TheWebMind é todo &#8220;orientado a Ajax&#8221;, criamos uma engine server-side(<a href='http://php.net'>PHP</a>) que manipula os erros forçando códigos HTTP para cada exceção gerada no servidor(Para saber mais sobre esta técina acesse: <a href='http://felipenascimento.org/triggering-http-errors/'>http://felipenascimento.org/triggering-http-errors/</a>). Com Javascript, utilizando jQuery criamos uma engine que captura esses erros, e nos devolve de maneira amígavel.</p>
+<p>Ajax Developer Debug é um plugin para debugar requisições XMLHttpRequest.
+O plugin permite que você capture todos os erros retornados pelo Ajax no jQuery.
+Este plugin pode ser utilizado em um ambiente de desenvolvimento para mostar erros em tempo de execução, ou ainda inserir esses erros em um elemento HTML na sua Aplicação Web.</p>
 
-<h2 id='como_usar_o_plugin'>*<strong><em>Como usar o Plugin:</em></strong>*</h2>
+<h2><strong>Histórico:</strong></h2>
 
-<p>Para usar o plugin basta adicioanar uma chamada a AjaxDebug() no evento <strong><a href='http://docs.jquery.com/Ajax/jQuery.ajax#options'>error</a></strong> da requisição Ajax no jQuery:</p>
+<p>Decidi criar este plugin, pois no projeto cujo qual sou desenvolvedor/co-fundador (<a href="http://thewebmind.org">thewebmind.org</a>) tinhamos a necessidade de conseguir visualizar todos os possíveis erros retornados em requisições Ajax.
+Como o TheWebMind é todo &#8220;orientado a Ajax&#8221;, criamos uma engine server-side(<a href="http://php.net">PHP</a>) que manipula os erros forçando códigos HTTP para cada exceção gerada no servidor(Para saber mais sobre esta técina acesse: <a href="http://felipenascimento.org/triggering-http-errors/">http://felipenascimento.org/triggering-http-errors/</a>).
+Com Javascript, utilizando jQuery criamos uma engine que captura esses erros, e nos devolve de maneira amígavel.</p>
 
-<p><span>javascript</span></p>
+<h2><strong><strong>Como usar o Plugin:</strong></strong></h2>
 
-<p>$.ajax({ type: &#8220;POST&#8221;, url: &#8220;taeste.php&#8221;, success: function(msg){ alert(msg) }, error: function(XMLHttpRequest, textStatus, errorThrown){ $(XMLHttpRequest).AjaxDebug({ containerId : &#8220;load&#8221;, nativeConsole : false }); } });</p>
+<p>Para usar o plugin basta adicioanar uma chamada a AjaxDebug() no evento <strong><a href="http://docs.jquery.com/Ajax/jQuery.ajax#options">error</a></strong> da requisição Ajax no jQuery:</p>
 
-<p><span>/javascript</span></p>
+<p>[javascript]</p>
 
-<h2 id='documentao'>*****<strong><em>Documentação:</em></strong>*****</h2>
+<p>$.ajax({
+type: &#8220;POST&#8221;,
+url: &#8220;taeste.php&#8221;,
+success: function(msg){
+alert(msg)
+},
+error: function(XMLHttpRequest, textStatus, errorThrown){
+$(XMLHttpRequest).AjaxDebug({
+containerId : &#8220;load&#8221;,
+nativeConsole : false
+});
+}
+});</p>
 
-<p>Para cada requisição chame AjaxDebug() no evento error passando o objeto XMLHttpRequest. ******** ******** ******** Propriedades: *******<strong><em>containerId** - (String) Especifica o id do elemento onde o erro deve ser retornado. <strong>nativeConsole</strong> - (True|False)  Especifica se deve ser exibido o console nativo para exibição de erros.</em></strong></p>
+<p>[/javascript]</p>
 
-<h2 id='exemplos'>*************<strong><em>Exemplos:</em></strong>*************</h2>
+<h2><strong><strong><strong><strong>Documentação:</strong></strong></strong></strong></h2>
 
-<p><strong>1.</strong>Requisição gerará erro, pois a página php não existe. containerId especifica que o retorno vai para  o elemento com a id=&#8221;load&#8221; e nativeConsole=false especifica que não haverá console:</p>
+<p>Para cada requisição chame AjaxDebug() no evento error passando o objeto XMLHttpRequest.</p>
 
-<p><span>javascript</span> $.ajax({ type: &#8220;POST&#8221;, url: &#8220;taeste.php&#8221;, success: function(msg){ alert(msg); }, error: function(XMLHttpRequest, textStatus, errorThrown){ $(XMLHttpRequest).AjaxDebug({ containerId : &#8220;load&#8221;, nativeConsole : false }); } });</p>
+<hr />
 
-<p><span>/javascript</span></p>
+<p>Propriedades:
+<strong><strong><strong>****containerId</strong> - (String) Especifica o id do elemento onde o erro deve ser retornado.
+</strong>nativeConsole</strong> - (True|False)  Especifica se deve ser exibido o console nativo para exibição de erros.</p>
 
-<p><strong>2.</strong>Requisição gerará erro, pois a página php não existe. nativeConsole=true especifica que  o console nativo deve ser ativado.</p>
+<h2><strong><strong><strong><strong><strong><strong><strong><strong>Exemplos:</strong></strong></strong></strong></strong></strong></strong></strong></h2>
 
-<p><span>javascript</span></p>
+<p><strong>1. </strong>Requisição gerará erro, pois a página php não existe.
+containerId especifica que o retorno vai para  o elemento com a id=&#8221;load&#8221; e nativeConsole=false especifica que não haverá console:</p>
 
-<p>$.ajax({ type: &#8220;POST&#8221;, url: &#8220;testea.php&#8221;, success: function(msg){ alert(msg); }, error: function(XMLHttpRequest, textStatus, errorThrown){ $(XMLHttpRequest).AjaxDebug({ nativeConsole : true }); } });</p>
+<p>[javascript]
+$.ajax({
+type: &#8220;POST&#8221;,
+url: &#8220;taeste.php&#8221;,
+success: function(msg){
+alert(msg);
+},
+error: function(XMLHttpRequest, textStatus, errorThrown){
+$(XMLHttpRequest).AjaxDebug({
+containerId : &#8220;load&#8221;,
+nativeConsole : false
+});
+}
+});</p>
 
-<p><span>/javascript</span></p>
+<p>[/javascript]</p>
 
-<p><a href='http://jaydson.org/code/jquery/plugins/ajax-developer-debug/'><img alt='exemplo' src='http://jaydson-org.web102.redehost.com.br/assets/exemplo1.png' /></a> <a href='http://jaydson.org/code/jquery/plugins/ajax-developer-debug/ajax-developer-debug.rar'><img alt='download' src='http://jaydson-org.web102.redehost.com.br/assets/download1.png' /></a></p>
+<p><strong>2. </strong>Requisição gerará erro, pois a página php não existe.
+nativeConsole=true especifica que  o console nativo deve ser ativado.</p>
+
+<p>[javascript]</p>
+
+<p>$.ajax({
+type: &#8220;POST&#8221;,
+url: &#8220;testea.php&#8221;,
+success: function(msg){
+alert(msg);
+},
+error: function(XMLHttpRequest, textStatus, errorThrown){
+$(XMLHttpRequest).AjaxDebug({
+nativeConsole : true
+});
+}
+});</p>
+
+<p>[/javascript]</p>
+
+<p><a href="http://jaydson.org/code/jquery/plugins/ajax-developer-debug/"><img src="http://jaydson-org.web102.redehost.com.br/assets/exemplo1.png" alt="exemplo" /></a> <a href="http://jaydson.org/code/jquery/plugins/ajax-developer-debug/ajax-developer-debug.rar"><img src="http://jaydson-org.web102.redehost.com.br/assets/download1.png" alt="download" /></a></p>
+
   
     <footer>
       <p class="meta">
@@ -291,6 +389,7 @@
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 <script type="text/javascript" src="/javascripts/jaydson.js"></script>
+<script type="text/javascript" src="/javascripts/blog-header-experiments.js"></script>
 
 </footer>
   

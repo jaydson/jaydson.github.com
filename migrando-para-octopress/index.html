@@ -9,7 +9,9 @@
   <meta name="author" content="Jaydson Gomes">
 
   
-  <meta name="description" content="Hoje publiquei a primeira versão do novo Blog.Entre as principais mudanças, está a plataforma.Migrei do nosso velho amigo Wordpress para o novo amigo &hellip;">
+  <meta name="description" content="Hoje publiquei a primeira versão do novo Blog.
+Entre as principais mudanças, está a plataforma.
+Migrei do nosso velho amigo Wordpress para o novo &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,14 +23,14 @@
   <link rel="canonical" href="http://jaydson.org/migrando-para-octopress/">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+  <link href="/stylesheets/blog-header-experiments.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <link href="/atom.xml" rel="alternate" title="Jaydson Gomes" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="" rel="stylesheet" type="text/css">
 
   
   <script type="text/javascript">
@@ -47,7 +49,7 @@
 </head>
 
 <body   >
-  <header role="banner"><hgroup>
+  <header role="banner"><hgroup id="header-stage">
   <h1><a href="/">Jaydson Gomes</a></h1>
   
     <h2>HTML5 | JavaScript</h2>
@@ -105,69 +107,92 @@
   </header>
 
 
-<div class="entry-content"><p>Hoje publiquei a primeira versão do novo Blog.<br />Entre as principais mudanças, está a plataforma.<br />Migrei do nosso velho amigo <a href='http://wordpress.org'>Wordpress</a> para o novo amigo <a href='http://octopress.org'>Octopress</a>.<br />Outra mudança é o tema, apesar de parecido com o antigo, este tema novo é responsivo, algo que eu já planejava fazer faz um tempo.<br />O tema é praticamente o default do Octopress, com algumas mudanças de cores, fontes e estrutura que apliquei.<br />Para esta primeira versão ele ficará assim, mas meu objetivo é personaliza-lo mais em breve.</p>
+<div class="entry-content"><p>Hoje publiquei a primeira versão do novo Blog.<br/>
+Entre as principais mudanças, está a plataforma.<br/>
+Migrei do nosso velho amigo <a href="http://wordpress.org">Wordpress</a> para o novo amigo <a href="http://octopress.org">Octopress</a>.<br/>
+Outra mudança é o tema, apesar de parecido com o antigo, este tema novo é responsivo, algo que eu já planejava fazer faz um tempo.<br/>
+O tema é praticamente o default do Octopress, com algumas mudanças de cores, fontes e estrutura que apliquei.<br/>
+Para esta primeira versão ele ficará assim, mas meu objetivo é personaliza-lo mais em breve.</p>
 
-<h2 id='porque_fazer_esta_mudana'>Porque fazer esta mudança?</h2>
+<h2>Porque fazer esta mudança?</h2>
 
-<p>Usei o Wordpress por muito tempo aqui no Blog, e em alguns outros projetos também.<br />Creio que para determinados sites/blogs, o ideal ainda continue sendo o Wordpress, mas para a minha necessidade, um gerador estático funciona melhor.<br />Basicamente, o blog agora é baseado só em HTML, CSS e <a href='https://developer.mozilla.org/en-US/docs/JavaScript'>JavaScript</a>. Não existe nenhuma dependência server-side, a não ser o próprio servidor servindo arquivos estáticos. Outras dependências são baseadas em serviços externos, como <a href='http://disqus.com'>Disqus</a>, Google Analytics, GitHub, entre outros.</p>
+<p>Usei o Wordpress por muito tempo aqui no Blog, e em alguns outros projetos também.<br/>
+Creio que para determinados sites/blogs, o ideal ainda continue sendo o Wordpress, mas para a minha necessidade, um gerador estático funciona melhor.<br/>
+Basicamente, o blog agora é baseado só em HTML, CSS e <a href="https://developer.mozilla.org/en-US/docs/JavaScript">JavaScript</a>. Não existe nenhuma dependência server-side, a não ser o próprio servidor servindo arquivos estáticos.
+Outras dependências são baseadas em serviços externos, como <a href="http://disqus.com">Disqus</a>, Google Analytics, GitHub, entre outros.</p>
 
-<p>Outro fator importante é a possibilidade de usar outra tecnologia.<br />Nunca fui muito adepto, e nunca fiz nenhuma linha de código Ruby, mas o <a href='https://github.com/mojombo/jekyll'>Jekyll</a> me pareceu ser a melhor solução para sites estáticos.<br />O Octopress facilita ainda um pouco mais, fornecendo uma série de funcionalidades úteis.<br />Existem vários projetos com o mesmo propósito, um dos mais usados é o <a href='https://github.com/bevry/docpad'>DocPad</a>, feito em <a href='http://nodejs.org/'>Node</a>, o que me agrada muito, mas ainda assim optei pelo Octopress.</p>
+<p>Outro fator importante é a possibilidade de usar outra tecnologia.<br/>
+Nunca fui muito adepto, e nunca fiz nenhuma linha de código Ruby, mas o <a href="https://github.com/mojombo/jekyll">Jekyll</a> me pareceu ser a melhor solução para sites estáticos.<br/>
+O Octopress facilita ainda um pouco mais, fornecendo uma série de funcionalidades úteis.<br/>
+Existem vários projetos com o mesmo propósito, um dos mais usados é o <a href="https://github.com/bevry/docpad">DocPad</a>, feito em <a href="http://nodejs.org/">Node</a>, o que me agrada muito, mas ainda assim optei pelo Octopress.</p>
 
-<h2 id='fatores_importantes_para_a_migrao'>Fatores importantes para a migração</h2>
+<h2>Fatores importantes para a migração</h2>
 
-<p>Eu mantenho este Blog desde 2009, já vou para o quinto ano. Durante este tempo criei muito conteúdo.<br />Não posso simplesmente ignorar o histórico.<br />Abaixo cito os principais pontos que me preocupei antes de migrar:</p>
+<p>Eu mantenho este Blog desde 2009, já vou para o quinto ano. Durante este tempo criei muito conteúdo.<br/>
+Não posso simplesmente ignorar o histórico.<br/>
+Abaixo cito os principais pontos que me preocupei antes de migrar:<br/>
+* Manter as mesmas URL&#8217;s<br/>
+* Manter caminho das Imagens<br/>
+* Comentários<br/>
+* Rollback<br/>
+* Deploy</p>
 
-<ul>
-<li>Manter as mesmas URL&#8217;s</li>
+<h3>Manter as mesmas URL</h3>
 
-<li>Manter caminho das Imagens</li>
+<p>Para a nova estrutura eu mantive as mesmas URL&#8217;s. Desde o início, sempre usei o padrão _http://jaydson.org/:post_name/, isso facilitou, pois não tenho nenhuma variável como data, identificador, etc.<br/>
+Tecnicamente, cada post/página é um diretório no servidor, com um arquivo index.html.</p>
 
-<li>Comentários</li>
+<h3>Manter caminho das Imagens</h3>
 
-<li>Rollback</li>
+<p>No Wordpress, todas imagens ficavam no diretório _wp_content/uploads.<br/>
+Tenho muita imagem neste diretório público. A única solução viável foi manter este diretório na raiz do servidor.<br/>
+Desta maneira todas as imagens continuam com a mesma URL.<br/>
+Por exemplo:<br/>
+<a href="http://jaydson.org/wp-content/uploads/js.png"><img src="http://jaydson.org/wp-content/uploads/js.png" alt="" /></a><br/>
+Esta imagem eu usei em um post de fevereiro de 2012, utilizando a estrutura Wordpress.</p>
 
-<li>Deploy</li>
-</ul>
+<h3>Comentários</h3>
 
-<h3 id='manter_as_mesmas_url'>Manter as mesmas URL</h3>
+<p>Eu usava a solução de comentários nativa do Wordpress.<br/>
+No momento que comecei a pensar em migrar o Blog, fiz a migração para dos comentários para o Disqus.<br/>
+Esta tarefa é bem fácil, existem um plugin Wordpress para isso.<br/>
+<a href="http://disqus.com/admin/wordpress/">http://disqus.com/admin/wordpress/</a><br/>
+Testei por algum tempo a solução do Disqus no próprio Wordpress, e gostei bastante.<br/>
+Agora no novo Blog, os comentários são baseados apenas em JavaScript.<br/>
+Um único porém nesta solução é o SEO, pois comentários gerados por JavaScritp não são indexados, e em alguns casos isso pode ser impeditivo.</p>
 
-<p>Para a nova estrutura eu mantive as mesmas URL&#8217;s. Desde o início, sempre usei o padrão <em>http://jaydson.org/:post</em>name/, isso facilitou, pois não tenho nenhuma variável como data, identificador, etc.<br />Tecnicamente, cada post/página é um diretório no servidor, com um arquivo index.html.</p>
+<h3>Rollback</h3>
 
-<h3 id='manter_caminho_das_imagens'>Manter caminho das Imagens</h3>
+<p>Apesar de ser apenas um Blog pessoal, eu tenho o mesmo cuidado com que teria com qualquer outra aplicação.<br/>
+Por isso, estou mantendo backups para fazer um possível rollback.<br/>
+O Wordpress possui uma ferramenta de exportação, que gera um XML bem completo com dados e metadados sobre o seu Blog.  <br/>
+Eu sempre mantive um cópia deste XML de tempos em tempos.<br/>
+O tema que fiz esta no Github, e é facilmente plugável a uma nova instalação do Wordpress.<br/>
+Com isto, qualquer problema que eu tenha, eu posso instalar um novo Wordpress, plugar o tema, importar os dados, e pronto, tenho o Blog funcionando como antes.</p>
 
-<p>No Wordpress, todas imagens ficavam no diretório <em>wp</em>content/uploads.<br />Tenho muita imagem neste diretório público. A única solução viável foi manter este diretório na raiz do servidor.<br />Desta maneira todas as imagens continuam com a mesma URL.<br />Por exemplo:<br /><a href='http://jaydson.org/wp-content/uploads/js.png'><img alt='' src='http://jaydson.org/wp-content/uploads/js.png' /></a><br />Esta imagem eu usei em um post de fevereiro de 2012, utilizando a estrutura Wordpress.</p>
+<h3>Deploy</h3>
 
-<h3 id='comentrios'>Comentários</h3>
+<p>Nesta primeira fase, apenas publiquei a estrutura no meu servidor, via FTP.<br/>
+Mas FTP é algo que detesto, e existem várias maneiras de se fazer um deploy atualmente, e este será o próximo passo.<br/>
+Estou pensando em usar o GitHub Pages, que permite que eu faça um deploy diretamente no Github, após o meu Push no repositório.<br/>
+O Octopress fornece ferramentas que facilitam esta tarefa, mas ainda não parei para fazer.</p>
 
-<p>Eu usava a solução de comentários nativa do Wordpress.<br />No momento que comecei a pensar em migrar o Blog, fiz a migração para dos comentários para o Disqus.<br />Esta tarefa é bem fácil, existem um plugin Wordpress para isso.<br /><a href='http://disqus.com/admin/wordpress/'>http://disqus.com/admin/wordpress/</a><br />Testei por algum tempo a solução do Disqus no próprio Wordpress, e gostei bastante.<br />Agora no novo Blog, os comentários são baseados apenas em JavaScript.<br />Um único porém nesta solução é o SEO, pois comentários gerados por JavaScritp não são indexados, e em alguns casos isso pode ser impeditivo.</p>
+<h2>Octopress</h2>
 
-<h3 id='rollback'>Rollback</h3>
+<p>O <a href="http://octopress.org/">Octopress</a> é um framework para blogs, baseado no <a href="https://github.com/mojombo/jekyll">Jekyll</a>.<br/>
+Na atual versão(2.0), ele possui killer features: <br/>
+* Um template HTML5 semântico<br/>
+* Layout responsivo<br/>
+* Suporte nativo para Twitter, Google Plus One, Disqus Comments, Pinboard, Delicious e Google Analytics<br/>
+* Uma maneira fácil de deployment (Github pages, Rsync)<br/>
+* Compass e Sass (Não sou muito fã destes caras, mas vou testar também)<br/>
+* Syntax highlighting</p>
 
-<p>Apesar de ser apenas um Blog pessoal, eu tenho o mesmo cuidado com que teria com qualquer outra aplicação.<br />Por isso, estou mantendo backups para fazer um possível rollback.<br />O Wordpress possui uma ferramenta de exportação, que gera um XML bem completo com dados e metadados sobre o seu Blog. <br />Eu sempre mantive um cópia deste XML de tempos em tempos.<br />O tema que fiz esta no Github, e é facilmente plugável a uma nova instalação do Wordpress.<br />Com isto, qualquer problema que eu tenha, eu posso instalar um novo Wordpress, plugar o tema, importar os dados, e pronto, tenho o Blog funcionando como antes.</p>
-
-<h3 id='deploy'>Deploy</h3>
-
-<p>Nesta primeira fase, apenas publiquei a estrutura no meu servidor, via FTP.<br />Mas FTP é algo que detesto, e existem várias maneiras de se fazer um deploy atualmente, e este será o próximo passo.<br />Estou pensando em usar o GitHub Pages, que permite que eu faça um deploy diretamente no Github, após o meu Push no repositório.<br />O Octopress fornece ferramentas que facilitam esta tarefa, mas ainda não parei para fazer.</p>
-
-<h2 id='octopress'>Octopress</h2>
-
-<p>O <a href='http://octopress.org/'>Octopress</a> é um framework para blogs, baseado no <a href='https://github.com/mojombo/jekyll'>Jekyll</a>.<br />Na atual versão(2.0), ele possui killer features:</p>
-
-<ul>
-<li>Um template HTML5 semântico</li>
-
-<li>Layout responsivo</li>
-
-<li>Suporte nativo para Twitter, Google Plus One, Disqus Comments, Pinboard, Delicious e Google Analytics</li>
-
-<li>Uma maneira fácil de deployment (Github pages, Rsync)</li>
-
-<li>Compass e Sass (Não sou muito fã destes caras, mas vou testar também)</li>
-
-<li>Syntax highlighting</li>
-</ul>
-
-<p>Bom, ainda estou em fase de avaliação da plataforma, testes, etc, mas estou gostando bastante.<br />O <a href='http://eltonminetto.net'>Elton Minetto</a> fez a migração Wordpress&gt;Octopress e relatou neste <a href='http://eltonminetto.net/blog/2013/01/04/migrando-wordpress-para-octopress/'>post</a>.<br />Para quem quiser mais detalhes de como migrar, vale a pena dar uma lida.<br />Em breve farei um post sobre minhas dificuldades na migração e soluções adotadas.</p></div>
+<p>Bom, ainda estou em fase de avaliação da plataforma, testes, etc, mas estou gostando bastante.<br/>
+O <a href="http://eltonminetto.net">Elton Minetto</a> fez a migração Wordpress>Octopress e relatou neste <a href="http://eltonminetto.net/blog/2013/01/04/migrando-wordpress-para-octopress/">post</a>.<br/>
+Para quem quiser mais detalhes de como migrar, vale a pena dar uma lida.<br/>
+Em breve farei um post sobre minhas dificuldades na migração e soluções adotadas.</p>
+</div>
 
 
   <footer>
@@ -303,6 +328,7 @@
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 <script type="text/javascript" src="/javascripts/jaydson.js"></script>
+<script type="text/javascript" src="/javascripts/blog-header-experiments.js"></script>
 
 </footer>
   

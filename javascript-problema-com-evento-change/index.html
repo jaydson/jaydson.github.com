@@ -9,7 +9,9 @@
   <meta name="author" content="Jaydson Gomes">
 
   
-  <meta name="description" content="Last week I encountered a problem in Internet Explorer (Déjà vu). The functionality we needed was very simple to implement: Check if the form was &hellip;">
+  <meta name="description" content="Last week I encountered a problem in Internet Explorer (Déjà vu).
+The functionality we needed was very simple to implement:
+Check if the form was &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,14 +23,14 @@
   <link rel="canonical" href="http://jaydson.org/javascript-problema-com-evento-change/">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+  <link href="/stylesheets/blog-header-experiments.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <link href="/atom.xml" rel="alternate" title="Jaydson Gomes" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="" rel="stylesheet" type="text/css">
 
   
   <script type="text/javascript">
@@ -47,7 +49,7 @@
 </head>
 
 <body   >
-  <header role="banner"><hgroup>
+  <header role="banner"><hgroup id="header-stage">
   <h1><a href="/">Jaydson Gomes</a></h1>
   
     <h2>HTML5 | JavaScript</h2>
@@ -105,63 +107,118 @@
   </header>
 
 
-<div class="entry-content"><p>Last week I encountered a problem in Internet Explorer <strong><em>(Déjà vu)</em></strong>. The functionality we needed was very simple to implement: <strong>Check if the form was changed</strong>. That is, if the User is on the page and decides to just go out and form has changed, we needed to alert him. What I thought then was to use the event <a href='http://www.quirksmode.org/dom/events/change.html'>change</a> of the <pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
-&lt;form&gt;.
-Semana passada deparei-me com um problema no Internet Explorer **_(Déjà vu)_**.
+<div class="entry-content"><p>Last week I encountered a problem in Internet Explorer <strong><em>(Déjà vu)</em></strong>.
+The functionality we needed was very simple to implement:
+<strong>Check if the form was changed</strong>. That is, if the User is on the page and decides to just go out and form has changed, we needed to alert him.
+What I thought then was to use the event <a href="http://www.quirksmode.org/dom/events/change.html">change</a> of the <form>.
+Semana passada deparei-me com um problema no Internet Explorer <strong><em>(Déjà vu)</em></strong>.
 A funcionalidade que precisavamos implementar era bem simples:
-**Verificar se o formulário foi alterado. **Ou seja, se o usuário está na página e resolve simplesmente sair e o formulário foi alterado, precisavamos alerta-lo.
-O que me ocorreu na hora foi utilizar o Evento [change](http://www.quirksmode.org/dom/events/change.html) do &lt;form&gt;.
-&lt;!-- more --&gt;
-I did the test in Firefox and everything went as planned. By changing the value of any element within the form the change event is fired.
-But... in our &quot;friend&quot; Internet Explorer?
+<strong>Verificar se o formulário foi alterado. </strong>Ou seja, se o usuário está na página e resolve simplesmente sair e o formulário foi alterado, precisavamos alerta-lo.
+O que me ocorreu na hora foi utilizar o Evento <a href="http://www.quirksmode.org/dom/events/change.html">change</a> do <form>.</p>
+
+<!-- more -->
+
+
+<p>I did the test in Firefox and everything went as planned. By changing the value of any element within the form the change event is fired.
+But&#8230; in our &#8220;friend&#8221; Internet Explorer?
 Surprise!
 It did not work. So I went searching to see why the problem.
-In this link  [http://www.quirksmode.org/dom/events/change.html](http://www.quirksmode.org/dom/events/change.html) of QuirksMode is quite easy to understand.
-In Internet Explorer the change event is not fired when the form is changed.</pre></p>
+In this link  <a href="http://www.quirksmode.org/dom/events/change.html">http://www.quirksmode.org/dom/events/change.html</a> of QuirksMode is quite easy to understand.
+In Internet Explorer the change event is not fired when the form is changed.</p>
 
 <p><strong>Note:</strong> Realize that it is only in IE it happens. Below is a list of browsers that support the change event in the form:</p>
 
-<p>FF 2.0 FF 3.0 FF 3.1b2 Saf 3.0 Win Saf 3.1 Win iPhone 3G Chrome 1.0 Opera 9.62 Opera 10a Konqueror 3.5.7</p>
+<p>FF 2.0
+FF 3.0
+FF 3.1b2
+Saf 3.0 Win
+Saf 3.1 Win
+iPhone 3G
+Chrome 1.0
+Opera 9.62
+Opera 10a
+Konqueror 3.5.7</p>
 
-<p>Font: QuirksMode. <strong>Another Note:</strong> In IE the change event is not fired in the window and document objects. In all the above list does. For Internet Explorer the only element that triggers the change event properly is the <pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
-&lt;input&gt;.</pre></p>
+<p>Font: QuirksMode. <strong>Another Note:</strong> In IE the change event is not fired in the window and document objects. In all the above list does.
+For Internet Explorer the only element that triggers the change event properly is the <input>.</p>
 
-<p><strong>Solution</strong><strong>:</strong> As the project was using jQuery was simple to solve another problem in IE. Follow the code below:</p>
+<p><strong>Solution</strong><strong>:</strong>
+As the project was using jQuery was simple to solve another problem in IE. Follow the code below:</p>
 
-<p><span>javascript</span></p>
+<p>[javascript]</p>
 
-<p>$(&#34;form <em>&#34;).bind(&#34;change&#34;, function(){ /</em> Code here<em>/});</em></p>
+<p>$(&quot;form <em>&quot;).bind(&quot;change&quot;, function(){ /</em> Code here*/});</p>
 
-<p><span>/javascript</span></p>
+<p>[/javascript]</p>
 
 <p>The above code loops over all elements of form and atach the change event for each of them.</p>
 
-<p>Well, that&#8217;s it. Working and learning.</p>
-<hr />
-<p>FF 2.0 FF 3.0 FF 3.1b2 Saf 3.0 Win Saf 3.1 Win iPhone 3G Chrome 1.0 Opera 9.62 Opera 10a Konqueror 3.5.7</p>
+<p>Well, that&#8217;s it.
+Working and learning.</p>
 
-<p>Fiz o teste no Firefox e tudo ocorreu como o previsto. Ao alterar o valor de qualquer elemento dentro do formulário o evento change é disparado. Mas&#8230; e no nosso &#8220;amigo&#8221; Internet Explorer? Surpresa! Não funcionou. Então fui pesquisar para ver o porque do problema. Neste link  <a href='http://www.quirksmode.org/dom/events/change.html'>http://www.quirksmode.org/dom/events/change.html</a> do QuirksMode fica bem fácil de entender. O que acontece é que no Internet Explorer o evento change não é disparado ao alterar um formulário.</p>
+<hr />
+
+<p>FF 2.0
+FF 3.0
+FF 3.1b2
+Saf 3.0 Win
+Saf 3.1 Win
+iPhone 3G
+Chrome 1.0
+Opera 9.62
+Opera 10a
+Konqueror 3.5.7</p>
+
+<p>Fiz o teste no Firefox e tudo ocorreu como o previsto. Ao alterar o valor de qualquer elemento dentro do formulário o evento change é disparado.
+Mas&#8230; e no nosso &#8220;amigo&#8221; Internet Explorer?
+Surpresa!
+Não funcionou. Então fui pesquisar para ver o porque do problema.
+Neste link  <a href="http://www.quirksmode.org/dom/events/change.html">http://www.quirksmode.org/dom/events/change.html</a> do QuirksMode fica bem fácil de entender.
+O que acontece é que no Internet Explorer o evento change não é disparado ao alterar um formulário.</p>
 
 <p><strong>Nota:</strong> Percebam que é somente no IE que isso acontece. Abaixo segue a lista de Browsers que suportam o evento change no Formulário:</p>
 
-<p>FF 2.0 FF 3.0 FF 3.1b2 Saf 3.0 Win Saf 3.1 Win iPhone 3G Chrome 1.0 Opera 9.62 Opera 10a Konqueror 3.5.7</p>
+<p>FF 2.0
+FF 3.0
+FF 3.1b2
+Saf 3.0 Win
+Saf 3.1 Win
+iPhone 3G
+Chrome 1.0
+Opera 9.62
+Opera 10a
+Konqueror 3.5.7</p>
 
-<p>Fonte: QuirksMode. <strong>Outra Nota:</strong> No IE o evento change também não é disparado nos objetos window e document. Em todos da lista acima sim. Para o Internet Explorer o único elemento que dispara o evento change corretamente  é o <pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
-&lt;input&gt;.</pre></p>
+<p>Fonte: QuirksMode. <strong>Outra Nota:</strong> No IE o evento change também não é disparado nos objetos window e document. Em todos da lista acima sim.
+Para o Internet Explorer o único elemento que dispara o evento change corretamente  é o <input>.</p>
 
-<p><strong>Solução:</strong> Como o projeto estava utilizando jQuery foi simples resolver mais um problema no IE. Segue o código abaixo:</p>
+<p><strong>Solução:</strong>
+Como o projeto estava utilizando jQuery foi simples resolver mais um problema no IE. Segue o código abaixo:</p>
 
-<p><span>javascript</span></p>
+<p>[javascript]</p>
 
-<p>$(&#8220;form <em>&#8221;).bind(&#8220;change&#8221;, function(){ /</em> Código aqui<em>/});</em></p>
+<p>$(&#8220;form <em>&#8221;).bind(&#8220;change&#8221;, function(){ /</em> Código aqui*/});</p>
 
-<p><span>/javascript</span></p>
+<p>[/javascript]</p>
 
 <p>O código acima varre todos elementos do formulário e &#8220;atacha&#8221; o evento change para cada um deles.</p>
 
-<p>Bom, é isso. Trabalhando e aprendendo.</p>
+<p>Bom, é isso.
+Trabalhando e aprendendo.</p>
+
 <hr />
-<p>FF 2.0 FF 3.0 FF 3.1b2 Saf 3.0 Win Saf 3.1 Win iPhone 3G Chrome 1.0 Opera 9.62 Opera 10a Konqueror 3.5.7</p></div>
+
+<p>FF 2.0
+FF 3.0
+FF 3.1b2
+Saf 3.0 Win
+Saf 3.1 Win
+iPhone 3G
+Chrome 1.0
+Opera 9.62
+Opera 10a
+Konqueror 3.5.7</p>
+</div>
 
 
   <footer>
@@ -299,6 +356,7 @@ In Internet Explorer the change event is not fired when the form is changed.</pr
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 <script type="text/javascript" src="/javascripts/jaydson.js"></script>
+<script type="text/javascript" src="/javascripts/blog-header-experiments.js"></script>
 
 </footer>
   

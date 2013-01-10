@@ -9,7 +9,8 @@
   <meta name="author" content="Jaydson Gomes">
 
   
-  <meta name="description" content="Bom, eu até já tinha ouvido falar do tal do JSON(Djeison), mas nunca havia parado pra estuda-lo e ver o seu funcionamento. Após ir em uma entrevista &hellip;">
+  <meta name="description" content="Bom, eu até já tinha ouvido falar do tal do JSON(Djeison), mas nunca havia parado pra estuda-lo e ver o seu funcionamento.
+Após ir em uma entrevista &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,14 +22,14 @@
   <link rel="canonical" href="http://jaydson.org/json/">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+  <link href="/stylesheets/blog-header-experiments.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <link href="/atom.xml" rel="alternate" title="Jaydson Gomes" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="" rel="stylesheet" type="text/css">
 
   
   <script type="text/javascript">
@@ -47,7 +48,7 @@
 </head>
 
 <body   >
-  <header role="banner"><hgroup>
+  <header role="banner"><hgroup id="header-stage">
   <h1><a href="/">Jaydson Gomes</a></h1>
   
     <h2>HTML5 | JavaScript</h2>
@@ -105,35 +106,63 @@
   </header>
 
 
-<div class="entry-content"><p>Bom, eu até já tinha ouvido falar do tal do JSON(Djeison), mas nunca havia parado pra estuda-lo e ver o seu funcionamento. Após ir em uma entrevista de emprego, onde os entrevistadores comentaram a respeito do JSON, eu fiquei mais curioso sobre o assunto. O que acontece é que JSON esta na crista da onda&#8230;quero dizer que é uma tecnologia que tem o seu uso difundido, e isto se deve pelo fato de JSON ser simples e poderoso. JSON é uma alternativa para XML, ele também exerce o mesmo papel que o XML como formato para transporte de dados. Uma coisa importante para a aceitação do JSON foi por ser mais fácil escrever um analisador JSON, por exemplo em Javascript através da função eval(). Vários nomes de peso adotaram JSON, posso citar alguns que sei: <strong>Google</strong>, <strong>Yahoo</strong>, <strong>Meebo</strong>&#8230; Perguntas que eu me fazia antes de estudar JSON:</p>
+<div class="entry-content"><p>Bom, eu até já tinha ouvido falar do tal do JSON(Djeison), mas nunca havia parado pra estuda-lo e ver o seu funcionamento.
+Após ir em uma entrevista de emprego, onde os entrevistadores comentaram a respeito do JSON, eu fiquei mais curioso sobre o assunto.
+O que acontece é que JSON esta na crista da onda&#8230;quero dizer que é uma tecnologia que tem o seu uso difundido, e isto se deve pelo fato de JSON ser simples e poderoso.
+JSON é uma alternativa para XML, ele também exerce o mesmo papel que o XML como formato para transporte de dados.
+Uma coisa importante para a aceitação do JSON foi por ser mais fácil escrever um analisador JSON, por exemplo em Javascript através da função eval().
+Vários nomes de peso adotaram JSON, posso citar alguns que sei: <strong>Google</strong>, <strong>Yahoo</strong>, <strong>Meebo</strong>&#8230;
+Perguntas que eu me fazia antes de estudar JSON:</p>
 
-<p><strong>Ta, mas qual biblioteca devo baixar?</strong> <strong>Como assim notação de objetos?</strong> <strong>JSON é Javascript?</strong></p>
+<p><strong>Ta, mas qual biblioteca devo baixar?</strong>
+<strong>Como assim notação de objetos?</strong>
+<strong>JSON é Javascript?</strong></p>
 
-<p>Bom, em primeiro lugar, eu consegui fazer bastante coisa sem baixar um KB sequer, ou seja, não precisei baixar nenhuma biblioteca. JSON é um acrônimo para JavaScript Object Notation - Segundo o próprio <a href='http://www.json.org/json-pt.html'>site do JSON</a> ele é: uma formatação leve de troca de dados. Para seres humanos, é fácil de ler e escrever. Para máquinas, é fácil de interpretar e gerar. Está baseado em um subconjunto da linguagem de programação JavaScript, Standard ECMA-262 3a Edição -Dezembro - 1999. JSON é em formato texto e completamente independente de linguagem, pois usa convenções que são familiares às linguagens C e familiares, incluindo C++, C#, Java, JavaScript, Perl, Python e muitas outras. Estas propriedades fazem com que JSON seja um formato ideal de troca de dados. E por último, a resposta anterior já respondeu&#8230;JSON é um subconjunto da notação de objeto de JavaScript, mas seu uso não requer Javascript exclusivamente. Agora, vamos a parte boa: o código !!! Como funciona isso ???? Primeiro vamos ver como criar um JSON: JSON está constituído em duas estruturas:</p>
-
-<ul>
-<li>Uma coleção de pares nome/valor. Em várias linguagens, isto é caracterizado como um object, record, struct, dicionário, hash table, keyed list, ou arrays associativas.</li>
-
-<li>Uma lista ordenada de valores. Na maioria das linguagens, isto é caracterizado como uma array, vetor, lista ou sequência. Estas são estruturas de dados universais. Virtualmente todas as linguagens de programação modernas as suportam, de uma forma ou de outra. É aceitavel que um formato de troca de dados que seja independente de linguagem de programação se baseie nestas estruturas.</li>
-</ul>
+<p>Bom, em primeiro lugar, eu consegui fazer bastante coisa sem baixar um KB sequer, ou seja, não precisei baixar nenhuma biblioteca.
+JSON é um acrônimo para JavaScript Object Notation - Segundo o próprio <a href="http://www.json.org/json-pt.html">site do JSON</a> ele é: uma formatação leve de troca de dados. Para seres humanos, é fácil de ler e escrever. Para máquinas, é fácil de interpretar e gerar.
+Está baseado em um subconjunto da linguagem de programação JavaScript, Standard ECMA-262 3a Edição -Dezembro - 1999.
+JSON é em formato texto e completamente independente de linguagem, pois usa convenções que são familiares às linguagens C e familiares, incluindo C++, C#, Java, JavaScript, Perl, Python e muitas outras. Estas propriedades fazem com que JSON seja um formato ideal de troca de dados.
+E por último, a resposta anterior já respondeu&#8230;JSON é um subconjunto da notação de objeto de JavaScript, mas seu uso não requer Javascript exclusivamente.
+Agora, vamos a parte boa: o código !!! Como funciona isso ????
+Primeiro vamos ver como criar um JSON:
+JSON está constituído em duas estruturas:
+* Uma coleção de pares nome/valor. Em várias linguagens, isto é caracterizado como um object, record, struct, dicionário, hash table, keyed list, ou arrays associativas.
+* Uma lista ordenada de valores. Na maioria das linguagens, isto é caracterizado como uma array, vetor, lista ou sequência.
+Estas são estruturas de dados universais. Virtualmente todas as linguagens de programação modernas as suportam, de uma forma ou de outra. É aceitavel que um formato de troca de dados que seja independente de linguagem de programação se baseie nestas estruturas.</p>
 
 <p>Agora que já vimos como é, vamos a um exemplo:</p>
 
-<p><span>javascript</span> var myJSONObject = {&#8220;cliente&#8221;: <span>{&#8220;nome&#8221;: &#8220;Joao da Silva&#8221;, &#8220;idade&#8221;: &#8220;25&#8221;, &#8220;sexo&#8221;: &#8220;masculino&#8221;}, {&#8220;nome&#8221;: &#8220;Juca da Silva&#8221;, &#8220;idade&#8221;: &#8220;36&#8221;, &#8220;sexo&#8221;: &#8220;masculino&#8221;}, {&#8220;nome&#8221;: &#8220;Maria Madalena&#8221;, &#8220;idade&#8221;: &#8220;18&#8221;, &#8220;sexo&#8221;: &#8220;feminino&#8221;}</span> };</p>
+<p>[javascript]
+var myJSONObject = {&#8220;cliente&#8221;: [
+{&#8220;nome&#8221;: &#8220;Joao da Silva&#8221;, &#8220;idade&#8221;: &#8220;25&#8221;, &#8220;sexo&#8221;: &#8220;masculino&#8221;},
+{&#8220;nome&#8221;: &#8220;Juca da Silva&#8221;, &#8220;idade&#8221;: &#8220;36&#8221;, &#8220;sexo&#8221;: &#8220;masculino&#8221;},
+{&#8220;nome&#8221;: &#8220;Maria Madalena&#8221;, &#8220;idade&#8221;: &#8220;18&#8221;, &#8220;sexo&#8221;: &#8220;feminino&#8221;}
+]
+};</p>
 
-<p><span>/javascript</span></p>
+<p>[/javascript]</p>
 
-<p>No código acima, criamos uma estrutura de cliente, contendo valores para 3 clientes. Agora vamos transformar isso em um objeto Javascript.</p>
+<p>No código acima, criamos uma estrutura de cliente, contendo valores para 3 clientes.
+Agora vamos transformar isso em um objeto Javascript.</p>
 
-<p><span>javascript</span></p>
+<p>[javascript]</p>
 
-<p>var myObject = eval(myJSONObject); document.write(&#8216;Nome: &#8217; + myObject.cliente<span>i</span>.nome + &#8221;<br />&#8221;); document.write(&#8216;Idade: &#8217; + myObject.cliente<span>i</span>.idade + &#8221;<br />&#8221;); document.write(&#8216;Sexo: &#8217; + myObject.cliente<span>i</span>.sexo + &#8221;<br />&#8221;); document.write(&#8216;___________________<br />&#8217;); } <span>/javascript</span></p>
+<p>var myObject = eval(myJSONObject);
+document.write(&#8216;Nome: &#8217; + myObject.cliente[i].nome + &#8221;<br>&#8221;);
+document.write(&#8216;Idade: &#8217; + myObject.cliente[i].idade + &#8221;<br>&#8221;);
+document.write(&#8216;Sexo: &#8217; + myObject.cliente[i].sexo + &#8221;<br>&#8221;);
+document.write(&#8216;___________________<br>&#8217;);
+}
+[/javascript]</p>
 
-<p>Como podemos notar no código acima, depois de converter o texto JSON em Objeto, podemos acessar os seus dados facilmente. <a href='http://jaydson.org/code/json/teste_json.html'>Veja aqui o resultado deste código.</a></p>
+<p>Como podemos notar no código acima, depois de converter o texto JSON em Objeto, podemos acessar os seus dados facilmente.
+<a href="http://jaydson.org/code/json/teste_json.html">Veja aqui o resultado deste código.</a></p>
 
-<p>Isso foi o básico. Já fiz algumas coisas mais complexas, e estou preparando um novo Post sobre JSON + AJAX + PHP + Banco de Dados&#8230; Aguardem, e qualquer dúvida postem ai, ou me mandei e-mail.</p>
+<p>Isso foi o básico. Já fiz algumas coisas mais complexas, e estou preparando um novo Post sobre JSON + AJAX + PHP + Banco de Dados&#8230;
+Aguardem, e qualquer dúvida postem ai, ou me mandei e-mail.</p>
 
-<p>O/O/O/O/O/O/</p></div>
+<p>O/O/O/O/O/O/</p>
+</div>
 
 
   <footer>
@@ -271,6 +300,7 @@
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 <script type="text/javascript" src="/javascripts/jaydson.js"></script>
+<script type="text/javascript" src="/javascripts/blog-header-experiments.js"></script>
 
 </footer>
   
