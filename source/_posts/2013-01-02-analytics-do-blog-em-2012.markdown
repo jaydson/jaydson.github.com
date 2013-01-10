@@ -12,11 +12,11 @@ tags:
 ---
 
 Como de costume, gosto de compartilhar os dados do Analytics do meu Blog ano após ano.  
-Veja em 2010: [http://www.jaydson.org/analytics-do-blog-em-2010/](http://jaydson.org/analytics-do-blog-2010/)  
+Veja em 2010: [http://www.jaydson.org/analytics-do-blog-2010/](http://jaydson.org/analytics-do-blog-2010/)  
 Veja em 2011: [http://www.jaydson.org/analytics-do-blog-em-2011/](http://jaydson.org/analytics-do-blog-em-2011/)  
 
-Em 2012 escrevi pouco mais de **30** **posts**. Baixei a média, pois em 2011 foram em torno de 40.  
-A média ficou em** 2 posts por mês**.  
+Em 2012 escrevi pouco mais de **30** **posts**.  
+Baixei a média, pois em 2011 foram em torno de 40. A média ficou em** 2 posts por mês**.  
 Meu objetivo para 2013 é beirar os **100** **posts**.  
 
 O total de pageviews ultrapassou os **50K**, e isso quer dizer que de 2011 para 2012 os acessos cresceram uns **40%**. Legal!  

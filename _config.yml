@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://jaydson.github.com
+url: http://jaydson.org
 title: Jaydson Gomes
 subtitle: HTML5 | JavaScript
 author: Jaydson Gomes
@@ -93,7 +93,7 @@ disqus_short_name: jaydson
 disqus_show_comment_count: true
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-1264252-8
 
 # Facebook Like
 facebook_like: true
