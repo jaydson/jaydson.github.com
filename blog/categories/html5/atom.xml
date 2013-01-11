@@ -4,7 +4,7 @@
   <title><![CDATA[Category: HTML5 | Jaydson Gomes]]></title>
   <link href="http://jaydson.org/blog/categories/html5/atom.xml" rel="self"/>
   <link href="http://jaydson.org/"/>
-  <updated>2013-01-10T19:55:19-02:00</updated>
+  <updated>2013-01-11T11:42:23-02:00</updated>
   <id>http://jaydson.org/</id>
   <author>
     <name><![CDATA[Jaydson Gomes]]></name>
@@ -12,6 +12,31 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Experimentos HTML5 no header do Blog]]></title>
+    <link href="http://jaydson.org/experimentos-html5-no-header-do-blog/"/>
+    <updated>2013-01-11T11:14:00-02:00</updated>
+    <id>http://jaydson.org/experimentos-html5-no-header-do-blog</id>
+    <content type="html"><![CDATA[<p>Resolvi criar aqui no Blog um espaço para experimentos <a href="https://developer.mozilla.org/en-US/docs/HTML/HTML5">HTML5</a>, <a href="https://developer.mozilla.org/en-US/docs/CSS/CSS3">CSS3</a> e <a href="https://developer.mozilla.org/en-US/docs/JavaScript">JavaScript</a>.<br/>
+Este espaço não será um post, mas sim o próprio header.<br/>
+Existe muito espaço ali para brincar e fazer coisas legais.<br/>
+O primeiro experimento que fiz, foi este cubo 3d ao lado do meu nome.<br/>
+Talvez ele fique para sempre ali, pois gostei do jeito que ele se encaixou com página.</p>
+
+<p>Este experimento eu já havia feito para o <a href="https://developer.mozilla.org/pt-BR/demos/detail/simple-css3-3d-cube">Mozilla DevDerby</a>, e só fiz uma adaptação para o header.<br/>
+Basicamente, o que faço é sortear imagens relacionadas ao HTML5 para o background de cada face do cubo, animar ele com rotação no eixo X e Y.<br/>
+O código esta no Github para quem quiser dar uma olhada: <a href="https://github.com/jaydson/blog-header-experiments">https://github.com/jaydson/blog-header-experiments</a><br/>
+Inclusive, criei um projeto só para estes experimentos, todos eles ficarão neste repositório.</p>
+
+<p>Estou desenvolvendo uma API JavaScript, para facilitar a inclusão destes experimentos no header.<br/>
+Desta maneira, outras pessoas também poderão me enviar os seus experimentos.</p>
+
+<p>Se alguém tiver alguma ideia legal de experimento que se encaixe nesta temática, entre em contato :)</p>
+
+<p>OBS: Para visualizar o cubo 3D, é preciso ter um navegador moderno :)</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[EATI 2012 em Frederico Westphalen]]></title>
@@ -130,58 +155,6 @@ Bom, o BrazilJS 2012 está quase chegando, e muito provável que o Michal volte 
 Até eu estou vendo novamente aqui.</p>
 
 <p><div class="embed-video-container"><iframe src="http://player.vimeo.com/video/37859715 "></iframe></div></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[HTML5 AppCache - Cache-Control: no-store]]></title>
-    <link href="http://jaydson.org/html5-appcache-cache-control-no-store/"/>
-    <updated>2011-11-03T12:25:54-02:00</updated>
-    <id>http://jaydson.org/html5-appcache-cache-control-no-store</id>
-    <content type="html"><![CDATA[<p>No<a href="http://jaydson.org/html5-application-cache"> meu último post</a>, falei sobre como tudo no <a href="http://www.w3.org/TR/html5/">HTML5</a> é legal, e especificamente sobre o <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/offline.html">Application Cache</a>.<br/>
-O legal de trabalhar com HTML5 é que tudo é muito novo.<br/>
-O ruim de trabalhar com HTML5 é que tudo é muito novo.</p>
-
-<p>O que quero dizer, é que HTML5 é uma tecnologia nova, e que muitas funcionalidades ainda estão em desenvolvimento.<br/>
-Creio que isso seja uma questão complicada para os Browsers, pois eles devem implementar estas especificações incompletas.<br/>
-Mas tudo isso faz parte da transição em que estamos, e de certa forma, isso é muito bom.</p>
-
-<p>Voltando ao AppCache, vou citar um dos problemas que encontrei utilizando essa feature, que julgo ter um grande potencial, se sofrer algumas alterações.<br/>
-Como falado antes, o AppCache não é uma feature que apenas permite que sua Web App rode Offline.<br/>
-O AppCache pode reduzir e muito o "peso" da sua App, reduzindo o número de requisições.<br/>
-Imagine que sua Web App tenha 6 arquivos JavaScript, 3 arquivos CSS, e várias imagens.<br/>
-Se nenhum destes arquivos sofre atualizações constantes, todos podem ser "AppCacheados".<br/>
-Tecnicamente isto quer dizer que se o total em KBytes de sua página é de 200K, esses 200K podem ser carregados diretamene do Cache.<br/>
-Sim, o Browser possui um mecanismo de Cache padrão, mas este cache não é controlado pelo desenvolvedor.<br/>
-Outro fator relevante é que nenhum Header do arquivo é levado em conta se a sua App está utilizando AppCache.<br/>
-Com exceção do Cache-Control:no-store.<br/>
-Ou não.</p>
-
-<p>Bom, na especificação temos alguns detalhes que já mencionei, mas o que mais tive problemas foi este:<br/>
-"A página onde esta definido que a aplicação utilizará o manifest, mesmo não estando listada no manifest, será armazenada no cache".<br/>
-Lembre que o AppCache também foi pensado para fazer uma App rodar Offline, então isso até faz sentido, mas gera outros problemas.<br/>
-Se o meu objetivo é reduzir o número de requisições, e minha página muda constantemente o seu conteúdo, essa regra acaba com a possibilidade de utilizar o AppCache.<br/>
-Ai chegamos em outra regra da especificação:<br/>
-"Com exceção da diretiva "no-store", os headers HTTP de cache são substituídas pelo Appcache"<br/>
-Problema resolvido então?<br/>
-Não!!!<br/>
-Por algum motivo o Google Chrome não respeita esta regra.<br/>
-Faça o teste, altere as configurações do seu servidor(no meu caso o Apache):</p>
-
-<pre><code> &lt;FilesMatch "(.html)$"&gt;
-    Header set Cache-Control "no-store"
- &lt;/FilesMatch&gt;
-</code></pre>
-
-<p>O que fiz foi dizer que todos arquivos HTML devem vir com o Cache-Control "no-store".<br/>
-No Firefox e no Opera isso funciona perfeitamente. Todos arquivos listados no manifest para serem Appcacheados estão lá, com exceção da página atual.<br/>
-No Chrome, isso simplesmente não acontece. A página atual sempre vem do cache.</p>
-
-<p>Notem que esse problema pode ser resolvido se utilizarmos a funcionalidade padrão do Appcache: Atualizar o manifest.<br/>
-Mas isso nem sempre é possível, ou nem sempre eu quero fazer isso.<br/>
-Ficar na dependência de alterar um arquivo manifest para atualizar o conteúdo principal é uma coisa delicada.</p>
-
-<p>Bom, ainda estou pesquisando para ver se isso é um Bug do Chrome, ou se realmente o Google ignorou a regra do "no-store".</p>
 ]]></content>
   </entry>
   

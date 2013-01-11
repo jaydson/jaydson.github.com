@@ -4,7 +4,7 @@
   <title><![CDATA[Jaydson Gomes]]></title>
   <link href="http://jaydson.org/atom.xml" rel="self"/>
   <link href="http://jaydson.org/"/>
-  <updated>2013-01-10T19:55:19-02:00</updated>
+  <updated>2013-01-11T11:42:23-02:00</updated>
   <id>http://jaydson.org/</id>
   <author>
     <name><![CDATA[Jaydson Gomes]]></name>
@@ -12,6 +12,31 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Experimentos HTML5 no header do Blog]]></title>
+    <link href="http://jaydson.org/experimentos-html5-no-header-do-blog/"/>
+    <updated>2013-01-11T11:14:00-02:00</updated>
+    <id>http://jaydson.org/experimentos-html5-no-header-do-blog</id>
+    <content type="html"><![CDATA[<p>Resolvi criar aqui no Blog um espaço para experimentos <a href="https://developer.mozilla.org/en-US/docs/HTML/HTML5">HTML5</a>, <a href="https://developer.mozilla.org/en-US/docs/CSS/CSS3">CSS3</a> e <a href="https://developer.mozilla.org/en-US/docs/JavaScript">JavaScript</a>.<br/>
+Este espaço não será um post, mas sim o próprio header.<br/>
+Existe muito espaço ali para brincar e fazer coisas legais.<br/>
+O primeiro experimento que fiz, foi este cubo 3d ao lado do meu nome.<br/>
+Talvez ele fique para sempre ali, pois gostei do jeito que ele se encaixou com página.</p>
+
+<p>Este experimento eu já havia feito para o <a href="https://developer.mozilla.org/pt-BR/demos/detail/simple-css3-3d-cube">Mozilla DevDerby</a>, e só fiz uma adaptação para o header.<br/>
+Basicamente, o que faço é sortear imagens relacionadas ao HTML5 para o background de cada face do cubo, animar ele com rotação no eixo X e Y.<br/>
+O código esta no Github para quem quiser dar uma olhada: <a href="https://github.com/jaydson/blog-header-experiments">https://github.com/jaydson/blog-header-experiments</a><br/>
+Inclusive, criei um projeto só para estes experimentos, todos eles ficarão neste repositório.</p>
+
+<p>Estou desenvolvendo uma API JavaScript, para facilitar a inclusão destes experimentos no header.<br/>
+Desta maneira, outras pessoas também poderão me enviar os seus experimentos.</p>
+
+<p>Se alguém tiver alguma ideia legal de experimento que se encaixe nesta temática, entre em contato :)</p>
+
+<p>OBS: Para visualizar o cubo 3D, é preciso ter um navegador moderno :)</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Migrando para o Octopress]]></title>
@@ -867,25 +892,6 @@ Recomendo que todos que trabalham com Web assistam a palestra.<br/>
 Feedbacks são bem vindos ;)</p>
 
 <div class="embed-video-container"><iframe src="http://www.youtube.com/embed/o73xH52pFPY "></iframe></div>
-
-
-<p></p>
-
-<p><em>* Cobertura: <a href="http://www.gonow.com.br">GoNow Tecnologia</a> - gravação feita pela <a href="http://www.facebook.com/djlou09">Laura Lou</a></em>*</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[RSJS - JavaScript não obstrutivo]]></title>
-    <link href="http://jaydson.org/rsjs-javascript-nao-obstrutivo/"/>
-    <updated>2012-03-14T02:00:37-03:00</updated>
-    <id>http://jaydson.org/rsjs-javascript-nao-obstrutivo</id>
-    <content type="html"><![CDATA[<p>O paraquedista, amigo e diretor da Gri.fo, também palestrou no RSJS.
-A palestra dele foi bem descontraída, com várias analogias interessantes.<br/>
-Ele falou sobre uma técnica/prática bem difundida no mundo client-side, mas que muitos ainda não dominam ou não aplicam em seu dia a dia.<br/>
-Vale conferir a pelestra sobre JavaScript não obstrutivo/obstrusivo/obtrusivo ;)</p>
-
-<div class="embed-video-container"><iframe src="http://www.youtube.com/embed/Jrx5gVfKZSA "></iframe></div>
 
 
 <p></p>

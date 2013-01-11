@@ -478,7 +478,11 @@
     </url>
     <url>
         <loc>http://jaydson.org/migrando-para-octopress/</loc>
-        <lastmod>2013-01-09T19:40:35-02:00</lastmod>
+        <lastmod>2013-01-11T02:52:42-02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://jaydson.org/experimentos-html5-no-header-do-blog/</loc>
+        <lastmod>2013-01-11T11:41:36-02:00</lastmod>
     </url>
     <url>
         <loc>http://jaydson.org/robots.txt</loc>
@@ -506,7 +510,7 @@
     </url>
     <url>
         <loc>http://jaydson.org/</loc>
-        <lastmod>2013-01-09T19:40:35-02:00</lastmod>
+        <lastmod>2013-01-11T11:41:36-02:00</lastmod>
     </url>
     <url>
         <loc>http://jaydson.org/easter-egg/</loc>
@@ -522,6 +526,6 @@
     </url>
     <url>
         <loc>http://jaydson.org/blog/archives/</loc>
-        <lastmod>2013-01-09T19:40:35-02:00</lastmod>
+        <lastmod>2013-01-11T11:41:36-02:00</lastmod>
     </url>
 </urlset>

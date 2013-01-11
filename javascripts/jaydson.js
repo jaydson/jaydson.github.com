@@ -1,6 +1,17 @@
-/* Jayson Global namespace */
-var Jaydson = {};
+/*global $,window,document,console, Modernizr */
 
-$(document).ready(function(){
-	
+/* Jayson Global namespace */
+var Jaydson = function () {
+
+};
+
+Jaydson.prototype.header = {
+	experiments : {
+		register : function (name, fn) {
+			// todo	
+		}
+	}
+};
+
+$(document).ready(function () {
 });
