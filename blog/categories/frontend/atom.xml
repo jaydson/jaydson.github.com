@@ -4,7 +4,7 @@
   <title><![CDATA[Category: FrontEnd | Jaydson Gomes]]></title>
   <link href="http://jaydson.org/blog/categories/frontend/atom.xml" rel="self"/>
   <link href="http://jaydson.org/"/>
-  <updated>2013-01-11T11:42:23-02:00</updated>
+  <updated>2013-01-15T01:42:54-02:00</updated>
   <id>http://jaydson.org/</id>
   <author>
     <name><![CDATA[Jaydson Gomes]]></name>
@@ -12,6 +12,24 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[BrazilJS Weekly]]></title>
+    <link href="http://jaydson.org/braziljs-weekly/"/>
+    <updated>2013-01-11T11:57:00-02:00</updated>
+    <id>http://jaydson.org/braziljs-weekly</id>
+    <content type="html"><![CDATA[<p>Hoje vim apresentar, para quem ainda não conhece, a <a href="http://braziljs.org/weekly/">BrazilJS Weekly</a>.<br/>
+Este é um projeto que lançamos em 2012 com intuíto de equalizar as informações mais relevantes do frontend no Brasil e no mundo.</p>
+
+<p>Toda sexta-feira é disparado um email com um compilado do que rolou de interessante ao longo da semana.<br/>
+E o mais legal é o que o conteúdo desta Weekly é sugerido por pessoas envolvidas com frontend em todo o Brasil.<br/>
+No inciio do ano disponibilizamos uma maneira prática, para que todos possam sugerir links interessantes, o <a href="http://braziljs.org/services/add2weekly/">Add2Weekly</a>.</p>
+
+<p><a href="/images/add2weekly.png"><img src="/images/add2weekly.png" alt="" /></a></p>
+
+<p>O Add2Weekly é um <a href="http://pt.wikipedia.org/wiki/Bookmarklet">bookmarklet</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Retrospectiva 2012]]></title>
