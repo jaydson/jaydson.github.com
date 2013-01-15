@@ -4,6 +4,8 @@ date: 2013-01-09 06:44:30
 layout: post
 slug: migrando-para-octopress
 title: Migrando para o Octopress
+description: Relato sobre a mudança do Blog para a plataforma Octopress
+keywords: ruby, html5, JavaScript, Octopress, Jekyll, gerador, html, site, blog, wodpress
 categories:
 - Off-Topic
 tags:

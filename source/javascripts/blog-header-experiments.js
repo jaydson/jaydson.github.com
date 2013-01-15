@@ -10,6 +10,7 @@
 			var backgrounds = ['3d.jpg', 'connectivity.jpg', 'css3.jpg', 'device.jpg', 'html5.png', 'multimedia.jpg', 'offline.jpg', 'performance.jpg', 'semantics.jpg'],
 				imgPath = '/images',
 				DOMElementCube = document.createElement('div'),
+				DOMElementLink = document.createElement('a'),
 				i = 0,
 				tempDOMElement = null,
 				DOMContainer = document.getElementById(container);
@@ -19,6 +20,9 @@
 					return Math.floor(Math.random() * 7);
 				});
 
+				DOMElementLink.href = 'https://github.com/jaydson/blog-header-experiments';
+				DOMElementLink.target = '_blank';
+				DOMElementLink.appendChild(DOMElementCube);
 				DOMElementCube.setAttribute('class', 'animate');
 				DOMElementCube.setAttribute('id', 'cube');
 
@@ -27,7 +31,7 @@
 					tempDOMElement.style.backgroundImage = 'url(' + imgPath + '/' +  backgrounds.shift() + ')';
 					DOMElementCube.appendChild(tempDOMElement);
 				}
-				DOMContainer.appendChild(DOMElementCube);
+				DOMContainer.appendChild(DOMElementLink);
 			}
 		};
 	};
