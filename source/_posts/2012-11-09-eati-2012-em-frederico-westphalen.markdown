@@ -20,6 +20,7 @@ Assim como no [Webbr da W3C](http://jaydson.org/w3c-webbr-2102/),  o BrazilJS t
 [Felipe Moura,](http://twitter.com/felipenmoura) [Zeno Rocha](http://twitter.com/zenorocha) e eu, comandamos as palestras, e tentamos passar o máximo de informção possível para o pessoal.  
 Foram várias palestras, e muito networking com a galera.  
 Acho que nunca fui tão bem tratado em um evento como aqui em _**Fred West**_. Desde o primeiro contato com o Joel, até o último minuto na festa de encerramento, foi esta a minha sensação.  
+<!--more-->
 
 Cada uma das pessoas que vinha falar comigo, fazia com que eu me sentisse em casa, e sentisse que tudo que estamos fazendo realmente vale a pena.  
 Ver o nosso trabalho ser conhecido e ser admirado pelo pessoal, é muito gratificante.  

@@ -24,6 +24,7 @@ Em 2013 terei um desafio ainda maior, pois troquei de equipe, e agora faço part
 Nesta nova equipe, terei o papel de resolver problemas maiores, criar soluções escaláveis, e mudar muito do processo de desenvolvimento frontend dentro da empresa.  
 Estou bem confiante, pois tenho pessoas extremamente competentes do meu lado, e uma gerência e direção que estão apostando forte no frontend.  
 Com este cenário, para mim é fácil, pois sou movido pela motivação.  
+<!--more-->
 
 Para o mercado FrontEnd no Brasil, 2012 foi um ano espetacular. Crescemos como comunidade, e finalmente as empresas estão dando o devido valor.  
 A [BrazilJS Conference](http://braziljs.com.br) foi novamente um dos principais eventos do mundo, mostrando que o Brasil tem um lugar destacado neste mercado que cresce cada vez mais.  

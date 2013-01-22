@@ -23,6 +23,7 @@ O total de pageviews ultrapassou os **50K**, e isso quer dizer que de 2011 para 
 O total de unique visitors passou de **32K**.  
 Média de acessos diários:  **140 acessos**    
 Média mensal: **4.200 acessos**  
+<!--more-->
 
 **Browsers:**  
 - Chrome – 56.90%

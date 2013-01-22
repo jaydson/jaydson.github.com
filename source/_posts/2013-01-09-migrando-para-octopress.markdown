@@ -18,6 +18,7 @@ Migrei do nosso velho amigo [Wordpress](http://wordpress.org) para o novo amigo 
 Outra mudança é o tema, apesar de parecido com o antigo, este tema novo é responsivo, algo que eu já planejava fazer faz um tempo.  
 O tema é praticamente o default do Octopress, com algumas mudanças de cores, fontes e estrutura que apliquei.  
 Para esta primeira versão ele ficará assim, mas meu objetivo é personaliza-lo mais em breve.  
+<!--more-->
 
 ## Porque fazer esta mudança?  
 Usei o Wordpress por muito tempo aqui no Blog, e em alguns outros projetos também.  

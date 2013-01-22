@@ -19,13 +19,15 @@ tags:
 Hoje vim apresentar, para quem ainda não conhece, a [BrazilJS Weekly](http://braziljs.org/weekly/).  
 Este é um projeto que lançamos em 2012 com intuíto de equalizar as informações mais relevantes do frontend no Brasil e no mundo.  
 
-Toda sexta-feira é disparado um email com um compilado do que rolou de interessante ao longo da semana.  
+Toda sexta-feira é disparado um e-mail com um compilado do que rolou de interessante no mundo frontend ao longo da semana.  
 E o mais legal é o que o conteúdo desta Weekly é sugerido por pessoas envolvidas com frontend em todo o Brasil.  
-No inciio do ano disponibilizamos uma maneira prática, para que todos possam sugerir links interessantes, o [Add2Weekly](http://braziljs.org/services/add2weekly/).  
+No inicio do ano disponibilizamos uma maneira prática, para que todos possam sugerir links interessantes, o [Add2Weekly](http://braziljs.org/services/add2weekly/).  
 
 [![](/images/add2weekly.png)](/images/add2weekly.png)  
 
-O Add2Weekly é um [bookmarklet](http://pt.wikipedia.org/wiki/Bookmarklet)
+O Add2Weekly é um [bookmarklet](http://pt.wikipedia.org/wiki/Bookmarklet) que facilita o envio de ideias para a nossa base de links.  
+Basta adicionar o bookmarklet ao seus favoritos, e quando estiver navegando por algum site, clique nele.  
+Um formulário irá abrir
 
 
 
