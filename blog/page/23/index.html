@@ -1,0 +1,536 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Jaydson Gomes</title>
+  <meta name="author" content="Jaydson Gomes">
+
+  
+  <meta name="description" content="E ai pessoal, seguinte&#8230;ontem me deparei com algo realmente interessante, e fiquei até meio assustado pelo fato de eu não saber da existência.
+O &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <meta property="og:title" content="Jaydson Gomes" />
+  <meta property="og:description" content="Um Blog sobre HTML5 e JavaScript" />
+  <meta property="og:image" content="/images/jaydson-gomes-logo.png" />
+
+  
+  <link rel="canonical" href="http://jaydson.org/blog/page/23/">
+  <link href="/favicon.png" rel="icon">
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+  <link href="/stylesheets/blog-header-experiments.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Jaydson Gomes" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1264252-8']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup id="header-stage">
+  <h1><a href="/">Jaydson Gomes</a></h1>
+  
+    <h2>HTML5 | JavaScript</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:jaydson.org" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/hacks-css/">Hacks CSS</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-05-04T11:32:16-03:00" pubdate data-updated="true">May 4<span>th</span>, 2009</time>
+        
+         | <a href="/hacks-css/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>E ai pessoal, seguinte&#8230;ontem me deparei com algo realmente interessante, e fiquei até meio assustado pelo fato de eu não saber da existência.
+O negócio é que todos desenvolvedores web sofrem com as peculiaridades de cada Browser, e se tratando do IE, nem se fala.
+Eu já tinha ouvido falar dos Hacks, e pesquisando sobre o assunto encontrei no <a href="http://blog.gustavopaes.net/2007/hacks-css-para-ie6-e-ie7/">Blog do Gustavo Paes</a> várias dicas legais.
+O que achei mais interessante foi o Hack em que duplicamos um atributo da classe CSS, colocando um &#8220;coringa&#8221; na frente do nome.
+Isso serve para que a propriedade seja alterada apenas no IE.
+Exemplo:</p>
+
+<p>[css]</p>
+
+<h1>elemento {</h1>
+
+<p>height: 50px;
+<em>height: 30px; /</em> altera propriedade do IE6 e IE7 <em>/
+_height: 20px; /</em> apenas IE6 */
+}
+[/css]</p>
+
+<p>Mas nem tudo é maravilha&#8230;.
+Temos apenas um pequeno detalhe:
+Esta Gambiarra solução não passa na validação W3, então se isso é necessário, busquem outra solução.
+Por hora é isso.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/json/">Json</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-05-04T11:13:43-03:00" pubdate data-updated="true">May 4<span>th</span>, 2009</time>
+        
+         | <a href="/json/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Bom, eu até já tinha ouvido falar do tal do JSON(Djeison), mas nunca havia parado pra estuda-lo e ver o seu funcionamento.
+Após ir em uma entrevista de emprego, onde os entrevistadores comentaram a respeito do JSON, eu fiquei mais curioso sobre o assunto.
+O que acontece é que JSON esta na crista da onda&#8230;quero dizer que é uma tecnologia que tem o seu uso difundido, e isto se deve pelo fato de JSON ser simples e poderoso.
+JSON é uma alternativa para XML, ele também exerce o mesmo papel que o XML como formato para transporte de dados.
+Uma coisa importante para a aceitação do JSON foi por ser mais fácil escrever um analisador JSON, por exemplo em Javascript através da função eval().
+Vários nomes de peso adotaram JSON, posso citar alguns que sei: <strong>Google</strong>, <strong>Yahoo</strong>, <strong>Meebo</strong>&#8230;
+Perguntas que eu me fazia antes de estudar JSON:</p>
+
+<p><strong>Ta, mas qual biblioteca devo baixar?</strong>
+<strong>Como assim notação de objetos?</strong>
+<strong>JSON é Javascript?</strong></p>
+
+<p>Bom, em primeiro lugar, eu consegui fazer bastante coisa sem baixar um KB sequer, ou seja, não precisei baixar nenhuma biblioteca.
+JSON é um acrônimo para JavaScript Object Notation - Segundo o próprio <a href="http://www.json.org/json-pt.html">site do JSON</a> ele é: uma formatação leve de troca de dados. Para seres humanos, é fácil de ler e escrever. Para máquinas, é fácil de interpretar e gerar.
+Está baseado em um subconjunto da linguagem de programação JavaScript, Standard ECMA-262 3a Edição -Dezembro - 1999.
+JSON é em formato texto e completamente independente de linguagem, pois usa convenções que são familiares às linguagens C e familiares, incluindo C++, C#, Java, JavaScript, Perl, Python e muitas outras. Estas propriedades fazem com que JSON seja um formato ideal de troca de dados.
+E por último, a resposta anterior já respondeu&#8230;JSON é um subconjunto da notação de objeto de JavaScript, mas seu uso não requer Javascript exclusivamente.
+Agora, vamos a parte boa: o código !!! Como funciona isso ????
+Primeiro vamos ver como criar um JSON:
+JSON está constituído em duas estruturas:
+* Uma coleção de pares nome/valor. Em várias linguagens, isto é caracterizado como um object, record, struct, dicionário, hash table, keyed list, ou arrays associativas.
+* Uma lista ordenada de valores. Na maioria das linguagens, isto é caracterizado como uma array, vetor, lista ou sequência.
+Estas são estruturas de dados universais. Virtualmente todas as linguagens de programação modernas as suportam, de uma forma ou de outra. É aceitavel que um formato de troca de dados que seja independente de linguagem de programação se baseie nestas estruturas.</p>
+
+<p>Agora que já vimos como é, vamos a um exemplo:</p>
+
+<p>[javascript]
+var myJSONObject = {&#8220;cliente&#8221;: [
+{&#8220;nome&#8221;: &#8220;Joao da Silva&#8221;, &#8220;idade&#8221;: &#8220;25&#8221;, &#8220;sexo&#8221;: &#8220;masculino&#8221;},
+{&#8220;nome&#8221;: &#8220;Juca da Silva&#8221;, &#8220;idade&#8221;: &#8220;36&#8221;, &#8220;sexo&#8221;: &#8220;masculino&#8221;},
+{&#8220;nome&#8221;: &#8220;Maria Madalena&#8221;, &#8220;idade&#8221;: &#8220;18&#8221;, &#8220;sexo&#8221;: &#8220;feminino&#8221;}
+]
+};</p>
+
+<p>[/javascript]</p>
+
+<p>No código acima, criamos uma estrutura de cliente, contendo valores para 3 clientes.
+Agora vamos transformar isso em um objeto Javascript.</p>
+
+<p>[javascript]</p>
+
+<p>var myObject = eval(myJSONObject);
+document.write(&#8216;Nome: &#8217; + myObject.cliente[i].nome + &#8221;<br>&#8221;);
+document.write(&#8216;Idade: &#8217; + myObject.cliente[i].idade + &#8221;<br>&#8221;);
+document.write(&#8216;Sexo: &#8217; + myObject.cliente[i].sexo + &#8221;<br>&#8221;);
+document.write(&#8216;___________________<br>&#8217;);
+}
+[/javascript]</p>
+
+<p>Como podemos notar no código acima, depois de converter o texto JSON em Objeto, podemos acessar os seus dados facilmente.
+<a href="http://jaydson.org/code/json/teste_json.html">Veja aqui o resultado deste código.</a></p>
+
+<p>Isso foi o básico. Já fiz algumas coisas mais complexas, e estou preparando um novo Post sobre JSON + AJAX + PHP + Banco de Dados&#8230;
+Aguardem, e qualquer dúvida postem ai, ou me mandei e-mail.</p>
+
+<p>O/O/O/O/O/O/</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/php-problema-ao-carregar-a-dll-php_pgsqldll/">PHP - Problema Ao Carregar a DLL php_pgsql.dll</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-05-04T11:04:04-03:00" pubdate data-updated="true">May 4<span>th</span>, 2009</time>
+        
+         | <a href="/php-problema-ao-carregar-a-dll-php_pgsqldll/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Bom, instalar PHP não é nem um mistério&#8230;
+Mas enfrentei um pequeno problema ao instalar a nova versão do PHP(5.2.8).
+O PHP funcionava normalmente, mas eu não conseguia conectar com o PostgreSq.
+O erro:
+<strong>Call to undefined function pg_connect() </strong>
+Este erro significa que, ou a dll do postgres não foi carregada, ou não foi habilitada no PHP.INI.
+Eu já havia habilitado isto no INI (descomentando a linha = extension=php_pgsql.dll), e mesmo assim o erro permanecia.
+Pesquisando, descobri que o problema é a DLL desta versão do PHP que está com problema.
+Para resolver baixei a versão do PHP 2.2.5, e substitui a DLL do Postgre&#8230;então tudo funcionou normalmente&#8230;.</p>
+
+<p>O/
+:)</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/richblocks-um-framework-para-implantar-interfaces-ria-em-sistemas-web/">RichBlocks - Um Framework Para Implantar Interfaces RIA Em Sistemas Web</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-05-04T10:51:47-03:00" pubdate data-updated="true">May 4<span>th</span>, 2009</time>
+        
+         | <a href="/richblocks-um-framework-para-implantar-interfaces-ria-em-sistemas-web/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>RichBlocks - Este foi o meu projeto de conclusão de curso na Faculdade.
+A idéia do Framework é facilitar a vida do desenvolvedor na hora de implantar interfaces <a href="http://jaydson.blogspot.com/2008/11/ria-aplicaes-ricas-para-internet.html">RIA</a> em sistemas Web.
+Meu primeiro contato com Aplicações RIA foi há alguns anos atrás, quando o meu primo e também desenvolvedor Web <a href="http://thewebmind.blogspot.com/">Felipe</a> me apresentou uma Aplicação que estava desenvolvendo que na época era totalmente inovadora, e eu não tinha visto nada igual.
+Era uma aplicação Web onde a interface era semelhante a qualquer programa Desktop, haviam janelas e menus, e toda esta interface era feita em Javascript.
+Após estudar bastante sobre o assunto e ser insentivado pelo meu professor <a href="http://prestesmachado.com.br/blog/">Rodrigo Prestes</a> resolvi abordar esse assunto no meu TCC.
+Achei então que desenvolver um Framework seria uma boa. Visto que a maioria das ferramentas existentes são muito complexas, criei uma estrutura simples de arquivos XML bastando edita-los para que a interface funcione.
+O Projeto é OpenSource, e esta lá no Google Code.
+Projeto no Google-> <a href="http://code.google.com/p/richblocks/">code.google.com/p/richblocks</a>
+Aplicação feita usando o Framework-><a href="http://jaydson.org/code/richblocks/">http://jaydson.org/code/richblocks/
+</a> Artigo-><a href="http://jaydson.org/docs/richblocks.pdf">http://jaydson.org/docs/richblocks.pdf</a>RichBlocks - Este foi o meu projeto de conclusão de curso na Faculdade.
+A idéia do Framework é facilitar a vida do desenvolvedor na hora de implantar interfaces <a href="http://jaydson.blogspot.com/2008/11/ria-aplicaes-ricas-para-internet.html">RIA</a> em sistemas Web.
+Meu primeiro contato com Aplicações RIA foi há alguns anos atrás, quando o meu primo e também desenvolvedor Web <a href="http://felipenascimento.org/">Felipe</a> me apresentou uma Aplicação que estava desenvolvendo que na época era totalmente inovadora, e eu não tinha visto nada igual.
+Era uma aplicação Web onde a interface era semelhante a qualquer programa Desktop, haviam janelas e menus, e toda esta interface era feita em Javascript.
+Após estudar bastante sobre o assunto e ser insentivado pelo meu professor <a href="http://prestesmachado.com.br/blog/">Rodrigo Prestes</a> resolvi abordar esse assunto no meu TCC.
+Achei então que desenvolver um Framework seria uma boa. Visto que a maioria das ferramentas existentes são muito complexas, criei uma estrutura simples de arquivos XML bastando edita-los para que a interface funcione.
+O Projeto é OpenSource, e esta lá no Google Code.
+Projeto no Google-> <a href="http://code.google.com/p/richblocks/">code.google.com/p/richblocks</a>
+Aplicação feita usando o Framework-><a href="http://jaydson.org/code/richblocks/">http://jaydson.org/code/richblocks/
+</a> Artigo-><a href="http://jaydson.org/docs/richblocks.pdf">http://jaydson.org/docs/richblocks.pdf</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/php-classes/">PHP Classes</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-05-04T10:45:34-03:00" pubdate data-updated="true">May 4<span>th</span>, 2009</time>
+        
+         | <a href="/php-classes/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Vai ai a dica para quem trabalha com PHP e ainda não conhece.
+O <a href="http://www.phpclasses.org/">PHP Classes</a> é um repositório de classes PHP, onde desenvolvedores do mundo inteiro publicam suas classes.
+Tem uma porrada de coisa lá, algumas bem peculiares, mas muita coisa útil e interessante.
+O legal é que podemos nos cadatrar lá para receber e-mails de novas classes publicadas.
+O portal também oferece outros serviços além de classes PHP, vale a pena dar uma olhada lá.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/page/24/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/blog/page/22/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    
+<section>
+	<span class="avatar">
+		<img src="http://www.gravatar.com/avatar/572696200604e59baa59ee90d61f7d02?s=180" alt="Jaydson Gomes " title="Jaydson Gomes" />
+	</span>
+</section>
+<section class="author">	
+	<h1>Entusiasta JavaScript && FrontEnd Engineer no Terra && Curador do BrazilJS</h1>
+</section><section>
+  <h1>Posts Recentes</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/experimentos-html5-no-header-do-blog/">Experimentos HTML5 no header do Blog</a>
+      </li>
+    
+      <li class="post">
+        <a href="/migrando-para-octopress/">Migrando para o Octopress</a>
+      </li>
+    
+      <li class="post">
+        <a href="/analytics-do-blog-em-2012/">Analytics do Blog em 2012</a>
+      </li>
+    
+      <li class="post">
+        <a href="/retrospectiva-2012/">Retrospectiva 2012</a>
+      </li>
+    
+      <li class="post">
+        <a href="/eati-2012-em-frederico-westphalen/">EATI 2012 em Frederico Westphalen</a>
+      </li>
+    
+      <li class="post">
+        <a href="/w3c-webbr-2102/">W3C webbr 2102</a>
+      </li>
+    
+      <li class="post">
+        <a href="/javascript-o-guia-definitivo/">JavaScript: O Guia definitivo</a>
+      </li>
+    
+      <li class="post">
+        <a href="/braziljs-entrevista-na-tv/">BrazilJS - Entrevista na TV</a>
+      </li>
+    
+      <li class="post">
+        <a href="/braziljs-2012-foto-epica-com-o-brendan/">BrazilJS 2012 - Foto épica com o Brendan Eich</a>
+      </li>
+    
+      <li class="post">
+        <a href="/fundacao-braziljs/">Fundação BrazilJS</a>
+      </li>
+    
+      <li class="post">
+        <a href="/experimento-de-web-scraping-com-nodejs/">Experimento de Web Scraping com nodeJS</a>
+      </li>
+    
+      <li class="post">
+        <a href="/braziljs-2012/">BrazilJS 2012</a>
+      </li>
+    
+      <li class="post">
+        <a href="/web-scraping-para-criancas-com-nodejs/">Web Scraping para crianças com nodeJS</a>
+      </li>
+    
+      <li class="post">
+        <a href="/jsconf-argentina-resumo/">JSConf Argentina - Resumo</a>
+      </li>
+    
+      <li class="post">
+        <a href="/pernambucojs-resumo/">PernambucoJS - Resumo</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+	<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Jaydson's Blog</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://jaydson.org" property="cc:attributionName" rel="cc:attributionURL">Jaydson Gomes</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>
+</p>
+<p>
+	<span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+<script type="text/javascript" src="/javascripts/jaydson.js"></script>
+<script type="text/javascript" src="/javascripts/blog-header-experiments.js"></script>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'jaydson';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
