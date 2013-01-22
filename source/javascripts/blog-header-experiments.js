@@ -37,7 +37,7 @@
 	};
 
 	window.addEventListener('DOMContentLoaded', function () {
-		if (Modernizr.csstransforms) {
+		if (Modernizr.csstransforms3d) {
 			var cube = new Cube().render('header-stage');
 		}
 	});
