@@ -27,7 +27,9 @@ No inicio do ano disponibilizamos uma maneira prática, para que todos possam su
 
 O Add2Weekly é um [bookmarklet](http://pt.wikipedia.org/wiki/Bookmarklet) que facilita o envio de ideias para a nossa base de links.  
 Basta adicionar o bookmarklet ao seus favoritos, e quando estiver navegando por algum site, clique nele.  
-Um formulário irá abrir
+Um formulário será exibido com 3 campos, sendo que 2 deles já estarão preenchidos, baseados na URL.  
+O campo de texto livre é importante para descrever o que é este link que esta sendo sugerido.  
+Após isso, basta enviar.  
 
 
 

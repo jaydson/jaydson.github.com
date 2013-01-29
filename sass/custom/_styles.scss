@@ -4,6 +4,24 @@ body > header {
 	text-align: center;
 }
 
-#content .blog-index article h1 { 
+#content .blog-index article h2 { 
 	margin-top: 10px;
+	font-size: 2.2em;
+}
+article header h2 {
+	font-size: 2.6em;
+}
+
+article header h2 a {
+	color : #000;
+	text-decoration: none;
+}
+
+h2 a:visited {
+	color : #000;
+	text-decoration: none;	
+}
+
+h2 a:hover {
+	color: #0181eb;
 }
