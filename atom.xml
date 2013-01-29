@@ -4,7 +4,7 @@
   <title><![CDATA[Jaydson Gomes]]></title>
   <link href="http://jaydson.org/atom.xml" rel="self"/>
   <link href="http://jaydson.org/"/>
-  <updated>2013-01-29T21:09:56-02:00</updated>
+  <updated>2013-01-29T21:21:53-02:00</updated>
   <id>http://jaydson.org/</id>
   <author>
     <name><![CDATA[Jaydson Gomes]]></name>
@@ -12,15 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[O JavaScript e a Geladeira]]></title>
-    <link href="http://jaydson.org/o-javascript-e-a-geladeira/"/>
-    <updated>2013-01-23T01:53:00-02:00</updated>
-    <id>http://jaydson.org/o-javascript-e-a-geladeira</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[Experimentos HTML5 no header do Blog]]></title>
@@ -898,6 +889,26 @@ O evento será realizado no Auditório da PUC da Consolação na Rua Marquês de
 Olhem a grade no site para ver a lista completa: <a href="http://www.sampajs.com/">http://www.sampajs.com/</a></p>
 
 <p>Quem estiver por São Paulo neste dia, vale a pena dar uma conferida no evento, que vai estar muito bom.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[RSJS - Extreme Web Performance]]></title>
+    <link href="http://jaydson.org/rsjs-extreme-web-performance/"/>
+    <updated>2012-03-14T20:05:50-03:00</updated>
+    <id>http://jaydson.org/rsjs-extreme-web-performance</id>
+    <content type="html"><![CDATA[<p>Buenas, saiu o vídeo da minha palestra no <a href="http://rsjs.org">#RSJS</a> \o/<br/>
+Como o nome diz, falei sobre performance Web. Basicamente transmiti tudo que aprendi durante 6 meses de trabalho em um projeto de performance no <a href="http://www.terra.com.br">Terra</a>, onde conseguimos reduzir em 60% o carregamento da home.<br/>
+Apesar dos 70 slides, muita coisa que eu gostaria de falar ficou de fora, mas em outra oportunidade falarei mais a respeito.<br/>
+Recomendo que todos que trabalham com Web assistam a palestra.<br/>
+Feedbacks são bem vindos ;)</p>
+
+<div class="embed-video-container"><iframe src="http://www.youtube.com/embed/o73xH52pFPY "></iframe></div>
+
+
+<p></p>
+
+<p><em>* Cobertura: <a href="http://www.gonow.com.br">GoNow Tecnologia</a> - gravação feita pela <a href="http://www.facebook.com/djlou09">Laura Lou</a></em>*</p>
 ]]></content>
   </entry>
   

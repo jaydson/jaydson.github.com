@@ -9,8 +9,8 @@
   <meta name="author" content="Jaydson Gomes">
 
   
-  <meta name="description" content="Today I came to talk about one of the methods that I find very interesting in Jquery, the serialize().
-As its name implies, this method serializes a &hellip;">
+  <meta name="description" content="Várias palestras interessantes no #PHP SC Conf deste ano.
+A palestra que abriu o evento foi do projeto theWebMind, cujo qual sou mebro e que vocês já &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -82,67 +82,6 @@ As its name implies, this method serializes a &hellip;">
     <div id="content">
       <div class="blog-index">
   
-  
-  
-    <article>
-      
-  <header>
-    
-      <h2 class="entry-title"><a href="/serializando-um-formulario-com-jquery/">Serializando Um Formulário Com jQuery</a></h2>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-06-14T01:21:38-03:00" pubdate data-updated="true">Jun 14<span>th</span>, 2009</time>
-        
-         | <a href="/serializando-um-formulario-com-jquery/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Today I came to talk about one of the methods that I find very interesting in Jquery, the <a href="http://docs.jquery.com/Ajax/serialize">serialize()</a>.
-As its name implies, this method serializes a set of inputs of a form on a string.
-This string is standardized and compatible with most server-side language.
-This is very useful for example when we want to send a series of data to the server with Ajax.</p>
-
-<p><strong>How?</strong></p>
-
-<p>Well, start creating the form:</p>
-
-<p>Buenas pessoal!</p>
-
-<p>Hoje vim falar sobre um dos métodos que acho bem interessante no Jquery, o <a href="http://docs.jquery.com/Ajax/serialize">serialize()</a>.
-Como o próprio nome já diz, esse método serializa um conjunto de inputs de um formulário em uma string.
-Essa string é padronizada e compatível com  a maioria das linguagens server-side.
-Isso é muito útil por exemplo quando queremos enviar uma série de dados para o servidor com Ajax.</p>
-
-<p><strong>Como fazer?</strong></p>
-
-<p>Bom, começamos criando o formulário:</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/serializando-um-formulario-com-jquery/">Leia o post completo &rarr;</a>
-    </footer>
-  
-
-
-    </article>
   
   
     <article>
@@ -337,6 +276,107 @@ Para baixar o Add-on -> <a href="https://addons.mozilla.org/en-US/firefox/addon/
 
     </article>
   
+  
+    <article>
+      
+  <header>
+    
+      <h2 class="entry-title"><a href="/flip-jquery-plugin/">Flip! Jquery Plugin</a></h2>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-05-09T22:34:03-03:00" pubdate data-updated="true">May 9<span>th</span>, 2009</time>
+        
+         | <a href="/flip-jquery-plugin/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Mais um da série de plugins testados e avaliados.
+Particularmente eu achei esse plugin muito legal!
+Ele aplica um efeito de Flip em um elemento HTML. Ai vai da imaginação e criatividade do desenvolvedor para implementa-lo em seu sistema.
+A idéia é aquela básica do Jquery, pouquissímas linhas, e um efeito impressionante.
+Estou esperando o momento certo e a idéia surgir para usa-lo em algum sistema&#8230;</p>
+
+<p><strong>Vamos ver como fica o código:
+</strong></p>
+
+<p>[javascript]</p>
+
+<script type="text/javascript">
+     $(document).ready(function () {
+         $(".home").click(function () {
+              $("#flipBox").flip({
+                   direction: 'bt',
+                  color: 'blue',
+                  speed: 400,
+                  content: ""
+            });
+       });
+      $(".home").trigger("click");
+});
+</script>
+
+
+<p>[/javascript]</p>
+
+<p>Simples não?</p>
+
+<p>No click do elemento com a classe &#8220;home&#8221;  invocamos o método <strong>flip()</strong> que aplica esse efeito no elemento com Id &#8220;flipBox&#8221;.
+Obs:  $(&#8220;.home&#8221;).trigger(&#8220;click&#8221;) só faz com que a animação aconteça no load da página.
+Aqueles parâmetros são interessantes:</p>
+
+<ul>
+<li><p><strong>direction</strong>: Especifica em que direção vai ser o giro. Os valores suportados são &#8216;tb&#8217;, &#8216;bt&#8217;, &#8216;lr&#8217;, &#8216;rl&#8217;</p></li>
+<li><p><strong>color:</strong> Define que cor de fundo o elemento terá após o giro.</p></li>
+<li><p><strong>speed</strong>: A velocidade da animação</p></li>
+<li><p><strong>content</strong>: O conteúdo que esse elemento terá após o giro.</p></li>
+</ul>
+
+
+<p>Fora essas opções, ainda existem funções que podemos executar em algum evento do giro, como por exemplo:</p>
+
+<ul>
+<li><p><strong>onBefore</strong>:  Essa função é executada antes da animação começar.</p></li>
+<li><p><strong>onAnimation</strong>: Essa função é executada na metade da animação.</p></li>
+<li><p><strong>onEnd</strong>: Essa função é executada quando a animação termina.</p></li>
+</ul>
+
+
+<p>Com esses eventos e opções podemos fazer muita coisa. A opção <strong>content</strong> por exemplo permite que seja passado um conteúdo que será exibido no elemento após a animação, então nada nos impede de carregar um conteúdo com Ajax e jogar dentro desse elemento. O céu é o limite.</p>
+
+<p><strong>Vejam o resultado:</strong></p>
+
+<p><strong>
+</strong></p>
+
+<p><strong>Minha Avaliação: Nota 10.0</strong>
+<strong>Compatibilidade: Firefox 2.0+, IE 6+, Safari 3.0+, Chrome 2.0+,</strong><strong>Opera</strong>****</p>
+
+<p><strong>Site oficial do Plugin:</strong><a href="http://lab.smashup.it/flip/"> http://lab.smashup.it/flip/</a></p>
+
+<p>[caption id=&#8221;attachment_114&#8221; align=&#8221;alignnone&#8221; width=&#8221;60&#8221; caption=&#8221;Download&#8221;]<a href="http://jaydson.org/code/jquery/plugins/flip/flip.rar"><img src="http://jaydson-org.web102.redehost.com.br/assets/hd_download1.jpg" alt="Download" /></a>[/caption]</p>
+</div>
+  
+  
+
+
+    </article>
+  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/22/">&larr; Older</a>
@@ -360,10 +400,6 @@ Para baixar o Add-on -> <a href="https://addons.mozilla.org/en-US/firefox/addon/
 </section><section>
   <h1>Posts Recentes</h1>
   <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/o-javascript-e-a-geladeira/">O JavaScript e a Geladeira</a>
-      </li>
     
       <li class="post">
         <a href="/experimentos-html5-no-header-do-blog/">Experimentos HTML5 no header do Blog</a>
@@ -419,6 +455,10 @@ Para baixar o Add-on -> <a href="https://addons.mozilla.org/en-US/firefox/addon/
     
       <li class="post">
         <a href="/jsconf-argentina-resumo/">JSConf Argentina - Resumo</a>
+      </li>
+    
+      <li class="post">
+        <a href="/pernambucojs-resumo/">PernambucoJS - Resumo</a>
       </li>
     
   </ul>
