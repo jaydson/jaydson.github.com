@@ -9,8 +9,9 @@
   <meta name="author" content="Jaydson Gomes">
 
   
-  <meta name="description" content="Um recurso muito bom que podemos aplicar em nossos Sistemas é o Autocomplete.
-Isso ajuda muito o usuário na hora de selecionar uma opção. Além de ser &hellip;">
+  <meta name="description" content="Mais um da série de plugins testados e avaliados.
+Particularmente eu achei esse plugin muito legal!
+Ele aplica um efeito de Flip em um elemento HTML &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -88,7 +89,108 @@ Isso ajuda muito o usuário na hora de selecionar uma opção. Além de ser &hel
       
   <header>
     
-      <h1 class="entry-title"><a href="/autocomplete-jquery-plugin/">Autocomplete - Jquery Plugin</a></h1>
+      <h2 class="entry-title"><a href="/flip-jquery-plugin/">Flip! Jquery Plugin</a></h2>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-05-09T22:34:03-03:00" pubdate data-updated="true">May 9<span>th</span>, 2009</time>
+        
+         | <a href="/flip-jquery-plugin/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Mais um da série de plugins testados e avaliados.
+Particularmente eu achei esse plugin muito legal!
+Ele aplica um efeito de Flip em um elemento HTML. Ai vai da imaginação e criatividade do desenvolvedor para implementa-lo em seu sistema.
+A idéia é aquela básica do Jquery, pouquissímas linhas, e um efeito impressionante.
+Estou esperando o momento certo e a idéia surgir para usa-lo em algum sistema&#8230;</p>
+
+<p><strong>Vamos ver como fica o código:
+</strong></p>
+
+<p>[javascript]</p>
+
+<script type="text/javascript">
+     $(document).ready(function () {
+         $(".home").click(function () {
+              $("#flipBox").flip({
+                   direction: 'bt',
+                  color: 'blue',
+                  speed: 400,
+                  content: ""
+            });
+       });
+      $(".home").trigger("click");
+});
+</script>
+
+
+<p>[/javascript]</p>
+
+<p>Simples não?</p>
+
+<p>No click do elemento com a classe &#8220;home&#8221;  invocamos o método <strong>flip()</strong> que aplica esse efeito no elemento com Id &#8220;flipBox&#8221;.
+Obs:  $(&#8220;.home&#8221;).trigger(&#8220;click&#8221;) só faz com que a animação aconteça no load da página.
+Aqueles parâmetros são interessantes:</p>
+
+<ul>
+<li><p><strong>direction</strong>: Especifica em que direção vai ser o giro. Os valores suportados são &#8216;tb&#8217;, &#8216;bt&#8217;, &#8216;lr&#8217;, &#8216;rl&#8217;</p></li>
+<li><p><strong>color:</strong> Define que cor de fundo o elemento terá após o giro.</p></li>
+<li><p><strong>speed</strong>: A velocidade da animação</p></li>
+<li><p><strong>content</strong>: O conteúdo que esse elemento terá após o giro.</p></li>
+</ul>
+
+
+<p>Fora essas opções, ainda existem funções que podemos executar em algum evento do giro, como por exemplo:</p>
+
+<ul>
+<li><p><strong>onBefore</strong>:  Essa função é executada antes da animação começar.</p></li>
+<li><p><strong>onAnimation</strong>: Essa função é executada na metade da animação.</p></li>
+<li><p><strong>onEnd</strong>: Essa função é executada quando a animação termina.</p></li>
+</ul>
+
+
+<p>Com esses eventos e opções podemos fazer muita coisa. A opção <strong>content</strong> por exemplo permite que seja passado um conteúdo que será exibido no elemento após a animação, então nada nos impede de carregar um conteúdo com Ajax e jogar dentro desse elemento. O céu é o limite.</p>
+
+<p><strong>Vejam o resultado:</strong></p>
+
+<p><strong>
+</strong></p>
+
+<p><strong>Minha Avaliação: Nota 10.0</strong>
+<strong>Compatibilidade: Firefox 2.0+, IE 6+, Safari 3.0+, Chrome 2.0+,</strong><strong>Opera</strong>****</p>
+
+<p><strong>Site oficial do Plugin:</strong><a href="http://lab.smashup.it/flip/"> http://lab.smashup.it/flip/</a></p>
+
+<p>[caption id=&#8221;attachment_114&#8221; align=&#8221;alignnone&#8221; width=&#8221;60&#8221; caption=&#8221;Download&#8221;]<a href="http://jaydson.org/code/jquery/plugins/flip/flip.rar"><img src="http://jaydson-org.web102.redehost.com.br/assets/hd_download1.jpg" alt="Download" /></a>[/caption]</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h2 class="entry-title"><a href="/autocomplete-jquery-plugin/">Autocomplete - Jquery Plugin</a></h2>
     
     
       <p class="meta">
@@ -217,7 +319,7 @@ selectFirst: true
       
   <header>
     
-      <h1 class="entry-title"><a href="/text-area-resizer-jquery-plugin/">Text Area Resizer - JQuery Plugin</a></h1>
+      <h2 class="entry-title"><a href="/text-area-resizer-jquery-plugin/">Text Area Resizer - JQuery Plugin</a></h2>
     
     
       <p class="meta">
@@ -285,7 +387,7 @@ Bom, bem simples de entender. Todos os <textareas> com a classe &#8220;resizable
       
   <header>
     
-      <h1 class="entry-title"><a href="/text-limiter-jquery-plugin/">Text Limiter - Jquery Plugin</a></h1>
+      <h2 class="entry-title"><a href="/text-limiter-jquery-plugin/">Text Limiter - Jquery Plugin</a></h2>
     
     
       <p class="meta">
@@ -370,7 +472,7 @@ A vantagem de usar o Plugin é que ele incrementa essa restrição visualmente, 
       
   <header>
     
-      <h1 class="entry-title"><a href="/plugins-jquery/">Plugins Jquery</a></h1>
+      <h2 class="entry-title"><a href="/plugins-jquery/">Plugins Jquery</a></h2>
     
     
       <p class="meta">
@@ -413,58 +515,6 @@ Tanto a análise quanto a otimização e implementação de novas funcionalidade
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/thewebmindorg/">theWebMind.org</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-05-04T11:39:33-03:00" pubdate data-updated="true">May 4<span>th</span>, 2009</time>
-        
-         | <a href="/thewebmindorg/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Todos estamos acostumados com vários ambientes de desenvolvimento nas empresas onde trabalhamos.
-Seja ambiente <strong>Java</strong>, ou<strong> .NET</strong>, <strong>PHP</strong>, o que for, o desenvolvimento não foge muito do padrão de o analista especifar o software,
-levantar os requisitos, modelar um ER, um diagrama de Classes, etc.
-Este &#8220;paradigma&#8221;, digamos assim, dificilmente será mudado, se levarmos em conta que este padrão funciona muito bem.
-Claro que existem outros maneiras de se desenvolver um sistema, e a cada dia que passa, mais e mais metodologias surgem para nos auxiliar na tarefa do desenvolvimento de software.
-Imaginem um ambiente de desenvolvimento todo integrado, onde com poucas linhas de &#8220;código&#8221; seja possível criar uma Aplicação Web robusta.
-Coisas semelhantes já existem, e as IDE&#8217;s facilitam muito a vida dos desenvolvedores.
-O projeto theWebMind.org,  é uma proposta bem diferente das tradicionais Aplicações WEB e até mesmo Desktop.
-O Mind é um sistema todo desennvolvido em PHP, que tem a &#8220;humilde&#8221; proposta de entender o que esta sendo escrito em &#8220;linguagem natural&#8221;
-pelo desenvolvedor e assim gerar um sistema com base na lógica que lhe foi passada.
-Além de gerar o sistema em si, o Mind também gera a documentação para este sistema.</p>
-
-<p>Acessem: <a href="http://www.thewebmind.org/">http://www.thewebmind.org</a> para conhcer o projeto.</p>
-
-<p>[caption id=&#8221;&#8221; align=&#8221;alignnone&#8221; width=&#8221;345&#8221; caption=&#8221;Projeto theWebMind.org&#8221;]<a href="http://thewebmind.org/#home"><img src="http://thewebmind.org/img/not_found_img.jpg" alt="Projeto theWebMind.org" /></a>[/caption]</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/23/">&larr; Older</a>
@@ -484,10 +534,14 @@ Além de gerar o sistema em si, o Mind também gera a documentação para este s
 	</span>
 </section>
 <section class="author">	
-	<h1>Entusiasta JavaScript && FrontEnd Engineer no Terra && Curador do BrazilJS</h1>
+	<strong>Entusiasta JavaScript && FrontEnd Engineer no Terra && Curador do BrazilJS</strong>
 </section><section>
   <h1>Posts Recentes</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/o-javascript-e-a-geladeira/">O JavaScript e a Geladeira</a>
+      </li>
     
       <li class="post">
         <a href="/experimentos-html5-no-header-do-blog/">Experimentos HTML5 no header do Blog</a>
@@ -543,10 +597,6 @@ Além de gerar o sistema em si, o Mind também gera a documentação para este s
     
       <li class="post">
         <a href="/jsconf-argentina-resumo/">JSConf Argentina - Resumo</a>
-      </li>
-    
-      <li class="post">
-        <a href="/pernambucojs-resumo/">PernambucoJS - Resumo</a>
       </li>
     
   </ul>
