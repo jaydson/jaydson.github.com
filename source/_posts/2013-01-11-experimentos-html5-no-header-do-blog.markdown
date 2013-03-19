@@ -20,6 +20,7 @@ Este espaço não será um post, mas sim o próprio header.
 Existe muito espaço ali para brincar e fazer coisas legais.  
 O primeiro experimento que fiz, foi este cubo 3d ao lado do meu nome.  
 Talvez ele fique para sempre ali, pois gostei do jeito que ele se encaixou com página.  
+<!--more-->
 
 Este experimento eu já havia feito para o [Mozilla DevDerby](https://developer.mozilla.org/pt-BR/demos/detail/simple-css3-3d-cube), e só fiz uma adaptação para o header.  
 Basicamente, o que faço é sortear imagens relacionadas ao HTML5 para o background de cada face do cubo, animar ele com rotação no eixo X e Y.  
