@@ -65,6 +65,7 @@ Algumas dicas:
 - Reinvente a roda novamente  
 - Vá a eventos   
 - Crie eventos  
+- Dê palestras  
 - Faça workshops na sua empresa  
 - Empurre a Web para frente  
 - Estimule os desenvolvedores a praticarem todas as dicas acima  
