@@ -5,7 +5,7 @@ date: 2013-03-13 01:21
 comments: true
 published: true
 keywords: JavaScript, html5, CSS3, frontend, html, eventos, riojs
-description: Post sobre o RSJS
+description: Post sobre o RIOJS
 categories:
 - JavaScript 
 - Eventos
@@ -17,8 +17,9 @@ Dia 09 de Março rolou o [RioJS](http://riojs.org/), a conferência carioca de J
 Palestrei por lá, falando obviamente de JavaScript.  
 Minha palestra abordou tópicos emergentes, como robôs, server, entre outras coisas.  
 Além disso contei um pouco de história por lá :)  
-Ainda não publiquei o manterial da palestra, pois em alguns dias darei a mesma aqui no [RSJS](http://rsjs.org).  
+Ainda não publiquei o material da palestra, pois em alguns dias darei a mesma aqui no [RSJS](http://rsjs.org).  
 Portanto, se tu esteve por lá, e quer o material, fique ligado que em breve postarei por aqui.  
+<!--more-->
 
 ## O evento  
 
