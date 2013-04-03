@@ -56,6 +56,17 @@ aside.sidebar {
   }
 }
 
+@media only screen and (max-width: 550px) {
+  header {
+    height: 200px;
+  }
+  #cube {
+    position : relative;
+    top : 40px;
+    z-index: 2;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .toggle-sidebar {
     outline: none;

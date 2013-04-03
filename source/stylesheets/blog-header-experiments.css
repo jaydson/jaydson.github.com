@@ -75,6 +75,7 @@ body {
   top: 70px;
   height: 100px;
   width: 100px;
+  margin: auto;
 
   -webkit-transition  : -webkit-transform 2s linear;
   -moz-transition     : -moz-transform 2s linear;
