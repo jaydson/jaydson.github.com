@@ -13,97 +13,38 @@ tags:
 - JavaScript
 ---
 
-For those who do not know, this year saw the first Javascript Conference 2009.
-I decided to post here what happened there.
-
-Firstly, this is an initiative of the team [Iterative Designs](http://www.iterativedesigns.com/)(American company that works with Web development),to contribute to the Javascript community.
-
-In the official site has the following: "JSConf 2009 is a conference devoted to the programming language we all love to hate and hate to love, JavaScript".
-
-Para quem não sabe, este ano aconteceu a primeira Javascript Conference 2009.
-Eu, por ser amante desta linguagem resolvi postar aqui o que aconteceu por lá.
-
-Em primeiro lugar, essa é uma iniciativa do time [Iterative Designs](http://www.iterativedesigns.com/)(empresa americana que trabalha com desenvolvimento Web), para contribuir com a comunidade Javascript.
-
-No site oficial tem o seguinte dizer: "JSConf 2009 is a conference devoted to the programming language we all love to hate and hate to love, JavaScript".
-Isso seria algo como, a conferência para linguagem de programação que todos amam odiar e odeiam amar.
-
+Para quem não sabe, este ano aconteceu a primeira Javascript Conference 2009.  
+Eu, por ser amante desta linguagem resolvi postar aqui o que aconteceu por lá.  
+Em primeiro lugar, essa é uma iniciativa do time [Iterative Designs](http://www.iterativedesigns.com/)(empresa americana que trabalha com desenvolvimento Web), para contribuir com a comunidade Javascript.  
+No site oficial tem o seguinte dizer:  
+"JSConf 2009 is a conference devoted to the programming language we all love to hate and hate to love, JavaScript".  
+Isso seria algo como, a conferência para linguagem de programação que todos amam odiar e odeiam amar.  
 <!-- more -->
-And the appeal of the event was exactly that. Taking all kinds of people to the event, both those who love JavaScript, or you do not like at all, or even strangers.
 
-A total of 16 speakers at the conference. But not "only" speakers ... The event was attended by big names such as [John Resig](http://ejohn.org), [JQuery](http://jquery.com) creator. Peter Higgins, leading of [Dojo](http://www.dojotoolkit.org/) project and Richard Worth, one of  leading of [JQueryUI](http://www.jqueryui.com/).
-
-Some presentations were made available:
-
-These are the lecture by John Resig, is well worth watching. The talk of it encompassed matters 3: Measuring performance, games and Testing Javascript
-
-
-
-
-
-[John Resig Part 2](http://vimeo.com/5289775) from [Chris Williams](http://vimeo.com/jsconf) on [Vimeo](http://vimeo.com).
-
-This below is from Peter Higgins, dojo.Patterns for lovers of Javascript.
-
-
-
-[Peter Higgins](http://vimeo.com/4914035) from [Chris Williams](http://vimeo.com/jsconf) on [Vimeo](http://vimeo.com).
-
-This is the next Brian LeRoux, PhoneGap: Mobile Applications with HTML, CSS and Javascript.
-
-
-
-[Brian LeRoux JSConf 2009](http://vimeo.com/5120343) from [Chris Williams](http://vimeo.com/jsconf) on [Vimeo](http://vimeo.com).
-
-Another, Francisco Tolmasky, ObjectJ language and Cappuccino Framework.
-
-
-
-[Francisco Tolmasky](http://vimeo.com/4778201) from [Chris Williams](http://vimeo.com/jsconf) on [Vimeo](http://vimeo.com).
-
-Very cool initiative!
-
-Official website:[ http://jsconf2009.com/](http://jsconf2009.com/)
-E o apelo (no bom sentido) do evento foi exatamente esse. Levar todos os tipos de pessoas ao evento, tanto quem adora Javascript, ou quem não gosta de jeito nenhum, ou até mesmo quem não conhece.
-
-No total foram 16 palestrantes na Conferência. Mas não "apenas" palestrantes... o evento contou com nomes de peso, como [John Resig](http://ejohn.org), criador do [JQuery](http://jquery.com). Peter Higgins, líder do projeto [Dojo](http://www.dojotoolkit.org/) e Richard Worth, um dos líderes do [JQueryUI](http://www.jqueryui.com/).
-
+E o apelo (no bom sentido) do evento foi exatamente esse.  
+Levar todos os tipos de pessoas ao evento, tanto quem adora Javascript, ou quem não gosta de jeito nenhum, ou até mesmo quem não conhece.  
+No total foram 16 palestrantes na Conferência.  
+Mas não "apenas" palestrantes... o evento contou com nomes de peso, como [John Resig](http://ejohn.org), criador do [JQuery](http://jquery.com). Peter Higgins, líder do projeto [Dojo](http://www.dojotoolkit.org/) e Richard Worth, um dos líderes do [JQueryUI](http://www.jqueryui.com/).  
 Alguns vídeos das palestras já foram disponibilizados:
 
-Estes são da palestra do John Resig, vale muito a pena assistir. A palestra dele englobou 3 assuntos: Medindo performance, Jogos em Javascript e Testes. Show de bola!
+Estes são da palestra do John Resig, vale muito a pena assistir. A palestra dele englobou 3 assuntos: Medindo performance, Jogos em Javascript e Testes. Show de bola!  
 
+[John Resig Part 2](http://vimeo.com/5289775) from [Chris Williams](http://vimeo.com/jsconf) on [Vimeo](http://vimeo.com).  
 
+Este abaixo é do Peter Higgins, dojo.Patterns for lovers of Javascript.  
+[Peter Higgins](http://vimeo.com/4914035) from [Chris Williams](http://vimeo.com/jsconf) on [Vimeo](http://vimeo.com).  
 
+Este próximo é do Brian LeRoux, PhoneGap: Mobile Applications with HTML, CSS and Javascript.  
+[Brian LeRoux JSConf 2009](http://vimeo.com/5120343) from [Chris Williams](http://vimeo.com/jsconf) on [Vimeo](http://vimeo.com).  
 
+Mais um, Francisco Tolmasky, ObjectJ language and Cappuccino Framework.  
+[Francisco Tolmasky](http://vimeo.com/4778201) from [Chris Williams](http://vimeo.com/jsconf) on [Vimeo](http://vimeo.com).  
 
-[John Resig Part 2](http://vimeo.com/5289775) from [Chris Williams](http://vimeo.com/jsconf) on [Vimeo](http://vimeo.com).
+Muito legal a iniciativa!  
+Pena que no Brasil a comunidade Javascript **ainda** não é tão organizada e valorizada da mesma maneira.  
+Notem que alguns dos apoiadores do evento são Mozilla e Yahoo!  
 
-Este abaixo é do Peter Higgins, dojo.Patterns for lovers of Javascript.
-
-
-
-[Peter Higgins](http://vimeo.com/4914035) from [Chris Williams](http://vimeo.com/jsconf) on [Vimeo](http://vimeo.com).
-
-Este próximo é do Brian LeRoux, PhoneGap: Mobile Applications with HTML, CSS and Javascript.
-
-
-
-[Brian LeRoux JSConf 2009](http://vimeo.com/5120343) from [Chris Williams](http://vimeo.com/jsconf) on [Vimeo](http://vimeo.com).
-
-Mais um, Francisco Tolmasky, ObjectJ language and Cappuccino Framework.
-
-
-
-[Francisco Tolmasky](http://vimeo.com/4778201) from [Chris Williams](http://vimeo.com/jsconf) on [Vimeo](http://vimeo.com).
-
-Muito legal a iniciativa!
-
-Pena que no Brasil a comunidade Javascript **ainda** não é tão organiada e valoriada da mesma maneira.
-
-Notem que alguns dos apoiadores do evento são Mozilla e Yahoo!
-
-Página oficial:[ http://jsconf2009.com/](http://jsconf2009.com/)
-
+Página oficial:[ http://jsconf2009.com/](http://jsconf2009.com/)  
 É isso.
 
-Que isso anime os amantes de Javascript!!!
+Que isso anime os amantes de Javascript!!!  

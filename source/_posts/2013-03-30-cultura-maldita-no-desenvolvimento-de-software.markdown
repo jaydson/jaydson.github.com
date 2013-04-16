@@ -16,6 +16,7 @@ categories:
 
 A ***cultura maldita*** no desenvolvimento de software é um fenômeno natural que atinge todas as empresas, que de uma maneira ou de outra, desenvolvem algum tipo de software.  
 Sisteminhas, grandes portais, aplicações gigantescas, sites de padaria, enfim, todo e qualquer tipo de software está sujeito a ser desenvolvido baseado na ***cultura maldita***.  
+<!--more-->
 
 ***Cultura*** no dicionário:  
 _"Cultura é o conjunto de manifestações artísticas, sociais, linguísticas e comportamentais de um povo ou civilização. Portanto, fazem parte da cultura de um povo as seguintes atividades e manifestações: música, teatro, rituais religiosos, língua falada e escrita, mitos, hábitos alimentares, danças, arquitetura, invenções, pensamentos, formas de organização social, etc."_  

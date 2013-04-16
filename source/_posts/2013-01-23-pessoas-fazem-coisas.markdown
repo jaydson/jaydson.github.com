@@ -16,8 +16,7 @@ Ok, isso é mais do mesmo. Estamos em 2013, e isso já é default na maioria das
 Especificamente na tecnologia, está cada vez mais claro na minha cabeça: *Pessoas fazem coisas*.  
 Grandes corporações desenvolvem grandes produtos, grandes serviços, grandes projetos.  
 Mas são pessoas isoladas, seja na Finlândia ou em Porto Alegre, que fazem coisas que realmente mudam o mundo.  
-
-Eu cada vez acredito mais no modelo open-source do que no modelo Microsoft de ser.  
+E eu cada vez acredito mais no modelo open-source do que no modelo Microsoft de ser.  
 
 
 # Linus Torvalds  
@@ -30,6 +29,16 @@ No Brasil, isso deve funcionar muito bem, desta forma, em breve teremos muito ma
 O Linux é um marco na história da tecnologia, e tudo isso começou com uma pessoa lá nos anos 90.  
 
 # Brendan Eich
+Um cara. apenas um cara, criou em 10 dias a linguagem que atualmente é a mais popular no mundo.  
+Além de popular, o JavaScript hoje representa hoje o que o Java representava antes. Tudo roda JavaScript, e cada vez mais o JavaScript está presente em nossas vidas.  
 
-# John Resig
+# John Resig  
+Insatisfeito com a forma que tinha que desenvolver JavaScript, e insatisfeito com bibliotecas da época, o John criou a biblioteca JavaScript que hoje é a mais popular do mundo.  
+Não só isso, o jQuery influenciou uma geração de desenvolvedores, e mudou de fato o mundo Web.
+
+#Ryan Dhal
+Este matemático começou a fazer sites em PHP e achou o PHP muito lento. Tentou outras linguagens e também achou todas lentas.  
+Ele concluiu que o modelo que as linguagens trabalhavam estava errado.  
+Então criou um módulo para uo ngnx, e logo após o nodeJS.  
+O node também mudou a história. Hoje o desenvolvimento frontend é baseado em cima do node.
 
