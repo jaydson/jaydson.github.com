@@ -92,7 +92,7 @@ Nós não somos uma federação, nem representamos a comunidade através de algu
 Somos apenas pessoas que decidiram fazer algo para tentar ajudar.  
 Não existe "fazer parte da BrazilJS", se a pessoa é ativa na comunidade, cria eventos, ajuda outras pessoas, tem um blog, faz qualquer coisa relacionada, esta pessoa faz parte da BrazilJS.  
 BrazilJS é um movimento, que começou em 2011, com a primeira conferência brasileira de JavaScript, e hoje faz com que a comunidade seja o que é.  
-_RSJS, RIOJS, BeagaJS, BahiaJS, SampaJS, Tableless Conf, FrontinRio, FrontinSampa, FrontinCuritiba, FrontinLondrina, FrontinFortaleza, FrontinAracaju, FrontinTeresina, FrontinFloripa, FrontinPoa, FrontinMaceio, FrontinBahia, BrazilJS, JSConfBR_.  
+_RSJS, RIOJS, BeagaJS, BahiaJS, SampaJS, PernambucoJS, Tableless Conf, FrontinRio, FrontinSampa, FrontinCuritiba, FrontinLondrina, FrontinFortaleza, FrontinAracaju, FrontinTeresina, FrontinFloripa, FrontinPoa, FrontinMaceio, FrontinBahia, BrazilJS, JSConfBR_.  
 Este é o retrato da comunidade front-end no Brasil. E eu tenho orgulho de fazer parte disso.  
 
 ## Conclusão
