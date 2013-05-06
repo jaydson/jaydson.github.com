@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Palestras | Jaydson Gomes]]></title>
+  <link href="http://jaydson.org/blog/categories/palestras/atom.xml" rel="self"/>
+  <link href="http://jaydson.org/"/>
+  <updated>2013-04-02T02:46:49-03:00</updated>
+  <id>http://jaydson.org/</id>
+  <author>
+    <name><![CDATA[Jaydson Gomes]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[EATI 2012 em Frederico Westphalen]]></title>
+    <link href="http://jaydson.org/eati-2012-em-frederico-westphalen/"/>
+    <updated>2012-11-09T19:36:06-02:00</updated>
+    <id>http://jaydson.org/eati-2012-em-frederico-westphalen</id>
+    <content type="html"><![CDATA[<p>Estou aqui no Hotel na querida cidade <a href="http://pt.wikipedia.org/wiki/Frederico_Westphalen">Frederico Westphalen</a>.<br/>
+Vim para participar do <a href="http://www.cafw.ufsm.br/eati/2012/">EATI</a>, o Encontro Anual de Tecnologia da Informação.<br/>
+Assim como no <a href="http://jaydson.org/w3c-webbr-2102/">Webbr da W3C</a>,  o BrazilJS teve um espaço para palestras.</p>
+
+<p><a href="http://twitter.com/felipenmoura">Felipe Moura,</a> <a href="http://twitter.com/zenorocha">Zeno Rocha</a> e eu, comandamos as palestras, e tentamos passar o máximo de informção possível para o pessoal.<br/>
+Foram várias palestras, e muito networking com a galera.<br/>
+Acho que nunca fui tão bem tratado em um evento como aqui em <em><strong>Fred West</strong></em>. Desde o primeiro contato com o Joel, até o último minuto na festa de encerramento, foi esta a minha sensação.</p>
+
+<!--more-->
+
+
+<p>Cada uma das pessoas que vinha falar comigo, fazia com que eu me sentisse em casa, e sentisse que tudo que estamos fazendo realmente vale a pena.<br/>
+Ver o nosso trabalho ser conhecido e ser admirado pelo pessoal, é muito gratificante.<br/>
+O evento foi impecável e muito bem organizado. Eu realemente fiquei surpreso em ver um evento deste porte no interior do RS.<br/>
+A organização está de parabéns.</p>
+
+<p>Dei 2 palestras no evento, uma de performance que já tinha dado no RSJS e no PernambucoJS e uma nova, que fiz especialmente para o EATI, sobre uma implementação de controle remoto com nodeJS.<br/>
+Eu já tinha apresentado o projeto no Webbr, mas resolvi fazer uma palestra nova para o EATI.<br/>
+O pessoal curtiu bastante ambas palestras :)</p>
+
+<p>Link das 2 palestras:<br/>
+<a href="http://jaydson.org/talks/remote-control-eati-2012">http://jaydson.org/talks/remote-control-eati-2012</a><br/>
+<a href="http://jaydson.org/wp-content/uploads/Screenshot-from-2012-11-09-162847.png"><img src="http://jaydson.org/wp-content/uploads/Screenshot-from-2012-11-09-162847.png" alt="" /></a><br/>
+<a href="http://jaydson.org/talks/x-web-performance">http://jaydson.org/talks/x-web-performance</a><br/>
+<a href="http://jaydson.org/wp-content/uploads/Screenshot-from-2012-11-09-162856.png"><img src="http://jaydson.org/wp-content/uploads/Screenshot-from-2012-11-09-162856.png" alt="" /></a></p>
+
+<p>Mais uma vez, parabéns para todos envolvidos no EATI, e muito obrigado por todos os elogios e recepções calorosas.<br/>
+Sério pessoal, foi surreal o tratamento que tivemos.<br/>
+Volto para Porto Alegre já com saudades, e com muita vontade de voltar para bela cidade de <em><strong>Fred West</strong></em>.</p>
+
+<p><a href="http://jaydson.org/wp-content/uploads/eati20121.jpg"><img src="http://jaydson.org/wp-content/uploads/eati20121.jpg" alt="" /></a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[W3C webbr 2102]]></title>
+    <link href="http://jaydson.org/w3c-webbr-2102/"/>
+    <updated>2012-10-20T15:59:28-03:00</updated>
+    <id>http://jaydson.org/w3c-webbr-2102</id>
+    <content type="html"><![CDATA[<p>Cá estou quase no fim do evento sentado em um puff, descansando após um ótimo almoço com uma galera muito massa.
+A <a href="http://conferenciaweb.w3c.br/">conferência da W3C </a>foi excelente. Muito networking, palestras muito boas, boa comida, e a sensação de que estamos fazendo parte de um futuro promissor.
+Fico muito honrado e feliz de ser uma das pessoas que esta fazendo a Web.
+Especificamente falando da <a href="http://www.braziljs.org/">Fundação BrazilJS</a>, também saio totalmente satisfeito. Tivemos um espaço na <em><strong>webbr</strong></em> para divulgar o nosso trabalho e o feedback foi incrivelmente bom.</p>
+
+<p><a href="http://twitter.com/bernarddeluna">Bernard</a>, <a href="http://twitter.com/felipenmoura">Felipe</a>, <a href="http://twitter.com/zenorocha">Zeno</a> e eu palestramos e apresentamos o que andamos fazendo, e todo o potencial da comunidade brasileira.
+Não por serem meus amigos, mas cada vez mais admiro estes caras que citei acima.
+O projeto que o Bernard e o Zeno desenvolveram é simplesmente genial: <a href="https://apps.facebook.com/super-trunfo/">https://apps.facebook.com/super-trunfo/ </a>
+A palestra/live-coding do Felipe foi muito boa, e creio que todos sairam sabendo como usar o <a href="https://developer.mozilla.org/en-US/docs/WebRTC/navigator.getUserMedia">getUserMedia();</a></p>
+
+<p>De quebra, ainda dei uma palestra sobre um projeto que iniciei junto com o Felipe, o <a href="https://github.com/jaydson/remote-slide">Remote Slide</a>.
+O Remote Slide é uma app feita em <a href="http://nodejs.org/">node</a> e <a href="http://socket.io">socketio</a>, que transforma o teu celular em um controle remoto para suas apresentações.
+Mas o Remote Slide é uma pequena parte de um projeto maior, que é o <a href="https://github.com/braziljs/PowerPolygon">Power Polygon</a>.
+O PPW (Power Polygon Web) é uma ferramenta para criar apresentações em HTML 5. Estamos na versão alpha, e com a ajuda da comunidade, em breve teremos um release estável.</p>
+
+<p>Bom, é  isso.
+Publiquei a apresentação aqui: <a href="http://jaydson.org/talks/remote-slide/">jaydson.org/talks/remote-slide/</a>
+E o código da apresentação no Github: <a href="https://github.com/jaydson/webbr2012-talk-remote-slide">https://github.com/jaydson/webbr2012-talk-remote-slide</a></p>
+
+<p>Cá estou quase no fim do evento sentado em um puff, descansando após um ótimo almoço com uma galera muito massa.
+A <a href="http://conferenciaweb.w3c.br/">conferência da W3C </a>foi excelente. Muito networking, palestras muito boas, boa comida, e a sensação de que estamos fazendo parte de um futuro promissor.
+Fico muito honrado e feliz de ser uma das pessoas que esta fazendo a Web.
+Especificamente falando da <a href="http://www.braziljs.org/">Fundação BrazilJS</a>, também saio totalmente satisfeito. Tivemos um espaço na <em><strong>webbr</strong></em> para divulgar o nosso trabalho e o feedback foi incrivelmente bom.</p>
+
+<p><a href="http://twitter.com/bernarddeluna">Bernard</a>, <a href="http://twitter.com/felipenmoura">Felipe</a>, <a href="http://twitter.com/zenorocha">Zeno</a> e eu palestramos e apresentamos o que andamos fazendo, e todo o potencial da comunidade brasileira.
+Não por serem meus amigos, mas cada vez mais admiro estes caras que citei acima.
+O projeto que o Bernard e o Zeno desenvolveram é simplesmente genial: <a href="https://apps.facebook.com/super-trunfo/">https://apps.facebook.com/super-trunfo/ </a>
+A palestra/live-coding do Felipe foi muito boa, e creio que todos sairam sabendo como usar o <a href="https://developer.mozilla.org/en-US/docs/WebRTC/navigator.getUserMedia">getUserMedia();</a></p>
+
+<p>De quebra, ainda dei uma palestra sobre um projeto que iniciei junto com o Felipe, o <a href="https://github.com/jaydson/remote-slide">Remote Slide</a>.
+O Remote Slide é uma app feita em <a href="http://nodejs.org/">node</a> e <a href="http://socket.io">socketio</a>, que transforma o teu celular em um controle remoto para suas apresentações.
+Mas o Remote Slide é uma pequena parte de um projeto maior, que é o <a href="https://github.com/braziljs/PowerPolygon">Power Polygon</a>.
+O PPW (Power Polygon Web) é uma ferramenta para criar apresentações em HTML 5. Estamos na versão alpha, e com a ajuda da comunidade, em breve teremos um release estável.</p>
+
+<p>Bom, é  isso.
+Publiquei a apresentação aqui: <a href="http://jaydson.org/talks/remote-slide/">jaydson.org/talks/remote-slide/</a>
+E o código da apresentação no Github: <a href="https://github.com/jaydson/webbr2012-talk-remote-slide">https://github.com/jaydson/webbr2012-talk-remote-slide</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Extreme Web Performance - RSJS 2012]]></title>
+    <link href="http://jaydson.org/extreme-web-performance-rsjs-2012/"/>
+    <updated>2012-03-03T21:30:04-03:00</updated>
+    <id>http://jaydson.org/extreme-web-performance-rsjs-2012</id>
+    <content type="html"><![CDATA[<p>Slides da minha palestra sobre Web Performance:<br/>
+<a href="http://goo.gl/PYo8M"><img src="http://jaydson.org/wp-content/uploads/capa-slides-rsjs1.png" alt="Extreme Web Performance" /></a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[JavaScript levado a sério FISL 12]]></title>
+    <link href="http://jaydson.org/javascript-levado-a-sc3a9rio-fisl-12/"/>
+    <updated>2011-07-02T12:58:03-03:00</updated>
+    <id>http://jaydson.org/javascript-levado-a-sc3a9rio-fisl-12</id>
+    <content type="html"><![CDATA[<p>For the first time i had the honor of speaking at #FISL, <a href="http://softwarelivre.org/fisl12"> the biggest Free Software Conference of Latin America</a>.<br/>
+My lecture was about <a href="https://developer.mozilla.org/en/javascript">JavaScript</a> , a content that i often posting in my Blog.<br/>
+Actually, this title remains the same "Seriously JavaScript", but the content was changed.<br/>
+Above follow the slides:</p>
+
+<p>Pela primeira vez tive a honra de palestrar no <a href="http://softwarelivre.org/fisl12">#FISL, o maior evento de Software Livre da América Latina</a>.<br/>
+Minha palestra foi sobre <a href="https://developer.mozilla.org/en/javascript">JavaScript</a> , um assunto que falo com frequencia aqui no Blog.<br/>
+Na verdade o titulo continua o mesmo "JavaScript levado a sério", mas o conteudo mudou.<br/>
+Abaixo seguem os slides:</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Javascript levado a sério]]></title>
+    <link href="http://jaydson.org/javascript-levado-a-serio/"/>
+    <updated>2009-10-22T20:35:57-02:00</updated>
+    <id>http://jaydson.org/javascript-levado-a-serio</id>
+    <content type="html"><![CDATA[<p>Javascript is the most popular scripting language on the Internet.
+However, even with all this fame, JavaScript is still misunderstood.</p>
+
+<p><a href="http://en.wikipedia.org/wiki/Douglas_Crockford">Douglas Crockford</a>, one of the master of a language, says that this misunderstanding comes from various sources.
+This was one of the topics in the in the lecture that I gave in III Mostra de iniciação científica at Senac-RS College.</p>
+
+<p>Javascript é a linguagem de script mais popular da internet.
+Porém, mesmo com toda essa fama, o Javascript ainda é incompreendido.
+Segundo <a href="http://en.wikipedia.org/wiki/Douglas_Crockford">Douglas Crockford</a>, um dos mestres da linguagem, essa incompreensão tem varias origens.
+Este foi um dos tópicos na palestra que fiz na III Mostra de iniciação científica do Senac-RS.</p>
+
+<!-- more -->
+
+
+<p>The lecture discusses some of the history of Javascript, explaining why the prefix "JAVA" at name of the language among other details.
+The lecture focuses much on professional Javascript development, like the name suggests.</p>
+
+<p>I hope you all enjoy. And any doubt, please comment.</p>
+
+<p><a href="http://www.slideshare.net/jaydson/javascript-levado-a-serio">Javascript levado a serio</a></p>
+
+<p>View more <a href="http://www.slideshare.net/">presentations</a> from <a href="http://www.slideshare.net/jaydson">jaydson</a>.</p>
+
+<p>For those who watched the lecture and for those who did not, below the link with codes used:</p>
+
+<p><a href="http://jaydson.org/code/palestras/js-levado-a-serio/source.rar">http://jaydson.org/code/palestras/js-levado-a-serio/source.rar</a></p>
+
+<ul>
+<li>The presentation is only in portuguese yet, but i'm working in this.
+A palestra conta um pouco da história do Javascript, explicando o porque do prefixo JAVA no nome da linguagem entre outros detalhes.
+A palestra foca muito no desenvolvimento de Javascript profissional, como sugere o nome.</li>
+</ul>
+
+
+<p>Espero que todos aproveitem. E qualquer dúvida, comentem ai.</p>
+
+<p><a href="http://www.slideshare.net/jaydson/javascript-levado-a-serio">Javascript levado a serio</a></p>
+
+<p>View more <a href="http://www.slideshare.net/">presentations</a> from <a href="http://www.slideshare.net/jaydson">jaydson</a>.</p>
+
+<p>Para quem assistiu a palestra e para quem não assistiu também, segue abaixo o link dos códigos utilizados:</p>
+
+<p><a href="http://jaydson.org/code/palestras/js-levado-a-serio/source.rar">http://jaydson.org/code/palestras/js-levado-a-serio/source.rar</a></p>
+]]></content>
+  </entry>
+  
+</feed>

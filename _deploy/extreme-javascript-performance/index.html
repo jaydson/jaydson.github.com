@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Extreme JavaScript Performance - Jaydson Gomes</title>
+  <meta name="author" content="Jaydson Gomes">
+
+
+<meta name="description" content="Jaydson Gomes - Um Blog sobre HTML5, JavaScript e outras coisas">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <meta property="og:title" content="Jaydson Gomes" />
+  <meta property="og:description" content="Jaydson Gomes - Um Blog sobre HTML5, JavaScript e outras coisas" />
+  <meta property="og:image" content="/images/jaydson-gomes-logo.png" />
+
+  
+  <link rel="canonical" href="http://jaydson.org/extreme-javascript-performance/">
+  <link href="/favicon.png" rel="icon">
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+  <link href="/stylesheets/blog-header-experiments.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Jaydson Gomes" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1264252-8']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup id="header-stage">
+  <h1><a href="/">Jaydson Gomes</a></h1>
+  
+    <h2>HTML5 | JavaScript</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:jaydson.org" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h2 class="entry-title">Extreme JavaScript Performance</h2>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-11-08T23:45:20-02:00" pubdate data-updated="true">Nov 8<span>th</span>, 2009</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>I just read the slides of <a href="http://mir.aculo.us/">Thomas Fuchs</a>, for those who do not know is one of the JavaScript Guru&#8217;s.
+Thomas beyond to being the creator of <a href="http://script.aculo.us/">Script.aculo.us</a> Javascript Library, is core member of <a href="http://www.prototypejs.org/">Prototype</a> Library, and last week announced the <a href="http://scripty2.com/">Scripty2.</a>
+The Scripty2 is nothing more than the actual <a href="http://script.aculo.us/">Script.aculo.us</a> but completely rewritten and optimized.</p>
+
+<p>Acabei de ler aqui os slides do <a href="http://mir.aculo.us/">Thomas Fuchs</a>, que para quem não conhece,  é um dos Gurus do Javascript.
+O Thomas além de ser o criador da biblioteca <a href="http://script.aculo.us/">Script.aculo.us </a>é membro do core da bilbioteca <a href="http://www.prototypejs.org/">Prototype</a>, e semana passa anunciou o <a href="http://scripty2.com/">Scripty2.</a>
+O Scripty2 nada mais é do que o próprio <a href="http://script.aculo.us/">Script.aculo.us</a> porém totalmente reescrito e otimizado.</p>
+
+<!-- more -->
+
+
+<p>Well, in these slides Thomas deals with various topics interesting and helpful for all of us Javascript programmers.
+It gives tips on what to avoid, and what is advisable to do in Javascript, looking for performance.
+For all the code samples he made a comparison between the browsers showing the average running time on each one, very interesting.</p>
+
+<p>bellow are the slides, enjoy:</p>
+
+<p><a href="http://www.slideshare.net/madrobby/extreme-javascript-performance">Extreme JavaScript Performance</a></p>
+
+<p>View more <a href="http://www.slideshare.net/">documents</a> from <a href="http://www.slideshare.net/madrobby">Thomas Fuchs</a>.</p>
+
+<p>Bom, nestes slides o Thomas aborda vários assuntos interessantes e úteis para todos nós programadores Javascript.
+Ele da dicas do que deve ser evitado fazer, e o que é aconselhavel fazer em Javascript visando performance.
+Para todos os exemplos de código ele fez um comparativo entre os browsers mostrando o tempo médio de execução em cada um, bem interessante.</p>
+
+<p>Segue abaixo os slides, aproveitem:</p>
+
+<p><a href="http://www.slideshare.net/madrobby/extreme-javascript-performance">Extreme JavaScript Performance</a></p>
+
+<p>View more <a href="http://www.slideshare.net/">documents</a> from <a href="http://www.slideshare.net/madrobby">Thomas Fuchs</a>.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Jaydson Gomes</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-11-08T23:45:20-02:00" pubdate data-updated="true">Nov 8<span>th</span>, 2009</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/javascript/'>JavaScript</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.org/extreme-javascript-performance/" data-via="" data-counturl="http://jaydson.org/extreme-javascript-performance/" >Tweet</a>
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/javascript-levado-a-serio/" title="Previous Post: Javascript levado a sério">&laquo; Javascript levado a sério</a>
+      
+      
+        <a class="basic-alignment right" href="/thewebmind-no-tchelinux-2009/" title="Next Post: TheWebMind no TcheLinux 2009">TheWebMind no TcheLinux 2009 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    
+<section>
+	<span class="avatar">
+		<img src="http://www.gravatar.com/avatar/572696200604e59baa59ee90d61f7d02?s=180" alt="Jaydson Gomes " title="Jaydson Gomes" />
+	</span>
+</section>
+<section class="author">	
+	<strong>Entusiasta JavaScript && FrontEnd Engineer no Terra && Curador do BrazilJS</strong>
+</section><section>
+  <h1>Posts Recentes</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/cultura-maldita-no-desenvolvimento-de-software/">Cultura maldita no desenvolvimento de software</a>
+      </li>
+    
+      <li class="post">
+        <a href="/rsjs-2013-resumo/">RSJS 2013 - Resumo</a>
+      </li>
+    
+      <li class="post">
+        <a href="/como-foi-a-braziljs-conf-2012/">Como foi a BrazilJS Conf 2012</a>
+      </li>
+    
+      <li class="post">
+        <a href="/riojs-2013/">RioJS 2013</a>
+      </li>
+    
+      <li class="post">
+        <a href="/rsjs-2013/">RSJS 2013</a>
+      </li>
+    
+      <li class="post">
+        <a href="/experimentos-html5-no-header-do-blog/">Experimentos HTML5 no header do Blog</a>
+      </li>
+    
+      <li class="post">
+        <a href="/migrando-para-octopress/">Migrando para o Octopress</a>
+      </li>
+    
+      <li class="post">
+        <a href="/analytics-do-blog-em-2012/">Analytics do Blog em 2012</a>
+      </li>
+    
+      <li class="post">
+        <a href="/retrospectiva-2012/">Retrospectiva 2012</a>
+      </li>
+    
+      <li class="post">
+        <a href="/eati-2012-em-frederico-westphalen/">EATI 2012 em Frederico Westphalen</a>
+      </li>
+    
+      <li class="post">
+        <a href="/w3c-webbr-2102/">W3C webbr 2102</a>
+      </li>
+    
+      <li class="post">
+        <a href="/javascript-o-guia-definitivo/">JavaScript: O Guia definitivo</a>
+      </li>
+    
+      <li class="post">
+        <a href="/braziljs-entrevista-na-tv/">BrazilJS - Entrevista na TV</a>
+      </li>
+    
+      <li class="post">
+        <a href="/braziljs-2012-foto-epica-com-o-brendan/">BrazilJS 2012 - Foto épica com o Brendan Eich</a>
+      </li>
+    
+      <li class="post">
+        <a href="/fundacao-braziljs/">Fundação BrazilJS</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+	<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Jaydson's Blog</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://jaydson.org" property="cc:attributionName" rel="cc:attributionURL">Jaydson Gomes</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>
+</p>
+<p>
+	<span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+<script type="text/javascript" src="/javascripts/jaydson.js"></script>
+<script type="text/javascript" src="/javascripts/blog-header-experiments.js"></script>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'jaydson';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://jaydson.org/extreme-javascript-performance/';
+        var disqus_url = 'http://jaydson.org/extreme-javascript-performance/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

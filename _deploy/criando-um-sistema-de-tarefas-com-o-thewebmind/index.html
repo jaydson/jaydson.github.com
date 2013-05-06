@@ -1,0 +1,541 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Criando um sistema de tarefas com o TheWebMind - Jaydson Gomes</title>
+  <meta name="author" content="Jaydson Gomes">
+
+
+<meta name="description" content="Jaydson Gomes - Um Blog sobre HTML5, JavaScript e outras coisas">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <meta property="og:title" content="Jaydson Gomes" />
+  <meta property="og:description" content="Jaydson Gomes - Um Blog sobre HTML5, JavaScript e outras coisas" />
+  <meta property="og:image" content="/images/jaydson-gomes-logo.png" />
+
+  
+  <link rel="canonical" href="http://jaydson.org/criando-um-sistema-de-tarefas-com-o-thewebmind/">
+  <link href="/favicon.png" rel="icon">
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+  <link href="/stylesheets/blog-header-experiments.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Jaydson Gomes" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1264252-8']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup id="header-stage">
+  <h1><a href="/">Jaydson Gomes</a></h1>
+  
+    <h2>HTML5 | JavaScript</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:jaydson.org" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h2 class="entry-title">Criando Um Sistema De Tarefas Com O TheWebMind</h2>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-02-15T23:01:37-02:00" pubdate data-updated="true">Feb 15<span>th</span>, 2010</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Today  start a series of posts where I want to show the power of TheWebMind to  create an application.</p>
+
+<p>With the <a href="http://thewebmind.org/download">last release</a>, a major new feature is the native module <a href="http://docs.thewebmind.org/index.php?title=Modules#Native_ZendModels">Zend Models</a>, that generates an <a href="http://pt.wikipedia.org/wiki/MVC">MVC </a>application using <a href="http://framework.zend.com/"> Zend Framework.</a></p>
+
+<p>Currently TheWebMind is in <a href="http://code.google.com/p/webmind/source/browse/#svn/tags/pre-alpha-2.0.0">Pre-Alpha</a> version, that means that is not yet fully stable, it still has  bugs and improvements to be implemented.</p>
+
+<p>But with what we have today, you can do a lot. And that&#8217;s what I want to share.</p>
+
+<p>I assume that those who are following  the tutorial already know what is <a href="http://thewebmind.org/index.php">TheWebMind</a>, and  know the theory behind it all.</p>
+
+<p>Otherwise go to the page of documentation: <a href="http://docs.thewebmind.org/index.php?title=Main_Page">http://docs.thewebmind.org/index.php?title=Main_Page</a></p>
+
+<p>My proposal is to create a simple task system.</p>
+
+<p><strong>Requirements:</strong></p>
+
+<hr />
+
+<p><strong>The system must allow the user registration</strong>.</p>
+
+<p>The user must have a name</p>
+
+<p>The task must have title, description,  date and a User linked.</p>
+
+<p>The system must allow the registration of  multiple tasks to a User.</p>
+
+<p>The  system must have interface for viewing and editing of data, both users  and tasks.</p>
+
+<p>In short, it is a very simple system  where the User registers its tasks.</p>
+
+<h3><strong>Step 1 - Creating  a project inTheWebMind</strong></h3>
+
+<p>To  create a project, go to the menu <em><strong>File > New Project</strong></em> and  complete the project data.</p>
+
+<p>PS: Make sure you have a database installed and configured on your  server, and fill out the data, stating the address, name, port, User and  password database.</p>
+
+<p>These are information that TheWebMind  uses to generate the tables.</p>
+
+<h3><strong>Step 2 - Writing in WML</strong></h3>
+
+<p>Created  the project, let&#8217;s write the <a href="http://docs.thewebmind.org/index.php?title=Web-Mind-Language">WM </a>code, that meets the  requirements.</p>
+
+<p>The syntax of WML is based on the NLP concept (Natural Language Processing), that  basically consists of being similar to natural human language (English,  Portuguese, Spanish, etc).</p>
+
+<p>More  details in the documentation: <a href="http://docs.thewebmind.org/index.php?title=Web-Mind-Language">http://docs.thewebmind.org/index.php?title=Web-Mind-Language</a></p>
+
+<pre><code>&lt;div id="_mcePaste"&gt;
+
+
+&lt;span style="font-family: Georgia, 'Times New Roman', 'Bitstream Charter', Times, serif; line-height: 19px; white-space: normal; font-size: 13px;"&gt;
+
+
+[php]
+
+We know that person has a name:string(100);
+The task has title:string(100);
+The task has description:text();
+The task has date:date();
+The person has task;
+
+[/php]
+
+ 
+</code></pre>
+
+<h3>Step 3 - <strong>Viewing the output</strong></h3>
+
+<p>Click in the button <img src="http://jaydson-org.web102.redehost.com.br/assets/bt_play_over1.gif" alt="bt_play_over" /> located in the task bar above the editor.</p>
+
+<p>After &#8220;compiled&#8221;  the project, you can see the outputs as ER diagram, Data Dictionary, and  the SQL pane tabs below the editor.</p>
+
+<h3>Step 4 - Generating the project</h3>
+
+<p>To  generate the project click on <img src="http://jaydson-org.web102.redehost.com.br/assets/compiler_over1.gif" alt="compiler_over" /> also located in the task bar above the editor.</p>
+
+<p>A Wizard screen will open, leading the User until the  end.</p>
+
+<p>At <em><strong>Step 1 select the second  option</strong>__<strong>,</strong> indicates  that the database development previously registered on the screen to  create the project.</em></p>
+
+<p>_ _</p>
+
+<p>Go to the next step by clicking <strong><em>Next</em></strong>.</p>
+
+<p><em>A screen with all the modules will be displayed in **</em><strong><em>Step 2</em></strong><em>**, select ZendModels and proceed to the next step.</em></p>
+
+<p>_ _</p>
+
+<p><em>At **</em>Step 3 are 2 options  related to the TheWebMind will do about the database.<em>**</em></p>
+
+<p><em>**</em> <em>**</em></p>
+
+<p>This option  should be selected carefully, because if you select the &#8220;be replaced,&#8221;  the TheWebMind will delete the existing table, and all your data and  create a new one with the necessary changes.</p>
+
+<p><em>**</em>The &#8220;be skipped&#8221; ignores any  change in the database.<em>**</em></p>
+
+<p><strong>_Now click in</strong> <em>Finish, </em>and follow the screen where the TheWebMind shows  everything that is happening, and copy necessary files, create tables.<strong>_</strong></p>
+
+<p><strong>_</strong> <strong>_</strong></p>
+
+<p><strong>_</strong>Done. You just created a system with  TheWebMind.<strong>_</strong></p>
+
+<h3><strong>Step 5 - Viewing the generate project</strong></h3>
+
+<p>Done all the work, the TheWebMind will display the  message &#8221;<strong>Finished</strong>, the project&#8217;s been generated <strong>here</strong>&#8221;.</p>
+
+<p>A screen with the tree generated files will be displayed.  You can see the  contents of a file to select it.</p>
+
+<p>Above the  tree, click the button &#8221;<strong><em>Explore Files</em></strong>&#8221; , this will take you to the page where the  application was generated.</p>
+
+<h3><strong>Step 6 -Testing Application</strong></h3>
+
+<p>Following these steps have a simple  operating system tasks.</p>
+
+<p>To test the application generated click  here: <a href="http://source.jaydson.org/TaskList/">http://source.jaydson.org/TaskList/</a></p>
+
+<p><a href="http://source.jaydson.org/TaskList/"> </a></p>
+
+<p>The ZendModels generates the forms of application, it  serves to test if everything is working properly.</p>
+
+<p>Well, this was a small tutorial on how to make  a simple system with TheWebMind using ZendModels.</p>
+
+<p>Any doubt come into contact or comment.</p>
+
+<p>Below is the link to download the  application generated in the example, but for a better understanding of  TheWebMind suggest you do the <a href="http://thewebmind.org/download">download TheWebMind</a>, and  follow all the steps described above.</p>
+
+<p>It is very easy.</p>
+
+<p>Download:  <a href="http://source.jaydson.org/downloads/TaskList.rar">http://source.jaydson.org/TaskList.rar</a></p>
+
+<p>See another example at <a href="http://twitter.com/felipenmoura">@felipenmoura</a> Blog: <a href="http://felipenascimento.org/en/portugues-brasil-criando-uma-aplicacao-funcional-com-thewebmind/">http://felipenascimento.org/en/portugues-brasil-criando-uma-aplicacao-funcional-com-thewebmind/</a></p>
+
+<hr />
+
+<hr />
+
+<p>Hoje começo uma série de posts onde pretendo mostrar o poder do TheWebMind para criação de uma Aplicação.
+Com o <a href="http://thewebmind.org/download">último release</a>, uma das principais novidades é o módulo nativo <a href="http://docs.thewebmind.org/index.php?title=Modules#Native_ZendModels">Zend Models</a>, que gera uma estrutura <a href="http://pt.wikipedia.org/wiki/MVC">MVC </a> utilizando o<a href="http://framework.zend.com/"> Zend Framework.</a></p>
+
+<p>Atualmente o TheWebMind encontra-se na versão <a href="http://code.google.com/p/webmind/source/browse/#svn/tags/pre-alpha-2.0.0">Pre-Alpha</a>, isso quer dizer que ainda não está totalmente estável, ainda possui bugs e melhorias a serem implementadas.
+Mas com o que temos hoje, é possível fazer muita coisa. E é isso que quero compartilhar.</p>
+
+<p>Parto do princípio que quem estiver seguindo o tutorial já saiba o que é o <a href="http://thewebmind.org/index.php">TheWebMind</a>, e conheça a teoria por traz de tudo.
+Caso contrário acesse a página da documentação: <a href="http://docs.thewebmind.org/index.php?title=Main_Page">http://docs.thewebmind.org/index.php?title=Main_Page</a></p>
+
+<p>Minha proposta é criar um sistema simples de tarefas.</p>
+
+<!-- more -->
+
+
+<p><strong>Requisitos:
+</strong>O sistema deve permitir o cadastro de usuários.
+O usuário deve ter nome.
+A tarefa deve possuir título, descrição, data e um usuário vinculado.
+O sistema deve permitir o cadastro de várias tarefas para um usuário.
+O sistema deve possuir interface para edição e visualização dos dados, tanto de usuários como de tarefas.
+Resumindo, é um sistema bem simples, onde o usuário cadastra suas tarefas.</p>
+
+<h3><strong>Passo 1 - Criando um projeto no TheWebMind</strong></h3>
+
+<p>Para criar um projeto, acesse o menu <em><strong>File > New Project</strong></em> e preencha os dados do projeto.
+OBS: Certifique-se de que você tem um banco de dados instalado e configurado  no seu server, e preencha corretamente os dados, informando o endereço, nome, porta, usuário e senha do banco de dados.
+São estas informações que o TheWebMind utiliza para gerar as tabelas.</p>
+
+<h3><strong>Passo 2 - Escrevendo em WML</strong></h3>
+
+<p>Criado o projeto, vamos escrever o código <a href="http://docs.thewebmind.org/index.php?title=Web-Mind-Language">WML </a>que atenda aos requisitos.
+A sintaxe da linguagem WML é baseada no conceito NLP (Natural Language Processing), que consiste basicamente em ser semelhante a linguagem humana natural(Português, Inglês, Espanhol, etc).
+Veja mais detalhes na documentação: <a href="http://docs.thewebmind.org/index.php?title=Web-Mind-Language">http://docs.thewebmind.org/index.php?title=Web-Mind-Language</a></p>
+
+<p><a href="http://docs.thewebmind.org/index.php?title=Web-Mind-Language"></a></p>
+
+<p>[php]<br /><br />Sabemos que o usuario tem nome:string(100);<br />A tarefa tem título:string(100);<br />A tarefa tem descrição:text();<br />A tarefa tem data:date();<br />O usuario tem tarefa;<br /><br />[/php]</p>
+
+<h3><strong>Passo 3 - Visualizando as saídas</strong></h3>
+
+<p>Clique no botão <img src="http://jaydson-org.web102.redehost.com.br/assets/bt_play_over1.gif" alt="bt_play_over" /> localizado na barra de tarefas acima do editor.</p>
+
+<p>Depois de &#8220;compilado&#8221; o projeto, você poderá ver as saídas como diagrama ER, Dicionário de dados, e o código SQL no painel de abas logo abaixo do editor.</p>
+
+<h3><strong>Passo 4 - Gerando o projeto</strong></h3>
+
+<p>Para gerar o projeto clique  no botão <img src="http://jaydson-org.web102.redehost.com.br/assets/compiler_over1.gif" alt="compiler_over" /> também localizado na barra de tarefas acima do editor.
+Uma tela de Wizard abrirá, guiando o usuário até o final.
+No <strong>_Step 1 selecione a segunda opção, que indica o banco de dados de desenvolvimento previamente cadastrado na tela de criar o projeto.
+Avance para o próximo passo clicando no botão </strong><em>Next</em><strong>.
+Uma tela com todos os módulos será exibida no </strong><em>**</em>Step 2<em>**</em><strong>, selecione o ZendModels e avance para o próximo passo.
+No </strong><em>Step 3 </em>existem 2 opções relacionadas ao que o TheWebMind irá fazer em relação ao banco de dados.
+Esta opção deve ser cuidadosamente selecionada, pois se você selecionar a opção &#8220;be replaced&#8221; , o TheWebMind irá deletar a tabela existente, assim como todos os seus dados e criará uma nova com as alterações necessárias.
+A opção &#8220;be skipped&#8221; ignora qualquer alteração na base de dados.
+Agora clique em <em>Finish, **</em><strong>e acompanhe a tela onde o TheWebMind mostra tudo que está acontecendo, como cópia de arquivos necessários, criação de tabelas, etc.</strong><em>**</em><strong>_</strong></p>
+
+<p><strong>_</strong><em>**</em><strong>Pronto. Você acabou de criar um sistema com o TheWebMind. </strong><em>**</em><strong>_</strong></p>
+
+<h3><strong>Passo 5 - Visualizando o projeto gerado</strong></h3>
+
+<p>Feito todo o trabalho, o TheWebMind irá exibir a mensagem &#8221;<strong>Finished</strong>, the project&#8217;s been generated <strong>here</strong>&#8221;.
+Uma tela com a arvore de arquivos gerados será exibida. É possível ver o conteúdo de um arquivo ao seleciona-lo.
+Acima da árvore, clique no botão &#8221;<strong><em>Explore Files</em></strong>&#8221; , este o conduzirá até a página onde a Aplicação foi gerada.</p>
+
+<h3><strong>Passo 6 - Testando a Aplicação</strong></h3>
+
+<p>Seguindo esses passos temos um simples sistema de tarefas funcionando.
+Para testar publiquei a aplicação gerada aqui: <a href="http://source.jaydson.org/TaskList/">http://source.jaydson.org/TaskList/
+</a>O ZendModels gera os formulários da aplicação, isso serve para testarmos se tudo esta funcionando corretamente.</p>
+
+<p>Bom, este foi um pequeno tutorial de como fazer um sistema simples com o TheWebMind utilizando o ZendModels.
+Qualquer dúvida entrem em contato ou comentem.
+Abaixo segue o link para download da aplicação gerada no exemplo, mas para um melhor entendimento do TheWebMind sugiro que vocês façam o <a href="http://thewebmind.org/download">download do TheWebMind</a>, e sigam todos os passos descritos acima.
+É muito fácil.</p>
+
+<p>Download:  <a href="http://source.jaydson.org/downloads/TaskList.rar">http://source.jaydson.org/TaskList.rar
+</a></p>
+
+<p>Vejam um outro exemplo no blog do <a href="http://twitter.com/felipenmoura">@felipenmoura</a> : <a href="http://felipenascimento.org/en/portugues-brasil-criando-uma-aplicacao-funcional-com-thewebmind/">http://felipenascimento.org/en/portugues-brasil-criando-uma-aplicacao-funcional-com-thewebmind/</a></p>
+
+<p><a href="http://felipenascimento.org/en/portugues-brasil-criando-uma-aplicacao-funcional-com-thewebmind/"></a></p>
+
+<p><strong>
+</strong></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Jaydson Gomes</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-02-15T23:01:37-02:00" pubdate data-updated="true">Feb 15<span>th</span>, 2010</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/thewebmind/'>TheWebMind</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.org/criando-um-sistema-de-tarefas-com-o-thewebmind/" data-via="" data-counturl="http://jaydson.org/criando-um-sistema-de-tarefas-com-o-thewebmind/" >Tweet</a>
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/thewebmind-pre-alpha-2-0-0/" title="Previous Post: TheWebMind Pre-Alpha 2.0.0">&laquo; TheWebMind Pre-Alpha 2.0.0</a>
+      
+      
+        <a class="basic-alignment right" href="/nodejs-introducao/" title="Next Post: nodeJS - Introdução">nodeJS - Introdução &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    
+<section>
+	<span class="avatar">
+		<img src="http://www.gravatar.com/avatar/572696200604e59baa59ee90d61f7d02?s=180" alt="Jaydson Gomes " title="Jaydson Gomes" />
+	</span>
+</section>
+<section class="author">	
+	<strong>Entusiasta JavaScript && FrontEnd Engineer no Terra && Curador do BrazilJS</strong>
+</section><section>
+  <h1>Posts Recentes</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/cultura-maldita-no-desenvolvimento-de-software/">Cultura maldita no desenvolvimento de software</a>
+      </li>
+    
+      <li class="post">
+        <a href="/rsjs-2013-resumo/">RSJS 2013 - Resumo</a>
+      </li>
+    
+      <li class="post">
+        <a href="/como-foi-a-braziljs-conf-2012/">Como foi a BrazilJS Conf 2012</a>
+      </li>
+    
+      <li class="post">
+        <a href="/riojs-2013/">RioJS 2013</a>
+      </li>
+    
+      <li class="post">
+        <a href="/rsjs-2013/">RSJS 2013</a>
+      </li>
+    
+      <li class="post">
+        <a href="/experimentos-html5-no-header-do-blog/">Experimentos HTML5 no header do Blog</a>
+      </li>
+    
+      <li class="post">
+        <a href="/migrando-para-octopress/">Migrando para o Octopress</a>
+      </li>
+    
+      <li class="post">
+        <a href="/analytics-do-blog-em-2012/">Analytics do Blog em 2012</a>
+      </li>
+    
+      <li class="post">
+        <a href="/retrospectiva-2012/">Retrospectiva 2012</a>
+      </li>
+    
+      <li class="post">
+        <a href="/eati-2012-em-frederico-westphalen/">EATI 2012 em Frederico Westphalen</a>
+      </li>
+    
+      <li class="post">
+        <a href="/w3c-webbr-2102/">W3C webbr 2102</a>
+      </li>
+    
+      <li class="post">
+        <a href="/javascript-o-guia-definitivo/">JavaScript: O Guia definitivo</a>
+      </li>
+    
+      <li class="post">
+        <a href="/braziljs-entrevista-na-tv/">BrazilJS - Entrevista na TV</a>
+      </li>
+    
+      <li class="post">
+        <a href="/braziljs-2012-foto-epica-com-o-brendan/">BrazilJS 2012 - Foto épica com o Brendan Eich</a>
+      </li>
+    
+      <li class="post">
+        <a href="/fundacao-braziljs/">Fundação BrazilJS</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+	<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Jaydson's Blog</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://jaydson.org" property="cc:attributionName" rel="cc:attributionURL">Jaydson Gomes</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>
+</p>
+<p>
+	<span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+<script type="text/javascript" src="/javascripts/jaydson.js"></script>
+<script type="text/javascript" src="/javascripts/blog-header-experiments.js"></script>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'jaydson';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://jaydson.org/criando-um-sistema-de-tarefas-com-o-thewebmind/';
+        var disqus_url = 'http://jaydson.org/criando-um-sistema-de-tarefas-com-o-thewebmind/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

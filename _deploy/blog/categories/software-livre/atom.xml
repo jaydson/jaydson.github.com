@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Software Livre | Jaydson Gomes]]></title>
+  <link href="http://jaydson.org/blog/categories/software-livre/atom.xml" rel="self"/>
+  <link href="http://jaydson.org/"/>
+  <updated>2013-04-02T02:46:49-03:00</updated>
+  <id>http://jaydson.org/</id>
+  <author>
+    <name><![CDATA[Jaydson Gomes]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Dissemine o conhecimento]]></title>
+    <link href="http://jaydson.org/dissemine-o-conhecimento/"/>
+    <updated>2010-05-05T22:00:58-03:00</updated>
+    <id>http://jaydson.org/dissemine-o-conhecimento</id>
+    <content type="html"><![CDATA[<p>Hoje resolvi mudar um pouco o foco nesse post.
+Nada de código... e sim um pouco de filosofia[barata].</p>
+
+<p>Quando convivemos diariamente com pessoas não adeptas ao software livre , percebemos claramente que as divergências de pensamento são enormes.
+Desde a escolha por uma ferramenta, ou metodologia e até mesmo sobre a vida.</p>
+
+<p>Hoje, vasculhando meus documentos, encontrei um arquivo txt com o nome "Leia-me novamente". Curioso, fui abrir logo para ver o que o meu cérebro tinha me preparado.<!-- more -->
+Ao abrir, encontro um pequeno texto que me faz refletir sobre muitas coisas e também me fez chegar a este post.</p>
+
+<p>O texto é do filósofo francês, <a href="http://pt.wikipedia.org/wiki/Michel_Serres">Michel Serres</a> e pra mim, tem tudo a ver com software livre.</p>
+
+<blockquote><p>Se você tem R$20,00 e me dá R$20,00, no final, eu tenho R$20,00 e você não tem mais nada.</p>
+
+<p>Se você sabe um teorema e me ensina, ao final eu tenho o teorema, mas você o conserva também.</p>
+
+<p>Então, o conhecimento não obedece às leis da troca mercantil, ele tem mesmo a virtude</p>
+
+<p>de fazer exatamente o oposto...Em vez de um jogo de resultado nulo, ele suscita a multiplicação</p>
+
+<p>do seu valor.</p>
+
+<p><em><strong>Michel Serres</strong></em></p></blockquote>
+
+<p>Leiam e tirem suas próprias conclusões.</p>
+
+<p>Para esse que vos escreve, disseminar o conhecimento é mais do que prazer.</p>
+]]></content>
+  </entry>
+  
+</feed>

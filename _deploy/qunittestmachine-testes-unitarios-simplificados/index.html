@@ -1,0 +1,463 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>QunitTestMachine - Testes unitários simplificados - Jaydson Gomes</title>
+  <meta name="author" content="Jaydson Gomes">
+
+
+<meta name="description" content="Jaydson Gomes - Um Blog sobre HTML5, JavaScript e outras coisas">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <meta property="og:title" content="Jaydson Gomes" />
+  <meta property="og:description" content="Jaydson Gomes - Um Blog sobre HTML5, JavaScript e outras coisas" />
+  <meta property="og:image" content="/images/jaydson-gomes-logo.png" />
+
+  
+  <link rel="canonical" href="http://jaydson.org/qunittestmachine-testes-unitarios-simplificados/">
+  <link href="/favicon.png" rel="icon">
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+  <link href="/stylesheets/blog-header-experiments.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Jaydson Gomes" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1264252-8']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup id="header-stage">
+  <h1><a href="/">Jaydson Gomes</a></h1>
+  
+    <h2>HTML5 | JavaScript</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:jaydson.org" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h2 class="entry-title">QunitTestMachine - Testes Unitários Simplificados</h2>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-11-07T23:03:41-02:00" pubdate data-updated="true">Nov 7<span>th</span>, 2010</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>There are several libraries to do unit testing in JavaScript code, I chose the <a href="http://docs.jquery.com/Qunit">QUnit</a> as default in my tests.</p>
+
+<p>QUnit is a powerful test suite and simple-to-use. Himself is used to test the official jQuery code and its plugins, but of course it is possible to test any code Javasript generic, ie their libraries.</p>
+
+<p>QUnit is a project of <a href="http://ejohn.org/">John Resig</a> and is maintained by him and <a href="http://bassistance.de/">Jörn Zaefferer</a>.</p>
+
+<p>The code is available at GitHub: <a href="http://github.com/jquery/qunit">http://github.com/jquery/qunit</a></p>
+
+<p>Although QUnit be very simple to use, I decided to simplify a bit more and created QUnitTestMachine.</p>
+
+<p>But what makes QUnitTestMachine?</p>
+
+<ul>
+<li><p>Simplify your Javascript-based tests QUnit</p></li>
+<li><p>Focus on a single JavaScript file all the necessary settings to run your tests</p></li>
+<li><p>Run your tests independently</p></li>
+</ul>
+
+
+<p>Existem <a href="http://en.wikipedia.org/wiki/List_of_unit_testing_frameworks#JavaScript">várias bibliotecas para fazer teste unitário</a> em código Javascript, eu acabei escolhendo o <a href="http://docs.jquery.com/Qunit">QUnit</a> como padrão em meus testes.
+O  QUnit é um test suite poderoso e simples de usar. O próprio é usado para testar o código do jQuery e seus plugins oficiais, mas claro, com ele é possível testar qualquer código Javasript genérico, ou seja,  suas bibliotecas.</p>
+
+<p>O QUnit é mais um projeto do <a href="http://ejohn.org/">John Resig</a>, e é mantido por ele e pelo <a href="http://bassistance.de/">Jörn Zaefferer</a>.
+O código do QUnit esta no GitHub: <a href="http://github.com/jquery/qunit">http://github.com/jquery/qunit</a><!-- more --></p>
+
+<p>The QUnitTestMachine follows the convention of having a test file for each file in your Javascript application.</p>
+
+<p>To be clear, if exists in your application a file &#8220;myscript.js&#8221; which is needed to test, then in the same directory where that file must exist a test file called &#8220;test_myscript.js.</p>
+
+<p>The prefix &#8220;test_&#8221; can be changed via the API, but QUnitTestMachine uses this as standard.</p>
+
+<p>Well, let&#8217;s see some code for clarity:</p>
+
+<p>To start, open the file config.js, which is the configuration file of your tests.</p>
+
+<ul>
+<li>Set the root path of your application</li>
+</ul>
+
+
+<p>[javascript]&lt;br /&gt;<br />
+QUnitTestMachine.defaults.path = &#8216;http://localhost/&#8217;;&lt;br /&gt;<br />
+[/javascript]</p>
+
+<p>Note that the path defined using the absolute address, it is necessary for the proper loading of the scripts.</p>
+
+<ul>
+<li>After this, set the prefix</li>
+</ul>
+
+
+<p>[javascript]&lt;br /&gt;<br />
+QUnitTestMachine.defaults.prefix = &#8216;test_&#8217;;&lt;br /&gt;<br />
+[/javascript]</p>
+
+<p>Note that if not set, the default is &#8216;test_&#8217;</p>
+
+<ul>
+<li>Add the scripts to the test</li>
+</ul>
+
+
+<p>[javascript]&lt;/p&gt;<br />
+&lt;p&gt;QUnitTestMachine.scripts.add({&lt;br /&gt;<br />
+   &amp;quot;scripts&amp;quot;: [&lt;br /&gt;<br /></p>
+
+<pre><code>     {name: &amp;amp;quot;app/js/myscript.js&amp;amp;quot;},&amp;lt;br /&amp;gt;&lt;br /&gt;
+     {name: &amp;amp;quot;app2/myscript2.js&amp;amp;quot;}&amp;lt;br /&amp;gt;&lt;br /&gt;
+</code></pre>
+
+<p>   ]&lt;br /&gt;<br />
+});&lt;br /&gt;<br />
+[/javascript]</p>
+
+<p><a href="http://github.com/jquery/qunit"></a></p>
+
+<p>Ready. Done that the application is ready to be tested, go to the test.html file and see the result.</p>
+
+<p>I hope QunitTestMachine help you guys with unit testing, has eased enough for me.</p>
+
+<p>The project is on GitHub, so come on, download, copy, comment, create tickets, report bugs, etc..</p>
+
+<p>Below is the link:</p>
+
+<p><a href="https://github.com/jaydson/QUnitTestMachine">https://github.com/jaydson/QUnitTestMachine</a></p>
+
+<p><a href="http://github.com/jquery/qunit"></a>Apesar de o QUnit ser bem simples de ser usado, resolvi simplificar um pouco mais e criei o QUnitTestMachine.
+Mas o que QUnitTestMachine faz?
+- Simplifica seus testes Javascript baseados no QUnit
+- Concentra em um único arquivo Javascript todas as configurações necessárias para rodar seus testes
+- Roda seus testes de forma independente<!-- more --></p>
+
+<p>O QUnitTestMachine segue a convenção de possuir um arquivo de teste para cada arquivo Javascript em sua aplicação.
+Sendo mais claro, se em sua aplicação existe um arquivo &#8220;myscript.js&#8221; o qual se faz necessário o teste, então no mesmo diretório onde se encontra esse arquivo deve existir um arquivo de teste chamado &#8220;test_myscript.js&#8221;.
+O prefixo &#8220;test_&#8221; pode ser alterado via API, mas o QUnitTestMachine usa este como padrão.</p>
+
+<p>Bom, vamos ver um pouco de código para ficar mais claro:
+Para iniciar, abra o arquivo config.js, que é o arquivo de configuração dos seus testes.
+- Defina o path root de sua aplicação</p>
+
+<p>[javascript]
+QUnitTestMachine.defaults.path = &#8216;http://localhost/&#8217;;
+[/javascript]</p>
+
+<p>Note que o path definido utiliza o endereço absoluto, isso é necessário para o carregamento correto dos scripts.</p>
+
+<ul>
+<li>Após isso, defina o prefixo</li>
+</ul>
+
+
+<p>[javascript]
+QUnitTestMachine.defaults.prefix = &#8216;test_&#8217;;
+[/javascript]</p>
+
+<p>Note que se não for definido, o padrão é &#8216;test_&#8217;</p>
+
+<ul>
+<li>Adicione os scripts para o teste</li>
+</ul>
+
+
+<p>[javascript]</p>
+
+<p>QUnitTestMachine.scripts.add({
+   &#8220;scripts&#8221;: [</p>
+
+<pre><code>     {name: "app/js/myscript.js"},
+     {name: "app2/myscript2.js"}
+</code></pre>
+
+<p>   ]
+});
+[/javascript]</p>
+
+<p>Pronto. Feito isso a aplicação já está pronta para ser testada, acesse o arquivo test.html e veja o resultado.</p>
+
+<p>Espero que o QunitTestMachine ajude voces com testes unitários, pra mim tem facilitado bastante.
+O projeto esta no GitHub, então entrem lá, baixem, copiem, comentem, criem tickets, reportem bugs, etc.
+Abaixo segue o link:
+<a href="https://github.com/jaydson/QUnitTestMachine">https://github.com/jaydson/QUnitTestMachine</a></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Jaydson Gomes</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-11-07T23:03:41-02:00" pubdate data-updated="true">Nov 7<span>th</span>, 2010</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/qunit/'>QUnit</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.org/qunittestmachine-testes-unitarios-simplificados/" data-via="" data-counturl="http://jaydson.org/qunittestmachine-testes-unitarios-simplificados/" >Tweet</a>
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/nodejs-devinrio-2010/" title="Previous Post: NodeJS DevInRio 2010">&laquo; NodeJS DevInRio 2010</a>
+      
+      
+        <a class="basic-alignment right" href="/dojopoa-coding-dojo-porto-alegre/" title="Next Post: DojoPOA - Coding Dojo Porto Alegre">DojoPOA - Coding Dojo Porto Alegre &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    
+<section>
+	<span class="avatar">
+		<img src="http://www.gravatar.com/avatar/572696200604e59baa59ee90d61f7d02?s=180" alt="Jaydson Gomes " title="Jaydson Gomes" />
+	</span>
+</section>
+<section class="author">	
+	<strong>Entusiasta JavaScript && FrontEnd Engineer no Terra && Curador do BrazilJS</strong>
+</section><section>
+  <h1>Posts Recentes</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/cultura-maldita-no-desenvolvimento-de-software/">Cultura maldita no desenvolvimento de software</a>
+      </li>
+    
+      <li class="post">
+        <a href="/rsjs-2013-resumo/">RSJS 2013 - Resumo</a>
+      </li>
+    
+      <li class="post">
+        <a href="/como-foi-a-braziljs-conf-2012/">Como foi a BrazilJS Conf 2012</a>
+      </li>
+    
+      <li class="post">
+        <a href="/riojs-2013/">RioJS 2013</a>
+      </li>
+    
+      <li class="post">
+        <a href="/rsjs-2013/">RSJS 2013</a>
+      </li>
+    
+      <li class="post">
+        <a href="/experimentos-html5-no-header-do-blog/">Experimentos HTML5 no header do Blog</a>
+      </li>
+    
+      <li class="post">
+        <a href="/migrando-para-octopress/">Migrando para o Octopress</a>
+      </li>
+    
+      <li class="post">
+        <a href="/analytics-do-blog-em-2012/">Analytics do Blog em 2012</a>
+      </li>
+    
+      <li class="post">
+        <a href="/retrospectiva-2012/">Retrospectiva 2012</a>
+      </li>
+    
+      <li class="post">
+        <a href="/eati-2012-em-frederico-westphalen/">EATI 2012 em Frederico Westphalen</a>
+      </li>
+    
+      <li class="post">
+        <a href="/w3c-webbr-2102/">W3C webbr 2102</a>
+      </li>
+    
+      <li class="post">
+        <a href="/javascript-o-guia-definitivo/">JavaScript: O Guia definitivo</a>
+      </li>
+    
+      <li class="post">
+        <a href="/braziljs-entrevista-na-tv/">BrazilJS - Entrevista na TV</a>
+      </li>
+    
+      <li class="post">
+        <a href="/braziljs-2012-foto-epica-com-o-brendan/">BrazilJS 2012 - Foto épica com o Brendan Eich</a>
+      </li>
+    
+      <li class="post">
+        <a href="/fundacao-braziljs/">Fundação BrazilJS</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+	<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Jaydson's Blog</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://jaydson.org" property="cc:attributionName" rel="cc:attributionURL">Jaydson Gomes</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>
+</p>
+<p>
+	<span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+<script type="text/javascript" src="/javascripts/jaydson.js"></script>
+<script type="text/javascript" src="/javascripts/blog-header-experiments.js"></script>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'jaydson';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://jaydson.org/qunittestmachine-testes-unitarios-simplificados/';
+        var disqus_url = 'http://jaydson.org/qunittestmachine-testes-unitarios-simplificados/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

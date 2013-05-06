@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Testes | Jaydson Gomes]]></title>
+  <link href="http://jaydson.org/blog/categories/testes/atom.xml" rel="self"/>
+  <link href="http://jaydson.org/"/>
+  <updated>2013-04-02T02:46:49-03:00</updated>
+  <id>http://jaydson.org/</id>
+  <author>
+    <name><![CDATA[Jaydson Gomes]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[PHP - Teste Unitário com PHPUnit]]></title>
+    <link href="http://jaydson.org/php-teste-unitario-com-phpunit/"/>
+    <updated>2010-09-05T21:23:23-03:00</updated>
+    <id>http://jaydson.org/php-teste-unitario-com-phpunit</id>
+    <content type="html"><![CDATA[<p>Following  the idea of the last post, where I spoke about the misconception of  some people think that PHP is not a language for robust systems, i will talk  briefly about PHPUnit.</p>
+
+<p>Unit testing is neither a matter of tool, but the developer, or company policy which works.</p>
+
+<p>I  say that because it is still common today models of enterprises that  use the famous XGH, where nothing matters, just to make money and deliver  the system.</p>
+
+<p>In PHP world, PHPUnit is the primary tool for unit testing.</p>
+
+<p>The installation is very simple, and using the NetBeans IDE it becomes easier still.</p>
+
+<p>Below is a step by step:Seguindo a ideia do <a href="http://jaydson.org/php-debugando-aplicacoes-com-xdebug-netbeans/">último post</a>, onde falei sobre o equívoco de alguns em achar que PHP não é uma linguagem para sistemas robustos, vou falar brevemente sobre o PHPUnit.
+Teste unitário não é nem questão de ferramenta e sim do próprio programador, ou da política da empresa onde se trabalha.
+Digo isso, porque ainda é comum hoje em dia modelos de empresas que utilizam o famoso <a href="http://gohorseprocess.wordpress.com/extreme-go-horse-xgh/">XGH</a>, onde nada importa, a não ser ganhar dinheiro e entregar o sistema.</p>
+
+<p>No mundo PHP, o <a href="http://www.phpunit.de/">PHPUnit</a> é a principal ferramenta para testes unitários.
+A instalação é bem simples, e utilizando o NetBeans como IDE fica mais fácil ainda.
+Abaixo segue um passo a passo:<!-- more -->
+To install PHPUnit you must have the Pear if you have not</p>
+
+<p><strong>$ sudo apt-get install php-pear</strong></p>
+
+<p>After installing PEAR, you must register the channel on the environment</p>
+
+<p><strong>$ sudo pear channel-discover pear.phpunit.de</strong></p>
+
+<p>And finally, install PHPUnit</p>
+
+<p><strong>$ sudo pear install phpunit / PHPUnit</strong></p>
+
+<p>Okay, if everything went well so far, the PHPUnit is installed successfully!</p>
+
+<p>Now let's set up for use in NetBeans.</p>
+
+<p>PS: I'm using the latest version of NetBeans, which is now 6.9.1</p>
+
+<p>1 - Tools> Options and select the tab PHP</p>
+
+<p>[caption id="attachment_634" align="alignnone" width="300" caption="Tools > Options"]<a href="http://jaydson-org.web102.redehost.com.br/assets/passo11.png"><img src="http://jaydson.org/wp-content/uploads/2010/09/passo1-300x261.png" alt="" /></a>[/caption]</p>
+
+<p>2 - In the PHPUnit source enter the path to PHPUnit, in my case <strong>/usr /bin/phpunit</strong></p>
+
+<p>Done.</p>
+
+<p>Now try to create a directory in your application with the name you want. This directory is the repository of their tests.</p>
+
+<p>Create a class, and then right on top.</p>
+
+<p>Tools> Create PHPUnit tests</p>
+
+<p>Select the directory taht you created as a repository of tests.</p>
+
+<p>From now on all your tests are stored in this directory.</p>
+
+<p>To create new tests, just repeat the procedure.</p>
+
+<p>Of course, not everything is so simple, you need to understand how a unit test work, and to understand the tool.</p>
+
+<p>For that > <a href="http://www.phpunit.de/manual/3.4/en/index.html">http://www.phpunit.de/manual/3.4/en/index.html</a></p>
+
+<p>Para instalar o PHPUnit é preciso ter o <a href="http://pear.php.net/">Pear</a>, caso não tenha
+<strong>$ sudo apt-get install php-pear</strong></p>
+
+<p>Após instalar o Pear, é necessário registrar o canal no ambiente
+<strong>$ sudo pear channel-discover pear.phpunit.de</strong></p>
+
+<p>E enfim, instalar o PHPUnit
+<strong>$ sudo pear install phpunit/PHPUnit</strong></p>
+
+<p><strong> </strong>Pronto, se tudo deu certo até aqui, o PHPUnit foi instalado com sucesso!
+Agora vamos configurar para usar no NetBeans.</p>
+
+<p>OBS: Estou usando a última versão do NetBeans, que hoje é 6.9.1</p>
+
+<p>1 - Tools > Options e selecione a aba PHP</p>
+
+<p>[caption id="attachment_634" align="alignnone" width="300" caption="Tools > Options"]<a href="http://jaydson-org.web102.redehost.com.br/assets/passo11.png"><img src="http://jaydson.org/wp-content/uploads/2010/09/passo1-300x261.png" alt="" /></a>[/caption]</p>
+
+<p>2 - No campo PHPUnit source informe o caminho do PHPUnit, no meu caso <strong>/usr/bin/phpunit</strong></p>
+
+<p>Pronto.
+Agora para testar crie um diretório em sua aplicação com o nome que desejar. Esse diretório será o repositório de seus testes.
+Crie uma classe, e clique com o botão direito em cima.
+Tools > Create PHPUnit tests
+Selecione o diretório criado como repositório dos testes.
+A partir de agora todos seus testes serão armazenados neste diretório.
+Para criar novos testes, basta repetir o procedimento.</p>
+
+<p>Claro que nem tudo é tão simples, é preciso entender como funciona um teste unitário, e entender a ferramenta.
+Para isso > <a href="http://www.phpunit.de/manual/3.4/en/index.html">http://www.phpunit.de/manual/3.4/en/index.html</a></p>
+
+<p><a href="http://www.phpunit.de/manual/3.4/en/index.html"></a>Boa sorte, e espero ter ajudado.</p>
+]]></content>
+  </entry>
+  
+</feed>

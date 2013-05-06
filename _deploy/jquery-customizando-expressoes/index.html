@@ -1,0 +1,465 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>jQuery - Customizando expressões - Jaydson Gomes</title>
+  <meta name="author" content="Jaydson Gomes">
+
+
+<meta name="description" content="Jaydson Gomes - Um Blog sobre HTML5, JavaScript e outras coisas">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <meta property="og:title" content="Jaydson Gomes" />
+  <meta property="og:description" content="Jaydson Gomes - Um Blog sobre HTML5, JavaScript e outras coisas" />
+  <meta property="og:image" content="/images/jaydson-gomes-logo.png" />
+
+  
+  <link rel="canonical" href="http://jaydson.org/jquery-customizando-expressoes/">
+  <link href="/favicon.png" rel="icon">
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+  <link href="/stylesheets/blog-header-experiments.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Jaydson Gomes" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1264252-8']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup id="header-stage">
+  <h1><a href="/">Jaydson Gomes</a></h1>
+  
+    <h2>HTML5 | JavaScript</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:jaydson.org" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h2 class="entry-title">jQuery - Customizando Expressões</h2>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-05-25T22:40:17-03:00" pubdate data-updated="true">May 25<span>th</span>, 2010</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>O jQuery é uma excelente biblioteca, e suas constantes atualizações e profissionalismo fazem com que nós programadores tenhamos uma potente arma na mão para solucionar qualquer problema.<br/>
+Mas mesmo o jQuery sendo tão completo, sempre haverá alguma situação ímpar em que ele não suprirá sua necessidade.<br/>
+Um dos motivos que levou o jQuery a chegar ao nível de biblioteca Javascript mais utilizada do mundo, além de sua excelente performance e extremo profissionalismo foi a facilidade e possibilidade de extender suas funcionalidades.<br/>
+Hoje já são incontáveis os plugins que  existem para o jQuery.</p>
+
+<p>O jQuery é uma excelente biblioteca, e suas constantes atualizações e profissionalismo fazem com que nós programadores tenhamos uma potente arma na mão para solucionar qualquer problema.
+Mas mesmo o jQuery sendo tão completo, sempre haverá alguma situação ímpar em que ele não suprirá sua necessidade.
+Um dos motivos que levou o jQuery a chegar ao nível de biblioteca Javascript mais utilizada do mundo, além de sua excelente performance e extremo profissionalismo foi a facilidade e possibilidade de extender suas funcionalidades.
+Hoje já são incontáveis os plugins que  existem para o jQuery.</p>
+
+<!-- more -->
+
+
+<p>Mas hoje venho falar de uma possibilidade muito interessante que mais uma vez devo a  dica ao <a href="http://twitter.com/ricardobeat">Ricardo Tomasi</a>, que é a customização de expressões.<br/>
+Uma rápida pesquisa no Google e voces encontraram varios posts espalhados pelo mundo falando a respeito.<br/>
+Customizar uma expressão consiste em incorporar ao jQuery um método que ele não possui nativamente.</p>
+
+<p>Mas porque diabos fazer isso?<br/>
+Acreditem, pode ser bem útil.</p>
+
+<p>No curso de jQuery que estou ministrando na <a href="http://www.targettrust.com.br/web/">Target Trust</a>, ontem bolei um exercício simples para os alunos:</p>
+
+<p><em><strong>&#8220;Mude a cor de fundo de todas as TD&#8217;s com indice ímpar da tabela com id tabela2&#8221;<br/>
+</strong></em></p>
+
+<p><em>Sacaram a ideia?<br/>
+Simples. O que eu queria, é que eles fizessem da maneira deles, usando um loop, verificando o <a href="http://pt.wikipedia.org/wiki/Opera%C3%A7%C3%A3o_m%C3%B3dulo">mod</a> do indice e assim aplicar o css no elemento, para então depois apresentar o <a href="http://api.jquery.com/odd-selector/">seletor odd</a> que faz exatamente isso, só que em uma linha.</em></p>
+
+<p>_ _</p>
+
+<p>_ _</p>
+
+<p>$(&#8220;table td:odd&#8221;).css(&#8220;background-color&#8221;, &#8220;#bbbbff&#8221;);</p>
+
+<p> </p>
+
+<p>_ _</p>
+
+<p><em>Tudo tranquilo, mas um dos alunos muito antenado achou o seletor e resolveu o problema facilmente!<br/>
+Então mudei a estratégia, e pedi para ele implementar um algoritmo que apenas aplicasse o estilo nas TD&#8217;s com indice que fosse <a href="http://pt.wikipedia.org/wiki/N%C3%BAmero_primo">número primo</a>.<br/>
+Novamente o aluno conseguiu.<br/>
+Foi ai que lembrei da possibilidade de customização das expressões!<br/>
+Fiz a proposta para o aluno: Se tu conseguir criar uma expressão customizada que retorne elementos baseando-se nos numeros primos terá um post no meu blog!<br/>
+Então ai esta. Abaixo segue o código implementado pelo aluno <a href="http://www.twitter.com/AndreLMPinto">Andre Pinto </a>da turma de jQuery Maio/2010:</em></p>
+
+<p> </p>
+
+<pre><code>[javascript]
+jQuery.extend( jQuery.expr[':'], {
+    prime: function(a, index){
+        function isPrime(num){
+            var numHalf = num / 2, counter, divCheck;
+                if (num === 2){
+                    return true;
+                }
+                if (num &amp;amp;amp;lt; 2 || numHalf === Math.floor(numHalf) ||
+                                   num !== Math.floor(num)){
+                    return false;
+                }else{
+                    for (counter = 3; counter &amp;amp;amp;lt;= Math.sqrt(num);
+                                              counter += 2){
+                        divCheck = num / counter;
+                        if (divCheck === Math.floor(divCheck)) {
+                            return false;
+                        }
+                    }
+                return true;
+                   }
+        }
+           return isPrime(index);
+     }
+});[/javascript]
+</code></pre>
+
+<p>Para usar a expressão:</p>
+
+<pre><code>[javascript]
+$('#tabela2 td:prime').css( { 'background-color' : 'red' } );
+[/javascript]
+</code></pre>
+
+<p>Parabéns ao André pela implementação.</p>
+
+<p>Mas hoje venho falar de uma possibilidade muito interessante que mais uma vez devo a  dica ao <a href="http://twitter.com/ricardobeat">Ricardo Tomasi</a>, que é a customização de expressões.
+Uma rápida pesquisa no Google e voces encontraram varios posts espalhados pelo mundo falando a respeito.
+Customizar uma expressão consiste em incorporar ao jQuery um método que ele não possui nativamente.</p>
+
+<p>Mas porque diabos fazer isso?
+Acreditem, pode ser bem útil.</p>
+
+<p>No curso de jQuery que estou ministrando na <a href="http://www.targettrust.com.br/web/">Target Trust</a>, ontem bolei um exercício simples para os alunos:</p>
+
+<p><em><strong>&#8220;Mude a cor de fundo de todas as TD&#8217;s com indice ímpar da tabela com id tabela2&#8221;
+</strong></em></p>
+
+<p><em>Sacaram a ideia?
+Simples. O que eu queria, é que eles fizessem da maneira deles, usando um loop, verificando o <a href="http://pt.wikipedia.org/wiki/Opera%C3%A7%C3%A3o_m%C3%B3dulo">mod</a> do indice e assim aplicar o css no elemento, para então depois apresentar o <a href="http://api.jquery.com/odd-selector/">seletor odd</a> que faz exatamente isso, só que em uma linha.</em></p>
+
+<p>$(&#8220;table td:odd&#8221;).css(&#8220;background-color&#8221;, &#8220;#bbbbff&#8221;);</p>
+
+<p><em>Tudo tranquilo, mas um dos alunos muito antenado achou o seletor e resolveu o problema facilmente!
+Então mudei a estratégia, e pedi para ele implementar um algoritmo que apenas aplicasse o estilo nas TD&#8217;s com indice que fosse <a href="http://pt.wikipedia.org/wiki/N%C3%BAmero_primo">número primo</a>.
+Novamente o aluno conseguiu.
+Foi ai que lembrei da possibilidade de customização das expressões!
+Fiz a proposta para o aluno: Se tu conseguir criar uma expressão customizada que retorne elementos baseando-se nos numeros primos terá um post no meu blog!
+Então ai esta. Abaixo segue o código implementado pelo aluno <a href="http://www.twitter.com/AndreLMPinto">Andre Pinto</a> da turma de jQuery Maio/2010:</em></p>
+
+<p>[javascript]
+jQuery.extend( jQuery.expr[&#8216;:&#8217;], {</p>
+
+<pre><code>prime: function(a, index){
+    function isPrime(num){
+        var numHalf = num / 2, counter, divCheck;
+            if (num === 2){
+                return true;
+            }
+            if (num &amp;amp;lt; 2 || numHalf === Math.floor(numHalf) ||
+                               num !== Math.floor(num)){
+                return false;
+            }else{
+                for (counter = 3; counter &amp;amp;lt;= Math.sqrt(num);
+                                          counter += 2){
+                    divCheck = num / counter;
+                    if (divCheck === Math.floor(divCheck)) {
+                        return false;
+                    }
+                }
+            return true;
+               }
+    }
+       return isPrime(index);
+ }
+</code></pre>
+
+<p>});[/javascript]</p>
+
+<p>Para usar a expressão:</p>
+
+<p>[javascript]
+$(&#8216;#tabela2 td:prime&#8217;).css( { &#8216;background-color&#8217; : &#8216;red&#8217; } );
+[/javascript]</p>
+
+<p>Parabéns ao André pela implementação.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Jaydson Gomes</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-05-25T22:40:17-03:00" pubdate data-updated="true">May 25<span>th</span>, 2010</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/javascript/'>JavaScript</a>, <a class='category' href='/blog/categories/jquery/'>Jquery</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.org/jquery-customizando-expressoes/" data-via="" data-counturl="http://jaydson.org/jquery-customizando-expressoes/" >Tweet</a>
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/dissemine-o-conhecimento/" title="Previous Post: Dissemine o conhecimento">&laquo; Dissemine o conhecimento</a>
+      
+      
+        <a class="basic-alignment right" href="/javascript-recursao-para-executar-n-vezes-uma-funcao/" title="Next Post: Javascript - Recursão para executar N vezes uma função">Javascript - Recursão para executar N vezes uma função &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    
+<section>
+	<span class="avatar">
+		<img src="http://www.gravatar.com/avatar/572696200604e59baa59ee90d61f7d02?s=180" alt="Jaydson Gomes " title="Jaydson Gomes" />
+	</span>
+</section>
+<section class="author">	
+	<strong>Entusiasta JavaScript && FrontEnd Engineer no Terra && Curador do BrazilJS</strong>
+</section><section>
+  <h1>Posts Recentes</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/cultura-maldita-no-desenvolvimento-de-software/">Cultura maldita no desenvolvimento de software</a>
+      </li>
+    
+      <li class="post">
+        <a href="/rsjs-2013-resumo/">RSJS 2013 - Resumo</a>
+      </li>
+    
+      <li class="post">
+        <a href="/como-foi-a-braziljs-conf-2012/">Como foi a BrazilJS Conf 2012</a>
+      </li>
+    
+      <li class="post">
+        <a href="/riojs-2013/">RioJS 2013</a>
+      </li>
+    
+      <li class="post">
+        <a href="/rsjs-2013/">RSJS 2013</a>
+      </li>
+    
+      <li class="post">
+        <a href="/experimentos-html5-no-header-do-blog/">Experimentos HTML5 no header do Blog</a>
+      </li>
+    
+      <li class="post">
+        <a href="/migrando-para-octopress/">Migrando para o Octopress</a>
+      </li>
+    
+      <li class="post">
+        <a href="/analytics-do-blog-em-2012/">Analytics do Blog em 2012</a>
+      </li>
+    
+      <li class="post">
+        <a href="/retrospectiva-2012/">Retrospectiva 2012</a>
+      </li>
+    
+      <li class="post">
+        <a href="/eati-2012-em-frederico-westphalen/">EATI 2012 em Frederico Westphalen</a>
+      </li>
+    
+      <li class="post">
+        <a href="/w3c-webbr-2102/">W3C webbr 2102</a>
+      </li>
+    
+      <li class="post">
+        <a href="/javascript-o-guia-definitivo/">JavaScript: O Guia definitivo</a>
+      </li>
+    
+      <li class="post">
+        <a href="/braziljs-entrevista-na-tv/">BrazilJS - Entrevista na TV</a>
+      </li>
+    
+      <li class="post">
+        <a href="/braziljs-2012-foto-epica-com-o-brendan/">BrazilJS 2012 - Foto épica com o Brendan Eich</a>
+      </li>
+    
+      <li class="post">
+        <a href="/fundacao-braziljs/">Fundação BrazilJS</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+	<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Jaydson's Blog</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://jaydson.org" property="cc:attributionName" rel="cc:attributionURL">Jaydson Gomes</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>
+</p>
+<p>
+	<span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+<script type="text/javascript" src="/javascripts/jaydson.js"></script>
+<script type="text/javascript" src="/javascripts/blog-header-experiments.js"></script>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'jaydson';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://jaydson.org/jquery-customizando-expressoes/';
+        var disqus_url = 'http://jaydson.org/jquery-customizando-expressoes/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

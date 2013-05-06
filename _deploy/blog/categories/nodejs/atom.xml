@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: nodeJS | Jaydson Gomes]]></title>
+  <link href="http://jaydson.org/blog/categories/nodejs/atom.xml" rel="self"/>
+  <link href="http://jaydson.org/"/>
+  <updated>2013-04-02T02:46:49-03:00</updated>
+  <id>http://jaydson.org/</id>
+  <author>
+    <name><![CDATA[Jaydson Gomes]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[W3C webbr 2102]]></title>
+    <link href="http://jaydson.org/w3c-webbr-2102/"/>
+    <updated>2012-10-20T15:59:28-03:00</updated>
+    <id>http://jaydson.org/w3c-webbr-2102</id>
+    <content type="html"><![CDATA[<p>Cá estou quase no fim do evento sentado em um puff, descansando após um ótimo almoço com uma galera muito massa.
+A <a href="http://conferenciaweb.w3c.br/">conferência da W3C </a>foi excelente. Muito networking, palestras muito boas, boa comida, e a sensação de que estamos fazendo parte de um futuro promissor.
+Fico muito honrado e feliz de ser uma das pessoas que esta fazendo a Web.
+Especificamente falando da <a href="http://www.braziljs.org/">Fundação BrazilJS</a>, também saio totalmente satisfeito. Tivemos um espaço na <em><strong>webbr</strong></em> para divulgar o nosso trabalho e o feedback foi incrivelmente bom.</p>
+
+<p><a href="http://twitter.com/bernarddeluna">Bernard</a>, <a href="http://twitter.com/felipenmoura">Felipe</a>, <a href="http://twitter.com/zenorocha">Zeno</a> e eu palestramos e apresentamos o que andamos fazendo, e todo o potencial da comunidade brasileira.
+Não por serem meus amigos, mas cada vez mais admiro estes caras que citei acima.
+O projeto que o Bernard e o Zeno desenvolveram é simplesmente genial: <a href="https://apps.facebook.com/super-trunfo/">https://apps.facebook.com/super-trunfo/ </a>
+A palestra/live-coding do Felipe foi muito boa, e creio que todos sairam sabendo como usar o <a href="https://developer.mozilla.org/en-US/docs/WebRTC/navigator.getUserMedia">getUserMedia();</a></p>
+
+<p>De quebra, ainda dei uma palestra sobre um projeto que iniciei junto com o Felipe, o <a href="https://github.com/jaydson/remote-slide">Remote Slide</a>.
+O Remote Slide é uma app feita em <a href="http://nodejs.org/">node</a> e <a href="http://socket.io">socketio</a>, que transforma o teu celular em um controle remoto para suas apresentações.
+Mas o Remote Slide é uma pequena parte de um projeto maior, que é o <a href="https://github.com/braziljs/PowerPolygon">Power Polygon</a>.
+O PPW (Power Polygon Web) é uma ferramenta para criar apresentações em HTML 5. Estamos na versão alpha, e com a ajuda da comunidade, em breve teremos um release estável.</p>
+
+<p>Bom, é  isso.
+Publiquei a apresentação aqui: <a href="http://jaydson.org/talks/remote-slide/">jaydson.org/talks/remote-slide/</a>
+E o código da apresentação no Github: <a href="https://github.com/jaydson/webbr2012-talk-remote-slide">https://github.com/jaydson/webbr2012-talk-remote-slide</a></p>
+
+<p>Cá estou quase no fim do evento sentado em um puff, descansando após um ótimo almoço com uma galera muito massa.
+A <a href="http://conferenciaweb.w3c.br/">conferência da W3C </a>foi excelente. Muito networking, palestras muito boas, boa comida, e a sensação de que estamos fazendo parte de um futuro promissor.
+Fico muito honrado e feliz de ser uma das pessoas que esta fazendo a Web.
+Especificamente falando da <a href="http://www.braziljs.org/">Fundação BrazilJS</a>, também saio totalmente satisfeito. Tivemos um espaço na <em><strong>webbr</strong></em> para divulgar o nosso trabalho e o feedback foi incrivelmente bom.</p>
+
+<p><a href="http://twitter.com/bernarddeluna">Bernard</a>, <a href="http://twitter.com/felipenmoura">Felipe</a>, <a href="http://twitter.com/zenorocha">Zeno</a> e eu palestramos e apresentamos o que andamos fazendo, e todo o potencial da comunidade brasileira.
+Não por serem meus amigos, mas cada vez mais admiro estes caras que citei acima.
+O projeto que o Bernard e o Zeno desenvolveram é simplesmente genial: <a href="https://apps.facebook.com/super-trunfo/">https://apps.facebook.com/super-trunfo/ </a>
+A palestra/live-coding do Felipe foi muito boa, e creio que todos sairam sabendo como usar o <a href="https://developer.mozilla.org/en-US/docs/WebRTC/navigator.getUserMedia">getUserMedia();</a></p>
+
+<p>De quebra, ainda dei uma palestra sobre um projeto que iniciei junto com o Felipe, o <a href="https://github.com/jaydson/remote-slide">Remote Slide</a>.
+O Remote Slide é uma app feita em <a href="http://nodejs.org/">node</a> e <a href="http://socket.io">socketio</a>, que transforma o teu celular em um controle remoto para suas apresentações.
+Mas o Remote Slide é uma pequena parte de um projeto maior, que é o <a href="https://github.com/braziljs/PowerPolygon">Power Polygon</a>.
+O PPW (Power Polygon Web) é uma ferramenta para criar apresentações em HTML 5. Estamos na versão alpha, e com a ajuda da comunidade, em breve teremos um release estável.</p>
+
+<p>Bom, é  isso.
+Publiquei a apresentação aqui: <a href="http://jaydson.org/talks/remote-slide/">jaydson.org/talks/remote-slide/</a>
+E o código da apresentação no Github: <a href="https://github.com/jaydson/webbr2012-talk-remote-slide">https://github.com/jaydson/webbr2012-talk-remote-slide</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Experimento de Web Scraping com nodeJS]]></title>
+    <link href="http://jaydson.org/experimento-de-web-scraping-com-nodejs/"/>
+    <updated>2012-06-30T02:54:28-03:00</updated>
+    <id>http://jaydson.org/experimento-de-web-scraping-com-nodejs</id>
+    <content type="html"><![CDATA[<p>Depois que fiz o post <a href="http://jaydson.org/web-scraping-para-criancas-com-nodejs/">Web Scraping para crianças com nodeJS</a>, cheguei a conclusão de que deveria fazer um experimento com o que mostrei.<br/>
+Sentei algumas horas no final de semana, e pronto.<br/>
+Basicamente fiz o que mostrei no outro post, porém fiz uma interface e fiz deploy da aplicação no <a href="http://nodejitsu.com/">NodeJitsu</a>.<br/>
+Utilizei outras coisas como o <a href="http://expressjs.com">ExpressJS</a> para criar a casca da aplicação e o <a href="http://jade-lang.com/">Jade</a> para template.<br/>
+O código está disponível no Github >>> <a href="https://github.com/jaydson/myscraper">https://github.com/jaydson/myscraper</a><br/>
+Para quem quiser testar online, a URL do MyScraper é esta: <a href="http://myscraper.jit.su/">http://myscraper.jit.su/</a></p>
+
+<p>Fiz um vídeo rápido com uma demo de uso:<br/>
+<div class="embed-video-container"><iframe src="http://www.youtube.com/embed/p00SQU3FWic "></iframe></div></p>
+
+<p>Testem lá ;)</p>
+
+<p>Depois que fiz o post <a href="http://jaydson.org/web-scraping-para-criancas-com-nodejs/">Web Scraping para crianças com nodeJS</a>, cheguei a conclusão de que deveria fazer um experimento com o que mostrei.
+Sentei algumas horas no final de semana, e pronto.
+Basicamente fiz o que mostrei no outro post, porém fiz uma interface e fiz deploy da aplicação no <a href="http://nodejitsu.com/">NodeJitsu</a>.
+Utilizei outras coisas como o <a href="http://expressjs.com">ExpressJS</a> para criar a casca da aplicação e o <a href="http://jade-lang.com/">Jade</a> para template.
+O código está disponível no Github >>> <a href="https://github.com/jaydson/myscraper">https://github.com/jaydson/myscraper</a>
+Para quem quiser testar online, a URL do MyScraper é esta: <a href="http://myscraper.jit.su/">http://myscraper.jit.su/</a></p>
+
+<p>Fiz um vídeo rápido com uma demo de uso:</p>
+
+<p>Testem lá ;)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Web Scraping para crianças com nodeJS]]></title>
+    <link href="http://jaydson.org/web-scraping-para-criancas-com-nodejs/"/>
+    <updated>2012-06-19T01:58:43-03:00</updated>
+    <id>http://jaydson.org/web-scraping-para-criancas-com-nodejs</id>
+    <content type="html"><![CDATA[<p><a href="http://jaydson.org/wp-content/uploads/scraper.jpg"><img src="http://jaydson.org/wp-content/uploads/scraper.jpg" alt="" /></a><br/>
+Bom, resolvi fazer este post para deixar registrado o quanto é fácil fazer <a href="http://en.wikipedia.org/wiki/Web_scraping">Web Scraping</a> com <a href="http://nodejs.org/">nodeJS</a>.<br/>
+Para quem não sabe, Web Scraping é uma técnica para extrair dados de páginas web.<br/>
+Surgiu a necessidade de fazer algo do tipo no trabalho, e resolvi fazer uns testes.<br/>
+É possível fazer isso com qualquer linguagem, mas pensei, porque não fazer com JavaScript? Ai pensei no node.<br/>
+Me preparei para um desafio legal, mas me frustrei muito :(<br/>
+Isso porque Web Scraping com node é ridiculamente simples de fazer, e é isso que vou mostrar :)</p>
+
+<p><strong>Node Scraper</strong><br/>
+Uma googleada rápida, e achei este projeto: <a href="https://github.com/mape/node-scraper">https://github.com/mape/node-scraper</a><br/>
+O node-scraper é um modulo que facilita o scraping.<br/>
+Obviamente, é preciso ter o node rodando e o <a href="http://npmjs.org/">npm</a>.<br/>
+Via npm instale o node-scraper:</p>
+
+<pre><code>npm install scraper  
+</code></pre>
+
+<p>O node-scraper expõe um objeto jQuery do lado do servidor com a página <em>scrapeada</em> como se fosse o <em>body</em>.
+Bizarro, mas é bem simples de entender, olhem o código:</p>
+
+<pre><code>var scraper = require('scraper');
+scraper('http://www.jaydson.org', function(err, jQuery) {
+    if (err) {throw err}
+
+    jQuery('a').each(function() {
+        console.log(jQuery(this).text()+'\n');
+    });
+});  
+</code></pre>
+
+<p>Neste exemplo, o que fiz foi buscar todos os links dentro da página jaydson.org, e logo após isso joguei no console o conteúdo de cada link.<br/>
+Fácil né?</p>
+
+<p>Bom, agora é só usar a criatividade ;)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[RSJS - CoffeeScript + Node.js]]></title>
+    <link href="http://jaydson.org/rsjs-coffeescript-node-js/"/>
+    <updated>2012-03-15T20:25:47-03:00</updated>
+    <id>http://jaydson.org/rsjs-coffeescript-node-js</id>
+    <content type="html"><![CDATA[<p>Mais um vídeo das palestras do #RSJS foi liberado.<br/>
+Desta vez, quem fala é o Ricardo Tomasi, sem dúvida um dos melhores desenvolvedores Front-End do Brasil.<br/>
+Na palestra ele mostrou o porque apostar as fichas no CoffeeScript.<br/>
+Explicou o funcionamento, as vantagens e features do Coffee além de mostrar que coffee é a companhia perfeita para o node.js.<br/>
+Segue o vídeo:</p>
+
+<p><div class="embed-video-container"><iframe src="http://www.youtube.com/embed/j5Lfedfm1Wk "></iframe></div></p>
+
+<p><em><strong>* Cobertura: <a href="http://www.gonow.com.br">GoNow Tecnologia</a> - gravação feita pela <a href="http://www.facebook.com/djlou09">Laura Lou</a></strong></em></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[NodeJS DevInRio 2010]]></title>
+    <link href="http://jaydson.org/nodejs-devinrio-2010/"/>
+    <updated>2010-10-10T23:09:45-03:00</updated>
+    <id>http://jaydson.org/nodejs-devinrio-2010</id>
+    <content type="html"><![CDATA[<p>Uma das palestras que rolou agora dia 09 no <a href="http://www.devinrio.com.br/">DevInRio 2010</a> (do qual infelizmente não pude participar) foi <strong><em>"nodeJS - A performance que eu sempre quis ter"</em></strong>.</p>
+
+<p>O autor, <a href="http://twitter.com/#!/emerleite">Emerson Macedo</a>, fez uma excelente abordagem com informações importantes e relevantes sobre o <a href="http://nodejs.org/">nodeJS</a>.</p>
+
+<p>Quem não teve a oportunidade de assistir a palestra assim como eu, pode conferir os slides no SlideShare.Uma das palestras que rolou agora dia 09 no <a href="http://www.devinrio.com.br/">DevInRio 2010</a> (do qual infelizmente não pude participar) foi <strong><em>"nodeJS - A performance que eu sempre quis ter"</em></strong>.
+O autor, <a href="http://twitter.com/#!/emerleite">Emerson Macedo</a>, fez uma excelente abordagem com informações importantes e relevantes sobre o <a href="http://nodejs.org/">nodeJS</a>.
+Quem não teve a oportunidade de assistir a palestra assim como eu, pode conferir os slides no SlideShare.<!-- more --></p>
+
+<p><strong><a href="http://www.slideshare.net/emerleite/devinrio-2010-nodejs">DevInRio 2010 - NodeJS</a></strong>View more <a href="http://www.slideshare.net/">presentations</a> from <a href="http://www.slideshare.net/emerleite">Emerson Macedo</a>.</p>
+
+<p>A <a href="http://codificando.com/2010/08/nodejs-devinsampa/">mesma palestra</a> foi dada pelo Emerson no DevInSampa, e esta além dos slides, possui o vídeo que pode ser assistido na íntegra.</p>
+
+<p>Segue abaixo:</p>
+
+<p>Há tempos me interesso por node, acho que é uma tecnologia com muito potencial, e a palestra do Emerson mostra exatamente isso.</p>
+
+<p>Concordo plenamente com ele ao comentar que nós programadores temos que reinventar as coisas e não usar sempre o mesmo modelo tradicional para resolver problemas.</p>
+
+<p>Para quem não viu no começo deste ano fiz 2 posts sobre node (<a href="http://jaydson.org/nodejs-introducao/">nodeJS – Introdução</a> e <a href="http://jaydson.org/nodejs-instalacao/">nodeJS – Instalação</a>).</p>
+
+<p><strong><a href="http://www.slideshare.net/emerleite/devinrio-2010-nodejs">DevInRio 2010 - NodeJS</a></strong>View more <a href="http://www.slideshare.net/">presentations</a> from <a href="http://www.slideshare.net/emerleite">Emerson Macedo</a>.</p>
+
+<p>A <a href="http://codificando.com/2010/08/nodejs-devinsampa/">mesma palestra</a> foi dada pelo Emerson no DevInSampa, e esta além dos slides, possui o vídeo que pode ser assistido na íntegra.
+Segue abaixo:</p>
+
+<p>Há tempos me interesso por node, acho que é uma tecnologia com muito potencial, e a palestra do Emerson mostra exatamente isso.
+Concordo plenamente com ele ao comentar que nós programadores temos que reinventar as coisas e não usar sempre o mesmo modelo tradicional para resolver problemas.
+Para quem não viu no começo deste ano fiz 2 posts sobre node (<a href="http://jaydson.org/nodejs-introducao/">nodeJS – Introdução</a> e <a href="http://jaydson.org/nodejs-instalacao/">nodeJS – Instalação</a>).</p>
+]]></content>
+  </entry>
+  
+</feed>

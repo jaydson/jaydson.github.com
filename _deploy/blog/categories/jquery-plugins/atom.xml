@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Jquery-Plugins | Jaydson Gomes]]></title>
+  <link href="http://jaydson.org/blog/categories/jquery-plugins/atom.xml" rel="self"/>
+  <link href="http://jaydson.org/"/>
+  <updated>2013-04-02T02:46:49-03:00</updated>
+  <id>http://jaydson.org/</id>
+  <author>
+    <name><![CDATA[Jaydson Gomes]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[jQuery Preloader]]></title>
+    <link href="http://jaydson.org/jquery-preloader/"/>
+    <updated>2010-10-07T23:33:18-03:00</updated>
+    <id>http://jaydson.org/jquery-preloader</id>
+    <content type="html"><![CDATA[<p>A good practice to apply in websites or web applications is preload images.</p>
+
+<p>It already exists for a long time, and there are several implementations done around this practice.</p>
+
+<p>Today, <a href="http://twitter.com/EdwardHotchkiss">Edward Hotchkiss</a> posted on his <a href="http://www.edwardhotchkiss.com/">Blog</a> a <a href="http://www.edwardhotchkiss.com/blog/jquery-javascript-preloader/">new implementation</a>, which he developed as a plugin for jQuery.</p>
+
+<p>The project is available on GitHub:</p>
+
+<p><a href="http://github.com/edwardhotchkiss/Preloader">http://github.com/edwardhotchkiss/Preloader</a></p>
+
+<p><a href="http://github.com/edwardhotchkiss/Preloader"></a>The plugin has a few settings and callbacks that are extremely useful for development.</p>
+
+<p>I just tested the plugin here and really liked it. Easy to implement and well done.</p>
+
+<p>Below is the link to the demo that i did:</p>
+
+<p><a href="http://jaydson.org/code/jquery/plugins/jquery-preloader/">http://jaydson.org/code/jquery/plugins/jquery-preloader/</a></p>
+
+<p>The Edward's own blog using this plugin, access there and check it out: <a href="http://www.edwardhotchkiss.com/">http://www.edwardhotchkiss.com/</a></p>
+
+<p>Uma boa prática a ser aplicada em sites ou aplicações web é o <em>preload</em> de imagens.
+Isso já existe a muito tempo, e existem várias implementações feitas em torno desta prática.
+Hoje o <a href="http://twitter.com/EdwardHotchkiss">Edward Hotchkiss</a> postou em seu <a href="http://www.edwardhotchkiss.com/">Blog</a> uma <a href="http://www.edwardhotchkiss.com/blog/jquery-javascript-preloader/">nova implementação</a>, que ele mesmo desenvolveu em forma de plugin para o jQuery.</p>
+
+<p>O projeto está disponível no GitHub:
+<a href="http://github.com/edwardhotchkiss/Preloader">http://github.com/edwardhotchkiss/Preloader</a></p>
+
+<p><a href="http://github.com/edwardhotchkiss/Preloader"></a>O plugin possui algumas configurações e <em>callbacks </em>que são extremamente úteis para o desenvolvimento.
+Acabei de testar o plugin aqui e gostei bastante. Fácil de se implementar e bem feito.
+Abaixo segue o link para o demo que fiz:
+<a href="http://jaydson.org/code/jquery/plugins/jquery-preloader/">http://jaydson.org/code/jquery/plugins/jquery-preloader/</a></p>
+
+<p>O próprio blog do Edward esta usando o plugin, acessem lá e confiram: <a href="http://www.edwardhotchkiss.com/">http://www.edwardhotchkiss.com/</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Capturar erros Ajax com jQuery]]></title>
+    <link href="http://jaydson.org/capturar-erros-ajax-com-jquery/"/>
+    <updated>2009-09-14T23:15:15-03:00</updated>
+    <id>http://jaydson.org/capturar-erros-ajax-com-jquery</id>
+    <content type="html"><![CDATA[<p>Catch Ajax errors is a task that jQuery gives us a good help.
+What I mean by that is that the library provides us with a lot of useful information that often go unnoticed by developers.
+The first thing to note is the <strong>error </strong>event.
+In this event we can pass a function (callback) that will be executed when the request fails.
+3 parameters are passed to this function: The XMLHttpRequest object, a String that describes the type of error that occurred and an exception object (optional).
+A good point is that we will never have the <strong>Success </strong>and <strong>Error </strong>event together in the same request (that means obvious).</p>
+
+<p>Capturar erros Ajax é mais uma tarefa que o jQuery nos da uma boa ajuda.
+O que quero dizer com isso é que a biblioteca nos fornece uma série de informações úteis que as vezes passam desapercebidas pelos desenvolvedores.
+A primeira coisa a se notar é o evento <strong>error</strong>.
+Neste evento podemos passar uma função(<em>callback</em>) que será executada quando a requisição falhar. São passados 3 parâmetros para esta função:
+O objeto XMLHttpRequest, uma String que descreve o tipo do erro que aconteceu e um objeto exceção(opcional).
+Uma boa observação é que nunca teremos o evento <strong>Success </strong>e o evento <strong>Error </strong>juntos na mesma requisição(meio óbvio isso).</p>
+
+<!-- more -->
+
+
+<p>Let's take a simple example of an Ajax request:</p>
+
+<p>[javascript]</p>
+
+<p>$.ajax({
+type: "POST",
+url: "teste.php",
+success: function(retorno){
+alert(retorno);
+}
+});</p>
+
+<p>[/javascript]</p>
+
+<p>In this example we make an Ajax request and success give a alert of the content returned.
+But what if we give some kind of mistake?
+If we want to catch the error and get some treatment, or simply display the error.
+We will now see an example of capturing the error:</p>
+
+<p>[javascript]</p>
+
+<p>$.ajax({
+type: "POST",
+url: "teste.php",
+success: function(retorno){
+alert(retorno);
+},
+error: function(XMLHttpRequest, textStatus, errorThrown){
+alert("Error!");
+}
+});</p>
+
+<p>[/javascript]</p>
+
+<p>Now grab the error and give an error alert in the event of failed requests.
+Now to be more useful, we see the properties and methods of the XMLHttpRequest object.
+Just make a "for in" in the object that we get all their properties. Below I list some:
+<strong>
+dispatchEvent()
+removeEventListener()
+open()
+setRequestHeader()
+send()
+readyState
+status
+channel
+responseXML
+responseText
+statusText
+abort()
+getAllResponseHeaders()
+getResponseHeader()</strong></p>
+
+<hr />
+
+<p>If you want to do the test and scan the object and see its properties:</p>
+
+<p>[javascript]
+for(i in XMLHttpRequest){
+if(i!="channel")
+document.write(i +" : " + XMLHttpRequest[i] +"<br>")
+}
+[/javascript]</p>
+
+<ul>
+<li>This filter testing whether the property is "channel" is necessary because the browser generates an exception permission denied to view this property.</li>
+</ul>
+
+
+<p>Well, with this you can have a good grasp on how to catch Ajax errors, now what to do with them is with you.
+I used this very technique in Ajax handling on project <a href="http://thewebmind.org/">TheWebMind.org</a>, and some other systems.
+I am preparing a plugin for jQuery which will help a lot.
+Here is a preview of what already implemented below:</p>
+
+<p>[javascript]
+error: function(XMLHttpRequest, textStatus, errorThrown){
+$(XMLHttpRequest).AjaxDebug({
+containerId : "load",
+nativeConsole : false
+});
+}
+[/javascript]</p>
+
+<p>The idea is to provide a console that displays this information, or pass the information to a particular element.
+Soon post here when you're done!</p>
+
+<p>Of course, let's not forget the <a href="http://getfirebug.com/">Firebug</a> is an excellent debugger for Ajax too.
+Vamos a um exemplo simples de uma requisição Ajax:</p>
+
+<p>[javascript]</p>
+
+<p>$.ajax({
+type: "POST",
+url: "teste.php",
+success: function(retorno){
+alert(retorno);
+}
+});</p>
+
+<p>[/javascript]</p>
+
+<p>Neste exemplo fazemos uma requisição Ajax e no sucesso damos um alerta do conteúdo retornado.
+Mas e se der algum tipo de erro?
+Vai de aplicação para aplicação, mas dependendo do caso podemos querer capturar o erro e fazer algum tratamento, ou simplesmente mostrar o erro.
+Vamos agora ver um exemplo capturando o erro:</p>
+
+<p>[javascript]</p>
+
+<p>$.ajax({
+type: "POST",
+url: "teste.php",
+success: function(retorno){
+alert(retorno);
+},
+error: function(XMLHttpRequest, textStatus, errorThrown){
+alert("Erro!");
+}
+});</p>
+
+<p>[/javascript]</p>
+
+<p>Agora capturamos o erro e damos um alerta de erro caso ocorra falha na requisição.
+Agora para ficar pouco mais útil, vamos ver as propriedades e métodos do objeto XMLHttpRequest.
+Basta fazer um "for in" no objeto que conseguimos pegar todas suas propriedades. Abaixo listo algumas:
+<strong>
+dispatchEvent()
+removeEventListener()
+open()
+setRequestHeader()
+send()
+readyState
+status
+channel
+responseXML
+responseText
+statusText
+abort()
+getAllResponseHeaders()
+getResponseHeader()
+</strong>
+Caso queiram fazer o teste e varrer o objeto e ver suas propriedades:</p>
+
+<p>[javascript]
+for(i in XMLHttpRequest){
+if(i!="channel")
+document.write(i +" : " + XMLHttpRequest[i] +"<br>")
+}
+[/javascript]</p>
+
+<p>OBS:
+Este filtro testando se a propriedade é "channel" é necessário, pois o browser gera uma exceção de permissão negada para ler essa propriedade.</p>
+
+<p>Bom, com isso já da pra ter uma boa noção sobre como capturar erros Ajax, agora o que fazer com eles é com vocês.
+Usei bastante esta técnica na manipulação de Ajax no projeto <a href="http://thewebmind.org">TheWebMind.org</a>, e em alguns outros sistemas.
+Estou preparando um plugin para o jQuery que auxiliará bastante.
+Segue uma prévia do que já implementei abaixo:</p>
+
+<p>[javascript]
+error: function(XMLHttpRequest, textStatus, errorThrown){
+$(XMLHttpRequest).AjaxDebug({
+containerId : 'load',
+nativeConsole : false
+});
+}
+[/javascript]</p>
+
+<p>A idéia é fornecer um console que mostre estas informações, ou passar as informações para um determinado elemento.
+Em breve posto aqui quando estiver pronto!</p>
+
+<p>E claro, não vamos esquecer do <a href="http://getfirebug.com">Firebug</a> que é um excelente debugador para Ajax também.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Gradient - Jquery Plugin]]></title>
+    <link href="http://jaydson.org/gradient-jquery-plugin/"/>
+    <updated>2009-05-19T22:47:39-03:00</updated>
+    <id>http://jaydson.org/gradient-jquery-plugin</id>
+    <content type="html"><![CDATA[<p>Veja aqui o exemplo: <a href="../code/jquery/plugins/gradient/index.html">http://jaydson.org/code/jquery/plugins/gradient/index.html</a></p>
+
+<p>Javascript is a very powerful programming language . Do not say this only because i love the language, but for daily work with Javascript and see its power.
+Frameworks help of course, but do not forget that everythingh is all the more pure and beautiful Javascript.
+In the list that I participate, I see some people mistakenly confuse it a little, but it's coming the next Post.</p>
+
+<p>Javascript é realmente uma linguagem de programação muito poderosa. Não falo isso só por ser apaixonado pela linguagem, mas sim por diariamente programar Javascript e ver o seu poder.
+Frameworks ajudam claro, mas não se esqueçam que no fundo é tudo o mais puro e belo Javascript.
+Na lista do Jquery que participo, seguido vejo algumas pessoas equivocadamente confundindo um pouco isso, mas isso fica pra um próximo Post.</p>
+
+<!-- more -->
+
+
+<p>What I will address in this Post is a very good plugin developed by <a href="http://brandonaaron.net/">Brandon Aaron</a>.
+For those who do not know, this guy lives down in Texas and is a leading member of  <a href="http://docs.jquery.com/Contributors">jQuery developers team</a>.</p>
+
+<p>The basic idea of the plugin is creating the effect of Gradient (going from one color to another) in an HTML element. That's right! No more Photoshop.  O /
+What we need: obviously the <a href="http://docs.jquery.com/Downloading_jQuery">Jquery</a>, and the <a href="http://github.com/brandonaaron/jquery-gradient/tree/master">Gradient plugin</a>.</p>
+
+<p>But this time go a little further...
+The plugin allows us to specify the initial RGB code, RGB code final and even the direction of the gradient (vertical or horizontal).
+Let's see the code could understand better:</p>
+
+<p>[javascript]
+$('#my_element').gradient({
+from:      'ffffff',
+to:        '000000',
+direction: 'vertical';
+});
+[/javascript]</p>
+
+<p>In this example the gradient effect will be applied to the element with ID my_element, starting with white and black going to the vertical direction.
+Simple!</p>
+
+<p>Good, but as I said above, go a little further. If we pass RGB values for the plugin, so maybe we can use another plugin well known and very good too, the <a href="http://www.eyecon.ro/colorpicker">Color Picker</a>.
+I prepared a script where I use the features of the 2 plugins. See below as it was. And again see the power of JavaScript:</p>
+
+<p>See the  example: <a href="../code/jquery/plugins/gradient/index.html">http://jaydson.org/code/jquery/plugins/gradient/index.html</a></p>
+
+<p>I hope you enjoyed and that is useful for any application from you.
+Any questions Comentt.</p>
+
+<p><strong>Minha Avaliation: 8.0</strong>
+<strong>Compatibilily: Firefox 2.0+, IE 6+, Safari 3.0+, Chrome 2.0+</strong></p>
+
+<p><strong>Official website</strong><a href="http://brandonaaron.net/code">: http://brandonaaron.net/code</a></p>
+
+<p>[caption id="attachment_114" align="alignnone" width="60" caption="Download"]<a href="http://jaydson.org/code/jquery/plugins/gradient/gradient.rar"><img src="http://jaydson-org.web102.redehost.com.br/assets/hd_download1.jpg" alt="Download" /></a>[/caption]</p>
+
+<p>O que vou abordar neste Post é um plugin muito bom desenvolvido pelo <a href="http://brandonaaron.net/">Brandon Aaron</a>.
+Pra quem não conhece, esse cara mora lá pelas bandas do Texas e é um dos principais membros do<a href="http://docs.jquery.com/Contributors"> time de desenvolvedores do Jquery</a>.</p>
+
+<p>A idéia básica do plugin é criar um efeito de Gradient(vai de uma cor para outra) em um elemento HTML. Isso mesmo! Nada de Photoshop. O/
+O que precisamos:  obviamente o <a href="http://docs.jquery.com/Downloading_jQuery">Jquery</a>, e o <a href="http://github.com/brandonaaron/jquery-gradient/tree/master">plugin Gradient</a>.</p>
+
+<p>Mas dessa vez vou um pouco mais além...
+O plugin nos permite especificar o código RGB inicial, o o código RGB final e ainda a direção do Gradient(vertical ou horizontal).
+Vamos ver o código pra entender melhor:</p>
+
+<p>[javascript]
+$('#meu_elemento').gradient({
+from:      'ffffff',
+to:        '000000',
+direction: 'vertical';
+});
+[/javascript]</p>
+
+<p>Neste exemplo o efeito Gradient será aplicado no elemento com o ID meu_elemento, começando de branco e indo até preto com direção vertical.
+Simples !</p>
+
+<p>Bom, mas como eu disse acima, vamos um pouco mais além.  Se precisamos passar valores RGB para o plugin, então quem sabe podemos usar um outro plugin bem conhecido e muito bom também, o <a href="http://www.eyecon.ro/colorpicker">Color Picker</a>.
+Preparei um script onde uso as funcionalidades dos  2 plugins. Vejam abaixo como ficou. E novamente vejam o poder do Javascript:</p>
+
+<p>Veja aqui o exemplo: <a href="http://jaydson.org/code/jquery/plugins/gradient/index.html">http://jaydson.org/code/jquery/plugins/gradient/index.html</a></p>
+
+<p>Espero que tenham gostado e que seja útil para alguma Aplicação de vocês.
+Qualquer dúvida comentem ai.
+Abraço, e até a próxima.</p>
+
+<p><strong>Minha Avaliação: Nota 8.0</strong>
+<strong>Compatibilidade: Firefox 2.0+, IE 6+, Safari 3.0+, Chrome 2.0+</strong></p>
+
+<p><strong>Site oficial do Plugin:</strong><a href="http://docs.jquery.com/Plugins/Autocomplete"></a><a href="http://brandonaaron.net/code"> http://brandonaaron.net/code</a></p>
+
+<p>[caption id="attachment_114" align="alignnone" width="60" caption="Download"]<a href="http://jaydson.org/code/jquery/plugins/gradient/gradient.rar"><img src="http://jaydson-org.web102.redehost.com.br/assets/hd_download1.jpg" alt="Download" /></a>[/caption]</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Flip! Jquery Plugin]]></title>
+    <link href="http://jaydson.org/flip-jquery-plugin/"/>
+    <updated>2009-05-09T22:34:03-03:00</updated>
+    <id>http://jaydson.org/flip-jquery-plugin</id>
+    <content type="html"><![CDATA[<p>Mais um da série de plugins testados e avaliados.
+Particularmente eu achei esse plugin muito legal!
+Ele aplica um efeito de Flip em um elemento HTML. Ai vai da imaginação e criatividade do desenvolvedor para implementa-lo em seu sistema.
+A idéia é aquela básica do Jquery, pouquissímas linhas, e um efeito impressionante.
+Estou esperando o momento certo e a idéia surgir para usa-lo em algum sistema...</p>
+
+<p><strong>Vamos ver como fica o código:
+</strong></p>
+
+<p>[javascript]</p>
+
+<script type="text/javascript">
+     $(document).ready(function () {
+         $(".home").click(function () {
+              $("#flipBox").flip({
+                   direction: 'bt',
+                  color: 'blue',
+                  speed: 400,
+                  content: ""
+            });
+       });
+      $(".home").trigger("click");
+});
+</script>
+
+
+<p>[/javascript]</p>
+
+<p>Simples não?</p>
+
+<p>No click do elemento com a classe "home"  invocamos o método <strong>flip()</strong> que aplica esse efeito no elemento com Id "flipBox".
+Obs:  $(".home").trigger("click") só faz com que a animação aconteça no load da página.
+Aqueles parâmetros são interessantes:</p>
+
+<ul>
+<li><p><strong>direction</strong>: Especifica em que direção vai ser o giro. Os valores suportados são 'tb', 'bt', 'lr', 'rl'</p></li>
+<li><p><strong>color:</strong> Define que cor de fundo o elemento terá após o giro.</p></li>
+<li><p><strong>speed</strong>: A velocidade da animação</p></li>
+<li><p><strong>content</strong>: O conteúdo que esse elemento terá após o giro.</p></li>
+</ul>
+
+
+<p>Fora essas opções, ainda existem funções que podemos executar em algum evento do giro, como por exemplo:</p>
+
+<ul>
+<li><p><strong>onBefore</strong>:  Essa função é executada antes da animação começar.</p></li>
+<li><p><strong>onAnimation</strong>: Essa função é executada na metade da animação.</p></li>
+<li><p><strong>onEnd</strong>: Essa função é executada quando a animação termina.</p></li>
+</ul>
+
+
+<p>Com esses eventos e opções podemos fazer muita coisa. A opção <strong>content</strong> por exemplo permite que seja passado um conteúdo que será exibido no elemento após a animação, então nada nos impede de carregar um conteúdo com Ajax e jogar dentro desse elemento. O céu é o limite.</p>
+
+<p><strong>Vejam o resultado:</strong></p>
+
+<p><strong>
+</strong></p>
+
+<p><strong>Minha Avaliação: Nota 10.0</strong>
+<strong>Compatibilidade: Firefox 2.0+, IE 6+, Safari 3.0+, Chrome 2.0+,</strong><strong>Opera</strong>****</p>
+
+<p><strong>Site oficial do Plugin:</strong><a href="http://lab.smashup.it/flip/"> http://lab.smashup.it/flip/</a></p>
+
+<p>[caption id="attachment_114" align="alignnone" width="60" caption="Download"]<a href="http://jaydson.org/code/jquery/plugins/flip/flip.rar"><img src="http://jaydson-org.web102.redehost.com.br/assets/hd_download1.jpg" alt="Download" /></a>[/caption]</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Autocomplete - Jquery Plugin]]></title>
+    <link href="http://jaydson.org/autocomplete-jquery-plugin/"/>
+    <updated>2009-05-09T15:35:26-03:00</updated>
+    <id>http://jaydson.org/autocomplete-jquery-plugin</id>
+    <content type="html"><![CDATA[<p>Um recurso muito bom que podemos aplicar em nossos Sistemas é o Autocomplete.
+Isso ajuda muito o usuário na hora de selecionar uma opção. Além de ser visualmente mais agradavél, este recurso faz com que apenas apareçam as opções de acordo com o que é digitado no campo.
+Imaginei a situação onde o usuário precisa selecionar um determinado valor em um <selectbox>. O porém é que esse campo será populado com centenas de valores. É extremamente ruim ter que ficar procurando a opção correta em uma lista enorme de opções.
+O que esse plugin nos proporciona é uma forma simples de implementar um campo do tipo Autocomplete.</p>
+
+<p>O exemplo que preparei é bem simples, mas mostra o poder deste plugin(um dos melhores que já usei).
+O que vamos fazer é um script PHP que retorne os Posts aqui do Blog. Segue o código abaixo do arquivo <strong>search.php</strong>:</p>
+
+<p>[php]</p>
+
+<p>&lt;?php
+$items = array(
+'Text Area Resizer - JQuery Plugin'=>'1',
+'Text Limiter - Jquery Plugin'=>'2',
+'Plugins Jquery'=>'3',
+'theWebMind.org'=>'4',
+'Hacks CSS'=>'5',
+'Json'=>'6',
+'PHP - Problema ao carregar a DLL php_pgsql.dll'=>'7',
+'RichBlocks - Um Framework Para Implantar Interfaces RIA em Sistemas Web'=>'8',
+'PHP Classes'=>'9',
+'RIA - Aplicacoes Ricas para Internet'=>'10',
+'Campanha Atualize o seu Navegador'=>'11',
+'Internet Explorer 8'=>'12',
+'Projeto PHP Counter'=>'13',
+'Jquery'=>'14'
+);</p>
+
+<p>foreach ($items as $key=>$value){
+echo "$key|$valuen";
+}
+?></p>
+
+<p>[/php]</p>
+
+<p>Note que neste código eu montei "na mão" um array de Posts. Mas nada me impediria de ter feito uma consulta no banco de dados e ter montado o array dinâmicamente. Isso serve para qualquer situação.
+Bom, já temos os dados que precisamos para popular o campo de Autocomplete.
+Basta criar um campo do tipo <input> com uma ID especifica. No meu ficou assim:</p>
+
+<p>[html]</p>
+
+<p><body></p>
+
+<p>
+<label style="font-family:verdana;
+font-weight:bold;
+font-size:18px;">
+Posts Jaydson.org:
+</label>
+<br>
+<input style="width:300px;" type="text" id="posts" />
+</p>
+
+
+<p></body></p>
+
+<p>[/html]</p>
+
+<p>Agora que já temos o HTML, vamos implementar o Plugin.
+O que deve ser feito é informar qual <input> será capaz de se autocompletar, desta forma:</p>
+
+<p>[javascript]</p>
+
+<script type="text/javascript">
+$().ready(function() {
+
+$("#posts").autocomplete("search.php", {
+width: 440,
+scrollHeight: 220,
+selectFirst: true
+});
+})
+</script>
+
+
+<p>[/javascript]</p>
+
+<p>Desta maneira, o <input id="posts"> receberá o conteúdo da página PHP que criamos anteriormente.</p>
+
+<p><strong>Nota:</strong> O Plugin ainda possui uma série de opções que podem ser especificadas além de width, scrollHeight e selectFirst .</p>
+
+<p><strong>Veja o resultado:</strong></p>
+
+<p><strong>Minha Avaliação: Nota 10.0</strong>
+<strong>Compatibilidade: Firefox 2.0+, IE 6+, Safari 3.0+, Chrome 2.0+</strong></p>
+
+<p><strong>Site oficial do Plugin:</strong><a href="http://docs.jquery.com/Plugins/Autocomplete"> http://docs.jquery.com/Plugins/Autocomplete
+</a></p>
+
+<p>[caption id="attachment_114" align="alignnone" width="60" caption="Download "]<a href="http://jaydson.org/code/jquery/plugins/jquery.autocomplete/jquery-autocomplete.rar"><img src="http://jaydson-org.web102.redehost.com.br/assets/hd_download1.jpg" alt="Download Text Limiter" /></a>[/caption]</p>
+
+<hr />
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: HTML5 | Jaydson Gomes]]></title>
+  <link href="http://jaydson.org/blog/categories/html5/atom.xml" rel="self"/>
+  <link href="http://jaydson.org/"/>
+  <updated>2013-04-02T02:46:49-03:00</updated>
+  <id>http://jaydson.org/</id>
+  <author>
+    <name><![CDATA[Jaydson Gomes]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Experimentos HTML5 no header do Blog]]></title>
+    <link href="http://jaydson.org/experimentos-html5-no-header-do-blog/"/>
+    <updated>2013-01-11T11:14:00-02:00</updated>
+    <id>http://jaydson.org/experimentos-html5-no-header-do-blog</id>
+    <content type="html"><![CDATA[<p>Resolvi criar aqui no Blog um espaço para experimentos <a href="https://developer.mozilla.org/en-US/docs/HTML/HTML5">HTML5</a>, <a href="https://developer.mozilla.org/en-US/docs/CSS/CSS3">CSS3</a> e <a href="https://developer.mozilla.org/en-US/docs/JavaScript">JavaScript</a>.<br/>
+Este espaço não será um post, mas sim o próprio header.<br/>
+Existe muito espaço ali para brincar e fazer coisas legais.<br/>
+O primeiro experimento que fiz, foi este cubo 3d ao lado do meu nome.<br/>
+Talvez ele fique para sempre ali, pois gostei do jeito que ele se encaixou com página.</p>
+
+<!--more-->
+
+
+<p>Este experimento eu já havia feito para o <a href="https://developer.mozilla.org/pt-BR/demos/detail/simple-css3-3d-cube">Mozilla DevDerby</a>, e só fiz uma adaptação para o header.<br/>
+Basicamente, o que faço é sortear imagens relacionadas ao HTML5 para o background de cada face do cubo, animar ele com rotação no eixo X e Y.<br/>
+O código esta no Github para quem quiser dar uma olhada: <a href="https://github.com/jaydson/blog-header-experiments">https://github.com/jaydson/blog-header-experiments</a><br/>
+Inclusive, criei um projeto só para estes experimentos, todos eles ficarão neste repositório.</p>
+
+<p>Estou desenvolvendo uma API JavaScript, para facilitar a inclusão destes experimentos no header.<br/>
+Desta maneira, outras pessoas também poderão me enviar os seus experimentos.</p>
+
+<p>Se alguém tiver alguma ideia legal de experimento que se encaixe nesta temática, entre em contato :)</p>
+
+<p>OBS: Para visualizar o cubo 3D, é preciso ter um navegador moderno :)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[EATI 2012 em Frederico Westphalen]]></title>
+    <link href="http://jaydson.org/eati-2012-em-frederico-westphalen/"/>
+    <updated>2012-11-09T19:36:06-02:00</updated>
+    <id>http://jaydson.org/eati-2012-em-frederico-westphalen</id>
+    <content type="html"><![CDATA[<p>Estou aqui no Hotel na querida cidade <a href="http://pt.wikipedia.org/wiki/Frederico_Westphalen">Frederico Westphalen</a>.<br/>
+Vim para participar do <a href="http://www.cafw.ufsm.br/eati/2012/">EATI</a>, o Encontro Anual de Tecnologia da Informação.<br/>
+Assim como no <a href="http://jaydson.org/w3c-webbr-2102/">Webbr da W3C</a>,  o BrazilJS teve um espaço para palestras.</p>
+
+<p><a href="http://twitter.com/felipenmoura">Felipe Moura,</a> <a href="http://twitter.com/zenorocha">Zeno Rocha</a> e eu, comandamos as palestras, e tentamos passar o máximo de informção possível para o pessoal.<br/>
+Foram várias palestras, e muito networking com a galera.<br/>
+Acho que nunca fui tão bem tratado em um evento como aqui em <em><strong>Fred West</strong></em>. Desde o primeiro contato com o Joel, até o último minuto na festa de encerramento, foi esta a minha sensação.</p>
+
+<!--more-->
+
+
+<p>Cada uma das pessoas que vinha falar comigo, fazia com que eu me sentisse em casa, e sentisse que tudo que estamos fazendo realmente vale a pena.<br/>
+Ver o nosso trabalho ser conhecido e ser admirado pelo pessoal, é muito gratificante.<br/>
+O evento foi impecável e muito bem organizado. Eu realemente fiquei surpreso em ver um evento deste porte no interior do RS.<br/>
+A organização está de parabéns.</p>
+
+<p>Dei 2 palestras no evento, uma de performance que já tinha dado no RSJS e no PernambucoJS e uma nova, que fiz especialmente para o EATI, sobre uma implementação de controle remoto com nodeJS.<br/>
+Eu já tinha apresentado o projeto no Webbr, mas resolvi fazer uma palestra nova para o EATI.<br/>
+O pessoal curtiu bastante ambas palestras :)</p>
+
+<p>Link das 2 palestras:<br/>
+<a href="http://jaydson.org/talks/remote-control-eati-2012">http://jaydson.org/talks/remote-control-eati-2012</a><br/>
+<a href="http://jaydson.org/wp-content/uploads/Screenshot-from-2012-11-09-162847.png"><img src="http://jaydson.org/wp-content/uploads/Screenshot-from-2012-11-09-162847.png" alt="" /></a><br/>
+<a href="http://jaydson.org/talks/x-web-performance">http://jaydson.org/talks/x-web-performance</a><br/>
+<a href="http://jaydson.org/wp-content/uploads/Screenshot-from-2012-11-09-162856.png"><img src="http://jaydson.org/wp-content/uploads/Screenshot-from-2012-11-09-162856.png" alt="" /></a></p>
+
+<p>Mais uma vez, parabéns para todos envolvidos no EATI, e muito obrigado por todos os elogios e recepções calorosas.<br/>
+Sério pessoal, foi surreal o tratamento que tivemos.<br/>
+Volto para Porto Alegre já com saudades, e com muita vontade de voltar para bela cidade de <em><strong>Fred West</strong></em>.</p>
+
+<p><a href="http://jaydson.org/wp-content/uploads/eati20121.jpg"><img src="http://jaydson.org/wp-content/uploads/eati20121.jpg" alt="" /></a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[W3C webbr 2102]]></title>
+    <link href="http://jaydson.org/w3c-webbr-2102/"/>
+    <updated>2012-10-20T15:59:28-03:00</updated>
+    <id>http://jaydson.org/w3c-webbr-2102</id>
+    <content type="html"><![CDATA[<p>Cá estou quase no fim do evento sentado em um puff, descansando após um ótimo almoço com uma galera muito massa.
+A <a href="http://conferenciaweb.w3c.br/">conferência da W3C </a>foi excelente. Muito networking, palestras muito boas, boa comida, e a sensação de que estamos fazendo parte de um futuro promissor.
+Fico muito honrado e feliz de ser uma das pessoas que esta fazendo a Web.
+Especificamente falando da <a href="http://www.braziljs.org/">Fundação BrazilJS</a>, também saio totalmente satisfeito. Tivemos um espaço na <em><strong>webbr</strong></em> para divulgar o nosso trabalho e o feedback foi incrivelmente bom.</p>
+
+<p><a href="http://twitter.com/bernarddeluna">Bernard</a>, <a href="http://twitter.com/felipenmoura">Felipe</a>, <a href="http://twitter.com/zenorocha">Zeno</a> e eu palestramos e apresentamos o que andamos fazendo, e todo o potencial da comunidade brasileira.
+Não por serem meus amigos, mas cada vez mais admiro estes caras que citei acima.
+O projeto que o Bernard e o Zeno desenvolveram é simplesmente genial: <a href="https://apps.facebook.com/super-trunfo/">https://apps.facebook.com/super-trunfo/ </a>
+A palestra/live-coding do Felipe foi muito boa, e creio que todos sairam sabendo como usar o <a href="https://developer.mozilla.org/en-US/docs/WebRTC/navigator.getUserMedia">getUserMedia();</a></p>
+
+<p>De quebra, ainda dei uma palestra sobre um projeto que iniciei junto com o Felipe, o <a href="https://github.com/jaydson/remote-slide">Remote Slide</a>.
+O Remote Slide é uma app feita em <a href="http://nodejs.org/">node</a> e <a href="http://socket.io">socketio</a>, que transforma o teu celular em um controle remoto para suas apresentações.
+Mas o Remote Slide é uma pequena parte de um projeto maior, que é o <a href="https://github.com/braziljs/PowerPolygon">Power Polygon</a>.
+O PPW (Power Polygon Web) é uma ferramenta para criar apresentações em HTML 5. Estamos na versão alpha, e com a ajuda da comunidade, em breve teremos um release estável.</p>
+
+<p>Bom, é  isso.
+Publiquei a apresentação aqui: <a href="http://jaydson.org/talks/remote-slide/">jaydson.org/talks/remote-slide/</a>
+E o código da apresentação no Github: <a href="https://github.com/jaydson/webbr2012-talk-remote-slide">https://github.com/jaydson/webbr2012-talk-remote-slide</a></p>
+
+<p>Cá estou quase no fim do evento sentado em um puff, descansando após um ótimo almoço com uma galera muito massa.
+A <a href="http://conferenciaweb.w3c.br/">conferência da W3C </a>foi excelente. Muito networking, palestras muito boas, boa comida, e a sensação de que estamos fazendo parte de um futuro promissor.
+Fico muito honrado e feliz de ser uma das pessoas que esta fazendo a Web.
+Especificamente falando da <a href="http://www.braziljs.org/">Fundação BrazilJS</a>, também saio totalmente satisfeito. Tivemos um espaço na <em><strong>webbr</strong></em> para divulgar o nosso trabalho e o feedback foi incrivelmente bom.</p>
+
+<p><a href="http://twitter.com/bernarddeluna">Bernard</a>, <a href="http://twitter.com/felipenmoura">Felipe</a>, <a href="http://twitter.com/zenorocha">Zeno</a> e eu palestramos e apresentamos o que andamos fazendo, e todo o potencial da comunidade brasileira.
+Não por serem meus amigos, mas cada vez mais admiro estes caras que citei acima.
+O projeto que o Bernard e o Zeno desenvolveram é simplesmente genial: <a href="https://apps.facebook.com/super-trunfo/">https://apps.facebook.com/super-trunfo/ </a>
+A palestra/live-coding do Felipe foi muito boa, e creio que todos sairam sabendo como usar o <a href="https://developer.mozilla.org/en-US/docs/WebRTC/navigator.getUserMedia">getUserMedia();</a></p>
+
+<p>De quebra, ainda dei uma palestra sobre um projeto que iniciei junto com o Felipe, o <a href="https://github.com/jaydson/remote-slide">Remote Slide</a>.
+O Remote Slide é uma app feita em <a href="http://nodejs.org/">node</a> e <a href="http://socket.io">socketio</a>, que transforma o teu celular em um controle remoto para suas apresentações.
+Mas o Remote Slide é uma pequena parte de um projeto maior, que é o <a href="https://github.com/braziljs/PowerPolygon">Power Polygon</a>.
+O PPW (Power Polygon Web) é uma ferramenta para criar apresentações em HTML 5. Estamos na versão alpha, e com a ajuda da comunidade, em breve teremos um release estável.</p>
+
+<p>Bom, é  isso.
+Publiquei a apresentação aqui: <a href="http://jaydson.org/talks/remote-slide/">jaydson.org/talks/remote-slide/</a>
+E o código da apresentação no Github: <a href="https://github.com/jaydson/webbr2012-talk-remote-slide">https://github.com/jaydson/webbr2012-talk-remote-slide</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Experimento CSS3 3D - The Wall Explosion]]></title>
+    <link href="http://jaydson.org/experimento-css3-3d-the-wall-explosion/"/>
+    <updated>2012-03-17T03:06:47-03:00</updated>
+    <id>http://jaydson.org/experimento-css3-3d-the-wall-explosion</id>
+    <content type="html"><![CDATA[<p>Depois de assistir pela terceira vez a <a href="http://jaydson.org/rsjs-animacoes-com-css3/">palestra sobre CSS3</a> do <a href="http://twitter.com/felipenmoura">Felipe N. Moura</a>, e ter agumas aulas do próprio, me empolguei com <a href="https://developer.mozilla.org/en/CSS/CSS3">CSS3</a>, principalmente com a possibilidade 3D.<br/>
+Coincidentemente, neste mês de Março, o <a href="https://developer.mozilla.org/pt-BR/demos/devderby">Mozilla Dev Derby</a> é sobre CSS3 3D.<br/>
+Já submeti 2 demos simples para a Mozilla, e agora fiz uma coisa um pouco mais complexa.<br/>
+Minha ideia foi criar um muro 3D, com tijolos 3D.<br/>
+É simples, cada tijolo do muro é um elemento 3D, e o conjunto de tijolos que formam o muro, também é 3D.<br/>
+Fiz um vídeo, onde fica mais fácil visualizar a proposta do experimento.</p>
+
+<p><div class="embed-video-container"><iframe src="http://www.youtube.com/embed/vUcof193BWc "></iframe></div></p>
+
+<p>No vídeo, usei o Chrome, pois a performance é um pouco melhor que no Firefox. Mas o experimento funciona em ambos, além do Safari.<br/>
+O código deste experimento, assim como os outros que fiz, está no GitHub:<br/>
+<a href="https://github.com/jaydson/wall-explosion-css3d">https://github.com/jaydson/wall-explosion-css3d</a></p>
+
+<p>Além disso, está publicado nos demos da Mozilla para o DevDerby:<br/>
+<a href="https://developer.mozilla.org/pt-BR/demos/detail/the-wall-explosion">https://developer.mozilla.org/pt-BR/demos/detail/the-wall-explosion</a></p>
+
+<p>Curtam lá!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Game Development in Javascript - Palestra Michal Budzynski no BrazilJS 2011]]></title>
+    <link href="http://jaydson.org/game-development-in-javascript-palestra-michal-budzynski-no-braziljs-2011/"/>
+    <updated>2012-03-08T23:15:32-03:00</updated>
+    <id>http://jaydson.org/game-development-in-javascript-palestra-michal-budzynski-no-braziljs-2011</id>
+    <content type="html"><![CDATA[<p>Demorou mais saiu mais um vídeo do <a href="http://braziljs.com.br">BrazilJS</a> 2011.<br/>
+Estou postando aqui porque esta palestra fechou o BrazilJS 2011 com chave de ouro, e muitos me perguntaram quando o vídeo estaria disponível.<br/>
+Bom, o BrazilJS 2012 está quase chegando, e muito provável que o Michal volte para palestrar, mas vale a pena conferir a de 2011.<br/>
+Até eu estou vendo novamente aqui.</p>
+
+<p><div class="embed-video-container"><iframe src="http://player.vimeo.com/video/37859715 "></iframe></div></p>
+]]></content>
+  </entry>
+  
+</feed>

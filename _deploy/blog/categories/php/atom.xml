@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: PHP | Jaydson Gomes]]></title>
+  <link href="http://jaydson.org/blog/categories/php/atom.xml" rel="self"/>
+  <link href="http://jaydson.org/"/>
+  <updated>2013-04-02T02:46:49-03:00</updated>
+  <id>http://jaydson.org/</id>
+  <author>
+    <name><![CDATA[Jaydson Gomes]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Kactoos Documentacao API ]]></title>
+    <link href="http://jaydson.org/kactoos-documentacao-api/"/>
+    <updated>2011-06-29T19:08:36-03:00</updated>
+    <id>http://jaydson.org/kactoos-documentacao-api</id>
+    <content type="html"><![CDATA[<p>Agora um video um pouco mais longo(6:33) sobre a documentação da <a href="http://api.kactoos.com/docs">API da Kactoos</a>.<br/>
+A API é relativamente simples de ser entendida, todos os métodos estão devidamente documentados e possuem exemplos de utilização.<br/>
+Mas sempre é bom ver alguem explicando o funcionamento, este é o objetivo dos videos ;)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Kactoos Introducao API ]]></title>
+    <link href="http://jaydson.org/kactoos-introducao-api/"/>
+    <updated>2011-06-29T18:59:36-03:00</updated>
+    <id>http://jaydson.org/kactoos-introducao-api</id>
+    <content type="html"><![CDATA[<p>Seguindo com o concurso e com a <a href="http://api.kactoos.com/docs">API da Kactoos</a> abaixo segue um video que fiz explicando como fazer o cadastro na <a href="http://kactoos.com">Kactoos</a> para criar suas Apps.<br/>
+O video é bem introdutorio, mas para quem esta começando é um bom pontapé inicial.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Kactoos Puzzle]]></title>
+    <link href="http://jaydson.org/kactoos-puzzle/"/>
+    <updated>2011-06-29T16:09:01-03:00</updated>
+    <id>http://jaydson.org/kactoos-puzzle</id>
+    <content type="html"><![CDATA[<p>Fiz um demo simples de App utiliazando a <a href="http://api.kactoos.com/docs">API da Kactoos</a>.
+Utilizei a <a href="http://jaydson.org/kactoos-api">library de abstração da API</a> que fiz para criar essa App.
+Basicamente o que fiz foi carregar os produtos da Kactoos na faixa de R$ 1000 a R$1500 e exibir as imagens destes produtos em forma de Puzzle.
+Para criar os Puzzles utilizei o plugin jQuery <a href="http://www.2meter3.de/jqPuzzle/">jqPuzzle</a>.
+Vejam o demo aqui: <a href="http://jaydson.org/code/kactoos/kactoos-puzzle/">http://jaydson.org/code/kactoos/kactoos-puzzle/</a></p>
+
+<p>O mini-projeto esta no Github: <a href="https://github.com/jaydson/Kactoos-Puzzle">https://github.com/jaydson/Kactoos-Puzzle</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[kactoos-api]]></title>
+    <link href="http://jaydson.org/kactoos-api/"/>
+    <updated>2011-06-29T14:50:58-03:00</updated>
+    <id>http://jaydson.org/kactoos-api</id>
+    <content type="html"><![CDATA[<p>Para facilitar ainda mais a vida de quem quer desenvolver Apps utilizando a <a href="http://api.kactoos.com/docs">API da Kactoos</a> criei uma biblioteca bem simples em PHP.
+A ideia é abstrair todos os métodos existentes da API para serem consumidos em poucas linhas de codigo PHP.
+A lista de métodos é essa:</p>
+
+<ol>
+<li><p>get-friends</p></li>
+<li><p>get-product-categories</p></li>
+<li><p>get-products-by-range-price</p></li>
+<li><p>get-products-country</p></li>
+<li><p>get-products-most-bought</p></li>
+<li><p>get-product-list</p></li>
+<li><p>get-my-favorites</p></li>
+<li><p>get-my-groups</p></li>
+<li><p>get-products-most-viewed</p></li>
+</ol>
+
+
+<p>O projeto está disponível no Github: <a href="https://github.com/jaydson/Kactoos-API">https://github.com/jaydson/Kactoos-API</a>
+A documentação oficial da API
+Abaixo coloco alguns exemplos:</p>
+
+<p>[php]
+$kapi = new KactoosAPI();
+$kapi->oauthConsumerKey('[SEU_CONSUMER_KEY_AQUI]')
+ ->country('br')
+ ->module('products')
+ ->format('xml');</p>
+
+<p>/<em>
+ * Sample code 1 - Get Product Categories with a specific name search
+</em>/
+$sample1 = $kapi->getProductCategories('categorie-name','android');
+print_r($sample1);</p>
+
+<p>/<em>
+ * Sample code 2 - Get Products by Range Price
+</em>/
+$sample2 = $kapi->getProductsByRange(900, 1100, 'best-price');
+print_r($sample2);</p>
+
+<p>/<em>
+ * Sample code 3 - Get Products most bought
+</em>/
+$sample3 = $kapi->getProductsMostBought(array('start' => 3,
+ 'orderby' => 'date',
+ 'limit'=>3));
+print_r($sample3);</p>
+
+<p>[/php]</p>
+
+<p>Qualquer duvida, comentem. Qualquer Bug, consertem. :P</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Concurso API Kactoos]]></title>
+    <link href="http://jaydson.org/concurso-api-kactoos/"/>
+    <updated>2011-06-29T14:00:44-03:00</updated>
+    <id>http://jaydson.org/concurso-api-kactoos</id>
+    <content type="html"><![CDATA[<p>Bom galera, como sabem, estou trabalhando desde Dezembro de 2010 na <a href="http://kactoos.com">Kactoos</a>, um projeto muito massa.
+Hoje (29/06) etamos tornando pública nossa <a href="http://api.kactoos.com/docs">API para desenvolvedores.</a>
+Juntamente com a API estamos lançando um concurso para Devs. Segue abaixo o anunciamento:</p>
+
+<p>Estamos lançando um  concurso para desenvolvedores onde  serão  premiados os cinco melhores programadores que criarem aplicativos  utilizando a API Kactoos.</p>
+
+<p>A API Kactoos possibilita que o desenvolvedor obtenha informações  relevantes e consiga integra-las em sua aplicação, ou seja, é possível  criar uma app utilizando a plataforma Kactoos como base.</p>
+
+<p>Faça seu registro na <a href="http://kactoos.com/">Kactoos</a> e obtenha suas chaves de acesso.</p>
+
+<p>Para maiores detalhes da API acesse <a href="http://api.kactoos.com/docs">aqui para ver a documentação</a>.</p>
+
+<p>Estaremos no stand da nossa parceira <a href="http://www.targettrust.com.br/web/">TargetTrust</a> fazendo várias ações durante o evento. Então passe por lá!</p>
+
+<p><strong>Regras para os participantes:</strong></p>
+
+<ul>
+<li><p>Os participantes poderão se inscrever do dia 29 junho até 17 de julho.</p></li>
+<li><p>Todos desenvolvedores devem obter suas KEYS (consumer_key e secret_key) realizando o registro na <a href="http://kactoos.com/">kactoos.com</a></p></li>
+<li><p>Os desenvolvedores deverão enviar suas aplicações no máximo até o dia 18/07/2011.
+O desenvolvedor deve enviar um e-mail para <a href="mailto:api@kactoos.com">api@kactoos.com</a> com as seguintes informações:</p></li>
+<li>Código fonte em anexo ou o link no <a href="http://github.com/">GitHub</a>.</li>
+<li>Instruções para instalar e executar a aplicação, o mais detalhado possível.</li>
+<li>Link para um screencast da aplicação no <a href="http://youtube.com/">youtube.com</a> com uma breve explicação sobre a aplicação e suas funcionalidades.</li>
+<li>Consumer_key.</li>
+<li>Nome completo e celular do desenvolvedor.</li>
+<li><p>Categoria da aplicação: Mobile, Buscas, Relatórios, Social, Categoria livre.</p>
+
+<ul>
+<li>A participação no concurso é individual</li>
+</ul>
+</li>
+</ul>
+
+
+<p><strong>Prêmios</strong>:</p>
+
+<ul>
+<li><p>Uma Google TV para o ganhador em cada uma das 5 categorias (Mobile, Buscas, Relatórios, Social,Livre)</p></li>
+<li><p>Um iPad 2 extra para a melhor aplicação entre os ganhadores</p></li>
+</ul>
+
+
+<p><strong>Critérios de premiação:</strong>
+- Inovação
+- Impacto
+- Utilidade ao usuário Kactoos</p>
+
+<p>A Kactoos anunciará os ganhadores das diferentes categorias no dia 25/07/2011 no blog: <a href="http://www.kactoos.com/blog/pt-br">www.kactoos.com/blog/pt-br</a></p>
+
+<p>Qualquer dúvida envie um e-mail para <a href="mailto:api@kactoos.com">api@kactoos.com</a></p>
+
+<p>Bom galera, ta tudo bem explicado, mas qualquer duvida podem entrar em contato comigo.
+Agora é baixar a cabeça programar.</p>
+
+<p>o/</p>
+]]></content>
+  </entry>
+  
+</feed>

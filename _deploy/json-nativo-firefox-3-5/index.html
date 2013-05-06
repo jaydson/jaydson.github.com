@@ -1,0 +1,567 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>JSON nativo Firefox 3.5 - Jaydson Gomes</title>
+  <meta name="author" content="Jaydson Gomes">
+
+
+<meta name="description" content="Jaydson Gomes - Um Blog sobre HTML5, JavaScript e outras coisas">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <meta property="og:title" content="Jaydson Gomes" />
+  <meta property="og:description" content="Jaydson Gomes - Um Blog sobre HTML5, JavaScript e outras coisas" />
+  <meta property="og:image" content="/images/jaydson-gomes-logo.png" />
+
+  
+  <link rel="canonical" href="http://jaydson.org/json-nativo-firefox-3-5/">
+  <link href="/favicon.png" rel="icon">
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+  <link href="/stylesheets/blog-header-experiments.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Jaydson Gomes" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1264252-8']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup id="header-stage">
+  <h1><a href="/">Jaydson Gomes</a></h1>
+  
+    <h2>HTML5 | JavaScript</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:jaydson.org" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h2 class="entry-title">JSON Nativo Firefox 3.5</h2>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-07-12T19:04:10-03:00" pubdate data-updated="true">Jul 12<span>th</span>, 2009</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Much news and useful things for us developers in Firefox 3.5.
+New Javascript engine, HTML 5 support among many others. <a href="https://developer.mozilla.org/En/Firefox_3.5_for_developers">Click here </a>in case you have not seen (you should if you are developer).</p>
+
+<p>Although the native JSON already be since version 3.1, now it become clear.</p>
+
+<p>Well, i will not comment on what is JSON, because I have done this in another post, so if you do not know what is JSON (should if you are a developer) see my <a href="http://jaydson.org/json/">old post</a>, or better yet, access the <a href="http://json.org/">official page</a>.</p>
+
+<p>Muita coisa nova e útil para nós desenvolvedores no Firefox 3.5.
+Novo motor Javascript, suporte HTML 5 entre várias outras. <a href="https://developer.mozilla.org/En/Firefox_3.5_for_developers">Acessem aqui </a>caso ainda não tenham visto(deveriam caso sejam desenvolvedores).</p>
+
+<p>Apesar de o JSON já ser nativo desde a versão 3.1, agora é que isso ficou bem evidenciado.</p>
+
+<p>Bom, não vou comentar o que é JSON, até porque já fiz isto em outro post, então caso não saiba o que é JSON(deveria se é desenvolvedor) veja o meu <a href="http://jaydson.org/json/">post antigo</a>, ou melhor ainda, acesse a <a href="http://json.org/">página oficial</a>.</p>
+
+<!-- more -->
+
+
+<p><strong>What is native JSON in the browser?</strong>
+Well, it means that the developer does not need to use any extra library to parse a JSON object, and also do not need to use the native Javascript  <a href="http://www.w3schools.com/jsref/jsref_eval.asp">eval()</a> function to do that, what is desirable for insecurity of this function.</p>
+
+<p><strong>Benefits</strong>:
+Several.
+Firstly the ability to parse a JSON without using eval (). That&#8217;s extremely useful because the eval () performs all the received string without doing any analysis, ie, if the string contains functions, these will be implemented.
+Therefore use native JSON is much safer, because functions are not supported. Is made an analyze in the string received and then the conversion is made only of the properties of the object.
+Another feature is this analysis in the string, if JSON is malformatted generate a parse error.
+And the benefit I like the most: <strong>Speed!</strong>
+Yes, JSON parse natively is very fast, even!
+How to prove it?
+Simple&#8230; Code!</p>
+
+<p>First I created a JSON file that I got the sample from the Mozilla blog where they explain about the use of the native JSON.
+This file is pretty large, has an array of <strong>2918 objects.
+</strong>I will not put the code here for obvious reasons &#8230; but follow the link for those who have curiosity to see him: <a href="http://graphs-stage.mozilla.org/api/test">http://graphs-stage.mozilla.org/api/test</a></p>
+
+<p>Now for the javascript code using jQuery to do an Ajax request and get the contents of this file.</p>
+
+<p>[javascript]</p>
+
+<p>var json = $.ajax({
+url: &#8220;test.json&#8221;,
+async: false
+}).responseText;</p>
+
+<p>[/javascript]</p>
+
+<p>This snippet of code shows that the variable json now has the contents of the file (the one with 2918 and large objects).</p>
+
+<p>Now we have the big String let transforms it into a JSON object.
+First using <strong>eval()</strong>:</p>
+
+<p>[javascript]</p>
+
+<p>var obj = eval(&#8216;(&#8217; + json + &#8216;)&#8217;);</p>
+
+<p>[/javascript]</p>
+
+<p>And now using native parser!!! O/</p>
+
+<p>[javascript]</p>
+
+<p>var obj = JSON.parse(json);</p>
+
+<p>[/javascript]</p>
+
+<p>For those who have used the JS library available in <a href="http://json.org">json.org</a> can see that the syntax is the same, the difference associated here is that we are working natively.
+Well, we know that native parser is more safe than eval(), but how to know about the speed?
+The <a href="http://getfirebug.com/">Firebug</a> hepl us.
+Lets see the code, first we measure the time in miliseconds with eval():</p>
+
+<p>[javascript]</p>
+
+<p>console.time(&#8220;Eval&#8221;);
+var obj = eval(&#8216;(&#8217; + json + &#8216;)&#8217;);
+console.timeEnd(&#8220;Eval&#8221;);</p>
+
+<p>[/javascript]</p>
+
+<p>For those who do not know (if you are a developer should), Firebug has an API that helps developers in several ways, discussed here is the function console.time (), which can measure time in milliseconds for a given instruction.</p>
+
+<p><strong>Result with eval():</strong> 4004ms to execute the parse.</p>
+
+<p>Now with native parser:</p>
+
+<p>[javascript]</p>
+
+<p>console.time(&#8220;JSON.parse&#8221;);
+var obj = JSON.parse(json);
+console.timeEnd(&#8220;JSON.parse&#8221;);</p>
+
+<p>[/javascript]</p>
+
+<p><strong>Result with JSON.parse:</strong> 50ms to execute the parse.</p>
+
+<p>Well, do not need comment, the results speak for themselves.</p>
+
+<p>You may be thinking now that all that is beautiful, but that only works in Firefox&#8230;   :(
+But as JSON is increasingly used throughout the world in various types of applications, not just Mozilla that implements this solution natively.
+Believe, the IE 8 too has native JSON support. See with your eyes: <a href="http://blogs.msdn.com/ie/archive/2008/09/10/native-json-in-ie8.aspx">http://blogs.msdn.com/ie/archive/2008/09/10/native-json-in-ie8.aspx</a></p>
+
+<p>But of course we can not count on the support of all browsers, and we can use any library that plays this role. I nominate that in site json.org: <a href="http://www.json.org/json2.js">http://www.json.org/json2.js</a></p>
+
+<p>In the examples above showed how to parse a string into a JSON object, but we can also do the reverse:</p>
+
+<p>[javascript]</p>
+
+<p>var Person = {};
+Person.name = &#8220;Jaydson&amp;quot&#8221;;
+Pessoa.idade = &#8220;25&#8221;;</p>
+
+<p>var jsonString = JSON.stringify(Person);
+console.log(jsonString);</p>
+
+<p>[/javascript]</p>
+
+<p>In the example we create a JavaScript object, and then turn it into a JSON:</p>
+
+<p>[javascript]</p>
+
+<p>{&#8220;name&#8221;:&#8221;Jaydson&#8221;,&#8221;idade&#8221;:&#8221;25&#8221;}</p>
+
+<p>[/javascript]</p>
+
+<p>References:
+<a href="http://blog.mozilla.com/webdev/2009/02/12/native-json-in-firefox-31/">http://blog.mozilla.com/webdev/2009/02/12/native-json-in-firefox-31/</a>
+<a href="https://developer.mozilla.org/en/Using_JSON_in_Firefox">https://developer.mozilla.org/en/Using_JSON_in_Firefox</a>
+<a href="http://www.json.org/">http://www.json.org/</a>
+<a href="http://blogs.msdn.com/ie/archive/2008/09/10/native-json-in-ie8.aspx">http://blogs.msdn.com/ie/archive/2008/09/10/native-json-in-ie8.aspx</a>
+<a href="http://starkravingfinkle.org/blog/2008/02/extension-developers-native-json-parsing/">http://starkravingfinkle.org/blog/2008/02/extension-developers-native-json-parsing/</a></p>
+
+<p><strong>O que significa JSON nativo no browser?</strong>
+Bom, isso significa que o desenvolvedor não precisará usar nenhuma biblioteca extra para fazer o parse de um objeto JSON, e também não será necessário usar a função <a href="http://www.w3schools.com/jsref/jsref_eval.asp">eval()</a> nativa no Javascript para fazer isso, o que é bem aconselhável pela insegurança desta função.</p>
+
+<p><strong>Benefícios</strong>:
+Vários.
+Em primeiro lugar a possibilidade de parsear um objeto JSON sem o uso do eval(). Isso é extramamente útil pois o eval() executa toda a string recebida sem fazer nenhuma análise, ou seja, se a string contiver funções, estas serão executadas.
+Por esse motivo usar JSON nativo é muito mais seguro, pois não são suportadas funções. É feita uma análise na string recebida e então a conversão é feita apenas das propriedades do objeto.
+Outra funcionalidade é esta análise feita na string, se o JSON estiver mal formatado será gerado um parse error.
+E o benefício que mais me agrada: <strong>Rapidez</strong>!
+Sim, o parse de um objeto JSON nativamente é muito rápido, mesmo!
+Como provar isso?
+Simples&#8230; Código!</p>
+
+<p>Primeiro criei um arquivo JSON que peguei de exemplo no blog da <a href="http://blog.mozilla.com/webdev/2009/02/12/native-json-in-firefox-31/">Mozilla</a> onde eles explicam sobre o uso do JSON nativo.
+Este arquivo é consideravelmente grande, possui um array com <strong>2918 objetos.
+</strong>Não vou colocar o código aqui por razões óbvias&#8230;mas segue o link pra quem tiver curiosidade de ve-lo: <a href="http://graphs-stage.mozilla.org/api/test">http://graphs-stage.mozilla.org/api/test</a></p>
+
+<p>Agora vamos ao código javascript usando jQuery para fazer uma requisição Ajax e buscar o conteúdo desse arquivo.</p>
+
+<p>[javascript]</p>
+
+<p>var json = $.ajax({
+url: &#8220;test.json&#8221;,
+async: false
+}).responseText;</p>
+
+<p>[/javascript]</p>
+
+<p>Este pequeno trecho do código mostra que a variável <strong>json </strong>agora possui o conteudo do arquivo(aquele bem grande com 2918 objetos).</p>
+
+<p>Agora que temos uma &#8220;Stringona&#8221; vamos tranforma-la em um objeto JSON.
+Primeiro usando o <strong>eval()</strong>:</p>
+
+<p>[javascript]</p>
+
+<p>var obj = eval(&#8216;(&#8217; + json + &#8216;)&#8217;);</p>
+
+<p>[/javascript]</p>
+
+<p>E agora usando o parser nativo !!! O/</p>
+
+<p>[javascript]</p>
+
+<p>var obj = JSON.parse(json);</p>
+
+<p>[/javascript]</p>
+
+<p>Para quem já usou  a biblioteca JS disponível no <a href="http://json.org">json.org</a> pode notar que a sintaxe é a mesma, a direrença aqui é que estamos trabalhando nativamente.
+Bom, sabemos que o parser nativo é mais seguro que o eval(), mas como saber se é mais rápido?
+O <a href="http://getfirebug.com/">Firebug</a> nos ajuda a medir isso.
+Vamos ver o código, primeiro medindo o tempo em milisegundos com o eval():</p>
+
+<p>[javascript]</p>
+
+<p>console.time(&#8220;Eval&#8221;);
+var obj = eval(&#8216;(&#8217; + json + &#8216;)&#8217;);
+console.timeEnd(&#8220;Eval&#8221;);</p>
+
+<p>[/javascript]</p>
+
+<p>Para quem não sabe (se é desenvolvedor deveria ), o Firebug possui uma API que ajuda os desenolvedores de várias maneiras, a abordada aqui  é a função console.time(), que consegue medir o tempo em milisegundos de uma determinada instrução.</p>
+
+<p><strong>Resultado com eval():</strong> 4004ms para executar o parse.</p>
+
+<p>Agora com parser nativo:</p>
+
+<p>[javascript]</p>
+
+<p>console.time(&#8220;JSON.parse&#8221;);
+var obj = JSON.parse(json);
+console.timeEnd(&#8220;JSON.parse&#8221;);</p>
+
+<p>[/javascript]</p>
+
+<p><strong>Resultado com JSON.parse:</strong> 50ms para executar o parse.</p>
+
+<p>Bom, nem preciso comentar, os resultados falam por si só.</p>
+
+<p>Voces devem estar pensando agora que tudo isso é lindo, mas que  só funciona no Firefox&#8230;   :(
+Mas como JSON é cada vez mais usado por todo o mundo em diversos tipos de aplicações, não é apenas a Mozilla que implementa esta solução nativa.
+Acreditem, o IE 8 também possui suporte nativo a JSON. Veja com seus próprios olhos: <a href="http://blogs.msdn.com/ie/archive/2008/09/10/native-json-in-ie8.aspx">http://blogs.msdn.com/ie/archive/2008/09/10/native-json-in-ie8.aspx</a></p>
+
+<p>Mas claro que ainda não podemos contar com o suporte de todos os Browsers, e para isso podemos usar alguma biblioteca que desempenhe este papel. Eu indico a própria do site json.org: <a href="http://www.json.org/json2.js">http://www.json.org/json2.js</a></p>
+
+<p>Nos exemplos acima mostrei como parsear uma string em um objeto JSON, mas podemos fazer o inverso também:</p>
+
+<p>[javascript]</p>
+
+<p>var Pessoa = {};
+Pessoa.nome = &#8220;Joaozinho&#8221;;
+Pessoa.idade = &#8220;30&#8221;;</p>
+
+<p>var jsonString = JSON.stringify(Pessoa);
+console.log(jsonString);</p>
+
+<p>[/javascript]</p>
+
+<p>No exemplo criamos um objeto Javascript, e em seguida o transformamos em um JSON:</p>
+
+<p>[javascript]</p>
+
+<p>{&#8220;nome&#8221;:&#8221;Joaozinho&#8221;,&#8221;idade&#8221;:&#8221;30&#8221;}</p>
+
+<p>[/javascript]</p>
+
+<p>Buenas pessoal, por hora é isso.</p>
+
+<p>Referências:
+<a href="http://blog.mozilla.com/webdev/2009/02/12/native-json-in-firefox-31/">http://blog.mozilla.com/webdev/2009/02/12/native-json-in-firefox-31/</a>
+<a href="https://developer.mozilla.org/en/Using_JSON_in_Firefox">https://developer.mozilla.org/en/Using_JSON_in_Firefox</a>
+<a href="http://www.json.org/">http://www.json.org/</a>
+<a href="http://blogs.msdn.com/ie/archive/2008/09/10/native-json-in-ie8.aspx">http://blogs.msdn.com/ie/archive/2008/09/10/native-json-in-ie8.aspx</a>
+<a href="http://starkravingfinkle.org/blog/2008/02/extension-developers-native-json-parsing/">http://starkravingfinkle.org/blog/2008/02/extension-developers-native-json-parsing/
+</a></p>
+
+<p>Sintam-se a vontade para comentar, criticar, perguntar, etc.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Jaydson Gomes</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-07-12T19:04:10-03:00" pubdate data-updated="true">Jul 12<span>th</span>, 2009</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/firefox/'>Firefox</a>, <a class='category' href='/blog/categories/json/'>JSON</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jaydson.org/json-nativo-firefox-3-5/" data-via="" data-counturl="http://jaydson.org/json-nativo-firefox-3-5/" >Tweet</a>
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/js-conf-2009/" title="Previous Post: Javascript Conference 2009">&laquo; Javascript Conference 2009</a>
+      
+      
+        <a class="basic-alignment right" href="/avaliacao-firefox-3-5/" title="Next Post: Avaliação Firefox 3.5">Avaliação Firefox 3.5 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    
+<section>
+	<span class="avatar">
+		<img src="http://www.gravatar.com/avatar/572696200604e59baa59ee90d61f7d02?s=180" alt="Jaydson Gomes " title="Jaydson Gomes" />
+	</span>
+</section>
+<section class="author">	
+	<strong>Entusiasta JavaScript && FrontEnd Engineer no Terra && Curador do BrazilJS</strong>
+</section><section>
+  <h1>Posts Recentes</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/cultura-maldita-no-desenvolvimento-de-software/">Cultura maldita no desenvolvimento de software</a>
+      </li>
+    
+      <li class="post">
+        <a href="/rsjs-2013-resumo/">RSJS 2013 - Resumo</a>
+      </li>
+    
+      <li class="post">
+        <a href="/como-foi-a-braziljs-conf-2012/">Como foi a BrazilJS Conf 2012</a>
+      </li>
+    
+      <li class="post">
+        <a href="/riojs-2013/">RioJS 2013</a>
+      </li>
+    
+      <li class="post">
+        <a href="/rsjs-2013/">RSJS 2013</a>
+      </li>
+    
+      <li class="post">
+        <a href="/experimentos-html5-no-header-do-blog/">Experimentos HTML5 no header do Blog</a>
+      </li>
+    
+      <li class="post">
+        <a href="/migrando-para-octopress/">Migrando para o Octopress</a>
+      </li>
+    
+      <li class="post">
+        <a href="/analytics-do-blog-em-2012/">Analytics do Blog em 2012</a>
+      </li>
+    
+      <li class="post">
+        <a href="/retrospectiva-2012/">Retrospectiva 2012</a>
+      </li>
+    
+      <li class="post">
+        <a href="/eati-2012-em-frederico-westphalen/">EATI 2012 em Frederico Westphalen</a>
+      </li>
+    
+      <li class="post">
+        <a href="/w3c-webbr-2102/">W3C webbr 2102</a>
+      </li>
+    
+      <li class="post">
+        <a href="/javascript-o-guia-definitivo/">JavaScript: O Guia definitivo</a>
+      </li>
+    
+      <li class="post">
+        <a href="/braziljs-entrevista-na-tv/">BrazilJS - Entrevista na TV</a>
+      </li>
+    
+      <li class="post">
+        <a href="/braziljs-2012-foto-epica-com-o-brendan/">BrazilJS 2012 - Foto épica com o Brendan Eich</a>
+      </li>
+    
+      <li class="post">
+        <a href="/fundacao-braziljs/">Fundação BrazilJS</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+	<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Jaydson's Blog</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://jaydson.org" property="cc:attributionName" rel="cc:attributionURL">Jaydson Gomes</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>
+</p>
+<p>
+	<span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+<script type="text/javascript" src="/javascripts/jaydson.js"></script>
+<script type="text/javascript" src="/javascripts/blog-header-experiments.js"></script>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'jaydson';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://jaydson.org/json-nativo-firefox-3-5/';
+        var disqus_url = 'http://jaydson.org/json-nativo-firefox-3-5/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

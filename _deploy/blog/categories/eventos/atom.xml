@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Eventos | Jaydson Gomes]]></title>
+  <link href="http://jaydson.org/blog/categories/eventos/atom.xml" rel="self"/>
+  <link href="http://jaydson.org/"/>
+  <updated>2013-04-02T02:46:49-03:00</updated>
+  <id>http://jaydson.org/</id>
+  <author>
+    <name><![CDATA[Jaydson Gomes]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[RSJS 2013 - Resumo]]></title>
+    <link href="http://jaydson.org/rsjs-2013-resumo/"/>
+    <updated>2013-03-25T23:44:00-03:00</updated>
+    <id>http://jaydson.org/rsjs-2013-resumo</id>
+    <content type="html"><![CDATA[<p>E mais um evento regional de front-end foi realizado no Brasil.<br/>
+Desta vez foi o <a href="http://rsjs.org">RSJS</a>, evento da qual sou orgazidor, juntamente com o <a href="http://twitter.com/felipenmoura">Felipe Moura</a>.<br/>
+Neste ano tivemos a participação do <a href="http://twitter.com/jcemer">Jean Carlo Emer</a>, que nos deu uma boa ajuda, e ainda desenvolveu o site, que ficou muito legal.</p>
+
+<p>Dobramos o número de participantes neste ano. Foram 200 pessoas presentes no evento.<br/>
+Um número bem considerável, o que mostra que a comunidade e o mercado estão mudando.<br/>
+O desenvolvimento front-end levado a sério, hoje é uma realidade.</p>
+
+<!--more-->
+
+
+<h3>Palestras</h3>
+
+<p>O feedback em relação as palestras foi quase 100% positivo.<br/>
+As palestras deste ano realmente foram muito boas.<br/>
+O conteúdo foi bem distribuído, com temas que agradaram tanto desenvolvedores iniciantes, quanto mais experientes.<br/>
+Os assuntos das palestras englobaram Testes, nodeJS, Open-Source, Backbone, jQuery Mobile, JS e Arduino, Web Audio, Ferramentas, entre vários outros.</p>
+
+<h3>Desenvolvimento orientado a testes com Jasmine</h3>
+
+<p>A palestra do  <a href="https://twitter.com/rafael_spsl">Rafael Specht</a> foi excelente, e muito bem avaliada.<br/>
+Ele abordou um tema difícil: Testes.<br/>
+Já assisti muita palestra sobre testes com JavaScript, e a do Rafael esta na minha lista de melhores.<br/>
+Ele deu vários exemplos práticos, e evangelizou de forma sábia o desenvolvimento orientado a testes.<br/>
+Além disso, deu várias dicas de uso do Jasmine.<br/>
+Aqui estão os slides da palestra: <a href="http://dailydevtips.com/rsjs">http://dailydevtips.com/rsjs</a></p>
+
+<h3>Dissecando sua aplicação com Chrome Dev Tools</h3>
+
+<p>O <a href="http://caiogondim.com/">Caio Gondin</a> teve um pequeno problema com o computador dele no início, mas depois mandou ver na palestra.<br/>
+Conversando com ele, chegamos a conclusão de que o nome da palestra, talvez não reflita exatamente o que ela é.<br/>
+A palestra mostra as ferramentas do Chrome, mas ela é muito mais do que isso.<br/>
+Vários conceitos de debug, que podem ser usados com qualquer outra ferramenta foram apresentados.<br/>
+E realmente, por mais experiente que a pessoa seja com ferramentas, com certeza alguma coisa a pessoa absorveu da palestra do Caio.</p>
+
+<h3>A interface web</h3>
+
+<p>O <a href="http://felipenmoura.org/">Felipe N. Moura</a> fez um apanhado de algumas das tecnologias web emergentes, e mostrou como interfaces são importantes.<br/>
+A palestra ainda abordou acessibilidade, e muito HTML5 e CSS3.<br/>
+Além disso, ele mostrou várias técnicas utilizadas para a construção de interfaces cada vez mais ricas e amigáveis.<br/>
+Link para os slides: <a href="http://felipenmoura.org/talks/web-interface/">http://felipenmoura.org/talks/web-interface</a></p>
+
+<h3>jQuery Mobile</h3>
+
+<p>A palestra do <a href="https://twitter.com/zigolis">Gabriel Zigolis</a> abordou um tema mais light, o jQuery Mobile.<br/>
+Este tema agradou bastante, e obteve durante o evento vários feedbacks legais.<br/>
+O Gabriel mostrou a fundo como este framework funciona, com exemplos bem legais aplicados no site do RSJS.<br/>
+Link dos slides: <a href="http://www.zigolis.com.br/rsjs/#/">http://www.zigolis.com.br/rsjs/#/</a></p>
+
+<h3>O Javascript dos novos tempos</h3>
+
+<p>A palestra do <a href="http://twitter.com/jcemer">Jean Carlo Emer</a> foi uma das mais elogiadas do evento.<br/>
+Ele falou sobre padrões de desenvolvimento JavaScript, com um exemplo real aplicado na biblioteca <a href="https://github.com/ryejs/rye">Rye</a>, desenvolvida por ele e pelo Ricardo Tomasi.<br/>
+Link para os slides: <a href="https://speakerdeck.com/jcemer/javascript-dos-novos-tempos">https://speakerdeck.com/jcemer/javascript-dos-novos-tempos</a></p>
+
+<h3>Construindo aplicações web com Backbone e node.js</h3>
+
+<p>O <a href="http://ricardo.cc/">Ricardo Tomasi</a> é um dos melhores programadores JavaScript que conheço.<br/>
+A palestra dele foi a mais pesada do evento, com um conteúdo bem forte.<br/>
+Quem prestou atenção, com certeza saiu com a cabeça explodindo de ideias.<br/>
+Ele falou sobre o padrão MV*, Backbone, Node e Underscore. Excelente.</p>
+
+<h3>JavaScript everywhere</h3>
+
+<p>Repeti a palestra que dei no <a href="http://riojs.org">RioJS</a>.<br/>
+Contei um pouco da história do JavaScript e do HTML5.<br/>
+Mostrei como o JavaScript está em toda a parte, e ainda fiz luzes piscarem com JavaScript e Arduino.<br/>
+Link para os slides:  <a href="http://jaydson.org/talks/js-everywhere-rsjs-2013/">http://jaydson.org/talks/js-everywhere-rsjs-2013/</a></p>
+
+<h3>Web Audio Hero</h3>
+
+<p>Pra fechar o evento, <a href="http://almirfilho.com/">Almir Filho</a>.<br/>
+A palestra com um conteúdo extremamente novo chamou a atenção de todos.<br/>
+Muitos sairam desta palestra motivados e loucos para fazerem seus próprios experimentos com Web Audio.<br/>
+Ele mostrou como a API é rica, e mostrou vários demos bem interessantes.<br/>
+Fiz até uma participação especial tocando guitarra \,,/ com um pedal implementado em JavaScript. Demais!<br/>
+Link para os slides: <a href="https://speakerdeck.com/almirfilho/web-audio-hero">https://speakerdeck.com/almirfilho/web-audio-hero</a></p>
+
+<p>Bom pessoal, é isso.<br/>
+Para quem foi, obrigado pela presença, e para quem não foi, espero voces em 2014.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Como foi a BrazilJS Conf 2012]]></title>
+    <link href="http://jaydson.org/como-foi-a-braziljs-conf-2012/"/>
+    <updated>2013-03-19T22:55:00-03:00</updated>
+    <id>http://jaydson.org/como-foi-a-braziljs-conf-2012</id>
+    <content type="html"><![CDATA[<p>Depois de vários meses, conseguimos finalmente ter acesso a um vídeo muito legal da BrazilJS Conf 2012.<br/>
+Este vídeo possui depoimentos dos palestrantes, cenas de palestras, recado dos organizadores(eu e o Felipe Moura), e um compilado com takes feitos durante os 2 dias de evento.<br/>
+Vale a pena lembrar de como foi uma das maiores conferências JavaScript do mundo!<br/>
+E aguardem, que este ano tem mais!</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/mHtMWaae9xY?list=UUnLdHOuue5i1O7TsH6oh07w" frameborder="0" allowfullscreen></iframe>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[RioJS 2013]]></title>
+    <link href="http://jaydson.org/riojs-2013/"/>
+    <updated>2013-03-13T01:21:00-03:00</updated>
+    <id>http://jaydson.org/riojs-2013</id>
+    <content type="html"><![CDATA[<p><a href="http://riojs.org"><img src="/images/riojs.png" alt="RIOJS logo" /></a></p>
+
+<p>Dia 09 de Março rolou o <a href="http://riojs.org/">RioJS</a>, a conferência carioca de JavaScript.<br/>
+Palestrei por lá, falando obviamente de JavaScript.<br/>
+Minha palestra abordou tópicos emergentes, como robôs, server, entre outras coisas.<br/>
+Além disso contei um pouco de história por lá :)<br/>
+Ainda não publiquei o material da palestra, pois em alguns dias darei a mesma aqui no <a href="http://rsjs.org">RSJS</a>.<br/>
+Portanto, se tu esteve por lá, e quer o material, fique ligado que em breve postarei por aqui.</p>
+
+<!--more-->
+
+
+<h2>O evento</h2>
+
+<p>Não sou daqueles palestrantes estrelas que vão ao evento apenas para palestrar e nada mais.<br/>
+Gosto de trocar ideia com todos, e também curto assistir as palestras.<br/>
+Isso me enriquece ainda mais.<br/>
+Fica a dica aos palestrantes estrelas. Assistam as palestras dos outros. Só assim voces vão conseguir melhorar as suas palestras, e também vão adquirir mais conhecimento :)</p>
+
+<p>O RioJS foi dividido em 2 trilhas. Só pude acompanhar a do auditório do qual eu palestrei.
+A primeira palestra que consegui assistir alguns pedaços foi a do <a href="http://www.twitter.com/caio_gondim">Caio Gondim</a>.<br/>
+Ele falou sobre Chrome Dev tools.<br/>
+Foram várias dicas de como usar o console do Chrome de maneira avançada.<br/>
+Não consegui assistir toda, pois estava preparando os últimos detalhes da minha palestra que seria logo após a dele.<br/>
+Mas... O Caio vai palestrar aqui no RSJS, então poderei conferir novamente :)<br/>
+<a href="http://www.twitter.com/caio_gondim"><img src="/images/caio.jpg" alt="Caio Gondim" /></a></p>
+
+<p>Logo após, foi a minha vez.<br/>
+Montei uma palestra nova para o RioJS, sobre algo que venho querendo falar faz tempo.<br/>
+Aparentemente, todos curtiram.<br/>
+Tentarei repetir a dose no RSJS.<br/>
+<a href="http://www.twitter.com/jaydson"><img src="/images/jaydson.jpg" alt="Jaydson Gomes" /></a></p>
+
+<p>Depois veio a excelente palestra do grande amigo <a href="http://www.twitter.com/leobalter">Leo Balter</a>.<br/>
+Sou suspeito para falar, pois sempre curto muito as palestras do Leo.<br/>
+Ele falou sobre desenvolvimento JavaScript open-source, mostrou como publicar plugins jQuery de uma forma ridiculamente fácil, usando o <a href="http://gruntjs.com/">Grunt</a>. Além disso deu uma boa explicação sobre código de terceiros.<br/>
+Ah, não posso deixar de falar do demo que ele fez, o Harlem Shake no site do evento. Foi hilário.<br/>
+<a href="http://www.twitter.com/leobalter"><img src="/images/leo.jpg" alt="Leo Balter" /></a></p>
+
+<p>Pausa para o almoço!</p>
+
+<p>Cheguei atrasado e não consegui ver a palestra do <a href="http://www.twitter.com/rafael_mws">Rafael Martins</a> :(</p>
+
+<p>Em 1 ano, eu devo ter assistido mais palestras do Zeno, do que as minhas próprias.<br/>
+Sim, o nosso Paul Irish tropical estava lá também.<br/>
+Como de costume, uma excelente palestra.<br/>
+O Zeno falou de performance, um assunto que gosto muito.<br/>
+Além disso, ele aproveitou para lançar o excelente <a href="http://browserdiet.com/">BrowserDiet</a>, projeto da qual tenho orgulho de ter sido convidado a participar.<br/>
+Nem preciso comentar sobre o sucesso do projeto. Olhem no <a href="https://github.com/zenorocha/browser-diet">github</a> ;)
+<a href="http://www.twitter.com/zenorocha"><img src="/images/zeno.jpg" alt="Zeno Rocha" /></a></p>
+
+<p>Não quero ser injusto com ninguém. Todas as palestras foram excelentes.<br/>
+Mas a do amigo Alexandre Gaigalas, vulgo <a href="http://www.twitter.com/alganet">Alganet</a>, foi uma das melhores do evento.<br/>
+Já conheço o Alexandre há um bom tempo, e admiro o trabalho do cara.<br/>
+Foi a primeira vez que tive a oportunidade de vê-lo falando sobre JavaScript, aliás, esta é a segunda palestra dele sobre JS.<br/>
+O Alganet explicou como surgem patterns de maneira muito didática, com exemplos reais do nosso dia-a-dia.<br/>
+Além disso, para ficar mais claro, ele criou um framework baseado em novos patterns que ele mesmo inventou.<br/>
+Congratz Alganet!<br/>
+<a href="http://www.twitter.com/alganet"><img src="/images/alganet.jpg" alt="Alexandre Gaigalas" /></a></p>
+
+<p>A última palestra do evento(no auditório) foi a do amigo showman, <a href="http://www.twitter.com/bernarddeluna">Bernard de Luna</a>.<br/>
+Todos já conhecem o Bernard, e sabem que as palestras do cara são sempre, no mínimo, divertidas.<br/>
+O cara consegue fechar um evento de JavaScript, sem falar de JavaScript. Aliás, sem falar de tecnologia alguma.<br/>
+O Bernard deu uma aula sobre como palestrar. Fez a galera mais nova perder o medo e subir no palco.<br/>
+Com certeza, novos palestrantes surgiram depois da palestra. Foi bem legal.<br/>
+<a href="http://www.twitter.com/bernarddeluna"><img src="/images/bernard.jpg" alt="Bernard de Luna" /></a></p>
+
+<p>Gostaria de ter visto todas as outras palestras da outra trilha, mas desta vez não rolou. Espero ver cada um dos outros palestrantes em outros eventos.</p>
+
+<p>Pra fechar, um vídeo bem legal que o pessoal do Videolog fez do evento:</p>
+
+<iframe width="560" height="315" src="http://embed.videolog.tv/v/index.php?id_video=948533&related=&hd=&color1=&color2=&color3=&slideshow=&config_url=&" scrolling="no" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+
+<p><a href="http://www.videolog.tv/video.php?id=948533" target="_blank">Rio JS</a> por <a href="http://www.videolog.tv/Raschella" target="_blank">Raschella</a>  no <a href="http://www.videolog.tv" target="_blank">Videolog.tv</a>.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[RSJS 2013]]></title>
+    <link href="http://jaydson.org/rsjs-2013/"/>
+    <updated>2013-02-23T02:00:00-03:00</updated>
+    <id>http://jaydson.org/rsjs-2013</id>
+    <content type="html"><![CDATA[<p><a href="http://rsjs.org"><img src="http://jaydson.org/images/logo-rsjs-2013.png" alt="RSJS logo" /></a></p>
+
+<p>Está chegando a segunda edição do evento mais gaudério de JavaScript tchê!<br/>
+Sim, a conferência gaúcha de JavaScript acontecerá no dia 23 de Março de 2013.<br/>
+O <a href="http://rsjs.org">novo site</a> já está no ar, e está muito tri.<br/>
+Palmas para o <a href="http://twitter.com/jcemer">Jean</a>, e para toda equipe da <a href="http://gri.fo/">Grifo</a>!<br/>
+A Grifo está novamente conosco este ano dando todo o apoio necessário para que o evento seja incrível.</p>
+
+<p>Quem é front-end developer, e mora nas redondezas, não pode se dar ao luxo de perder o evento.<br/>
+Além das palestras, que em breve serão anunciadas, é uma oportunidade única de fazer networking com uma galera 100% focada em desenvolvimento web.</p>
+
+<p>Fiquem ligados que em breve as inscrições estarão abertas.<br/>
+Neste ano abrimos submissão de algumas palestras pelo <a href="http://call4paperz.com/events/rsjs-2013">Call4Paperz</a>, então, se tu tem uma ideia legal de palestra, submeta!</p>
+
+<p>Mais uma vez agradeço ao <a href="http://twitter.com/ricardobeat">Ricardo</a>, pelo logo genial.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[EATI 2012 em Frederico Westphalen]]></title>
+    <link href="http://jaydson.org/eati-2012-em-frederico-westphalen/"/>
+    <updated>2012-11-09T19:36:06-02:00</updated>
+    <id>http://jaydson.org/eati-2012-em-frederico-westphalen</id>
+    <content type="html"><![CDATA[<p>Estou aqui no Hotel na querida cidade <a href="http://pt.wikipedia.org/wiki/Frederico_Westphalen">Frederico Westphalen</a>.<br/>
+Vim para participar do <a href="http://www.cafw.ufsm.br/eati/2012/">EATI</a>, o Encontro Anual de Tecnologia da Informação.<br/>
+Assim como no <a href="http://jaydson.org/w3c-webbr-2102/">Webbr da W3C</a>,  o BrazilJS teve um espaço para palestras.</p>
+
+<p><a href="http://twitter.com/felipenmoura">Felipe Moura,</a> <a href="http://twitter.com/zenorocha">Zeno Rocha</a> e eu, comandamos as palestras, e tentamos passar o máximo de informção possível para o pessoal.<br/>
+Foram várias palestras, e muito networking com a galera.<br/>
+Acho que nunca fui tão bem tratado em um evento como aqui em <em><strong>Fred West</strong></em>. Desde o primeiro contato com o Joel, até o último minuto na festa de encerramento, foi esta a minha sensação.</p>
+
+<!--more-->
+
+
+<p>Cada uma das pessoas que vinha falar comigo, fazia com que eu me sentisse em casa, e sentisse que tudo que estamos fazendo realmente vale a pena.<br/>
+Ver o nosso trabalho ser conhecido e ser admirado pelo pessoal, é muito gratificante.<br/>
+O evento foi impecável e muito bem organizado. Eu realemente fiquei surpreso em ver um evento deste porte no interior do RS.<br/>
+A organização está de parabéns.</p>
+
+<p>Dei 2 palestras no evento, uma de performance que já tinha dado no RSJS e no PernambucoJS e uma nova, que fiz especialmente para o EATI, sobre uma implementação de controle remoto com nodeJS.<br/>
+Eu já tinha apresentado o projeto no Webbr, mas resolvi fazer uma palestra nova para o EATI.<br/>
+O pessoal curtiu bastante ambas palestras :)</p>
+
+<p>Link das 2 palestras:<br/>
+<a href="http://jaydson.org/talks/remote-control-eati-2012">http://jaydson.org/talks/remote-control-eati-2012</a><br/>
+<a href="http://jaydson.org/wp-content/uploads/Screenshot-from-2012-11-09-162847.png"><img src="http://jaydson.org/wp-content/uploads/Screenshot-from-2012-11-09-162847.png" alt="" /></a><br/>
+<a href="http://jaydson.org/talks/x-web-performance">http://jaydson.org/talks/x-web-performance</a><br/>
+<a href="http://jaydson.org/wp-content/uploads/Screenshot-from-2012-11-09-162856.png"><img src="http://jaydson.org/wp-content/uploads/Screenshot-from-2012-11-09-162856.png" alt="" /></a></p>
+
+<p>Mais uma vez, parabéns para todos envolvidos no EATI, e muito obrigado por todos os elogios e recepções calorosas.<br/>
+Sério pessoal, foi surreal o tratamento que tivemos.<br/>
+Volto para Porto Alegre já com saudades, e com muita vontade de voltar para bela cidade de <em><strong>Fred West</strong></em>.</p>
+
+<p><a href="http://jaydson.org/wp-content/uploads/eati20121.jpg"><img src="http://jaydson.org/wp-content/uploads/eati20121.jpg" alt="" /></a></p>
+]]></content>
+  </entry>
+  
+</feed>

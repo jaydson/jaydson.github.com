@@ -1,0 +1,619 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Jaydson Gomes</title>
+  <meta name="author" content="Jaydson Gomes">
+
+
+<meta name="description" content="Jaydson Gomes - Um Blog sobre HTML5, JavaScript e outras coisas">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <meta property="og:title" content="Jaydson Gomes" />
+  <meta property="og:description" content="Jaydson Gomes - Um Blog sobre HTML5, JavaScript e outras coisas" />
+  <meta property="og:image" content="/images/jaydson-gomes-logo.png" />
+
+  
+  <link rel="canonical" href="http://jaydson.org/blog/page/23/">
+  <link href="/favicon.png" rel="icon">
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+  <link href="/stylesheets/blog-header-experiments.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Jaydson Gomes" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1264252-8']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup id="header-stage">
+  <h1><a href="/">Jaydson Gomes</a></h1>
+  
+    <h2>HTML5 | JavaScript</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:jaydson.org" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h2 class="entry-title"><a href="/autocomplete-jquery-plugin/">Autocomplete - Jquery Plugin</a></h2>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-05-09T15:35:26-03:00" pubdate data-updated="true">May 9<span>th</span>, 2009</time>
+        
+         | <a href="/autocomplete-jquery-plugin/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Um recurso muito bom que podemos aplicar em nossos Sistemas é o Autocomplete.
+Isso ajuda muito o usuário na hora de selecionar uma opção. Além de ser visualmente mais agradavél, este recurso faz com que apenas apareçam as opções de acordo com o que é digitado no campo.
+Imaginei a situação onde o usuário precisa selecionar um determinado valor em um <selectbox>. O porém é que esse campo será populado com centenas de valores. É extremamente ruim ter que ficar procurando a opção correta em uma lista enorme de opções.
+O que esse plugin nos proporciona é uma forma simples de implementar um campo do tipo Autocomplete.</p>
+
+<p>O exemplo que preparei é bem simples, mas mostra o poder deste plugin(um dos melhores que já usei).
+O que vamos fazer é um script PHP que retorne os Posts aqui do Blog. Segue o código abaixo do arquivo <strong>search.php</strong>:</p>
+
+<p>[php]</p>
+
+<p>&lt;?php
+$items = array(
+&#8216;Text Area Resizer - JQuery Plugin&#8217;=>&#8217;1&#8217;,
+&#8216;Text Limiter - Jquery Plugin&#8217;=>&#8217;2&#8217;,
+&#8216;Plugins Jquery&#8217;=>&#8217;3&#8217;,
+&#8216;theWebMind.org&#8217;=>&#8217;4&#8217;,
+&#8216;Hacks CSS&#8217;=>&#8217;5&#8217;,
+&#8216;Json&#8217;=>&#8217;6&#8217;,
+&#8216;PHP - Problema ao carregar a DLL php_pgsql.dll&#8217;=>&#8217;7&#8217;,
+&#8216;RichBlocks - Um Framework Para Implantar Interfaces RIA em Sistemas Web&#8217;=>&#8217;8&#8217;,
+&#8216;PHP Classes&#8217;=>&#8217;9&#8217;,
+&#8216;RIA - Aplicacoes Ricas para Internet&#8217;=>&#8217;10&#8217;,
+&#8216;Campanha Atualize o seu Navegador&#8217;=>&#8217;11&#8217;,
+&#8216;Internet Explorer 8&#8217;=>&#8217;12&#8217;,
+&#8216;Projeto PHP Counter&#8217;=>&#8217;13&#8217;,
+&#8216;Jquery&#8217;=>&#8217;14&#8217;
+);</p>
+
+<p>foreach ($items as $key=>$value){
+echo &#8220;$key|$valuen&#8221;;
+}
+?></p>
+
+<p>[/php]</p>
+
+<p>Note que neste código eu montei &#8220;na mão&#8221; um array de Posts. Mas nada me impediria de ter feito uma consulta no banco de dados e ter montado o array dinâmicamente. Isso serve para qualquer situação.
+Bom, já temos os dados que precisamos para popular o campo de Autocomplete.
+Basta criar um campo do tipo <input> com uma ID especifica. No meu ficou assim:</p>
+
+<p>[html]</p>
+
+<p><body></p>
+
+<p>
+<label style="font-family:verdana;
+font-weight:bold;
+font-size:18px;">
+Posts Jaydson.org:
+</label>
+<br>
+<input style="width:300px;" type="text" id="posts" />
+</p>
+
+
+<p></body></p>
+
+<p>[/html]</p>
+
+<p>Agora que já temos o HTML, vamos implementar o Plugin.
+O que deve ser feito é informar qual <input> será capaz de se autocompletar, desta forma:</p>
+
+<p>[javascript]</p>
+
+<script type="text/javascript">
+$().ready(function() {
+
+$("#posts").autocomplete("search.php", {
+width: 440,
+scrollHeight: 220,
+selectFirst: true
+});
+})
+</script>
+
+
+<p>[/javascript]</p>
+
+<p>Desta maneira, o <input id="posts"> receberá o conteúdo da página PHP que criamos anteriormente.</p>
+
+<p><strong>Nota:</strong> O Plugin ainda possui uma série de opções que podem ser especificadas além de width, scrollHeight e selectFirst .</p>
+
+<p><strong>Veja o resultado:</strong></p>
+
+<p><strong>Minha Avaliação: Nota 10.0</strong>
+<strong>Compatibilidade: Firefox 2.0+, IE 6+, Safari 3.0+, Chrome 2.0+</strong></p>
+
+<p><strong>Site oficial do Plugin:</strong><a href="http://docs.jquery.com/Plugins/Autocomplete"> http://docs.jquery.com/Plugins/Autocomplete
+</a></p>
+
+<p>[caption id=&#8221;attachment_114&#8221; align=&#8221;alignnone&#8221; width=&#8221;60&#8221; caption=&#8221;Download &#8220;]<a href="http://jaydson.org/code/jquery/plugins/jquery.autocomplete/jquery-autocomplete.rar"><img src="http://jaydson-org.web102.redehost.com.br/assets/hd_download1.jpg" alt="Download Text Limiter" /></a>[/caption]</p>
+
+<hr />
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h2 class="entry-title"><a href="/text-area-resizer-jquery-plugin/">Text Area Resizer - JQuery Plugin</a></h2>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-05-06T22:29:31-03:00" pubdate data-updated="true">May 6<span>th</span>, 2009</time>
+        
+         | <a href="/text-area-resizer-jquery-plugin/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Seguindo o <a href="http://jaydson.org/text-limiter-jquery-plugin/">Post anterior</a>, vamos continuar com campos de texto.
+Quando desenvolvemos um formulário onde existem vários campos a preencher, muitas vezes ocorre de um <textarea> que poderá conter &#8221;<strong>N</strong>&#8221; caracteres ficar expremido, com um tamanho inferior ao texto que receberá. Por padrão quando isso acontece, o <textarea> cria uma barra de rolagem.
+Mas para quem está digitando isso não é muito agradável, pois a medida que se escreve, o texto acima desaparece.
+O Google Chrome já implementou uma solução para isso, assim como o Safari.  Por padrão os campos do tipo <textarea> nesses Browsers possuem uma opção de Resize. Desta maneira,  o usuário tem autonomia sobre o <textarea>, podendo redimensiona-lo de forma a ficar do seu gosto.</p>
+
+<p>Mas e quanto ao Firefox e IE?</p>
+
+<p>Bom, esses Browsers ainda não possuem essa funcionalidade, então o que vamos fazer é implementar um Plugin que faz algo semelhante.
+Novamente seguindo a filosofia &#8220;Write Less, Do More&#8221; do Jquery, o necessário para adicionar esta funcionalidade em nossos <textareas> é apenas uma linha:</p>
+
+<p>[javascript]</p>
+
+<p>$(&#8216;textarea.resizable(.processed)&#8217;).TextAreaResizer();</p>
+
+<p>[/javascript]</p>
+
+<p>O que esta linha faz?
+Bom, bem simples de entender. Todos os <textareas> com a classe &#8220;resizable&#8221; terão a funcionalidade de redimensão.</p>
+
+<p><strong>Nota:</strong> O Plugin aplica a funcionalidadede redimensão apenas na altura.</p>
+
+<p><strong>Vamos ver o Plugin em ação:</strong></p>
+
+<p><strong>Minha Avaliação: Nota 8.0</strong>
+<strong>Compatibilidade: Firefox 2.0+, IE 6+, Safari 3.0+, Chrome 2.0+</strong></p>
+
+<p><strong>Obs: </strong>Apesar de funcionar no Safari e no Chrome, não faz sentido algum aplicar isso para estes Browsers, pois como expliquei acima, estes já possuem tal funcionalidade.</p>
+
+<p>[caption id=&#8221;&#8221; align=&#8221;alignnone&#8221; width=&#8221;60&#8221; caption=&#8221;Download &#8220;]<a href="http://jaydson.org/code/jquery/plugins/textarea-resizer-1.0.4/TextAreaResizer-1.0.4.rar"><img src="http://jaydson-org.web102.redehost.com.br/assets/hd_download1.jpg" alt="Download " /></a>[/caption]</p>
+
+<p><strong>Site oficial do Plugin:</strong><a href="http://plugins.jquery.com/project/TextAreaResizer"> http://plugins.jquery.com/project/TextAreaResizer</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h2 class="entry-title"><a href="/text-limiter-jquery-plugin/">Text Limiter - Jquery Plugin</a></h2>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-05-04T22:18:59-03:00" pubdate data-updated="true">May 4<span>th</span>, 2009</time>
+        
+         | <a href="/text-limiter-jquery-plugin/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>O primeiro <strong>Plugin Jquery </strong>da série que selecionei foi o<strong> <a href="http://www.burobjorn.nl/code/textlimiter/">Text Limiter - Jquery Plugin</a></strong>.
+Como o próprio nome já diz, o que o Plugin faz é limitar um campo de texto a &#8220;N&#8221; caracteres.
+Isso é muito útil, pois em qualquer formulário que fazemos sempre tem algum campo que precisa ser validado desta forma.</p>
+
+<p>Para sua implementação nada mais do que uma linha de código é necessária, veja no exemplo abaixo:</p>
+
+<p>[javascript]</p>
+
+<p>$(&#8220;textarea[maxlength]&#8221;).textLimiter();</p>
+
+<p>[/javascript]</p>
+
+<p>Neste exemplo, o que o Plugin faz é varrer todos inputs <textarea> e aplicar a restrição se baseando no atributo &#8220;maxlength&#8221;.</p>
+
+<p><strong>Nota:</strong> O atributo maxlength não é padrão em um elemento <textarea> assim como em um elemento <input>.
+Para mais detalhes sobre o elemento <textarea> acesse <a href="http://www.w3schools.com/TAGS/tag_textarea.asp">http://www.w3schools.com/TAGS/tag_textarea.asp</a></p>
+
+<p>Se no seu formulário existem vários elementos <textarea>, mas para cada um deles existe uma validação de tamanho diferente, o que pode ser feito é especificar o ID do elemento, ficando então:</p>
+
+<p>[javascript]</p>
+
+<p>$(&#8220;#meu_textarea1[maxlength]&#8221;).textLimiter();
+$(&#8220;#meu_textarea2[maxlength]&#8221;).textLimiter();
+$(&#8220;#meu_textarea3[maxlength]&#8221;).textLimiter();</p>
+
+<p>[/javascript]</p>
+
+<p>Neste exemplo o Plugin aplicará a restrição de acordo com o atributo &#8220;maxlength&#8221; de cada <textarea> identificado pela ID.</p>
+
+<p>Para um elemento do tipo <input>, não há nada de diferente dos exemplos anteriores, basta especificar a ID, ou varrer todos elementos:</p>
+
+<p>[javascript]
+$(&#8220;#meu_input1[maxlength]&#8221;).textLimiter();
+$(&#8220;#meu_input2[maxlength]&#8221;).textLimiter();</p>
+
+<p>[/javascript]</p>
+
+<p>O elemento <input> por padrão tem o atributo maxlength. Então se for especificado algum tamanho (Ex: maxlength=10) , mesmo sem utilizar o Plugin, este campo será limitado a este valor.
+A vantagem de usar o Plugin é que ele incrementa essa restrição visualmente, mostrando a quantidade de caracteres restantes para tal elemento.</p>
+
+<p><strong>Exemplo:</strong></p>
+
+<p><strong>Minha Avaliação: Nota 8.0</strong>
+<strong>Compatibilidade: Firefox 2.0+, IE 6+, Safari 3.0+, Chrome 2.0+</strong></p>
+
+<p>[caption id=&#8221;attachment_114&#8221; align=&#8221;alignnone&#8221; width=&#8221;65&#8221; caption=&#8221;Download&#8221;]<a href="http://www.burobjorn.nl/code/textlimiter/textcounter_limiter_code_v0.1.zip"><img src="http://jaydson-org.web102.redehost.com.br/assets/hd_download1.jpg" alt="Download Text Limiter" /></a>[/caption]</p>
+
+<p><strong>Site oficial do Plugin:</strong><a href="http://www.burobjorn.nl/code/textlimiter/"> http://www.burobjorn.nl/code/textlimiter/</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h2 class="entry-title"><a href="/plugins-jquery/">Plugins Jquery</a></h2>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-05-04T21:35:40-03:00" pubdate data-updated="true">May 4<span>th</span>, 2009</time>
+        
+         | <a href="/plugins-jquery/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Cada dia que passa me impressiono mais com o crescimento do JQuery.
+A quantidade de Plugins existentes já incontável. Todo dia recebo vários links com novos plugins e alguns são bem impressionantes, como por exemplo o<strong> <a href="http://lab.smashup.it/flip/">Flip!0.5</a></strong>, um plugin que é capaz de fazer um efeito de &#8220;giro&#8221; em qualquer elemento.
+A quantidade é tão grande, que as vezes nem temos tempo para testa-los e verificar se funciona corretamente em nosso ambiente de desenvolvimento, ou até mesmo implantar em algum projeto.</p>
+
+<p>O que vou fazer é uma série de Posts abordando Plugins para o Jquery.
+A idéia é que  o Post ajude os desenvolvedores iniciantes, ou a quem ainda não está familiarizado com JQuery a implantar os plugins em seus projetos. Isso servirá para difundir ainda mais o uso do JQuery.</p>
+
+<p>Também vou selecionar alguns plugins para fazer otimização e implementação de novas funcionalidades.
+Tanto a análise quanto a otimização e implementação de novas funcionalidades, assim que concluído será disponibilizado para a comunidade.</p>
+
+<p>Por hora é isso.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h2 class="entry-title"><a href="/thewebmindorg/">theWebMind.org</a></h2>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-05-04T11:39:33-03:00" pubdate data-updated="true">May 4<span>th</span>, 2009</time>
+        
+         | <a href="/thewebmindorg/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Todos estamos acostumados com vários ambientes de desenvolvimento nas empresas onde trabalhamos.
+Seja ambiente <strong>Java</strong>, ou<strong> .NET</strong>, <strong>PHP</strong>, o que for, o desenvolvimento não foge muito do padrão de o analista especifar o software,
+levantar os requisitos, modelar um ER, um diagrama de Classes, etc.
+Este &#8220;paradigma&#8221;, digamos assim, dificilmente será mudado, se levarmos em conta que este padrão funciona muito bem.
+Claro que existem outros maneiras de se desenvolver um sistema, e a cada dia que passa, mais e mais metodologias surgem para nos auxiliar na tarefa do desenvolvimento de software.
+Imaginem um ambiente de desenvolvimento todo integrado, onde com poucas linhas de &#8220;código&#8221; seja possível criar uma Aplicação Web robusta.
+Coisas semelhantes já existem, e as IDE&#8217;s facilitam muito a vida dos desenvolvedores.
+O projeto theWebMind.org,  é uma proposta bem diferente das tradicionais Aplicações WEB e até mesmo Desktop.
+O Mind é um sistema todo desennvolvido em PHP, que tem a &#8220;humilde&#8221; proposta de entender o que esta sendo escrito em &#8220;linguagem natural&#8221;
+pelo desenvolvedor e assim gerar um sistema com base na lógica que lhe foi passada.
+Além de gerar o sistema em si, o Mind também gera a documentação para este sistema.</p>
+
+<p>Acessem: <a href="http://www.thewebmind.org/">http://www.thewebmind.org</a> para conhcer o projeto.</p>
+
+<p>[caption id=&#8221;&#8221; align=&#8221;alignnone&#8221; width=&#8221;345&#8221; caption=&#8221;Projeto theWebMind.org&#8221;]<a href="http://thewebmind.org/#home"><img src="http://thewebmind.org/img/not_found_img.jpg" alt="Projeto theWebMind.org" /></a>[/caption]</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/page/24/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/blog/page/22/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    
+<section>
+	<span class="avatar">
+		<img src="http://www.gravatar.com/avatar/572696200604e59baa59ee90d61f7d02?s=180" alt="Jaydson Gomes " title="Jaydson Gomes" />
+	</span>
+</section>
+<section class="author">	
+	<strong>Entusiasta JavaScript && FrontEnd Engineer no Terra && Curador do BrazilJS</strong>
+</section><section>
+  <h1>Posts Recentes</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/cultura-maldita-no-desenvolvimento-de-software/">Cultura maldita no desenvolvimento de software</a>
+      </li>
+    
+      <li class="post">
+        <a href="/rsjs-2013-resumo/">RSJS 2013 - Resumo</a>
+      </li>
+    
+      <li class="post">
+        <a href="/como-foi-a-braziljs-conf-2012/">Como foi a BrazilJS Conf 2012</a>
+      </li>
+    
+      <li class="post">
+        <a href="/riojs-2013/">RioJS 2013</a>
+      </li>
+    
+      <li class="post">
+        <a href="/rsjs-2013/">RSJS 2013</a>
+      </li>
+    
+      <li class="post">
+        <a href="/experimentos-html5-no-header-do-blog/">Experimentos HTML5 no header do Blog</a>
+      </li>
+    
+      <li class="post">
+        <a href="/migrando-para-octopress/">Migrando para o Octopress</a>
+      </li>
+    
+      <li class="post">
+        <a href="/analytics-do-blog-em-2012/">Analytics do Blog em 2012</a>
+      </li>
+    
+      <li class="post">
+        <a href="/retrospectiva-2012/">Retrospectiva 2012</a>
+      </li>
+    
+      <li class="post">
+        <a href="/eati-2012-em-frederico-westphalen/">EATI 2012 em Frederico Westphalen</a>
+      </li>
+    
+      <li class="post">
+        <a href="/w3c-webbr-2102/">W3C webbr 2102</a>
+      </li>
+    
+      <li class="post">
+        <a href="/javascript-o-guia-definitivo/">JavaScript: O Guia definitivo</a>
+      </li>
+    
+      <li class="post">
+        <a href="/braziljs-entrevista-na-tv/">BrazilJS - Entrevista na TV</a>
+      </li>
+    
+      <li class="post">
+        <a href="/braziljs-2012-foto-epica-com-o-brendan/">BrazilJS 2012 - Foto épica com o Brendan Eich</a>
+      </li>
+    
+      <li class="post">
+        <a href="/fundacao-braziljs/">Fundação BrazilJS</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+	<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Jaydson's Blog</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://jaydson.org" property="cc:attributionName" rel="cc:attributionURL">Jaydson Gomes</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>
+</p>
+<p>
+	<span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+<script type="text/javascript" src="/javascripts/jaydson.js"></script>
+<script type="text/javascript" src="/javascripts/blog-header-experiments.js"></script>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'jaydson';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
