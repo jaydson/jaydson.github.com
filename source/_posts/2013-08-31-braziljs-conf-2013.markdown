@@ -1,0 +1,15 @@
+---
+layout: post
+title: "BrazilJS Conf 2013"
+date: 2013-08-31 01:45
+comments: true
+published: false
+keywords: BrazilJS, JavaScript, frontend, eventos
+description: Post sobre como foi a BrazilJS Conf 2013
+categories:
+- JavaScript 
+- Eventos
+- BrazilJS
+---
+
+
