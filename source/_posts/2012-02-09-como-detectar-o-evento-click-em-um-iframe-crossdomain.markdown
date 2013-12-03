@@ -20,8 +20,8 @@ Como fazer então?
 Eu não tinha ideia, e aqui vale muito lembrar uma frase que ouvi em um evento certa vez:  
 **"Nunca acredite em especialistas!"**  
 
-****No caso, o especialista sou eu, que não tinha até então uma maneira simples de resolver o problema.  
-Um amigo/colega aqui do Terra(André Marquardt), que possui **TB's** de experiência, mas não em JavaScript, me sugeriu algo.  
+No caso, o especialista sou eu, que não tinha até então uma maneira simples de resolver o problema.  
+Um amigo/colega aqui do Terra(André Marquardt), que possui TB's de experiência, mas não em JavaScript, me sugeriu algo.  
 Depois de matutar sobre a ideia, cheguei a conclusão de que _"PQP! Talvez funcione!"_.  
 
 A solução é bem simples:  
@@ -32,7 +32,7 @@ A solução é bem simples:
 
 Porquê isso funciona?  
 Quando clicamos em um iframe, estamos selecionando o elemento  "iframe" e neste caso, o evento "blur" do body vai ser disparado.  
-[![Mission](http://jaydson.org/wp-content/uploads/6a0120a6abf659970b0162fde3889c970d-800wi.jpg)](http://jaydson.org/wp-content/uploads/6a0120a6abf659970b0162fde3889c970d-800wi.jpg)  
+![Mission](/images/mission.jpg)  
 Obviamente, esta solução possui algumas limitações:  
 1. Somente 1 "click" será disparado no iframe. Isso porque quando estamos dentro do iframe, não temos mais o blur do body.  
 PS: Tentei usar o focus() em algum elemento da página pai, mas sem sucesso.  
