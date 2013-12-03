@@ -12,6 +12,14 @@ tags:
 - RichBlocks
 ---
 
+[UPDATE - Maio 2013]  
+Este artigo é de 2008, e é baseado em coisas que faziam sentido para mim naquela época.  
+Ele foi base do meu TCC, mas tenham em mente que trabalhei nisso de 2006 até 2008.  
+O código, ainda está disponível, porém é um código muito velho, e não aconselho o seu uso.  
+Caso queiram ver o artigo técnico do TCC, segue o link:  
+[http://goo.gl/dmPKb](http://goo.gl/dmPKb)  
+Mesmo assim, vale a pena como registro histórico ler o texto abaixo.   
+
 RichBlocks - Este foi o meu projeto de conclusão de curso na Faculdade.
 A idéia do Framework é facilitar a vida do desenvolvedor na hora de implantar interfaces [RIA](http://jaydson.blogspot.com/2008/11/ria-aplicaes-ricas-para-internet.html) em sistemas Web.
 Meu primeiro contato com Aplicações RIA foi há alguns anos atrás, quando o meu primo e também desenvolvedor Web [Felipe](http://thewebmind.blogspot.com/) me apresentou uma Aplicação que estava desenvolvendo que na época era totalmente inovadora, e eu não tinha visto nada igual.

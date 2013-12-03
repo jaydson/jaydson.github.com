@@ -12,6 +12,8 @@ categories:
 ---
 ![SouDevCon](/images/soudevcon.png) 
 
+[UPDATE] O evento foi cancelado este ano. Os planos continuam, mas o evento só sai em 2014. Vamos aguardar.  
+
 E mais um grande evento surge no Brasil, a [SouDevCon](http://www.soudevcon.com.br/).  
 Para quem ainda não ouviu falar, a SouDevCon acontecerá em São Paulo, nos dias 19, 20 e 21 de Setembro.  
 Na organização do evento, estão a empresa [Tempo Real](http://www.temporealeventos.com.br/), e o grande amigo [Galvão](http://www.galvao.eti.br/).  

@@ -16,3 +16,10 @@ body > header {
     font-weight: normal;
   }
 }
+
+@media only screen and (max-width: 550px) {
+  #content .blog-index article header {
+    height: 8em;
+    color : red;
+  }
+}

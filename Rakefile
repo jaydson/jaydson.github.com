@@ -9,7 +9,8 @@ ssh_port       = "22"
 document_root  = "~/website.com/"
 rsync_delete   = false
 rsync_args     = ""  # Any extra arguments to pass to rsync
-deploy_default = "push"
+deploy_default = "s3"
+s3_bucket      = "jaydson.org"
 
 # This will be configured for you when you run config_deploy
 deploy_branch  = "master"
@@ -297,6 +298,13 @@ task :set_root_dir, :dir do |t, args|
     puts "## Site's root directory is now '/#{dir.sub(/^\//, '')}' ##"
   end
 end
+
+desc "Deploy website via s3cmd with CloudFront cache invalidation"
+task :s3 do
+  puts "## Deploying website via s3cmd"
+  ok_failed system("s3cmd sync --acl-public --reduced-redundancy --cf-invalidate public/* s3://#{s3_bucket}/")
+end
+
 
 desc "Set up _deploy folder and deploy branch for Github Pages deployment"
 task :setup_github_pages, :repo do |t, args|
