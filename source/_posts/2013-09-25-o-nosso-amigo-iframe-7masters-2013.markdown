@@ -11,4 +11,4 @@ categories:
 - iFrame
 - HTML5
 ---
-<iframe src="https://docs.google.com/presentation/d/12XNj1cFzE_iwDK3qmD0rVkNIPGBP0PM8OGGk2pRFPcw/embed?start=false&loop=false&delayms=60000" frameborder="0" width="100%" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<script async class="speakerdeck-embed" data-id="41cf46803df90131218342f81ec59172" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
