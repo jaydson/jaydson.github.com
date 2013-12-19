@@ -101,3 +101,6 @@ google_analytics_tracking_id: UA-1264252-8
 
 # Facebook Like
 facebook_like: true
+
+# Posts in the sidebar Popular Posts section
+popular_posts_count: 5

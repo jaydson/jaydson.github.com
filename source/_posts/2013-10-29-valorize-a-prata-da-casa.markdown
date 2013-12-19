@@ -28,7 +28,7 @@ O que vejo são pessoas que não valorizam o trabalho de um colega de trabalho, 
 Pessoas que precisam ouvir ou ler a opnião de alguém de fora da sua região ou país, para ai sim dar alguma credibilidade.  
 Empresas que pagam consultorias para dizer o que um funcionário teria dito sem cobrar 1 centavo a mais no salário.  
 Isto é a falta de valorização da prata da casa.  
-Voltando ao exemplo do Jean, nada mais justo do que um cara com a competência e destaque que ele tem, dar uma palestra na BrazilJS Conf, evento que acontecesse aqui em Porto Alegre, cidade que moramos.  
+Voltando ao exemplo do Jean, nada mais justo do que um cara com a competência e destaque que ele tem, dar uma palestra na BrazilJS Conf, evento que acontece aqui em Porto Alegre, cidade que moramos.  
 
 Voltando para as empresas, ponto crítico, onde isso acontece bastante, basta prestar atenção, que provavelmente em algum momento essa situação irá acontecer.  
 O exemplo clássico que citei acima, é quando uma empresa resolve contratar um terceiro para dar consultoria sobre determinado assunto.  
